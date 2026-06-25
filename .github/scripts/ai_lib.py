@@ -153,7 +153,8 @@ def journal_tail(max_chars=6000):
 
 def outcomes_summary():
     """Rich, factual report of the current cache outcomes for the prompt — maximum signal for
-    the author/reviewer. Surfaces success/failed/gap counts plus the routes/failed/ diagnostics
+    the author/reviewer. Surfaces success/failed/gap counts, how many successes are PROVISIONAL
+    (relation-sourced, not GPS-verified -> upgrade targets), plus the failed-entry diagnostics
     (what each source measured), highlighting actionable patterns like likely single-laps."""
     try:
         idx = json.loads(INDEX_FILE.read_text()) if INDEX_FILE.exists() else {}
@@ -164,14 +165,19 @@ def outcomes_summary():
     counts = {"success": 0, "failed": 0, "gap": 0}
     for e in idx.values():
         counts[status(e)] = counts.get(status(e), 0) + 1
+    succ = [e for e in idx.values() if status(e) == "success"]
+    # Provisional = relation-sourced success (not GPS-verified) -> the AI's upgrade backlog.
+    provisional = sum(1 for e in succ if e.get("provisional") or e.get("source") == "osm_relation")
+    trusted = counts["success"] - provisional
     failed = [e for e in idx.values() if status(e) == "failed"]
     # Actionable patterns in the failed diagnostics:
     single_lap = sum(1 for e in failed if (e.get("relation_m") or 0) and 2000 <= e["relation_m"] <= 2800)  # ~half 5k -> likely a 2-lap parkrun
     near_miss = sum(1 for e in failed if (e.get("distance_m") or 0) and (4300 <= e["distance_m"] < 4800 or 5200 < e["distance_m"] <= 5700))  # just outside tolerance -> often an incomplete relation
     sample = [{"name": k, "status": status(v), "relation_m": v.get("relation_m"), "trace_m": v.get("trace_m")}
               for k, v in list(idx.items()) if status(v) == "failed"][:8]
-    return (f"INDEX outcomes (of {len(idx)} attempted): success={counts['success']}, "
-            f"failed(off-tolerance, in routes/failed/)={counts['failed']}, gap={counts['gap']}. "
+    return (f"INDEX outcomes (of {len(idx)} attempted): success={counts['success']} "
+            f"({trusted} trusted GPS-trace, {provisional} PROVISIONAL relation-sourced -> upgrade to "
+            f"real 09:00 traces), failed(off-tolerance, index.json only)={counts['failed']}, gap={counts['gap']}. "
             f"Of the failed: ~{single_lap} have a ~2.0-2.8km relation (likely ONE LAP of a 2-lap parkrun "
             f"— consider doubling), ~{near_miss} are near-misses just outside 4.8-5.2km (often an "
             f"incomplete relation — consider way-chaining/gap-bridging). Sample failed: {sample}.")

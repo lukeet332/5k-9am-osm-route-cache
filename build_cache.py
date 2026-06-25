@@ -231,7 +231,9 @@ def build_one(ev):
       * index.json holds the full detailed log INCLUDING FAILURES — that's what the AI needs to
         improve the script next time (relation_m + trace_m + status, no heavy geometry needed).
     Per event:
-      success: in-tolerance (4.8-5.2km) course (relation preferred) -> writes routes/<name>.gpx
+      success: in-tolerance (4.8-5.2km) course -> writes routes/<name>.gpx. A real 09:00 GPS trace
+               is the TRUE course and WINS over a relation; a relation-sourced success is shipped
+               but flagged provisional:true (curated line, not GPS-verified) so the AI can upgrade it.
       failed:  a relation/trace was found but off-tolerance (sane band) -> NO file; rich diagnostic
                in index.json (e.g. ~2.5km relation = likely ONE LAP of a 2-lap parkrun -> double it)
       gap:     nothing usable found
@@ -242,13 +244,18 @@ def build_one(ev):
     diag = {"relation_m": round(rel[1]) if rel else None,
             "trace_m": round(tr[0]) if tr else None}
 
-    if rel and REL_LO <= rel[1] <= REL_HI:        # SUCCESS via relation -> app GPX
-        write_gpx(name, ev["long"], rel[2], "osm_relation")
-        return {"source": "osm_relation", "distance_m": round(rel[1]), "status": "success", **diag}
-    if tr and REL_LO <= tr[0] <= REL_HI:          # SUCCESS via trace -> app GPX
+    # Quality hierarchy: a real Saturday-09:00 GPS trace is the TRUE course (what runners actually
+    # ran), so it WINS over a relation even when both are in-tolerance. An OSM relation is a curated
+    # line that merely *measures* ~5k — trustworthy enough to ship, but PROVISIONAL: flagged so the
+    # AI stays suspicious of non-GPS data and upgrades it to a real trace once coverage matures.
+    if tr and REL_LO <= tr[0] <= REL_HI:          # SUCCESS via real 09:00 GPS trace (TRUSTED)
         write_gpx(name, ev["long"], tr[1], "osm_9am_trace")
         return {"source": "osm_9am_trace", "distance_m": round(tr[0]), "status": "success",
-                "trace_date": tr[2], **diag}
+                "provisional": False, "trace_date": tr[2], **diag}
+    if rel and REL_LO <= rel[1] <= REL_HI:        # SUCCESS via OSM relation (PROVISIONAL — not GPS-verified)
+        write_gpx(name, ev["long"], rel[2], "osm_relation")
+        return {"source": "osm_relation", "distance_m": round(rel[1]), "status": "success",
+                "provisional": True, **diag}
 
     # Not a success -> no course geometry. Drop any stale success GPX from a prior run.
     stale = os.path.join(ROUTES, f"{name}.gpx")

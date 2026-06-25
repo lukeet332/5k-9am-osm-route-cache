@@ -11,8 +11,9 @@ until both are satisfied and CI passes; then it merges. This file is the contrac
    processing of OSM data. The AI must never emit lat/lon, "fix up" a route by hand, or insert
    a model into the reconstruction path. LLMs hallucinate coordinates — this is non-negotiable.
 2. **Accuracy bars are fixed and may not be loosened to inflate coverage:**
-   - A route relation is "accurate/locked" only if **4800–5200 m** (`REL_LO`/`REL_HI`).
-   - A reconstructed trace is accepted only if **4500–5600 m** (`TRACE_LO`/`TRACE_HI`).
+   - A course (relation **or** trace) counts as "accurate/locked" only if **4800–5200 m**
+     (`REL_LO`/`REL_HI`). Off-tolerance finds in **1500–9000 m** (`SANE_LO`/`SANE_HI`) are logged
+     `failed` as diagnostics; wilder = noise, ignored.
    - Trace anchor: first point at **local ≥ 09:00:00 within 150 m** of the start, else discard.
    - Trace window: **09:00–09:45 local**; stop at ~5.5 km or 09:45.
    - Relation/loop must pass within **500 m** of the start.
@@ -52,6 +53,31 @@ local timezone** (derived from its coordinates/country), not the hardcoded `Euro
 for the UK phase — otherwise the time filter silently misses every overseas parkrun. Generalising
 the timezone is a prerequisite the AI must handle before (or as part of) the global expansion.
 
+## Source trust & the long-term "map it to the mm" goal
+
+Not all successes are equal — **be suspicious of any cached course that wasn't built from real
+Saturday-09:00 GPS.** The `source` field on every success says which it is:
+- **`osm_9am_trace` (`provisional: false`) — TRUSTED.** Reconstructed from real runners' GPS: it's
+  what people actually ran. This is the gold standard.
+- **`osm_relation` (`provisional: true`) — PROVISIONAL.** A curated OSM line that merely *measures*
+  4.8–5.2 km. Good enough to ship to the app, but it may not be the true course (a rough relation
+  can happen to total ~5k). Treat with suspicion.
+
+`build_one` already encodes this: when both qualify, the **trace wins**. Your standing remit, in
+priority order:
+1. **Coverage first** — fill `gap`s and fix `failed`s (most parkruns still have no course).
+2. **Upgrade provisional → trace** — as the trace pool grows, replace `provisional: true`
+   (relation) successes with real `osm_9am_trace` courses. (Re-querying locked courses already
+   happens in the refine phase once ≥80% are within tolerance — that's when this kicks in.)
+3. **Long-term, LOW-priority end goal — refine even already-trusted courses.** Once the
+   successfully-mapped count is very high (even with traces everywhere), keep nudging quality up:
+   the dream is to map each parkrun **to the millimetre** by **averaging many individuals' GPS
+   traces** of the same course (more uploads → less noise → the true line). This never stops, but
+   it is **always lower priority than coverage and upgrading provisionals** — don't spend the
+   weekly improvement on micro-refining trusted courses while gaps/failures and provisionals remain.
+
+All three obey the HARD INVARIANTS — more/better *real* data, never AI geometry, never loosened bars.
+
 ## What the weekly AI MAY improve (within the invariants)
 
 Operational and algorithmic *means*, as long as outputs still validate against `selftest.py`:
@@ -80,7 +106,8 @@ Two outputs, two audiences — know which is which:
   - `distance_m`: chosen course length (null for a gap)
   - `relation_m`, `trace_m`: what the OSM *relation* and the *09:00 trace* each measured — present
     even when unused. **This is your richest signal**, especially on `failed` entries.
-  - `source`, `trace_date`, `last_tried`, `lat`, `lon`
+  - `source` (`osm_9am_trace` = trusted GPS / `osm_relation` = provisional), `provisional` (true on
+    relation-sourced successes — your upgrade targets), `trace_date`, `last_tried`, `lat`, `lon`
 - **`failed` entries are the gold for improvement** — e.g. `relation_m ≈ 2300` ⇒ likely one lap of a
   2-lap parkrun (try doubling); `distance_m` just outside 4.8–5.2 km ⇒ likely an incomplete relation
   (try way-chaining). Off-distance *geometry* is deliberately NOT stored (token/space cost) — work
