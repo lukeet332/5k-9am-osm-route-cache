@@ -234,9 +234,12 @@ def build_one(ev):
     if tr and TRACE_LO <= tr[0] <= TRACE_HI:
         write_gpx(name, ev["long"], tr[1], f"osm_9am_trace:{tr[2]}")
         return {"source": "osm_9am_trace", "distance_m": round(tr[0]), "trace_date": tr[2]}
-    if rel:    # relation exists but off-distance — keep as a flagged approximation
-        write_gpx(name, ev["long"], rel[2], "osm_relation_approx")
-        return {"source": "osm_relation_approx", "distance_m": round(rel[1])}
+    # No course within tolerance -> it's a GAP. Never cache an off-distance "approximate"
+    # relation (e.g. a 2.5 km or 40 km route that merely has "parkrun" in its name) — and
+    # drop any stale GPX we may have written for this event on an earlier run.
+    stale = os.path.join(ROUTES, f"{name}.gpx")
+    if os.path.exists(stale):
+        os.remove(stale)
     return None
 
 def is_locked(entry):
