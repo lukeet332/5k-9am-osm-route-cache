@@ -18,7 +18,9 @@ def make_fixture():
         pts.append(f'<trkpt lat="{lat0 + i*0.00015:.6f}" lon="{lon0:.6f}">'
                    f'<time>{t.strftime("%Y-%m-%dT%H:%M:%SZ")}</time></trkpt>')
     gpx = '<?xml version="1.0"?><gpx><trk><trkseg>' + "".join(pts) + '</trkseg></trk></gpx>'
-    open(os.path.join(bc.TRACECACHE, "selftest_p0.gpx"), "w").write(gpx)
+    # Write under the SAME cache key trace_points() looks up (event + default half_m + page),
+    # so the test is a deterministic cache hit with no network.
+    open(bc._trace_cache_file("selftest", 900, 0), "w").write(gpx)
     return lat0, lon0
 
 def main():

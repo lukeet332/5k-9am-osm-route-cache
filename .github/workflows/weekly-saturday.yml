@@ -38,11 +38,21 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Restore the OSM trace cache (persist across runs -> far fewer refetches)
+        # .tracecache holds raw OSM trace responses. It's gitignored (we never commit raw blobs), so
+        # without this each fresh checkout re-fetched everything. Restoring the most recent cache and
+        # saving a new one per run accumulates it: re-tried gaps + AI re-runs hit the cache, not OSM.
+        uses: actions/cache@v4
+        with:
+          path: .tracecache
+          key: osm-tracecache-${{ github.run_id }}
+          restore-keys: |
+            osm-tracecache-
       - name: Build + push each route as it locks (real-time, ban-safe)
         run: |
           git config user.name  cache-bot
           git config user.email cache-bot@users.noreply.github.com
-          python3 build_cache.py --limit 30 --commit-each
+          python3 build_cache.py --limit 50 --commit-each
       - name: Push any trailing gap bookkeeping
         run: |
           git add -A
@@ -50,18 +60,26 @@ jobs:
           git push || (git pull --rebase origin main && git push) || echo "nothing to push"
       # NOTE: the repo description is refreshed LIVE by refresh-description.yml, which fires on every
       # coverage.json push (per route locked) — no end-of-run description step needed here anymore.
-      - name: Self-chain the next run (~30 min cadence; cron is only a backstop)
+      - name: Self-chain the next run (cadence auto-adjusts; cron is only a backstop)
         if: always()             # chain even if a step failed, so the loop self-heals without the cron
         env:
           GH_TOKEN: ${{ secrets.BOT_PAT }}    # a PAT dispatch DOES trigger the next run (GITHUB_TOKEN wouldn't)
         run: |
-          # Ban-safety: if OSM throttled us this run, back off to 60 min; otherwise ~25 min wait
-          # (+ next build ≈ a ~30 min cadence). Single in-flight run is guaranteed by the
-          # concurrency group, so this can never fan out into parallel hammering of OSM.
+          # Cadence is SELF-ADJUSTING so we go fast through the one-time initial sweep, then ease off:
+          #   - throttled by OSM         -> 60 min backoff (ban-safety first)
+          #   - first pass NOT yet done   -> 6 min  (churn through the ~884 untried events overnight;
+          #                                  the whole first sweep is only ~thousands of calls one-off)
+          #   - first pass complete       -> 25 min (conservative; re-tries mostly hit the trace cache)
+          # The per-request 1.5s throttle (RATE_S) — the thing OSM actually polices — never changes.
+          # A single in-flight run is guaranteed by the concurrency group: never parallel OSM load.
+          TRIED=$(python3 -c "import json;print(len(json.load(open('index.json'))))" 2>/dev/null || echo 0)
+          TOTAL=$(python3 -c "import json;print(json.load(open('coverage.json'))['total'])" 2>/dev/null || echo 884)
           if [ -f .throttled ]; then
-            DELAY=3600; echo "OSM throttled us ($(cat .throttled)x) — backing off 60 min before the next run."
+            DELAY=3600; echo "OSM throttled us ($(cat .throttled)x) — backing off 60 min."
+          elif [ "$TRIED" -lt $(( TOTAL * 95 / 100 )) ]; then
+            DELAY=360;  echo "Initial sweep in progress ($TRIED/$TOTAL tried) — next run in 6 min."
           else
-            DELAY=1500; echo "Healthy run — next cache refresh in 25 min."
+            DELAY=1500; echo "Initial sweep complete ($TRIED/$TOTAL) — easing to a 25 min cadence."
           fi
           sleep "$DELAY"
           gh workflow run "${{ github.workflow }}" --ref "${{ github.ref_name }}"

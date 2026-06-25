@@ -129,21 +129,33 @@ def relation_course(lat, lon, name):
             best = (el["tags"]["name"], L, chain)
     return best
 
+CACHE_TTL_S = 30 * 86400   # reuse a cached trace page for 30 days, then re-fetch (new OSM traces land eventually)
+
+def _trace_cache_file(name, half_m, page):
+    """Cache path keyed on the ACTUAL request (event + search radius + page). Encoding half_m means
+    that if the search radius ever changes we re-fetch rather than silently reuse a different-bbox
+    response — so a persisted cache can't feed stale geometry to a tweaked algorithm."""
+    return os.path.join(TRACECACHE, f"{name}_h{int(half_m)}_p{page}.gpx")
+
 def trace_points(name, lat, lon, half_m=900, max_pages=5):
     os.makedirs(TRACECACHE, exist_ok=True)
     dlat = half_m/111000.0; dlon = half_m/(111000.0*math.cos(math.radians(lat)))
     bbox = f"{lon-dlon:.6f},{lat-dlat:.6f},{lon+dlon:.6f},{lat+dlat:.6f}"
     pts = []
     for p in range(max_pages):
-        cf = os.path.join(TRACECACHE, f"{name}_p{p}.gpx")
-        if os.path.exists(cf):
-            txt = open(cf, errors="ignore").read()
-        else:
+        cf = _trace_cache_file(name, half_m, p)
+        txt = None
+        if os.path.exists(cf) and (time.time() - os.path.getmtime(cf)) < CACHE_TTL_S:
+            cached = open(cf, errors="ignore").read()
+            if "<gpx" in cached:                 # ignore a poisoned/partial cached body -> re-fetch
+                txt = cached
+        if txt is None:
             try:
                 txt = _get(f"{OSM_TRACKPOINTS}?bbox={bbox}&page={p}", timeout=60)
             except Exception:
                 break
-            open(cf, "w").write(txt)
+            if txt and "<gpx" in txt:            # only persist a VALID gpx body (never an error page)
+                open(cf, "w").write(txt)
         n = 0
         for m in re.finditer(r'<trkpt lat="([\-\d.]+)" lon="([\-\d.]+)"[^>]*>(.*?)</trkpt>', txt, re.S):
             n += 1
