@@ -606,6 +606,14 @@
   "long": "Whiteley parkrun",
   "source": null
  },
+ "whitstable": {
+  "distance_m": 40589,
+  "last_tried": "2026-06-25",
+  "lat": 51.365295,
+  "lon": 1.041942,
+  "long": "Whitstable parkrun",
+  "source": "osm_relation_approx"
+ },
  "winchester": {
   "distance_m": 4760,
   "last_tried": "2026-06-25",
