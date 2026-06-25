@@ -282,6 +282,14 @@
   "long": "Longrun Meadow parkrun",
   "source": null
  },
+ "lullingstone": {
+  "distance_m": 2493,
+  "last_tried": "2026-06-25",
+  "lat": 51.353118,
+  "lon": 0.187147,
+  "long": "Lullingstone parkrun",
+  "source": "osm_relation_approx"
+ },
  "maidstoneriverpark": {
   "distance_m": null,
   "last_tried": "2026-06-25",
