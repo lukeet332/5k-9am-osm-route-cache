@@ -31,7 +31,8 @@ jobs:
       - name: Propose an improvement
         id: improve
         env:
-          GH_MODELS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_MODELS_TOKEN: ${{ secrets.GITHUB_TOKEN }}     # deep author (GitHub Models)
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}    # fast tier (optional; graceful if unset)
         run: python .github/scripts/ai_improve.py
 
       # Hard gate: the proposed change must still pass the caching self-test, or the job

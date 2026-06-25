@@ -21,12 +21,20 @@ INDEX_FILE = (REPO / "index.json").resolve()
 ALGO_FILE = (REPO / "build_cache.py").resolve()
 ALLOWED = {ALGO_FILE, CONTEXT_FILE}          # the ONLY files a bot may write
 
-# Extensible registry; this repo deliberately uses GitHub Models only (free via GITHUB_TOKEN).
+# Both providers free. Three tiers:
+#  * github-models (GITHUB_TOKEN, no secret) — the DEEP author/reasoner.
+#  * gemini (needs GEMINI_API_KEY) — supplies the DEEP, INDEPENDENT reviewer (2.5 Pro, a
+#    different family so the review is genuinely independent) AND the FAST tier (2.5 Flash)
+#    the deep model can hand quick/simple subtasks to. If GEMINI_API_KEY is absent the
+#    system degrades gracefully to github-models (reviewer falls back to the deep author).
+# The reviewer must stay a DEEP model — it is the safety gate; Flash is NOT used to review.
 PROVIDERS = {
     "github-models": ("https://models.github.ai/inference", "GH_MODELS_TOKEN"),
+    "gemini": ("https://generativelanguage.googleapis.com/v1beta/openai", "GEMINI_API_KEY"),
 }
-DEFAULT_PRIMARY = {"provider": "github-models", "model": "openai/gpt-4.1"}
-DEFAULT_FALLBACK = {"provider": "github-models", "model": "openai/gpt-4.1"}
+DEFAULT_PRIMARY = {"provider": "github-models", "model": "openai/gpt-4.1"}    # deep author
+DEFAULT_FALLBACK = {"provider": "gemini", "model": "gemini-2.5-pro"}          # deep independent reviewer
+DEFAULT_FAST = {"provider": "gemini", "model": "gemini-2.5-flash"}            # fast tier for delegated quick subtasks (never review)
 
 
 def emit(**kv):
@@ -64,7 +72,8 @@ def load_model_config():
     except Exception as e:
         print(f"Could not read ai_model.json ({e.__class__.__name__}); using defaults.")
     return {"primary": resolve(data.get("primary"), DEFAULT_PRIMARY),
-            "fallback": resolve(data.get("fallback"), DEFAULT_FALLBACK)}
+            "fallback": resolve(data.get("fallback"), DEFAULT_FALLBACK),
+            "fast": resolve(data.get("fast"), DEFAULT_FAST)}
 
 
 def bot_label(model):

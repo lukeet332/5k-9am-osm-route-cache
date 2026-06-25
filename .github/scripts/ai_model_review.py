@@ -11,24 +11,27 @@ import json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import ai_lib as L
 
-PROMPT = """You configure TWO GitHub Models models for an automated maintenance bot on a Python
-repo that caches OSM-derived running courses:
-- AUTHOR ("primary", deep thinking): the best free reasoning/code model on GitHub Models for
-  analysing data outcomes and editing a Python algorithm carefully.
-- REVIEWER ("fallback"): a capable but ideally DIFFERENT free GitHub Models model, used to
-  adversarially review the author's change independently.
+ROLES = ("primary", "fallback", "fast")
+PROMPT = """You configure THREE models for an automated maintenance bot on a Python repo that
+caches OSM-derived running courses. Providers available: "github-models" (free via GITHUB_TOKEN)
+and "gemini" (free, needs a key).
+- AUTHOR ("primary", DEEP): best free reasoning/code model for analysing data outcomes and
+  editing a Python algorithm carefully. Prefer "github-models" (no secret needed).
+- REVIEWER ("fallback", DEEP + INDEPENDENT): the safety gate — must be a strong reasoning model,
+  ideally a DIFFERENT family/provider from the author for a genuinely independent review (e.g. a
+  Gemini Pro tier). It MUST stay deep — NEVER a fast/small model here.
+- FAST ("fast"): a fast, cheap model (e.g. Gemini Flash) for simple delegated subtasks only.
 
-HARD CONSTRAINTS: both must be available on **GitHub Models** (provider "github-models") and free
-via GITHUB_TOKEN, with enough headroom for ~2 calls/week. Prefer a reasoning-class model for the
-author. Make the reviewer a different model from the author where a good option exists.
+HARD CONSTRAINTS: every model must be free with headroom for a few calls/week. Keep the reviewer
+deep and independent. Keep a role unchanged UNLESS a clearly better option exists.
 
 Current configuration: %(current)s
 
 Respond with STRICT JSON only:
-{"primary": {"provider": "github-models", "model": "<exact GitHub Models id>"},
- "fallback": {"provider": "github-models", "model": "<exact GitHub Models id>"},
- "reason": "<one or two sentences>"}
-Keep a role unchanged UNLESS a clearly better option exists."""
+{"primary": {"provider": "...", "model": "..."},
+ "fallback": {"provider": "...", "model": "..."},
+ "fast": {"provider": "...", "model": "..."},
+ "reason": "<one or two sentences>"}"""
 
 
 def stop(reason):
@@ -37,24 +40,26 @@ def stop(reason):
 
 def main():
     cur = L.load_model_config()
-    cur_short = {r: {"provider": cur[r]["provider"], "model": cur[r]["model"]} for r in ("primary", "fallback")}
+    cur_short = {r: {"provider": cur[r]["provider"], "model": cur[r]["model"]} for r in ROLES}
     rec, _ = L.call_with_roles(PROMPT % {"current": json.dumps(cur_short)}, roles=("primary", "fallback"))
     if not isinstance(rec, dict):
         stop("No usable recommendation — keeping current models.")
 
     new = {}
-    for role in ("primary", "fallback"):
+    for role in ROLES:
         r = rec.get(role)
         if not isinstance(r, dict) or str(r.get("provider", "")) not in L.PROVIDERS or not str(r.get("model", "")).strip():
             stop(f"Recommendation for {role} invalid — keeping current.")
         new[role] = {"provider": r["provider"], "model": str(r["model"]).strip()}
 
-    changed = [r for r in ("primary", "fallback") if new[r] != cur_short[r]]
+    changed = [r for r in ROLES if new[r] != cur_short[r]]
     if not changed:
-        stop("Both roles still optimal — no change.")
+        stop("All roles still optimal — no change.")
 
     for role in changed:                       # validate each change with a live call
         base_url, key_env = L.PROVIDERS[new[role]["provider"]]
+        if not os.environ.get(key_env, "").strip():
+            stop(f"{role} provider key ({key_env}) not configured — keeping current.")
         try:
             test = L.call_json({"base_url": base_url, "model": new[role]["model"], "api_key_env": key_env},
                                'Reply with the JSON {"ok": true} and nothing else.')
@@ -62,7 +67,7 @@ def main():
         except Exception as e:
             stop(f"Recommended {role} failed live validation ({e.__class__.__name__}) — keeping current.")
 
-    L.MODEL_CONFIG.write_text(json.dumps({"primary": new["primary"], "fallback": new["fallback"]}, indent=2) + "\n")
+    L.MODEL_CONFIG.write_text(json.dumps({r: new[r] for r in ROLES}, indent=2) + "\n")
     L.emit(changed="true", changed_roles=" & ".join(changed),
            primary=f'{new["primary"]["provider"]}/{new["primary"]["model"]}',
            fallback=f'{new["fallback"]["provider"]}/{new["fallback"]["model"]}',
