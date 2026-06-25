@@ -302,6 +302,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "bicester": {
+  "distance_m": 5061,
+  "last_tried": "2026-06-25",
+  "lat": 51.891101,
+  "lon": -1.146866,
+  "long": "Bicester parkrun",
+  "provisional": true,
+  "relation_m": 5061,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
+ },
  "bideford": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -507,6 +519,17 @@
   "lat": 51.657677,
   "lon": -0.406335,
   "long": "Cassiobury parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "castlepark": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.87167,
+  "lon": 0.164165,
+  "long": "Castle Park parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -790,6 +813,17 @@
   "source": null,
   "status": "gap"
  },
+ "dunstabledowns": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.865432,
+  "lon": -0.537791,
+  "long": "Dunstable Downs parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": 1124
+ },
  "eastgrinstead": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -967,6 +1001,17 @@
   "status": "success",
   "trace_m": null
  },
+ "gloucesternorth": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.878304,
+  "lon": -2.231707,
+  "long": "Gloucester North parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "gnoll": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -986,6 +1031,17 @@
   "long": "Grangemoor parkrun",
   "source": null,
   "status": "gap"
+ },
+ "greatdunmow": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.878681,
+  "lon": 0.3627,
+  "long": "Great Dunmow parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "greatlines": {
   "distance_m": null,
@@ -1506,6 +1562,17 @@
   "long": "Lullingstone parkrun",
   "source": null,
   "status": "gap"
+ },
+ "lutonwardown": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.889853,
+  "lon": -0.420917,
+  "long": "Luton Wardown parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "lydiard": {
   "distance_m": null,
