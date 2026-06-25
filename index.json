@@ -579,6 +579,18 @@
   "status": "failed",
   "trace_m": 2217
  },
+ "cheltenham": {
+  "distance_m": 5113,
+  "last_tried": "2026-06-25",
+  "lat": 51.908452,
+  "lon": -2.075153,
+  "long": "Cheltenham parkrun",
+  "provisional": true,
+  "relation_m": 5113,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
+ },
  "chippenham": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1303,6 +1315,17 @@
   "relation_m": 5089,
   "source": "osm_relation",
   "status": "success",
+  "trace_m": null
+ },
+ "highwoods": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.904682,
+  "lon": 0.917561,
+  "long": "Highwoods parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
   "trace_m": null
  },
  "hillyfields": {
@@ -2427,6 +2450,18 @@
   "source": null,
   "status": "gap",
   "trace_m": null
+ },
+ "stevenage": {
+  "distance_m": 4207,
+  "last_tried": "2026-06-25",
+  "lat": 51.902634,
+  "lon": -0.17993,
+  "long": "Stevenage parkrun",
+  "relation_m": null,
+  "source": "osm_9am_trace_offdist",
+  "status": "failed",
+  "trace_date": "2024-11-23",
+  "trace_m": 4207
  },
  "stmatthewsfield": {
   "distance_m": null,
