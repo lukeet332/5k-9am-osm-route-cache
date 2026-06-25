@@ -135,6 +135,17 @@
   "source": null,
   "status": "gap"
  },
+ "bexley": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.455132,
+  "lon": 0.113254,
+  "long": "Bexley parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "bideford": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -760,6 +771,18 @@
   "source": "osm_9am_trace",
   "status": "success",
   "trace_date": "2022-12-10"
+ },
+ "peckhamrye": {
+  "distance_m": 3878,
+  "last_tried": "2026-06-25",
+  "lat": 51.455486,
+  "lon": -0.060688,
+  "long": "Peckham Rye parkrun",
+  "relation_m": null,
+  "source": "osm_9am_trace_offdist",
+  "status": "failed",
+  "trace_date": "2018-05-12",
+  "trace_m": 3878
  },
  "pegwellbay": {
   "distance_m": 4913,
