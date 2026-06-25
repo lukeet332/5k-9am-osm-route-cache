@@ -973,6 +973,19 @@
   "source": null,
   "status": "gap"
  },
+ "northalafields": {
+  "distance_m": 4971,
+  "last_tried": "2026-06-25",
+  "lat": 51.541272,
+  "lon": -0.376711,
+  "long": "Northala Fields parkrun",
+  "provisional": false,
+  "relation_m": null,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2017-02-04",
+  "trace_m": 4971
+ },
  "olddeerpark": {
   "distance_m": null,
   "last_tried": "2026-06-25",
