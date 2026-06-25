@@ -10,6 +10,15 @@ OpenStreetMap** for offline/navigation use by a personal Wear OS running app.
 > **Not affiliated with parkrun.** Courses are derived from public OpenStreetMap data
 > (route relations + openly-contributed GPS traces), not from parkrun's own data.
 
+## How changes reach `main` (protected, PR-only)
+
+- **Code** (AI maintenance) → PR labelled `automerge` → must pass the CI self-test **and** the
+  AI review before auto-merge.
+- **Cache data** (the weekly job) → PR labelled `cache-update` → auto-merges **bypassing the code
+  CI** (the data is the output of already-reviewed code; the code self-test is irrelevant to it).
+- The app reads the cache from `main`:
+  `https://raw.githubusercontent.com/lukeet332/5k-9am-osm-route-cache/main/index.json`.
+
 ## How a course is chosen (per event, worked south → north)
 
 1. **OSM route relation** named "… parkrun" near the start — used **only if within ±8 % of 5 km**.

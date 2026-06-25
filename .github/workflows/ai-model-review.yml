@@ -6,7 +6,7 @@ name: AI model self-review
 # validated, so it carries 'automerge' directly (CI self-test still gates the merge).
 on:
   schedule:
-    - cron: "0 7 * * 1"      # 07:00 UTC every Monday
+    - cron: "0 7 * * 3"      # 07:00 UTC every Wednesday (staggered off WearOsGpx's Mon/Thu jobs; shared BOT_PAT)
   workflow_dispatch:
 
 permissions:
