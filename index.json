@@ -99,6 +99,17 @@
   "source": null,
   "status": "gap"
  },
+ "battersea": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.478869,
+  "lon": -0.160095,
+  "long": "Battersea parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "beckenhamplace": {
   "distance_m": 5174,
   "last_tried": "2026-06-25",
@@ -255,6 +266,18 @@
   "source": "osm_relation",
   "status": "success"
  },
+ "charlton": {
+  "distance_m": 5058,
+  "last_tried": "2026-06-25",
+  "lat": 51.480751,
+  "lon": 0.041628,
+  "long": "Charlton parkrun",
+  "relation_m": 4731,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2025-05-03",
+  "trace_m": 5058
+ },
  "chippenham": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -403,6 +426,17 @@
   "long": "Eastleigh parkrun",
   "source": null,
   "status": "gap"
+ },
+ "eastville": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.475453,
+  "lon": -2.554304,
+  "long": "Eastville parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "edenbrookcountry": {
   "distance_m": null,
@@ -849,6 +883,28 @@
   "status": "success",
   "trace_date": "2017-02-25"
  },
+ "pomphreyhill": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.479321,
+  "lon": -2.47805,
+  "long": "Pomphrey Hill parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "porthcawl": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.476331,
+  "lon": -3.705976,
+  "long": "Porthcawl parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "prospect": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1150,6 +1206,17 @@
   "long": "Tooting Common parkrun",
   "source": null,
   "status": "gap"
+ },
+ "trelaipark": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.478969,
+  "lon": -3.232766,
+  "long": "Trelai Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "uckfield": {
   "distance_m": null,
