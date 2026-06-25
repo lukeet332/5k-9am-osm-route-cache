@@ -268,6 +268,17 @@
   "source": null,
   "status": "gap"
  },
+ "cardiff": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.49736,
+  "lon": -3.207107,
+  "long": "Cardiff parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "catford": {
   "distance_m": 5074,
   "last_tried": "2026-06-25",
@@ -577,6 +588,17 @@
   "source": null,
   "status": "gap"
  },
+ "greenwichpeninsula": {
+  "distance_m": 3136,
+  "last_tried": "2026-06-25",
+  "lat": 51.501803,
+  "lon": 0.007859,
+  "long": "Greenwich Peninsula parkrun",
+  "relation_m": 3136,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
+ },
  "guernsey": {
   "distance_m": 5027,
   "lat": 49.502341,
@@ -593,6 +615,17 @@
   "long": "Guildford parkrun",
   "source": null,
   "status": "gap"
+ },
+ "gunnersbury": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.499405,
+  "lon": -0.292253,
+  "long": "Gunnersbury parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "hanworth": {
   "distance_m": null,
