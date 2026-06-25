@@ -76,6 +76,19 @@
   "status": "failed",
   "trace_m": null
  },
+ "altonwater": {
+  "distance_m": 5086,
+  "last_tried": "2026-06-25",
+  "lat": 51.974806,
+  "lon": 1.134021,
+  "long": "Alton Water parkrun",
+  "provisional": false,
+  "relation_m": 5049,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2022-03-26",
+  "trace_m": 5086
+ },
  "andover": {
   "distance_m": null,
   "last_tried": "2026-06-25",
