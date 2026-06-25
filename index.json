@@ -702,6 +702,14 @@
   "long": "Reigate Priory parkrun",
   "source": null
  },
+ "richmond": {
+  "distance_m": 5931,
+  "last_tried": "2026-06-25",
+  "lat": 51.451962,
+  "lon": -0.292886,
+  "long": "Richmond parkrun",
+  "source": "osm_relation_approx"
+ },
  "riddlesdown": {
   "distance_m": null,
   "last_tried": "2026-06-25",
