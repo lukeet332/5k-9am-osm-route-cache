@@ -31,6 +31,15 @@
   "long": "Ashton Court parkrun",
   "source": null
  },
+ "averyhill": {
+  "distance_m": 4793,
+  "last_tried": "2026-06-25",
+  "lat": 51.449459,
+  "lon": 0.075155,
+  "long": "Avery Hill parkrun",
+  "source": "osm_9am_trace",
+  "trace_date": "2024-12-14"
+ },
  "banstead": {
   "distance_m": 11927,
   "last_tried": "2026-06-25",
@@ -660,6 +669,14 @@
   "long": "Pegwell Bay parkrun",
   "source": "osm_9am_trace",
   "trace_date": "2017-02-25"
+ },
+ "prospect": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.448386,
+  "lon": -1.00741,
+  "long": "Prospect parkrun",
+  "source": null
  },
  "quakerswalk": {
   "distance_m": 1528,
