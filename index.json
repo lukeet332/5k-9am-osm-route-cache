@@ -152,6 +152,14 @@
   "long": "Broadwater parkrun",
   "source": null
  },
+ "brockwell": {
+  "distance_m": 3296,
+  "last_tried": "2026-06-25",
+  "lat": 51.452538,
+  "lon": -0.105464,
+  "long": "Brockwell parkrun, Herne Hill",
+  "source": "osm_relation_approx"
+ },
  "bromley": {
   "distance_m": null,
   "last_tried": "2026-06-25",
