@@ -1,4 +1,15 @@
 {
+ "aberbeeg": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.711165,
+  "lon": -3.144286,
+  "long": "Aberbeeg parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "aberfields": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -215,6 +226,17 @@
   "long": "Bedgebury Pinetum parkrun",
   "source": null,
   "status": "gap"
+ },
+ "berkeleygreen": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.690962,
+  "lon": -2.497513,
+  "long": "Berkeley Green parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "bethlemroyalhospital": {
   "distance_m": null,
@@ -489,6 +511,19 @@
   "source": null,
   "status": "gap",
   "trace_m": null
+ },
+ "cirencester": {
+  "distance_m": 4923,
+  "last_tried": "2026-06-25",
+  "lat": 51.711207,
+  "lon": -1.99109,
+  "long": "Cirencester parkrun",
+  "provisional": false,
+  "relation_m": 5041,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2022-12-24",
+  "trace_m": 4923
  },
  "clair": {
   "distance_m": null,
@@ -1129,6 +1164,17 @@
   "source": "osm_relation",
   "status": "success"
  },
+ "leavesdencountry": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.704924,
+  "lon": -0.403599,
+  "long": "Leavesden Country parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "leybournelakes": {
   "distance_m": 5018,
   "last_tried": "2026-06-25",
@@ -1297,6 +1343,17 @@
   "status": "failed",
   "trace_m": null
  },
+ "milfordwaterfront": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.710763,
+  "lon": -5.031507,
+  "long": "Milford Waterfront parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "minehead": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1409,6 +1466,17 @@
   "status": "failed",
   "trace_m": null
  },
+ "parccoedgwilym": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.697844,
+  "lon": -3.880411,
+  "long": "Parc Coed Gwilym parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "peckhamrye": {
   "distance_m": 3878,
   "last_tried": "2026-06-25",
@@ -1448,6 +1516,17 @@
   "lat": 51.479321,
   "lon": -2.47805,
   "long": "Pomphrey Hill parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "pontypool": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.699213,
+  "lon": -3.028573,
+  "long": "Pontypool parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
