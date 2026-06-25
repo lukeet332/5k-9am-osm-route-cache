@@ -872,6 +872,17 @@
   "status": "success",
   "trace_date": "2022-12-10"
  },
+ "osterley": {
+  "distance_m": 3878,
+  "last_tried": "2026-06-25",
+  "lat": 51.489403,
+  "lon": -0.349889,
+  "long": "Osterley parkrun",
+  "relation_m": 3878,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
+ },
  "peckhamrye": {
   "distance_m": 3878,
   "last_tried": "2026-06-25",
@@ -1224,6 +1235,17 @@
   "lat": 51.478969,
   "lon": -3.232766,
   "long": "Trelai Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "tremorfa": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.486237,
+  "lon": -3.132727,
+  "long": "Tremorfa parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
