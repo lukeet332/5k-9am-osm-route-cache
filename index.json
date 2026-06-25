@@ -402,6 +402,14 @@
   "long": "Ganger Farm parkrun",
   "source": null
  },
+ "grangemoor": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.454464,
+  "lon": -3.192412,
+  "long": "Grangemoor parkrun",
+  "source": null
+ },
  "greatlines": {
   "distance_m": 5422,
   "last_tried": "2026-06-25",
