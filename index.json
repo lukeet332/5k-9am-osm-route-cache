@@ -1102,6 +1102,17 @@
   "source": null,
   "status": "gap"
  },
+ "southwark": {
+  "distance_m": 5143,
+  "last_tried": "2026-06-25",
+  "lat": 51.494242,
+  "lon": -0.053151,
+  "long": "Southwark parkrun",
+  "relation_m": 5143,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
+ },
  "southwickcountrypark": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1192,6 +1203,17 @@
   "long": "Thoulstone parkrun",
   "source": null,
   "status": "gap"
+ },
+ "thurrock": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.491427,
+  "lon": 0.363436,
+  "long": "Thurrock parkrun, Orsett Heath",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "tidworth": {
   "distance_m": null,
