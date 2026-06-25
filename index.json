@@ -264,6 +264,17 @@
   "source": null,
   "status": "gap"
  },
+ "claphamcommon": {
+  "distance_m": 2975,
+  "last_tried": "2026-06-25",
+  "lat": 51.455873,
+  "lon": -0.151331,
+  "long": "Clapham Common parkrun",
+  "relation_m": 2975,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
+ },
  "clevedonsalthousefields": {
   "distance_m": null,
   "last_tried": "2026-06-25",
