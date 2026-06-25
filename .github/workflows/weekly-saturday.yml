@@ -19,17 +19,24 @@ jobs:
   refresh:
     runs-on: ubuntu-latest   # standard runner = free on public repos
     steps:
+      # Work on the UNPROTECTED data branch — code stays on the protected `main`.
       - uses: actions/checkout@v4
+        with:
+          ref: cache-data
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Build cache (Havant -> north, gaps first, polite/rate-limited, real-time commits)
+      - name: Sync the latest reviewed code from main (data lives only on this branch)
         run: |
           git config user.name  "cache-bot"
           git config user.email "cache-bot@users.noreply.github.com"
-          python3 build_cache.py --limit 60 --commit-each   # pushes each route the moment it locks
-      - name: Commit any remaining (gap last-tried) updates
+          git fetch origin main
+          git merge --no-edit -X theirs origin/main
+      - name: Build cache (Havant -> north, gaps first, polite/rate-limited, real-time commits)
+        run: python3 build_cache.py --limit 60 --commit-each   # pushes each route to cache-data the moment it locks
+      - name: Push remaining (gap last-tried) bookkeeping
         run: |
           git add routes index.json
           git commit -m "Weekly OSM course cache refresh (gaps)" || echo "no changes"
-          git push || echo "nothing to push"
+          git push origin HEAD:cache-data || echo "nothing to push"
