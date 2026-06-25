@@ -166,6 +166,17 @@
   "source": null,
   "status": "gap"
  },
+ "blaisecastle": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.505672,
+  "lon": -2.632932,
+  "long": "Blaise Castle parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "bracknell": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1116,6 +1127,18 @@
   "long": "Somerdale Pavilion parkrun",
   "source": null,
   "status": "gap"
+ },
+ "southall": {
+  "distance_m": 5010,
+  "last_tried": "2026-06-25",
+  "lat": 51.509737,
+  "lon": -0.36957,
+  "long": "Southall parkrun",
+  "relation_m": null,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2023-02-04",
+  "trace_m": 5010
  },
  "southampton": {
   "distance_m": null,
