@@ -955,6 +955,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "gloucestercity": {
+  "distance_m": 5101,
+  "last_tried": "2026-06-25",
+  "lat": 51.858707,
+  "lon": -2.243129,
+  "long": "Gloucester City parkrun",
+  "provisional": true,
+  "relation_m": 5101,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
+ },
  "gnoll": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1802,6 +1814,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "parcdewisant": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.856235,
+  "lon": -4.335129,
+  "long": "Parc Dewi Sant parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "peckhamrye": {
   "distance_m": 3878,
   "last_tried": "2026-06-25",
@@ -2587,6 +2610,17 @@
   "lat": 51.602666,
   "lon": -0.007854,
   "long": "Walthamstow parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "waltonpromenade": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.84594,
+  "lon": 1.269984,
+  "long": "Walton Promenade parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
