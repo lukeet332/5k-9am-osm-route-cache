@@ -311,10 +311,10 @@ def main():
     locked2 = sum(1 for e in events if is_locked(index.get(e["name"])) )
     print(f"\nprocessed {len(cands)}: {hit} resolved, {miss} gaps. coverage now {locked2}/{total} ({locked2/total:.0%}).")
     # Live tally (out of ALL UK parkruns) — drives the README badge + repo description.
+    # Always green: every mapped course is a success, however many there are so far.
     pct = round(100 * locked2 / total, 1) if total else 0.0
-    color = "brightgreen" if pct >= 80 else "yellow" if pct >= 50 else "orange" if pct >= 10 else "red"
-    json.dump({"schemaVersion": 1, "label": "parkruns mapped @4.8-5.2km",
-               "message": f"{locked2}/{total} ({pct}%)", "color": color,
+    json.dump({"schemaVersion": 1, "label": "parkruns successfully mapped",
+               "message": f"{locked2}/{total} ({pct}%)", "color": "brightgreen",
                "locked": locked2, "total": total, "percent": pct},
               open(os.path.join(HERE, "coverage.json"), "w"), indent=1)
 
