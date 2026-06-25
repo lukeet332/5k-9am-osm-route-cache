@@ -23,6 +23,11 @@ until both are satisfied and CI passes; then it merges. This file is the contrac
 4. **Licensing stays intact.** Data is © OpenStreetMap contributors, ODbL; attribution in every
    GPX, README, and LICENSE must remain. Keep the "not affiliated with parkrun" disclaimer.
 5. **Standard runners only** in CI/cron (free on public repos). Never larger/macOS runners.
+6. **Never scrape parkrun or break any source's terms.** Do NOT fetch from parkrun's websites,
+   their event/course pages, or any endpoint behind their bot-protection, and never circumvent
+   an access control or a site's Terms of Service. parkrun's data is deliberately locked down —
+   respect that. Any data source you use must be openly licensed or explicitly permitted, used
+   within its terms, and properly attributed.
 
 ## Truth metric (what to optimise)
 
@@ -59,6 +64,11 @@ Operational and algorithmic *means*, as long as outputs still validate against `
 - A **QA flag** for courses whose distance is in-band but whose shape looks wrong
   (self-intersections, spikes) — flag for human review; do not silently rewrite geometry.
 - Diagnosing low-yield regions and reporting *why* (not fabricating data to fill them).
+- **Additional data sources beyond OSM** — to lift coverage where OSM is thin, the algorithm MAY
+  eventually pull from *other openly-licensed / explicitly-permitted* sources (e.g. open GPS-trace
+  or public-domain route datasets, government/park open data), used within their terms and
+  attributed. This is allowed ONLY within invariant #6: **never parkrun's sites, never scraping,
+  never circumventing terms/access controls.** OSM stays the primary source; others are additive.
 
 ## The idea JOURNAL (build context over time)
 
