@@ -133,6 +133,17 @@
   "source": null,
   "status": "gap"
  },
+ "barclay": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.759056,
+  "lon": -0.019442,
+  "long": "Barclay parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "barking": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -658,6 +669,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "cycleroute43ystalyfera": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.755941,
+  "lon": -3.789728,
+  "long": "Cycle Route 43 parkrun, Ystalyfera",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "cyclopark": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -834,6 +856,17 @@
   "relation_m": 1800,
   "source": "osm_relation_offdist",
   "status": "failed",
+  "trace_m": null
+ },
+ "gadebridge": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.758909,
+  "lon": -0.473542,
+  "long": "Gadebridge parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
   "trace_m": null
  },
  "gangerfarm": {
@@ -1202,6 +1235,19 @@
   "status": "success",
   "trace_date": "2019-08-03"
  },
+ "jerseyfarm": {
+  "distance_m": 5130,
+  "last_tried": "2026-06-25",
+  "lat": 51.773718,
+  "lon": -0.307978,
+  "long": "Jersey Farm parkrun",
+  "provisional": false,
+  "relation_m": 2866,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2024-04-20",
+  "trace_m": 5130
+ },
  "kingdom": {
   "distance_m": 5057,
   "last_tried": "2026-06-25",
@@ -1524,6 +1570,17 @@
   "relation_m": 1832,
   "source": "osm_relation_offdist",
   "status": "failed",
+  "trace_m": null
+ },
+ "oaklandscollege": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.754303,
+  "lon": -0.288522,
+  "long": "Oaklands College parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
   "trace_m": null
  },
  "olddeerpark": {
@@ -2002,6 +2059,18 @@
   "status": "success",
   "trace_date": "2023-07-29"
  },
+ "stalbans": {
+  "distance_m": 1787,
+  "last_tried": "2026-06-25",
+  "lat": 51.75193,
+  "lon": -0.355371,
+  "long": "St Albans parkrun",
+  "relation_m": null,
+  "source": "osm_9am_trace_offdist",
+  "status": "failed",
+  "trace_date": "2019-08-17",
+  "trace_m": 1787
+ },
  "stmatthewsfield": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -2020,6 +2089,28 @@
   "relation_m": null,
   "source": null,
   "status": "gap",
+  "trace_m": null
+ },
+ "stonehouse": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.752554,
+  "lon": -2.287804,
+  "long": "Stonehouse parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "stratfordparkstroud": {
+  "distance_m": 1913,
+  "last_tried": "2026-06-25",
+  "lat": 51.74897,
+  "lon": -2.225007,
+  "long": "Stratford Park parkrun, Stroud",
+  "relation_m": 1913,
+  "source": "osm_relation_offdist",
+  "status": "failed",
   "trace_m": null
  },
  "street": {
@@ -2242,6 +2333,17 @@
   "source": null,
   "status": "gap"
  },
+ "universityparks": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.761468,
+  "lon": -1.251068,
+  "long": "University Parks parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "valentines": {
   "distance_m": 5138,
   "last_tried": "2026-06-25",
@@ -2303,6 +2405,17 @@
   "status": "failed",
   "trace_date": "2012-03-31",
   "trace_m": 5515
+ },
+ "wendoverwoods": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.76894,
+  "lon": -0.716782,
+  "long": "Wendover Woods parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "whitecliffelake": {
   "distance_m": 5120,
