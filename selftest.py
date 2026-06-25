@@ -33,7 +33,7 @@ def main():
     res = bc.trace_course("selftest", lat0, lon0)
     assert res is not None, "trace_course returned nothing for a valid Saturday-9am fixture"
     L, pts, date = res
-    assert bc.TRACE_LO <= L <= bc.TRACE_HI, f"reconstructed distance out of band: {L:.0f} m"
+    assert bc.REL_LO <= L <= bc.REL_HI, f"reconstructed distance out of success band: {L:.0f} m"
     assert date == "2025-04-12", f"wrong trace date: {date}"
     assert len(pts) > 50, f"too few points: {len(pts)}"
 
