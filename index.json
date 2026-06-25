@@ -221,6 +221,17 @@
   "status": "success",
   "trace_date": "2023-11-25"
  },
+ "burgess": {
+  "distance_m": 6206,
+  "last_tried": "2026-06-25",
+  "lat": 51.484536,
+  "lon": -0.081024,
+  "long": "Burgess parkrun",
+  "relation_m": 6206,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
+ },
  "burnhamandhighbridge": {
   "distance_m": null,
   "last_tried": "2026-06-25",
