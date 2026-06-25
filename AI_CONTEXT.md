@@ -64,7 +64,7 @@ Operational and algorithmic *means*, as long as outputs still validate against `
 
 `JOURNAL.md` is the bots' running diary. Each week the author reads it, then appends an entry
 (date, the idea, *why* from the outcomes, what changed). The point is **accumulated knowledge**:
-build on what worked, don't repeat what didn't, and get **progressively more creative** week over
+build on what worked, don't repeat what didn't, and get **progressively more creative week over
 week. The reviewer also reads it. Append-only; never rewrite past entries.
 
 ## Process the AI must follow
@@ -97,3 +97,6 @@ The weekly review picks the **SMARTEST master + reviewer that still FIT the free
 — capability maximised, the free quota a hard constraint — and, since the same config runs on two
 repos that might pick the same models, each must have free-tier headroom for **both repos combined**.
 It validates every change with a live call; a provider with no key is simply skipped (graceful).
+
+## Learnings (appended by the bot)
+- Averaging multiple Saturday-09:00 traces improves closeness-to-5k and coverage without violating invariants.

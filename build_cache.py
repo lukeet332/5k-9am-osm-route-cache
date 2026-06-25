@@ -136,7 +136,7 @@ def trace_points(name, lat, lon, half_m=900, max_pages=5):
                 break
             open(cf, "w").write(txt)
         n = 0
-        for m in re.finditer(r'<trkpt lat="([-\d.]+)" lon="([-\d.]+)"[^>]*>(.*?)</trkpt>', txt, re.S):
+        for m in re.finditer(r'<trkpt lat="([\-\d.]+)" lon="([\-\d.]+)"[^>]*>(.*?)</trkpt>', txt, re.S):
             n += 1
             tm = re.search(r'<time>([^<]+)</time>', m.group(3))
             if not tm:
@@ -150,9 +150,49 @@ def trace_points(name, lat, lon, half_m=900, max_pages=5):
             break          # last page reached -> stop (kind to OSM)
     return pts
 
-def trace_course(name, lat, lon):
+# NEW: Average multiple Saturday-09:00 traces for improved accuracy
+
+def trace_courses_multi(name, lat, lon):
     pts = trace_points(name, lat, lon)
-    # Saturday, local 09:00..09:45, anchored within 150m of the start (else bunk).
+    # Group by date: Saturday, local 09:00..09:45, anchored within 150m of the start
+    traces = {}
+    for la, lo, t in pts:
+        ldt = local(t)
+        if ldt.weekday() == 5 and ldt.hour == 9 and ldt.minute < 45:
+            date = ldt.date().isoformat()
+            traces.setdefault(date, []).append((la, lo, t))
+    valid_traces = []
+    for date, win in traces.items():
+        win = sorted(win, key=lambda p: p[2])
+        if not win or H(lat, lon, win[0][0], win[0][1]) > 150:
+            continue
+        path = [win[0]]; d = 0.0
+        for p in win[1:]:
+            d += H(path[-1][0], path[-1][1], p[0], p[1]); path.append(p)
+            if d >= 5500 or (p[2] - path[0][2]).total_seconds() > 2700:   # ~5.5k or past 09:45
+                break
+        valid_traces.append([(p[0], p[1]) for p in path])
+    if not valid_traces:
+        return None
+    # Average the traces pointwise (simple mean for each index)
+    minlen = min(len(t) for t in valid_traces)
+    avg_path = []
+    for i in range(minlen):
+        las = [t[i][0] for t in valid_traces]
+        los = [t[i][1] for t in valid_traces]
+        avg_path.append((sum(las)/len(las), sum(los)/len(los)))
+    avg_len = length(avg_path)
+    # Use the first date for metadata
+    first_date = list(traces.keys())[0]
+    return avg_len, avg_path, first_date
+
+def trace_course(name, lat, lon):
+    # Try multi-trace averaging first
+    res = trace_courses_multi(name, lat, lon)
+    if res:
+        return res
+    # Fallback: single trace (original logic)
+    pts = trace_points(name, lat, lon)
     win = sorted([(la, lo, t) for la, lo, t in pts
                   if local(t).weekday() == 5 and local(t).hour == 9 and local(t).minute < 45],
                  key=lambda p: p[2])
@@ -251,7 +291,7 @@ def main():
         if args.commit_each and res:           # real-time: push the moment a route locks
             commit_route(ev["name"], res)
 
-    locked2 = sum(1 for e in events if is_locked(index.get(e["name"])))
+    locked2 = sum(1 for e in events if is_locked(index.get(e["name"])) )
     print(f"\nprocessed {len(cands)}: {hit} resolved, {miss} gaps. coverage now {locked2}/{total} ({locked2/total:.0%}).")
 
 if __name__ == "__main__":
