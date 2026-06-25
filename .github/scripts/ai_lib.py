@@ -19,22 +19,25 @@ CONTEXT_FILE = (REPO / "AI_CONTEXT.md").resolve()
 MODEL_CONFIG = (REPO / ".github" / "ai_model.json").resolve()
 INDEX_FILE = (REPO / "index.json").resolve()
 ALGO_FILE = (REPO / "build_cache.py").resolve()
-ALLOWED = {ALGO_FILE, CONTEXT_FILE}          # the ONLY files a bot may write
+JOURNAL_FILE = (REPO / "JOURNAL.md").resolve()   # the bots' running diary of ideas/learnings
+ALLOWED = {ALGO_FILE, CONTEXT_FILE, JOURNAL_FILE} # the ONLY files a bot may write
 
-# Both providers free. Three tiers:
-#  * github-models (GITHUB_TOKEN, no secret) — the DEEP author/reasoner.
-#  * gemini (needs GEMINI_API_KEY) — supplies the DEEP, INDEPENDENT reviewer (2.5 Pro, a
-#    different family so the review is genuinely independent) AND the FAST tier (2.5 Flash)
-#    the deep model can hand quick/simple subtasks to. If GEMINI_API_KEY is absent the
-#    system degrades gracefully to github-models (reviewer falls back to the deep author).
-# The reviewer must stay a DEEP model — it is the safety gate; Flash is NOT used to review.
+# Multi-source menu (all free), same registry as the WearOsGpx app. The weekly review picks
+# the best PAIR — master (author) + slave (reviewer) — from TWO DIFFERENT providers where
+# possible, so the review is genuinely independent. github-models needs no secret (built-in
+# GITHUB_TOKEN); the rest need their key as a repo secret. A provider with no key is simply
+# skipped, so the system always degrades gracefully (worst case: github-models only).
+# The reviewer must stay a DEEP model — it is the safety gate; the fast tier never reviews.
 PROVIDERS = {
     "github-models": ("https://models.github.ai/inference", "GH_MODELS_TOKEN"),
     "gemini": ("https://generativelanguage.googleapis.com/v1beta/openai", "GEMINI_API_KEY"),
+    "openrouter": ("https://openrouter.ai/api/v1", "OPENROUTER_API_KEY"),
+    "groq": ("https://api.groq.com/openai/v1", "GROQ_API_KEY"),
+    "mistral": ("https://api.mistral.ai/v1", "MISTRAL_API_KEY"),
 }
-DEFAULT_PRIMARY = {"provider": "github-models", "model": "openai/gpt-4.1"}    # deep author
-DEFAULT_FALLBACK = {"provider": "gemini", "model": "gemini-2.5-pro"}          # deep independent reviewer
-DEFAULT_FAST = {"provider": "gemini", "model": "gemini-2.5-flash"}            # fast tier for delegated quick subtasks (never review)
+DEFAULT_PRIMARY = {"provider": "github-models", "model": "openai/gpt-4.1"}    # master / deep author
+DEFAULT_FALLBACK = {"provider": "gemini", "model": "gemini-2.5-pro"}          # slave / deep independent reviewer
+DEFAULT_FAST = {"provider": "gemini", "model": "gemini-2.5-flash"}            # fast tier for delegated quick subtasks (never reviews)
 
 
 def emit(**kv):
@@ -139,6 +142,13 @@ def apply_changes(result):
         target.write_text(content)
         print(f"  patched: {rel}"); changed += 1
     return changed
+
+
+def journal_tail(max_chars=6000):
+    """The most recent slice of JOURNAL.md — the bots' accumulated ideas/learnings."""
+    if not JOURNAL_FILE.exists():
+        return "(empty — no prior entries)"
+    return JOURNAL_FILE.read_text(errors="ignore")[-max_chars:]
 
 
 def outcomes_summary():
