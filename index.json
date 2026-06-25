@@ -8,6 +8,17 @@
   "source": null,
   "status": "gap"
  },
+ "allypally": {
+  "distance_m": 2690,
+  "last_tried": "2026-06-25",
+  "lat": 51.595936,
+  "lon": -0.12233,
+  "long": "Ally Pally parkrun",
+  "relation_m": 2690,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
+ },
  "andover": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -865,6 +876,17 @@
   "source": null,
   "status": "gap"
  },
+ "hockleywoods": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.596133,
+  "lon": 0.64912,
+  "long": "Hockley Woods parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "homewood": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1544,6 +1566,19 @@
   "long": "Street parkrun",
   "source": null,
   "status": "gap"
+ },
+ "sunnyhill": {
+  "distance_m": 4942,
+  "last_tried": "2026-06-25",
+  "lat": 51.598193,
+  "lon": -0.229717,
+  "long": "Sunny Hill parkrun",
+  "provisional": false,
+  "relation_m": null,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2023-07-01",
+  "trace_m": 4942
  },
  "sutcliffe": {
   "distance_m": null,
