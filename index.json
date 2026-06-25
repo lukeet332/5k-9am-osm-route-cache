@@ -10,6 +10,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "abingdon": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.667957,
+  "lon": -1.277429,
+  "long": "Abingdon parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "aldenham": {
   "distance_m": 5012,
   "last_tried": "2026-06-25",
@@ -402,6 +413,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "cassiobury": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.657677,
+  "lon": -0.406335,
+  "long": "Cassiobury parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "catford": {
   "distance_m": 5074,
   "last_tried": "2026-06-25",
@@ -452,6 +474,17 @@
   "lat": 51.544366,
   "lon": -2.397165,
   "long": "Chipping Sodbury parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "churchmead": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.667191,
+  "lon": -0.614472,
+  "long": "Church Mead parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -742,6 +775,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "gnoll": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.661114,
+  "lon": -3.788616,
+  "long": "Gnoll parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "grangemoor": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -834,6 +878,17 @@
   "lat": 51.499405,
   "lon": -0.292253,
   "long": "Gunnersbury parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "gunpowder": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.676037,
+  "lon": -0.000831,
+  "long": "Gunpowder parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -1601,6 +1656,17 @@
   "long": "Sandhurst Memorial parkrun",
   "source": null,
   "status": "gap"
+ },
+ "sandywater": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.680293,
+  "lon": -4.174644,
+  "long": "Sandy Water parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "sevenfields": {
   "distance_m": null,
