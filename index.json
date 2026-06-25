@@ -608,6 +608,17 @@
   "source": null,
   "status": "gap"
  },
+ "gladstone": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.556982,
+  "lon": -0.228223,
+  "long": "Gladstone parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "grangemoor": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -706,6 +717,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "hampsteadheath": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.558598,
+  "lon": -0.168185,
+  "long": "Hampstead Heath parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "hanworth": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -714,6 +736,17 @@
   "long": "Hanworth parkrun",
   "source": null,
   "status": "gap"
+ },
+ "harrowlodge": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.555606,
+  "lon": 0.200715,
+  "long": "Harrow Lodge parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "havant": {
   "distance_m": 5008,
@@ -740,6 +773,17 @@
   "lat": 51.531978,
   "lon": -0.919288,
   "long": "Henley-on-Thames parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "higginsonmarlow": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.566268,
+  "lon": -0.779573,
+  "long": "Higginson parkrun, Marlow",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -900,6 +944,17 @@
   "source": null,
   "status": "gap"
  },
+ "lydiard": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.561489,
+  "lon": -1.853621,
+  "long": "Lydiard parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "maidenhead": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1020,6 +1075,17 @@
   "long": "Mote Park parkrun",
   "source": null,
   "status": "gap"
+ },
+ "newport": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.559479,
+  "lon": -3.030939,
+  "long": "Newport parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "nonsuch": {
   "distance_m": null,
@@ -1541,6 +1607,18 @@
   "source": null,
   "status": "gap"
  },
+ "valentines": {
+  "distance_m": 5138,
+  "last_tried": "2026-06-25",
+  "lat": 51.56749,
+  "lon": 0.07198,
+  "long": "Valentines parkrun",
+  "provisional": true,
+  "relation_m": 5138,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
+ },
  "victoriaparknewbury": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1567,6 +1645,18 @@
   "long": "Walmer and Deal Seafront parkrun",
   "source": null,
   "status": "gap"
+ },
+ "wansteadflats": {
+  "distance_m": 5515,
+  "last_tried": "2026-06-25",
+  "lat": 51.56078,
+  "lon": 0.014977,
+  "long": "Wanstead Flats parkrun",
+  "relation_m": null,
+  "source": "osm_9am_trace_offdist",
+  "status": "failed",
+  "trace_date": "2012-03-31",
+  "trace_m": 5515
  },
  "whitecliffelake": {
   "distance_m": 5120,
