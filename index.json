@@ -581,6 +581,15 @@
   "long": "Shepton Mallet parkrun",
   "source": null
  },
+ "shornewoods": {
+  "distance_m": 4944,
+  "last_tried": "2026-06-25",
+  "lat": 51.404426,
+  "lon": 0.418618,
+  "long": "Shorne Woods parkrun",
+  "source": "osm_9am_trace",
+  "trace_date": "2023-12-16"
+ },
  "sittingbourne": {
   "distance_m": null,
   "last_tried": "2026-06-25",
