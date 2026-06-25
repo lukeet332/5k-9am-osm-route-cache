@@ -70,6 +70,25 @@ Operational and algorithmic *means*, as long as outputs still validate against `
   attributed. This is allowed ONLY within invariant #6: **never parkrun's sites, never scraping,
   never circumventing terms/access controls.** OSM stays the primary source; others are additive.
 
+## Where your full context lives (read these)
+
+Two outputs, two audiences — know which is which:
+- **`routes/<event>.gpx`** — successful courses only. That's for the *app*; you rarely need to read
+  the geometry.
+- **`index.json` — YOUR full log. Read this for context.** One entry per attempted parkrun:
+  - `status`: `success` | `failed` | `gap`
+  - `distance_m`: chosen course length (null for a gap)
+  - `relation_m`, `trace_m`: what the OSM *relation* and the *09:00 trace* each measured — present
+    even when unused. **This is your richest signal**, especially on `failed` entries.
+  - `source`, `trace_date`, `last_tried`, `lat`, `lon`
+- **`failed` entries are the gold for improvement** — e.g. `relation_m ≈ 2300` ⇒ likely one lap of a
+  2-lap parkrun (try doubling); `distance_m` just outside 4.8–5.2 km ⇒ likely an incomplete relation
+  (try way-chaining). Off-distance *geometry* is deliberately NOT stored (token/space cost) — work
+  from the metadata; older states are in git history if ever needed.
+- You're normally handed a compact digest of all this (an outcomes summary) to keep token use low;
+  read `index.json` directly only when you need per-event detail. Prefer **derived feature flags in
+  index.json** over raw geometry — they're cheap and reusable.
+
 ## The idea JOURNAL (build context over time)
 
 `JOURNAL.md` is the bots' running diary. Each week the author reads it, then appends an entry
