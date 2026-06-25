@@ -10,6 +10,19 @@
   "status": "gap",
   "trace_m": null
  },
+ "aldenham": {
+  "distance_m": 5012,
+  "last_tried": "2026-06-25",
+  "lat": 51.647953,
+  "lon": -0.316507,
+  "long": "Aldenham parkrun",
+  "provisional": false,
+  "relation_m": 4977,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2023-08-12",
+  "trace_m": 5012
+ },
  "aliceholt": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -520,6 +533,17 @@
   "source": null,
   "status": "gap"
  },
+ "cwmbran": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.640709,
+  "lon": -3.007679,
+  "long": "Cwmbran parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "cyclopark": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -964,6 +988,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "holywellkinggeorgevplayingfields": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.641774,
+  "lon": -0.416964,
+  "long": "Holywell King George V Playing Fields parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "homewood": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1276,6 +1311,17 @@
   "trace_date": "2017-02-04",
   "trace_m": 4971
  },
+ "oakhill": {
+  "distance_m": 1832,
+  "last_tried": "2026-06-25",
+  "lat": 51.637718,
+  "lon": -0.153744,
+  "long": "Oak Hill parkrun",
+  "relation_m": 1832,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
+ },
  "olddeerpark": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1329,6 +1375,17 @@
   "source": "osm_9am_trace",
   "status": "success",
   "trace_date": "2017-02-25"
+ },
+ "penallta": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.644889,
+  "lon": -3.245679,
+  "long": "Penallta parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "pomphreyhill": {
   "distance_m": null,
@@ -1472,6 +1529,17 @@
   "lat": 51.588559,
   "lon": -2.993317,
   "long": "Riverfront parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "rodingvalley": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.638607,
+  "lon": 0.066415,
+  "long": "Roding Valley parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -1777,6 +1845,17 @@
   "source": null,
   "status": "gap"
  },
+ "tetburygoodsshed": {
+  "distance_m": 2408,
+  "last_tried": "2026-06-25",
+  "lat": 51.637222,
+  "lon": -2.155818,
+  "long": "Tetbury Goods Shed parkrun",
+  "relation_m": 2408,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
+ },
  "thamespathwoolwich": {
   "distance_m": 5667,
   "last_tried": "2026-06-25",
@@ -2080,6 +2159,17 @@
   "lat": 51.520412,
   "lon": -0.238523,
   "long": "Wormwood Scrubs parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "wotton": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.633149,
+  "lon": -2.368786,
+  "long": "Wotton parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
