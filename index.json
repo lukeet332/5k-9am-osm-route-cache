@@ -192,6 +192,14 @@
   "long": "Canterbury parkrun",
   "source": "osm_relation_approx"
  },
+ "catford": {
+  "distance_m": 5074,
+  "last_tried": "2026-06-25",
+  "lat": 51.44824,
+  "lon": -0.00863,
+  "long": "Catford parkrun",
+  "source": "osm_relation"
+ },
  "clair": {
   "distance_m": null,
   "last_tried": "2026-06-25",
