@@ -683,6 +683,29 @@
   "status": "gap",
   "trace_m": null
  },
+ "hackneymarshes": {
+  "distance_m": 5049,
+  "last_tried": "2026-06-25",
+  "lat": 51.553686,
+  "lon": -0.025368,
+  "long": "Hackney Marshes parkrun",
+  "provisional": true,
+  "relation_m": 5049,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
+ },
+ "hadleigh": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.549769,
+  "lon": 0.59606,
+  "long": "Hadleigh parkrun, Essex",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "hanworth": {
   "distance_m": null,
   "last_tried": "2026-06-25",
