@@ -296,6 +296,14 @@
   "source": "osm_9am_trace",
   "trace_date": "2025-04-12"
  },
+ "hoblingwell": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.400981,
+  "lon": 0.098847,
+  "long": "Hoblingwell parkrun",
+  "source": null
+ },
  "homewood": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -630,6 +638,14 @@
   "long": "Street parkrun",
   "source": null
  },
+ "swanley": {
+  "distance_m": 2572,
+  "last_tried": "2026-06-25",
+  "lat": 51.404175,
+  "lon": 0.17519,
+  "long": "Swanley parkrun",
+  "source": "osm_relation_approx"
+ },
  "tamarlakes": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -684,6 +700,14 @@
   "lat": 50.977857,
   "lon": 0.11306,
   "long": "Uckfield parkrun",
+  "source": null
+ },
+ "victoriaparknewbury": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.403431,
+  "lon": -1.320524,
+  "long": "Victoria Park parkrun, Newbury",
   "source": null
  },
  "wakehurst": {
