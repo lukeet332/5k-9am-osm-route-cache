@@ -200,6 +200,14 @@
   "long": "Cranleigh parkrun",
   "source": null
  },
+ "crystalpalace": {
+  "distance_m": 2691,
+  "last_tried": "2026-06-25",
+  "lat": 51.419846,
+  "lon": -0.065703,
+  "long": "Crystal Palace parkrun",
+  "source": "osm_relation_approx"
+ },
  "doverwaterfront": {
   "distance_m": 2385,
   "last_tried": "2026-06-25",
