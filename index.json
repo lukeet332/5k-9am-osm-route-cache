@@ -124,6 +124,17 @@
   "status": "failed",
   "trace_date": "2024-12-14"
  },
+ "aylesbury": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.83162,
+  "lon": -0.838394,
+  "long": "Aylesbury parkrun",
+  "relation_m": 31951,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "banstead": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -388,6 +399,17 @@
   "status": "success",
   "trace_date": "2023-11-25"
  },
+ "brynaman": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.808402,
+  "lon": -3.869719,
+  "long": "Brynaman parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "brynbach": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -544,6 +566,17 @@
   "source": null,
   "status": "gap",
   "trace_m": 156
+ },
+ "chippenhamplayingfields": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.80783,
+  "lon": -2.718161,
+  "long": "Chippenham Playing Fields parkrun, Monmouth",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "chippingsodbury": {
   "distance_m": null,
@@ -851,6 +884,17 @@
   "source": null,
   "status": "gap"
  },
+ "forestofdean": {
+  "distance_m": 4427,
+  "last_tried": "2026-06-25",
+  "lat": 51.808701,
+  "lon": -2.605219,
+  "long": "Forest of Dean parkrun",
+  "relation_m": 4427,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
+ },
  "frimleylodge": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1116,6 +1160,17 @@
   "status": "success",
   "trace_date": "2025-04-12"
  },
+ "haverfordwest": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.797163,
+  "lon": -4.992836,
+  "long": "Haverfordwest parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "hazelwood": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1311,6 +1366,17 @@
   "source": "osm_relation",
   "status": "success"
  },
+ "kingsway": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.821487,
+  "lon": -2.272804,
+  "long": "Kingsway parkrun, Gloucester",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "leavesdencountry": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1332,6 +1398,17 @@
   "status": "success",
   "trace_date": "2024-03-02"
  },
+ "llanfoistcrossing": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.814913,
+  "lon": -3.039861,
+  "long": "Llanfoist Crossing parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "llanishenpark": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1351,6 +1428,17 @@
   "long": "Lloyd parkrun, Croydon",
   "source": null,
   "status": "gap"
+ },
+ "llynllechowain": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.812913,
+  "lon": -4.080563,
+  "long": "Llyn Llech Owain parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "longrunmeadow": {
   "distance_m": null,
@@ -1514,6 +1602,17 @@
   "source": null,
   "status": "gap"
  },
+ "merseaisland": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.79164,
+  "lon": 0.99368,
+  "long": "Mersea Island parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "merthyr": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1668,6 +1767,28 @@
   "relation_m": 3878,
   "source": "osm_relation_offdist",
   "status": "failed",
+  "trace_m": null
+ },
+ "oxford": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.790901,
+  "lon": -1.262419,
+  "long": "Oxford parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "panshanger": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.798644,
+  "lon": -0.138723,
+  "long": "Panshanger parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
   "trace_m": null
  },
  "parccoedgwilym": {
@@ -1893,6 +2014,17 @@
   "source": null,
   "status": "gap",
   "trace_m": 1170
+ },
+ "rothamstedpark": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.812486,
+  "lon": -0.356641,
+  "long": "Rothamsted Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "roundshaw": {
   "distance_m": null,
@@ -2478,6 +2610,17 @@
   "lat": 51.76894,
   "lon": -0.716782,
   "long": "Wendover Woods parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "westmill": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.821422,
+  "lon": -0.060813,
+  "long": "Westmill parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
