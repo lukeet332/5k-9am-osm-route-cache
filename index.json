@@ -1,4 +1,28 @@
 {
+ "bartleypark": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 50.914371,
+  "lon": -1.509865,
+  "long": "Bartley Park parkrun",
+  "source": null
+ },
+ "fordingbridgerecreationground": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 50.925328,
+  "lon": -1.789641,
+  "long": "Fordingbridge Recreation Ground parkrun",
+  "source": null
+ },
+ "frogmarygreenfarm": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 50.941688,
+  "lon": -2.824426,
+  "long": "Frogmary Green Farm parkrun",
+  "source": null
+ },
  "guernsey": {
   "distance_m": 5027,
   "lat": 49.502341,
@@ -15,6 +39,14 @@
   "source": "osm_9am_trace",
   "trace_date": "2025-04-12"
  },
+ "itchenvalleycountry": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 50.944849,
+  "lon": -1.341722,
+  "long": "Itchen Valley Country parkrun",
+  "source": null
+ },
  "jersey": {
   "distance_m": 5076,
   "lat": 49.195026,
@@ -23,12 +55,44 @@
   "source": "osm_9am_trace",
   "trace_date": "2019-08-03"
  },
+ "mallingrec": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 50.880478,
+  "lon": 0.011973,
+  "long": "Malling Rec parkrun",
+  "source": null
+ },
+ "meonvalleytrailwickham": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 50.904574,
+  "lon": -1.182258,
+  "long": "Meon Valley Trail parkrun, Wickham",
+  "source": null
+ },
+ "southampton": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 50.923624,
+  "lon": -1.407766,
+  "long": "Southampton parkrun",
+  "source": null
+ },
  "tamarlakes": {
   "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 50.879837,
   "lon": -4.433418,
   "long": "Tamar Lakes parkrun",
+  "source": null
+ },
+ "whiteley": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 50.884669,
+  "lon": -1.250819,
+  "long": "Whiteley parkrun",
   "source": null
  }
 }
