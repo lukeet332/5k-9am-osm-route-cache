@@ -1,0 +1,9 @@
+{
+ "schemaVersion": 1,
+ "label": "parkruns mapped @4.8-5.2km",
+ "message": "13/884 (1.5%)",
+ "color": "red",
+ "locked": 13,
+ "total": 884,
+ "percent": 1.5
+}

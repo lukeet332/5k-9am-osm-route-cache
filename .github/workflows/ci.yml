@@ -8,6 +8,7 @@ on:
     paths-ignore:           # the cache bot pushes data straight to main; don't run code CI for that
       - 'routes/**'
       - 'index.json'
+      - 'coverage.json'
       - 'JOURNAL.md'
 
 jobs:

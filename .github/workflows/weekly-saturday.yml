@@ -10,7 +10,7 @@ name: Course cache refresh
 # >>> Once coverage is high, dial the cron back to weekly: "0 15 * * 6" (Saturday 15:00 UTC). <<<
 on:
   schedule:
-    - cron: "0 * * * *"       # hourly (INITIAL BUILD; the 429 circuit-breaker self-throttles if OSM pushes back)
+    - cron: "*/30 * * * *"    # every 30 min (aggressive INITIAL BUILD — monitored for OSM 429s; pull back if throttled)
   workflow_dispatch:
 
 permissions:
@@ -41,3 +41,10 @@ jobs:
           git add -A
           git commit -m "cache: gap bookkeeping" || echo "nothing to commit"
           git push || (git pull --rebase origin main && git push) || echo "nothing to push"
+      - name: Refresh repo description with the live coverage tally
+        env:
+          GH_TOKEN: ${{ secrets.BOT_PAT }}
+        run: |
+          read L T P < <(python3 -c "import json;d=json.load(open('coverage.json'));print(d['locked'],d['total'],d['percent'])")
+          gh repo edit "${{ github.repository }}" --description \
+            "📍 ${L}/${T} UK parkruns (${P}%) mapped @4.8–5.2km · Self-maintaining OSM-derived 5k course cache for a personal Wear OS app (AI author+reviewer pipeline). © OpenStreetMap contributors, ODbL. Not affiliated with parkrun."

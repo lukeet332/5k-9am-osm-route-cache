@@ -1,7 +1,10 @@
 # 5k 9am route GPX cache (OSM-derived)
 
+![parkruns mapped](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/lukeet332/5k-9am-osm-route-cache/main/coverage.json)
+
 A cache of UK parkrun-distance (5k) courses as GPX files, built **entirely from
-OpenStreetMap** for offline/navigation use by a personal Wear OS running app.
+OpenStreetMap** for offline/navigation use by a personal Wear OS running app. The badge above
+is the live tally of parkruns mapped within the 4.8–5.2 km tolerance, refreshed every cache run.
 
 > **Data:** © OpenStreetMap contributors, made available under the
 > [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/). Any
