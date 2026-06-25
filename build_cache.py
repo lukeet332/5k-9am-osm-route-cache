@@ -70,6 +70,12 @@ def _throttle():
     if wait > 0: time.sleep(wait)
     _last[0] = time.time()
 
+# Ban-safety circuit breaker: count how often OSM throttles us (HTTP 429). If it happens
+# too many times in a run, main() stops early rather than keep hammering a server that's
+# already telling us to back off — the surest way to avoid getting the IP blocked.
+RATE_LIMIT_HITS = [0]
+MAX_RATE_LIMIT_HITS = 6
+
 def _get(url, data=None, timeout=70):
     _throttle()
     req = urllib.request.Request(url, data=data, headers={"User-Agent": UA})
@@ -77,6 +83,8 @@ def _get(url, data=None, timeout=70):
         try:
             return urllib.request.urlopen(req, timeout=timeout).read().decode("utf-8", "ignore")
         except urllib.error.HTTPError as ex:
+            if ex.code == 429:
+                RATE_LIMIT_HITS[0] += 1     # OSM is throttling us — track it
             if ex.code in (429, 504) and attempt < 3:
                 time.sleep(5 * (attempt + 1)); continue
             raise
@@ -238,15 +246,20 @@ def is_locked(entry):
 def _git(*a):
     try:
         subprocess.run(["git", *a], cwd=HERE, check=True, capture_output=True)
+        return True
     except Exception as e:
         print("  git:", getattr(e, "stderr", e))
+        return False
 
 def commit_route(name, res):
-    """Push this one resolved route to the repo immediately (real-time, not end-of-run)."""
+    """Push this one resolved route to the repo immediately (real-time, not end-of-run).
+    If main moved under us (e.g. an AI PR merged mid-run), rebase and retry once."""
     _git("add", "-A")
     _git("-c", "user.name=cache-bot", "-c", "user.email=cache-bot@users.noreply.github.com",
          "commit", "-m", f"cache: {name} ({res['source']}, {res['distance_m']}m)")
-    _git("push")
+    if not _git("push"):
+        _git("pull", "--rebase", "origin", "main")
+        _git("push")
 
 def main():
     ap = argparse.ArgumentParser()
@@ -290,6 +303,10 @@ def main():
         json.dump(index, open(index_path, "w"), indent=1, sort_keys=True)   # save incrementally
         if args.commit_each and res:           # real-time: push the moment a route locks
             commit_route(ev["name"], res)
+        if RATE_LIMIT_HITS[0] >= MAX_RATE_LIMIT_HITS:   # ban-safety: OSM is throttling us
+            print(f"\nOSM rate-limited us {RATE_LIMIT_HITS[0]}x — stopping this run early to stay safe. "
+                  f"The next scheduled run resumes from here (rotation).")
+            break
 
     locked2 = sum(1 for e in events if is_locked(index.get(e["name"])) )
     print(f"\nprocessed {len(cands)}: {hit} resolved, {miss} gaps. coverage now {locked2}/{total} ({locked2/total:.0%}).")
