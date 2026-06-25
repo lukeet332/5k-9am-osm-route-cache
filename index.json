@@ -221,6 +221,17 @@
   "source": null,
   "status": "gap"
  },
+ "billericay": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.632966,
+  "lon": 0.417446,
+  "long": "Billericay parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "blaisecastle": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -760,6 +771,17 @@
   "lat": 51.600059,
   "lon": -1.425256,
   "long": "Grove Fields parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "grovelands": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.633076,
+  "lon": -0.113769,
+  "long": "Grovelands parkrun, Enfield",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -1422,6 +1444,19 @@
   "source": null,
   "status": "gap"
  },
+ "rickmansworth": {
+  "distance_m": 4982,
+  "last_tried": "2026-06-25",
+  "lat": 51.633087,
+  "lon": -0.47589,
+  "long": "Rickmansworth parkrun",
+  "provisional": false,
+  "relation_m": null,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2023-01-07",
+  "trace_m": 4982
+ },
  "riddlesdown": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1640,6 +1675,17 @@
   "long": "Southwick Country parkrun",
   "source": null,
   "status": "gap"
+ },
+ "southwoodhamferrers": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.631642,
+  "lon": 0.613014,
+  "long": "South Woodham Ferrers parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "squerryeswinery": {
   "distance_m": 4980,
