@@ -71,6 +71,14 @@
   "long": "Bath Skyline parkrun",
   "source": null
  },
+ "beckenhamplace": {
+  "distance_m": 5174,
+  "last_tried": "2026-06-25",
+  "lat": 51.41853,
+  "lon": -0.01959,
+  "long": "Beckenham Place parkrun",
+  "source": "osm_relation"
+ },
  "bedgeburypinetum": {
   "distance_m": 3954,
   "last_tried": "2026-06-25",
@@ -144,6 +152,14 @@
   "long": "Burnham and Highbridge parkrun",
   "source": "osm_relation_approx"
  },
+ "bushy": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.410992,
+  "lon": -0.335791,
+  "long": "Bushy parkrun",
+  "source": null
+ },
  "californiacountry": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -166,6 +182,14 @@
   "lat": 51.004322,
   "lon": -0.100143,
   "long": "Clair parkrun",
+  "source": null
+ },
+ "cosmestonlakes": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.418047,
+  "lon": -3.185615,
+  "long": "Cosmeston Lakes parkrun",
   "source": null
  },
  "cranleigh": {
@@ -295,6 +319,14 @@
   "long": "Havant parkrun",
   "source": "osm_9am_trace",
   "trace_date": "2025-04-12"
+ },
+ "hazelwood": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.405783,
+  "lon": -0.421045,
+  "long": "Hazelwood parkrun",
+  "source": null
  },
  "hoblingwell": {
   "distance_m": null,
