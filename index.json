@@ -613,6 +613,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "chippingnortonschool": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.93812,
+  "lon": -1.54029,
+  "long": "Chipping Norton School parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "chippingsodbury": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -893,6 +904,18 @@
   "long": "Egham Orbit parkrun",
   "source": null,
   "status": "gap"
+ },
+ "felixstowe": {
+  "distance_m": 4987,
+  "last_tried": "2026-06-25",
+  "lat": 51.957778,
+  "lon": 1.345741,
+  "long": "Felixstowe parkrun",
+  "provisional": true,
+  "relation_m": 4987,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
  },
  "finsbury": {
   "distance_m": null,
@@ -1249,6 +1272,17 @@
   "lon": 0.200715,
   "long": "Harrow Lodge parkrun",
   "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "harwich": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.938035,
+  "lon": 1.284809,
+  "long": "Harwich parkrun",
+  "relation_m": 9243,
   "source": null,
   "status": "gap",
   "trace_m": null
@@ -1853,6 +1887,17 @@
   "source": null,
   "status": "gap"
  },
+ "newent": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.926515,
+  "lon": -2.410056,
+  "long": "Newent parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "newport": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -2197,6 +2242,17 @@
   "status": "gap",
   "trace_m": 1170
  },
+ "rossonwye": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.912943,
+  "lon": -2.594417,
+  "long": "Ross-on-Wye parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "rothamstedpark": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -2226,6 +2282,17 @@
   "source": "osm_9am_trace",
   "status": "success",
   "trace_date": "2017-03-04"
+ },
+ "rushmere": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.947057,
+  "lon": -0.674095,
+  "long": "Rushmere parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "rushmoor": {
   "distance_m": null,
@@ -2957,6 +3024,17 @@
   "lat": 51.62337,
   "lon": -0.74009,
   "long": "Wycombe Rye parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "ypromenad": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.950753,
+  "lon": -3.401145,
+  "long": "Y Promen\u00e2d parkrun, Aberhonddu",
   "relation_m": null,
   "source": null,
   "status": "gap",
