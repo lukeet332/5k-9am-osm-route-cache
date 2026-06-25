@@ -831,6 +831,15 @@
   "long": "Walmer and Deal Seafront parkrun",
   "source": "osm_relation_approx"
  },
+ "whitecliffelake": {
+  "distance_m": 5120,
+  "last_tried": "2026-06-25",
+  "lat": 51.432026,
+  "lon": 0.304006,
+  "long": "Whitecliffe Lake parkrun",
+  "source": "osm_9am_trace",
+  "trace_date": "2026-01-24"
+ },
  "whiteley": {
   "distance_m": null,
   "last_tried": "2026-06-25",
