@@ -184,6 +184,14 @@
   "long": "Clair parkrun",
   "source": null
  },
+ "clevedonsalthousefields": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.434573,
+  "lon": -2.866505,
+  "long": "Clevedon Salthouse Fields parkrun",
+  "source": null
+ },
  "cosmestonlakes": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -215,6 +223,14 @@
   "lon": 0.352561,
   "long": "Cyclopark parkrun",
   "source": null
+ },
+ "dartfordheath": {
+  "distance_m": 2454,
+  "last_tried": "2026-06-25",
+  "lat": 51.435932,
+  "lon": 0.189929,
+  "long": "Dartford Heath parkrun",
+  "source": "osm_relation_approx"
  },
  "doverwaterfront": {
   "distance_m": 2385,
@@ -757,6 +773,14 @@
   "lat": 50.879837,
   "lon": -4.433418,
   "long": "Tamar Lakes parkrun",
+  "source": null
+ },
+ "theleas": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.434038,
+  "lon": 0.80213,
+  "long": "The Leas parkrun, Minster",
   "source": null
  },
  "theoldshowfield": {
