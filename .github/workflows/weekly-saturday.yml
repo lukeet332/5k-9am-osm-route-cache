@@ -7,10 +7,17 @@ name: Course cache refresh
 #
 # Runs FREQUENTLY during the initial build to fill the cache fast while staying kind to OSM:
 # hard rate-limit, 429 backoff, and a circuit-breaker that stops a run early if OSM throttles us.
-# >>> Once coverage is high, dial the cron back to weekly: "0 15 * * 6" (Saturday 15:00 UTC). <<<
+#
+# SELF-CHAINING (the primary driver): the last step waits ~25 min then re-dispatches this same
+# workflow (via the BOT_PAT, so the dispatch actually triggers — GITHUB_TOKEN dispatches don't).
+# That gives a reliable ~30-min cadence WITHOUT depending on GitHub's flaky `schedule` cron, which
+# silently drops runs at busy minutes (it had never once fired this workflow). If OSM throttled us
+# (build_cache leaves a .throttled marker), the chain backs off to 60 min — ban-safety first.
+# The `schedule` below is now only a BACKSTOP: if a run ever dies before chaining, cron restarts it.
+# >>> Once coverage is high, dial the cadence back: raise CHAIN_DELAY / change cron to weekly. <<<
 on:
   schedule:
-    - cron: "*/30 * * * *"    # every 30 min (aggressive INITIAL BUILD — monitored for OSM 429s; pull back if throttled)
+    - cron: "7,37 * * * *"    # BACKSTOP only (off the contended :00/:30 slots GitHub drops); chain is primary
   workflow_dispatch:
 
 permissions:
@@ -23,7 +30,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest     # standard runner = free on public repos
-    timeout-minutes: 60
+    timeout-minutes: 90        # build (~15m) + chain wait (25m, or 60m backoff on throttle) must fit
     steps:
       - uses: actions/checkout@v4
         with:
@@ -48,3 +55,18 @@ jobs:
           read L T P < <(python3 -c "import json;d=json.load(open('coverage.json'));print(d['locked'],d['total'],d['percent'])")
           gh repo edit "${{ github.repository }}" --description \
             "✅ ${L}/${T} UK parkruns (${P}%) successfully mapped · Self-maintaining OSM-derived 5k course cache for a personal Wear OS app (AI author+reviewer pipeline). © OpenStreetMap contributors, ODbL. Not affiliated with parkrun."
+      - name: Self-chain the next run (~30 min cadence; cron is only a backstop)
+        if: always()             # chain even if a step failed, so the loop self-heals without the cron
+        env:
+          GH_TOKEN: ${{ secrets.BOT_PAT }}    # a PAT dispatch DOES trigger the next run (GITHUB_TOKEN wouldn't)
+        run: |
+          # Ban-safety: if OSM throttled us this run, back off to 60 min; otherwise ~25 min wait
+          # (+ next build ≈ a ~30 min cadence). Single in-flight run is guaranteed by the
+          # concurrency group, so this can never fan out into parallel hammering of OSM.
+          if [ -f .throttled ]; then
+            DELAY=3600; echo "OSM throttled us ($(cat .throttled)x) — backing off 60 min before the next run."
+          else
+            DELAY=1500; echo "Healthy run — next cache refresh in 25 min."
+          fi
+          sleep "$DELAY"
+          gh workflow run "${{ github.workflow }}" --ref "${{ github.ref_name }}"
