@@ -85,6 +85,17 @@
   "source": null,
   "status": "gap"
  },
+ "aruwrittle": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.73677,
+  "lon": 0.422687,
+  "long": "ARU Writtle parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "ashford": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -490,6 +501,17 @@
   "trace_date": "2025-05-03",
   "trace_m": 5058
  },
+ "chelmsfordcentral": {
+  "distance_m": 6172,
+  "last_tried": "2026-06-25",
+  "lat": 51.732577,
+  "lon": 0.464945,
+  "long": "Chelmsford Central parkrun",
+  "relation_m": 6172,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": 2217
+ },
  "chippenham": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -575,6 +597,19 @@
   "source": null,
   "status": "gap",
   "trace_m": null
+ },
+ "colby": {
+  "distance_m": 5004,
+  "last_tried": "2026-06-25",
+  "lat": 51.74064,
+  "lon": -4.669924,
+  "long": "Colby parkrun",
+  "provisional": false,
+  "relation_m": 4737,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2015-12-26",
+  "trace_m": 5004
  },
  "cosmestonlakes": {
   "distance_m": null,
@@ -1118,6 +1153,17 @@
   "source": null,
   "status": "gap"
  },
+ "horspath": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.737281,
+  "lon": -1.188165,
+  "long": "Horspath parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "ifieldmillpond": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1366,6 +1412,17 @@
   "long": "Meon Valley Trail parkrun, Wickham",
   "source": null,
   "status": "gap"
+ },
+ "merthyr": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.73896,
+  "lon": -3.375658,
+  "long": "Merthyr parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "mileend": {
   "distance_m": 5638,
