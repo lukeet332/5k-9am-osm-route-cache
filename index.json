@@ -314,6 +314,17 @@
   "source": null,
   "status": "gap"
  },
+ "canonspark": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.612291,
+  "lon": -0.296184,
+  "long": "Canons Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "canterbury": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -710,6 +721,17 @@
   "status": "failed",
   "trace_m": null
  },
+ "grovefields": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.600059,
+  "lon": -1.425256,
+  "long": "Grove Fields parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "guernsey": {
   "distance_m": 5027,
   "lat": 49.502341,
@@ -1034,6 +1056,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "maesteg": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.609499,
+  "lon": -3.665573,
+  "long": "Maesteg parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "maidenhead": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1249,6 +1282,17 @@
   "lon": -2.47805,
   "long": "Pomphrey Hill parkrun",
   "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "pontypridd": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.602009,
+  "lon": -3.339028,
+  "long": "Pontypridd parkrun",
+  "relation_m": 19377,
   "source": null,
   "status": "gap",
   "trace_m": null
@@ -1598,6 +1642,17 @@
   "source": null,
   "status": "gap"
  },
+ "swanseabay": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.611029,
+  "lon": -3.967061,
+  "long": "Swansea Bay parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "tamarlakes": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1635,6 +1690,17 @@
   "long": "The Old Showfield parkrun",
   "source": null,
   "status": "gap"
+ },
+ "thornbury": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.606368,
+  "lon": -2.530114,
+  "long": "Thornbury parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "thorneybaybeach": {
   "distance_m": null,
@@ -1783,6 +1849,17 @@
   "long": "Walmer and Deal Seafront parkrun",
   "source": null,
   "status": "gap"
+ },
+ "walthamstow": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.602666,
+  "lon": -0.007854,
+  "long": "Walthamstow parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "wansteadflats": {
   "distance_m": 5515,
