@@ -55,6 +55,14 @@
   "long": "Basingstoke parkrun",
   "source": null
  },
+ "bathskyline": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.364717,
+  "lon": -2.338425,
+  "long": "Bath Skyline parkrun",
+  "source": null
+ },
  "bedgeburypinetum": {
   "distance_m": 3954,
   "last_tried": "2026-06-25",
@@ -274,6 +282,14 @@
   "source": "osm_9am_trace",
   "trace_date": "2024-03-02"
  },
+ "lloyd": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.364807,
+  "lon": -0.079973,
+  "long": "Lloyd parkrun, Croydon",
+  "source": null
+ },
  "longrunmeadow": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -345,6 +361,23 @@
   "lon": 0.541967,
   "long": "Mote Park parkrun",
   "source": "osm_relation_approx"
+ },
+ "nonsuch": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.356926,
+  "lon": -0.231078,
+  "long": "Nonsuch parkrun",
+  "source": null
+ },
+ "orpington": {
+  "distance_m": 4917,
+  "last_tried": "2026-06-25",
+  "lat": 51.365283,
+  "lon": 0.117224,
+  "long": "Orpington parkrun",
+  "source": "osm_9am_trace",
+  "trace_date": "2022-12-10"
  },
  "pegwellbay": {
   "distance_m": 4913,
