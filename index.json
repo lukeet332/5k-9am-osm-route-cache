@@ -92,6 +92,17 @@
   "source": null,
   "status": "gap"
  },
+ "basildon": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.577778,
+  "lon": 0.499615,
+  "long": "Basildon parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "basingstoke": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -534,6 +545,17 @@
   "source": null,
   "status": "gap"
  },
+ "finsbury": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.569595,
+  "lon": -0.104145,
+  "long": "Finsbury parkrun",
+  "relation_m": 960,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "fivearches": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -736,6 +758,17 @@
   "long": "Hanworth parkrun",
   "source": null,
   "status": "gap"
+ },
+ "harrow": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.581781,
+  "lon": -0.342734,
+  "long": "Harrow parkrun",
+  "relation_m": 959,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "harrowlodge": {
   "distance_m": null,
@@ -1249,6 +1282,17 @@
   "long": "Riddlesdown parkrun",
   "source": null,
   "status": "gap"
+ },
+ "rogiet": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.583268,
+  "lon": -2.779965,
+  "long": "Rogiet parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": 1170
  },
  "roundshaw": {
   "distance_m": null,
