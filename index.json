@@ -996,6 +996,18 @@
   "source": null,
   "status": "gap"
  },
+ "greatnotley": {
+  "distance_m": 5150,
+  "last_tried": "2026-06-25",
+  "lat": 51.864147,
+  "lon": 0.51584,
+  "long": "Great Notley parkrun",
+  "provisional": true,
+  "relation_m": 5150,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
+ },
  "greenhamcommon": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1440,6 +1452,18 @@
   "long": "Lloyd parkrun, Croydon",
   "source": null,
   "status": "gap"
+ },
+ "llwybrdyffryntywinantgaredig": {
+  "distance_m": 2430,
+  "last_tried": "2026-06-25",
+  "lat": 51.863176,
+  "lon": -4.19348,
+  "long": "Llwybr Dyffryn Tywi parkrun, Nantgaredig",
+  "relation_m": null,
+  "source": "osm_9am_trace_offdist",
+  "status": "failed",
+  "trace_date": "2026-04-11",
+  "trace_m": 2430
  },
  "llynllechowain": {
   "distance_m": null,
