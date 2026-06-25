@@ -1245,6 +1245,19 @@
   "source": "osm_relation",
   "status": "success"
  },
+ "raphael": {
+  "distance_m": 4888,
+  "last_tried": "2026-06-25",
+  "lat": 51.585798,
+  "lon": 0.19249,
+  "long": "Raphael parkrun",
+  "provisional": false,
+  "relation_m": 2346,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2016-12-10",
+  "trace_m": 4888
+ },
  "reading": {
   "distance_m": null,
   "last_tried": "2026-06-25",
