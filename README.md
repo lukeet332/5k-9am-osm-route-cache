@@ -31,6 +31,18 @@ refreshed every cache run.
    at the start at 09:00 local, trimmed to the 09:00–09:45 race window.
 3. else **no entry** (logged as a gap — most parkruns have no OSM trace; coverage is partial **by design**).
 
+## `routes/` layout — `success/` vs `failed/`
+
+- **`routes/success/<event>.gpx`** — courses within the 4.8–5.2 km success tolerance. **These are
+  what the app uses**, and what the badge counts.
+- **`routes/failed/<event>.gpx`** — OSM data was found near the start but it's *off-tolerance*
+  (e.g. a ~2.5 km relation that's likely **one lap of a 2-lap parkrun**, or a near-miss incomplete
+  relation). Kept purely as **diagnostics for the AI** to iterate on — not used as a course.
+- An event lives in **at most one** folder at a time (`build_one` clears both before writing), so a
+  success **replaces/deletes** any prior failed entry. Every `index.json` entry also records what the
+  relation *and* the trace measured (`relation_m`, `trace_m`) plus a `status`. Old versions live in
+  **git history**, not as duplicate files.
+
 ## Coverage is partial — and that's expected
 
 Most runners log to Strava/Garmin, not OSM, so the open trace pool is sparse — many parkruns have

@@ -20,7 +20,8 @@ OSM_TRACKPOINTS = "https://api.openstreetmap.org/api/0.6/trackpoints"
 UK_CC, ADULT = 97, 1
 TARGET = 5000
 REL_LO, REL_HI = 4800, 5200      # keep a relation only this close to 5k (it's a curated line)
-TRACE_LO, TRACE_HI = 4500, 5600  # the real run — allow a bit more GPS/reconstruction variance
+SANE_LO, SANE_HI = 1500, 9000    # off-tolerance finds in this band -> routes/failed/ as diagnostics
+                                 # (e.g. ~2.5km = likely one lap of a 2-lap parkrun); wilder = noise, ignored
 RATE_S = 1.5            # min seconds between network calls (kind to OSM)
 HAVANT = (50.87577, -0.97557)    # rollout anchor: start here, work north
 COVERAGE_REFINE = 0.80  # only re-query already-accurate courses once >=80% are within tolerance
@@ -213,9 +214,10 @@ def trace_course(name, lat, lon):
             break
     return length(path), [(p[0], p[1]) for p in path], win[0][2].date().isoformat()
 
-def write_gpx(name, longname, pts, source):
-    os.makedirs(ROUTES, exist_ok=True)
-    with open(os.path.join(ROUTES, f"{name}.gpx"), "w") as f:
+def write_gpx(name, longname, pts, ok, source):
+    folder = os.path.join(ROUTES, "success" if ok else "failed")
+    os.makedirs(folder, exist_ok=True)
+    with open(os.path.join(folder, f"{name}.gpx"), "w") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
         f.write('<gpx version="1.1" creator="5k-9am-osm-route-cache" xmlns="http://www.topografix.com/GPX/1/1">\n')
         f.write(f'  <metadata><desc>Derived from OpenStreetMap ((c) OpenStreetMap contributors, ODbL). source={source}</desc></metadata>\n')
@@ -224,23 +226,46 @@ def write_gpx(name, longname, pts, source):
             f.write(f'    <trkpt lat="{la:.6f}" lon="{lo:.6f}"/>\n')
         f.write('  </trkseg></trk>\n</gpx>\n')
 
+def _clear_gpx(name):
+    for sub in ("success", "failed"):
+        p = os.path.join(ROUTES, sub, f"{name}.gpx")
+        if os.path.exists(p):
+            os.remove(p)
+
 def build_one(ev):
+    """Return a rich result (status + ALL diagnostics) so the AI has maximum context.
+      success: in-tolerance (4.8-5.2km) course, relation preferred  -> routes/success/
+      failed:  a relation/trace was found but off-tolerance (within a sane band)  -> routes/failed/
+               (kept as a diagnostic — e.g. a ~2.5km relation is likely ONE LAP of a 2-lap parkrun)
+      gap:     nothing usable found (no file)
+    Every entry records relation_m AND trace_m (what each source measured), even when unused."""
     name, lat, lon = ev["name"], ev["lat"], ev["lon"]
-    rel = relation_course(lat, lon, name)
-    if rel and REL_LO <= rel[1] <= REL_HI:
-        write_gpx(name, ev["long"], rel[2], "osm_relation")
-        return {"source": "osm_relation", "distance_m": round(rel[1])}
-    tr = trace_course(name, lat, lon)
-    if tr and TRACE_LO <= tr[0] <= TRACE_HI:
-        write_gpx(name, ev["long"], tr[1], f"osm_9am_trace:{tr[2]}")
-        return {"source": "osm_9am_trace", "distance_m": round(tr[0]), "trace_date": tr[2]}
-    # No course within tolerance -> it's a GAP. Never cache an off-distance "approximate"
-    # relation (e.g. a 2.5 km or 40 km route that merely has "parkrun" in its name) — and
-    # drop any stale GPX we may have written for this event on an earlier run.
-    stale = os.path.join(ROUTES, f"{name}.gpx")
-    if os.path.exists(stale):
-        os.remove(stale)
-    return None
+    rel = relation_course(lat, lon, name)        # (relname, dist, chain) or None
+    tr = trace_course(name, lat, lon)            # (dist, pts, date) or None
+    diag = {"relation_m": round(rel[1]) if rel else None,
+            "trace_m": round(tr[0]) if tr else None}
+    _clear_gpx(name)                              # rewrite into the correct folder below
+
+    if rel and REL_LO <= rel[1] <= REL_HI:        # SUCCESS via relation
+        write_gpx(name, ev["long"], rel[2], True, "osm_relation")
+        return {"source": "osm_relation", "distance_m": round(rel[1]), "status": "success", **diag}
+    if tr and REL_LO <= tr[0] <= REL_HI:          # SUCCESS via trace
+        write_gpx(name, ev["long"], tr[1], True, "osm_9am_trace")
+        return {"source": "osm_9am_trace", "distance_m": round(tr[0]), "status": "success",
+                "trace_date": tr[2], **diag}
+
+    cands = []                                    # FAILED diagnostics (off-tolerance but plausible)
+    if rel and SANE_LO <= rel[1] <= SANE_HI: cands.append(("osm_relation_offdist", rel[1], rel[2], None))
+    if tr  and SANE_LO <= tr[0]  <= SANE_HI: cands.append(("osm_9am_trace_offdist", tr[0], tr[1], tr[2]))
+    if cands:
+        src, dist, pts, date = min(cands, key=lambda c: abs(c[1] - TARGET))
+        write_gpx(name, ev["long"], pts, False, src)
+        r = {"source": src, "distance_m": round(dist), "status": "failed", **diag}
+        if date:
+            r["trace_date"] = date
+        return r
+
+    return {"source": None, "distance_m": None, "status": "gap", **diag}   # GAP (no usable data)
 
 def is_locked(entry):
     """A course is 'accurate/locked' iff cached within the 4.8-5.2km tolerance."""
@@ -259,7 +284,7 @@ def commit_route(name, res):
     If main moved under us (e.g. an AI PR merged mid-run), rebase and retry once."""
     _git("add", "-A")
     _git("-c", "user.name=cache-bot", "-c", "user.email=cache-bot@users.noreply.github.com",
-         "commit", "-m", f"cache: {name} ({res['source']}, {res['distance_m']}m)")
+         "commit", "-m", f"cache: {name} [{res['status']}] ({res['source']}, {res['distance_m']}m)")
     if not _git("push"):
         _git("pull", "--rebase", "origin", "main")
         _git("push")
@@ -288,23 +313,20 @@ def main():
     if args.limit:
         cands = cands[:args.limit]
 
-    hit = miss = 0
+    tally = {"success": 0, "failed": 0, "gap": 0}
     for ev in cands:
         try:
             res = build_one(ev)
         except Exception as ex:
             print(f"  {ev['name']:<24} ERROR {ex}"); continue
-        entry = index.get(ev["name"], {})
-        entry.update({"long": ev["long"], "lat": ev["lat"], "lon": ev["lon"], "last_tried": today})
-        if res:
-            entry.update(res); hit += 1
-            print(f"  {ev['name']:<24} {res['source']:<22} {res['distance_m']}m")
-        else:
-            entry.update({"source": None, "distance_m": None}); miss += 1
-            print(f"  {ev['name']:<24} (no OSM course)")
+        # build_one always returns a rich dict (status success/failed/gap + diagnostics).
+        entry = {"long": ev["long"], "lat": ev["lat"], "lon": ev["lon"], "last_tried": today, **res}
         index[ev["name"]] = entry
         json.dump(index, open(index_path, "w"), indent=1, sort_keys=True)   # save incrementally
-        if args.commit_each and res:           # real-time: push the moment a route locks
+        st = res["status"]
+        tally[st] = tally.get(st, 0) + 1
+        print(f"  {ev['name']:<24} {st:<8} {(res.get('source') or '-'):<24} {res.get('distance_m') or ''}")
+        if args.commit_each and st in ("success", "failed"):   # real-time: push when a GPX changes
             commit_route(ev["name"], res)
         if RATE_LIMIT_HITS[0] >= MAX_RATE_LIMIT_HITS:   # ban-safety: OSM is throttling us
             print(f"\nOSM rate-limited us {RATE_LIMIT_HITS[0]}x — stopping this run early to stay safe. "
@@ -312,7 +334,8 @@ def main():
             break
 
     locked2 = sum(1 for e in events if is_locked(index.get(e["name"])) )
-    print(f"\nprocessed {len(cands)}: {hit} resolved, {miss} gaps. coverage now {locked2}/{total} ({locked2/total:.0%}).")
+    print(f"\nprocessed {len(cands)}: {tally['success']} success, {tally['failed']} failed (off-tol diagnostics), "
+          f"{tally['gap']} gap. coverage now {locked2}/{total} ({locked2/total:.0%}).")
     # Live tally (out of ALL UK parkruns) — drives the README badge + repo description.
     # Always green: every mapped course is a success, however many there are so far.
     pct = round(100 * locked2 / total, 1) if total else 0.0
