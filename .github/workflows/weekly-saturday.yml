@@ -10,7 +10,7 @@ name: Course cache refresh
 # >>> Once coverage is high, dial the cron back to weekly: "0 15 * * 6" (Saturday 15:00 UTC). <<<
 on:
   schedule:
-    - cron: "0 */2 * * *"     # every 2 hours (INITIAL BUILD)
+    - cron: "0 * * * *"       # hourly (INITIAL BUILD; the 429 circuit-breaker self-throttles if OSM pushes back)
   workflow_dispatch:
 
 permissions:
