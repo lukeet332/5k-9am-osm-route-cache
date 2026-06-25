@@ -1,4 +1,15 @@
 {
+ "aberfields": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.614631,
+  "lon": -3.538198,
+  "long": "Aberfields parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "aliceholt": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -230,6 +241,17 @@
   "source": null,
   "status": "gap"
  },
+ "brentwood": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.622582,
+  "lon": 0.266879,
+  "long": "Brentwood parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "brickfieldspark": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -295,6 +317,17 @@
   "long": "Burnham and Highbridge parkrun",
   "source": null,
   "status": "gap"
+ },
+ "burnhamoncrouch": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.627409,
+  "lon": 0.810923,
+  "long": "Burnham-on-Crouch parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "bushy": {
   "distance_m": null,
@@ -1317,6 +1350,18 @@
   "source": null,
   "status": "gap"
  },
+ "pymmes": {
+  "distance_m": 5371,
+  "last_tried": "2026-06-25",
+  "lat": 51.61887,
+  "lon": -0.066953,
+  "long": "Pymmes parkrun",
+  "relation_m": 29298,
+  "source": "osm_9am_trace_offdist",
+  "status": "failed",
+  "trace_date": "2012-01-21",
+  "trace_m": 5371
+ },
  "quakerswalk": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1465,6 +1510,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "severnbridge": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.619014,
+  "lon": -2.664531,
+  "long": "Severn Bridge parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "sharphamroadplayingfields": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1551,6 +1607,19 @@
   "long": "South Norwood parkrun",
   "source": null,
   "status": "gap"
+ },
+ "southoxhey": {
+  "distance_m": 5038,
+  "last_tried": "2026-06-25",
+  "lat": 51.631433,
+  "lon": -0.393135,
+  "long": "South Oxhey parkrun",
+  "provisional": false,
+  "relation_m": null,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2020-02-22",
+  "trace_m": 5038
  },
  "southwark": {
   "distance_m": 5143,
@@ -1901,6 +1970,17 @@
   "source": null,
   "status": "gap"
  },
+ "wickfordmemorial": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.619452,
+  "lon": 0.535186,
+  "long": "Wickford Memorial parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "wimbledon": {
   "distance_m": 4960,
   "last_tried": "2026-06-25",
@@ -1954,6 +2034,17 @@
   "lat": 51.520412,
   "lon": -0.238523,
   "long": "Wormwood Scrubs parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "wycomberye": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.62337,
+  "lon": -0.74009,
+  "long": "Wycombe Rye parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
