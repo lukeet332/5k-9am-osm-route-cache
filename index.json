@@ -1177,6 +1177,17 @@
   "source": null,
   "status": "gap"
  },
+ "thamespathwoolwich": {
+  "distance_m": 5667,
+  "last_tried": "2026-06-25",
+  "lat": 51.49615,
+  "lon": 0.076671,
+  "long": "Thames Path parkrun, Woolwich",
+  "relation_m": 5667,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": 2956
+ },
  "theleas": {
   "distance_m": null,
   "last_tried": "2026-06-25",
