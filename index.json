@@ -79,6 +79,14 @@
   "long": "Beckenham Place parkrun",
   "source": "osm_relation"
  },
+ "bedfont": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.440762,
+  "lon": -0.451523,
+  "long": "Bedfont Lakes parkrun",
+  "source": null
+ },
  "bedgeburypinetum": {
   "distance_m": 3954,
   "last_tried": "2026-06-25",
@@ -200,6 +208,14 @@
   "long": "Cosmeston Lakes parkrun",
   "source": null
  },
+ "crane": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.441168,
+  "lon": -0.372075,
+  "long": "Crane Park parkrun",
+  "source": null
+ },
  "cranleigh": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -240,6 +256,14 @@
   "lon": 0.189929,
   "long": "Dartford Heath parkrun",
   "source": "osm_relation_approx"
+ },
+ "dintonpastures": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.440292,
+  "lon": -0.880056,
+  "long": "Dinton Pastures parkrun",
+  "source": null
  },
  "doverwaterfront": {
   "distance_m": 2385,
@@ -904,6 +928,15 @@
   "lon": 1.041942,
   "long": "Whitstable parkrun",
   "source": "osm_relation_approx"
+ },
+ "wimbledon": {
+  "distance_m": 4960,
+  "last_tried": "2026-06-25",
+  "lat": 51.442078,
+  "lon": -0.232215,
+  "long": "Wimbledon Common parkrun",
+  "source": "osm_9am_trace",
+  "trace_date": "2022-12-31"
  },
  "winchester": {
   "distance_m": 4760,
