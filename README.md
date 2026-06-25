@@ -31,17 +31,21 @@ refreshed every cache run.
    at the start at 09:00 local, trimmed to the 09:00–09:45 race window.
 3. else **no entry** (logged as a gap — most parkruns have no OSM trace; coverage is partial **by design**).
 
-## `routes/` layout — `success/` vs `failed/`
+## Two outputs: `routes/` (for the app) and `index.json` (for the AI)
 
-- **`routes/success/<event>.gpx`** — courses within the 4.8–5.2 km success tolerance. **These are
-  what the app uses**, and what the badge counts.
-- **`routes/failed/<event>.gpx`** — OSM data was found near the start but it's *off-tolerance*
-  (e.g. a ~2.5 km relation that's likely **one lap of a 2-lap parkrun**, or a near-miss incomplete
-  relation). Kept purely as **diagnostics for the AI** to iterate on — not used as a course.
-- An event lives in **at most one** folder at a time (`build_one` clears both before writing), so a
-  success **replaces/deletes** any prior failed entry. Every `index.json` entry also records what the
-  relation *and* the trace measured (`relation_m`, `trace_m`) plus a `status`. Old versions live in
-  **git history**, not as duplicate files.
+- **`routes/<event>.gpx`** — **only successful courses** (within 4.8–5.2 km). This is all the **app**
+  needs; it's also what the badge counts. One file per event; a later non-success deletes it.
+- **`index.json`** — the **full detailed log of every attempt**, which is what the **AI** reads to
+  improve the script. Each entry:
+  - `status` — `success` | `failed` | `gap`
+  - `distance_m` — the chosen course length (null for a gap)
+  - `relation_m`, `trace_m` — what the OSM *relation* and the *09:00 trace* each measured (so a
+    `failed` like `relation_m: 2238` flags "≈ one lap of a 2-lap parkrun → try doubling")
+  - `source`, `trace_date`, `last_tried`, `lat`, `lon`
+
+**Failures are kept as data, not files** — the off-distance geometry isn't stored (it would bloat the
+cache and the AI's token budget); the metadata above is the signal. The full coverage history (and any
+past geometry) lives in **git history**.
 
 ## Coverage is partial — and that's expected
 
