@@ -10,6 +10,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "aberdare": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.718796,
+  "lon": -3.460089,
+  "long": "Aberdare parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "aberfields": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1247,6 +1258,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "lydney": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.721613,
+  "lon": -2.52648,
+  "long": "Lydney parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "maesteg": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1277,6 +1299,19 @@
   "long": "Maidstone River Park parkrun",
   "source": null,
   "status": "gap"
+ },
+ "maldonprom": {
+  "distance_m": 5092,
+  "last_tried": "2026-06-25",
+  "lat": 51.726742,
+  "lon": 0.68877,
+  "long": "Maldon Prom parkrun",
+  "provisional": false,
+  "relation_m": 3267,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2025-07-12",
+  "trace_m": 5092
  },
  "mallingrec": {
   "distance_m": null,
