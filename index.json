@@ -1284,6 +1284,17 @@
   "source": null,
   "status": "gap"
  },
+ "thorneybaybeach": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.513523,
+  "lon": 0.586015,
+  "long": "Thorney Bay Beach parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "thoulstone": {
   "distance_m": null,
   "last_tried": "2026-06-25",
