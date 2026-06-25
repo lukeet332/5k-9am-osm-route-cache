@@ -119,6 +119,17 @@
   "source": "osm_relation",
   "status": "success"
  },
+ "beckton": {
+  "distance_m": 5028,
+  "last_tried": "2026-06-25",
+  "lat": 51.51176,
+  "lon": 0.046542,
+  "long": "Beckton parkrun",
+  "relation_m": 5028,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": 4912
+ },
  "bedfont": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -786,6 +797,17 @@
   "long": "Lullingstone parkrun",
   "source": null,
   "status": "gap"
+ },
+ "maidenhead": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.51095,
+  "lon": -0.712135,
+  "long": "Maidenhead parkrun",
+  "relation_m": 31698,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "maidstoneriverpark": {
   "distance_m": null,
