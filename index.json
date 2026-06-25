@@ -248,6 +248,14 @@
   "long": "Edenbrook Country parkrun",
   "source": null
  },
+ "eghamorbit": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.428178,
+  "lon": -0.540107,
+  "long": "Egham Orbit parkrun",
+  "source": null
+ },
  "fivearches": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -262,6 +270,14 @@
   "lat": 51.075729,
   "lon": 1.172753,
   "long": "Folkestone parkrun",
+  "source": "osm_relation_approx"
+ },
+ "footscraymeadows": {
+  "distance_m": 3523,
+  "last_tried": "2026-06-25",
+  "lat": 51.428711,
+  "lon": 0.136191,
+  "long": "Foots Cray Meadows parkrun",
   "source": "osm_relation_approx"
  },
  "fordingbridgerecreationground": {
