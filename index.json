@@ -224,6 +224,15 @@
   "long": "Cyclopark parkrun",
   "source": null
  },
+ "dartford": {
+  "distance_m": 5076,
+  "last_tried": "2026-06-25",
+  "lat": 51.439141,
+  "lon": 0.220166,
+  "long": "Dartford parkrun",
+  "source": "osm_9am_trace",
+  "trace_date": "2025-04-19"
+ },
  "dartfordheath": {
   "distance_m": 2454,
   "last_tried": "2026-06-25",
@@ -365,6 +374,14 @@
   "lat": 51.247383,
   "lon": -0.562062,
   "long": "Guildford parkrun",
+  "source": null
+ },
+ "hanworth": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.43874,
+  "lon": -0.398287,
+  "long": "Hanworth parkrun",
   "source": null
  },
  "havant": {
