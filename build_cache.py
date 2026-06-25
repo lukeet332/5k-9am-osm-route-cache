@@ -286,6 +286,19 @@ def _git(*a):
         print("  git:", getattr(e, "stderr", e))
         return False
 
+def write_coverage(index, events):
+    """Write coverage.json — the live tally that drives the README badge AND (via a push-triggered
+    workflow) the repo description. Called after EACH success so the count tracks in real time,
+    not just at run-end. Always green: every mapped course is a success, however many so far."""
+    total = len(events)
+    locked = sum(1 for e in events if is_locked(index.get(e["name"])))
+    pct = round(100 * locked / total, 1) if total else 0.0
+    json.dump({"schemaVersion": 1, "label": "parkruns successfully mapped",
+               "message": f"{locked}/{total} ({pct}%)", "color": "brightgreen",
+               "locked": locked, "total": total, "percent": pct},
+              open(os.path.join(HERE, "coverage.json"), "w"), indent=1)
+    return locked, total, pct
+
 def commit_route(name, res):
     """Push this one resolved route to the repo immediately (real-time, not end-of-run).
     If main moved under us (e.g. an AI PR merged mid-run), rebase and retry once."""
@@ -334,6 +347,7 @@ def main():
         tally[st] = tally.get(st, 0) + 1
         print(f"  {ev['name']:<24} {st:<8} {(res.get('source') or '-'):<24} {res.get('distance_m') or ''}")
         if args.commit_each and st == "success":   # real-time: push each course as it locks
+            write_coverage(index, events)           # refresh the badge tally so it rides along in the commit
             commit_route(ev["name"], res)
         if RATE_LIMIT_HITS[0] >= MAX_RATE_LIMIT_HITS:   # ban-safety: OSM is throttling us
             print(f"\nOSM rate-limited us {RATE_LIMIT_HITS[0]}x — stopping this run early to stay safe. "
@@ -349,16 +363,9 @@ def main():
     elif os.path.exists(throttled):
         os.remove(throttled)
 
-    locked2 = sum(1 for e in events if is_locked(index.get(e["name"])) )
+    locked2, _, _ = write_coverage(index, events)   # final sync (also written per-success above)
     print(f"\nprocessed {len(cands)}: {tally['success']} success, {tally['failed']} failed (off-tol diagnostics), "
           f"{tally['gap']} gap. coverage now {locked2}/{total} ({locked2/total:.0%}).")
-    # Live tally (out of ALL UK parkruns) — drives the README badge + repo description.
-    # Always green: every mapped course is a success, however many there are so far.
-    pct = round(100 * locked2 / total, 1) if total else 0.0
-    json.dump({"schemaVersion": 1, "label": "parkruns successfully mapped",
-               "message": f"{locked2}/{total} ({pct}%)", "color": "brightgreen",
-               "locked": locked2, "total": total, "percent": pct},
-              open(os.path.join(HERE, "coverage.json"), "w"), indent=1)
 
 if __name__ == "__main__":
     main()

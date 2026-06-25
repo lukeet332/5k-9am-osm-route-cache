@@ -1,0 +1,33 @@
+name: Refresh repo description
+
+# Keeps the repo description's "✅ N/884 successfully mapped" tally LIVE. It fires the moment a
+# cache commit changes coverage.json on main (each route locks -> build_cache rewrites coverage.json
+# -> the per-route push lands it here), so the number tracks in real time instead of only at run-end.
+# The cache bot pushes with the BOT_PAT (a real-user PAT), so these pushes DO trigger this workflow
+# (a GITHUB_TOKEN push wouldn't). This job only edits repo metadata — it never pushes — so no loop.
+on:
+  push:
+    branches: [main]
+    paths: ["coverage.json"]
+  workflow_dispatch:        # allow a manual resync
+
+permissions:
+  contents: read
+
+concurrency:
+  group: refresh-description
+  cancel-in-progress: true  # only the newest tally matters; drop superseded updates
+
+jobs:
+  describe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set description from coverage.json
+        env:
+          GH_TOKEN: ${{ secrets.BOT_PAT }}    # admin PAT -> may edit repo metadata
+        run: |
+          read L T P < <(python3 -c "import json;d=json.load(open('coverage.json'));print(d['locked'],d['total'],d['percent'])")
+          gh repo edit "${{ github.repository }}" --description \
+            "✅ ${L}/${T} UK parkruns (${P}%) successfully mapped · Self-maintaining OSM-derived 5k course cache for a personal Wear OS app (AI author+reviewer pipeline). © OpenStreetMap contributors, ODbL. Not affiliated with parkrun."

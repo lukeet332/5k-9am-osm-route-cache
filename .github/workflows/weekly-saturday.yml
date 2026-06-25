@@ -48,13 +48,8 @@ jobs:
           git add -A
           git commit -m "cache: gap bookkeeping" || echo "nothing to commit"
           git push || (git pull --rebase origin main && git push) || echo "nothing to push"
-      - name: Refresh repo description with the live coverage tally
-        env:
-          GH_TOKEN: ${{ secrets.BOT_PAT }}
-        run: |
-          read L T P < <(python3 -c "import json;d=json.load(open('coverage.json'));print(d['locked'],d['total'],d['percent'])")
-          gh repo edit "${{ github.repository }}" --description \
-            "✅ ${L}/${T} UK parkruns (${P}%) successfully mapped · Self-maintaining OSM-derived 5k course cache for a personal Wear OS app (AI author+reviewer pipeline). © OpenStreetMap contributors, ODbL. Not affiliated with parkrun."
+      # NOTE: the repo description is refreshed LIVE by refresh-description.yml, which fires on every
+      # coverage.json push (per route locked) — no end-of-run description step needed here anymore.
       - name: Self-chain the next run (~30 min cadence; cron is only a backstop)
         if: always()             # chain even if a step failed, so the loop self-heals without the cron
         env:
