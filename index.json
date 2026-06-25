@@ -355,6 +355,14 @@
   "source": "osm_9am_trace",
   "trace_date": "2017-02-25"
  },
+ "quakerswalk": {
+  "distance_m": 1528,
+  "last_tried": "2026-06-25",
+  "lat": 51.355501,
+  "lon": -1.99217,
+  "long": "Quakers Walk parkrun",
+  "source": "osm_relation_approx"
+ },
  "queenelizabeth": {
   "distance_m": 5006,
   "last_tried": "2026-06-25",
@@ -434,6 +442,14 @@
   "lat": 51.187513,
   "lon": -2.542461,
   "long": "Shepton Mallet parkrun",
+  "source": null
+ },
+ "sittingbourne": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.354976,
+  "lon": 0.740569,
+  "long": "Sittingbourne parkrun",
   "source": null
  },
  "southampton": {
