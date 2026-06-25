@@ -1,0 +1,4 @@
+{
+  "primary": { "provider": "github-models", "model": "openai/gpt-4.1" },
+  "fallback": { "provider": "github-models", "model": "openai/gpt-4.1" }
+}

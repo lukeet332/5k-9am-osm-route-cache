@@ -1,0 +1,53 @@
+name: AI model self-review
+
+# Weekly: ask the current model which GitHub Models models are best TODAY for the author
+# (deep thinking) and reviewer (a different model) roles, validate any change with a live
+# call, and open a PR editing .github/ai_model.json if warranted. Config-only + live-
+# validated, so it carries 'automerge' directly (CI self-test still gates the merge).
+on:
+  schedule:
+    - cron: "0 7 * * 1"      # 07:00 UTC every Monday
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  models: read
+
+concurrency:
+  group: ai-model-review
+  cancel-in-progress: false
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+
+      - name: Assess best author + reviewer models; update config if better
+        id: review
+        env:
+          GH_MODELS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python .github/scripts/ai_model_review.py
+
+      - name: Open model-switch PR
+        if: steps.review.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v8
+        with:
+          token: ${{ secrets.BOT_PAT }}
+          branch: ai/model-review
+          delete-branch: true
+          add-paths: .github/ai_model.json
+          commit-message: "ci: update AI model(s) — ${{ steps.review.outputs.changed_roles }}"
+          title: "🤖 Update AI model(s): ${{ steps.review.outputs.changed_roles }}"
+          labels: automerge
+          body: |
+            Weekly GitHub-Models self-assessment (live-validated before proposing).
+
+            - **Author (deep thinking):** `${{ steps.review.outputs.primary }}`
+            - **Reviewer:** `${{ steps.review.outputs.fallback }}`
+
+            > ${{ steps.review.outputs.reason }}

@@ -11,7 +11,7 @@ Everything is derived from OpenStreetMap (c) OpenStreetMap contributors, ODbL.
 Be kind to OSM: hard rate-limit, descriptive User-Agent, early-stop paging, on-disk
 caching so re-runs don't refetch. NOT for bulk harvesting — slow and polite by design.
 """
-import json, os, re, math, time, datetime, urllib.request, urllib.parse, argparse
+import json, os, re, math, time, datetime, urllib.request, urllib.parse, argparse, subprocess
 
 UA = "5k-9am-osm-route-cache/0.1 (personal; +https://github.com/lukeet332)"
 EVENTS_URL = "https://images.parkrun.com/events.json"
@@ -195,9 +195,23 @@ def is_locked(entry):
     """A course is 'accurate/locked' iff cached within the 4.8-5.2km tolerance."""
     return bool(entry) and entry.get("distance_m") and REL_LO <= entry["distance_m"] <= REL_HI
 
+def _git(*a):
+    try:
+        subprocess.run(["git", *a], cwd=HERE, check=True, capture_output=True)
+    except Exception as e:
+        print("  git:", getattr(e, "stderr", e))
+
+def commit_route(name, res):
+    """Push this one resolved route to the repo immediately (real-time, not end-of-run)."""
+    _git("add", "-A")
+    _git("-c", "user.name=cache-bot", "-c", "user.email=cache-bot@users.noreply.github.com",
+         "commit", "-m", f"cache: {name} ({res['source']}, {res['distance_m']}m)")
+    _git("push")
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit", type=int, default=0, help="max OPEN parkruns to query this run (0 = all open)")
+    ap.add_argument("--commit-each", action="store_true", help="git commit+push each route the moment it locks (real-time)")
     args = ap.parse_args()
     events = load_events()
     today = datetime.date.today().isoformat()
@@ -234,6 +248,8 @@ def main():
             print(f"  {ev['name']:<24} (no OSM course)")
         index[ev["name"]] = entry
         json.dump(index, open(index_path, "w"), indent=1, sort_keys=True)   # save incrementally
+        if args.commit_each and res:           # real-time: push the moment a route locks
+            commit_route(ev["name"], res)
 
     locked2 = sum(1 for e in events if is_locked(index.get(e["name"])))
     print(f"\nprocessed {len(cands)}: {hit} resolved, {miss} gaps. coverage now {locked2}/{total} ({locked2/total:.0%}).")

@@ -1,0 +1,62 @@
+name: AI maintenance (weekly improvement)
+
+# Once a week, a deep-thinking GitHub Models model reviews the cache outcomes + the
+# algorithm and proposes ONE improvement (within AI_CONTEXT.md). The change MUST pass the
+# offline self-test in this job before a PR opens (bad edits never reach a PR). The PR is
+# opened with BOT_PAT (so it triggers CI + the AI reviewer) and labelled needs-ai-review —
+# it cannot merge until a SECOND AI approves it and CI is green.
+on:
+  schedule:
+    - cron: "0 6 * * 0"      # 06:00 UTC every Sunday
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  models: read               # GitHub Models inference via GITHUB_TOKEN
+
+concurrency:
+  group: ai-maintenance
+  cancel-in-progress: false
+
+jobs:
+  improve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+
+      - name: Propose an improvement
+        id: improve
+        env:
+          GH_MODELS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python .github/scripts/ai_improve.py
+
+      # Hard gate: the proposed change must still pass the caching self-test, or the job
+      # fails and NO PR is opened. This is what makes the autonomous author safe.
+      - name: Self-test gate (abort PR if broken)
+        run: python selftest.py
+
+      - name: Open improvement PR (needs AI review)
+        uses: peter-evans/create-pull-request@v8
+        with:
+          token: ${{ secrets.BOT_PAT }}
+          branch: ai-improve/${{ steps.improve.outputs.bot_label || 'bot' }}/weekly
+          delete-branch: true
+          add-paths: |
+            build_cache.py
+            AI_CONTEXT.md
+          commit-message: "chore: AI cache-algorithm improvement (${{ steps.improve.outputs.bot_label || 'ai-bot' }})"
+          title: "🤖 ${{ steps.improve.outputs.bot_label || 'ai-bot' }}: cache algorithm improvement"
+          labels: needs-ai-review
+          body: |
+            Weekly improvement proposed by **`${{ steps.improve.outputs.model_used }}`**.
+
+            > ${{ steps.improve.outputs.summary }}
+
+            - Already passed `selftest.py` in this job; CI re-runs it as the merge gate.
+            - Must be **approved by a second AI** (`ai-review`) before it can merge.
+            - Bound by `AI_CONTEXT.md` — accuracy bars fixed, no AI-authored geometry, kind to OSM.
+            Review the diff yourself too — the model can be wrong.

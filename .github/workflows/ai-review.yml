@@ -1,0 +1,92 @@
+name: AI review (AI-reviews-AI gate)
+
+# A second AI reviews the author bot's PR against AI_CONTEXT.md.
+#   approve  -> swap needs-ai-review for the automerge label (auto-merge.yml then merges
+#               once CI is green).
+#   reject   -> post feedback, and have the author REVISE on the branch (re-runs this
+#               review). Capped at 3 revision rounds, then hand to a human.
+on:
+  pull_request:
+    types: [labeled, synchronize, reopened]
+
+permissions:
+  contents: write
+  pull-requests: write
+  models: read
+
+concurrency:
+  group: ai-review-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+
+jobs:
+  review:
+    if: contains(github.event.pull_request.labels.*.name, 'needs-ai-review')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      PR: ${{ github.event.pull_request.number }}
+      BRANCH: ${{ github.event.pull_request.head.ref }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          token: ${{ secrets.BOT_PAT }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+
+      - name: Build the PR diff
+        env: { GH_TOKEN: ${{ secrets.BOT_PAT }} }
+        run: |
+          git fetch origin main --quiet
+          git diff origin/main...HEAD > pr.diff || true
+
+      - name: Revision-round guard (max 3)
+        id: guard
+        run: |
+          N=$(git log --pretty=format:'%s' | grep -c '\[ai-revise\]' || true)
+          echo "rounds=$N" >> "$GITHUB_OUTPUT"
+          echo "prior revision rounds: $N"
+
+      - name: Adversarial AI review
+        id: rev
+        if: steps.guard.outputs.rounds < 3
+        env:
+          GH_MODELS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python .github/scripts/ai_review.py
+
+      # ---- approved: hand to auto-merge ----
+      - name: Approve -> automerge
+        if: steps.guard.outputs.rounds < 3 && steps.rev.outputs.approve == 'true'
+        env: { GH_TOKEN: ${{ secrets.BOT_PAT }} }
+        run: |
+          gh pr comment "$PR" --body "✅ AI review (\`${{ steps.rev.outputs.reviewer }}\`) approved: ${{ steps.rev.outputs.feedback }}"
+          gh pr edit "$PR" --add-label automerge --remove-label needs-ai-review
+
+      # ---- rejected: author revises on the same branch (re-triggers this review) ----
+      - name: Reject -> author revises
+        if: steps.guard.outputs.rounds < 3 && steps.rev.outputs.approve == 'false'
+        env:
+          GH_MODELS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REVIEW_FEEDBACK: ${{ steps.rev.outputs.feedback }}
+          GH_TOKEN: ${{ secrets.BOT_PAT }}
+        run: |
+          gh pr comment "$PR" --body "🔁 AI review requested changes: ${{ steps.rev.outputs.feedback }}"
+          python .github/scripts/ai_improve.py
+          python selftest.py
+          if git diff --quiet; then
+            echo "author produced no revision; leaving for next round / human."; exit 0
+          fi
+          git config user.name "ai-author-bot"
+          git config user.email "ai-author-bot@users.noreply.github.com"
+          git commit -am "chore: revise per AI review [ai-revise]"
+          git push origin "HEAD:$BRANCH"
+
+      # ---- out of rounds: hand to a human ----
+      - name: Give up after 3 rounds
+        if: steps.guard.outputs.rounds >= 3
+        env: { GH_TOKEN: ${{ secrets.BOT_PAT }} }
+        run: |
+          gh pr comment "$PR" --body "🛑 The two AIs didn't converge after 3 revision rounds — needs a human. Removing labels."
+          gh pr edit "$PR" --remove-label needs-ai-review --remove-label automerge || true

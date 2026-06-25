@@ -23,12 +23,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Build cache (Havant -> north, gaps first, polite/rate-limited)
-        run: python3 build_cache.py --limit 60
-      - name: Commit any updates
+      - name: Build cache (Havant -> north, gaps first, polite/rate-limited, real-time commits)
         run: |
           git config user.name  "cache-bot"
           git config user.email "cache-bot@users.noreply.github.com"
+          python3 build_cache.py --limit 60 --commit-each   # pushes each route the moment it locks
+      - name: Commit any remaining (gap last-tried) updates
+        run: |
           git add routes index.json
-          git commit -m "Weekly OSM course cache refresh" || echo "no changes"
-          git push
+          git commit -m "Weekly OSM course cache refresh (gaps)" || echo "no changes"
+          git push || echo "nothing to push"
