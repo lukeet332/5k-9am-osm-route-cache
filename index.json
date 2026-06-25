@@ -39,6 +39,14 @@
   "long": "Barnstaple parkrun",
   "source": "osm_relation_approx"
  },
+ "barryisland": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.390202,
+  "lon": -3.271371,
+  "long": "Barry Island parkrun",
+  "source": null
+ },
  "bartleypark": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -85,6 +93,14 @@
   "lat": 51.024075,
   "lon": -4.204316,
   "long": "Bideford parkrun",
+  "source": null
+ },
+ "bracknell": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.390248,
+  "lon": -0.776844,
+  "long": "Bracknell parkrun",
   "source": null
  },
  "brickfieldspark": {
@@ -378,6 +394,14 @@
   "long": "Malling Rec parkrun",
   "source": null
  },
+ "margate": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.39207,
+  "lon": 1.403997,
+  "long": "Margate parkrun",
+  "source": null
+ },
  "marineparade": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -417,6 +441,14 @@
   "lon": -0.330645,
   "long": "Mole Valley parkrun",
   "source": "osm_relation_approx"
+ },
+ "morden": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.392759,
+  "lon": -0.208072,
+  "long": "Morden parkrun",
+  "source": null
  },
  "motepark": {
   "distance_m": 3129,
@@ -556,6 +588,14 @@
   "lon": -1.407766,
   "long": "Southampton parkrun",
   "source": null
+ },
+ "southnorwood": {
+  "distance_m": 2625,
+  "last_tried": "2026-06-25",
+  "lat": 51.396111,
+  "lon": -0.059908,
+  "long": "South Norwood parkrun",
+  "source": "osm_relation_approx"
  },
  "southwickcountrypark": {
   "distance_m": null,
