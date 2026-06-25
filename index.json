@@ -54,6 +54,17 @@
   "source": null,
   "status": "gap"
  },
+ "barking": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.545894,
+  "lon": 0.087312,
+  "long": "Barking parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "barnstaple": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -344,6 +355,17 @@
   "source": null,
   "status": "gap",
   "trace_m": 156
+ },
+ "chippingsodbury": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.544366,
+  "lon": -2.397165,
+  "long": "Chipping Sodbury parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "clair": {
   "distance_m": null,
@@ -698,6 +720,18 @@
   "relation_m": null,
   "source": null,
   "status": "gap",
+  "trace_m": null
+ },
+ "highburyfields": {
+  "distance_m": 5089,
+  "last_tried": "2026-06-25",
+  "lat": 51.546959,
+  "lon": -0.102884,
+  "long": "Highbury Fields parkrun",
+  "provisional": true,
+  "relation_m": 5089,
+  "source": "osm_relation",
+  "status": "success",
   "trace_m": null
  },
  "hillyfields": {
