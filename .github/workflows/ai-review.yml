@@ -54,6 +54,7 @@ jobs:
         if: steps.guard.outputs.rounds < 3
         env:
           GH_MODELS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}    # reviewer prefers this fast tier (independent provider)
         run: python .github/scripts/ai_review.py
 
       # ---- approved: hand to auto-merge ----
@@ -69,6 +70,7 @@ jobs:
         if: steps.guard.outputs.rounds < 3 && steps.rev.outputs.approve == 'false'
         env:
           GH_MODELS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           REVIEW_FEEDBACK: ${{ steps.rev.outputs.feedback }}
           GH_TOKEN: ${{ secrets.BOT_PAT }}
         run: |

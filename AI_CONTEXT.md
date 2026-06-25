@@ -71,12 +71,19 @@ Operational and algorithmic *means*, as long as outputs still validate against `
 3. **Gate**: `selftest.py` (the caching self-test) **must pass**; a PR that breaks the caching
    mechanism cannot merge. Only then merge.
 
-## Self-updating model (GitHub Models only)
+## Models — three tiers (self-updating)
 
-All AI here runs on **GitHub Models** via the workflow's built-in `GITHUB_TOKEN` (free, no
-secret to manage). The weekly review picks the best available **GitHub Models** model for this
-job (a reasoning-class model is preferred — one deep think per week beats many shallow ones) and
-records it in `model.json`. Because every GitHub model uses the same `GITHUB_TOKEN`, switching
-models **never needs a new secret** — it can self-update freely within the catalogue. Only
-*extending beyond GitHub Models* to another provider would need a key, and that must be a
-review-required PR @mentioning the owner — never automatic.
+Configured in `.github/ai_model.json`, re-evaluated weekly:
+- **`primary` — deep author** (GitHub Models, via the built-in `GITHUB_TOKEN`, no secret): does
+  the real reasoning/editing.
+- **`fallback` — deep INDEPENDENT reviewer** (default Gemini 2.5 Pro, a different family for a
+  genuinely independent check): the safety gate. **The reviewer must always be a deep model** —
+  never the fast tier. If `GEMINI_API_KEY` is absent it falls back to the deep author.
+- **`fast` — quick tier** (Gemini 2.5 Flash): for *simple, well-scoped* subtasks the deep author
+  may delegate (summarise outcomes, format, extract). **Never used to review** and never for any
+  decision that affects course accuracy.
+
+The weekly self-review may swap models **within the configured providers** (github-models +
+gemini) and must keep the reviewer deep + independent. Switching among these needs no new
+secret. *Adding a new provider* would need a key → a review-required PR @mentioning the owner,
+never automatic.
