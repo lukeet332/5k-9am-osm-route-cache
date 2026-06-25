@@ -16,12 +16,12 @@
   "source": null
  },
  "ashford": {
-  "distance_m": 3184,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.14347,
   "lon": 0.864218,
   "long": "Ashford parkrun",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "ashtoncourt": {
   "distance_m": null,
@@ -41,20 +41,20 @@
   "trace_date": "2024-12-14"
  },
  "banstead": {
-  "distance_m": 11927,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.307648,
   "lon": -0.184225,
   "long": "Banstead Woods parkrun",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "barnstaple": {
-  "distance_m": 3359,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.072561,
   "lon": -4.053612,
   "long": "Barnstaple parkrun",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "barryisland": {
   "distance_m": null,
@@ -105,12 +105,12 @@
   "source": null
  },
  "bedgeburypinetum": {
-  "distance_m": 3954,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.071871,
   "lon": 0.450168,
   "long": "Bedgebury Pinetum parkrun",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "bethlemroyalhospital": {
   "distance_m": null,
@@ -153,12 +153,12 @@
   "source": null
  },
  "brockwell": {
-  "distance_m": 3296,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.452538,
   "lon": -0.105464,
   "long": "Brockwell parkrun, Herne Hill",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "bromley": {
   "distance_m": null,
@@ -178,12 +178,12 @@
   "trace_date": "2023-11-25"
  },
  "burnhamandhighbridge": {
-  "distance_m": 4253,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.226679,
   "lon": -2.990243,
   "long": "Burnham and Highbridge parkrun",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "bushy": {
   "distance_m": null,
@@ -202,12 +202,12 @@
   "source": null
  },
  "canterbury": {
-  "distance_m": 2418,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.299468,
   "lon": 1.057002,
   "long": "Canterbury parkrun",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "catford": {
   "distance_m": 5074,
@@ -258,12 +258,12 @@
   "source": null
  },
  "crystalpalace": {
-  "distance_m": 2691,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.419846,
   "lon": -0.065703,
   "long": "Crystal Palace parkrun",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "cyclopark": {
   "distance_m": null,
@@ -283,12 +283,12 @@
   "trace_date": "2025-04-19"
  },
  "dartfordheath": {
-  "distance_m": 2454,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.435932,
   "lon": 0.189929,
   "long": "Dartford Heath parkrun",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "dintonpastures": {
   "distance_m": null,
@@ -299,20 +299,20 @@
   "source": null
  },
  "doverwaterfront": {
-  "distance_m": 2385,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.119994,
   "lon": 1.313027,
   "long": "Dover Waterfront parkrun",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "dulwich": {
-  "distance_m": 3744,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.443869,
   "lon": -0.079206,
   "long": "Dulwich parkrun",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "eastgrinstead": {
   "distance_m": null,
@@ -355,20 +355,20 @@
   "source": null
  },
  "folkestone": {
-  "distance_m": 1483,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.075729,
   "lon": 1.172753,
   "long": "Folkestone parkrun",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "footscraymeadows": {
-  "distance_m": 3523,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.428711,
   "lon": 0.136191,
   "long": "Foots Cray Meadows parkrun",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "fordingbridgerecreationground": {
   "distance_m": null,
@@ -411,12 +411,12 @@
   "source": null
  },
  "greatlines": {
-  "distance_m": 5422,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.388527,
   "lon": 0.541334,
   "long": "Great Lines parkrun, Medway",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "greenhamcommon": {
   "distance_m": null,
@@ -565,12 +565,12 @@
   "source": null
  },
  "lullingstone": {
-  "distance_m": 2493,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.353118,
   "lon": 0.187147,
   "long": "Lullingstone parkrun",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "maidstoneriverpark": {
   "distance_m": null,
@@ -629,20 +629,20 @@
   "source": null
  },
  "minehead": {
-  "distance_m": 24128,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.207524,
   "lon": -3.469591,
   "long": "Minehead parkrun",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "molevalley": {
-  "distance_m": 4625,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.248259,
   "lon": -0.330645,
   "long": "Mole Valley parkrun",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "morden": {
   "distance_m": null,
@@ -653,12 +653,12 @@
   "source": null
  },
  "motepark": {
-  "distance_m": 3129,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.269539,
   "lon": 0.541967,
   "long": "Mote Park parkrun",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "nonsuch": {
   "distance_m": null,
@@ -695,12 +695,12 @@
   "source": null
  },
  "quakerswalk": {
-  "distance_m": 1528,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.355501,
   "lon": -1.99217,
   "long": "Quakers Walk parkrun",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "queenelizabeth": {
   "distance_m": 5006,
@@ -719,12 +719,12 @@
   "source": null
  },
  "richmond": {
-  "distance_m": 5931,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.451962,
   "lon": -0.292886,
   "long": "Richmond parkrun",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "riddlesdown": {
   "distance_m": null,
@@ -752,12 +752,12 @@
   "trace_date": "2017-03-04"
  },
  "rushmoor": {
-  "distance_m": 3284,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.265798,
   "lon": -0.755847,
   "long": "Rushmoor parkrun",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "salisbury": {
   "distance_m": null,
@@ -825,12 +825,12 @@
   "source": null
  },
  "southnorwood": {
-  "distance_m": 2625,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.396111,
   "lon": -0.059908,
   "long": "South Norwood parkrun",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "southwickcountrypark": {
   "distance_m": null,
@@ -866,20 +866,20 @@
   "source": null
  },
  "sutcliffe": {
-  "distance_m": 1674,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.454343,
   "lon": 0.026739,
   "long": "Sutcliffe parkrun",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "swanley": {
-  "distance_m": 2572,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.404175,
   "lon": 0.17519,
   "long": "Swanley parkrun",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "tamarlakes": {
   "distance_m": null,
@@ -930,20 +930,20 @@
   "source": null
  },
  "tonbridge": {
-  "distance_m": 3380,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.197605,
   "lon": 0.270174,
   "long": "Tonbridge parkrun",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "tootingcommon": {
-  "distance_m": 2238,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.433342,
   "lon": -0.14677,
   "long": "Tooting Common parkrun",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "uckfield": {
   "distance_m": null,
@@ -970,12 +970,12 @@
   "source": null
  },
  "walmeranddealseafront": {
-  "distance_m": 3765,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.2095,
   "lon": 1.403179,
   "long": "Walmer and Deal Seafront parkrun",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "whitecliffelake": {
   "distance_m": 5120,
@@ -995,12 +995,12 @@
   "source": null
  },
  "whitstable": {
-  "distance_m": 40589,
+  "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.365295,
   "lon": 1.041942,
   "long": "Whitstable parkrun",
-  "source": "osm_relation_approx"
+  "source": null
  },
  "wimbledon": {
   "distance_m": 4960,
