@@ -7,7 +7,7 @@ name: AI review (AI-reviews-AI gate)
 #               review). Capped at 3 revision rounds, then hand to a human.
 on:
   pull_request:
-    types: [labeled, synchronize, reopened]
+    types: [opened, labeled, synchronize, reopened]
 
 permissions:
   contents: write
@@ -37,7 +37,8 @@ jobs:
         with: { python-version: "3.12" }
 
       - name: Build the PR diff
-        env: { GH_TOKEN: ${{ secrets.BOT_PAT }} }
+        env:
+          GH_TOKEN: ${{ secrets.BOT_PAT }}
         run: |
           git fetch origin main --quiet
           git diff origin/main...HEAD > pr.diff || true
@@ -54,13 +55,17 @@ jobs:
         if: steps.guard.outputs.rounds < 3
         env:
           GH_MODELS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}    # reviewer prefers this fast tier (independent provider)
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}    # independent reviewer / other providers; skipped if unset
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
         run: python .github/scripts/ai_review.py
 
       # ---- approved: hand to auto-merge ----
       - name: Approve -> automerge
         if: steps.guard.outputs.rounds < 3 && steps.rev.outputs.approve == 'true'
-        env: { GH_TOKEN: ${{ secrets.BOT_PAT }} }
+        env:
+          GH_TOKEN: ${{ secrets.BOT_PAT }}
         run: |
           gh pr comment "$PR" --body "✅ AI review (\`${{ steps.rev.outputs.reviewer }}\`) approved: ${{ steps.rev.outputs.feedback }}"
           gh pr edit "$PR" --add-label automerge --remove-label needs-ai-review
@@ -71,6 +76,9 @@ jobs:
         env:
           GH_MODELS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           REVIEW_FEEDBACK: ${{ steps.rev.outputs.feedback }}
           GH_TOKEN: ${{ secrets.BOT_PAT }}
         run: |
@@ -88,7 +96,8 @@ jobs:
       # ---- out of rounds: hand to a human ----
       - name: Give up after 3 rounds
         if: steps.guard.outputs.rounds >= 3
-        env: { GH_TOKEN: ${{ secrets.BOT_PAT }} }
+        env:
+          GH_TOKEN: ${{ secrets.BOT_PAT }}
         run: |
           gh pr comment "$PR" --body "🛑 The two AIs didn't converge after 3 revision rounds — needs a human. Removing labels."
           gh pr edit "$PR" --remove-label needs-ai-review --remove-label automerge || true

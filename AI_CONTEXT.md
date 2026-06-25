@@ -60,30 +60,40 @@ Operational and algorithmic *means*, as long as outputs still validate against `
   (self-intersections, spikes) — flag for human review; do not silently rewrite geometry.
 - Diagnosing low-yield regions and reporting *why* (not fabricating data to fill them).
 
+## The idea JOURNAL (build context over time)
+
+`JOURNAL.md` is the bots' running diary. Each week the author reads it, then appends an entry
+(date, the idea, *why* from the outcomes, what changed). The point is **accumulated knowledge**:
+build on what worked, don't repeat what didn't, and get **progressively more creative** week over
+week. The reviewer also reads it. Append-only; never rewrite past entries.
+
 ## Process the AI must follow
 
-1. **Author** (weekly): read `index.json` outcomes + the latest run log, decide if the caching
-   algorithm can be improved *within the invariants*. If yes, open exactly one focused PR with a
-   clear rationale tied to observed data. If nothing's worth changing, do nothing.
-2. **Reviewer** (second AI): critique the PR against this file and CI. If it violates an
-   invariant, games coverage, touches geometry, or isn't justified by data — request changes.
-   Loop until both author and reviewer are satisfied.
-3. **Gate**: `selftest.py` (the caching self-test) **must pass**; a PR that breaks the caching
-   mechanism cannot merge. Only then merge.
+1. **Author / MASTER** (weekly): read the JOURNAL + `index.json` outcomes + the algorithm, and
+   propose ONE improvement *within the invariants* that genuinely advances the goal (caching ALL
+   parkruns at ~5k). Improving the algorithm includes **pruning** logic that's wrong/obsolete, not
+   only adding — but no pointless churn. Append a JOURNAL entry. If nothing's worth changing, just
+   journal why.
+2. **Reviewer / SLAVE** (a different AI): judge the PR on **two axes** — (a) SAFETY: invariants,
+   accuracy bars, geometry, OSM-kindness, licensing; and (b) MERIT: does it really move us toward
+   the goal, or is it silly add/remove churn or a re-tried failed idea? **Aim for consensus** — be
+   a collaborator, not a perfectionist gatekeeper; don't block on style; once concerns are
+   addressed, approve. Loop (max 3 rounds) until both are satisfied.
+3. **Gate**: `selftest.py` **must pass**; a PR that breaks caching cannot merge. Only then merge.
 
-## Models — three tiers (self-updating)
+## Models — smartest free pair + a fast tier (self-updating)
 
-Configured in `.github/ai_model.json`, re-evaluated weekly:
-- **`primary` — deep author** (GitHub Models, via the built-in `GITHUB_TOKEN`, no secret): does
-  the real reasoning/editing.
-- **`fallback` — deep INDEPENDENT reviewer** (default Gemini 2.5 Pro, a different family for a
-  genuinely independent check): the safety gate. **The reviewer must always be a deep model** —
-  never the fast tier. If `GEMINI_API_KEY` is absent it falls back to the deep author.
-- **`fast` — quick tier** (Gemini 2.5 Flash): for *simple, well-scoped* subtasks the deep author
-  may delegate (summarise outcomes, format, extract). **Never used to review** and never for any
-  decision that affects course accuracy.
+Configured in `.github/ai_model.json`, re-evaluated weekly from a multi-source menu
+(`github-models`, `gemini`, `openrouter`, `groq`, `mistral` — a provider with no key is skipped):
+- **`primary` — MASTER author** (deep): the strongest free reasoner; defaults to GitHub Models
+  (built-in `GITHUB_TOKEN`, no secret).
+- **`fallback` — SLAVE reviewer** (deep + INDEPENDENT): a strong model from a **different
+  provider** where ≥2 are available, so the review is genuinely independent. Must stay deep —
+  never the fast tier. Falls back to the master if its provider key is absent.
+- **`fast`** (e.g. Gemini Flash): for *simple delegated subtasks only* — never reviews, never
+  touches accuracy.
 
-The weekly self-review may swap models **within the configured providers** (github-models +
-gemini) and must keep the reviewer deep + independent. Switching among these needs no new
-secret. *Adding a new provider* would need a key → a review-required PR @mentioning the owner,
-never automatic.
+The weekly review picks the **SMARTEST master + reviewer that still FIT the free request limits**
+— capability maximised, the free quota a hard constraint — and, since the same config runs on two
+repos that might pick the same models, each must have free-tier headroom for **both repos combined**.
+It validates every change with a live call; a provider with no key is simply skipped (graceful).

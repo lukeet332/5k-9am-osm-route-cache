@@ -14,18 +14,26 @@ PROMPT = """You are a STRICT, adversarial reviewer of an automated change to a P
 that caches OSM-derived parkrun 5k courses. The CONTRACT (AI_CONTEXT.md) is binding. Another AI
 proposed the DIFF below. Your job is to catch anything that should not merge.
 
-REJECT (approve=false) if the diff does ANY of:
-- violates a hard invariant, or loosens the accuracy bars (4.8-5.2 relation / 4.5-5.6 trace) to
-  inflate coverage;
-- makes the AI/code emit hand-authored coordinates or hard-coded routes;
-- weakens the OSM rate-limiting / politeness, or removes ODbL attribution / the parkrun disclaimer;
-- edits anything outside build_cache.py / an AI_CONTEXT.md append, or touches selftest/workflows;
-- isn't clearly justified by the OUTCOMES, or risks breaking the caching mechanism.
-APPROVE (approve=true) only if it is clearly safe AND a genuine improvement to the dual truth
-metric (coverage AND closeness-to-5k) within the invariants.
+Judge it on TWO axes, then decide:
+
+1) SAFETY / CORRECTNESS — REJECT if it: violates a hard invariant; loosens the accuracy bars
+   (4.8-5.2 relation / 4.5-5.6 trace) to inflate coverage; makes the code emit hand-authored
+   coordinates or hard-coded routes; weakens the OSM rate-limiting; removes ODbL attribution / the
+   parkrun disclaimer; edits anything outside build_cache.py / JOURNAL.md / an AI_CONTEXT.md append;
+   or risks breaking the caching mechanism.
+2) MERIT — this is an ALGORITHM, so judge whether the change genuinely moves us toward the goal of
+   caching ALL parkruns at ~5k (better coverage AND/OR closeness-to-5k). REJECT pointless churn:
+   logic added or removed that doesn't plausibly help, or re-trying an idea the JOURNAL shows already
+   failed. A good change is a real, sensible step — ideally building on the journal's learnings.
+
+APPROVE (approve=true) when it is safe AND a genuine net step toward the goal. Aim for CONSENSUS —
+you are a collaborator, not a perfectionist gatekeeper: don't block on style, naming, or "could be
+even better"; once your concerns are addressed, APPROVE; don't invent new objections each round. CI
++ the self-test are the correctness net. Keep feedback to the ONE or TWO blocking issues, specific
+and actionable.
 
 Respond with STRICT JSON only:
-{"approve": true|false, "feedback": "<concise, specific, actionable — what to fix if rejected>"}"""
+{"approve": true|false, "feedback": "<concise: the blocking issue(s) to fix, or why it's approved>"}"""
 
 
 def main():
@@ -35,6 +43,7 @@ def main():
         L.done("Empty diff — nothing to review; approving trivially.", approve="true", feedback="no changes")
     prompt = (PROMPT
               + "\n\n===== CONTRACT (AI_CONTEXT.md) =====\n" + L.CONTEXT_FILE.read_text(errors="ignore")[:14000]
+              + "\n\n===== JOURNAL (past ideas + learnings) =====\n" + L.journal_tail()
               + "\n\n===== OUTCOMES =====\n" + L.outcomes_summary()
               + "\n\n===== DIFF =====\n" + diff)
     # reviewer prefers the fallback model so it isn't the same instance as the author

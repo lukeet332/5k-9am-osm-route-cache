@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-Weekly model self-review (GitHub Models only). Ask the current model which GitHub Models
-models are best TODAY for the two roles — AUTHOR (deep-thinking, for analysing a data
-pipeline) and REVIEWER (a DIFFERENT model, for an independent adversarial check). Validate
-any proposed change with a live call, then rewrite .github/ai_model.json. Because everything
-runs on the same GITHUB_TOKEN, switching models never needs a new secret. Never breaks:
-any error / no warranted change -> changed=false. Standard library only.
+Weekly model self-review (multi-source). Ask the current model which models are best TODAY for
+three roles — MASTER author, SLAVE reviewer (a DIFFERENT source, for an independent check), and a
+FAST delegate — choosing from the providers whose keys are actually present. Validate any change
+with a live call, then rewrite .github/ai_model.json. A provider with no key is skipped, so this
+never needs a secret it doesn't have and never breaks: any error / no warranted change ->
+changed=false. Standard library only.
 """
 import json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -13,17 +13,26 @@ import ai_lib as L
 
 ROLES = ("primary", "fallback", "fast")
 PROMPT = """You configure THREE models for an automated maintenance bot on a Python repo that
-caches OSM-derived running courses. Providers available: "github-models" (free via GITHUB_TOKEN)
-and "gemini" (free, needs a key).
-- AUTHOR ("primary", DEEP): best free reasoning/code model for analysing data outcomes and
-  editing a Python algorithm carefully. Prefer "github-models" (no secret needed).
-- REVIEWER ("fallback", DEEP + INDEPENDENT): the safety gate — must be a strong reasoning model,
-  ideally a DIFFERENT family/provider from the author for a genuinely independent review (e.g. a
-  Gemini Pro tier). It MUST stay deep — NEVER a fast/small model here.
-- FAST ("fast"): a fast, cheap model (e.g. Gemini Flash) for simple delegated subtasks only.
+caches OSM-derived running courses. Pick ONLY from these providers whose keys are configured
+right now: %(avail)s.
 
-HARD CONSTRAINTS: every model must be free with headroom for a few calls/week. Keep the reviewer
-deep and independent. Keep a role unchanged UNLESS a clearly better option exists.
+- MASTER author ("primary", DEEP): the best free reasoning/code model for analysing data
+  outcomes and carefully editing a Python algorithm.
+- SLAVE reviewer ("fallback", DEEP + INDEPENDENT): the safety gate. A strong reasoning model
+  from a DIFFERENT provider than the master where two or more providers are available, so the
+  review is genuinely independent. It MUST stay deep — never a fast/small model.
+- FAST ("fast"): a fast, cheap model (e.g. a Flash-class model) for simple delegated subtasks.
+
+OBJECTIVE: pick the SMARTEST master + reviewer that STILL FIT within the free request limits —
+maximise capability, with the free quota as a HARD constraint (not the other way round).
+
+HARD CONSTRAINTS:
+- Every model must be FREE (reject any paid model outright).
+- This same configuration runs across TWO repositories that may, by chance, pick the SAME models —
+  so each model's FREE request quota must comfortably cover BOTH repos' combined usage (a few
+  automated calls per week each). Reject any model whose free tier is too tight for that.
+- Master and reviewer should be from TWO DIFFERENT providers when >=2 are available.
+- Among the models that satisfy the above, choose the two most capable (reasoning/code quality).
 
 Current configuration: %(current)s
 
@@ -31,17 +40,26 @@ Respond with STRICT JSON only:
 {"primary": {"provider": "...", "model": "..."},
  "fallback": {"provider": "...", "model": "..."},
  "fast": {"provider": "...", "model": "..."},
- "reason": "<one or two sentences>"}"""
+ "reason": "<one or two sentences>"}
+Keep a role unchanged UNLESS a clearly better option exists."""
 
 
 def stop(reason):
     L.done(reason, changed="false")
 
 
+def available_providers():
+    return [p for p, (_base, key_env) in L.PROVIDERS.items() if os.environ.get(key_env, "").strip()]
+
+
 def main():
+    avail = available_providers()
     cur = L.load_model_config()
     cur_short = {r: {"provider": cur[r]["provider"], "model": cur[r]["model"]} for r in ROLES}
-    rec, _ = L.call_with_roles(PROMPT % {"current": json.dumps(cur_short)}, roles=("primary", "fallback"))
+    rec, _ = L.call_with_roles(
+        PROMPT % {"avail": ", ".join(avail) or "github-models", "current": json.dumps(cur_short)},
+        roles=("primary", "fallback"),
+    )
     if not isinstance(rec, dict):
         stop("No usable recommendation — keeping current models.")
 
@@ -51,6 +69,10 @@ def main():
         if not isinstance(r, dict) or str(r.get("provider", "")) not in L.PROVIDERS or not str(r.get("model", "")).strip():
             stop(f"Recommendation for {role} invalid — keeping current.")
         new[role] = {"provider": r["provider"], "model": str(r["model"]).strip()}
+
+    # master + reviewer must be two different sources when we actually have two to choose from
+    if len(avail) >= 2 and new["primary"]["provider"] == new["fallback"]["provider"]:
+        stop("Master and reviewer must be from two different sources (>=2 available) — keeping current.")
 
     changed = [r for r in ROLES if new[r] != cur_short[r]]
     if not changed:
