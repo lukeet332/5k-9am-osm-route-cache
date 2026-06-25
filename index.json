@@ -255,6 +255,17 @@
   "source": "osm_relation",
   "status": "success"
  },
+ "chippenham": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.460469,
+  "lon": -2.113119,
+  "long": "Chippenham parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": 156
+ },
  "clair": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -465,6 +476,17 @@
   "source": null,
   "status": "gap"
  },
+ "fulhampalace": {
+  "distance_m": 1800,
+  "last_tried": "2026-06-25",
+  "lat": 51.472465,
+  "lon": -0.218493,
+  "long": "Fulham Palace parkrun",
+  "relation_m": 1800,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
+ },
  "gangerfarm": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -554,6 +576,17 @@
   "long": "Hazelwood parkrun",
   "source": null,
   "status": "gap"
+ },
+ "hillyfields": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.460143,
+  "lon": -0.025019,
+  "long": "Hilly Fields parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "hoblingwell": {
   "distance_m": null,
@@ -773,6 +806,17 @@
   "source": null,
   "status": "gap"
  },
+ "olddeerpark": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.464417,
+  "lon": -0.306973,
+  "long": "Old Deer Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "orpington": {
   "distance_m": 4917,
   "last_tried": "2026-06-25",
@@ -831,6 +875,17 @@
   "long": "Queen Elizabeth parkrun",
   "source": "osm_relation",
   "status": "success"
+ },
+ "reading": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.460384,
+  "lon": -0.941573,
+  "long": "Reading parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "reigatepriory": {
   "distance_m": null,
