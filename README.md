@@ -14,36 +14,37 @@ OpenStreetMap** for offline/navigation use by a personal Wear OS running app.
 
 - **Code** (AI maintenance) → PR labelled `automerge` → must pass the CI self-test **and** the
   AI review before auto-merge.
-- **Cache data** (the weekly job) → PR labelled `cache-update` → auto-merges **bypassing the code
-  CI** (the data is the output of already-reviewed code; the code self-test is irrelevant to it).
+- **Cache data** (the cache job) → committed **directly to `main`, one commit per route as it
+  locks** (the admin cache bot bypasses the PR rule for *generated data only*; the code self-test
+  is irrelevant to data, and CI ignores data-only pushes). Code still goes through PR + CI + review.
 - The app reads the cache from `main`:
   `https://raw.githubusercontent.com/lukeet332/5k-9am-osm-route-cache/main/index.json`.
 
 ## How a course is chosen (per event, worked south → north)
 
-1. **OSM route relation** named "… parkrun" near the start — used **only if within ±8 % of 5 km**.
+1. **OSM route relation** named "… parkrun" near the start — used **only if within ±4 % of 5 km** (4.8–5.2 km).
 2. else **reconstructed from OSM's open Saturday-09:00 GPS traces** — multi-lap aware, anchored
    at the start at 09:00 local, trimmed to the 09:00–09:45 race window.
 3. else **no entry** (logged as a gap — most parkruns have no OSM trace; coverage is partial **by design**).
 
 ## Coverage is partial — and that's expected
 
-Most runners log to Strava/Garmin, not OSM, so the open trace pool is sparse. A regional survey
-returned a usable course for roughly **1 in 10** parkruns. This cache fills in the ones OSM *does*
-cover and grows slowly as the OSM corpus does; it is **not** a complete parkrun course library
-(no free, legal source for that exists). The consuming app falls back to live lookup / "record
-your own run" for everything not in here.
+Most runners log to Strava/Garmin, not OSM, so the open trace pool is sparse — many parkruns have
+no usable OSM trace yet. This cache fills in the ones OSM *does* cover and grows over time as the
+OSM corpus does; it is **not** a complete parkrun course library (no free, legal source for that
+exists). The consuming app falls back to live lookup / "record your own run" for everything not here.
 
 ## Run it
 
 ```bash
-python3 build_cache.py --offset 0 --limit 50   # first 50, south → north
+python3 build_cache.py --limit 30                # Havant → north, gap-first (open events only)
+python3 build_cache.py --limit 30 --commit-each  # …and commit+push each route as it locks
 ```
 
-Outputs `routes/<eventname>.gpx` + `index.json`. Re-runs are incremental and cache OSM
-responses on disk. **Be kind to OSM**: the script is hard rate-limited (~1 req/1.5 s), uses a
-descriptive User-Agent, stops paging early, and is intended to run slowly in small regional
-batches — **not** as a bulk harvester.
+Outputs `routes/<eventname>.gpx` + `index.json`. Re-runs are incremental (skips already-accurate
+courses, rotates through gaps) and cache OSM responses on disk. **Be kind to OSM**: hard
+rate-limited (~1 req/1.5 s), descriptive User-Agent, early-stop paging, and a **circuit-breaker
+that stops a run if OSM starts rate-limiting (HTTP 429)** so we never get the IP blocked.
 
-A weekly GitHub Action (`.github/workflows/weekly-saturday.yml`) re-runs it on a public repo
-(free unlimited Actions minutes) to gradually improve coverage.
+A GitHub Action (`.github/workflows/weekly-saturday.yml`) runs it on a schedule (frequent during
+the initial cache build, then dial back to weekly), committing each route straight to `main`.

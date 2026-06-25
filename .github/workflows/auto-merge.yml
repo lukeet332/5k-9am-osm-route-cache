@@ -14,22 +14,12 @@ permissions:
 
 jobs:
   auto-merge:
-    if: >
-      contains(github.event.pull_request.labels.*.name, 'automerge') ||
-      contains(github.event.pull_request.labels.*.name, 'cache-update')
+    if: contains(github.event.pull_request.labels.*.name, 'automerge')
     runs-on: ubuntu-latest
     steps:
-      # Code PRs: native auto-merge WAITS for the required checks (CI self-test + AI review).
-      - name: Code PR -> auto-merge once checks pass
-        if: contains(github.event.pull_request.labels.*.name, 'automerge')
+      # Native auto-merge WAITS for the required checks (CI self-test + AI review) before merging.
+      # (Cache DATA no longer uses a PR — the cache bot pushes it straight to main.)
+      - name: Merge once required checks pass
         env:
           GH_TOKEN: ${{ secrets.BOT_PAT }}
         run: gh pr merge --auto --squash "${{ github.event.pull_request.html_url }}"
-
-      # Cache-data PRs: admin-merge, BYPASSING the code CI (generated data, not code).
-      # Requires branch protection with enforce_admins=false so the bot can override checks.
-      - name: Cache-update PR -> admin-merge (bypass CI)
-        if: contains(github.event.pull_request.labels.*.name, 'cache-update')
-        env:
-          GH_TOKEN: ${{ secrets.BOT_PAT }}
-        run: gh pr merge --admin --squash "${{ github.event.pull_request.html_url }}"

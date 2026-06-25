@@ -5,6 +5,10 @@ on:
   pull_request:
   push:
     branches: [main]
+    paths-ignore:           # the cache bot pushes data straight to main; don't run code CI for that
+      - 'routes/**'
+      - 'index.json'
+      - 'JOURNAL.md'
 
 jobs:
   selftest:

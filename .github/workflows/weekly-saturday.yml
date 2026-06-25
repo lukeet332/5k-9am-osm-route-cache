@@ -1,45 +1,43 @@
-name: Weekly course cache refresh
+name: Course cache refresh
 
-# Public repo => free, unlimited standard-runner minutes (separate from any private-repo quota).
-# Runs Saturday afternoon UK time to gradually grow coverage as the OSM trace corpus does.
-# The weekly commit also keeps the schedule alive (GitHub pauses crons after 60 days idle).
+# Builds the OSM-derived 5k course cache and pushes EACH route directly to `main` the moment
+# it locks — real-time per-route commits, not one batch PR at the end. The cache bot checks
+# out with the admin BOT_PAT, so it can push generated DATA straight to the protected branch
+# (enforce_admins=false); CODE still goes via PR + CI + AI review (and CI ignores data pushes).
+#
+# Runs FREQUENTLY during the initial build to fill the cache fast while staying kind to OSM:
+# hard rate-limit, 429 backoff, and a circuit-breaker that stops a run early if OSM throttles us.
+# >>> Once coverage is high, dial the cron back to weekly: "0 15 * * 6" (Saturday 15:00 UTC). <<<
 on:
   schedule:
-    - cron: "0 15 * * 6"   # 15:00 UTC every Saturday
-  workflow_dispatch:        # allow manual runs too
+    - cron: "0 */2 * * *"     # every 2 hours (INITIAL BUILD)
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: cache-refresh
+  group: cache-refresh         # overlapping runs queue (never pile up / hammer OSM in parallel)
   cancel-in-progress: false
 
 jobs:
   refresh:
-    runs-on: ubuntu-latest   # standard runner = free on public repos
+    runs-on: ubuntu-latest     # standard runner = free on public repos
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.BOT_PAT }}    # admin -> push data straight to protected main
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Build cache (Havant -> north, gaps first, polite/rate-limited)
-        run: python3 build_cache.py --limit 60
-      # Cache data is the output of already-reviewed code, so its PR carries `cache-update`
-      # and auto-merges BYPASSING the code CI (the code self-test is irrelevant to data).
-      # Opened with BOT_PAT so auto-merge.yml can merge it.
-      - name: Open cache-update PR
-        uses: peter-evans/create-pull-request@v8
-        with:
-          token: ${{ secrets.BOT_PAT }}
-          branch: cache/weekly-refresh
-          delete-branch: true
-          add-paths: |
-            routes/**
-            index.json
-          commit-message: "cache: weekly OSM course refresh"
-          title: "🗺️ Weekly cache refresh"
-          labels: cache-update
-          body: |
-            Weekly cache refresh — Havant → north, gap-first, OSM-derived.
-            Auto-merges bypassing the code CI (this is generated data, not code).
+      - name: Build + push each route as it locks (real-time, ban-safe)
+        run: |
+          git config user.name  cache-bot
+          git config user.email cache-bot@users.noreply.github.com
+          python3 build_cache.py --limit 30 --commit-each
+      - name: Push any trailing gap bookkeeping
+        run: |
+          git add -A
+          git commit -m "cache: gap bookkeeping" || echo "nothing to commit"
+          git push || (git pull --rebase origin main && git push) || echo "nothing to push"
