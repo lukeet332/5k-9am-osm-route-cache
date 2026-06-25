@@ -340,6 +340,15 @@ def main():
                   f"The next scheduled run resumes from here (rotation).")
             break
 
+    # Ban-safety signal for the self-chaining workflow: if OSM throttled us past the breaker,
+    # leave a .throttled marker so the next run backs off (longer delay) instead of chaining
+    # straight back in. Per-run only (gitignored); absent on a clean/healthy run.
+    throttled = os.path.join(HERE, ".throttled")
+    if RATE_LIMIT_HITS[0] >= MAX_RATE_LIMIT_HITS:
+        open(throttled, "w").write(str(RATE_LIMIT_HITS[0]))
+    elif os.path.exists(throttled):
+        os.remove(throttled)
+
     locked2 = sum(1 for e in events if is_locked(index.get(e["name"])) )
     print(f"\nprocessed {len(cands)}: {tally['success']} success, {tally['failed']} failed (off-tol diagnostics), "
           f"{tally['gap']} gap. coverage now {locked2}/{total} ({locked2/total:.0%}).")
