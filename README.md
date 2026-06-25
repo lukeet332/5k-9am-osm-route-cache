@@ -26,9 +26,15 @@ refreshed every cache run.
 
 ## How a course is chosen (per event, worked south → north)
 
-1. **OSM route relation** named "… parkrun" near the start — used **only if within ±4 % of 5 km** (4.8–5.2 km).
-2. else **reconstructed from OSM's open Saturday-09:00 GPS traces** — multi-lap aware, anchored
-   at the start at 09:00 local, trimmed to the 09:00–09:45 race window.
+Both an OSM relation and a reconstructed GPS trace are measured; a course counts only if within
+**±4 % of 5 km** (4.8–5.2 km). When both qualify, the **real GPS trace wins** — it's the true course
+runners actually ran:
+
+1. **Reconstructed from OSM's open Saturday-09:00 GPS traces** — multi-lap aware, anchored at the
+   start at 09:00 local, trimmed to the 09:00–09:45 race window. **Trusted** (`provisional: false`).
+2. else an **OSM route relation** named "… parkrun" near the start — a curated line that *measures*
+   ~5k. Shipped but marked **`provisional: true`** (not GPS-verified) so it can be upgraded to a real
+   trace later.
 3. else **no entry** (logged as a gap — most parkruns have no OSM trace; coverage is partial **by design**).
 
 ## Two outputs: `routes/` (for the app) and `index.json` (for the AI)
@@ -41,7 +47,8 @@ refreshed every cache run.
   - `distance_m` — the chosen course length (null for a gap)
   - `relation_m`, `trace_m` — what the OSM *relation* and the *09:00 trace* each measured (so a
     `failed` like `relation_m: 2238` flags "≈ one lap of a 2-lap parkrun → try doubling")
-  - `source`, `trace_date`, `last_tried`, `lat`, `lon`
+  - `source` (`osm_9am_trace` = trusted GPS, `osm_relation` = provisional), `provisional` (true on
+    relation-sourced successes), `trace_date`, `last_tried`, `lat`, `lon`
 
 **Failures are kept as data, not files** — the off-distance geometry isn't stored (it would bloat the
 cache and the AI's token budget); the metadata above is the signal. The full coverage history (and any

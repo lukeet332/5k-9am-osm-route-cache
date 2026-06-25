@@ -40,7 +40,26 @@ def main():
     # 3) lock predicate honours the fixed tolerance
     assert bc.is_locked({"distance_m": 5000}) and not bc.is_locked({"distance_m": 4300})
 
-    print(f"OK — reconstructed {L:.0f} m / {len(pts)} pts; helpers + lock predicate pass.")
+    # 4) source trust hierarchy: a real 09:00 trace WINS over a relation (both in-tolerance) and is
+    #    trusted; a relation-only success ships but is flagged provisional (not GPS-verified).
+    line = [(51.5, -0.1), (51.5, -0.1)]
+    ev = {"name": "selftesttrust", "long": "Selftest parkrun", "lat": 51.5, "lon": -0.1}
+    orig_rel, orig_tr = bc.relation_course, bc.trace_course
+    try:
+        bc.relation_course = lambda lat, lon, name: ("X parkrun", 5010.0, line)
+        bc.trace_course = lambda name, lat, lon: (4990.0, line, "2025-04-12")
+        r = bc.build_one(ev)
+        assert r["source"] == "osm_9am_trace" and r["provisional"] is False, f"trace must win+trust: {r}"
+        bc.trace_course = lambda name, lat, lon: None
+        r = bc.build_one(ev)
+        assert r["source"] == "osm_relation" and r["provisional"] is True, f"relation must be provisional: {r}"
+    finally:
+        bc.relation_course, bc.trace_course = orig_rel, orig_tr
+        f = os.path.join(bc.ROUTES, "selftesttrust.gpx")
+        if os.path.exists(f):
+            os.remove(f)
+
+    print(f"OK — reconstructed {L:.0f} m / {len(pts)} pts; helpers + lock + trust hierarchy pass.")
 
 if __name__ == "__main__":
     try:
