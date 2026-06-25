@@ -1,0 +1,49 @@
+#!/usr/bin/env python3
+"""
+Caching self-test — the CI gate. No network: it builds a synthetic Saturday-09:00 trace
+fixture and asserts the reconstruction still yields a ~5k course, plus checks the pure
+geometry helpers. If this fails, the caching mechanism is broken and the PR must not merge.
+"""
+import os, datetime, sys
+import build_cache as bc
+
+def make_fixture():
+    os.makedirs(bc.TRACECACHE, exist_ok=True)
+    # 301 points, ~16.7 m apart => ~5.0 km, on Sat 2025-04-12 from 08:01Z (= 09:01 BST local).
+    base = datetime.datetime(2025, 4, 12, 8, 1, 0, tzinfo=datetime.timezone.utc)
+    lat0, lon0 = 51.5, -0.1
+    pts = []
+    for i in range(301):
+        t = base + datetime.timedelta(seconds=i * 1.5)
+        pts.append(f'<trkpt lat="{lat0 + i*0.00015:.6f}" lon="{lon0:.6f}">'
+                   f'<time>{t.strftime("%Y-%m-%dT%H:%M:%SZ")}</time></trkpt>')
+    gpx = '<?xml version="1.0"?><gpx><trk><trkseg>' + "".join(pts) + '</trkseg></trk></gpx>'
+    open(os.path.join(bc.TRACECACHE, "selftest_p0.gpx"), "w").write(gpx)
+    return lat0, lon0
+
+def main():
+    # 1) geometry helpers
+    chain = bc.assemble([[(0.0, 0.0), (1.0, 0.0)], [(2.0, 0.0), (1.0, 0.0)]])  # 2nd reversed
+    assert chain[0] == (0.0, 0.0) and chain[-1] == (2.0, 0.0), f"assemble broke: {chain}"
+    d = bc.length([(51.5, 0.0), (51.5, 0.001)])
+    assert 60 <= d <= 80, f"length off: {d}"
+
+    # 2) end-to-end trace reconstruction (the caching mechanism)
+    lat0, lon0 = make_fixture()
+    res = bc.trace_course("selftest", lat0, lon0)
+    assert res is not None, "trace_course returned nothing for a valid Saturday-9am fixture"
+    L, pts, date = res
+    assert bc.TRACE_LO <= L <= bc.TRACE_HI, f"reconstructed distance out of band: {L:.0f} m"
+    assert date == "2025-04-12", f"wrong trace date: {date}"
+    assert len(pts) > 50, f"too few points: {len(pts)}"
+
+    # 3) lock predicate honours the fixed tolerance
+    assert bc.is_locked({"distance_m": 5000}) and not bc.is_locked({"distance_m": 4300})
+
+    print(f"OK — reconstructed {L:.0f} m / {len(pts)} pts; helpers + lock predicate pass.")
+
+if __name__ == "__main__":
+    try:
+        main()
+    except AssertionError as e:
+        print("SELFTEST FAILED:", e); sys.exit(1)

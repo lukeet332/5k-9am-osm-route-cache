@@ -1,0 +1,34 @@
+name: Weekly course cache refresh
+
+# Public repo => free, unlimited standard-runner minutes (separate from any private-repo quota).
+# Runs Saturday afternoon UK time to gradually grow coverage as the OSM trace corpus does.
+# The weekly commit also keeps the schedule alive (GitHub pauses crons after 60 days idle).
+on:
+  schedule:
+    - cron: "0 15 * * 6"   # 15:00 UTC every Saturday
+  workflow_dispatch:        # allow manual runs too
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cache-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest   # standard runner = free on public repos
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build cache (Havant -> north, gaps first, polite/rate-limited)
+        run: python3 build_cache.py --limit 60
+      - name: Commit any updates
+        run: |
+          git config user.name  "cache-bot"
+          git config user.email "cache-bot@users.noreply.github.com"
+          git add routes index.json
+          git commit -m "Weekly OSM course cache refresh" || echo "no changes"
+          git push

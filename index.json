@@ -1,0 +1,34 @@
+{
+ "guernsey": {
+  "distance_m": 5027,
+  "lat": 49.502341,
+  "lon": -2.530312,
+  "long": "Guernsey parkrun",
+  "source": "osm_relation"
+ },
+ "havant": {
+  "distance_m": 5008,
+  "last_tried": "2026-06-25",
+  "lat": 50.875771,
+  "lon": -0.975565,
+  "long": "Havant parkrun",
+  "source": "osm_9am_trace",
+  "trace_date": "2025-04-12"
+ },
+ "jersey": {
+  "distance_m": 5076,
+  "lat": 49.195026,
+  "lon": -2.204124,
+  "long": "Jersey parkrun",
+  "source": "osm_9am_trace",
+  "trace_date": "2019-08-03"
+ },
+ "tamarlakes": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 50.879837,
+  "lon": -4.433418,
+  "long": "Tamar Lakes parkrun",
+  "source": null
+ }
+}

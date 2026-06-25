@@ -1,0 +1,20 @@
+name: CI (caching self-test gate)
+
+# Blocks any merge that breaks the caching mechanism. No network — runs the offline self-test.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  selftest:
+    runs-on: ubuntu-latest        # standard runner = free on public repos
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Syntax check
+        run: python -m py_compile build_cache.py selftest.py
+      - name: Caching self-test
+        run: python selftest.py
