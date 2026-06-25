@@ -700,6 +700,17 @@
   "trace_date": "2015-12-26",
   "trace_m": 5004
  },
+ "colchestercastle": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.89167,
+  "lon": 0.902724,
+  "long": "Colchester Castle parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "cosmestonlakes": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1365,6 +1376,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "houghtonhall": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.90155,
+  "lon": -0.510046,
+  "long": "Houghton Hall parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "ifieldmillpond": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1436,6 +1458,18 @@
   "source": "osm_9am_trace",
   "status": "success",
   "trace_date": "2024-03-09"
+ },
+ "kinggeorgevplayingfield": {
+  "distance_m": 5151,
+  "last_tried": "2026-06-25",
+  "lat": 51.901883,
+  "lon": -2.110018,
+  "long": "King George V Playing Field parkrun, Cheltenham",
+  "provisional": true,
+  "relation_m": 5151,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
  },
  "kingston": {
   "distance_m": 4982,
@@ -1677,6 +1711,17 @@
   "long": "Marine Parade parkrun",
   "source": null,
   "status": "gap"
+ },
+ "markshall": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.897737,
+  "lon": 0.673757,
+  "long": "Markshall parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "marlboroughcommon": {
   "distance_m": null,
