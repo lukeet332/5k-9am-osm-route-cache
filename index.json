@@ -71,6 +71,14 @@
   "long": "Bedgebury Pinetum parkrun",
   "source": "osm_relation_approx"
  },
+ "bethlemroyalhospital": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.385332,
+  "lon": -0.029969,
+  "long": "Bethlem Royal Hospital parkrun",
+  "source": null
+ },
  "bideford": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -79,12 +87,28 @@
   "long": "Bideford parkrun",
   "source": null
  },
+ "brickfieldspark": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.377397,
+  "lon": -2.385904,
+  "long": "Brickfields Park parkrun",
+  "source": null
+ },
  "broadwater": {
   "distance_m": null,
   "last_tried": "2026-06-25",
   "lat": 51.197911,
   "lon": -0.598312,
   "long": "Broadwater parkrun",
+  "source": null
+ },
+ "bromley": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.386539,
+  "lon": 0.022874,
+  "long": "Bromley parkrun",
   "source": null
  },
  "brooklands": {
@@ -103,6 +127,14 @@
   "lon": -2.990243,
   "long": "Burnham and Highbridge parkrun",
   "source": "osm_relation_approx"
+ },
+ "californiacountry": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.379583,
+  "lon": -0.867647,
+  "long": "California Country parkrun",
+  "source": null
  },
  "canterbury": {
   "distance_m": 2418,
@@ -208,6 +240,22 @@
   "long": "Ganger Farm parkrun",
   "source": null
  },
+ "greatlines": {
+  "distance_m": 5422,
+  "last_tried": "2026-06-25",
+  "lat": 51.388527,
+  "lon": 0.541334,
+  "long": "Great Lines parkrun, Medway",
+  "source": "osm_relation_approx"
+ },
+ "greenhamcommon": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.378426,
+  "lon": -1.292267,
+  "long": "Greenham Common parkrun, Newbury",
+  "source": null
+ },
  "guernsey": {
   "distance_m": 5027,
   "lat": 49.502341,
@@ -231,6 +279,14 @@
   "long": "Havant parkrun",
   "source": "osm_9am_trace",
   "trace_date": "2025-04-12"
+ },
+ "homewood": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.366808,
+  "lon": -0.539078,
+  "long": "Homewood parkrun",
+  "source": null
  },
  "horsham": {
   "distance_m": null,
@@ -328,6 +384,14 @@
   "lat": 51.342355,
   "lon": -2.981436,
   "long": "Marine Parade parkrun",
+  "source": null
+ },
+ "melksham": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.377226,
+  "lon": -2.136235,
+  "long": "Melksham parkrun",
   "source": null
  },
  "meonvalleytrailwickham": {
