@@ -1141,6 +1141,17 @@
   "source": null,
   "status": "gap"
  },
+ "brockenhurst": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.821853,
+  "lon": -1.567476,
+  "long": "Brockenhurst parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "brockwell": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -2590,6 +2601,30 @@
   "status": "gap",
   "trace_m": null
  },
+ "eastbourne": {
+  "distance_m": 5024,
+  "last_tried": "2026-06-26",
+  "lat": 50.806248,
+  "lon": 0.290451,
+  "long": "Eastbourne parkrun",
+  "provisional": false,
+  "relation_m": 5039,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2023-08-05",
+  "trace_m": 5024
+ },
+ "eastbrighton": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.818691,
+  "lon": -0.099373,
+  "long": "East Brighton parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "eastgrinstead": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -3407,6 +3442,17 @@
   "relation_m": 5150,
   "source": "osm_relation",
   "status": "success",
+  "trace_m": null
+ },
+ "greatsalterns": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.809385,
+  "lon": -1.046606,
+  "long": "Great Salterns parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
   "trace_m": null
  },
  "greatyarmouthnorthbeach": {
@@ -4524,6 +4570,17 @@
   "lat": 54.04568,
   "lon": -2.781183,
   "long": "Lancaster parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "lancingbeachgreen": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.820591,
+  "lon": -0.323792,
+  "long": "Lancing Beach Green parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -8870,6 +8927,17 @@
   "source": "osm_relation",
   "status": "success",
   "trace_m": null
+ },
+ "worthing": {
+  "distance_m": 7587,
+  "last_tried": "2026-06-26",
+  "lat": 50.810312,
+  "lon": -0.3645,
+  "long": "Worthing parkrun",
+  "relation_m": 7587,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": 478
  },
  "wotton": {
   "distance_m": null,
