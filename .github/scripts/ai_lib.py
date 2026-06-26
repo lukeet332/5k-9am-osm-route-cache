@@ -312,9 +312,25 @@ def outcomes_summary():
     top_err = sorted(err_msgs.items(), key=lambda kv: -kv[1])[:3]
     err_line = (f" ERRORS (crashed mid-build, suppressing coverage -> FIX THESE FIRST)={len(errored)}"
                 + (": " + ", ".join(f"{m} x{n}" for m, n in top_err) if top_err else "") + ".") if errored else ""
+    # SELF-AUDIT: non-success entries whose relation_m/trace_m, at the best integer lap count (1..6),
+    # lands in 4800-5200 -> current code should map them (stale) OR a best-integer-N lap rule would.
+    # x2 cases self-heal (build_cache prioritises them); x3+/x5 need a generalised lap rule = your job.
+    def _bestn(v): return min(range(1, 7), key=lambda n: abs(n * v - 5000))
+    recov = []
+    for k, e in idx.items():
+        if status(e) == "success":
+            continue
+        for fld in ("relation_m", "trace_m"):
+            v = e.get(fld)
+            if v and 4800 <= _bestn(v) * v <= 5200:
+                recov.append((k, _bestn(v))); break
+    multilap = [k for k, n in recov if n >= 3]
+    rec_line = (f" AUDIT: {len(recov)} non-success entries look RECOVERABLE (best lap-multiple in band). "
+                f"{len(multilap)} need a best-integer-N lap rule (N>=3), e.g. {multilap[:6]} - generalising "
+                f"the x2 doubling to N laps would map these.") if recov else ""
     return (f"INDEX outcomes (of {len(idx)} attempted): success={counts['success']} "
             f"({trusted} trusted GPS-trace, {provisional} PROVISIONAL relation-sourced -> upgrade to "
             f"real 09:00 traces), failed(off-tolerance, index.json only)={counts['failed']}, gap={counts['gap']}. "
             f"Of the failed: ~{single_lap} have a ~2.0-2.8km relation (likely ONE LAP of a 2-lap parkrun "
             f"— consider doubling), ~{near_miss} are near-misses just outside 4.8-5.2km (often an "
-            f"incomplete relation — consider way-chaining/gap-bridging). Sample failed: {sample}.{err_line}")
+            f"incomplete relation — consider way-chaining/gap-bridging). Sample failed: {sample}.{err_line}{rec_line}")

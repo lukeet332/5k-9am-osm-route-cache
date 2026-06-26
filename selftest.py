@@ -127,7 +127,22 @@ def main():
     Lp = resp[0]
     assert bc.REL_LO <= Lp <= bc.REL_HI, f"poisoned-point trace still reconstructs ~5k: {Lp:.0f} m"
 
-    print(f"OK — reconstructed {L:.0f} m / {len(pts)} pts; helpers + lock + trust + doubling + error-guard pass.")
+    # 7) self-audit flags recoverable entries (the stale 2-lap regression class) and only those: a
+    #    non-success entry whose relation_m/trace_m hits the band at its best integer lap count must be
+    #    flagged; a genuine no-data gap, an already-success entry, and a truly-off length must not.
+    assert bc.best_lap_n(2450) == 2 and bc.best_lap_n(1666) == 3 and bc.best_lap_n(1000) == 5, "best_lap_n wrong"
+    fake = {
+        "twolap":   {"status": "failed",  "relation_m": 2450},   # x2 = 4900 -> recoverable
+        "threelap": {"status": "failed",  "relation_m": 1666},   # x3 = 4998 -> recoverable
+        "tracedbl": {"status": "failed",  "trace_m": 2500},      # x2 = 5000 -> recoverable (via trace)
+        "genuine":  {"status": "gap",     "relation_m": None},   # no data -> NOT
+        "wayoff":   {"status": "failed",  "relation_m": 3300},   # best N=2 -> 6600, out of band -> NOT
+        "done":     {"status": "success", "relation_m": 2450},   # already success -> NOT
+    }
+    flagged = {r[0] for r in bc.audit_recoverable(fake)}
+    assert flagged == {"twolap", "threelap", "tracedbl"}, f"audit_recoverable wrong: {flagged}"
+
+    print(f"OK — reconstructed {L:.0f} m / {len(pts)} pts; helpers + lock + trust + doubling + error-guard + audit pass.")
 
 if __name__ == "__main__":
     try:
