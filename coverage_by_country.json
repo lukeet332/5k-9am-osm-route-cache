@@ -1,6 +1,6 @@
 {
  "world_total": 2361,
- "world_mapped": 120,
+ "world_mapped": 122,
  "countries": [
   {
    "code": 97,
@@ -12,7 +12,7 @@
    "code": 3,
    "name": "Australia",
    "total": 543,
-   "mapped": 0
+   "mapped": 2
   },
   {
    "code": 85,

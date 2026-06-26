@@ -6614,6 +6614,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "oceangrove": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -38.267313,
+  "lon": 144.512783,
+  "long": "Ocean Grove parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "oconnorsbeach": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -9313,6 +9325,18 @@
   "lat": 54.988451,
   "lon": -1.617143,
   "long": "Town Moor parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "trebeckreserve": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -38.233939,
+  "lon": 143.988093,
+  "long": "Trebeck Reserve parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
