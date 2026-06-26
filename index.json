@@ -1721,6 +1721,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "huntingdon": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.330591,
+  "lon": -0.213662,
+  "long": "Huntingdon parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "ifieldmillpond": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -2186,6 +2197,19 @@
   "source": null,
   "status": "gap",
   "trace_m": null
+ },
+ "mildenhallhub": {
+  "distance_m": 5023,
+  "last_tried": "2026-06-26",
+  "lat": 52.342792,
+  "lon": 0.499399,
+  "long": "Mildenhall Hub parkrun",
+  "provisional": false,
+  "relation_m": 5102,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2022-11-26",
+  "trace_m": 5023
  },
  "mileend": {
   "distance_m": 5638,
