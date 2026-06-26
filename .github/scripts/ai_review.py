@@ -101,7 +101,10 @@ def main():
         L.done("No reviewer model available — not approving.", approve="false",
                feedback="reviewer model unavailable; needs human review", bible_touched="false")
     approve = bool(result.get("approve"))
-    feedback = str(result.get("feedback", "")).replace("\n", " ").strip()[:600] or "(no feedback)"
+    # Pass the reviewer's FULL critique to the author (it keeps context and issues a targeted fix).
+    # Truncating to a tweet-length crumb was the old loop's worst information loss. The author is on a
+    # big-context model, so give it the whole reasoning; only newlines are flattened for GITHUB_OUTPUT.
+    feedback = str(result.get("feedback", "")).replace("\n", " ").strip()[:4000] or "(no feedback)"
     # Did we get the INTENDED independent reviewer, or did it fall back to the author model (e.g. the
     # reviewer 413'd because the diff exceeded its window, or was rate-limited)? Flag it so the human
     # knows the review was degraded (reduced independence) and can swap the reviewer model later.
