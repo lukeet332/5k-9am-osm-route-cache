@@ -52,7 +52,7 @@ jobs:
 
       - name: Adversarial AI review
         id: rev
-        if: steps.guard.outputs.rounds < 3
+        if: steps.guard.outputs.rounds < 5
         env:
           GH_MODELS_TOKEN: ${{ secrets.BOT_PAT }}    # GitHub Models needs a real PAT (the built-in GITHUB_TOKEN is not entitled)
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}    # independent reviewer / other providers; skipped if unset
@@ -70,15 +70,15 @@ jobs:
       # ---- flag a DEGRADED review (intended reviewer 413'd on a big diff / was rate-limited, so it
       #      fell back to the author model = reduced independence). Don't block — just surface it. ----
       - name: Flag degraded reviewer
-        if: steps.guard.outputs.rounds < 3 && steps.rev.outputs.degraded == 'true'
+        if: steps.guard.outputs.rounds < 5 && steps.rev.outputs.degraded == 'true'
         env:
           GH_TOKEN: ${{ secrets.BOT_PAT }}
         run: |
-          gh pr comment "$PR" --body "$(printf '⚠️ **Degraded review — heads up @lukeet332**\n\nThe configured independent reviewer was unavailable for this PR (most likely the diff exceeded its context window, or it was rate-limited), so the review fell back to **`%s`** — the same provider as the author, so this review was **less independent than usual**. Not blocking; flagging so you can check it and, if this recurs, switch the reviewer to a bigger-context model.' "${{ steps.rev.outputs.reviewer }}")"
+          gh pr comment "$PR" --body "$(printf '⚠️ **Degraded review — heads up @lukeet332**\n\nThe preferred reviewer (tier-1 of the reviewer chain) was unavailable for this PR (rate-limited or context-limited), so the review fell back to **`%s`** — a lower tier, so it was **less independent than usual**. Not blocking; flagging so you can sanity-check it, and if this recurs we can swap the reviewer tier-1.' "${{ steps.rev.outputs.reviewer }}")"
 
       # ---- constitution amendment: ALWAYS human-gated, WITH the reviewer's recommendation ----
       - name: Constitution change -> human gate (with AI recommendation)
-        if: steps.guard.outputs.rounds < 3 && steps.rev.outputs.bible_touched == 'true'
+        if: steps.guard.outputs.rounds < 5 && steps.rev.outputs.bible_touched == 'true'
         env:
           GH_TOKEN: ${{ secrets.BOT_PAT }}
           REC: ${{ steps.rev.outputs.recommend }}
@@ -93,16 +93,25 @@ jobs:
 
       # ---- approved (normal, non-constitution PR): hand to auto-merge ----
       - name: Approve -> automerge
-        if: steps.guard.outputs.rounds < 3 && steps.rev.outputs.bible_touched != 'true' && steps.rev.outputs.approve == 'true'
+        if: steps.guard.outputs.rounds < 5 && steps.rev.outputs.bible_touched != 'true' && steps.rev.outputs.verdict == 'approve'
         env:
           GH_TOKEN: ${{ secrets.BOT_PAT }}
         run: |
           gh pr comment "$PR" --body "✅ AI review (\`${{ steps.rev.outputs.reviewer }}\`) approved: ${{ steps.rev.outputs.feedback }}"
           gh pr edit "$PR" --add-label automerge --remove-label needs-ai-review
 
-      # ---- rejected: author revises on the same branch (re-triggers this review) ----
+      # ---- churn: already-done / no-op / re-proposed work. Don't revise - CLOSE the PR + delete the
+      #      branch so the author abandons this idea and proposes a NEW one on the next run. ----
+      - name: Churn -> close PR + delete branch
+        if: steps.guard.outputs.rounds < 5 && steps.rev.outputs.bible_touched != 'true' && steps.rev.outputs.verdict == 'churn'
+        env:
+          GH_TOKEN: ${{ secrets.BOT_PAT }}
+        run: |
+          gh pr close "$PR" --delete-branch --comment "$(printf '🌀 **Closed as churn** by AI review (`%s`).\n\n> %s\n\nThis idea is already implemented / a no-op, so revising it is pointless - the author should propose a genuinely NEW idea on the next maintenance run (this is recorded so it is not re-proposed).' "${{ steps.rev.outputs.reviewer }}" "${{ steps.rev.outputs.feedback }}")"
+
+      # ---- revise: one concrete fixable blocker - author revises on the same branch (re-triggers review) ----
       - name: Reject -> author revises
-        if: steps.guard.outputs.rounds < 3 && steps.rev.outputs.approve == 'false'
+        if: steps.guard.outputs.rounds < 5 && steps.rev.outputs.verdict == 'revise'
         env:
           GH_MODELS_TOKEN: ${{ secrets.BOT_PAT }}    # GitHub Models needs a real PAT (the built-in GITHUB_TOKEN is not entitled)
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -153,10 +162,10 @@ jobs:
           echo "::error::revision could not pass the self-test after retries — not pushing."; exit 1
 
       # ---- out of rounds: hand to a human ----
-      - name: Give up after 3 rounds
-        if: steps.guard.outputs.rounds >= 3
+      - name: Give up after 5 rounds
+        if: steps.guard.outputs.rounds >= 5
         env:
           GH_TOKEN: ${{ secrets.BOT_PAT }}
         run: |
-          gh pr comment "$PR" --body "🛑 The two AIs didn't converge after 3 revision rounds — needs a human. Removing labels."
+          gh pr comment "$PR" --body "🛑 The two AIs didn't converge after 5 revision rounds — needs a human. Removing labels."
           gh pr edit "$PR" --remove-label needs-ai-review --remove-label automerge || true
