@@ -2128,6 +2128,17 @@
   "status": "failed",
   "trace_m": null
  },
+ "cranbrookcountrypark": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.750746,
+  "lon": -3.417858,
+  "long": "Cranbrook Country Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "crane": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -3985,6 +3996,17 @@
   "status": "success",
   "trace_m": null
  },
+ "highcliffebeach": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.73854,
+  "lon": -1.69299,
+  "long": "Highcliffe Beach parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "highwoods": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -5072,6 +5094,17 @@
   "lat": 53.337193,
   "lon": -2.058402,
   "long": "Lyme Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "lymingtonwoodside": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.747747,
+  "lon": -1.54548,
+  "long": "Lymington Woodside parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -7070,6 +7103,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "seafordbeach": {
+  "distance_m": 2146,
+  "last_tried": "2026-06-26",
+  "lat": 50.778986,
+  "lon": 0.079566,
+  "long": "Seaford Beach parkrun",
+  "relation_m": null,
+  "source": "osm_9am_trace_offdist",
+  "status": "failed",
+  "trace_date": "2018-08-11",
+  "trace_m": 2146
+ },
  "sedgefield": {
   "distance_m": 5765,
   "last_tried": "2026-06-26",
@@ -7248,6 +7293,17 @@
   "lat": 54.873987,
   "lon": -3.387605,
   "long": "Silloth Promenade parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "simmonspark": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.734898,
+  "lon": -3.996543,
+  "long": "Simmons Park parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -8256,6 +8312,18 @@
   "relation_m": null,
   "source": null,
   "status": "gap",
+  "trace_m": null
+ },
+ "uptonhouse": {
+  "distance_m": 5119,
+  "last_tried": "2026-06-26",
+  "lat": 50.734891,
+  "lon": -2.013428,
+  "long": "Upton House parkrun",
+  "provisional": true,
+  "relation_m": 5119,
+  "source": "osm_relation",
+  "status": "success",
   "trace_m": null
  },
  "uryriverside": {
