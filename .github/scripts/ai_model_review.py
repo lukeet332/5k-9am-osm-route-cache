@@ -108,53 +108,71 @@ def main():
     menu = {p: provider_models(p) for p in avail}
     menu = {p: ids for p, ids in menu.items() if ids}   # drop providers we couldn't list
     print("Live model menu:", {p: len(ids) for p, ids in menu.items()})
-    rec, _ = L.call_with_roles(
-        PROMPT % {"avail": ", ".join(avail) or "github-models", "current": json.dumps(cur_short),
-                  "master_tokens": f"~{master_tokens}", "menu": json.dumps(menu, indent=1)},
-        roles=("primary", "fallback"),
-    )
-    if not isinstance(rec, dict):
-        stop("No usable recommendation — keeping current models.")
+    base_args = {"avail": ", ".join(avail) or "github-models",
+                 "master_tokens": f"~{master_tokens}", "menu": json.dumps(menu, indent=1)}
 
-    new = {}
-    for role in ROLES:
-        r = rec.get(role)
-        if not isinstance(r, dict) or str(r.get("provider", "")) not in L.PROVIDERS or not str(r.get("model", "")).strip():
-            stop(f"Recommendation for {role} invalid — keeping current.")
-        new[role] = {"provider": r["provider"], "model": str(r["model"]).strip()}
-
-    # master + reviewer must be two different sources when we actually have two to choose from
-    if len(avail) >= 2 and new["primary"]["provider"] == new["fallback"]["provider"]:
-        stop("Master and reviewer must be from two different sources (>=2 available) — keeping current.")
-
-    changed = [r for r in ROLES if new[r] != cur_short[r]]
-    if not changed:
-        stop("All roles still optimal — no change.")
-
-    for role in changed:                       # validate each change with a live call
-        base_url, key_env = L.PROVIDERS[new[role]["provider"]]
+    def live_ok(provider, model):
+        """Dummy call the chosen model to confirm it's actually live + usable. Returns (ok, error)."""
+        base_url, key_env = L.PROVIDERS[provider]
         if not os.environ.get(key_env, "").strip():
-            stop(f"{role} provider key ({key_env}) not configured — keeping current.")
+            return False, f"no key for {provider}"
         try:
-            test = L.call_json({"base_url": base_url, "model": new[role]["model"], "api_key_env": key_env},
-                               'Reply with the JSON {"ok": true} and nothing else.')
-            assert isinstance(test, dict)
+            r = L.call_json({"base_url": base_url, "model": model, "api_key_env": key_env},
+                            'Reply with the JSON {"ok": true} and nothing else.')
+            return isinstance(r, dict), ("" if isinstance(r, dict) else "non-dict reply")
         except Exception as e:
-            code = getattr(e, "code", "")
             body = ""
             try:
                 if hasattr(e, "read"):
-                    body = e.read().decode("utf-8", "ignore")[:200]
+                    body = e.read().decode("utf-8", "ignore")[:160]
             except Exception:
                 pass
-            stop(f"Recommended {role} ({new[role]['provider']}/{new[role]['model']}) failed live "
-                 f"validation ({e.__class__.__name__} {code}) {body} — keeping current.")
+            return False, f"{e.__class__.__name__} {getattr(e,'code','')} {body}".strip()
 
-    L.MODEL_CONFIG.write_text(json.dumps({r: new[r] for r in ROLES}, indent=2) + "\n")
-    L.emit(changed="true", changed_roles=" & ".join(changed),
-           primary=f'{new["primary"]["provider"]}/{new["primary"]["model"]}',
-           fallback=f'{new["fallback"]["provider"]}/{new["fallback"]["model"]}',
-           reason=str(rec.get("reason", "")).replace("\n", " ").strip()[:400])
+    # Propose -> dummy-test the chosen models -> if any is dead, tell the selector to AVOID it and
+    # pick a DIFFERENT live one. Retry a few rounds, then keep current if nothing live is found.
+    avoid, MAX_TRIES = [], 3
+    for attempt in range(MAX_TRIES):
+        prompt = PROMPT % {**base_args, "current": json.dumps(cur_short)}
+        if avoid:
+            prompt += ("\n\nDO NOT choose any of these — they just FAILED a live availability test: "
+                       + "; ".join(avoid) + ". Pick DIFFERENT, currently-live models from the menu.")
+        rec, _ = L.call_with_roles(prompt, roles=("primary", "fallback"))
+        if not isinstance(rec, dict):
+            stop("No usable recommendation — keeping current models.")
+        new, bad = {}, None
+        for role in ROLES:
+            r = rec.get(role)
+            if not isinstance(r, dict) or str(r.get("provider", "")) not in L.PROVIDERS or not str(r.get("model", "")).strip():
+                bad = role; break
+            new[role] = {"provider": r["provider"], "model": str(r["model"]).strip()}
+        if bad:
+            stop(f"Recommendation for {bad} invalid — keeping current.")
+        if len(avail) >= 2 and new["primary"]["provider"] == new["fallback"]["provider"]:
+            stop("Master and reviewer must be from two different sources (>=2 available) — keeping current.")
+        changed = [r for r in ROLES if new[r] != cur_short[r]]
+        if not changed:
+            stop("All roles still optimal — no change.")
+
+        failures = []                            # dummy-call each newly-chosen model
+        for role in changed:
+            ok, err = live_ok(new[role]["provider"], new[role]["model"])
+            tag = f'{new[role]["provider"]}/{new[role]["model"]}'
+            if not ok:
+                print(f"  {role} {tag} failed live test: {err}")
+                failures.append(tag)
+        if failures:
+            avoid = list(dict.fromkeys(avoid + failures))
+            continue                             # re-ask, avoiding the dead model(s)
+
+        L.MODEL_CONFIG.write_text(json.dumps({r: new[r] for r in ROLES}, indent=2) + "\n")
+        L.emit(changed="true", changed_roles=" & ".join(changed),
+               primary=f'{new["primary"]["provider"]}/{new["primary"]["model"]}',
+               fallback=f'{new["fallback"]["provider"]}/{new["fallback"]["model"]}',
+               reason=str(rec.get("reason", "")).replace("\n", " ").strip()[:400])
+        return
+
+    stop(f"No fully-live model set found after {MAX_TRIES} tries — keeping current.")
 
 
 if __name__ == "__main__":
