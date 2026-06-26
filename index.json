@@ -1389,6 +1389,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "haverhill": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 52.076737,
+  "lon": 0.422212,
+  "long": "Haverhill parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "hazelwood": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -2327,6 +2338,19 @@
   "long": "Reigate Priory parkrun",
   "source": null,
   "status": "gap"
+ },
+ "rendleshamforest": {
+  "distance_m": 4979,
+  "last_tried": "2026-06-25",
+  "lat": 52.083267,
+  "lon": 1.428606,
+  "long": "Rendlesham Forest parkrun",
+  "provisional": false,
+  "relation_m": 5161,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2022-09-17",
+  "trace_m": 4979
  },
  "richmond": {
   "distance_m": null,
