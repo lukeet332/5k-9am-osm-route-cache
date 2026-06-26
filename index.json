@@ -10,6 +10,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "abbotswood": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.844164,
+  "lon": 0.211797,
+  "long": "Abbot\u2019s Wood parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "aberbeeg": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -770,6 +781,17 @@
   "source": null,
   "status": "gap"
  },
+ "bevendeandown": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.844709,
+  "lon": -0.107027,
+  "long": "Bevendean Down parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "beverleywestwood": {
   "distance_m": 5011,
   "last_tried": "2026-06-26",
@@ -1083,6 +1105,17 @@
   "lat": 53.131155,
   "lon": -1.295214,
   "long": "Brierley Forest parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "brighton": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.84214,
+  "lon": -0.172498,
+  "long": "Brighton & Hove parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -1604,6 +1637,17 @@
   "lat": 53.894133,
   "lon": -1.665858,
   "long": "Chevin Forest parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "chichester": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.846182,
+  "lon": -0.777535,
+  "long": "Chichester parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -2790,6 +2834,17 @@
   "lat": 54.586363,
   "lon": -5.978879,
   "long": "Falls parkrun, Belfast",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "fareham": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.848448,
+  "lon": -1.167385,
+  "long": "Fareham parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -4065,6 +4120,19 @@
   "source": null,
   "status": "gap",
   "trace_m": null
+ },
+ "hovepromenade": {
+  "distance_m": 5043,
+  "last_tried": "2026-06-26",
+  "lat": 50.823391,
+  "lon": -0.166594,
+  "long": "Hove Promenade parkrun",
+  "provisional": false,
+  "relation_m": null,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2019-01-12",
+  "trace_m": 5043
  },
  "huddersfield": {
   "distance_m": null,
@@ -6282,6 +6350,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "portsmouthlakeside": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.840654,
+  "lon": -1.08157,
+  "long": "Portsmouth Lakeside parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "potternewton": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -6300,6 +6379,17 @@
   "lon": -2.703902,
   "long": "Preston parkrun",
   "relation_m": 37278,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "prestonpark": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.841557,
+  "lon": -0.148616,
+  "long": "Preston Park parkrun, Brighton",
+  "relation_m": null,
   "source": null,
   "status": "gap",
   "trace_m": null
