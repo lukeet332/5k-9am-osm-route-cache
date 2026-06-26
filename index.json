@@ -333,6 +333,17 @@
   "source": null,
   "status": "gap"
  },
+ "barrow": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.117706,
+  "lon": -3.218855,
+  "long": "Barrow parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "barryisland": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1143,6 +1154,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "castlewellan": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.262147,
+  "lon": -5.95386,
+  "long": "Castlewellan parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "catford": {
   "distance_m": 5074,
   "last_tried": "2026-06-25",
@@ -1601,6 +1623,17 @@
   "status": "failed",
   "trace_m": null
  },
+ "conynghamhall": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.011758,
+  "lon": -1.479507,
+  "long": "Conyngham Hall parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "corby": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -1755,6 +1788,17 @@
   "long": "Cyclopark parkrun",
   "source": null,
   "status": "gap"
+ },
+ "dalbyforest": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.273821,
+  "lon": -0.686599,
+  "long": "Dalby Forest parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "dartford": {
   "distance_m": 5076,
@@ -2044,6 +2088,19 @@
   "status": "success",
   "trace_m": null
  },
+ "fellfoot": {
+  "distance_m": 5021,
+  "last_tried": "2026-06-26",
+  "lat": 54.274736,
+  "lon": -2.952259,
+  "long": "Fell Foot parkrun, Newby Bridge",
+  "provisional": false,
+  "relation_m": null,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2019-10-05",
+  "trace_m": 5021
+ },
  "ferrymeadows": {
   "distance_m": 5089,
   "last_tried": "2026-06-26",
@@ -2163,6 +2220,17 @@
   "source": null,
   "status": "gap"
  },
+ "ford": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.198427,
+  "lon": -3.088135,
+  "long": "Ford parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "fordingbridgerecreationground": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -2195,6 +2263,17 @@
   "status": "success",
   "trace_date": "2020-01-11",
   "trace_m": 4967
+ },
+ "fountainsabbey": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.110196,
+  "lon": -1.581983,
+  "long": "Fountains Abbey parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "franksfarm": {
   "distance_m": null,
@@ -2680,6 +2759,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "harrogate": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.992428,
+  "lon": -1.521435,
+  "long": "Harrogate parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "harrow": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -2826,6 +2916,17 @@
   "lat": 52.068892,
   "lon": -2.724152,
   "long": "Hereford parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "heslington": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.949319,
+  "lon": -1.01799,
+  "long": "Heslington parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -3299,6 +3400,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "lancaster": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.04568,
+  "lon": -2.781183,
+  "long": "Lancaster parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "leamington": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -3524,6 +3636,17 @@
   "status": "success",
   "trace_date": "2023-11-04",
   "trace_m": 5010
+ },
+ "loughhead": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.247811,
+  "lon": -7.453552,
+  "long": "Lough Head parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "lowestoft": {
   "distance_m": 5016,
@@ -3926,12 +4049,34 @@
   "status": "success",
   "trace_m": null
  },
+ "millfield": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.125154,
+  "lon": -1.190864,
+  "long": "Millfield parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "millhouses": {
   "distance_m": null,
   "last_tried": "2026-06-26",
   "lat": 53.338516,
   "lon": -1.505027,
   "long": "Millhouses parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "millom": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.21399,
+  "lon": -3.26996,
+  "long": "Millom parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -3986,6 +4131,17 @@
   "long": "Morden parkrun",
   "source": null,
   "status": "gap"
+ },
+ "morecambeprom": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.065082,
+  "lon": -2.885102,
+  "long": "Morecambe Prom parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "motepark": {
   "distance_m": null,
@@ -4062,12 +4218,34 @@
   "status": "gap",
   "trace_m": null
  },
+ "newrygreenway": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.170834,
+  "lon": -6.339015,
+  "long": "Newry Greenway parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "newtown": {
   "distance_m": null,
   "last_tried": "2026-06-26",
   "lat": 52.514658,
   "lon": -3.319012,
   "long": "Newtown parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "nobles": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.166432,
+  "lon": -4.480834,
+  "long": "Nobles parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -4136,6 +4314,17 @@
   "lat": 53.265511,
   "lon": -2.510876,
   "long": "Northwich parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "northyorkshirewaterpark": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.227812,
+  "lon": -0.482836,
+  "long": "North Yorkshire Water Park parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -4850,6 +5039,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "rostrevor": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.099486,
+  "lon": -6.193448,
+  "long": "Rostrevor parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "rothamstedpark": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -5129,6 +5329,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "sewerby": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.103268,
+  "lon": -0.160761,
+  "long": "Sewerby parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "sharphamroadplayingfields": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -5240,6 +5451,17 @@
   "lon": 1.622193,
   "long": "Sizewell parkrun",
   "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "skipton": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.961331,
+  "lon": -2.030004,
+  "long": "Skipton parkrun",
+  "relation_m": 1033,
   "source": null,
   "status": "gap",
   "trace_m": null
@@ -5818,6 +6040,17 @@
   "relation_m": 4885,
   "source": "osm_relation",
   "status": "success",
+  "trace_m": null
+ },
+ "thorpperrow": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.261285,
+  "lon": -1.6042,
+  "long": "Thorp Perrow parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
   "trace_m": null
  },
  "thoulstone": {
@@ -6547,6 +6780,17 @@
   "relation_m": 5060,
   "source": "osm_relation",
   "status": "success",
+  "trace_m": null
+ },
+ "yorkcommunitywoodland": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.964983,
+  "lon": -1.149801,
+  "long": "York Community Woodland parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
   "trace_m": null
  },
  "ypromenad": {
