@@ -92,8 +92,12 @@ def _post(url, headers, payload, attempts=4):
     """POST with retry+backoff on TRANSIENT errors (429 rate-limit, 500/502/503/504 server/overload).
     Free model tiers (esp. Gemini) intermittently return 503 UNAVAILABLE; one transient blip should
     not waste the whole weekly run. Non-transient errors (400/401/413 …) raise immediately."""
+    # A real User-Agent: some providers (e.g. Groq) sit behind Cloudflare, which 403s the default
+    # "Python-urllib/x.y" signature (error 1010). A normal UA passes and is harmless elsewhere.
     req = urllib.request.Request(url, data=json.dumps(payload).encode(),
-                                 headers={**headers, "Content-Type": "application/json"}, method="POST")
+                                 headers={**headers, "Content-Type": "application/json",
+                                          "User-Agent": "Mozilla/5.0 (5k-9am-osm-route-cache AI maintenance bot)"},
+                                 method="POST")
     for i in range(attempts):
         try:
             with urllib.request.urlopen(req, timeout=120) as resp:
