@@ -314,6 +314,17 @@
   "status": "failed",
   "trace_m": null
  },
+ "beaconhillcountrypark": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.730411,
+  "lon": -1.233675,
+  "long": "Beacon Hill Country Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "becclesquay": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -733,6 +744,17 @@
   "source": null,
   "status": "gap"
  },
+ "cannockchase": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.73744,
+  "lon": -1.99542,
+  "long": "Cannock Chase parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "cannonhill": {
   "distance_m": 5249,
   "last_tried": "2026-06-26",
@@ -1080,6 +1102,17 @@
   "trace_date": "2018-10-20",
   "trace_m": 4993
  },
+ "conkers": {
+  "distance_m": 3561,
+  "last_tried": "2026-06-26",
+  "lat": 52.739475,
+  "lon": -1.543021,
+  "long": "Conkers parkrun",
+  "relation_m": 3561,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
+ },
  "corby": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -1209,6 +1242,17 @@
   "long": "Dinton Pastures parkrun",
   "source": null,
   "status": "gap"
+ },
+ "dolgellau": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.744574,
+  "lon": -3.886527,
+  "long": "Dolgellau parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "doverwaterfront": {
   "distance_m": null,
@@ -1879,6 +1923,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "haughmondhill": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.7274,
+  "lon": -2.674389,
+  "long": "Haughmond Hill parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "havant": {
   "distance_m": 5008,
   "last_tried": "2026-06-25",
@@ -2231,6 +2286,18 @@
   "relation_m": 2881,
   "source": "osm_relation_offdist",
   "status": "failed",
+  "trace_m": null
+ },
+ "kingslynn": {
+  "distance_m": 5008,
+  "last_tried": "2026-06-26",
+  "lat": 52.752762,
+  "lon": 0.407446,
+  "long": "King\u2019s Lynn parkrun",
+  "provisional": true,
+  "relation_m": 5008,
+  "source": "osm_relation",
+  "status": "success",
   "trace_m": null
  },
  "kingston": {
@@ -4463,6 +4530,17 @@
   "lat": 51.950753,
   "lon": -3.401145,
   "long": "Y Promen\u00e2d parkrun, Aberhonddu",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "ypromenadabermaw": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.7208,
+  "lon": -4.056196,
+  "long": "Y Promen\u00e2d parkrun, Abermaw",
   "relation_m": null,
   "source": null,
   "status": "gap",
