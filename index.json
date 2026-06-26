@@ -1124,6 +1124,19 @@
   "source": null,
   "status": "gap"
  },
+ "downhammarketacademy": {
+  "distance_m": 4994,
+  "last_tried": "2026-06-26",
+  "lat": 52.6034,
+  "lon": 0.389471,
+  "long": "Downham Market Academy parkrun",
+  "provisional": false,
+  "relation_m": 5099,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2022-08-06",
+  "trace_m": 4994
+ },
  "dudley": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -1172,6 +1185,17 @@
   "long": "Eastleigh parkrun",
   "source": null,
   "status": "gap"
+ },
+ "eastpark": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.579042,
+  "lon": -2.101975,
+  "long": "East Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "eastville": {
   "distance_m": null,
@@ -2818,6 +2842,17 @@
   "status": "success",
   "trace_m": null
  },
+ "pertonplayingfields": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.594559,
+  "lon": -2.19183,
+  "long": "Perton Playing Fields parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "pocket": {
   "distance_m": 5018,
   "last_tried": "2026-06-26",
@@ -3828,6 +3863,17 @@
   "source": null,
   "status": "gap"
  },
+ "walsall": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.58725,
+  "lon": -1.966252,
+  "long": "Walsall Arboretum parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "walthamstow": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -4009,6 +4055,17 @@
   "long": "Woking parkrun",
   "source": null,
   "status": "gap"
+ },
+ "wolverhampton": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.588775,
+  "lon": -2.140875,
+  "long": "Wolverhampton parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "woodgatevalleycountrypark": {
   "distance_m": null,
