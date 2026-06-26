@@ -796,6 +796,18 @@
   "source": "osm_relation",
   "status": "success"
  },
+ "catton": {
+  "distance_m": 5097,
+  "last_tried": "2026-06-26",
+  "lat": 52.656696,
+  "lon": 1.295507,
+  "long": "Catton parkrun",
+  "provisional": true,
+  "relation_m": 5097,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
+ },
  "chalkwellbeach": {
   "distance_m": 5015,
   "last_tried": "2026-06-25",
