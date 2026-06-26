@@ -172,6 +172,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "babbsmill": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.489833,
+  "lon": -1.746034,
+  "long": "Babbs Mill parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "banbury": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -340,6 +351,18 @@
   "long": "Bedgebury Pinetum parkrun",
   "source": null,
   "status": "gap"
+ },
+ "bedworth": {
+  "distance_m": 5204,
+  "last_tried": "2026-06-26",
+  "lat": 52.476054,
+  "lon": -1.47027,
+  "long": "Bedworth parkrun",
+  "relation_m": 5834,
+  "source": "osm_9am_trace_offdist",
+  "status": "failed",
+  "trace_date": "2026-01-31",
+  "trace_m": 5204
  },
  "bensyardely": {
   "distance_m": null,
@@ -964,6 +987,17 @@
   "status": "failed",
   "trace_m": null
  },
+ "corby": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.493879,
+  "lon": -0.691774,
+  "long": "Corby parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "cosmestonlakes": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1079,6 +1113,17 @@
   "source": null,
   "status": "gap"
  },
+ "dudley": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.490027,
+  "lon": -2.134568,
+  "long": "Dudley parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "dulwich": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1136,6 +1181,17 @@
   "long": "Edenbrook Country parkrun",
   "source": null,
   "status": "gap"
+ },
+ "edgbastonreservoir": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.476722,
+  "lon": -1.936437,
+  "long": "Edgbaston Reservoir parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "eghamorbit": {
   "distance_m": null,
@@ -2284,6 +2340,17 @@
   "source": null,
   "status": "gap"
  },
+ "marketharborough": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.474487,
+  "lon": -0.924979,
+  "long": "Market Harborough parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "markshall": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -2456,6 +2523,17 @@
   "lat": 51.559479,
   "lon": -3.030939,
   "long": "Newport parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "newtown": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.514658,
+  "lon": -3.319012,
+  "long": "Newtown parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -2634,6 +2712,18 @@
   "relation_m": null,
   "source": null,
   "status": "gap",
+  "trace_m": null
+ },
+ "perryhall": {
+  "distance_m": 5003,
+  "last_tried": "2026-06-26",
+  "lat": 52.52486,
+  "lon": -1.911825,
+  "long": "Perry Hall parkrun",
+  "provisional": true,
+  "relation_m": 5003,
+  "source": "osm_relation",
+  "status": "success",
   "trace_m": null
  },
  "pocket": {
@@ -2963,6 +3053,17 @@
   "long": "Sandhurst Memorial parkrun",
   "source": null,
   "status": "gap"
+ },
+ "sandwellvalley": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.521531,
+  "lon": -1.97579,
+  "long": "Sandwell Valley parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "sandywater": {
   "distance_m": null,
