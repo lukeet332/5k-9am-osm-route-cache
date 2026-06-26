@@ -88,10 +88,12 @@ def bot_label(model):
     return re.sub(r"[^A-Za-z0-9._-]", "-", model.split("/")[-1]) + "-bot"
 
 
-def _post(url, headers, payload, attempts=4):
-    """POST with retry+backoff on TRANSIENT errors (429 rate-limit, 500/502/503/504 server/overload).
-    Free model tiers (esp. Gemini) intermittently return 503 UNAVAILABLE; one transient blip should
-    not waste the whole weekly run. Non-transient errors (400/401/413 …) raise immediately."""
+def _post(url, headers, payload, attempts=3, timeout=180):
+    """POST with retry+backoff on TRANSIENT errors (429 rate-limit, 500/502/503/504 server/overload,
+    AND read timeouts — a big author generation returning the whole file can take ~80-150s on a free
+    flash model). One transient blip / slow response should not waste the run. Non-transient errors
+    (400/401/413 …) raise immediately. timeout=180s/attempt; attempts kept low so the worst case stays
+    within the job's timeout-minutes."""
     # A real User-Agent: some providers (e.g. Groq) sit behind Cloudflare, which 403s the default
     # "Python-urllib/x.y" signature (error 1010). A normal UA passes and is harmless elsewhere.
     req = urllib.request.Request(url, data=json.dumps(payload).encode(),
@@ -100,14 +102,14 @@ def _post(url, headers, payload, attempts=4):
                                  method="POST")
     for i in range(attempts):
         try:
-            with urllib.request.urlopen(req, timeout=120) as resp:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
                 return json.loads(resp.read())
         except urllib.error.HTTPError as e:
             if e.code in (429, 500, 502, 503, 504) and i < attempts - 1:
-                time.sleep(3 * (i + 1) ** 2)        # 3s, 12s, 27s
+                time.sleep(3 * (i + 1) ** 2)        # 3s, 12s
                 continue
             raise
-        except urllib.error.URLError:
+        except (urllib.error.URLError, TimeoutError):   # connection error OR read timeout (slow gen)
             if i < attempts - 1:
                 time.sleep(3 * (i + 1)); continue
             raise
