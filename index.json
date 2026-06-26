@@ -4782,8 +4782,9 @@
   "trace_m": null
  },
  "kilkennylanecountry": {
+  "built_by": "v0.3.1",
   "distance_m": null,
-  "last_tried": "2026-06-25",
+  "last_tried": "2026-06-26",
   "lat": 51.774488,
   "lon": -1.595376,
   "long": "Kilkenny Lane Country parkrun",
@@ -9335,8 +9336,9 @@
   "trace_m": null
  },
  "wendoverwoods": {
+  "built_by": "v0.3.1",
   "distance_m": null,
-  "last_tried": "2026-06-25",
+  "last_tried": "2026-06-26",
   "lat": 51.76894,
   "lon": -0.716782,
   "long": "Wendover Woods parkrun",
