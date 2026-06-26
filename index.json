@@ -1,4 +1,15 @@
 {
+ "abbeypark": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.645191,
+  "lon": -1.132222,
+  "long": "Abbey Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "aberbeeg": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -3272,6 +3283,17 @@
   "source": null,
   "status": "gap"
  },
+ "rutlandwater": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.643712,
+  "lon": -0.624447,
+  "long": "Rutland Water parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "salisbury": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -3403,6 +3425,19 @@
   "source": null,
   "status": "gap",
   "trace_m": null
+ },
+ "sloughbottom": {
+  "distance_m": 4875,
+  "last_tried": "2026-06-26",
+  "lat": 52.647255,
+  "lon": 1.266994,
+  "long": "Sloughbottom parkrun",
+  "provisional": false,
+  "relation_m": 5693,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2021-12-18",
+  "trace_m": 4875
  },
  "sohamvillagecollege": {
   "distance_m": 4964,
@@ -3646,6 +3681,17 @@
   "lat": 52.558716,
   "lon": -1.844552,
   "long": "Sutton Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "swaffham": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.638607,
+  "lon": 0.688461,
+  "long": "Swaffham parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
