@@ -103,6 +103,17 @@ Operational and algorithmic *means*, as long as outputs still validate against `
   two different routes - weighting/limiting to the most recent ~1-2 years tracks the *current* course
   more faithfully (the trace fetch is date-agnostic today, so all historical Saturdays are averaged).
 - Smarter relation way-chaining (gap bridging, dedup) for a more accurate measured length.
+- **Timestamp-less ("public"/"private" privacy) traces - a big untapped coverage lever, and a model
+  of the lateral creativity wanted here.** OSM returns per-point `<time>` only for `identifiable` /
+  `trackable` traces; `public` / `private` traces come back anonymised and TIME-STRIPPED, so the
+  09:00-Saturday window silently drops them (build_cache skips any trkpt with no `<time>`). That likely
+  discards a LOT of usable GPS near each start. Recover it WITHOUT timestamps by using SPATIAL
+  recurrence instead of time: cluster every trace passing near the start anchor, find the ~5k path the
+  MOST traces share (the dominant repeated route from the start is almost certainly the parkrun course),
+  and accept it only on the usual bars (start within 150m, distance in 4.5-5.6k). This turns the privacy
+  limitation into a method (frequency-of-traversal). GUARDRAILS: never accept a single ambiguous track
+  (commuters, dog-walkers, cyclists share those paths); require MULTIPLE corroborating traces + a clean
+  ~5k geometry; keep results provisional; never invent a line to hit 5k.
 - **Course-topology-aware extraction (big lever for the off-tolerance `failed` entries).** parkrun
   courses are not all simple loops: they can be a single loop, N laps (2, 3, ...), a partial lap then
   full lap(s) (e.g. 1.5 laps), an out-and-back, or point-to-point with different start/finish. Current

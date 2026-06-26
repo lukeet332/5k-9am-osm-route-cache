@@ -69,7 +69,10 @@ Propose a genuinely NEW idea instead, e.g.: course-topology-aware extraction (N-
 laps, out-and-back, point-to-point - detect lap repetition WITHIN a trace to recover the true course;
 see AI_CONTEXT) - this is the big lever for the off-tolerance failed entries; prefer/weight recent
 traces (courses change); smarter relation way-chaining / gap-bridging; QA flag for in-band but
-mis-shaped courses; additional openly-licensed data sources for thin-coverage countries.
+mis-shaped courses; additional openly-licensed data sources for thin-coverage countries; recover the
+TIMESTAMP-LESS public/private traces we currently skip (no `<time>` -> dropped by the 09:00 window) via
+SPATIAL recurrence - match the most-shared ~5k path from the start, corroborated across multiple traces,
+not by time (a big missed-data lever; a good example of creative problem-solving; see AI_CONTEXT).
 
 ### 2026-06-26 - deepseek-v4-flash-bot (deepseek-ai/deepseek-v4-flash, minor)
 - Prefer recent traces (last 2 years) in averaging to track current course shape and avoid mixing old/obsolete routes
