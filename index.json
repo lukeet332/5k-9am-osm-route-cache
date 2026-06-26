@@ -301,8 +301,9 @@
   "trace_m": 5012
  },
  "aruwrittle": {
+  "built_by": "v0.3.1",
   "distance_m": null,
-  "last_tried": "2026-06-25",
+  "last_tried": "2026-06-26",
   "lat": 51.73677,
   "lon": 0.422687,
   "long": "ARU Writtle parkrun",
@@ -2444,8 +2445,9 @@
   "trace_m": null
  },
  "cycleroute43ystalyfera": {
+  "built_by": "v0.3.1",
   "distance_m": null,
-  "last_tried": "2026-06-25",
+  "last_tried": "2026-06-26",
   "lat": 51.755941,
   "lon": -3.789728,
   "long": "Cycle Route 43 parkrun, Ystalyfera",
@@ -4494,8 +4496,9 @@
   "trace_m": null
  },
  "horspath": {
+  "built_by": "v0.3.1",
   "distance_m": null,
-  "last_tried": "2026-06-25",
+  "last_tried": "2026-06-26",
   "lat": 51.737281,
   "lon": -1.188165,
   "long": "Horspath parkrun",
@@ -5810,8 +5813,9 @@
   "trace_m": null
  },
  "merthyr": {
+  "built_by": "v0.3.1",
   "distance_m": null,
-  "last_tried": "2026-06-25",
+  "last_tried": "2026-06-26",
   "lat": 51.73896,
   "lon": -3.375658,
   "long": "Merthyr parkrun",
@@ -6357,8 +6361,9 @@
   "trace_m": null
  },
  "oaklandscollege": {
+  "built_by": "v0.3.1",
   "distance_m": null,
-  "last_tried": "2026-06-25",
+  "last_tried": "2026-06-26",
   "lat": 51.754303,
   "lon": -0.288522,
   "long": "Oaklands College parkrun",
@@ -8153,8 +8158,9 @@
   "trace_date": "2023-07-29"
  },
  "stalbans": {
+  "built_by": "v0.3.1",
   "distance_m": 1787,
-  "last_tried": "2026-06-25",
+  "last_tried": "2026-06-26",
   "lat": 51.75193,
   "lon": -0.355371,
   "long": "St Albans parkrun",
@@ -8278,8 +8284,9 @@
   "trace_m": null
  },
  "stonehouse": {
+  "built_by": "v0.3.1",
   "distance_m": null,
-  "last_tried": "2026-06-25",
+  "last_tried": "2026-06-26",
   "lat": 51.752554,
   "lon": -2.287804,
   "long": "Stonehouse parkrun",
@@ -8300,8 +8307,9 @@
   "trace_m": null
  },
  "stratfordparkstroud": {
+  "built_by": "v0.3.1",
   "distance_m": 1913,
-  "last_tried": "2026-06-25",
+  "last_tried": "2026-06-26",
   "lat": 51.74897,
   "lon": -2.225007,
   "long": "Stratford Park parkrun, Stroud",
