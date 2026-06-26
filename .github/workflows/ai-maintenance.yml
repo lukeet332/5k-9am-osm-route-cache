@@ -71,7 +71,7 @@ jobs:
           if git status --porcelain JOURNAL.md | grep -q .; then
             echo "author already journaled — keeping its entry."
           elif git status --porcelain build_cache.py AI_CONTEXT.md | grep -q .; then
-            printf '\n### %s — %s (%s, %s)\n- %s\n' "$(date -u +%Y-%m-%d)" \
+            printf '\n### %s - %s (%s, %s)\n- %s\n' "$(date -u +%Y-%m-%d)" \
               "${{ steps.improve.outputs.bot_label || 'ai-bot' }}" \
               "${{ steps.improve.outputs.model_used }}" "${{ steps.improve.outputs.version_bump || 'patch' }}" \
               "${{ steps.improve.outputs.summary }}" >> JOURNAL.md

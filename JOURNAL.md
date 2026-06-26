@@ -62,5 +62,5 @@ Propose a genuinely NEW idea instead, e.g.: prefer/weight recent traces (courses
 relation way-chaining / gap-bridging; out-and-back doubling; per-event local timezone for global
 expansion; QA flag for in-band but mis-shaped courses; additional openly-licensed data sources.
 
-### 2026-06-26 — deepseek-v4-flash-bot (deepseek-ai/deepseek-v4-flash, minor)
+### 2026-06-26 - deepseek-v4-flash-bot (deepseek-ai/deepseek-v4-flash, minor)
 - Prefer recent traces (last 2 years) in averaging to track current course shape and avoid mixing old/obsolete routes
