@@ -894,6 +894,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "blandford": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.863122,
+  "lon": -2.16627,
+  "long": "Blandford parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "blickling": {
   "distance_m": 4366,
   "last_tried": "2026-06-26",
@@ -1041,6 +1052,17 @@
   "lat": 51.622582,
   "lon": 0.266879,
   "long": "Brentwood parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "bressay": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 60.158081,
+  "lon": -1.119683,
+  "long": "Bressay parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -3654,6 +3676,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "hastings": {
+  "distance_m": 4706,
+  "last_tried": "2026-06-26",
+  "lat": 50.850291,
+  "lon": 0.539739,
+  "long": "Hastings parkrun",
+  "relation_m": 4706,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
+ },
  "hastingshighschool": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -4368,6 +4401,17 @@
   "lat": 55.136742,
   "lon": -1.977584,
   "long": "Kirkharle Courtyard parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "kirkwall": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 58.982282,
+  "lon": -2.948069,
+  "long": "Kirkwall parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -5339,6 +5383,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "moorsvalley": {
+  "distance_m": 5469,
+  "last_tried": "2026-06-26",
+  "lat": 50.85124,
+  "lon": -1.849419,
+  "long": "Moors Valley parkrun",
+  "relation_m": null,
+  "source": "osm_9am_trace_offdist",
+  "status": "failed",
+  "trace_date": "2025-10-25",
+  "trace_m": 5469
+ },
  "morden": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -5432,6 +5488,17 @@
   "relation_m": null,
   "source": null,
   "status": "gap",
+  "trace_m": null
+ },
+ "netleyabbey": {
+  "distance_m": 1905,
+  "last_tried": "2026-06-26",
+  "lat": 50.865345,
+  "lon": -1.334453,
+  "long": "Netley Abbey parkrun",
+  "relation_m": 1905,
+  "source": "osm_relation_offdist",
+  "status": "failed",
   "trace_m": null
  },
  "newark": {
@@ -7815,6 +7882,17 @@
   "lat": 51.491427,
   "lon": 0.363436,
   "long": "Thurrock parkrun, Orsett Heath",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "thurso": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 58.589573,
+  "lon": -3.521554,
+  "long": "Thurso parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
