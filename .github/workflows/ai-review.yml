@@ -61,6 +61,15 @@ jobs:
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
         run: python .github/scripts/ai_review.py
 
+      # ---- flag a DEGRADED review (intended reviewer 413'd on a big diff / was rate-limited, so it
+      #      fell back to the author model = reduced independence). Don't block — just surface it. ----
+      - name: Flag degraded reviewer
+        if: steps.guard.outputs.rounds < 3 && steps.rev.outputs.degraded == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.BOT_PAT }}
+        run: |
+          gh pr comment "$PR" --body "$(printf '⚠️ **Degraded review — heads up @lukeet332**\n\nThe configured independent reviewer was unavailable for this PR (most likely the diff exceeded its context window, or it was rate-limited), so the review fell back to **`%s`** — the same provider as the author, so this review was **less independent than usual**. Not blocking; flagging so you can check it and, if this recurs, switch the reviewer to a bigger-context model.' "${{ steps.rev.outputs.reviewer }}")"
+
       # ---- constitution amendment: ALWAYS human-gated, WITH the reviewer's recommendation ----
       - name: Constitution change -> human gate (with AI recommendation)
         if: steps.guard.outputs.rounds < 3 && steps.rev.outputs.bible_touched == 'true'

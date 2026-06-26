@@ -98,8 +98,14 @@ def main():
                feedback="reviewer model unavailable; needs human review", bible_touched="false")
     approve = bool(result.get("approve"))
     feedback = str(result.get("feedback", "")).replace("\n", " ").strip()[:600] or "(no feedback)"
-    print(f"Reviewer ({slot['model']}): approve={approve} — {feedback}")
-    L.emit(approve="true" if approve else "false", feedback=feedback, reviewer=slot["model"], bible_touched="false")
+    # Did we get the INTENDED independent reviewer, or did it fall back to the author model (e.g. the
+    # reviewer 413'd because the diff exceeded its window, or was rate-limited)? Flag it so the human
+    # knows the review was degraded (reduced independence) and can swap the reviewer model later.
+    intended = L.load_model_config()["fallback"]
+    degraded = slot["provider"] != intended["provider"] or slot["model"] != intended["model"]
+    print(f"Reviewer ({slot['model']}): approve={approve} degraded={degraded} — {feedback}")
+    L.emit(approve="true" if approve else "false", feedback=feedback, reviewer=slot["model"],
+           degraded="true" if degraded else "false", bible_touched="false")
 
 
 if __name__ == "__main__":
