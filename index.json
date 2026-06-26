@@ -32,6 +32,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "aberystwyth": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.414546,
+  "lon": -4.080401,
+  "long": "Aberystwyth parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "abingdon": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -493,6 +504,17 @@
   "status": "success",
   "trace_m": null
  },
+ "brueton": {
+  "distance_m": 8283,
+  "last_tried": "2026-06-26",
+  "lat": 52.406754,
+  "lon": -1.764593,
+  "long": "Brueton parkrun",
+  "relation_m": 8283,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
+ },
  "brynaman": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -916,6 +938,17 @@
   "long": "Cosmeston Lakes parkrun",
   "source": null,
   "status": "gap"
+ },
+ "coventry": {
+  "distance_m": 4306,
+  "last_tried": "2026-06-26",
+  "lat": 52.39172,
+  "lon": -1.524026,
+  "long": "Coventry parkrun",
+  "relation_m": 4306,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
  },
  "crane": {
   "distance_m": null,
@@ -3270,6 +3303,18 @@
   "long": "The Old Showfield parkrun",
   "source": null,
   "status": "gap"
+ },
+ "thetford": {
+  "distance_m": 5095,
+  "last_tried": "2026-06-26",
+  "lat": 52.4156,
+  "lon": 0.743766,
+  "long": "Thetford parkrun",
+  "provisional": true,
+  "relation_m": 5095,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
  },
  "thomasmills": {
   "distance_m": 4933,
