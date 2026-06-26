@@ -263,7 +263,7 @@ def build_one(ev):
                is the TRUE course and WINS over a relation; a relation-sourced success is shipped
                but flagged provisional:true (curated line, not GPS-verified) so the AI can upgrade it.
       failed:  a relation/trace was found but off-tolerance (sane band) -> NO file; rich diagnostic
-               in index.json (e.g. ~2.5km relation = likely ONE LAP of a 2-lap parkrun -> double it)
+               in index.json (e.g. ~2.5km = likely ONE LAP of a 2-lap parkrun -> double it)
       gap:     nothing usable found
     Every entry records relation_m AND trace_m (what each source measured) for maximum AI context."""
     name, lat, lon = ev["name"], ev["lat"], ev["lon"]
