@@ -94,8 +94,9 @@ digest; read index.json directly only when you need per-event detail.
 
 ## JOURNAL.md (accumulate knowledge)
 Bots' running diary. Author reads it then appends (date, idea, why-from-outcomes, what changed). Build on
-what worked, don't repeat what didn't, get more creative over time. Reviewer reads it too. Append-only;
-never rewrite past entries.
+what worked, don't repeat what didn't, get more creative over time. Reviewer reads it to spot churn. Bot:
+append-only (never rewrite past entries), dense ASCII (BIBLE #10); the owner may periodically compact it
+losslessly. It is tail-loaded (capped) - density = more retained lessons per token.
 
 ## Process
 1. Author (weekly): read JOURNAL + index.json outcomes + the algorithm -> propose ONE improvement within
