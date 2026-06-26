@@ -1375,6 +1375,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "henlowbridgelakes": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 52.030537,
+  "lon": -0.268787,
+  "long": "Henlow Bridge Lakes parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "higginsonmarlow": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1541,6 +1552,18 @@
   "status": "success",
   "trace_date": "2024-04-20",
   "trace_m": 5130
+ },
+ "kesgrave": {
+  "distance_m": 4871,
+  "last_tried": "2026-06-25",
+  "lat": 52.058138,
+  "lon": 1.257741,
+  "long": "Kesgrave parkrun",
+  "provisional": true,
+  "relation_m": 4871,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
  },
  "kilkennylanecountry": {
   "distance_m": null,
