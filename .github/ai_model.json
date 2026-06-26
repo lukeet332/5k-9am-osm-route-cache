@@ -1,5 +1,14 @@
 {
-  "primary": { "provider": "gemini", "model": "gemini-2.5-flash" },
-  "fallback": { "provider": "github-models", "model": "openai/gpt-4.1" },
-  "fast": { "provider": "gemini", "model": "gemini-2.5-flash" }
+  "primary": {
+    "provider": "gemini",
+    "model": "models/gemini-3.5-flash"
+  },
+  "fallback": {
+    "provider": "github-models",
+    "model": "openai/gpt-4.1"
+  },
+  "fast": {
+    "provider": "gemini",
+    "model": "models/gemini-3.5-flash"
+  }
 }
