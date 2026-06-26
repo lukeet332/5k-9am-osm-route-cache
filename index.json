@@ -3656,16 +3656,16 @@
   "trace_date": "2025-04-19"
  },
  "dartfordheath": {
-  "built_by": "dev",
-  "distance_m": 3037,
+  "built_by": "v0.5.0",
+  "distance_m": 4908,
   "last_tried": "2026-06-26",
   "lat": 51.435932,
   "lon": 0.189929,
   "long": "Dartford Heath parkrun",
+  "provisional": true,
   "relation_m": 2454,
-  "source": "osm_9am_trace_offdist",
-  "status": "failed",
-  "trace_date": "2024-02-03",
+  "source": "osm_relation_doubled",
+  "status": "success",
   "trace_m": 3037
  },
  "daventry": {
