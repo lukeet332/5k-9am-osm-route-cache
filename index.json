@@ -491,6 +491,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "bughunterwaters": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.28625,
+  "lon": 0.065252,
+  "long": "Bug Hunter Waters parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "burgess": {
   "distance_m": 6206,
   "last_tried": "2026-06-25",
@@ -1127,6 +1138,17 @@
   "status": "failed",
   "trace_m": null
  },
+ "franksfarm": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.252306,
+  "lon": -0.079185,
+  "long": "Frank\u2019s Farm parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "frimleylodge": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1695,6 +1717,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "irchestercountry": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.285076,
+  "lon": -0.673649,
+  "long": "Irchester Country parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "itchenvalleycountry": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1800,6 +1833,17 @@
   "lon": -2.272804,
   "long": "Kingsway parkrun, Gloucester",
   "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "leamington": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.28714,
+  "lon": -1.504655,
+  "long": "Leamington parkrun",
+  "relation_m": 11769,
   "source": null,
   "status": "gap",
   "trace_m": null
@@ -2244,6 +2288,17 @@
   "status": "success",
   "trace_date": "2017-02-04",
   "trace_m": 4971
+ },
+ "northampton": {
+  "distance_m": 4021,
+  "last_tried": "2026-06-26",
+  "lat": 52.248143,
+  "lon": -0.884445,
+  "long": "Northampton parkrun",
+  "relation_m": 4021,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
  },
  "oakhill": {
   "distance_m": 1832,
@@ -3123,6 +3178,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "thornhamwalks": {
+  "distance_m": 4885,
+  "last_tried": "2026-06-26",
+  "lat": 52.304311,
+  "lon": 1.077504,
+  "long": "Thornham Walks parkrun",
+  "provisional": true,
+  "relation_m": 4885,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
+ },
  "thoulstone": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -3316,6 +3383,17 @@
   "status": "failed",
   "trace_date": "2012-03-31",
   "trace_m": 5515
+ },
+ "warwickracecourse": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.280789,
+  "lon": -1.595954,
+  "long": "Warwick Racecourse parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "watermeadows": {
   "distance_m": null,
