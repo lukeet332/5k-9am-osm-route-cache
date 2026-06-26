@@ -103,28 +103,25 @@ Operational and algorithmic *means*, as long as outputs still validate against `
   two different routes - weighting/limiting to the most recent ~1-2 years tracks the *current* course
   more faithfully (the trace fetch is date-agnostic today, so all historical Saturdays are averaged).
 - Smarter relation way-chaining (gap bridging, dedup) for a more accurate measured length.
-- **Timestamp-less ("public"/"private" privacy) traces - a big untapped coverage lever, and a model
-  of the lateral creativity wanted here.** OSM returns per-point `<time>` only for `identifiable` /
-  `trackable` traces; `public` / `private` traces come back anonymised and TIME-STRIPPED, so the
-  09:00-Saturday window silently drops them (build_cache skips any trkpt with no `<time>`). That likely
-  discards a LOT of usable GPS near each start. Recover it WITHOUT timestamps by using SPATIAL
-  recurrence instead of time: cluster every trace passing near the start anchor, find the ~5k path the
-  MOST traces share (the dominant repeated route from the start is almost certainly the parkrun course),
-  and accept it only on the usual bars (start within 150m, distance in 4.5-5.6k). This turns the privacy
-  limitation into a method (frequency-of-traversal). GUARDRAILS: never accept a single ambiguous track
-  (commuters, dog-walkers, cyclists share those paths); require MULTIPLE corroborating traces + a clean
-  ~5k geometry; keep results provisional; never invent a line to hit 5k.
-- **Course-topology-aware extraction (big lever for the off-tolerance `failed` entries).** parkrun
-  courses are not all simple loops: they can be a single loop, N laps (2, 3, ...), a partial lap then
-  full lap(s) (e.g. 1.5 laps), an out-and-back, or point-to-point with different start/finish. Current
-  code only handles an in-band relation/trace plus 2x doubling of a ~2.3-2.8k half-distance find - it
-  misses 3-lap (~1.67k), ~2.5-lap, 1.5-lap (~3.3k), and out-and-back partials. Generalise to detect the
-  topology and recover the full ~5k course. SAFEST signal: detect repetition WITHIN a GPS trace (a
-  multi-lap run physically retraces the same loop N times) - recover the single lap + lap count from
-  the trace itself, then confirm N*lap is ~5k. Multiply/extend ONLY with real evidence (a closed loop,
-  or repeated geometry in the trace), keep results provisional, and NEVER just "multiply a number until
-  it hits 5k" (that invents coverage from coincidence - a false positive, forbidden). This targets the
-  ~100 `failed` entries that have real OSM data at the wrong distance.
+- **Researched levers for the no-named-relation gaps (verified open-source tools; hand-code the
+  deterministic core, ship provisional, calibrate thresholds against the ~131 already mapped).**
+  - MAP-MATCH + EDGE VOTING (highest impact): the public trackpoints API exposes EVERY trace's points
+    regardless of privacy (incl. time-stripped/anonymised), so snap many nearby traces to the path
+    graph (leuven.mapmatching / map-matching-2) and keep the most-traversed connected ~5k subgraph.
+    Voting is NOT a library - count traces per edge yourself; require >=N corroborating traces (paths
+    are shared by commuters/dogs/cyclists - never trust one). Needs no relation.
+  - PARK-BOUNDARY LOOP (works with zero traces): confine an osmnx walk graph to the event's OSM
+    greenspace polygon (graph_from_polygon), find the ~5k closed loop via a fixed-length-cycle
+    heuristic (Lewis-Corcoran). Guard against matching the wrong adjacent park.
+  - N-LAP: generalise the fixed 2x to "smallest N (1..6) with N*lap in 4.8-5.2k" (the self-audit
+    already flags these); get N from real repetition in a trace, NEVER by multiplying until it hits
+    5k (invents coverage from coincidence - forbidden).
+  - DATA-DRIVEN START TIME: learn each event's real start by clustering Saturday-morning trace starts
+    instead of hardcoding 09:00 (likely recovers foreign events that don't start at 09:00).
+  - TRIAGE + REPAIR (cheap glue): route each gap to the lever that fits (relation / park paths /
+    traces / nothing), mark genuinely-no-data events final so they stop being re-swept; for near-miss
+    relations trim degree-1 spurs / bridge small gaps (osmnx+networkx), accept only if a trace agrees.
+  Compose: confine edge-voting to the park polygon to cut false edges; start/lap detection feeds all.
 - Rollout prioritisation, gap-retry cadence, search radius, backoff - operational knobs only.
 - A **QA flag** for courses whose distance is in-band but whose shape looks wrong
   (self-intersections, spikes) - flag for human review; do not silently rewrite geometry.
