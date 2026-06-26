@@ -3,7 +3,8 @@
 Shared helpers for the weekly AI maintenance bots (author / reviewer / model-review).
 
 Safety model mirrors the WearOsGpx repo's proven pipeline:
-  * GitHub Models only, via the workflow's built-in GITHUB_TOKEN (models:read) — no secret.
+  * GitHub Models by default, authenticated with the BOT_PAT secret (a real PAT with models:read —
+    the built-in GITHUB_TOKEN is NOT entitled to the Models API). Other providers need their own key.
   * Model choice lives in .github/ai_model.json and is self-updated by ai_model_review.py.
   * The bot may only ever OVERWRITE a tiny allow-list of files (build_cache.py, and an
     append to AI_CONTEXT.md) — path-traversal guarded. Everything else is off limits.
@@ -118,7 +119,16 @@ def call_with_roles(prompt, roles=("primary", "fallback")):
             print(f"Asking {role}: {slot['provider']} ({slot['model']})…")
             return call_json(slot, prompt), slot
         except Exception as e:
-            print(f"{role} {slot['provider']} unavailable ({e.__class__.__name__}).")
+            # Surface the real cause (HTTP status + body) — a swallowed HTTPError once hid that the
+            # built-in GITHUB_TOKEN can't reach GitHub Models. Don't print the token itself.
+            code = getattr(e, "code", "")
+            body = ""
+            try:
+                if hasattr(e, "read"):
+                    body = e.read().decode("utf-8", "ignore")[:300]
+            except Exception:
+                pass
+            print(f"{role} {slot['provider']} unavailable ({e.__class__.__name__} {code}) {body}")
     return None, None
 
 
