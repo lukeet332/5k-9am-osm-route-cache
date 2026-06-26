@@ -1267,6 +1267,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "chevinforest": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.894133,
+  "lon": -1.665858,
+  "long": "Chevin Forest parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "chiltonfields": {
   "distance_m": 5103,
   "last_tried": "2026-06-26",
@@ -1432,12 +1443,34 @@
   "source": null,
   "status": "gap"
  },
+ "cliffecastle": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.874658,
+  "lon": -1.913364,
+  "long": "Cliffe Castle parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "clifton": {
   "distance_m": null,
   "last_tried": "2026-06-26",
   "lat": 52.907144,
   "lon": -1.163033,
   "long": "Clifton parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "clitheroecastle": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.870346,
+  "lon": -2.39478,
+  "long": "Clitheroe Castle parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -1881,6 +1914,17 @@
   "source": null,
   "status": "gap"
  },
+ "eastholmesfield": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.928537,
+  "lon": -1.822741,
+  "long": "East Holmes Field parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "eastleigh": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -2054,6 +2098,17 @@
   "long": "Five Arches parkrun",
   "source": null,
   "status": "gap"
+ },
+ "fleetwoodpromenade": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.927366,
+  "lon": -3.016919,
+  "long": "Fleetwood Promenade parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "flegghigh": {
   "distance_m": 4965,
@@ -3941,6 +3996,17 @@
   "source": null,
   "status": "gap"
  },
+ "myrtle": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.846344,
+  "lon": -1.838295,
+  "long": "Myrtle parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "nantypandy": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -4324,6 +4390,17 @@
   "lat": 51.644889,
   "lon": -3.245679,
   "long": "Penallta parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "pendle": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.863571,
+  "lon": -2.18011,
+  "long": "Pendle parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -4717,6 +4794,17 @@
   "source": null,
   "status": "gap",
   "trace_m": 212
+ },
+ "robertspark": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.841468,
+  "lon": -1.793275,
+  "long": "Roberts Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "rodingvalley": {
   "distance_m": null,
@@ -6102,6 +6190,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "wetherby": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.925673,
+  "lon": -1.392197,
+  "long": "Wetherby parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "whitecliffelake": {
   "distance_m": 5120,
   "last_tried": "2026-06-25",
@@ -6437,6 +6536,18 @@
   "status": "success",
   "trace_date": "2023-08-12",
   "trace_m": 5001
+ },
+ "york": {
+  "distance_m": 5060,
+  "last_tried": "2026-06-26",
+  "lat": 53.935375,
+  "lon": -1.101379,
+  "long": "York parkrun",
+  "provisional": true,
+  "relation_m": 5060,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
  },
  "ypromenad": {
   "distance_m": null,
