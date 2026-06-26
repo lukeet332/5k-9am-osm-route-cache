@@ -391,6 +391,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "baysgarthpark": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.679399,
+  "lon": -0.43856,
+  "long": "Baysgarth Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "beacon": {
   "distance_m": 2555,
   "last_tried": "2026-06-26",
@@ -1662,6 +1673,17 @@
   "status": "success",
   "trace_date": "2024-11-30",
   "trace_m": 4965
+ },
+ "dewsbury": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.688239,
+  "lon": -1.646237,
+  "long": "Dewsbury parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "dintonpastures": {
   "distance_m": null,
@@ -4206,6 +4228,19 @@
   "status": "gap",
   "trace_m": null
  },
+ "pontefract": {
+  "distance_m": 4985,
+  "last_tried": "2026-06-26",
+  "lat": 53.697922,
+  "lon": -1.325197,
+  "long": "Pontefract parkrun",
+  "provisional": false,
+  "relation_m": null,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2022-12-17",
+  "trace_m": 4985
+ },
  "pontybala": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -5995,6 +6030,17 @@
   "source": null,
   "status": "gap",
   "trace_m": 948
+ },
+ "worden": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.68129,
+  "lon": -2.69437,
+  "long": "Worden parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "wormwoodscrubs": {
   "distance_m": null,
