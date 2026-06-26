@@ -648,6 +648,18 @@
   "status": "success",
   "trace_m": null
  },
+ "chiltonfields": {
+  "distance_m": 5103,
+  "last_tried": "2026-06-26",
+  "lat": 52.197076,
+  "lon": 0.975934,
+  "long": "Chilton Fields parkrun",
+  "provisional": true,
+  "relation_m": 5103,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
+ },
  "chippenham": {
   "distance_m": null,
   "last_tried": "2026-06-25",
