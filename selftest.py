@@ -39,8 +39,11 @@ def main():
     assert date == "2025-04-12", f"wrong trace date: {date}"
     assert len(pts) > 50, f"too few points: {len(pts)}"
 
-    # 3) lock predicate honours the fixed tolerance
+    # 3) lock predicate honours the fixed tolerance — pin the EXACT constitutional bars (4800–5200),
+    #    not just a loose midpoint, so the boundaries can't silently drift in code.
     assert bc.is_locked({"distance_m": 5000}) and not bc.is_locked({"distance_m": 4300})
+    assert bc.is_locked({"distance_m": 4810}) and not bc.is_locked({"distance_m": 4790}), "REL_LO bar drifted"
+    assert bc.is_locked({"distance_m": 5190}) and not bc.is_locked({"distance_m": 5210}), "REL_HI bar drifted"
 
     # 3b) version provenance: algo_version() always yields a non-empty string (tag or 'dev'),
     #     and write_gpx stamps it into the GPX creator so each course records what built it.

@@ -42,3 +42,7 @@ time, no exceptions.
    `AI_CONTEXT.md`, and `JOURNAL.md` (plus *proposing* edits to this bible via the human gate). It
    must never edit `selftest.py`, any `.github/workflows/*`, or the `.github/scripts/ai_*.py` review
    machinery — those are the guardrails that keep the autonomy safe.
+8. **Don't break the self-test contract.** `selftest.py` imports specific functions/constants from
+   `build_cache.py` and asserts their behaviour — that's the merge gate. Keep those symbols callable
+   with their current names and signatures; **improve their *internals*, never rename or re-shape
+   them.** (The current pinned list is maintained in `AI_CONTEXT.md` — read it before refactoring.)

@@ -28,7 +28,11 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
 
-      - name: Propose an improvement
+      # Propose a change, then run the self-test gate. If it FAILS, don't silently drop the change —
+      # feed the failure back to the author as REVIEW_FEEDBACK and let it self-correct (up to 2 tries),
+      # exactly like the reviewer's revision loop. Only a self-test-PASSING change reaches the PR; if
+      # it still can't pass after the retries, the job fails and NO PR opens (the gate still holds).
+      - name: Propose an improvement (self-test gated, retry-on-failure feedback)
         id: improve
         env:
           GH_MODELS_TOKEN: ${{ secrets.GITHUB_TOKEN }}     # github-models (no secret needed)
@@ -36,12 +40,17 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
-        run: python .github/scripts/ai_improve.py
-
-      # Hard gate: the proposed change must still pass the caching self-test, or the job
-      # fails and NO PR is opened. This is what makes the autonomous author safe.
-      - name: Self-test gate (abort PR if broken)
-        run: python selftest.py
+        run: |
+          for attempt in 1 2; do
+            python .github/scripts/ai_improve.py || { echo "author step errored"; exit 1; }
+            if OUT=$(python selftest.py 2>&1); then
+              echo "$OUT"; echo "self-test passed on attempt $attempt"; exit 0
+            fi
+            echo "::warning::self-test FAILED on attempt $attempt:"; echo "$OUT"
+            export REVIEW_FEEDBACK="Your previous attempt FAILED the offline self-test gate — fix the ROOT CAUSE and keep the tested function names/signatures intact (see the Tested-contract section of AI_CONTEXT.md). Self-test output:
+          $OUT"
+          done
+          echo "::error::author could not pass the self-test after retries — no PR opened."; exit 1
 
       - name: Open improvement PR (needs AI review)
         uses: peter-evans/create-pull-request@v8
