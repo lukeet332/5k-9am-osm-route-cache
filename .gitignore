@@ -1,6 +1,7 @@
 # On-disk OSM response cache (re-fetchable; not committed — keeps the repo lean and avoids
 # republishing raw trace blobs). The derived courses in routes/ + index.json ARE committed.
 .tracecache/
+.relcache/
 __pycache__/
 *.pyc
 # Ban-safety signal written by build_cache.py when OSM throttled us (429s past the breaker).

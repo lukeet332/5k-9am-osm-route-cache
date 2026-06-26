@@ -41,15 +41,18 @@ jobs:
           python-version: "3.12"
       - name: Install timezonefinder (per-event local timezone for the global 09:00 anchor)
         run: python3 -m pip install --quiet timezonefinder
-      - name: Restore the OSM trace cache (persist across runs -> far fewer refetches)
-        # .tracecache holds raw OSM trace responses. It's gitignored (we never commit raw blobs), so
-        # without this each fresh checkout re-fetched everything. Restoring the most recent cache and
-        # saving a new one per run accumulates it: re-tried gaps + AI re-runs hit the cache, not OSM.
+      - name: Restore the OSM caches (traces + batched relations; persist across runs -> far fewer refetches)
+        # .tracecache = raw OSM trace responses; .relcache = batched per-cell Overpass relation results.
+        # Both are gitignored (we never commit raw blobs). Restoring the most recent cache and saving a
+        # new one per run accumulates them: re-tried gaps + AI re-runs hit the cache, not OSM/Overpass.
         uses: actions/cache@v4
         with:
-          path: .tracecache
-          key: osm-tracecache-${{ github.run_id }}
+          path: |
+            .tracecache
+            .relcache
+          key: osm-cache-${{ github.run_id }}
           restore-keys: |
+            osm-cache-
             osm-tracecache-
       - name: Build + push each route as it locks (real-time, ban-safe)
         run: |

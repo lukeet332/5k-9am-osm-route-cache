@@ -27,6 +27,8 @@ COVERAGE_REFINE = 0.80  # re-query accurate courses only once >=80% are within t
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROUTES = os.path.join(HERE, "routes")
 TRACECACHE = os.path.join(HERE, ".tracecache")
+RELCACHE = os.path.join(HERE, ".relcache")          # batched Overpass relation results, per 1-degree cell
+REL_CACHE_TTL_S = 30 * 86400                         # relations change rarely; re-fetch a cell monthly
 
 try:
     from zoneinfo import ZoneInfo
@@ -104,7 +106,9 @@ def _get(url, data=None, timeout=70):
             if ex.code == 429:
                 RATE_LIMIT_HITS[0] += 1     # OSM throttling us
             if ex.code in (429, 504) and attempt < 3:
-                time.sleep(5 * (attempt + 1)); continue
+                ra = ex.headers.get("Retry-After") if getattr(ex, "headers", None) else None
+                wait = min(int(ra), 120) if (ra and str(ra).isdigit()) else 5 * (attempt + 1)
+                time.sleep(wait); continue   # respect the server's Retry-After when given
             raise
 
 def load_events():
@@ -131,25 +135,48 @@ def load_events():
         e["ord"] = i
     return ordered
 
-def relation_course(lat, lon, name):
-    q = (f'[out:json][timeout:60];relation["route"~"running|foot|walking|hiking"]'
-         f'["name"](around:2000,{lat},{lon});out geom;')
+def _cell_relations(lat, lon):
+    """BATCHED Overpass: all parkrun-named route relations in this event's 1-degree cell, in ONE query,
+    cached on disk (REL_CACHE_TTL_S). Events in the same ~100km cell share the fetch, and re-sweeps hit
+    the cache - so Overpass sees ~one query per populated cell per month instead of one per event per
+    sweep. Returns a list of [relname, chain]. A failed fetch returns [] WITHOUT caching (so we retry)."""
+    os.makedirs(RELCACHE, exist_ok=True)
+    la0, lo0 = math.floor(lat), math.floor(lon)
+    cf = os.path.join(RELCACHE, f"cell_{la0}_{lo0}.json")
+    if os.path.exists(cf) and (time.time() - os.path.getmtime(cf)) < REL_CACHE_TTL_S:
+        try:
+            return json.load(open(cf))
+        except Exception:
+            pass                                     # poisoned cache -> re-fetch
+    q = (f'[out:json][timeout:120];relation["route"~"running|foot|walking|hiking"]'
+         f'["name"~"parkrun",i]({la0},{lo0},{la0+1},{lo0+1});out geom;')   # Overpass bbox = S,W,N,E
     try:
         r = json.loads(_get(OVERPASS, urllib.parse.urlencode({"data": q}).encode()))
     except Exception:
-        return None
-    best = None
+        return []                                    # don't cache a failed fetch
+    rels = []
     for el in r.get("elements", []):
-        nm = el.get("tags", {}).get("name", "").lower()
+        relname = el.get("tags", {}).get("name", "")
+        ways = [[(g["lat"], g["lon"]) for g in (m.get("geometry") or [])] for m in el.get("members", [])]
+        chain = assemble(ways)
+        if len(chain) >= 2:
+            rels.append([relname, chain])
+    json.dump(rels, open(cf, "w"))                   # cache the cell (even if empty = no parkrun relations here)
+    return rels
+
+def relation_course(lat, lon, name):
+    # Match this event against its cell's batched relations (parkrun in name OR the event name),
+    # nearest-to-5k among those passing within 500m of the start. No per-event Overpass call.
+    best = None
+    for relname, chain in _cell_relations(lat, lon):
+        nm = relname.lower()
         if "parkrun" not in nm and name not in nm:
             continue
-        ways = [[(g["lat"], g["lon"]) for g in (m.get("geometry") or [])] for m in el.get("members", [])]
-        chain = assemble(ways)                       # way-chaining for a trustworthy length
         if len(chain) < 2 or min(H(lat, lon, p[0], p[1]) for p in chain) > 500:
             continue
         L = length(chain)
         if best is None or abs(L - TARGET) < abs(best[1] - TARGET):
-            best = (el["tags"]["name"], L, chain)
+            best = (relname, L, chain)
     return best
 
 CACHE_TTL_S = 30 * 86400   # reuse a cached trace page for 30 days, then re-fetch
