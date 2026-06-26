@@ -581,6 +581,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "birkenhead": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.394807,
+  "lon": -3.051658,
+  "long": "Birkenhead parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "blackrocks": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -856,6 +867,17 @@
   "relation_m": 6206,
   "source": "osm_relation_offdist",
   "status": "failed",
+  "trace_m": null
+ },
+ "burnage": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.407152,
+  "lon": -2.209185,
+  "long": "Burnage parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
   "trace_m": null
  },
  "burnhamandhighbridge": {
@@ -1811,6 +1833,17 @@
   "trace_date": "2022-01-22",
   "trace_m": 4965
  },
+ "fletchermoss": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.40999,
+  "lon": -2.23551,
+  "long": "Fletcher Moss parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "flintcastle": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -2474,6 +2507,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "hillsborough": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.408457,
+  "lon": -1.501973,
+  "long": "Hillsborough parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "hillyfields": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -2793,6 +2837,17 @@
   "lat": 51.821487,
   "lon": -2.272804,
   "long": "Kingsway parkrun, Gloucester",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "knowsley": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.411116,
+  "lon": -2.811654,
+  "long": "Knowsley parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -3279,6 +3334,17 @@
   "long": "Marlborough Common parkrun",
   "source": null,
   "status": "gap"
+ },
+ "marple": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.404476,
+  "lon": -2.056509,
+  "long": "Marple parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "melksham": {
   "distance_m": null,
@@ -4700,6 +4766,17 @@
   "source": null,
   "status": "gap"
  },
+ "suttonmanor": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.411392,
+  "lon": -2.726901,
+  "long": "Sutton Manor parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "suttonpark": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -5402,6 +5479,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "woodbank": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.408405,
+  "lon": -2.130945,
+  "long": "Woodbank parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "woodgatevalleycountrypark": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -5493,6 +5581,17 @@
   "lat": 52.365002,
   "lon": -2.369798,
   "long": "Wyre Forest parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "wythenshawe": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.405502,
+  "lon": -2.288139,
+  "long": "Wythenshawe parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
