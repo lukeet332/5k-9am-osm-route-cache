@@ -647,6 +647,19 @@
   "status": "gap",
   "trace_m": null
  },
+ "blackpool": {
+  "distance_m": 4985,
+  "last_tried": "2026-06-26",
+  "lat": 53.811727,
+  "lon": -3.023114,
+  "long": "Blackpool parkrun",
+  "provisional": false,
+  "relation_m": null,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2026-04-25",
+  "trace_m": 4985
+ },
  "blackrocks": {
   "distance_m": null,
   "last_tried": "2026-06-26",
