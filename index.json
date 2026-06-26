@@ -2188,6 +2188,18 @@
   "status": "success",
   "trace_m": 3895
  },
+ "lingwood": {
+  "distance_m": 5090,
+  "last_tried": "2026-06-26",
+  "lat": 52.618901,
+  "lon": 1.493528,
+  "long": "Lingwood parkrun",
+  "provisional": true,
+  "relation_m": 5090,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": 5467
+ },
  "littleport": {
   "distance_m": null,
   "last_tried": "2026-06-26",
