@@ -1633,6 +1633,19 @@
   "trace_date": "2024-04-20",
   "trace_m": 5130
  },
+ "jubileebedford": {
+  "distance_m": 5068,
+  "last_tried": "2026-06-26",
+  "lat": 52.121506,
+  "lon": -0.447787,
+  "long": "Jubilee parkrun, Bedford",
+  "provisional": false,
+  "relation_m": 2292,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2025-09-27",
+  "trace_m": 5068
+ },
  "kesgrave": {
   "distance_m": 4871,
   "last_tried": "2026-06-25",
