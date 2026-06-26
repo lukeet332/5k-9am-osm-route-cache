@@ -89,7 +89,10 @@ Operational and algorithmic *means*, as long as outputs still validate against `
 - **Querying strategy / rollout** — which dates and events to pull (per Truth metric above),
   region prioritisation, gap-retry cadence, search radius, backoff.
 - Better trace extraction — e.g. **averaging multiple Saturdays' traces** to cut GPS noise,
-  smarter multi-lap detection, smoothing/simplification.
+  smarter multi-lap detection, smoothing/simplification. Also consider **preferring recent Saturdays**:
+  parkruns occasionally change their course, so blending a years-old trace with current ones can mix
+  two different routes — weighting/limiting to the most recent ~1-2 years tracks the *current* course
+  more faithfully (the trace fetch is date-agnostic today, so all historical Saturdays are averaged).
 - Smarter relation way-chaining (gap bridging, dedup) for a more accurate measured length.
 - Rollout prioritisation, gap-retry cadence, search radius, backoff — operational knobs only.
 - A **QA flag** for courses whose distance is in-band but whose shape looks wrong

@@ -114,14 +114,21 @@ def main():
     base_args = {"avail": ", ".join(avail) or "github-models",
                  "master_tokens": f"~{master_tokens}", "menu": json.dumps(menu, indent=1)}
 
-    def live_ok(provider, model):
-        """Dummy call the chosen model to confirm it's actually live + usable. Returns (ok, error)."""
+    algo_for_probe = L.ALGO_FILE.read_text(errors="ignore")[:20000]
+
+    def live_ok(provider, model, big=False):
+        """Dummy call the chosen model to confirm it's actually live + usable. For the MASTER author
+        (big=True) the probe carries an algorithm-sized payload, so a model that handles tiny calls but
+        503s / times out under the REAL author load (seen with some preview flash models) is rejected
+        HERE — not after it silently fails every author run. Returns (ok, error)."""
         base_url, key_env = L.PROVIDERS[provider]
         if not os.environ.get(key_env, "").strip():
             return False, f"no key for {provider}"
+        probe = 'Reply with the JSON {"ok": true} and nothing else.'
+        if big:   # approximate the author's real prompt size to catch big-call-only failures
+            probe = "Ignore the following code; just " + probe + "\n\n=====\n" + algo_for_probe
         try:
-            r = L.call_json({"base_url": base_url, "model": model, "api_key_env": key_env},
-                            'Reply with the JSON {"ok": true} and nothing else.')
+            r = L.call_json({"base_url": base_url, "model": model, "api_key_env": key_env}, probe)
             return isinstance(r, dict), ("" if isinstance(r, dict) else "non-dict reply")
         except Exception as e:
             body = ""
@@ -162,7 +169,7 @@ def main():
 
         failures = []                            # dummy-call each newly-chosen model
         for role in changed:
-            ok, err = live_ok(new[role]["provider"], new[role]["model"])
+            ok, err = live_ok(new[role]["provider"], new[role]["model"], big=(role == "primary"))
             tag = f'{new[role]["provider"]}/{new[role]["model"]}'
             if not ok:
                 print(f"  {role} {tag} failed live test: {err}")
