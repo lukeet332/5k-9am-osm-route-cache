@@ -3772,6 +3772,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "telford": {
+  "distance_m": 5166,
+  "last_tried": "2026-06-26",
+  "lat": 52.67123,
+  "lon": -2.447934,
+  "long": "Telford parkrun",
+  "provisional": true,
+  "relation_m": 5166,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": 4180
+ },
  "tetburygoodsshed": {
   "distance_m": 2408,
   "last_tried": "2026-06-25",
@@ -4224,6 +4236,17 @@
   "source": "osm_9am_trace",
   "status": "failed",
   "trace_date": "2017-02-18"
+ },
+ "wisbech": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.666891,
+  "lon": 0.166294,
+  "long": "Wisbech parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "witney": {
   "distance_m": 5125,
