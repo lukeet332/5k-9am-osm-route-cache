@@ -871,6 +871,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "bonessforeshore": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 56.020326,
+  "lon": -3.605223,
+  "long": "Bo\u2019ness Foreshore parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "boston": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -2606,6 +2617,17 @@
   "status": "success",
   "trace_date": "2016-11-12",
   "trace_m": 5034
+ },
+ "falkirk": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 55.99543,
+  "lon": -3.766712,
+  "long": "Falkirk parkrun",
+  "relation_m": 14011,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "falls": {
   "distance_m": null,
@@ -4437,6 +4459,17 @@
   "lat": 51.812913,
   "lon": -4.080563,
   "long": "Llyn Llech Owain parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "lochendwoods": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 55.997214,
+  "lon": -2.521501,
+  "long": "Lochend Woods parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -7941,6 +7974,17 @@
   "lat": 54.524733,
   "lon": -3.573636,
   "long": "Whitehaven parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "whitekirkhill": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 56.033364,
+  "lon": -2.644542,
+  "long": "Whitekirk Hill parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
