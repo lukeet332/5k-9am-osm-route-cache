@@ -2505,6 +2505,19 @@
   "source": null,
   "status": "gap"
  },
+ "marketbosworthcountrypark": {
+  "distance_m": 5020,
+  "last_tried": "2026-06-26",
+  "lat": 52.623664,
+  "lon": -1.391946,
+  "long": "Market Bosworth Country Park parkrun",
+  "provisional": false,
+  "relation_m": null,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2023-02-11",
+  "trace_m": 5020
+ },
  "marketharborough": {
   "distance_m": null,
   "last_tried": "2026-06-26",
