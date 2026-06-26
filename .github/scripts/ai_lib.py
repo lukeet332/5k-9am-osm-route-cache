@@ -12,7 +12,7 @@ Safety model mirrors the WearOsGpx repo's proven pipeline:
     AI must approve; branch protection requires the CI check. No unverified/unreviewed merge.
 Standard library only.
 """
-import json, os, re, sys, urllib.request
+import json, os, re, sys, time, urllib.request, urllib.error
 from pathlib import Path
 
 REPO = Path.cwd().resolve()
@@ -88,11 +88,25 @@ def bot_label(model):
     return re.sub(r"[^A-Za-z0-9._-]", "-", model.split("/")[-1]) + "-bot"
 
 
-def _post(url, headers, payload):
+def _post(url, headers, payload, attempts=4):
+    """POST with retry+backoff on TRANSIENT errors (429 rate-limit, 500/502/503/504 server/overload).
+    Free model tiers (esp. Gemini) intermittently return 503 UNAVAILABLE; one transient blip should
+    not waste the whole weekly run. Non-transient errors (400/401/413 …) raise immediately."""
     req = urllib.request.Request(url, data=json.dumps(payload).encode(),
                                  headers={**headers, "Content-Type": "application/json"}, method="POST")
-    with urllib.request.urlopen(req, timeout=120) as resp:
-        return json.loads(resp.read())
+    for i in range(attempts):
+        try:
+            with urllib.request.urlopen(req, timeout=120) as resp:
+                return json.loads(resp.read())
+        except urllib.error.HTTPError as e:
+            if e.code in (429, 500, 502, 503, 504) and i < attempts - 1:
+                time.sleep(3 * (i + 1) ** 2)        # 3s, 12s, 27s
+                continue
+            raise
+        except urllib.error.URLError:
+            if i < attempts - 1:
+                time.sleep(3 * (i + 1)); continue
+            raise
 
 
 def call_json(slot, prompt):
