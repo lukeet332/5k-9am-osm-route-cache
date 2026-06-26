@@ -826,6 +826,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "coldhamscommon": {
+  "distance_m": 2496,
+  "last_tried": "2026-06-26",
+  "lat": 52.206705,
+  "lon": 0.158881,
+  "long": "Coldham\u2019s Common parkrun",
+  "relation_m": 2496,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
+ },
  "cosmestonlakes": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -2317,6 +2328,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "pocket": {
+  "distance_m": 5018,
+  "last_tried": "2026-06-26",
+  "lat": 52.214797,
+  "lon": -0.275327,
+  "long": "Pocket parkrun",
+  "provisional": true,
+  "relation_m": 5018,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
+ },
  "pomphreyhill": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -2680,6 +2703,17 @@
   "long": "Sittingbourne parkrun",
   "source": null,
   "status": "gap"
+ },
+ "sizewell": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.210167,
+  "lon": 1.622193,
+  "long": "Sizewell parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "somerdalepavilion": {
   "distance_m": null,
@@ -3354,6 +3388,17 @@
   "source": "osm_relation",
   "status": "success",
   "trace_m": null
+ },
+ "worcesterpitchcroft": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.201513,
+  "lon": -2.231964,
+  "long": "Worcester Pitchcroft parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": 948
  },
  "wormwoodscrubs": {
   "distance_m": null,
