@@ -1929,6 +1929,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "churchill": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -38.312871,
+  "lon": 146.422465,
+  "long": "Churchill parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "churchmead": {
   "built_by": "v0.1.0",
   "distance_m": null,
@@ -4215,6 +4227,19 @@
   "status": "failed",
   "trace_m": null
  },
+ "hastingsforeshore": {
+  "built_by": "v0.5.0",
+  "distance_m": 4986,
+  "last_tried": "2026-06-26",
+  "lat": -38.307311,
+  "lon": 145.196651,
+  "long": "Hastings Foreshore parkrun",
+  "provisional": true,
+  "relation_m": 4986,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
+ },
  "hastingshighschool": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -5106,6 +5131,18 @@
   "lat": 56.374281,
   "lon": -3.858359,
   "long": "Lady Mary\u2019s Walk parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "lakecolac": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -38.332222,
+  "lon": 143.589186,
+  "long": "Lake Colac parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -9242,6 +9279,18 @@
   "lat": 50.423441,
   "lon": -3.564297,
   "long": "Torbay Velopark parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "torquay": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -38.327281,
+  "lon": 144.326903,
+  "long": "Torquay parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
