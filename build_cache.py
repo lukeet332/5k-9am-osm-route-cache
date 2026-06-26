@@ -20,6 +20,7 @@ OSM_TRACKPOINTS = "https://api.openstreetmap.org/api/0.6/trackpoints"
 UK_CC, ADULT = 97, 1
 TARGET = 5000
 REL_LO, REL_HI = 4800, 5200      # keep a relation only this close to 5k (it's a curated line)
+HALF_REL_LO, HALF_REL_HI = 2300, 2800 # relations in this band are candidates for doubling
 SANE_LO, SANE_HI = 1500, 9000    # off-tolerance finds in this band -> routes/failed/ as diagnostics
                                  # (e.g. ~2.5km = likely one lap of a 2-lap parkrun); wilder = noise, ignored
 RATE_S = 1.5            # min seconds between network calls (kind to OSM)
@@ -284,14 +285,34 @@ def build_one(ev):
         return {"source": "osm_relation", "distance_m": round(rel[1]), "status": "success",
                 "provisional": True, **diag}
 
+    # NEW: Try doubling a half-distance relation
+    if rel and HALF_REL_LO <= rel[1] <= HALF_REL_HI:
+        doubled_chain = rel[2] + rel[2] # Append the relation to itself
+        doubled_len = length(doubled_chain)
+        if REL_LO <= doubled_len <= REL_HI:
+            write_gpx(name, ev["long"], doubled_chain, "osm_relation_doubled")
+            return {"source": "osm_relation_doubled", "distance_m": round(doubled_len), "status": "success",
+                    "provisional": True, **diag}
+
     # Not a success -> no course geometry. Drop any stale success GPX from a prior run.
     stale = os.path.join(ROUTES, f"{name}.gpx")
     if os.path.exists(stale):
         os.remove(stale)
 
     cands = []                                    # FAILED: off-tolerance find -> index.json log only
-    if rel and SANE_LO <= rel[1] <= SANE_HI: cands.append(("osm_relation_offdist", rel[1], None))
-    if tr  and SANE_LO <= tr[0]  <= SANE_HI: cands.append(("osm_9am_trace_offdist", tr[0], tr[2]))
+    if rel and SANE_LO <= rel[1] <= SANE_HI:
+        cands.append(("osm_relation_offdist", rel[1], None))
+    if tr  and SANE_LO <= tr[0]  <= SANE_HI:
+        cands.append(("osm_9am_trace_offdist", tr[0], tr[2]))
+
+    # If a relation was a candidate for doubling (i.e., in HALF_REL_LO/HI range)
+    # and its *doubled* length is in SANE_LO/HI but NOT REL_LO/HI (i.e., it failed to be a success)
+    # then add it to cands for diagnostic logging.
+    if rel and HALF_REL_LO <= rel[1] <= HALF_REL_HI:
+        doubled_len = length(rel[2] + rel[2])
+        if SANE_LO <= doubled_len <= SANE_HI and not (REL_LO <= doubled_len <= REL_HI):
+            cands.append(("osm_relation_doubled_offdist", doubled_len, None))
+
     if cands:
         src, dist, date = min(cands, key=lambda c: abs(c[1] - TARGET))
         r = {"source": src, "distance_m": round(dist), "status": "failed", **diag}
