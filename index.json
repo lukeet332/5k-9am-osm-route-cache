@@ -1124,6 +1124,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "coronationpark": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.773488,
+  "lon": -1.586547,
+  "long": "Coronation Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "cosmestonlakes": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -2732,6 +2743,19 @@
   "source": null,
   "status": "gap"
  },
+ "meltonmowbray": {
+  "distance_m": 4937,
+  "last_tried": "2026-06-26",
+  "lat": 52.780002,
+  "lon": -0.879068,
+  "long": "Melton Mowbray parkrun",
+  "provisional": false,
+  "relation_m": 5018,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2019-04-20",
+  "trace_m": 4937
+ },
  "meonvalleytrailwickham": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -3338,6 +3362,17 @@
   "source": null,
   "status": "gap",
   "trace_m": 1170
+ },
+ "rosliston": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.754526,
+  "lon": -1.639681,
+  "long": "Rosliston parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "rossonwye": {
   "distance_m": null,
