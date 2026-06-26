@@ -4422,6 +4422,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "killerton": {
+  "distance_m": 4993,
+  "last_tried": "2026-06-26",
+  "lat": 50.792835,
+  "lon": -3.455007,
+  "long": "Killerton parkrun",
+  "provisional": true,
+  "relation_m": 4993,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": 2568
+ },
  "kingdom": {
   "distance_m": 5057,
   "last_tried": "2026-06-25",
@@ -4636,6 +4648,17 @@
   "lat": 54.977078,
   "lon": -1.625633,
   "long": "Leazes parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "leeonthesolent": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.801087,
+  "lon": -1.20383,
+  "long": "Lee-on-the-Solent parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -6075,6 +6098,17 @@
   "lat": 53.254611,
   "lon": -1.918759,
   "long": "Pavilion Gardens parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "peacehaven": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.794092,
+  "lon": 0.012418,
+  "long": "Peacehaven parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
