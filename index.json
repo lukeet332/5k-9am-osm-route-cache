@@ -1322,8 +1322,9 @@
   "trace_m": null
  },
  "brynaman": {
+  "built_by": "v0.5.0",
   "distance_m": null,
-  "last_tried": "2026-06-25",
+  "last_tried": "2026-06-26",
   "lat": 51.808402,
   "lon": -3.869719,
   "long": "Brynaman parkrun",
@@ -1825,8 +1826,9 @@
   "trace_m": 156
  },
  "chippenhamplayingfields": {
+  "built_by": "v0.5.0",
   "distance_m": null,
-  "last_tried": "2026-06-25",
+  "last_tried": "2026-06-26",
   "lat": 51.80783,
   "lon": -2.718161,
   "long": "Chippenham Playing Fields parkrun, Monmouth",
@@ -3339,8 +3341,9 @@
   "trace_m": null
  },
  "forestofdean": {
+  "built_by": "v0.5.0",
   "distance_m": 4427,
-  "last_tried": "2026-06-25",
+  "last_tried": "2026-06-26",
   "lat": 51.808701,
   "lon": -2.605219,
   "long": "Forest of Dean parkrun",
@@ -4149,8 +4152,9 @@
   "trace_date": "2025-04-12"
  },
  "haverfordwest": {
+  "built_by": "v0.5.0",
   "distance_m": null,
-  "last_tried": "2026-06-25",
+  "last_tried": "2026-06-26",
   "lat": 51.797163,
   "lon": -4.992836,
   "long": "Haverfordwest parkrun",
@@ -5233,8 +5237,9 @@
   "trace_m": null
  },
  "llanfoistcrossing": {
+  "built_by": "v0.5.0",
   "distance_m": null,
-  "last_tried": "2026-06-25",
+  "last_tried": "2026-06-26",
   "lat": 51.814913,
   "lon": -3.039861,
   "long": "Llanfoist Crossing parkrun",
@@ -5280,8 +5285,9 @@
   "trace_m": 2430
  },
  "llynllechowain": {
+  "built_by": "v0.5.0",
   "distance_m": null,
-  "last_tried": "2026-06-25",
+  "last_tried": "2026-06-26",
   "lat": 51.812913,
   "lon": -4.080563,
   "long": "Llyn Llech Owain parkrun",
@@ -6538,8 +6544,9 @@
   "trace_m": null
  },
  "panshanger": {
+  "built_by": "v0.5.0",
   "distance_m": null,
-  "last_tried": "2026-06-25",
+  "last_tried": "2026-06-26",
   "lat": 51.798644,
   "lon": -0.138723,
   "long": "Panshanger parkrun",
@@ -7396,8 +7403,9 @@
   "trace_m": null
  },
  "rothamstedpark": {
+  "built_by": "v0.5.0",
   "distance_m": null,
-  "last_tried": "2026-06-25",
+  "last_tried": "2026-06-26",
   "lat": 51.812486,
   "lon": -0.356641,
   "long": "Rothamsted Park parkrun",
@@ -9378,8 +9386,9 @@
   "trace_m": null
  },
  "westmill": {
+  "built_by": "v0.5.0",
   "distance_m": null,
-  "last_tried": "2026-06-25",
+  "last_tried": "2026-06-26",
   "lat": 51.821422,
   "lon": -0.060813,
   "long": "Westmill parkrun",
