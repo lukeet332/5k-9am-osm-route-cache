@@ -60,6 +60,8 @@ jobs:
 
             > ${{ steps.improve.outputs.summary }}
 
+            Release-Bump: ${{ steps.improve.outputs.version_bump || 'patch' }}
+
             - Already passed `selftest.py` in this job; CI re-runs it as the merge gate.
             - Must be **approved by a second AI** (`ai-review`) before it can merge.
             - Bound by `AI_CONTEXT.md` — accuracy bars fixed, no AI-authored geometry, kind to OSM.
