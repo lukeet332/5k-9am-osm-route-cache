@@ -47,6 +47,11 @@ HARD CONSTRAINTS:
 
 Current configuration: %(current)s
 
+LIVE AVAILABLE MODELS (the ONLY valid choices — fetched just now from each provider). You MUST return
+model ids that appear VERBATIM in this list; NEVER guess or use a remembered name (they are often
+deprecated, e.g. there is no gemini-1.5-flash here):
+%(menu)s
+
 Respond with STRICT JSON only:
 {"primary": {"provider": "...", "model": "..."},
  "fallback": {"provider": "...", "model": "..."},
@@ -63,6 +68,31 @@ def available_providers():
     return [p for p, (_base, key_env) in L.PROVIDERS.items() if os.environ.get(key_env, "").strip()]
 
 
+def provider_models(provider):
+    """Fetch the REAL model ids a provider currently serves (OpenAI-style GET /models), so the
+    selector chooses from live slugs instead of guessing deprecated names. Best-effort: any failure
+    returns []. OpenRouter is filtered to truly-free (':free') ids and every list is capped to keep
+    the selector prompt lean."""
+    import urllib.request
+    base, key_env = L.PROVIDERS[provider]
+    key = os.environ.get(key_env, "").strip()
+    if not key:
+        return []
+    try:
+        req = urllib.request.Request(base.rstrip("/") + "/models",
+                                     headers={"Authorization": f"Bearer {key}",
+                                              "User-Agent": "Mozilla/5.0 (5k-9am-osm-route-cache)"})
+        data = json.loads(urllib.request.urlopen(req, timeout=30).read())
+        ids = [m.get("id") for m in (data.get("data") or []) if m.get("id")]
+        if provider == "openrouter":
+            ids = [i for i in ids if str(i).endswith(":free")]   # only no-cost models
+        return sorted(ids)[:80]
+    except Exception as e:
+        print(f"  {provider} /models unavailable ({e.__class__.__name__} {getattr(e,'code','')})")
+        # github-models has no OpenAI /models listing — fall back to a known good reviewer id.
+        return ["openai/gpt-4.1"] if provider == "github-models" else []
+
+
 def main():
     avail = available_providers()
     cur = L.load_model_config()
@@ -75,9 +105,12 @@ def main():
                     + len(L.journal_tail()) + len(L.outcomes_summary()) + 3000)  # +3000 ≈ instruction block
     master_tokens = master_chars // 4   # ~4 chars/token
     print(f"Measured master prompt: ~{master_chars} chars (~{master_tokens} tokens).")
+    menu = {p: provider_models(p) for p in avail}
+    menu = {p: ids for p, ids in menu.items() if ids}   # drop providers we couldn't list
+    print("Live model menu:", {p: len(ids) for p, ids in menu.items()})
     rec, _ = L.call_with_roles(
         PROMPT % {"avail": ", ".join(avail) or "github-models", "current": json.dumps(cur_short),
-                  "master_tokens": f"~{master_tokens}"},
+                  "master_tokens": f"~{master_tokens}", "menu": json.dumps(menu, indent=1)},
         roles=("primary", "fallback"),
     )
     if not isinstance(rec, dict):
