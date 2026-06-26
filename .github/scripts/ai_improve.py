@@ -8,9 +8,60 @@ It edits the deterministic ALGORITHM only; it never emits coordinates itself. Th
 must then pass selftest.py (workflow gate), a second AI review, and CI before it can merge.
 Standard library only; writes are allow-listed + path-guarded in ai_lib.
 """
-import os, sys
+import os, sys, json, urllib.request, urllib.error
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import ai_lib as L
+
+# ---- PR-thread access (the author keeps context across revision rounds; the reviewer stays
+#      stateless + independent). The branch files + the live diff ARE the author's prior work, and
+#      the PR comments ARE the critique history — so no new persisted state is needed. All best-effort:
+#      on the first author run (no PR yet) or the self-test retry (no PR), these no-op gracefully. ----
+def _gh_api(method, path, body=None):
+    tok = (os.environ.get("GH_TOKEN") or os.environ.get("GH_MODELS_TOKEN")
+           or os.environ.get("BOT_PAT") or "").strip()
+    repo = os.environ.get("GITHUB_REPOSITORY", "").strip()
+    if not (tok and repo):
+        return None
+    req = urllib.request.Request(
+        f"https://api.github.com/repos/{repo}{path}",
+        data=(json.dumps(body).encode() if body is not None else None),
+        headers={"Authorization": f"Bearer {tok}", "Accept": "application/vnd.github+json",
+                 "User-Agent": "5k-9am-osm-route-cache author bot"},
+        method=method)
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return json.loads(r.read() or "null")
+    except Exception as e:
+        print(f"(gh api {method} {path} unavailable: {e.__class__.__name__})")
+        return None
+
+def _pr_diff():
+    """The author's change SO FAR vs main — built by the review job before it calls us back."""
+    p = L.REPO / "pr.diff"
+    return p.read_text(errors="ignore") if p.exists() else ""
+
+def _pr_conversation():
+    """The review debate so far (reviewer critiques + the author's own prior replies), oldest first."""
+    pr = os.environ.get("PR", "").strip()
+    if not pr:
+        return ""
+    data = _gh_api("GET", f"/issues/{pr}/comments") or []
+    turns = []
+    for c in data:
+        who = (c.get("user") or {}).get("login", "?")
+        body = (c.get("body") or "").strip()
+        if body:
+            turns.append(f"--- {who} ---\n{body}")
+    return "\n\n".join(turns)
+
+def _post_reply(summary):
+    """The author speaks in the PR thread: what it changed in response. Builds the conversation for
+    the next round and makes the whole debate auditable by the human owner."""
+    pr = os.environ.get("PR", "").strip()
+    if not pr:
+        return
+    _gh_api("POST", f"/issues/{pr}/comments",
+            {"body": "🤖 **Author revised** — targeted fix, kept the prior approach:\n\n> " + summary})
 
 PROMPT = """You maintain a Python pipeline that caches UK parkrun 5k courses as GPX, derived ONLY
 from OpenStreetMap. The CONSTITUTION (AI_CONTEXT_READ_ONLY_BIBLE.md) is the SUPREME LAW — read it
@@ -51,6 +102,20 @@ JOURNAL.md, and AI_CONTEXT.md. You MAY also propose an amendment to the constitu
 auto-merge and needs the human owner's explicit approval. NEVER edit selftest.py or anything under
 .github/ (the safety pipeline)."""
 
+# Revision rounds REUSE the author's own context instead of starting over. The reviewer rejected (or
+# the self-test failed); the working-tree files shown above ARE the author's previous attempt, and the
+# diff + conversation below are its prior work and the critique. The author makes the SMALLEST fix that
+# resolves the objection — it does NOT re-derive from scratch, switch ideas, or reopen settled parts.
+REVISION_PROMPT = """=== THIS IS A REVISION ROUND — NOT A NEW PROPOSAL ===
+The ALGORITHM and files shown above are YOUR OWN previous attempt (already in the working tree), not
+the baseline. A reviewer or the self-test gate found a problem with it. Revise, don't restart:
+- Keep your previous APPROACH and make the SMALLEST change that fully resolves the feedback's ROOT
+  cause. Do NOT rewrite from scratch and do NOT switch to a different idea.
+- Leave every part the feedback did NOT object to byte-for-byte identical (no incidental churn).
+- Do NOT add a new JOURNAL entry for the revision — refine the entry already in your proposal if the
+  fix changes what it should say; otherwise leave it.
+Return the COMPLETE corrected file(s) in the same JSON shape."""
+
 
 def main():
     cfg = L.load_model_config()
@@ -64,13 +129,24 @@ def main():
               + "\n\n===== OUTCOMES =====\n" + L.outcomes_summary()
               + "\n\n===== ALGORITHM (build_cache.py) =====\n" + L.ALGO_FILE.read_text(errors="ignore"))
     fb = os.environ.get("REVIEW_FEEDBACK", "").strip()
-    if fb:   # revision round: the reviewer rejected the previous attempt
-        prompt += "\n\n===== REVIEWER FEEDBACK ON YOUR PREVIOUS ATTEMPT (address it) =====\n" + fb[:2000]
+    revising = bool(fb)
+    if revising:   # revision round: a reviewer (or the self-test gate) rejected the previous attempt.
+        prompt += "\n\n" + REVISION_PROMPT
+        diff = _pr_diff()
+        if diff:
+            prompt += ("\n\n===== YOUR CHANGE SO FAR (diff vs main — this IS your prior work) =====\n"
+                       + diff[:12000])
+        convo = _pr_conversation()
+        if convo:
+            prompt += "\n\n===== REVIEW CONVERSATION SO FAR (oldest first) =====\n" + convo[-9000:]
+        prompt += "\n\n===== REVIEWER'S LATEST FEEDBACK (resolve its root cause) =====\n" + fb[:6000]
     result, slot = L.call_with_roles(prompt)
     if result is None:
         L.done("No model available — skipping (no changes).")
     print("Proposal:", result.get("summary", "(none)"))
     n = L.apply_changes(result)
+    if revising and n:
+        _post_reply(str(result.get("summary", "")).strip()[:600] or "(see diff)")
     label = L.bot_label(slot["model"])
     bump = str(result.get("version_bump", "patch")).strip().lower()
     if bump not in ("patch", "minor", "major"):
