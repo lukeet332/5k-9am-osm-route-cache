@@ -175,6 +175,17 @@
   "source": null,
   "status": "gap"
  },
+ "armagh": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.339812,
+  "lon": -6.652951,
+  "long": "Armagh parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "armley": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -1391,6 +1402,17 @@
   "trace_date": "2022-12-24",
   "trace_m": 4923
  },
+ "citypark": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.451093,
+  "lon": -6.386002,
+  "long": "Citypark parkrun, Craigavon",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "clactonseafront": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1800,6 +1822,19 @@
   "status": "gap",
   "trace_m": null
  },
+ "darlingtonsouthpark": {
+  "distance_m": 5026,
+  "last_tried": "2026-06-26",
+  "lat": 54.51484,
+  "lon": -1.560531,
+  "long": "Darlington South Park parkrun",
+  "provisional": false,
+  "relation_m": null,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2025-02-01",
+  "trace_m": 5026
+ },
  "dartford": {
   "distance_m": 5076,
   "last_tried": "2026-06-25",
@@ -1938,6 +1973,28 @@
   "source": null,
   "status": "gap"
  },
+ "dungannonpark": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.489432,
+  "lon": -6.755359,
+  "long": "Dungannon Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "dunleathplayingfields": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.323473,
+  "lon": -5.718077,
+  "long": "Dunleath Playing Fields parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "dunstabledowns": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -2047,6 +2104,17 @@
   "lat": 53.368631,
   "lon": -1.507364,
   "long": "Endcliffe parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "enniskillen": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.343834,
+  "lon": -7.642293,
+  "long": "Enniskillen parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -2977,6 +3045,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "hillsboroughforest": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.461336,
+  "lon": -6.076662,
+  "long": "Hillsborough Forest parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "hillyfields": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -3680,6 +3759,17 @@
   "source": null,
   "status": "gap"
  },
+ "lurganpark": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.46303,
+  "lon": -6.322774,
+  "long": "Lurgan Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "lutonwardown": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -4123,6 +4213,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "montaltoestate": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.393274,
+  "lon": -5.899066,
+  "long": "Montalto Estate parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "morden": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -4151,6 +4252,17 @@
   "long": "Mote Park parkrun",
   "source": null,
   "status": "gap"
+ },
+ "muncastercastle": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.357004,
+  "lon": -3.388267,
+  "long": "Muncaster Castle parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "myrtle": {
   "distance_m": null,
@@ -4283,6 +4395,17 @@
   "status": "success",
   "trace_date": "2017-02-04",
   "trace_m": 4971
+ },
+ "northallerton": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.348466,
+  "lon": -1.435519,
+  "long": "Northallerton parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "northampton": {
   "distance_m": 4021,
@@ -5056,6 +5179,17 @@
   "lat": 51.812486,
   "lon": -0.356641,
   "long": "Rothamsted Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "rothaypark": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.431563,
+  "lon": -2.969788,
+  "long": "Rothay Park parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -5932,6 +6066,18 @@
   "status": "failed",
   "trace_m": 2956
  },
+ "thecindertrack": {
+  "distance_m": 2831,
+  "last_tried": "2026-06-26",
+  "lat": 54.4779,
+  "lon": -0.620751,
+  "long": "The Cinder Track parkrun, Whitby",
+  "relation_m": null,
+  "source": "osm_9am_trace_offdist",
+  "status": "failed",
+  "trace_date": "2023-10-28",
+  "trace_m": 2831
+ },
  "theleas": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -6636,6 +6782,17 @@
   "relation_m": 4978,
   "source": "osm_relation",
   "status": "success",
+  "trace_m": null
+ },
+ "woodlandsscarborough": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.28068,
+  "lon": -0.417402,
+  "long": "Woodlands parkrun, Scarborough",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
   "trace_m": null
  },
  "woodley": {
