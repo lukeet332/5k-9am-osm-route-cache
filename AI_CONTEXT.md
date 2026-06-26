@@ -1,7 +1,7 @@
 # AI maintenance context & guardrails
 
-This repo builds a cache of UK parkrun-distance (5k) courses as GPX, **derived only from
-OpenStreetMap** (route relations + openly-contributed Saturday-09:00 GPS traces). A weekly
+This repo builds a cache of parkrun-distance (5k) courses worldwide (UK first) as GPX, **derived only
+from OpenStreetMap** (route relations + openly-contributed Saturday-09:00 GPS traces). A weekly
 AI maintenance job may propose **one** improvement PR; a second AI reviews it; they iterate
 until both are satisfied and CI passes; then it merges. This file is the contract for that AI.
 
@@ -33,22 +33,21 @@ loosening the accuracy bars. The single most powerful lever is **which datetimes
   "Saturday 09:00" to **"known parkrun event datetimes at 09:00 local"** (Saturdays + Christmas
   Day + NYD). This is a real coverage unlock and fully within the invariants.
 
-**Phased rollout - the end goal is to map ALL parkruns worldwide as GPX, not just the UK.** Start
-UK-only (`countrycode 97`), Havant -> north, then **expand to all parkruns worldwide**, efficiently,
-reusing gap-fill + rotation + skip-locked so it never re-queries what's already accurate.
-IMPORTANT - the trigger to go global is **UK EXHAUSTION, not a coverage percentage.** The OSM data
-ceiling caps UK coverage far below any >=80% bar (most UK parkruns have no OSM relation or 09:00 trace),
-so a "wait for >=80% UK" gate would never fire and would block the goal forever. Instead expand once the
-UK is effectively exhausted: all UK events swept and the ones still missing are no-data gaps or `failed`
-entries the current extraction can't convert (UK gains have plateaued). CRITICAL for global: the
-"09:00 local" anchor must use **each event's own local timezone** (derived from its coordinates/country),
-not the hardcoded `Europe/London` - otherwise the time filter silently misses every overseas parkrun.
-Generalising the timezone is the prerequisite before (or as part of) the global expansion. Expanding the
-event query worldwide AND adding other openly-licensed data sources are the two big levers once the UK
-runs dry - both serve the same end: every parkrun mapped.
-**Per-country reporting (once global):** report coverage PER COUNTRY in `coverage.json` / the repo
-description - each country's total parkruns and number successfully mapped, mirroring today's UK badge
-(e.g. "UK 120/873, Australia 50/400, ..."), so progress is visible per country as the rollout widens.
+**Global rollout - LIVE (the end goal is to map ALL parkruns worldwide as GPX).** As of the global
+rollout, `load_events` queries EVERY adult parkrun worldwide (~2361 events), not just the UK. UK is
+ordered first (Havant -> north), then the rest by country+latitude; foreign events are never-tried so
+the last_tried rotation sweeps them first - harvesting untapped foreign data while UK gaps wait. The
+"09:00 local" anchor is now PER-EVENT: `local(dt, lat, lon)` derives each event's IANA timezone from
+its coordinates via the `timezonefinder` package (DST-correct via zoneinfo), with a graceful fallback
+to Europe/London if the package is absent. DO NOT revert to a UK-only query or a hardcoded London tz,
+and DO NOT replace timezonefinder with a longitude/offset hack - that ignores DST + zone boundaries and
+silently drops foreign traces (it broke the UK once). `relation_course` is timezone-agnostic, so foreign
+relation successes need no tz. Coverage + the badge are now the WORLD tally; per-country progress lives
+in the README table (`report.py` / `coverage_by_country.json`). The remaining lever for thin-coverage
+countries is additional openly-licensed data sources (within the invariants) - every parkrun mapped.
+**Per-country reporting (LIVE):** `report.py` writes `coverage_by_country.json` and the README
+"Coverage by country" table (each country's mapped/total), and `coverage.json` + the repo description
+are the WORLD tally. Per-country progress is already visible; it fills in as the rollout sweeps each country.
 
 ## Source trust & the long-term "map it to the mm" goal
 
