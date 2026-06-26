@@ -2850,6 +2850,17 @@
   "status": "failed",
   "trace_m": null
  },
+ "stratforduponavon": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.184998,
+  "lon": -1.701445,
+  "long": "Stratford-upon-Avon parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "street": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -3319,6 +3330,18 @@
   "long": "Woolacombe Dunes parkrun",
   "source": null,
   "status": "gap"
+ },
+ "worcester": {
+  "distance_m": 5039,
+  "last_tried": "2026-06-26",
+  "lat": 52.186989,
+  "lon": -2.178726,
+  "long": "Worcester parkrun",
+  "provisional": true,
+  "relation_m": 5039,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
  },
  "wormwoodscrubs": {
   "distance_m": null,
