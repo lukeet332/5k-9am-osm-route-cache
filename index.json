@@ -1177,6 +1177,19 @@
   "source": null,
   "status": "gap"
  },
+ "dereham": {
+  "distance_m": 4965,
+  "last_tried": "2026-06-26",
+  "lat": 52.684276,
+  "lon": 0.96988,
+  "long": "Dereham parkrun",
+  "provisional": false,
+  "relation_m": 4973,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2024-11-30",
+  "trace_m": 4965
+ },
  "dintonpastures": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -3462,6 +3475,17 @@
   "status": "success",
   "trace_date": "2021-12-18",
   "trace_m": 4875
+ },
+ "snowdenfield": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.673995,
+  "lon": -0.164731,
+  "long": "Snowden Field parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "sohamvillagecollege": {
   "distance_m": 4964,
