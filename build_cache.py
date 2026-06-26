@@ -180,7 +180,11 @@ def trace_courses_multi(name, lat, lon):
     traces = {}
     for la, lo, t in pts:
         ldt = local(t)
-        if ldt.weekday() == 5 and ldt.hour == 9 and ldt.minute < 45:
+        is_saturday = ldt.weekday() == 5
+        is_christmas_day = ldt.month == 12 and ldt.day == 25
+        is_new_years_day = ldt.month == 1 and ldt.day == 1
+
+        if (is_saturday or is_christmas_day or is_new_years_day) and ldt.hour == 9 and ldt.minute < 45:
             date = ldt.date().isoformat()
             traces.setdefault(date, []).append((la, lo, t))
     valid_traces = []
@@ -215,9 +219,16 @@ def trace_course(name, lat, lon):
         return res
     # Fallback: single trace (original logic)
     pts = trace_points(name, lat, lon)
-    win = sorted([(la, lo, t) for la, lo, t in pts
-                  if local(t).weekday() == 5 and local(t).hour == 9 and local(t).minute < 45],
-                 key=lambda p: p[2])
+    win = []
+    for la, lo, t in pts:
+        ldt = local(t)
+        is_saturday = ldt.weekday() == 5
+        is_christmas_day = ldt.month == 12 and ldt.day == 25
+        is_new_years_day = ldt.month == 1 and ldt.day == 1
+        if (is_saturday or is_christmas_day or is_new_years_day) and ldt.hour == 9 and ldt.minute < 45:
+            win.append((la, lo, t))
+    win = sorted(win, key=lambda p: p[2])
+
     if not win or H(lat, lon, win[0][0], win[0][1]) > 150:
         return None
     path = [win[0]]; d = 0.0
@@ -341,7 +352,7 @@ def write_coverage(index, events):
     workflow) the repo description. Called after EACH success so the count tracks in real time,
     not just at run-end. Always green: every mapped course is a success, however many so far."""
     total = len(events)
-    locked = sum(1 for e in events if is_locked(index.get(e["name"])))
+    locked = sum(1 for e in events if is_locked(index.get(e["name"]))) 
     pct = round(100 * locked / total, 1) if total else 0.0
     json.dump({"schemaVersion": 1, "label": "parkruns successfully mapped",
                "message": f"{locked}/{total} ({pct}%)", "color": "brightgreen",
@@ -370,7 +381,7 @@ def main():
     index = json.load(open(index_path)) if os.path.exists(index_path) else {}
 
     total = len(events)
-    locked = sum(1 for e in events if is_locked(index.get(e["name"])))
+    locked = sum(1 for e in events if is_locked(index.get(e["name"]))) 
     refine = (locked / total if total else 0.0) >= COVERAGE_REFINE
     print(f"coverage {locked}/{total} ({locked/total:.0%}) within 4.8-5.2km -> "
           f"{'REFINE (re-querying accurate ones too)' if refine else 'GAP-FILL (skipping accurate ones)'}")
@@ -379,7 +390,7 @@ def main():
     # last_tried so a perpetual gap can't hog the budget: never-tried first (Havant->north),
     # then oldest-tried first.
     cands = [e for e in events if refine or not is_locked(index.get(e["name"]))]
-    cands.sort(key=lambda e: ((index.get(e["name"]) or {}).get("last_tried", ""), e["ord"]))
+    cands.sort(key=lambda e: ((index.get(e["name"]) or {}).get("last_tried", ""), e["ord"])) 
     if args.limit:
         cands = cands[:args.limit]
 

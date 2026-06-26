@@ -43,3 +43,8 @@ progressively more creative over time. Append-only; newest at the bottom.
   a ~5.0k SUCCESS — it was RED before the fix, GREEN after. **Lesson: a green self-test does not prove
   new distance maths is right unless a case actually exercises it; the reviewer now hand-traces
   distance arithmetic and watches for the self-concatenation phantom-seam trap.**
+
+### 2024-07-30 — Expand trace extraction to include Christmas Day and New Year's Day events
+- **Idea:** Expand trace extraction to include Christmas Day and New Year's Day events.
+- **Why:** The `AI_CONTEXT.md` explicitly states these are high-footfall special events with huge parkrun turnout, offering a "real coverage unlock" by providing more GPS traces for averaging. The current algorithm only considers Saturdays. This should increase both coverage and closeness-to-5k by leveraging more real-world data.
+- **What changed:** Modified `trace_courses_multi` and the single-trace fallback in `trace_course` to include traces from December 25th and January 1st, in addition to Saturdays, within the 09:00-09:45 local time window.

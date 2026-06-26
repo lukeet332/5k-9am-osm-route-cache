@@ -50,8 +50,8 @@ Saturday-09:00 GPS.** The `source` field on every success says which it is:
   4.8–5.2 km. Good enough to ship to the app, but it may not be the true course (a rough relation
   can happen to total ~5k). Treat with suspicion.
 
-`build_one` already encodes this: when both qualify, the **trace wins**. Your standing remit, in
-priority order:
+`build_one` already encodes this: when both qualify, the **trace wins**.
+Your standing remit, in priority order:
 1. **Coverage first** — fill `gap`s and fix `failed`s (most parkruns still have no course).
 2. **Upgrade provisional → trace** — as the trace pool grows, replace `provisional: true`
    (relation) successes with real `osm_9am_trace` courses. (Re-querying locked courses already
@@ -127,7 +127,7 @@ Two outputs, two audiences — know which is which:
 ## The idea JOURNAL (build context over time)
 
 `JOURNAL.md` is the bots' running diary. Each week the author reads it, then appends an entry
-(date, the idea, *why* from the outcomes, what changed). The point is **accumulated knowledge**:
+(date, the idea, *why* from the outcomes, what you changed). The point is **accumulated knowledge**:
 build on what worked, don't repeat what didn't, and get **progressively more creative week over
 week. The reviewer also reads it. Append-only; never rewrite past entries.
 
@@ -168,3 +168,4 @@ It validates every change with a live call; a provider with no key is simply ski
 
 ## Learnings (appended by the bot)
 - Averaging multiple Saturday-09:00 traces improves closeness-to-5k and coverage without violating invariants.
+- Expanded trace extraction to include Christmas Day and New Year's Day, as these are high-footfall events with valuable GPS data.
