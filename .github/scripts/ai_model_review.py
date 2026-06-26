@@ -12,6 +12,11 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import ai_lib as L
 
 ROLES = ("primary", "fallback", "fast")
+# DENYLIST: models that pass a tiny live probe but FAIL under the real, full-size, sustained author
+# load — so the live_ok() probe (one small/medium call) can't catch them. Keep them out of the menu
+# entirely so the selector can never re-pick a known-bad model. gemini-3.5-flash repeatedly 503'd on
+# real author generations and was reverted by hand twice; both its bare and `models/`-prefixed ids.
+DENY_MODELS = {"gemini-3.5-flash", "models/gemini-3.5-flash"}
 PROMPT = """You configure THREE models for an automated maintenance bot on a Python repo that
 caches OSM-derived running courses. Pick ONLY from these providers whose keys are configured
 right now: %(avail)s.
@@ -132,6 +137,7 @@ def main():
     master_tokens = master_chars // 4   # ~4 chars/token
     print(f"Measured master prompt: ~{master_chars} chars (~{master_tokens} tokens).")
     menu = {p: provider_models(p) for p in avail}
+    menu = {p: [i for i in ids if i not in DENY_MODELS] for p, ids in menu.items()}  # hide known-bad
     menu = {p: ids for p, ids in menu.items() if ids}   # drop providers we couldn't list
     print("Live model menu:", {p: len(ids) for p, ids in menu.items()})
     base_args = {"avail": ", ".join(avail) or "github-models",
