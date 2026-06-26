@@ -1243,6 +1243,17 @@
   "source": null,
   "status": "gap"
  },
+ "camperdown": {
+  "distance_m": 5318,
+  "last_tried": "2026-06-26",
+  "lat": 56.483681,
+  "lon": -3.030896,
+  "long": "Camperdown parkrun, Dundee",
+  "relation_m": 5318,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": 1648
+ },
  "cannockchase": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -2024,6 +2035,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "crinancanal": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 56.041904,
+  "lon": -5.440651,
+  "long": "Crinan Canal parkrun, Lochgilphead",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "crosby": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -2368,6 +2390,17 @@
   "long": "Dulwich parkrun",
   "source": null,
   "status": "gap"
+ },
+ "dunfermline": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 56.070684,
+  "lon": -3.470694,
+  "long": "Dunfermline parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "dungannonpark": {
   "distance_m": null,
@@ -2933,6 +2966,17 @@
   "relation_m": null,
   "source": null,
   "status": "gap",
+  "trace_m": null
+ },
+ "ganavansands": {
+  "distance_m": 1863,
+  "last_tried": "2026-06-26",
+  "lat": 56.437766,
+  "lon": -5.469021,
+  "long": "Ganavan Sands parkrun",
+  "relation_m": 1863,
+  "source": "osm_relation_offdist",
+  "status": "failed",
   "trace_m": null
  },
  "gangerfarm": {
@@ -4152,6 +4196,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "kirkcaldy": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 56.104087,
+  "lon": -3.169549,
+  "long": "Kirkcaldy parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "kirkharlecourtyard": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -4169,6 +4224,17 @@
   "lat": 53.411116,
   "lon": -2.811654,
   "long": "Knowsley parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "ladymaryswalk": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 56.374281,
+  "lon": -3.858359,
+  "long": "Lady Mary\u2019s Walk parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -4475,6 +4541,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "lochleven": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 56.219434,
+  "lon": -3.358085,
+  "long": "Loch Leven parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "lochneaton": {
   "distance_m": 5106,
   "last_tried": "2026-06-26",
@@ -4487,6 +4564,17 @@
   "status": "success",
   "trace_date": "2019-03-02",
   "trace_m": 5106
+ },
+ "lochoremeadows": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 56.150699,
+  "lon": -3.33708,
+  "long": "Lochore Meadows parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "longeaton": {
   "distance_m": null,
@@ -5723,6 +5811,17 @@
   "status": "success",
   "trace_m": null
  },
+ "perth": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 56.40515,
+  "lon": -3.435422,
+  "long": "Perth parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "pertonplayingfields": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -5768,6 +5867,18 @@
   "source": null,
   "status": "gap",
   "trace_m": null
+ },
+ "plean": {
+  "distance_m": 1835,
+  "last_tried": "2026-06-26",
+  "lat": 56.057791,
+  "lon": -3.881607,
+  "long": "Plean parkrun",
+  "relation_m": null,
+  "source": "osm_9am_trace_offdist",
+  "status": "failed",
+  "trace_date": "2018-09-01",
+  "trace_m": 1835
  },
  "pocket": {
   "distance_m": 5018,
@@ -6183,6 +6294,17 @@
   "lat": 55.069,
   "lon": -6.507566,
   "long": "Riverside parkrun, Ballymoney",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "riversideparkglenrothes": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 56.199969,
+  "lon": -3.175163,
+  "long": "Riverside Park parkrun, Glenrothes",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -6966,6 +7088,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "standrews": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 56.317711,
+  "lon": -2.838234,
+  "long": "St Andrews parkrun",
+  "relation_m": 1497,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "stevenage": {
   "distance_m": 4207,
   "last_tried": "2026-06-25",
@@ -7610,6 +7743,17 @@
   "status": "success",
   "trace_m": null
  },
+ "universityofstirling": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 56.147968,
+  "lon": -3.923762,
+  "long": "University of Stirling parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "universityparks": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -7912,6 +8056,18 @@
   "relation_m": null,
   "source": null,
   "status": "gap",
+  "trace_m": null
+ },
+ "westlinks": {
+  "distance_m": 4925,
+  "last_tried": "2026-06-26",
+  "lat": 56.551299,
+  "lon": -2.602859,
+  "long": "West Links parkrun",
+  "provisional": true,
+  "relation_m": 4925,
+  "source": "osm_relation",
+  "status": "success",
   "trace_m": null
  },
  "westmill": {
