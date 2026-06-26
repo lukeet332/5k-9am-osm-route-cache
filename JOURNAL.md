@@ -52,7 +52,7 @@ progressively more creative over time. Append-only; newest at the bottom.
 ### 2026-06-26 - DeepSeek-V3.2-bot (DeepSeek-V3.2, minor)
 - Add trace doubling for half-distance traces to capture 2-lap parkruns missed by relation-only doubling
 
-### ALREADY IMPLEMENTED - do NOT re-propose (re-proposing = churn, the PR will be closed)
+### ALREADY IMPLEMENTED - do NOT re-propose AS-IS (re-proposing the same thing = churn, PR closed). A justified, MEANINGFUL improvement that builds on one of these is welcome and is NOT churn.
 - Relation doubling for ~2.3-2.8k relations (double the lap to recover a 2-lap course). DONE.
 - Trace doubling for ~2.3-2.8k Saturday-09:00 GPS traces (osm_9am_trace_doubled in build_one). DONE.
 - Multi-Saturday trace averaging (trace_courses_multi, pointwise mean). DONE.

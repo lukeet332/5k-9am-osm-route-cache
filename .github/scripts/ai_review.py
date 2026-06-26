@@ -33,8 +33,12 @@ VERDICTS:
   trap is `length(lap+lap)` vs the correct `2*length(lap)`). State the single fix. Use this ONLY for a
   genuine blocker, not for "could be better".
 - "churn": not worth revising at all - a no-op/trivial diff, OR it re-proposes work the code/JOURNAL
-  already has (e.g. re-adding doubling that already exists). Do NOT ask to revise; the author should
-  ABANDON this idea and propose a NEW one (the PR will be closed).
+  already has WITH NO meaningful improvement (e.g. re-adding doubling that already exists). Do NOT ask
+  to revise; the author should ABANDON this idea and propose a NEW one (the PR will be closed).
+  EXCEPTION: a genuine, justified IMPROVEMENT that builds on an existing feature (e.g. extending
+  doubling to out-and-back laps, or smarter recency weighting) is NOT churn - judge it normally
+  (approve if net-positive, revise if it has a real bug). Only call churn when the change adds nothing
+  over what already exists.
 
 Respond with STRICT JSON only:
 {"verdict": "approve"|"revise"|"churn",
