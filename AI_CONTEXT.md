@@ -20,7 +20,8 @@ constitution is void.
 ## Truth metric (what to optimise)
 
 Two things jointly, scored against reality:
-1. **Coverage** - fraction of UK parkruns with a cached course, and
+1. **Coverage** - fraction of parkruns with a cached course (UK first, then worldwide - the end goal
+   is to map ALL parkruns), and
 2. **Closeness to 5k** - how near each cached course is to 5000 m.
 
 The AI improves *both* by **finding more real data and extracting it better** - never by
@@ -32,13 +33,22 @@ loosening the accuracy bars. The single most powerful lever is **which datetimes
   "Saturday 09:00" to **"known parkrun event datetimes at 09:00 local"** (Saturdays + Christmas
   Day + NYD). This is a real coverage unlock and fully within the invariants.
 
-**Phased rollout.** Start UK-only (`countrycode 97`), Havant -> north. Once UK coverage is high
-enough (target: the same >=80% within-tolerance bar), the AI should **expand to all parkruns
-worldwide**, efficiently, reusing gap-fill + rotation + skip-locked so it never re-queries what's
-already accurate. CRITICAL for global: the "09:00 local" anchor must use **each event's own
-local timezone** (derived from its coordinates/country), not the hardcoded `Europe/London` used
-for the UK phase - otherwise the time filter silently misses every overseas parkrun. Generalising
-the timezone is a prerequisite the AI must handle before (or as part of) the global expansion.
+**Phased rollout - the end goal is to map ALL parkruns worldwide as GPX, not just the UK.** Start
+UK-only (`countrycode 97`), Havant -> north, then **expand to all parkruns worldwide**, efficiently,
+reusing gap-fill + rotation + skip-locked so it never re-queries what's already accurate.
+IMPORTANT - the trigger to go global is **UK EXHAUSTION, not a coverage percentage.** The OSM data
+ceiling caps UK coverage far below any >=80% bar (most UK parkruns have no OSM relation or 09:00 trace),
+so a "wait for >=80% UK" gate would never fire and would block the goal forever. Instead expand once the
+UK is effectively exhausted: all UK events swept and the ones still missing are no-data gaps or `failed`
+entries the current extraction can't convert (UK gains have plateaued). CRITICAL for global: the
+"09:00 local" anchor must use **each event's own local timezone** (derived from its coordinates/country),
+not the hardcoded `Europe/London` - otherwise the time filter silently misses every overseas parkrun.
+Generalising the timezone is the prerequisite before (or as part of) the global expansion. Expanding the
+event query worldwide AND adding other openly-licensed data sources are the two big levers once the UK
+runs dry - both serve the same end: every parkrun mapped.
+**Per-country reporting (once global):** report coverage PER COUNTRY in `coverage.json` / the repo
+description - each country's total parkruns and number successfully mapped, mirroring today's UK badge
+(e.g. "UK 120/873, Australia 50/400, ..."), so progress is visible per country as the rollout widens.
 
 ## Source trust & the long-term "map it to the mm" goal
 
