@@ -1,7 +1,7 @@
 {
   "primary": {
     "provider": "gemini",
-    "model": "gemini-2.5-flash"
+    "model": "models/gemini-3.5-flash"
   },
   "fallback": {
     "provider": "github-models",
@@ -9,6 +9,6 @@
   },
   "fast": {
     "provider": "gemini",
-    "model": "gemini-2.5-flash"
+    "model": "models/gemini-2.5-flash"
   }
 }
