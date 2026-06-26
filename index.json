@@ -221,6 +221,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "alicespringstelegraphstation": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -23.673314,
+  "lon": 133.887883,
+  "long": "Alice Springs Telegraph Station parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "allypally": {
   "built_by": "v0.1.0",
   "distance_m": 5888,
@@ -729,6 +741,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "bargara": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -24.806914,
+  "lon": 152.456905,
+  "long": "Bargara parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "baringa": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -887,6 +911,18 @@
   "lat": 52.78924,
   "lon": -1.683952,
   "long": "Battlestead Croft parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "baxter": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -24.891447,
+  "lon": 113.654841,
+  "long": "Baxter parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -2045,6 +2081,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "bundaberg": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -24.86835,
+  "lon": 152.330781,
+  "long": "Bundaberg parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "bungendorecommon": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -2147,6 +2195,18 @@
   "lon": -2.221555,
   "long": "Burnley parkrun",
   "relation_m": 78915,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "burrumheadsbeach": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -25.204584,
+  "lon": 152.630279,
+  "long": "Burrum Heads Beach parkrun",
+  "relation_m": null,
   "source": null,
   "status": "gap",
   "trace_m": null
@@ -4651,12 +4711,36 @@
   "trace_date": "2019-07-13",
   "trace_m": 4740
  },
+ "elliottheadsbeach": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -24.92193,
+  "lon": 152.491565,
+  "long": "Elliott Heads Beach parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "ellon": {
   "distance_m": null,
   "last_tried": "2026-06-26",
   "lat": 57.359262,
   "lon": -2.056968,
   "long": "Ellon parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "emerald": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -23.535317,
+  "lon": 148.165534,
+  "long": "Emerald parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -5381,6 +5465,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "gayndahriverwalk": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -25.624063,
+  "lon": 151.611063,
+  "long": "Gayndah River Walk parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "gedling": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -5469,6 +5565,18 @@
   "lat": 51.556982,
   "lon": -0.228223,
   "long": "Gladstone parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "gladstoneqld": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -23.857219,
+  "lon": 151.234053,
+  "long": "Gladstone QLD parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -6468,6 +6576,18 @@
   "relation_m": 5021,
   "source": "osm_relation",
   "status": "success",
+  "trace_m": null
+ },
+ "herveybay": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -25.283163,
+  "lon": 152.90367,
+  "long": "Hervey Bay parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
   "trace_m": null
  },
  "heslington": {
@@ -8858,6 +8978,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "maryborough": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -25.533689,
+  "lon": 152.686507,
+  "long": "Maryborough parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "maryportprom": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -11069,6 +11201,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "pointvernonforeshorereserve": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -25.258635,
+  "lon": 152.825102,
+  "long": "Point Vernon Foreshore Reserve parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "polkemmetcountry": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -11736,7 +11880,7 @@
   "relation_m": null,
   "source": null,
   "status": "gap",
-  "trace_m": 1026
+  "trace_m": 1017
  },
  "richmond": {
   "built_by": "v0.1.0",
@@ -13626,6 +13770,18 @@
   "lat": -32.33239,
   "lon": 115.812074,
   "long": "Tamworth Wetlands parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "tannumsands": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -23.93798,
+  "lon": 151.364976,
+  "long": "Tannum Sands parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -15718,6 +15874,18 @@
   "lat": 54.647169,
   "lon": -3.539767,
   "long": "Workington parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "workmansbeach": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -24.211762,
+  "lon": 151.913142,
+  "long": "Workman\u2019s Beach parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
