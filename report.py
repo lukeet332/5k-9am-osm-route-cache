@@ -46,11 +46,11 @@ def build():
 
 
 def render_readme(rows, world_t, world_m):
-    lines = [f"_Worldwide: {world_m}/{world_t} parkruns mapped across {len(rows)} countries. "
-             f"Only the UK is swept so far; others show NA until the global rollout reaches them._", "",
+    lines = [f"_Worldwide: {world_m}/{world_t} parkruns mapped across {len(rows)} countries "
+             f"(UK first; other countries fill in as the global rollout sweeps them)._", "",
              "| Country | Mapped / Total |", "|---|---|"]
     for cc, name, t, m in rows:
-        lines.append(f"| {name} | {(str(m)+'/'+str(t)) if m else 'NA/'+str(t)} |")
+        lines.append(f"| {name} | {m}/{t} |")
     block = START + "\n" + "\n".join(lines) + "\n" + END
     if not os.path.exists(README):
         return
