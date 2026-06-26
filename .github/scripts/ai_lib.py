@@ -55,9 +55,9 @@ PROVIDERS = {
 # DIFFERENT provider, then a rock-solid anchor — so a single overloaded free endpoint never sinks a run.
 # Picked from an empirical bake-off (changeset output, selftest-gated): see JOURNAL/AI_CONTEXT.
 DEFAULT_AUTHOR = [
-    {"provider": "sambanova", "model": "DeepSeek-V3.2"},            # best idea+code quality in the bake-off
-    {"provider": "cloudflare", "model": "@cf/openai/gpt-oss-120b"},  # frontier fallback, different provider
-    {"provider": "gemini", "model": "gemini-2.5-flash"},            # rock-solid anchor (proven, generous output)
+    {"provider": "sambanova", "model": "DeepSeek-V3.2"},   # best idea+code quality in the bake-off
+    {"provider": "sambanova", "model": "DeepSeek-V3.1"},   # bake-off runner-up — reliable, high code quality
+    {"provider": "gemini", "model": "gemini-2.5-flash"},   # rock-solid CROSS-PROVIDER anchor (covers a SambaNova outage)
 ]
 DEFAULT_REVIEWER = [
     {"provider": "cerebras", "model": "zai-glm-4.7"},               # frontier reasoner, validated as gate
@@ -152,16 +152,26 @@ def _post(url, headers, payload, attempts=3, timeout=300):
 
 
 def call_json(slot, prompt):
-    """Call an OpenAI-compatible /chat/completions endpoint and parse a JSON object reply."""
+    """Call an OpenAI-compatible /chat/completions endpoint and parse a JSON object reply.
+    NOTE: max_tokens MUST be set — some providers (Cloudflare Workers AI) default to a tiny 256-token
+    output, which silently truncates a changeset to invalid/empty JSON. 4000 covers a changeset or a
+    review verdict comfortably and stays within the tightest free output cap (GitHub Models = 4000)."""
     key = os.environ.get(slot["api_key_env"], "").strip()
     if not key:
         raise RuntimeError(f"no key in env {slot['api_key_env']}")
     data = _post(slot["base_url"].rstrip("/") + "/chat/completions",
                  {"Authorization": f"Bearer {key}"},
-                 {"model": slot["model"], "temperature": 0.1,
+                 {"model": slot["model"], "temperature": 0.1, "max_tokens": 4000,
                   "response_format": {"type": "json_object"},
                   "messages": [{"role": "user", "content": prompt}]})
-    return json.loads(data["choices"][0]["message"]["content"])
+    who = f'{slot.get("provider", "?")}/{slot.get("model", "?")}'
+    try:
+        content = data["choices"][0]["message"]["content"]
+    except (KeyError, IndexError, TypeError):
+        raise RuntimeError(f"unexpected response shape from {who}: {str(data)[:200]}")
+    if not isinstance(content, str) or not content.strip():
+        raise RuntimeError(f"empty/non-text content from {who} (capped output or reasoning-only reply?)")
+    return json.loads(content)
 
 
 def call_role(prompt, role):
