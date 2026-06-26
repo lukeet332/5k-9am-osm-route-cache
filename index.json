@@ -3352,6 +3352,17 @@
   "status": "failed",
   "trace_m": null
  },
+ "holycrosscollege": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.815718,
+  "lon": -7.477408,
+  "long": "Holy Cross College parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "holywellkinggeorgevplayingfields": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -5479,6 +5490,18 @@
   "relation_m": null,
   "source": null,
   "status": "gap",
+  "trace_m": null
+ },
+ "riverside": {
+  "distance_m": 5148,
+  "last_tried": "2026-06-26",
+  "lat": 54.853983,
+  "lon": -1.563277,
+  "long": "Riverside parkrun",
+  "provisional": true,
+  "relation_m": 5148,
+  "source": "osm_relation",
+  "status": "success",
   "trace_m": null
  },
  "riversidewalk": {
