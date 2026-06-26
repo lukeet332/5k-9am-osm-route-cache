@@ -2712,6 +2712,18 @@
   "status": "failed",
   "trace_m": null
  },
+ "norwich": {
+  "distance_m": 5052,
+  "last_tried": "2026-06-26",
+  "lat": 52.620422,
+  "lon": 1.255682,
+  "long": "Norwich parkrun",
+  "provisional": true,
+  "relation_m": 5052,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
+ },
  "oakhill": {
   "distance_m": 1832,
   "last_tried": "2026-06-25",
