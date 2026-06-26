@@ -29,7 +29,15 @@ rate-limiting, or remove licensing/attribution. If nothing is clearly worth chan
 an empty "changes" array (still append a short JOURNAL note saying why).
 
 Respond with STRICT JSON only:
-{"summary": "<one line>", "changes": [{"path": "<file>", "content": "<COMPLETE new file>"}]}
+{"summary": "<one line>", "version_bump": "patch|minor|major", "changes": [{"path": "<file>", "content": "<COMPLETE new file>"}]}
+"version_bump" classifies THIS change by SCOPE/AMBITION (it cannot break the output contract — you
+can only edit build_cache.py/AI_CONTEXT.md/JOURNAL.md, never the index.json/routes/GPX shape):
+  - "patch": a small tweak, bugfix, threshold nudge, prune, or refactor.
+  - "minor": a meaningful new capability or a real improvement to extraction/coverage (the usual case
+    — e.g. a new query strategy, multi-Saturday averaging, smarter way-chaining).
+  - "major": an ambitious, substantial rework (a large algorithmic leap, e.g. global expansion or a
+    new data source). Use sparingly.
+If "changes" is empty (nothing worth changing), use "patch".
 "content" is the entire file, not a diff. You SHOULD also APPEND a dated entry to JOURNAL.md (return
 the whole file with your entry added at the END: date, the idea, why from the OUTCOMES, what you
 changed) so future weeks build on it. You MAY append a one-line durable learning under
@@ -55,8 +63,12 @@ def main():
     print("Proposal:", result.get("summary", "(none)"))
     n = L.apply_changes(result)
     label = L.bot_label(slot["model"])
-    L.emit(model_used=slot["model"], bot_label=label, summary=str(result.get("summary", ""))[:300])
-    L.done(f"Applied {n} change(s) from {label}.")
+    bump = str(result.get("version_bump", "patch")).strip().lower()
+    if bump not in ("patch", "minor", "major"):
+        bump = "patch"
+    L.emit(model_used=slot["model"], bot_label=label, version_bump=bump,
+           summary=str(result.get("summary", ""))[:300])
+    L.done(f"Applied {n} change(s) from {label} [{bump}].")
 
 
 if __name__ == "__main__":

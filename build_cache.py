@@ -226,12 +226,27 @@ def trace_course(name, lat, lon):
             break
     return length(path), [(p[0], p[1]) for p in path], win[0][2].date().isoformat()
 
+_VERSION = [None]
+def algo_version():
+    """The algorithm version that built this data = the latest git release tag (e.g. 'v1.2.0'),
+    'dev' if untagged/unavailable. Stamped into every GPX + index entry as provenance, so a later
+    run (or the AI) can tell which version produced a course and re-fetch ones built by a buggy one.
+    Cached — never shells git per-route."""
+    if _VERSION[0] is None:
+        try:
+            out = subprocess.run(["git", "describe", "--tags", "--abbrev=0"],
+                                 cwd=HERE, capture_output=True, text=True)
+            _VERSION[0] = out.stdout.strip() or "dev"
+        except Exception:
+            _VERSION[0] = "dev"
+    return _VERSION[0]
+
 def write_gpx(name, longname, pts, source):
     os.makedirs(ROUTES, exist_ok=True)
     with open(os.path.join(ROUTES, f"{name}.gpx"), "w") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
-        f.write('<gpx version="1.1" creator="5k-9am-osm-route-cache" xmlns="http://www.topografix.com/GPX/1/1">\n')
-        f.write(f'  <metadata><desc>Derived from OpenStreetMap ((c) OpenStreetMap contributors, ODbL). source={source}</desc></metadata>\n')
+        f.write(f'<gpx version="1.1" creator="5k-9am-osm-route-cache {algo_version()}" xmlns="http://www.topografix.com/GPX/1/1">\n')
+        f.write(f'  <metadata><desc>Derived from OpenStreetMap ((c) OpenStreetMap contributors, ODbL). source={source}; built_by={algo_version()}</desc></metadata>\n')
         f.write(f'  <trk><name>{longname}</name><trkseg>\n')
         for la, lo in pts:
             f.write(f'    <trkpt lat="{la:.6f}" lon="{lo:.6f}"/>\n')
@@ -352,7 +367,8 @@ def main():
         except Exception as ex:
             print(f"  {ev['name']:<24} ERROR {ex}"); continue
         # build_one always returns a rich dict (status success/failed/gap + diagnostics).
-        entry = {"long": ev["long"], "lat": ev["lat"], "lon": ev["lon"], "last_tried": today, **res}
+        entry = {"long": ev["long"], "lat": ev["lat"], "lon": ev["lon"], "last_tried": today,
+                 "built_by": algo_version(), **res}
         index[ev["name"]] = entry
         json.dump(index, open(index_path, "w"), indent=1, sort_keys=True)   # save incrementally
         st = res["status"]

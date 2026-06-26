@@ -136,6 +136,10 @@ week. The reviewer also reads it. Append-only; never rewrite past entries.
    a collaborator, not a perfectionist gatekeeper; don't block on style; once concerns are
    addressed, approve. Loop (max 3 rounds) until both are satisfied.
 3. **Gate**: `selftest.py` **must pass**; a PR that breaks caching cannot merge. Only then merge.
+4. **Declare a `version_bump`** in your proposal (`patch`/`minor`/`major`) by the SCOPE/ambition of
+   the change — patch = small tweak/fix/prune, minor = a real new capability or quality gain (the
+   usual case), major = an ambitious rework (sparingly). It can't break the output contract (you only
+   edit the algorithm), so it's purely a readable signal. Merging your PR auto-cuts a semver release.
 
 ## Models — smartest free pair + a fast tier (self-updating)
 

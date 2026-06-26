@@ -42,6 +42,16 @@ def main():
     # 3) lock predicate honours the fixed tolerance
     assert bc.is_locked({"distance_m": 5000}) and not bc.is_locked({"distance_m": 4300})
 
+    # 3b) version provenance: algo_version() always yields a non-empty string (tag or 'dev'),
+    #     and write_gpx stamps it into the GPX creator so each course records what built it.
+    v = bc.algo_version()
+    assert isinstance(v, str) and v, f"algo_version must be a non-empty string, got {v!r}"
+    bc.write_gpx("selftestver", "Selftest", [(51.5, -0.1), (51.5001, -0.1)], "osm_relation")
+    vf = os.path.join(bc.ROUTES, "selftestver.gpx")
+    gpx_txt = open(vf).read()
+    os.remove(vf)
+    assert f'creator="5k-9am-osm-route-cache {v}"' in gpx_txt, "GPX creator must carry the version stamp"
+
     # 4) source trust hierarchy: a real 09:00 trace WINS over a relation (both in-tolerance) and is
     #    trusted; a relation-only success ships but is flagged provisional (not GPS-verified).
     line = [(51.5, -0.1), (51.5, -0.1)]

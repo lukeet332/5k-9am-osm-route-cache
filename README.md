@@ -54,6 +54,16 @@ runners actually ran:
 cache and the AI's token budget); the metadata above is the signal. The full coverage history (and any
 past geometry) lives in **git history**.
 
+## Versioned releases (the algorithm's changelog)
+
+Every time an **AI improvement PR merges**, a semver'd GitHub Release is cut automatically
+(`release.yml`), so the algorithm's evolution has a readable history. The bump reflects the
+**scope/ambition** of the change (it can't break the output contract — the AI only edits the
+algorithm): **patch** = small tweak/fix, **minor** = a real new capability/quality gain, **major** =
+an ambitious rework. The AI author declares the level in its PR; the release notes carry its summary
++ the diff. Cache-data commits and manual PRs don't cut releases. Each cached course is also stamped
+with the version that built it — `built_by` in `index.json` and the GPX `creator` — for provenance.
+
 ## Coverage is partial — and that's expected
 
 Most runners log to Strava/Garmin, not OSM, so the open trace pool is sparse — many parkruns have

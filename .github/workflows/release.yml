@@ -1,0 +1,55 @@
+name: Release on AI change
+
+# Cuts a versioned GitHub Release every time an AI-bot improvement PR merges, so the algorithm's
+# evolution has a readable, semver'd history. Fires ONLY for the AI author's PRs (head branch
+# ai-improve/*) — your manual PRs (feat/*) and the cache-DATA commits (pushed straight to main, no
+# PR) never cut a release. The bump level (patch/minor/major) is declared by the AI author in the PR
+# body ("Release-Bump: ..."), reflecting the SCOPE/ambition of the change (it can't break the output
+# contract — it only edits the algorithm). Defaults to patch if absent.
+on:
+  pull_request:
+    types: [closed]
+
+permissions:
+  contents: write          # push the tag + create the release
+
+jobs:
+  release:
+    if: github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'ai-improve/')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0     # need full history + tags to diff the merge and compute the next version
+      - name: Tag + release this AI change
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_BODY: ${{ github.event.pull_request.body }}
+          PR_NUM: ${{ github.event.pull_request.number }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          MERGE_SHA: ${{ github.event.pull_request.merge_commit_sha }}
+        run: |
+          set -euo pipefail
+          # 1) Bump level from the PR body marker (author-declared); default patch.
+          BUMP=$(printf '%s' "$PR_BODY" | grep -oiE 'Release-Bump:[[:space:]]*(patch|minor|major)' | head -1 | grep -oiE '(patch|minor|major)' | tr 'A-Z' 'a-z' || true)
+          BUMP=${BUMP:-patch}
+          # 2) Latest semver tag -> next version.
+          LAST=$(git tag -l 'v*' --sort=-v:refname | head -1)
+          LAST=${LAST:-v0.0.0}
+          VER=${LAST#v}; MA=${VER%%.*}; REST=${VER#*.}; MI=${REST%%.*}; PA=${REST#*.}
+          case "$BUMP" in
+            major) MA=$((MA+1)); MI=0; PA=0 ;;
+            minor) MI=$((MI+1)); PA=0 ;;
+            *)     PA=$((PA+1)) ;;
+          esac
+          NEW="v${MA}.${MI}.${PA}"
+          echo "bump=$BUMP  last=$LAST  new=$NEW"
+          # 3) Human-readable notes: the PR body (AI's summary + context) + the diff stat.
+          STAT=$(git show --stat --format='' "$MERGE_SHA" | sed '/^$/d' | head -50 || true)
+          NOTES=$(printf '%s\n\n---\n**Change scope:** `%s`  ·  merged from PR #%s\n\n<details><summary>Files changed</summary>\n\n```\n%s\n```\n</details>\n' "$PR_BODY" "$BUMP" "$PR_NUM" "$STAT")
+          # 4) Tag the merge commit + publish the release.
+          git tag "$NEW" "$MERGE_SHA"
+          git push origin "$NEW"
+          gh release create "$NEW" --target "$MERGE_SHA" --title "$NEW — $PR_TITLE" --notes "$NOTES"
+          echo "Released $NEW"
