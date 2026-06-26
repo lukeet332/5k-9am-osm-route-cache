@@ -78,6 +78,17 @@
   "trace_date": "2023-08-12",
   "trace_m": 5012
  },
+ "alderfordlake": {
+  "distance_m": 2409,
+  "last_tried": "2026-06-26",
+  "lat": 52.953181,
+  "lon": -2.675436,
+  "long": "Alderford Lake parkrun",
+  "relation_m": 2409,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
+ },
  "aliceholt": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1627,6 +1638,19 @@
   "source": "osm_relation_offdist",
   "status": "failed",
   "trace_m": null
+ },
+ "forestrec": {
+  "distance_m": 4967,
+  "last_tried": "2026-06-26",
+  "lat": 52.965352,
+  "lon": -1.159766,
+  "long": "Forest Rec parkrun",
+  "provisional": false,
+  "relation_m": 5388,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2020-01-11",
+  "trace_m": 4967
  },
  "franksfarm": {
   "distance_m": null,
@@ -4426,6 +4450,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "trenthamgardens": {
+  "distance_m": 5497,
+  "last_tried": "2026-06-26",
+  "lat": 52.963874,
+  "lon": -2.199424,
+  "long": "Trentham Gardens parkrun",
+  "relation_m": 5497,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": 3911
+ },
  "uckfield": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -4722,6 +4757,17 @@
   "long": "Woking parkrun",
   "source": null,
   "status": "gap"
+ },
+ "wollatonhall": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.951893,
+  "lon": -1.211018,
+  "long": "Wollaton Hall parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "wolverhampton": {
   "distance_m": null,
