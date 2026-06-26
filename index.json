@@ -560,6 +560,18 @@
   "status": "failed",
   "trace_m": null
  },
+ "brundall": {
+  "distance_m": 4983,
+  "last_tried": "2026-06-26",
+  "lat": 52.624133,
+  "lon": 1.417369,
+  "long": "Brundall parkrun",
+  "provisional": true,
+  "relation_m": 4983,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
+ },
  "brunswickpark": {
   "distance_m": null,
   "last_tried": "2026-06-26",
