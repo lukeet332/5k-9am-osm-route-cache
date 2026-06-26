@@ -1441,6 +1441,17 @@
   "source": null,
   "status": "gap"
  },
+ "delamere": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.228588,
+  "lon": -2.680991,
+  "long": "Delamere parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "dereham": {
   "distance_m": 4965,
   "last_tried": "2026-06-26",
@@ -1469,6 +1480,17 @@
   "lat": 52.787485,
   "lon": -1.234785,
   "long": "Dishley parkrun, Loughborough",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "doddingtonhall": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.222149,
+  "lon": -0.650558,
+  "long": "Doddington Hall parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -3244,6 +3266,17 @@
   "source": null,
   "status": "gap"
  },
+ "monsaltrail": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.230788,
+  "lon": -1.675286,
+  "long": "Monsal Trail parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "morden": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -3538,6 +3571,18 @@
   "source": null,
   "status": "gap",
   "trace_m": null
+ },
+ "penrhyn": {
+  "distance_m": 2716,
+  "last_tried": "2026-06-26",
+  "lat": 53.226852,
+  "lon": -4.094495,
+  "long": "Penrhyn parkrun",
+  "relation_m": 1847,
+  "source": "osm_9am_trace_offdist",
+  "status": "failed",
+  "trace_date": "2022-11-19",
+  "trace_m": 2716
  },
  "perryhall": {
   "distance_m": 5003,
@@ -5152,6 +5197,19 @@
   "source": null,
   "status": "gap",
   "trace_m": null
+ },
+ "yarboroughleisurecentre": {
+  "distance_m": 5001,
+  "last_tried": "2026-06-26",
+  "lat": 53.247281,
+  "lon": -0.542854,
+  "long": "Yarborough Leisure Centre parkrun",
+  "provisional": false,
+  "relation_m": 1472,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2023-08-12",
+  "trace_m": 5001
  },
  "ypromenad": {
   "distance_m": null,
