@@ -62,6 +62,9 @@ progressively more creative over time. Append-only; newest at the bottom.
 - Per-event local timezone via timezonefinder (lat/lon -> IANA zone, DST-correct; graceful fallback to
   Europe/London). DONE - do NOT revert to hardcoded London or a longitude/offset hack.
 - Per-country coverage reporting (report.py -> coverage_by_country.json + README table). DONE.
+- Overpass relation queries are BATCHED per 1-degree cell + cached (.relcache, 30-day TTL), and _get
+  respects Retry-After. DONE - do NOT revert to a per-event Overpass query (that hammers Overpass; kind
+  to OSM, BIBLE #3). Traces stay per-event-bbox but are cached (.tracecache).
 Propose a genuinely NEW idea instead, e.g.: course-topology-aware extraction (N-laps, partial-lap +
 laps, out-and-back, point-to-point - detect lap repetition WITHIN a trace to recover the true course;
 see AI_CONTEXT) - this is the big lever for the off-tolerance failed entries; prefer/weight recent
