@@ -16,3 +16,17 @@ progressively more creative over time. Append-only; newest at the bottom.
   true ~5k where they exist.
 - **Outcome:** Baseline. Early coverage is thin (most parkruns have no OSM trace) — the open
   problem the weekly bot is here to chip away at.
+
+### v0.1.0 — relation doubling for half-distance (2-lap) parkruns  ✅ DONE
+- **Idea:** an OSM relation measuring ~2.3–2.8 km is likely ONE lap of a 2-lap parkrun; double the
+  relation geometry to recover the full ~5 k course.
+- **Implemented** in `build_one` (`HALF_REL_LO/HALF_REL_HI` = 2300/2800, doubled-chain, marked
+  provisional). **This is already in the code — do NOT re-propose plain relation-doubling.**
+
+### v0.2.0 — (churn, a lesson) ⚠️
+- A re-proposal of the doubling above produced only a one-word comment edit (doubling already
+  existed). It merged because the journal was empty so nothing flagged the repeat — now fixed.
+- **Learning:** doubling for half-distance relations is DONE. Next ideas must be genuinely NEW, e.g.:
+  prefer recent Saturdays (courses change over the years); handle out-and-back as well as loop
+  doublings; trace doubling for ~half-distance traces; averaging more historical Saturdays; smarter
+  relation way-chaining / gap-bridging; high-footfall Christmas/New-Year sweeps for extra traces.
