@@ -582,6 +582,19 @@
   "source": null,
   "status": "gap"
  },
+ "beverleywestwood": {
+  "distance_m": 5011,
+  "last_tried": "2026-06-26",
+  "lat": 53.840255,
+  "lon": -0.440675,
+  "long": "Beverley Westwood parkrun",
+  "provisional": false,
+  "relation_m": null,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2024-10-19",
+  "trace_m": 5011
+ },
  "bexley": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -741,6 +754,17 @@
   "lat": 53.374268,
   "lon": -2.160702,
   "long": "Bramhall parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "bramley": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.813432,
+  "lon": -1.633461,
+  "long": "Bramley parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -3312,6 +3336,18 @@
   "status": "success",
   "trace_m": 5467
  },
+ "listerpark": {
+  "distance_m": 2763,
+  "last_tried": "2026-06-26",
+  "lat": 53.814575,
+  "lon": -1.775102,
+  "long": "Lister Park parkrun, Bradford",
+  "relation_m": null,
+  "source": "osm_9am_trace_offdist",
+  "status": "failed",
+  "trace_date": "2020-02-22",
+  "trace_m": 2763
+ },
  "littleport": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -4476,6 +4512,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "potternewton": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.818446,
+  "lon": -1.526274,
+  "long": "Potternewton parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "preston": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -4754,6 +4801,17 @@
   "lat": 53.750032,
   "lon": -1.473456,
   "long": "Rothwell parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "roundhay": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.83828,
+  "lon": -1.496007,
+  "long": "Roundhay parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
