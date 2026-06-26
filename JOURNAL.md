@@ -48,3 +48,6 @@ progressively more creative over time. Append-only; newest at the bottom.
 - **Idea:** Expand trace extraction to include Christmas Day and New Year's Day events.
 - **Why:** The `AI_CONTEXT.md` explicitly states these are high-footfall special events with huge parkrun turnout, offering a "real coverage unlock" by providing more GPS traces for averaging. The current algorithm only considers Saturdays. This should increase both coverage and closeness-to-5k by leveraging more real-world data.
 - **What changed:** Modified `trace_courses_multi` and the single-trace fallback in `trace_course` to include traces from December 25th and January 1st, in addition to Saturdays, within the 09:00-09:45 local time window.
+
+### 2026-06-26 — DeepSeek-V3.2-bot (DeepSeek-V3.2, minor)
+- Add trace doubling for half-distance traces to capture 2-lap parkruns missed by relation-only doubling

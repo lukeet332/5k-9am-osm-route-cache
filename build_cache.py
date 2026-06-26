@@ -291,6 +291,15 @@ def build_one(ev):
         write_gpx(name, ev["long"], tr[1], "osm_9am_trace")
         return {"source": "osm_9am_trace", "distance_m": round(tr[0]), "status": "success",
                 "provisional": False, "trace_date": tr[2], **diag}
+    
+    # NEW: Try doubling a half-distance trace (2-lap parkruns where only GPS traces exist)
+    if tr and HALF_REL_LO <= tr[0] <= HALF_REL_HI:
+        doubled_path = tr[1] + tr[1]   # geometry: two laps for the app to draw
+        doubled_len = 2 * length(tr[1])  # distance: TWO LAPS
+        if REL_LO <= doubled_len <= REL_HI:
+            write_gpx(name, ev["long"], doubled_path, "osm_9am_trace_doubled")
+            return {"source": "osm_9am_trace_doubled", "distance_m": round(doubled_len), "status": "success",
+                    "provisional": False, "trace_date": tr[2], **diag}
     if rel and REL_LO <= rel[1] <= REL_HI:        # SUCCESS via OSM relation (PROVISIONAL — not GPS-verified)
         write_gpx(name, ev["long"], rel[2], "osm_relation")
         return {"source": "osm_relation", "distance_m": round(rel[1]), "status": "success",
@@ -325,6 +334,12 @@ def build_one(ev):
         doubled_len = 2 * length(rel[2])  # two laps (see above) — not the seam-inflated concat length
         if SANE_LO <= doubled_len <= SANE_HI and not (REL_LO <= doubled_len <= REL_HI):
             cands.append(("osm_relation_doubled_offdist", doubled_len, None))
+    
+    # Similarly for half-distance traces that fail to double into tolerance
+    if tr and HALF_REL_LO <= tr[0] <= HALF_REL_HI:
+        doubled_len = 2 * length(tr[1])  # two laps
+        if SANE_LO <= doubled_len <= SANE_HI and not (REL_LO <= doubled_len <= REL_HI):
+            cands.append(("osm_9am_trace_doubled_offdist", doubled_len, tr[2]))
 
     if cands:
         src, dist, date = min(cands, key=lambda c: abs(c[1] - TARGET))
