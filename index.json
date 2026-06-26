@@ -982,6 +982,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "bournemouth": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.73362,
+  "lon": -1.832732,
+  "long": "Bournemouth parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "bowerpark": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -2612,6 +2623,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "durlstoncountrypark": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.595211,
+  "lon": -1.954023,
+  "long": "Durlston Country Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "eastbourne": {
   "distance_m": 5024,
   "last_tried": "2026-06-26",
@@ -2862,6 +2884,28 @@
   "status": "success",
   "trace_date": "2016-11-12",
   "trace_m": 5034
+ },
+ "exeterriverside": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.713762,
+  "lon": -3.525833,
+  "long": "Exeter Riverside parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "exmouth": {
+  "distance_m": 4292,
+  "last_tried": "2026-06-26",
+  "lat": 50.614697,
+  "lon": -3.412392,
+  "long": "Exmouth parkrun",
+  "relation_m": 4292,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
  },
  "falkirk": {
   "distance_m": null,
@@ -3478,6 +3522,17 @@
   "status": "success",
   "trace_m": 3825
  },
+ "greendalefarmshop": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.703157,
+  "lon": -3.398836,
+  "long": "Greendale Farm Shop parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "greenfieldvalley": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -3652,6 +3707,17 @@
   "lat": 53.572714,
   "lon": -2.609519,
   "long": "Haigh Woodland parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "haldonforest": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.653392,
+  "lon": -3.579359,
+  "long": "Haldon Forest parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -5357,6 +5423,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "medina": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.725879,
+  "lon": -1.143079,
+  "long": "Medina I.O.W. parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "melksham": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -6114,6 +6191,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "parke": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.59305,
+  "lon": -3.686562,
+  "long": "Parke parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "parkinthepast": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -6426,6 +6514,17 @@
   "lon": -3.339028,
   "long": "Pontypridd parkrun",
   "relation_m": 19377,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "poole": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.720348,
+  "lon": -1.968876,
+  "long": "Poole parkrun",
+  "relation_m": null,
   "source": null,
   "status": "gap",
   "trace_m": null
@@ -7115,6 +7214,17 @@
   "trace_date": "2018-08-11",
   "trace_m": 2146
  },
+ "seaton": {
+  "distance_m": 7555,
+  "last_tried": "2026-06-26",
+  "lat": 50.703349,
+  "lon": -3.072064,
+  "long": "Seaton parkrun",
+  "relation_m": 7555,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
+ },
  "sedgefield": {
   "distance_m": 5765,
   "last_tried": "2026-06-26",
@@ -7649,6 +7759,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "stmarys": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.729456,
+  "lon": -2.760744,
+  "long": "St Mary\u2019s parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "stmatthewsfield": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -7850,6 +7971,17 @@
   "source": null,
   "status": "gap"
  },
+ "tamartrails": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.535163,
+  "lon": -4.201763,
+  "long": "Tamar Trails parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "tamworthcastlegrounds": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -7878,6 +8010,17 @@
   "lat": 52.073638,
   "lon": -4.648047,
   "long": "Teifi Marshes Nature Reserve parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "teignmouthpromenade": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.544428,
+  "lon": -3.494987,
+  "long": "Teignmouth Promenade parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -7968,6 +8111,17 @@
   "lat": 54.868789,
   "lon": -6.481169,
   "long": "The Fisherman\u2018s Walk parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "thegreatfield": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.713642,
+  "lon": -2.458095,
+  "long": "The Great Field parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -8670,6 +8824,17 @@
   "lat": 53.925673,
   "lon": -1.392197,
   "long": "Wetherby parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "weymouth": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.625242,
+  "lon": -2.447795,
+  "long": "Weymouth parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
