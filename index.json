@@ -7636,14 +7636,16 @@
   "trace_m": null
  },
  "llwybrdyffryntywinantgaredig": {
-  "distance_m": 2430,
-  "last_tried": "2026-06-25",
+  "built_by": "v0.5.0",
+  "distance_m": 4859,
+  "last_tried": "2026-06-26",
   "lat": 51.863176,
   "lon": -4.19348,
   "long": "Llwybr Dyffryn Tywi parkrun, Nantgaredig",
+  "provisional": false,
   "relation_m": null,
-  "source": "osm_9am_trace_offdist",
-  "status": "failed",
+  "source": "osm_9am_trace_doubled",
+  "status": "success",
   "trace_date": "2026-04-11",
   "trace_m": 2430
  },
