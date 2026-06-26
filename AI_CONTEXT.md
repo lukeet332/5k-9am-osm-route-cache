@@ -65,6 +65,24 @@ priority order:
 
 All three obey the HARD INVARIANTS — more/better *real* data, never AI geometry, never loosened bars.
 
+## Tested contract — keep these callable (improve internals, don't rename/re-signature)
+
+`selftest.py` is the merge gate; it imports these from `build_cache.py` and asserts their behaviour.
+**You may freely rewrite their internals** (that's how you improve the algorithm), but if you rename
+them or change their signature/return shape the self-test fails and your PR is blocked. Keep:
+- `assemble(ways) -> list[(lat,lon)]` — chain unordered ways into one polyline.
+- `trace_course(name, lat, lon) -> (metres, [(lat,lon)], date_str) | None` — reconstruct from traces.
+- `build_one(ev) -> dict` with keys `status` (`success`/`failed`/`gap`), `source`, `distance_m`,
+  `relation_m`, `trace_m`, and `provisional` on successes — this dict IS the `index.json` schema.
+- `is_locked(entry) -> bool` — true iff `distance_m` is within the 4800–5200 m bars.
+- `write_gpx(name, longname, pts, source)` — writes `routes/<name>.gpx` (stamps the version).
+- `length(pts)`, `algo_version() -> str`, `_trace_cache_file(name, half_m, page)`.
+- Constants `REL_LO`/`REL_HI` (4800/5200), `ROUTES`, `TRACECACHE`.
+
+If you genuinely need to change one of these contracts you can't edit `selftest.py` (it's off-limits)
+— so keep a thin wrapper with the old signature, or leave the human to adjust the test. Keep this list
+current if you add/rename a tested symbol.
+
 ## What the weekly AI MAY improve (within the invariants)
 
 Operational and algorithmic *means*, as long as outputs still validate against `selftest.py`:
