@@ -2199,6 +2199,19 @@
   "status": "gap",
   "trace_m": null
  },
+ "goole": {
+  "distance_m": 4928,
+  "last_tried": "2026-06-26",
+  "lat": 53.710492,
+  "lon": -0.891098,
+  "long": "Goole parkrun",
+  "provisional": false,
+  "relation_m": null,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2022-11-12",
+  "trace_m": 4928
+ },
  "gorleston": {
   "distance_m": 5053,
   "last_tried": "2026-06-26",
