@@ -155,6 +155,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "ancholmevalleyway": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.553676,
+  "lon": -0.496441,
+  "long": "Ancholme Valley Way parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "andover": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -286,6 +297,17 @@
   "lat": 51.545894,
   "lon": 0.087312,
   "long": "Barking parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "barnsley": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.544369,
+  "lon": -1.486115,
+  "long": "Barnsley parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -1050,6 +1072,17 @@
   "status": "success",
   "trace_m": null
  },
+ "chaddertonhall": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.554066,
+  "lon": -2.158552,
+  "long": "Chadderton Hall parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "chalkwellbeach": {
   "distance_m": 5015,
   "last_tried": "2026-06-25",
@@ -1263,6 +1296,17 @@
   "relation_m": 5021,
   "source": "osm_relation",
   "status": "success",
+  "trace_m": null
+ },
+ "cleethorpes": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.541552,
+  "lon": -0.025384,
+  "long": "Cleethorpes parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
   "trace_m": null
  },
  "clevedonsalthousefields": {
@@ -1511,6 +1555,17 @@
   "long": "Crystal Palace parkrun",
   "source": null,
   "status": "gap"
+ },
+ "cusworthhall": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.529479,
+  "lon": -1.177617,
+  "long": "Cusworth Hall parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "cwmbran": {
   "distance_m": null,
@@ -2483,6 +2538,17 @@
   "long": "Hazelwood parkrun",
   "source": null,
   "status": "gap"
+ },
+ "heaton": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.531975,
+  "lon": -2.256263,
+  "long": "Heaton parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "henleyonthames": {
   "distance_m": null,
@@ -3783,6 +3849,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "oldham": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.534187,
+  "lon": -2.104118,
+  "long": "Oldham parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "oldrailwaytrailllangollen": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -3792,6 +3869,18 @@
   "relation_m": null,
   "source": null,
   "status": "gap",
+  "trace_m": null
+ },
+ "ormskirk": {
+  "distance_m": 5109,
+  "last_tried": "2026-06-26",
+  "lat": 53.559245,
+  "lon": -2.868097,
+  "long": "Ormskirk parkrun",
+  "provisional": true,
+  "relation_m": 5109,
+  "source": "osm_relation",
+  "status": "success",
   "trace_m": null
  },
  "orpington": {
@@ -3920,6 +4009,17 @@
   "lat": 51.644889,
   "lon": -3.245679,
   "long": "Penallta parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "penistone": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.526568,
+  "lon": -1.635407,
+  "long": "Penistone parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -4436,6 +4536,17 @@
   "long": "Salisbury parkrun",
   "source": null,
   "status": "gap"
+ },
+ "sandallpark": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.544969,
+  "lon": -1.089474,
+  "long": "Sandall Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "sandhurstmemorial": {
   "distance_m": null,
@@ -5012,6 +5123,17 @@
   "lat": 52.630232,
   "lon": -1.695214,
   "long": "Tamworth Castle Grounds parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "tawdvalley": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.550281,
+  "lon": -2.775829,
+  "long": "Tawd Valley parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
