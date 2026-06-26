@@ -7439,6 +7439,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "southsea": {
+  "distance_m": 5034,
+  "last_tried": "2026-06-26",
+  "lat": 50.785396,
+  "lon": -1.046174,
+  "long": "Southsea parkrun",
+  "provisional": true,
+  "relation_m": 5034,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
+ },
  "southshields": {
   "distance_m": null,
   "last_tried": "2026-06-26",
