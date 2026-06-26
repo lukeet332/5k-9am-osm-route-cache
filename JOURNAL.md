@@ -51,3 +51,13 @@ progressively more creative over time. Append-only; newest at the bottom.
 
 ### 2026-06-26 - DeepSeek-V3.2-bot (DeepSeek-V3.2, minor)
 - Add trace doubling for half-distance traces to capture 2-lap parkruns missed by relation-only doubling
+
+### ALREADY IMPLEMENTED - do NOT re-propose (re-proposing = churn, the PR will be closed)
+- Relation doubling for ~2.3-2.8k relations (double the lap to recover a 2-lap course). DONE.
+- Trace doubling for ~2.3-2.8k Saturday-09:00 GPS traces (osm_9am_trace_doubled in build_one). DONE.
+- Multi-Saturday trace averaging (trace_courses_multi, pointwise mean). DONE.
+- Christmas Day + New Year's Day events included in the 09:00-09:45 trace window. DONE.
+- Correct doubled distance uses 2*length(lap), never length(lap+lap). DONE.
+Propose a genuinely NEW idea instead, e.g.: prefer/weight recent traces (courses change); smarter
+relation way-chaining / gap-bridging; out-and-back doubling; per-event local timezone for global
+expansion; QA flag for in-band but mis-shaped courses; additional openly-licensed data sources.

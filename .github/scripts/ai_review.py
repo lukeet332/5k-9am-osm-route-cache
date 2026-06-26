@@ -10,41 +10,35 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import ai_lib as L
 
-PROMPT = """You are a STRICT, adversarial reviewer of an automated change to a Python pipeline
-that caches OSM-derived parkrun 5k courses. The CONTRACT (AI_CONTEXT.md) is binding. Another AI
-proposed the DIFF below. Your job is to catch anything that should not merge.
+PROMPT = """You review an automated change to a Python pipeline that caches OSM-derived parkrun 5k
+courses. The CONSTITUTION (read-only bible) and CONTRACT (AI_CONTEXT.md) bind. Read the JOURNAL too.
+Pick exactly ONE verdict. Two principles, applied differently:
 
-Judge it on TWO axes, then decide:
+- UNCOMPROMISING on the HARD INVARIANTS (safety): never a calculated risk. A change is blocked if it
+  loosens the accuracy bars (4.8-5.2 relation / 4.5-5.6 trace), emits hand-authored or AI-generated
+  coordinates, weakens the OSM rate-limiting, drops ODbL attribution or the parkrun disclaimer, edits
+  anything outside build_cache.py / JOURNAL.md / AI_CONTEXT.md (a bible edit is handled separately), or
+  breaks the self-test caching contract.
+- On MERIT / quality, TAKE CALCULATED RISKS. Default to APPROVING a safe, net-positive, selftest-passing
+  change even if it is imperfect or you can imagine a better version. Do NOT block on style, naming,
+  minor geometry artifacts, "could be better", or speculative downstream worries. A living algorithm
+  improves by shipping reasonable steps; the self-test + CI are the correctness net. Don't be a
+  perfectionist gatekeeper.
 
-1) SAFETY / CORRECTNESS — REJECT if it: violates a hard invariant; loosens the accuracy bars
-   (4.8-5.2 relation / 4.5-5.6 trace) to inflate coverage; makes the code emit hand-authored
-   coordinates or hard-coded routes; weakens the OSM rate-limiting; removes ODbL attribution / the
-   parkrun disclaimer; edits anything outside build_cache.py / JOURNAL.md / an AI_CONTEXT.md append;
-   or risks breaking the caching mechanism.
-   You cannot RUN the code, so TRACE THE ARITHMETIC/GEOMETRY of any new distance or coordinate maths
-   BY HAND on a small example and check the number is what the summary claims. Watch known traps:
-   concatenating a polyline to itself (`pts + pts`) makes `length()` add a PHANTOM segment from the
-   first copy's end back to its start — so two laps' distance is `2*length(lap)`, NOT
-   `length(lap+lap)`; off-by-one/unit (m vs km); double-counting a shared endpoint; a band check that
-   silently rejects valid courses. If a distance calc looks numerically wrong, REJECT and show the
-   counter-example — a green self-test does NOT prove the maths is right (the test may not cover it).
-2) MERIT — this is an ALGORITHM, so judge whether the change genuinely moves us toward the goal of
-   caching ALL parkruns at ~5k (better coverage AND/OR closeness-to-5k). REJECT pointless churn:
-   - a NO-OP / trivial diff — only comments, whitespace, or renames with no behaviour change;
-   - a diff that does NOT substantively match its stated summary (e.g. summary says "implement X" but
-     the diff is a one-line comment edit because X already exists) — that's re-proposing done work;
-   - logic added/removed that doesn't plausibly help, or re-trying an idea the JOURNAL shows failed.
-   A good change is a REAL, sensible behaviour change — ideally building on the journal's learnings.
-   If the diff is trivial or doesn't deliver what the summary claims, REJECT and say so.
-
-APPROVE (approve=true) when it is safe AND a genuine net step toward the goal. Aim for CONSENSUS —
-you are a collaborator, not a perfectionist gatekeeper: don't block on style, naming, or "could be
-even better"; once your concerns are addressed, APPROVE; don't invent new objections each round. CI
-+ the self-test are the correctness net. Keep feedback to the ONE or TWO blocking issues, specific
-and actionable.
+VERDICTS:
+- "approve": safe AND a genuine net step toward the goal (more coverage and/or closer to 5k). This is
+  the DEFAULT whenever there is no hard-invariant violation and no real, behaviour-breaking bug.
+- "revise": exactly ONE concrete, FIXABLE blocker - a hard-invariant/safety violation, OR a real
+  correctness BUG that breaks behaviour. Trace any new distance/coordinate maths by hand (the classic
+  trap is `length(lap+lap)` vs the correct `2*length(lap)`). State the single fix. Use this ONLY for a
+  genuine blocker, not for "could be better".
+- "churn": not worth revising at all - a no-op/trivial diff, OR it re-proposes work the code/JOURNAL
+  already has (e.g. re-adding doubling that already exists). Do NOT ask to revise; the author should
+  ABANDON this idea and propose a NEW one (the PR will be closed).
 
 Respond with STRICT JSON only:
-{"approve": true|false, "feedback": "<concise: the blocking issue(s) to fix, or why it's approved>"}"""
+{"verdict": "approve"|"revise"|"churn",
+ "feedback": "<2-4 plain sentences: the verdict, then the single most important reason or the one fix>"}"""
 
 # Separate question for a CONSTITUTION amendment: this isn't a normal merge-or-not review — the
 # human owner decides, and they want the reviewer's honest recommendation as advisory input.
@@ -99,18 +93,20 @@ def main():
               + "\n\n===== CONSTITUTION (AI_CONTEXT_READ_ONLY_BIBLE.md — SUPREME) =====\n"
               + (L.BIBLE_FILE.read_text(errors="ignore")[:6000] if L.BIBLE_FILE.exists() else "(missing)")
               + "\n\n===== CONTRACT (AI_CONTEXT.md, excerpt) =====\n" + L.CONTEXT_FILE.read_text(errors="ignore")[:5000]
+              + "\n\n===== JOURNAL (what's already been tried/DONE - use to spot churn) =====\n" + L.journal_tail()
               + "\n\n===== OUTCOMES =====\n" + L.outcomes_summary()
               + "\n\n===== DIFF (truncated if very large) =====\n" + diff[:9000])
     # reviewer prefers the fallback model so it isn't the same instance as the author
     result, slot = L.call_role(prompt, "reviewer")
     if result is None:
-        # Fail SAFE: if no reviewer is available, do NOT approve — leave for a human.
-        L.done("No reviewer model available — not approving.", approve="false",
+        # Fail SAFE: if no reviewer is available, ask for a revise (don't approve) — leave for a human.
+        L.done("No reviewer model available — not approving.", verdict="revise", approve="false",
                feedback="reviewer model unavailable; needs human review", bible_touched="false")
-    approve = bool(result.get("approve"))
+    # Three verdicts: approve (ship it) / revise (one fixable blocker) / churn (abandon, propose new).
+    verdict = str(result.get("verdict", "")).strip().lower()
+    if verdict not in ("approve", "revise", "churn"):
+        verdict = "approve" if result.get("approve") is True else "revise"   # back-compat / safe default
     # Pass the reviewer's FULL critique to the author (it keeps context and issues a targeted fix).
-    # Truncating to a tweet-length crumb was the old loop's worst information loss. The author is on a
-    # big-context model, so give it the whole reasoning; only newlines are flattened for GITHUB_OUTPUT.
     feedback = str(result.get("feedback", "")).replace("\n", " ").strip()[:4000] or "(no feedback)"
     # Did we get the INTENDED independent reviewer, or did it fall back to the author model (e.g. the
     # reviewer 413'd because the diff exceeded its window, or was rate-limited)? Flag it so the human
@@ -118,8 +114,9 @@ def main():
     chain = L.load_model_config()["reviewer"]
     intended = chain[0] if chain else slot
     degraded = slot["provider"] != intended["provider"] or slot["model"] != intended["model"]
-    print(f"Reviewer ({slot['model']}): approve={approve} degraded={degraded} — {feedback}")
-    L.emit(approve="true" if approve else "false", feedback=feedback, reviewer=slot["model"],
+    print(f"Reviewer ({slot['model']}): verdict={verdict} degraded={degraded} — {feedback}")
+    L.emit(verdict=verdict, approve="true" if verdict == "approve" else "false",
+           feedback=feedback, reviewer=slot["model"],
            degraded="true" if degraded else "false", bible_touched="false")
 
 
