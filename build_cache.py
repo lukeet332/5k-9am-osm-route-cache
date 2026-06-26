@@ -20,7 +20,7 @@ TARGET = 5000
 REL_LO, REL_HI = 4800, 5200      # keep a relation only this close to 5k
 HALF_REL_LO, HALF_REL_HI = 2300, 2800  # half-distance band: candidates for doubling
 SANE_LO, SANE_HI = 1500, 9000    # off-tolerance finds in this band -> diagnostics; wider = noise
-RATE_S = 1.5            # min seconds between network calls
+RATE_S = 2.5            # min seconds between network calls (conservative; ban-safety > speed)
 HAVANT = (50.87577, -0.97557)    # rollout anchor: start here, work north
 COVERAGE_REFINE = 0.80  # re-query accurate courses only once >=80% are within tolerance
 
@@ -92,9 +92,10 @@ def _throttle():
     if wait > 0: time.sleep(wait)
     _last[0] = time.time()
 
-# Ban-safety: if OSM throttles us (429) too often in a run, stop early rather than keep hammering it.
+# Ban-safety: if OSM throttles us (429) this many times in a run, STOP and back off 60 min rather than
+# keep hammering. Kept low (3) on purpose - we'd much rather stop early + resume later than risk a ban.
 RATE_LIMIT_HITS = [0]
-MAX_RATE_LIMIT_HITS = 6
+MAX_RATE_LIMIT_HITS = 3
 
 def _get(url, data=None, timeout=70):
     _throttle()
@@ -225,7 +226,11 @@ def trace_courses_multi(name, lat, lon):
     # group by date: Saturday/Christmas/New-Year, local 09:00-09:45, anchored within 150m of the start
     traces = {}
     for la, lo, t in pts:
-        ldt = local(t, lat, lon)
+        try:
+            ldt = local(t, lat, lon)
+        except Exception:
+            continue   # corrupt/extreme trace timestamp -> skip this point, not the whole event
+
         is_saturday = ldt.weekday() == 5
         is_christmas_day = ldt.month == 12 and ldt.day == 25
         is_new_years_day = ldt.month == 1 and ldt.day == 1
@@ -268,7 +273,11 @@ def trace_course(name, lat, lon):
     pts = trace_points(name, lat, lon)
     win = []
     for la, lo, t in pts:
-        ldt = local(t, lat, lon)
+        try:
+            ldt = local(t, lat, lon)
+        except Exception:
+            continue   # corrupt/extreme trace timestamp -> skip this point, not the whole event
+
         is_saturday = ldt.weekday() == 5
         is_christmas_day = ldt.month == 12 and ldt.day == 25
         is_new_years_day = ldt.month == 1 and ldt.day == 1
@@ -441,7 +450,18 @@ def main():
         try:
             res = build_one(ev)
         except Exception as ex:
-            print(f"  {ev['name']:<24} ERROR {ex}"); continue
+            # record ERROR as a first-class outcome (was: print + skip -> invisible to the
+            # maintenance bot, which only reads index.json). status=error + message means a
+            # recurring crash surfaces in outcomes_summary so the author can fix it, and the
+            # event stays a candidate (no distance_m) so it self-heals once the crash is fixed.
+            msg = str(ex)[:200]
+            print(f"  {ev['name']:<24} ERROR {msg}")
+            index[ev["name"]] = {"long": ev["long"], "lat": ev["lat"], "lon": ev["lon"],
+                                 "last_tried": today, "built_by": algo_version(),
+                                 "status": "error", "error": msg, "source": None, "distance_m": None}
+            json.dump(index, open(index_path, "w"), indent=1, sort_keys=True)
+            tally["error"] = tally.get("error", 0) + 1
+            continue
         entry = {"long": ev["long"], "lat": ev["lat"], "lon": ev["lon"], "last_tried": today,
                  "built_by": algo_version(), **res}
         index[ev["name"]] = entry

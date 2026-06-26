@@ -58,7 +58,7 @@ jobs:
         run: |
           git config user.name  cache-bot
           git config user.email cache-bot@users.noreply.github.com
-          python3 build_cache.py --limit 50 --commit-each
+          python3 build_cache.py --limit 150 --commit-each
       - name: Per-country coverage report (README table + coverage_by_country.json)
         run: python3 report.py || echo "report skipped"
       - name: Push any trailing gap bookkeeping
@@ -75,11 +75,14 @@ jobs:
         run: |
           # Cadence is SELF-ADJUSTING so we go fast through the one-time initial sweep, then ease off:
           #   - throttled by OSM         -> 60 min backoff (ban-safety first)
-          #   - first pass NOT yet done   -> 6 min  (churn through the ~884 untried events overnight;
-          #                                  the whole first sweep is only ~thousands of calls one-off)
+          #   - first pass NOT yet done   -> 2 min  (churn through the ~2361 untried events fast;
+          #                                  150 events/run, mostly trace-cache hits on re-sweep)
           #   - first pass complete       -> 25 min (conservative; re-tries mostly hit the trace cache)
-          # The per-request 1.5s throttle (RATE_S) — the thing OSM actually polices — never changes.
-          # A single in-flight run is guaranteed by the concurrency group: never parallel OSM load.
+          # Going faster here is SAFE: OSM polices requests-per-second (the per-request 2.5s RATE_S
+          # throttle, which never changes), NOT how often the workflow runs. The concurrency group
+          # guarantees ONE in-flight run, so runs serialize and never parallelize OSM load; the
+          # per-second rate is fixed regardless of cadence. If sustained volume ever provokes 429s,
+          # the breaker writes .throttled and the branch above auto-backs-off to 60 min.
           TRIED=$(python3 -c "import json;print(len(json.load(open('index.json'))))" 2>/dev/null || echo 0)
           TOTAL=$(python3 -c "import json;print(json.load(open('coverage.json'))['total'])" 2>/dev/null || echo 884)
           LOCKED=$(python3 -c "import json;print(json.load(open('coverage.json'))['locked'])" 2>/dev/null || echo 0)
@@ -91,7 +94,7 @@ jobs:
           if [ -f .throttled ]; then
             DELAY=3600;  echo "OSM throttled us ($(cat .throttled)x) — backing off 60 min."
           elif [ "$TRIED" -lt $(( TOTAL * 95 / 100 )) ]; then
-            DELAY=360;   echo "Initial sweep in progress ($TRIED/$TOTAL tried) — next run in 6 min."
+            DELAY=120;   echo "Initial sweep in progress ($TRIED/$TOTAL tried) — next run in 2 min."
           elif [ "$TRIED" -lt $(( TOTAL * 96 / 100 )) ]; then
             DELAY=1500;  echo "Finishing the tail ($TRIED/$TOTAL) — 25 min cadence."
           else
