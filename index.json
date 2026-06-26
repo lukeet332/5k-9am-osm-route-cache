@@ -32,6 +32,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "aberdeen": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 57.173898,
+  "lon": -2.086256,
+  "long": "Aberdeen parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "aberfields": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -153,6 +164,18 @@
   "status": "failed",
   "trace_m": null
  },
+ "alness": {
+  "distance_m": 1710,
+  "last_tried": "2026-06-26",
+  "lat": 57.694306,
+  "lon": -4.256669,
+  "long": "Alness parkrun",
+  "relation_m": 14799,
+  "source": "osm_9am_trace_offdist",
+  "status": "failed",
+  "trace_date": "2019-07-27",
+  "trace_m": 1710
+ },
  "altonwater": {
   "distance_m": 5086,
   "last_tried": "2026-06-25",
@@ -172,6 +195,17 @@
   "lat": 52.906173,
   "lon": -1.440173,
   "long": "Alvaston parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "anagachwoods": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 57.327939,
+  "lon": -3.602646,
+  "long": "Anagach Woods parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -314,6 +348,17 @@
   "source": "osm_9am_trace",
   "status": "failed",
   "trace_date": "2024-12-14"
+ },
+ "aviemore": {
+  "distance_m": 6916,
+  "last_tried": "2026-06-26",
+  "lat": 57.205275,
+  "lon": -3.818635,
+  "long": "Aviemore parkrun",
+  "relation_m": 6916,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
  },
  "aylesbury": {
   "distance_m": null,
@@ -634,6 +679,17 @@
   "lat": 54.608785,
   "lon": -5.881573,
   "long": "Belfast Victoria parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "belladrum": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 57.439282,
+  "lon": -4.46818,
+  "long": "Belladrum parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -1385,6 +1441,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "castlewoods": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 57.076082,
+  "lon": -2.784634,
+  "long": "Castle Woods parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "catford": {
   "distance_m": 5074,
   "last_tried": "2026-06-25",
@@ -2002,6 +2069,17 @@
   "source": null,
   "status": "gap"
  },
+ "crathescastle": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 57.061178,
+  "lon": -2.440954,
+  "long": "Crathes Castle parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "crawfordsburncountry": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -2582,6 +2660,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "elgin": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 57.653393,
+  "lon": -3.313072,
+  "long": "Elgin parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "ellesmereport": {
   "distance_m": 4740,
   "last_tried": "2026-06-26",
@@ -2593,6 +2682,17 @@
   "status": "failed",
   "trace_date": "2019-07-13",
   "trace_m": 4740
+ },
+ "ellon": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 57.359262,
+  "lon": -2.056968,
+  "long": "Ellon parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "endcliffe": {
   "distance_m": null,
@@ -2668,6 +2768,28 @@
   "lat": 54.586363,
   "lon": -5.978879,
   "long": "Falls parkrun, Belfast",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "faskallyforest": {
+  "distance_m": 4799,
+  "last_tried": "2026-06-26",
+  "lat": 56.7118,
+  "lon": -3.767296,
+  "long": "Faskally Forest parkrun",
+  "relation_m": 4799,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
+ },
+ "feldyroofitnesstrail": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 56.622075,
+  "lon": -3.875777,
+  "long": "FeldyRoo Fitness Trail parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -2871,6 +2993,28 @@
   "status": "success",
   "trace_date": "2020-01-11",
   "trace_m": 4967
+ },
+ "forfarloch": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 56.642663,
+  "lon": -2.908213,
+  "long": "Forfar Loch parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "fortwilliam": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 56.851484,
+  "lon": -4.999161,
+  "long": "Fort William parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "fountainsabbey": {
   "distance_m": null,
@@ -3583,6 +3727,17 @@
   "long": "Hazelwood parkrun",
   "source": null,
   "status": "gap"
+ },
+ "hazlehead": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 57.141371,
+  "lon": -2.175647,
+  "long": "Hazlehead parkrun, Aberdeen",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "heaton": {
   "distance_m": null,
@@ -4349,6 +4504,18 @@
   "relation_m": null,
   "source": null,
   "status": "gap",
+  "trace_m": null
+ },
+ "lewscastle": {
+  "distance_m": 5064,
+  "last_tried": "2026-06-26",
+  "lat": 58.207899,
+  "lon": -6.396894,
+  "long": "Lews Castle parkrun",
+  "provisional": true,
+  "relation_m": 5064,
+  "source": "osm_relation",
+  "status": "success",
   "trace_m": null
  },
  "leybournelakes": {
@@ -5161,6 +5328,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "montrose": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 56.726297,
+  "lon": -2.455223,
+  "long": "Montrose parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "morden": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -5229,6 +5407,17 @@
   "lat": 53.846344,
   "lon": -1.838295,
   "long": "Myrtle parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "nairnlinks": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 57.589215,
+  "lon": -3.871407,
+  "long": "Nairn Links parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -6858,6 +7047,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "skinadin": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 57.259099,
+  "lon": -5.941175,
+  "long": "Skinadin parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "skipton": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -7148,6 +7348,17 @@
   "lat": 51.51492,
   "lon": -0.458739,
   "long": "Stockley Country parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "stonehaven": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 56.969993,
+  "lon": -2.212502,
+  "long": "Stonehaven parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -7656,6 +7867,17 @@
   "source": null,
   "status": "gap"
  },
+ "torvean": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 57.462669,
+  "lon": -4.24886,
+  "long": "Torvean parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "townmoor": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -7760,6 +7982,17 @@
   "lat": 51.761468,
   "lon": -1.251068,
   "long": "University Parks parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "uryriverside": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 57.291953,
+  "lon": -2.372062,
+  "long": "Ury Riverside parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
