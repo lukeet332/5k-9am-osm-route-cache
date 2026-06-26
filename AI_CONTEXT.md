@@ -1,207 +1,119 @@
-# AI maintenance context & guardrails
+# AI maintenance contract (AI_CONTEXT.md)
 
-This repo builds a cache of parkrun-distance (5k) courses worldwide (UK first) as GPX, **derived only
-from OpenStreetMap** (route relations + openly-contributed Saturday-09:00 GPS traces). A weekly
-AI maintenance job may propose **one** improvement PR; a second AI reviews it; they iterate
-until both are satisfied and CI passes; then it merges. This file is the contract for that AI.
+Repo caches parkrun 5k courses worldwide (UK-first) as GPX, derived ONLY from OpenStreetMap (route
+relations + open Saturday-09:00 GPS traces). Weekly: author AI proposes ONE improvement PR -> reviewer
+AI judges -> iterate to consensus -> selftest gates -> merge. This file = working doctrine you may
+add/remove within the constitution. Optimised for AI reading: terse, dense, not prose.
 
-## HARD INVARIANTS -> see the CONSTITUTION
+## Constitution (supreme)
+Hard invariants + fixed accuracy bars live in `AI_CONTEXT_READ_ONLY_BIBLE.md` (SUPREME, overrides this
+file). Read it first, obey absolutely. You may PROPOSE a BIBLE amendment but it NEVER auto-merges
+(reviewer blocks + tags @lukeet332). Anything here that conflicts with it is void.
 
-The hard invariants and the fixed accuracy bars live in **`AI_CONTEXT_READ_ONLY_BIBLE.md`** - the
-read-only **constitution**, which **supersedes this file**. **Read it first and obey it absolutely.**
-You may *propose* an amendment to it, but only as a PR that requires the human owner's approval and
-**can never auto-merge** (the reviewer blocks it and tags @lukeet332).
+## Truth metric (optimise both, scored vs reality)
+1. Coverage = fraction of parkruns with a cached course (UK first, then world; goal = map ALL parkruns).
+2. Closeness = how near each course is to 5000 m.
+Raise both by finding more real data + extracting it better, NEVER by loosening bars. Top lever = which
+datetimes you query:
+- More historical Saturdays (more traces to average -> accuracy + coverage).
+- High-footfall Christmas Day + New Year's Day (huge turnout -> more GPS uploads). NOT Saturdays -> the
+  anchor generalises to "known parkrun event datetimes at 09:00 local" (Saturdays + Xmas + NYD).
 
-This file (`AI_CONTEXT.md`) is your **working doctrine** - strategy, learnings, process notes. Unlike
-the constitution, you may **freely curate it: add to it, and remove from it** what you judge obsolete
-or unhelpful - always *within* the constitution's bounds. Anything here that conflicts with the
-constitution is void.
+GLOBAL ROLLOUT = LIVE. `load_events` queries EVERY adult parkrun (~2361), UK-first (Havant->north) then
+country+lat; never-tried foreign events sweep first. "09:00 local" is PER-EVENT: `local(dt,lat,lon)`
+derives the IANA tz from coords via `timezonefinder` (DST-correct via zoneinfo), fallback Europe/London.
+DO NOT revert to UK-only, hardcoded London, or a lon/offset hack (ignores DST + zone edges, drops foreign
+traces, broke the UK once). `relation_course` is tz-agnostic. `coverage.json` + badge + description = the
+WORLD tally; per-country mapped/total via `report.py` -> `coverage_by_country.json` + README table (LIVE).
 
-## Truth metric (what to optimise)
+## Source trust + priorities
+Every success has a `source`:
+- `osm_9am_trace` (provisional:false) = TRUSTED (real runners' GPS; gold standard).
+- `osm_relation` (provisional:true) = PROVISIONAL (a curated line that merely MEASURES 4.8-5.2k; may not
+  be the true course). Treat with suspicion.
+`build_one`: trace wins when both qualify. Priorities: (1) COVERAGE first - fill `gap`, fix `failed`;
+(2) upgrade provisional -> trace as the trace pool grows (refine phase, >=80% locked); (3) LOWEST -
+refine trusted courses toward mm-accuracy by averaging many GPS traces; never spend the weekly slot here
+while gaps/failed/provisionals remain. All obey invariants (real data only, never AI geometry, never
+loosened bars).
 
-Two things jointly, scored against reality:
-1. **Coverage** - fraction of parkruns with a cached course (UK first, then worldwide - the end goal
-   is to map ALL parkruns), and
-2. **Closeness to 5k** - how near each cached course is to 5000 m.
+## Tested contract
+`selftest.py` (the merge gate, OFF-LIMITS to edit) imports these from `build_cache.py` and asserts their
+behaviour. Rewrite internals freely (that IS how you improve), but DO NOT rename or change signature/
+return shape or the gate fails. Keep current if you add/rename a tested symbol:
+- `assemble(ways) -> [(lat,lon)]`
+- `trace_course(name,lat,lon) -> (m, [(lat,lon)], date_str) | None`
+- `build_one(ev) -> dict{status: success|failed|gap, source, distance_m, relation_m, trace_m, provisional}` (= index.json schema)
+- `is_locked(entry) -> bool` (distance_m in 4800-5200)
+- `audit_recoverable(index)`, `best_lap_n(length_m)` (self-audit: flags non-success entries recoverable at the best integer lap count)
+- `write_gpx(name,longname,pts,source)`; `length(pts)`; `algo_version()->str`; `_trace_cache_file(name,half_m,page)`
+- consts `REL_LO`/`REL_HI` (4800/5200), `ROUTES`, `TRACECACHE`
+Must change a contract? Can't edit selftest.py -> keep a thin old-signature wrapper, or leave it to the human.
 
-The AI improves *both* by **finding more real data and extracting it better** - never by
-loosening the accuracy bars. The single most powerful lever is **which datetimes it queries**:
-- Sweep **more historical Saturdays** (each adds traces to average -> better accuracy + coverage).
-- Query **high-footfall special events** - **Christmas Day and New Year's Day**, which have huge
-  parkrun turnout (so far more GPS uploads land in OSM). NOTE these are **not always Saturdays** -
-  parkrun runs them on the actual date whatever the weekday - so the anchor generalises from
-  "Saturday 09:00" to **"known parkrun event datetimes at 09:00 local"** (Saturdays + Christmas
-  Day + NYD). This is a real coverage unlock and fully within the invariants.
+## Levers you MAY improve (within invariants; output must still pass selftest)
+- Querying/rollout: which dates+events, region priority, gap-retry cadence, search radius, backoff.
+- Trace extraction: average multiple Saturdays (cut noise); PREFER recent ~1-2yr (courses change; mixing
+  old+new blends two routes); smoothing/simplify.
+- Relation way-chaining: gap-bridge + dedup for an accurate measured length.
+- RESEARCHED LEVERS for the no-named-relation gaps (verified OSS tools; hand-code the deterministic core;
+  ship provisional; calibrate thresholds vs the ~131 already mapped):
+  - MAP-MATCH + EDGE VOTING (highest impact): the trackpoints API exposes EVERY trace's points regardless
+    of privacy (incl. time-stripped/anonymised), so snap many nearby traces to the path graph
+    (leuven.mapmatching / map-matching-2) and keep the most-traversed connected ~5k subgraph. Voting is
+    NOT a library - count traces per edge yourself; need >=N corroborating traces (paths shared by
+    commuters/dogs/cyclists - never trust one). Needs no relation.
+  - PARK-BOUNDARY LOOP (works with zero traces): confine an osmnx walk graph to the event's OSM greenspace
+    polygon (graph_from_polygon), find the ~5k closed loop via a fixed-length-cycle heuristic
+    (Lewis-Corcoran). Guard against the wrong adjacent park.
+  - N-LAP: generalise the fixed 2x to "smallest N (1..6) with N*lap in 4.8-5.2k" (the self-audit flags
+    these); get N from real repetition in a trace, NEVER by multiplying until it hits 5k (false positive,
+    forbidden).
+  - DATA-DRIVEN START TIME: learn each event's start by clustering Saturday-morning trace starts instead
+    of hardcoding 09:00 (recovers foreign events that don't start at 09:00).
+  - TRIAGE + REPAIR (cheap glue): route each gap to the fitting lever; mark genuinely-no-data events final
+    so they stop being re-swept; near-miss relations -> trim degree-1 spurs / bridge small gaps
+    (osmnx+networkx), accept only if a trace agrees.
+  Compose: park polygon confines edge-voting (fewer false edges); start/lap detection feeds all.
+- QA flag: in-band but mis-shaped (self-intersections/spikes) -> flag for human, never silently rewrite.
+- Event-age via events.json `id` (roughly chronological, Bushy=1): older events likelier to have OSM data
+  -> prioritise low id, treat very-new high id as EXPECTED gaps. Noisy proxy (junior/overseas ids
+  interleave), no network saving. Never fetch parkrun for true dates (invariant #6).
+- Additional sources beyond OSM: other openly-licensed/permitted data (open GPS-trace, public-domain
+  routes, gov/park open data), attributed, within their terms - ONLY within invariant #6 (never parkrun,
+  never scraping, never circumventing). OSM stays primary; others additive.
 
-**Global rollout - LIVE (the end goal is to map ALL parkruns worldwide as GPX).** As of the global
-rollout, `load_events` queries EVERY adult parkrun worldwide (~2361 events), not just the UK. UK is
-ordered first (Havant -> north), then the rest by country+latitude; foreign events are never-tried so
-the last_tried rotation sweeps them first - harvesting untapped foreign data while UK gaps wait. The
-"09:00 local" anchor is now PER-EVENT: `local(dt, lat, lon)` derives each event's IANA timezone from
-its coordinates via the `timezonefinder` package (DST-correct via zoneinfo), with a graceful fallback
-to Europe/London if the package is absent. DO NOT revert to a UK-only query or a hardcoded London tz,
-and DO NOT replace timezonefinder with a longitude/offset hack - that ignores DST + zone boundaries and
-silently drops foreign traces (it broke the UK once). `relation_course` is timezone-agnostic, so foreign
-relation successes need no tz. Coverage + the badge are now the WORLD tally; per-country progress lives
-in the README table (`report.py` / `coverage_by_country.json`). The remaining lever for thin-coverage
-countries is additional openly-licensed data sources (within the invariants) - every parkrun mapped.
-**Per-country reporting (LIVE):** `report.py` writes `coverage_by_country.json` and the README
-"Coverage by country" table (each country's mapped/total), and `coverage.json` + the repo description
-are the WORLD tally. Per-country progress is already visible; it fills in as the rollout sweeps each country.
+## index.json = your log (read for per-event detail)
+One entry per attempted parkrun: `status` (success|failed|gap|error); `distance_m` (null if gap);
+`relation_m` + `trace_m` (what the OSM relation & 09:00 trace each measured, present even when unused -
+your richest signal, esp. on `failed`); `source`; `provisional`; `trace_date`; `last_tried`; `lat`;
+`lon`; `error` (message, on status=error crashes). `routes/<event>.gpx` = successes only (for the app;
+rarely read geometry). FAILED entries are the gold: `relation_m`~2300 => one lap of a 2-lap (double);
+`distance_m` just outside 4.8-5.2k => incomplete relation (way-chain). Off-distance geometry is NOT
+stored (cost) - work from metadata (git history has older states). You usually get a compact outcomes
+digest; read index.json directly only when you need per-event detail.
 
-## Source trust & the long-term "map it to the mm" goal
+## JOURNAL.md (accumulate knowledge)
+Bots' running diary. Author reads it then appends (date, idea, why-from-outcomes, what changed). Build on
+what worked, don't repeat what didn't, get more creative over time. Reviewer reads it too. Append-only;
+never rewrite past entries.
 
-Not all successes are equal - **be suspicious of any cached course that wasn't built from real
-Saturday-09:00 GPS.** The `source` field on every success says which it is:
-- **`osm_9am_trace` (`provisional: false`) - TRUSTED.** Reconstructed from real runners' GPS: it's
-  what people actually ran. This is the gold standard.
-- **`osm_relation` (`provisional: true`) - PROVISIONAL.** A curated OSM line that merely *measures*
-  4.8-5.2 km. Good enough to ship to the app, but it may not be the true course (a rough relation
-  can happen to total ~5k). Treat with suspicion.
+## Process
+1. Author (weekly): read JOURNAL + index.json outcomes + the algorithm -> propose ONE improvement within
+   the invariants that genuinely advances the goal. Pruning wrong/obsolete logic counts; no pointless
+   churn. Append a JOURNAL entry (or journal why nothing changed).
+2. Reviewer (a different AI): judge on (a) SAFETY (invariants, bars, geometry, OSM-kindness, licensing)
+   and (b) MERIT (real progress vs churn / re-tried failure). Aim for consensus - collaborator, not
+   gatekeeper; don't block on style; loop until both satisfied (capped rounds).
+3. Gate: `selftest.py` MUST pass, else no merge.
+4. `version_bump` by scope: patch=tweak/fix/prune, minor=real new capability or quality gain (usual),
+   major=ambitious rework (rare). Merge auto-cuts a semver release.
 
-`build_one` already encodes this: when both qualify, the **trace wins**.
-Your standing remit, in priority order:
-1. **Coverage first** - fill `gap`s and fix `failed`s (most parkruns still have no course).
-2. **Upgrade provisional -> trace** - as the trace pool grows, replace `provisional: true`
-   (relation) successes with real `osm_9am_trace` courses. (Re-querying locked courses already
-   happens in the refine phase once >=80% are within tolerance - that's when this kicks in.)
-3. **Long-term, LOW-priority end goal - refine even already-trusted courses.** Once the
-   successfully-mapped count is very high (even with traces everywhere), keep nudging quality up:
-   the dream is to map each parkrun **to the millimetre** by **averaging many individuals' GPS
-   traces** of the same course (more uploads -> less noise -> the true line). This never stops, but
-   it is **always lower priority than coverage and upgrading provisionals** - don't spend the
-   weekly improvement on micro-refining trusted courses while gaps/failures and provisionals remain.
+## Models
+Per-role chains in `.github/ai_model.json` (author / reviewer / fast), each frontier->fallback->anchor,
+re-evaluated weekly from a multi-provider menu; a provider with no key is skipped. Reviewer must differ
+from the author (independent) and stay deep (never the fast tier). Pick the smartest models that FIT the
+free request limits (hard constraint; the same config runs on 2 repos -> need headroom for both).
 
-All three obey the HARD INVARIANTS - more/better *real* data, never AI geometry, never loosened bars.
-
-## Tested contract - keep these callable (improve internals, don't rename/re-signature)
-
-`selftest.py` is the merge gate; it imports these from `build_cache.py` and asserts their behaviour.
-**You may freely rewrite their internals** (that's how you improve the algorithm), but if you rename
-them or change their signature/return shape the self-test fails and your PR is blocked. Keep:
-- `assemble(ways) -> list[(lat,lon)]` - chain unordered ways into one polyline.
-- `trace_course(name, lat, lon) -> (metres, [(lat,lon)], date_str) | None` - reconstruct from traces.
-- `build_one(ev) -> dict` with keys `status` (`success`/`failed`/`gap`), `source`, `distance_m`,
-  `relation_m`, `trace_m`, and `provisional` on successes - this dict IS the `index.json` schema.
-- `is_locked(entry) -> bool` - true iff `distance_m` is within the 4800-5200 m bars.
-- `write_gpx(name, longname, pts, source)` - writes `routes/<name>.gpx` (stamps the version).
-- `length(pts)`, `algo_version() -> str`, `_trace_cache_file(name, half_m, page)`.
-- Constants `REL_LO`/`REL_HI` (4800/5200), `ROUTES`, `TRACECACHE`.
-
-If you genuinely need to change one of these contracts you can't edit `selftest.py` (it's off-limits)
-- so keep a thin wrapper with the old signature, or leave the human to adjust the test. Keep this list
-current if you add/rename a tested symbol.
-
-## What the weekly AI MAY improve (within the invariants)
-
-Operational and algorithmic *means*, as long as outputs still validate against `selftest.py`:
-- **Querying strategy / rollout** - which dates and events to pull (per Truth metric above),
-  region prioritisation, gap-retry cadence, search radius, backoff.
-- Better trace extraction - e.g. **averaging multiple Saturdays' traces** to cut GPS noise,
-  smarter multi-lap detection, smoothing/simplification. Also consider **preferring recent Saturdays**:
-  parkruns occasionally change their course, so blending a years-old trace with current ones can mix
-  two different routes - weighting/limiting to the most recent ~1-2 years tracks the *current* course
-  more faithfully (the trace fetch is date-agnostic today, so all historical Saturdays are averaged).
-- Smarter relation way-chaining (gap bridging, dedup) for a more accurate measured length.
-- **Researched levers for the no-named-relation gaps (verified open-source tools; hand-code the
-  deterministic core, ship provisional, calibrate thresholds against the ~131 already mapped).**
-  - MAP-MATCH + EDGE VOTING (highest impact): the public trackpoints API exposes EVERY trace's points
-    regardless of privacy (incl. time-stripped/anonymised), so snap many nearby traces to the path
-    graph (leuven.mapmatching / map-matching-2) and keep the most-traversed connected ~5k subgraph.
-    Voting is NOT a library - count traces per edge yourself; require >=N corroborating traces (paths
-    are shared by commuters/dogs/cyclists - never trust one). Needs no relation.
-  - PARK-BOUNDARY LOOP (works with zero traces): confine an osmnx walk graph to the event's OSM
-    greenspace polygon (graph_from_polygon), find the ~5k closed loop via a fixed-length-cycle
-    heuristic (Lewis-Corcoran). Guard against matching the wrong adjacent park.
-  - N-LAP: generalise the fixed 2x to "smallest N (1..6) with N*lap in 4.8-5.2k" (the self-audit
-    already flags these); get N from real repetition in a trace, NEVER by multiplying until it hits
-    5k (invents coverage from coincidence - forbidden).
-  - DATA-DRIVEN START TIME: learn each event's real start by clustering Saturday-morning trace starts
-    instead of hardcoding 09:00 (likely recovers foreign events that don't start at 09:00).
-  - TRIAGE + REPAIR (cheap glue): route each gap to the lever that fits (relation / park paths /
-    traces / nothing), mark genuinely-no-data events final so they stop being re-swept; for near-miss
-    relations trim degree-1 spurs / bridge small gaps (osmnx+networkx), accept only if a trace agrees.
-  Compose: confine edge-voting to the park polygon to cut false edges; start/lap detection feeds all.
-- Rollout prioritisation, gap-retry cadence, search radius, backoff - operational knobs only.
-- A **QA flag** for courses whose distance is in-band but whose shape looks wrong
-  (self-intersections, spikes) - flag for human review; do not silently rewrite geometry.
-- Diagnosing low-yield regions and reporting *why* (not fabricating data to fill them).
-- **Event-age prioritisation via the events.json `id`.** events.json has no start-date, but each
-  feature has a top-level `id` that is roughly chronological (Bushy = 1, the first parkrun) - lower id
-  ~ older event. Older events have years of Saturdays so are far likelier to have OSM data; brand-new
-  (high-id) events usually have none yet. Capturing `id` in `load_events` lets you prioritise older
-  events first and treat very new ones as EXPECTED gaps (don't churn retrying them). It is a noisy
-  proxy (cancelled/junior/overseas ids interleave) and does NOT save network calls (the trace fetch is
-  bbox-wide + date-agnostic). The true first-run date would need parkrun's event pages - off-limits
-  (invariant #6) - so use only this id proxy, never fetch parkrun for dates.
-- **Additional data sources beyond OSM** - to lift coverage where OSM is thin, the algorithm MAY
-  eventually pull from *other openly-licensed / explicitly-permitted* sources (e.g. open GPS-trace
-  or public-domain route datasets, government/park open data), used within their terms and
-  attributed. This is allowed ONLY within invariant #6: **never parkrun's sites, never scraping,
-  never circumventing terms/access controls.** OSM stays the primary source; others are additive.
-
-## Where your full context lives (read these)
-
-Two outputs, two audiences - know which is which:
-- **`routes/<event>.gpx`** - successful courses only. That's for the *app*; you rarely need to read
-  the geometry.
-- **`index.json` - YOUR full log. Read this for context.** One entry per attempted parkrun:
-  - `status`: `success` | `failed` | `gap`
-  - `distance_m`: chosen course length (null for a gap)
-  - `relation_m`, `trace_m`: what the OSM *relation* and the *09:00 trace* each measured - present
-    even when unused. **This is your richest signal**, especially on `failed` entries.
-  - `source` (`osm_9am_trace` = trusted GPS / `osm_relation` = provisional), `provisional` (true on
-    relation-sourced successes - your upgrade targets), `trace_date`, `last_tried`, `lat`, `lon`
-- **`failed` entries are the gold for improvement** - e.g. `relation_m ~ 2300` => likely one lap of a
-  2-lap parkrun (try doubling); `distance_m` just outside 4.8-5.2 km => likely an incomplete relation
-  (try way-chaining). Off-distance *geometry* is deliberately NOT stored (token/space cost) - work
-  from the metadata; older states are in git history if ever needed.
-- You're normally handed a compact digest of all this (an outcomes summary) to keep token use low;
-  read `index.json` directly only when you need per-event detail. Prefer **derived feature flags in
-  index.json** over raw geometry - they're cheap and reusable.
-
-## The idea JOURNAL (build context over time)
-
-`JOURNAL.md` is the bots' running diary. Each week the author reads it, then appends an entry
-(date, the idea, *why* from the outcomes, what you changed). The point is **accumulated knowledge**:
-build on what worked, don't repeat what didn't, and get **progressively more creative week over
-week. The reviewer also reads it. Append-only; never rewrite past entries.
-
-## Process the AI must follow
-
-1. **Author / MASTER** (weekly): read the JOURNAL + `index.json` outcomes + the algorithm, and
-   propose ONE improvement *within the invariants* that genuinely advances the goal (caching ALL
-   parkruns at ~5k). Improving the algorithm includes **pruning** logic that's wrong/obsolete, not
-   only adding - but no pointless churn. Append a JOURNAL entry. If nothing's worth changing, just
-   journal why.
-2. **Reviewer / SLAVE** (a different AI): judge the PR on **two axes** - (a) SAFETY: invariants,
-   accuracy bars, geometry, OSM-kindness, licensing; and (b) MERIT: does it really move us toward
-   the goal, or is it silly add/remove churn or a re-tried failed idea? **Aim for consensus** - be
-   a collaborator, not a perfectionist gatekeeper; don't block on style; once concerns are
-   addressed, approve. Loop (max 3 rounds) until both are satisfied.
-3. **Gate**: `selftest.py` **must pass**; a PR that breaks caching cannot merge. Only then merge.
-4. **Declare a `version_bump`** in your proposal (`patch`/`minor`/`major`) by the SCOPE/ambition of
-   the change - patch = small tweak/fix/prune, minor = a real new capability or quality gain (the
-   usual case), major = an ambitious rework (sparingly). It can't break the output contract (you only
-   edit the algorithm), so it's purely a readable signal. Merging your PR auto-cuts a semver release.
-
-## Models - smartest free pair + a fast tier (self-updating)
-
-Configured in `.github/ai_model.json`, re-evaluated weekly from a multi-source menu
-(`github-models`, `gemini`, `openrouter`, `groq`, `mistral` - a provider with no key is skipped):
-- **`primary` - MASTER author** (deep): the strongest free reasoner; defaults to GitHub Models
-  (built-in `GITHUB_TOKEN`, no secret).
-- **`fallback` - SLAVE reviewer** (deep + INDEPENDENT): a strong model from a **different
-  provider** where >=2 are available, so the review is genuinely independent. Must stay deep -
-  never the fast tier. Falls back to the master if its provider key is absent.
-- **`fast`** (e.g. Gemini Flash): for *simple delegated subtasks only* - never reviews, never
-  touches accuracy.
-
-The weekly review picks the **SMARTEST master + reviewer that still FIT the free request limits**
-- capability maximised, the free quota a hard constraint - and, since the same config runs on two
-repos that might pick the same models, each must have free-tier headroom for **both repos combined**.
-It validates every change with a live call; a provider with no key is simply skipped (graceful).
-
-## Learnings (appended by the bot)
-- Averaging multiple Saturday-09:00 traces improves closeness-to-5k and coverage without violating invariants.
-- Expanded trace extraction to include Christmas Day and New Year's Day, as these are high-footfall events with valuable GPS data.
+## Learnings (bot-appended)
+- Averaging multiple Saturday-09:00 traces improves closeness + coverage within invariants.
+- Added Christmas Day + New Year's Day events (high-footfall -> valuable GPS).
