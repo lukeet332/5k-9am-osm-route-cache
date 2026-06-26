@@ -81,6 +81,8 @@ def provider_models(provider):
     key = os.environ.get(key_env, "").strip()
     if not key:
         return []
+    if provider == "cloudflare":
+        return _cloudflare_models(key)     # CF has no OpenAI /models listing — use its native search
     try:
         req = urllib.request.Request(base.rstrip("/") + "/models",
                                      headers={"Authorization": f"Bearer {key}",
@@ -94,6 +96,27 @@ def provider_models(provider):
         print(f"  {provider} /models unavailable ({e.__class__.__name__} {getattr(e,'code','')})")
         # github-models has no OpenAI /models listing — fall back to a known good reviewer id.
         return ["openai/gpt-4.1"] if provider == "github-models" else []
+
+
+def _cloudflare_models(key):
+    """Cloudflare Workers AI exposes its catalogue via a native search endpoint (not OpenAI /models).
+    List the text-generation models so the selector can pick a live CF slug. Best-effort -> [] on any
+    failure (then CF is just absent from the menu, still usable as a hand-pinned/fallback provider)."""
+    import urllib.request, urllib.parse
+    if not L._CF_ACCOUNT:
+        print("  cloudflare: no CLOUDFLARE_ACCOUNT_ID set — skipping its menu")
+        return []
+    url = (f"https://api.cloudflare.com/client/v4/accounts/{L._CF_ACCOUNT}/ai/models/search?"
+           + urllib.parse.urlencode({"task": "Text Generation", "per_page": 50}))
+    try:
+        req = urllib.request.Request(url, headers={"Authorization": f"Bearer {key}",
+                                                   "User-Agent": "Mozilla/5.0 (5k-9am-osm-route-cache)"})
+        data = json.loads(urllib.request.urlopen(req, timeout=30).read())
+        ids = [m.get("name") for m in (data.get("result") or []) if m.get("name")]
+        return sorted(ids)[:80]
+    except Exception as e:
+        print(f"  cloudflare /models unavailable ({e.__class__.__name__} {getattr(e,'code','')})")
+        return []
 
 
 def main():
