@@ -319,6 +319,17 @@
   "source": null,
   "status": "gap"
  },
+ "bensyardely": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.375707,
+  "lon": 0.291723,
+  "long": "Ben\u2019s Yard parkrun, Ely",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "berkeleygreen": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1819,6 +1830,17 @@
   "status": "success",
   "trace_m": null
  },
+ "kettering": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.384226,
+  "lon": -0.710653,
+  "long": "Kettering parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "kilkennylanecountry": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -2013,6 +2035,17 @@
   "status": "success",
   "trace_date": "2023-11-04",
   "trace_m": 5010
+ },
+ "ludlow": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.353284,
+  "lon": -2.773078,
+  "long": "Ludlow parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "lullingstone": {
   "distance_m": null,
@@ -2757,6 +2790,17 @@
   "source": "osm_9am_trace",
   "status": "success",
   "trace_date": "2017-03-04"
+ },
+ "rugby": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.37318,
+  "lon": -1.238464,
+  "long": "Rugby parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "rushmere": {
   "distance_m": null,
@@ -3673,6 +3717,17 @@
   "lat": 51.62337,
   "lon": -0.74009,
   "long": "Wycombe Rye parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "wyreforest": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.365002,
+  "lon": -2.369798,
+  "long": "Wyre Forest parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
