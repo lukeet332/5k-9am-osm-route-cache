@@ -163,14 +163,16 @@
   "trace_m": 5012
  },
  "alderfordlake": {
-  "distance_m": 2409,
+  "built_by": "dev",
+  "distance_m": 4819,
   "last_tried": "2026-06-26",
   "lat": 52.953181,
   "lon": -2.675436,
   "long": "Alderford Lake parkrun",
+  "provisional": true,
   "relation_m": 2409,
-  "source": "osm_relation_offdist",
-  "status": "failed",
+  "source": "osm_relation_doubled",
+  "status": "success",
   "trace_m": null
  },
  "alderleypark": {
@@ -865,14 +867,16 @@
   "trace_m": null
  },
  "beacon": {
-  "distance_m": 2555,
+  "built_by": "dev",
+  "distance_m": 5110,
   "last_tried": "2026-06-26",
   "lat": 52.685891,
   "lon": -1.83863,
   "long": "Beacon parkrun",
+  "provisional": true,
   "relation_m": 2555,
-  "source": "osm_relation_offdist",
-  "status": "failed",
+  "source": "osm_relation_doubled",
+  "status": "success",
   "trace_m": null
  },
  "beaconhillcountrypark": {
@@ -2218,14 +2222,15 @@
  },
  "canterbury": {
   "built_by": "dev",
-  "distance_m": 2418,
+  "distance_m": 4836,
   "last_tried": "2026-06-26",
   "lat": 51.299468,
   "lon": 1.057002,
   "long": "Canterbury parkrun",
+  "provisional": true,
   "relation_m": 2418,
-  "source": "osm_relation_offdist",
-  "status": "failed",
+  "source": "osm_relation_doubled",
+  "status": "success",
   "trace_m": null
  },
  "capepembrokelighthouse": {
@@ -3074,14 +3079,16 @@
   "trace_m": null
  },
  "coldhamscommon": {
-  "distance_m": 2496,
+  "built_by": "dev",
+  "distance_m": 4992,
   "last_tried": "2026-06-26",
   "lat": 52.206705,
   "lon": 0.158881,
   "long": "Coldham\u2019s Common parkrun",
+  "provisional": true,
   "relation_m": 2496,
-  "source": "osm_relation_offdist",
-  "status": "failed",
+  "source": "osm_relation_doubled",
+  "status": "success",
   "trace_m": null
  },
  "colinglen": {
@@ -10610,14 +10617,16 @@
   "trace_m": null
  },
  "queens": {
-  "distance_m": 2522,
+  "built_by": "dev",
+  "distance_m": 5044,
   "last_tried": "2026-06-26",
   "lat": 54.555092,
   "lon": -5.963387,
   "long": "Queen\u2019s parkrun, Belfast",
+  "provisional": true,
   "relation_m": 2522,
-  "source": "osm_relation_offdist",
-  "status": "failed",
+  "source": "osm_relation_doubled",
+  "status": "success",
   "trace_m": null
  },
  "queensdomain": {
@@ -12395,14 +12404,15 @@
  },
  "swanley": {
   "built_by": "dev",
-  "distance_m": 2572,
+  "distance_m": 5145,
   "last_tried": "2026-06-26",
   "lat": 51.404175,
   "lon": 0.17519,
   "long": "Swanley parkrun",
+  "provisional": true,
   "relation_m": 2572,
-  "source": "osm_relation_offdist",
-  "status": "failed",
+  "source": "osm_relation_doubled",
+  "status": "success",
   "trace_m": null
  },
  "swanseabay": {
@@ -12578,15 +12588,16 @@
   "trace_m": null
  },
  "tetburygoodsshed": {
-  "built_by": "v0.1.0",
-  "distance_m": 7021,
+  "built_by": "dev",
+  "distance_m": 4816,
   "last_tried": "2026-06-26",
   "lat": 51.637222,
   "lon": -2.155818,
   "long": "Tetbury Goods Shed parkrun",
+  "provisional": true,
   "relation_m": 2408,
-  "source": "osm_relation_doubled_offdist",
-  "status": "failed",
+  "source": "osm_relation_doubled",
+  "status": "success",
   "trace_m": null
  },
  "tewkesbury": {
