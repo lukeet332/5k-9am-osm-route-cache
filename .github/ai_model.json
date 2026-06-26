@@ -1,5 +1,5 @@
 {
-  "primary": { "provider": "github-models", "model": "openai/gpt-4.1" },
-  "fallback": { "provider": "gemini", "model": "gemini-2.5-pro" },
+  "primary": { "provider": "gemini", "model": "gemini-2.5-flash" },
+  "fallback": { "provider": "github-models", "model": "openai/gpt-4.1" },
   "fast": { "provider": "gemini", "model": "gemini-2.5-flash" }
 }

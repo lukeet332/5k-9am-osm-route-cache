@@ -28,6 +28,12 @@ maximise capability, with the free quota as a HARD constraint (not the other way
 
 HARD CONSTRAINTS:
 - Every model must be FREE (reject any paid model outright).
+- TOKEN CAPACITY (critical): the MASTER author is sent the ENTIRE algorithm file PLUS its context in
+  one prompt — currently about %(master_tokens)s input tokens, and GROWING as the algorithm evolves.
+  Its free-tier INPUT limit must comfortably exceed that. NOTE: GitHub Models' free tier caps input at
+  ~8000 tokens for ALL models — too small for the master; do NOT pick a github-models model as master.
+  A big-context free model (e.g. Gemini Flash, ~1M tokens) fits. The reviewer only sees a small DIFF,
+  so an 8000-token model is fine there — which makes github-models a good INDEPENDENT reviewer choice.
 - This same configuration runs across TWO repositories that may, by chance, pick the SAME models —
   so each model's FREE request quota must comfortably cover BOTH repos' combined usage (a few
   automated calls per week each). Reject any model whose free tier is too tight for that.
@@ -56,8 +62,13 @@ def main():
     avail = available_providers()
     cur = L.load_model_config()
     cur_short = {r: {"provider": cur[r]["provider"], "model": cur[r]["model"]} for r in ROLES}
+    # Rough size of the master author's prompt (whole algorithm + context) so the selector can reject
+    # models whose free-tier input window can't fit it.
+    def _chars(f): return len(f.read_text(errors="ignore")) if f.exists() else 0
+    master_tokens = (_chars(L.ALGO_FILE) + _chars(L.CONTEXT_FILE) + _chars(L.BIBLE_FILE) + 4000) // 4
     rec, _ = L.call_with_roles(
-        PROMPT % {"avail": ", ".join(avail) or "github-models", "current": json.dumps(cur_short)},
+        PROMPT % {"avail": ", ".join(avail) or "github-models", "current": json.dumps(cur_short),
+                  "master_tokens": f"~{master_tokens}"},
         roles=("primary", "fallback"),
     )
     if not isinstance(rec, dict):
