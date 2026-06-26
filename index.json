@@ -3668,6 +3668,17 @@
   "source": "osm_relation",
   "status": "success"
  },
+ "queenelizabethsgrammarschool": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.212621,
+  "lon": -0.121553,
+  "long": "Queen Elizabeth\u2019s Grammar School parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "queensway": {
   "distance_m": null,
   "last_tried": "2026-06-26",
