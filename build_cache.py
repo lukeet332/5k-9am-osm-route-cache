@@ -1,15 +1,13 @@
 #!/usr/bin/env python3
-"""
-Build a cache of UK parkrun 5k courses as GPX, from OpenStreetMap ONLY.
+"""Build a cache of UK parkrun 5k courses as GPX, from OpenStreetMap only.
 
-Per parkrun (worked south -> north), in priority order:
-  1. OSM route relation named "... parkrun" near the start  -> use it IF within +/-8% of 5k.
-  2. else reconstruct from OSM's open Saturday-09:00 GPS traces (multi-lap aware).
-  3. else: no entry (logged as a gap).
+Per parkrun (worked south to north), in priority order:
+  1. OSM route relation named "... parkrun" near the start, if within +/-8% of 5k.
+  2. else reconstruct from open Saturday-09:00 GPS traces (multi-lap aware).
+  3. else log a gap.
 
-Everything is derived from OpenStreetMap (c) OpenStreetMap contributors, ODbL.
-Be kind to OSM: hard rate-limit, descriptive User-Agent, early-stop paging, on-disk
-caching so re-runs don't refetch. NOT for bulk harvesting — slow and polite by design.
+Data is OpenStreetMap (c) OpenStreetMap contributors, ODbL. Be kind to OSM: hard rate-limit,
+descriptive User-Agent, early-stop paging, on-disk caching. Not for bulk harvesting.
 """
 import json, os, re, math, time, datetime, urllib.request, urllib.parse, argparse, subprocess
 
@@ -19,13 +17,12 @@ OVERPASS = "https://overpass-api.de/api/interpreter"
 OSM_TRACKPOINTS = "https://api.openstreetmap.org/api/0.6/trackpoints"
 UK_CC, ADULT = 97, 1
 TARGET = 5000
-REL_LO, REL_HI = 4800, 5200      # keep a relation only this close to 5k (it's a curated line)
-HALF_REL_LO, HALF_REL_HI = 2300, 2800 # relations in this band are candidates for doubling
-SANE_LO, SANE_HI = 1500, 9000    # off-tolerance finds in this band -> routes/failed/ as diagnostics
-                                 # (e.g. ~2.5km = likely one lap of a 2-lap parkrun); wilder = noise, ignored
-RATE_S = 1.5            # min seconds between network calls (kind to OSM)
+REL_LO, REL_HI = 4800, 5200      # keep a relation only this close to 5k
+HALF_REL_LO, HALF_REL_HI = 2300, 2800  # half-distance band: candidates for doubling
+SANE_LO, SANE_HI = 1500, 9000    # off-tolerance finds in this band -> diagnostics; wider = noise
+RATE_S = 1.5            # min seconds between network calls
 HAVANT = (50.87577, -0.97557)    # rollout anchor: start here, work north
-COVERAGE_REFINE = 0.80  # only re-query already-accurate courses once >=80% are within tolerance
+COVERAGE_REFINE = 0.80  # re-query accurate courses only once >=80% are within tolerance
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROUTES = os.path.join(HERE, "routes")
@@ -72,9 +69,7 @@ def _throttle():
     if wait > 0: time.sleep(wait)
     _last[0] = time.time()
 
-# Ban-safety circuit breaker: count how often OSM throttles us (HTTP 429). If it happens
-# too many times in a run, main() stops early rather than keep hammering a server that's
-# already telling us to back off — the surest way to avoid getting the IP blocked.
+# Ban-safety: if OSM throttles us (429) too often in a run, stop early rather than keep hammering it.
 RATE_LIMIT_HITS = [0]
 MAX_RATE_LIMIT_HITS = 6
 
@@ -86,7 +81,7 @@ def _get(url, data=None, timeout=70):
             return urllib.request.urlopen(req, timeout=timeout).read().decode("utf-8", "ignore")
         except urllib.error.HTTPError as ex:
             if ex.code == 429:
-                RATE_LIMIT_HITS[0] += 1     # OSM is throttling us — track it
+                RATE_LIMIT_HITS[0] += 1     # OSM throttling us
             if ex.code in (429, 504) and attempt < 3:
                 time.sleep(5 * (attempt + 1)); continue
             raise
@@ -102,7 +97,7 @@ def load_events():
             uk.append({"name": p["eventname"], "long": p["EventLongName"],
                        "loc": p.get("EventLocation", ""), "lat": lat, "lon": lon})
     hav = HAVANT[0]
-    north = sorted([e for e in uk if e["lat"] >= hav], key=lambda e: e["lat"])   # Havant -> north
+    north = sorted([e for e in uk if e["lat"] >= hav], key=lambda e: e["lat"])   # Havant northward
     south = sorted([e for e in uk if e["lat"] < hav], key=lambda e: -e["lat"])    # then southern outliers
     ordered = north + south
     for i, e in enumerate(ordered):
@@ -122,7 +117,7 @@ def relation_course(lat, lon, name):
         if "parkrun" not in nm and name not in nm:
             continue
         ways = [[(g["lat"], g["lon"]) for g in (m.get("geometry") or [])] for m in el.get("members", [])]
-        chain = assemble(ways)                       # proper way-chaining -> trustworthy length
+        chain = assemble(ways)                       # way-chaining for a trustworthy length
         if len(chain) < 2 or min(H(lat, lon, p[0], p[1]) for p in chain) > 500:
             continue
         L = length(chain)
@@ -130,12 +125,11 @@ def relation_course(lat, lon, name):
             best = (el["tags"]["name"], L, chain)
     return best
 
-CACHE_TTL_S = 30 * 86400   # reuse a cached trace page for 30 days, then re-fetch (new OSM traces land eventually)
+CACHE_TTL_S = 30 * 86400   # reuse a cached trace page for 30 days, then re-fetch
 
 def _trace_cache_file(name, half_m, page):
-    """Cache path keyed on the ACTUAL request (event + search radius + page). Encoding half_m means
-    that if the search radius ever changes we re-fetch rather than silently reuse a different-bbox
-    response — so a persisted cache can't feed stale geometry to a tweaked algorithm."""
+    """Cache path keyed on event + search radius + page, so a changed radius re-fetches rather than
+    reusing a different-bbox response."""
     return os.path.join(TRACECACHE, f"{name}_h{int(half_m)}_p{page}.gpx")
 
 def trace_points(name, lat, lon, half_m=900, max_pages=5):
@@ -148,14 +142,14 @@ def trace_points(name, lat, lon, half_m=900, max_pages=5):
         txt = None
         if os.path.exists(cf) and (time.time() - os.path.getmtime(cf)) < CACHE_TTL_S:
             cached = open(cf, errors="ignore").read()
-            if "<gpx" in cached:                 # ignore a poisoned/partial cached body -> re-fetch
+            if "<gpx" in cached:                 # ignore a poisoned/partial cached body
                 txt = cached
         if txt is None:
             try:
                 txt = _get(f"{OSM_TRACKPOINTS}?bbox={bbox}&page={p}", timeout=60)
             except Exception:
                 break
-            if txt and "<gpx" in txt:            # only persist a VALID gpx body (never an error page)
+            if txt and "<gpx" in txt:            # persist only a valid gpx body
                 open(cf, "w").write(txt)
         n = 0
         for m in re.finditer(r'<trkpt lat="([\-\d.]+)" lon="([\-\d.]+)"[^>]*>(.*?)</trkpt>', txt, re.S):
@@ -169,14 +163,12 @@ def trace_points(name, lat, lon, half_m=900, max_pages=5):
                 continue
             pts.append((float(m.group(1)), float(m.group(2)), t))
         if n < 5000:
-            break          # last page reached -> stop (kind to OSM)
+            break          # last page reached
     return pts
-
-# NEW: Average multiple Saturday-09:00 traces for improved accuracy
 
 def trace_courses_multi(name, lat, lon):
     pts = trace_points(name, lat, lon)
-    # Group by date: Saturday, local 09:00..09:45, anchored within 150m of the start
+    # group by date: Saturday/Christmas/New-Year, local 09:00-09:45, anchored within 150m of the start
     traces = {}
     for la, lo, t in pts:
         ldt = local(t)
@@ -200,7 +192,7 @@ def trace_courses_multi(name, lat, lon):
         valid_traces.append([(p[0], p[1]) for p in path])
     if not valid_traces:
         return None
-    # Average the traces pointwise (simple mean for each index)
+    # pointwise mean across traces
     minlen = min(len(t) for t in valid_traces)
     avg_path = []
     for i in range(minlen):
@@ -208,16 +200,14 @@ def trace_courses_multi(name, lat, lon):
         los = [t[i][1] for t in valid_traces]
         avg_path.append((sum(las)/len(las), sum(los)/len(los)))
     avg_len = length(avg_path)
-    # Use the first date for metadata
     first_date = list(traces.keys())[0]
     return avg_len, avg_path, first_date
 
 def trace_course(name, lat, lon):
-    # Try multi-trace averaging first
     res = trace_courses_multi(name, lat, lon)
     if res:
         return res
-    # Fallback: single trace (original logic)
+    # fallback: single trace
     pts = trace_points(name, lat, lon)
     win = []
     for la, lo, t in pts:
@@ -240,10 +230,8 @@ def trace_course(name, lat, lon):
 
 _VERSION = [None]
 def algo_version():
-    """The algorithm version that built this data = the latest git release tag (e.g. 'v1.2.0'),
-    'dev' if untagged/unavailable. Stamped into every GPX + index entry as provenance, so a later
-    run (or the AI) can tell which version produced a course and re-fetch ones built by a buggy one.
-    Cached — never shells git per-route."""
+    """Latest git release tag (e.g. 'v1.2.0'), or 'dev' if untagged. Stamped into every GPX + index
+    entry as provenance so a later run can tell which version built a course. Cached."""
     if _VERSION[0] is None:
         try:
             out = subprocess.run(["git", "describe", "--tags", "--abbrev=0"],
@@ -265,79 +253,64 @@ def write_gpx(name, longname, pts, source):
         f.write('  </trkseg></trk>\n</gpx>\n')
 
 def build_one(ev):
-    """Split of concerns:
-      * routes/<name>.gpx holds ONLY successful course geometry — that's all the APP needs.
-      * index.json holds the full detailed log INCLUDING FAILURES — that's what the AI needs to
-        improve the script next time (relation_m + trace_m + status, no heavy geometry needed).
-    Per event:
-      success: in-tolerance (4.8-5.2km) course -> writes routes/<name>.gpx. A real 09:00 GPS trace
-               is the TRUE course and WINS over a relation; a relation-sourced success is shipped
-               but flagged provisional:true (curated line, not GPS-verified) so the AI can upgrade it.
-      failed:  a relation/trace was found but off-tolerance (sane band) -> NO file; rich diagnostic
-               in index.json (e.g. ~2.5km = likely ONE LAP of a 2-lap parkrun -> double it)
-      gap:     nothing usable found
-    Every entry records relation_m AND trace_m (what each source measured) for maximum AI context."""
+    """Resolve one parkrun. Returns a rich dict (status success/failed/gap + diagnostics) that IS the
+    index.json schema. routes/<name>.gpx holds only successful geometry (for the app); index.json logs
+    every attempt incl. relation_m/trace_m (for the AI). A real 09:00 GPS trace is the true course and
+    wins over a relation; relation successes ship provisional:true (curated, not GPS-verified)."""
     name, lat, lon = ev["name"], ev["lat"], ev["lon"]
     rel = relation_course(lat, lon, name)        # (relname, dist, chain) or None
     tr = trace_course(name, lat, lon)            # (dist, pts, date) or None
     diag = {"relation_m": round(rel[1]) if rel else None,
             "trace_m": round(tr[0]) if tr else None}
 
-    # Quality hierarchy: a real Saturday-09:00 GPS trace is the TRUE course (what runners actually
-    # ran), so it WINS over a relation even when both are in-tolerance. An OSM relation is a curated
-    # line that merely *measures* ~5k — trustworthy enough to ship, but PROVISIONAL: flagged so the
-    # AI stays suspicious of non-GPS data and upgrades it to a real trace once coverage matures.
-    if tr and REL_LO <= tr[0] <= REL_HI:          # SUCCESS via real 09:00 GPS trace (TRUSTED)
+    if tr and REL_LO <= tr[0] <= REL_HI:          # success: real 09:00 GPS trace (trusted)
         write_gpx(name, ev["long"], tr[1], "osm_9am_trace")
         return {"source": "osm_9am_trace", "distance_m": round(tr[0]), "status": "success",
                 "provisional": False, "trace_date": tr[2], **diag}
-    
-    # NEW: Try doubling a half-distance trace (2-lap parkruns where only GPS traces exist)
+
+    # double a half-distance trace (2-lap course, GPS only)
     if tr and HALF_REL_LO <= tr[0] <= HALF_REL_HI:
-        doubled_path = tr[1] + tr[1]   # geometry: two laps for the app to draw
-        doubled_len = 2 * length(tr[1])  # distance: TWO LAPS
+        doubled_path = tr[1] + tr[1]
+        doubled_len = 2 * length(tr[1])
         if REL_LO <= doubled_len <= REL_HI:
             write_gpx(name, ev["long"], doubled_path, "osm_9am_trace_doubled")
             return {"source": "osm_9am_trace_doubled", "distance_m": round(doubled_len), "status": "success",
                     "provisional": False, "trace_date": tr[2], **diag}
-    if rel and REL_LO <= rel[1] <= REL_HI:        # SUCCESS via OSM relation (PROVISIONAL — not GPS-verified)
+    if rel and REL_LO <= rel[1] <= REL_HI:        # success: OSM relation (provisional)
         write_gpx(name, ev["long"], rel[2], "osm_relation")
         return {"source": "osm_relation", "distance_m": round(rel[1]), "status": "success",
                 "provisional": True, **diag}
 
-    # NEW: Try doubling a half-distance relation
+    # double a half-distance relation. Use 2*length(lap), NOT length(lap+lap): concatenation adds a
+    # phantom jump from lap end back to start, overshooting and losing real 2-lap courses.
     if rel and HALF_REL_LO <= rel[1] <= HALF_REL_HI:
-        doubled_chain = rel[2] + rel[2]   # geometry: two laps for the app to draw
-        doubled_len = 2 * length(rel[2])  # distance: TWO LAPS. NOT length(chain) — that adds a
-                                          # phantom jump from the lap's end back to its start,
-                                          # overshooting and losing real 2-lap courses.
+        doubled_chain = rel[2] + rel[2]
+        doubled_len = 2 * length(rel[2])
         if REL_LO <= doubled_len <= REL_HI:
             write_gpx(name, ev["long"], doubled_chain, "osm_relation_doubled")
             return {"source": "osm_relation_doubled", "distance_m": round(doubled_len), "status": "success",
                     "provisional": True, **diag}
 
-    # Not a success -> no course geometry. Drop any stale success GPX from a prior run.
+    # not a success: no geometry. drop any stale success GPX from a prior run.
     stale = os.path.join(ROUTES, f"{name}.gpx")
     if os.path.exists(stale):
         os.remove(stale)
 
-    cands = []                                    # FAILED: off-tolerance find -> index.json log only
+    cands = []                                    # failed: off-tolerance find -> index.json log only
     if rel and SANE_LO <= rel[1] <= SANE_HI:
         cands.append(("osm_relation_offdist", rel[1], None))
     if tr  and SANE_LO <= tr[0]  <= SANE_HI:
         cands.append(("osm_9am_trace_offdist", tr[0], tr[2]))
 
-    # If a relation was a candidate for doubling (i.e., in HALF_REL_LO/HI range)
-    # and its *doubled* length is in SANE_LO/HI but NOT REL_LO/HI (i.e., it failed to be a success)
-    # then add it to cands for diagnostic logging.
+    # relations whose doubled length is sane but out of tolerance -> diagnostic
     if rel and HALF_REL_LO <= rel[1] <= HALF_REL_HI:
-        doubled_len = 2 * length(rel[2])  # two laps (see above) — not the seam-inflated concat length
+        doubled_len = 2 * length(rel[2])
         if SANE_LO <= doubled_len <= SANE_HI and not (REL_LO <= doubled_len <= REL_HI):
             cands.append(("osm_relation_doubled_offdist", doubled_len, None))
-    
-    # Similarly for half-distance traces that fail to double into tolerance
+
+    # half-distance traces that fail to double into tolerance
     if tr and HALF_REL_LO <= tr[0] <= HALF_REL_HI:
-        doubled_len = 2 * length(tr[1])  # two laps
+        doubled_len = 2 * length(tr[1])
         if SANE_LO <= doubled_len <= SANE_HI and not (REL_LO <= doubled_len <= REL_HI):
             cands.append(("osm_9am_trace_doubled_offdist", doubled_len, tr[2]))
 
@@ -348,10 +321,10 @@ def build_one(ev):
             r["trace_date"] = date
         return r
 
-    return {"source": None, "distance_m": None, "status": "gap", **diag}   # GAP (no usable data)
+    return {"source": None, "distance_m": None, "status": "gap", **diag}   # gap: no usable data
 
 def is_locked(entry):
-    """A course is 'accurate/locked' iff cached within the 4.8-5.2km tolerance."""
+    """True iff a course is cached within the 4.8-5.2km tolerance."""
     return bool(entry) and entry.get("distance_m") and REL_LO <= entry["distance_m"] <= REL_HI
 
 def _git(*a):
@@ -363,11 +336,10 @@ def _git(*a):
         return False
 
 def write_coverage(index, events):
-    """Write coverage.json — the live tally that drives the README badge AND (via a push-triggered
-    workflow) the repo description. Called after EACH success so the count tracks in real time,
-    not just at run-end. Always green: every mapped course is a success, however many so far."""
+    """Write coverage.json: the live tally driving the README badge and repo description. Called after
+    each success so the count tracks in real time. Always green: every mapped course is a success."""
     total = len(events)
-    locked = sum(1 for e in events if is_locked(index.get(e["name"]))) 
+    locked = sum(1 for e in events if is_locked(index.get(e["name"])))
     pct = round(100 * locked / total, 1) if total else 0.0
     json.dump({"schemaVersion": 1, "label": "parkruns successfully mapped",
                "message": f"{locked}/{total} ({pct}%)", "color": "brightgreen",
@@ -376,8 +348,7 @@ def write_coverage(index, events):
     return locked, total, pct
 
 def commit_route(name, res):
-    """Push this one resolved route to the repo immediately (real-time, not end-of-run).
-    If main moved under us (e.g. an AI PR merged mid-run), rebase and retry once."""
+    """Push this one resolved route immediately. If main moved under us, rebase and retry once."""
     _git("add", "-A")
     _git("-c", "user.name=cache-bot", "-c", "user.email=cache-bot@users.noreply.github.com",
          "commit", "-m", f"cache: {name} [{res['status']}] ({res['source']}, {res['distance_m']}m)")
@@ -396,16 +367,15 @@ def main():
     index = json.load(open(index_path)) if os.path.exists(index_path) else {}
 
     total = len(events)
-    locked = sum(1 for e in events if is_locked(index.get(e["name"]))) 
+    locked = sum(1 for e in events if is_locked(index.get(e["name"])))
     refine = (locked / total if total else 0.0) >= COVERAGE_REFINE
     print(f"coverage {locked}/{total} ({locked/total:.0%}) within 4.8-5.2km -> "
           f"{'REFINE (re-querying accurate ones too)' if refine else 'GAP-FILL (skipping accurate ones)'}")
 
-    # Candidates: gaps + inaccurate only (or everything, once >=80% accurate). Rotate by
-    # last_tried so a perpetual gap can't hog the budget: never-tried first (Havant->north),
-    # then oldest-tried first.
+    # candidates: gaps + inaccurate (or everything once >=80% accurate). Rotate by last_tried so a
+    # perpetual gap can't hog the budget: never-tried first (Havant->north), then oldest-tried first.
     cands = [e for e in events if refine or not is_locked(index.get(e["name"]))]
-    cands.sort(key=lambda e: ((index.get(e["name"]) or {}).get("last_tried", ""), e["ord"])) 
+    cands.sort(key=lambda e: ((index.get(e["name"]) or {}).get("last_tried", ""), e["ord"]))
     if args.limit:
         cands = cands[:args.limit]
 
@@ -415,7 +385,6 @@ def main():
             res = build_one(ev)
         except Exception as ex:
             print(f"  {ev['name']:<24} ERROR {ex}"); continue
-        # build_one always returns a rich dict (status success/failed/gap + diagnostics).
         entry = {"long": ev["long"], "lat": ev["lat"], "lon": ev["lon"], "last_tried": today,
                  "built_by": algo_version(), **res}
         index[ev["name"]] = entry
@@ -424,23 +393,22 @@ def main():
         tally[st] = tally.get(st, 0) + 1
         print(f"  {ev['name']:<24} {st:<8} {(res.get('source') or '-'):<24} {res.get('distance_m') or ''}")
         if args.commit_each and st == "success":   # real-time: push each course as it locks
-            write_coverage(index, events)           # refresh the badge tally so it rides along in the commit
+            write_coverage(index, events)
             commit_route(ev["name"], res)
-        if RATE_LIMIT_HITS[0] >= MAX_RATE_LIMIT_HITS:   # ban-safety: OSM is throttling us
-            print(f"\nOSM rate-limited us {RATE_LIMIT_HITS[0]}x — stopping this run early to stay safe. "
+        if RATE_LIMIT_HITS[0] >= MAX_RATE_LIMIT_HITS:   # ban-safety: OSM throttling us
+            print(f"\nOSM rate-limited us {RATE_LIMIT_HITS[0]}x - stopping this run early to stay safe. "
                   f"The next scheduled run resumes from here (rotation).")
             break
 
-    # Ban-safety signal for the self-chaining workflow: if OSM throttled us past the breaker,
-    # leave a .throttled marker so the next run backs off (longer delay) instead of chaining
-    # straight back in. Per-run only (gitignored); absent on a clean/healthy run.
+    # ban-safety signal for the self-chaining workflow: leave a .throttled marker (gitignored) so the
+    # next run backs off instead of chaining straight back in. Absent on a clean run.
     throttled = os.path.join(HERE, ".throttled")
     if RATE_LIMIT_HITS[0] >= MAX_RATE_LIMIT_HITS:
         open(throttled, "w").write(str(RATE_LIMIT_HITS[0]))
     elif os.path.exists(throttled):
         os.remove(throttled)
 
-    locked2, _, _ = write_coverage(index, events)   # final sync (also written per-success above)
+    locked2, _, _ = write_coverage(index, events)   # final sync
     print(f"\nprocessed {len(cands)}: {tally['success']} success, {tally['failed']} failed (off-tol diagnostics), "
           f"{tally['gap']} gap. coverage now {locked2}/{total} ({locked2/total:.0%}).")
 

@@ -91,6 +91,10 @@ comments — from the CURRENT build_cache.py shown below, and must match EXACTLY
 "find" isn't unique or doesn't match, the edit is rejected and your WHOLE change is dropped — so keep
 each "find" minimal but include enough surrounding lines to be unambiguous. "replace" is the new text
 for that snippet. You may give several edits; keep them tight, correct, and self-consistent.
+COMMENT STYLE (constitution #10): keep any comments you write MINIMAL and plain-ASCII - no emojis,
+em-dashes, smart quotes or arrows (use -, ->, >=, (c)). Verbose, fancy-punctuation comments are the
+top cause of a later `find` failing to match, and they bloat the prompt. Prefer deleting a comment to
+adding one.
 "version_bump" classifies THIS change by SCOPE/AMBITION:
   - "patch": a small tweak, bugfix, threshold nudge, prune, or refactor.
   - "minor": a meaningful new capability or real coverage/accuracy gain (the usual case).
