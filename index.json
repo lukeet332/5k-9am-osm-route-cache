@@ -1741,8 +1741,9 @@
   "trace_m": null
  },
  "chelmsfordcentral": {
+  "built_by": "v0.2.0",
   "distance_m": 6172,
-  "last_tried": "2026-06-25",
+  "last_tried": "2026-06-26",
   "lat": 51.732577,
   "lon": 0.464945,
   "long": "Chelmsford Central parkrun",
