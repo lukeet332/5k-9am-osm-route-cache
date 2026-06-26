@@ -1436,6 +1436,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "gorleston": {
+  "distance_m": 5053,
+  "last_tried": "2026-06-26",
+  "lat": 52.567806,
+  "lon": 1.73069,
+  "long": "Gorleston Cliffs parkrun",
+  "provisional": true,
+  "relation_m": 5053,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": 4213
+ },
  "grangemoor": {
   "distance_m": null,
   "last_tried": "2026-06-25",
