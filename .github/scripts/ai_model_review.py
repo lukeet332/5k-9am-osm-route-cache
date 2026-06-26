@@ -202,7 +202,9 @@ def main():
 
     prompt = PICKER_PROMPT % {"avail": ", ".join(avail), "tips": TIPS,
                               "current": json.dumps(cur_short), "menu": json.dumps(menu, indent=1)}
-    rec, picker = L.call_role(prompt, "reviewer")    # run the selection on the smart reviewer chain
+    # Run the picker on the AUTHOR chain: its models are big-context (DeepSeek 128k / gemini 1M), and
+    # this picker prompt carries every provider's menu, which overflows an 8k reviewer model.
+    rec, picker = L.call_role(prompt, "author")
     if not isinstance(rec, dict):
         stop("No usable recommendation — keeping current chains.")
     print(f"Picker ({picker['model']}) scouting note: {str(rec.get('scouting',''))[:300]}")
