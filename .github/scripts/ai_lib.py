@@ -33,12 +33,20 @@ ALLOWED = {ALGO_FILE, CONTEXT_FILE, JOURNAL_FILE, BIBLE_FILE}
 # GITHUB_TOKEN); the rest need their key as a repo secret. A provider with no key is simply
 # skipped, so the system always degrades gracefully (worst case: github-models only).
 # The reviewer must stay a DEEP model — it is the safety gate; the fast tier never reviews.
+# Cloudflare Workers AI puts the ACCOUNT ID in its OpenAI-compatible URL — read it from a repo secret
+# at import. If it's unset the base is incomplete, so calls just fail and the provider is skipped
+# gracefully (its key gate + the fallback chain absorb that) — it never hard-breaks the pipeline.
+_CF_ACCOUNT = os.environ.get("CLOUDFLARE_ACCOUNT_ID", "").strip()
 PROVIDERS = {
     "github-models": ("https://models.github.ai/inference", "GH_MODELS_TOKEN"),
     "gemini": ("https://generativelanguage.googleapis.com/v1beta/openai", "GEMINI_API_KEY"),
     "openrouter": ("https://openrouter.ai/api/v1", "OPENROUTER_API_KEY"),
     "groq": ("https://api.groq.com/openai/v1", "GROQ_API_KEY"),
     "mistral": ("https://api.mistral.ai/v1", "MISTRAL_API_KEY"),
+    # More free, no-credit-card, OpenAI-compatible endpoints — widen the menu + fallback chain. A
+    # model that can't deliver strict JSON simply fails the live probe / call and is skipped.
+    "huggingface": ("https://router.huggingface.co/v1", "HF_TOKEN"),
+    "cloudflare": (f"https://api.cloudflare.com/client/v4/accounts/{_CF_ACCOUNT}/ai/v1", "CLOUDFLARE_API_TOKEN"),
 }
 DEFAULT_PRIMARY = {"provider": "github-models", "model": "openai/gpt-4.1"}    # master / deep author
 DEFAULT_FALLBACK = {"provider": "gemini", "model": "gemini-2.5-pro"}          # slave / deep independent reviewer
