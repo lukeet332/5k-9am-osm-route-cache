@@ -1333,8 +1333,9 @@
   "trace_m": null
  },
  "brynbach": {
+  "built_by": "v0.4.0",
   "distance_m": null,
-  "last_tried": "2026-06-25",
+  "last_tried": "2026-06-26",
   "lat": 51.781621,
   "lon": -3.269548,
   "long": "Bryn Bach parkrun",
@@ -1927,8 +1928,9 @@
   "trace_m": null
  },
  "clactonseafront": {
+  "built_by": "v0.4.0",
   "distance_m": null,
-  "last_tried": "2026-06-25",
+  "last_tried": "2026-06-26",
   "lat": 51.781574,
   "lon": 1.142974,
   "long": "Clacton Seafront parkrun",
@@ -4035,8 +4037,9 @@
   "trace_m": 5234
  },
  "harlow": {
+  "built_by": "v0.4.0",
   "distance_m": null,
-  "last_tried": "2026-06-25",
+  "last_tried": "2026-06-26",
   "lat": 51.77766,
   "lon": 0.103624,
   "long": "Harlow parkrun",
@@ -5565,8 +5568,9 @@
   "trace_m": 5092
  },
  "mallardspike": {
+  "built_by": "v0.4.0",
   "distance_m": null,
-  "last_tried": "2026-06-25",
+  "last_tried": "2026-06-26",
   "lat": 51.784666,
   "lon": -2.528555,
   "long": "Mallards Pike parkrun",
@@ -5805,8 +5809,9 @@
   "trace_m": null
  },
  "merseaisland": {
+  "built_by": "v0.4.0",
   "distance_m": null,
-  "last_tried": "2026-06-25",
+  "last_tried": "2026-06-26",
   "lat": 51.79164,
   "lon": 0.99368,
   "long": "Mersea Island parkrun",
@@ -6499,8 +6504,9 @@
   "trace_m": null
  },
  "oxford": {
+  "built_by": "v0.4.0",
   "distance_m": null,
-  "last_tried": "2026-06-25",
+  "last_tried": "2026-06-26",
   "lat": 51.790901,
   "lon": -1.262419,
   "long": "Oxford parkrun",
@@ -8185,8 +8191,9 @@
   "trace_m": null
  },
  "stanborough": {
+  "built_by": "v0.4.0",
   "distance_m": null,
-  "last_tried": "2026-06-25",
+  "last_tried": "2026-06-26",
   "lat": 51.785727,
   "lon": -0.219822,
   "long": "Stanborough parkrun",
