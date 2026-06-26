@@ -107,7 +107,15 @@ def main():
                                'Reply with the JSON {"ok": true} and nothing else.')
             assert isinstance(test, dict)
         except Exception as e:
-            stop(f"Recommended {role} failed live validation ({e.__class__.__name__}) — keeping current.")
+            code = getattr(e, "code", "")
+            body = ""
+            try:
+                if hasattr(e, "read"):
+                    body = e.read().decode("utf-8", "ignore")[:200]
+            except Exception:
+                pass
+            stop(f"Recommended {role} ({new[role]['provider']}/{new[role]['model']}) failed live "
+                 f"validation ({e.__class__.__name__} {code}) {body} — keeping current.")
 
     L.MODEL_CONFIG.write_text(json.dumps({r: new[r] for r in ROLES}, indent=2) + "\n")
     L.emit(changed="true", changed_roles=" & ".join(changed),
