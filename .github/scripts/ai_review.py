@@ -42,6 +42,8 @@ def main():
     if not diff.strip():
         L.done("Empty diff — nothing to review; approving trivially.", approve="true", feedback="no changes")
     prompt = (PROMPT
+              + "\n\n===== CONSTITUTION (AI_CONTEXT_READ_ONLY_BIBLE.md — SUPREME) =====\n"
+              + (L.BIBLE_FILE.read_text(errors="ignore")[:8000] if L.BIBLE_FILE.exists() else "(missing)")
               + "\n\n===== CONTRACT (AI_CONTEXT.md) =====\n" + L.CONTEXT_FILE.read_text(errors="ignore")[:14000]
               + "\n\n===== JOURNAL (past ideas + learnings) =====\n" + L.journal_tail()
               + "\n\n===== OUTCOMES =====\n" + L.outcomes_summary()

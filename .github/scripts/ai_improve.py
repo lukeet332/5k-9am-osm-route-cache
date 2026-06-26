@@ -13,8 +13,12 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import ai_lib as L
 
 PROMPT = """You maintain a Python pipeline that caches UK parkrun 5k courses as GPX, derived ONLY
-from OpenStreetMap. Read the CONTRACT (AI_CONTEXT.md) — binding — then the JOURNAL (your past
-ideas + learnings), the OUTCOMES, and the current ALGORITHM. Propose ONE worthwhile improvement to
+from OpenStreetMap. The CONSTITUTION (AI_CONTEXT_READ_ONLY_BIBLE.md) is the SUPREME LAW — read it
+first and obey it absolutely; it overrides everything else. You may NOT freely edit it: you may only
+*propose* an amendment, and such a PR requires the human owner's approval and never auto-merges, so
+do that rarely and only with strong justification. Then read the CONTRACT (AI_CONTEXT.md) — your
+working doctrine, which you MAY curate (add/remove) within the constitution's bounds — then the
+JOURNAL (your past ideas + learnings), the OUTCOMES, and the current ALGORITHM. Propose ONE worthwhile improvement to
 the deterministic algorithm that genuinely moves us toward the goal — caching ALL parkruns at ~5k —
 by raising the dual truth metric (coverage AND closeness-to-5k), WITHOUT violating any hard invariant.
 
@@ -41,8 +45,11 @@ If "changes" is empty (nothing worth changing), use "patch".
 "content" is the entire file, not a diff. You SHOULD also APPEND a dated entry to JOURNAL.md (return
 the whole file with your entry added at the END: date, the idea, why from the OUTCOMES, what you
 changed) so future weeks build on it. You MAY append a one-line durable learning under
-AI_CONTEXT.md's "## Learnings (appended by the bot)" section. Only ever touch build_cache.py,
-JOURNAL.md, and AI_CONTEXT.md."""
+AI_CONTEXT.md's "## Learnings (appended by the bot)" section. Normally only touch build_cache.py,
+JOURNAL.md, and AI_CONTEXT.md. You MAY also propose an amendment to the constitution
+(AI_CONTEXT_READ_ONLY_BIBLE.md) — but only rarely and with strong justification, knowing it will NOT
+auto-merge and needs the human owner's explicit approval. NEVER edit selftest.py or anything under
+.github/ (the safety pipeline)."""
 
 
 def main():
@@ -50,6 +57,8 @@ def main():
     if not any(os.environ.get(cfg[r]["api_key_env"], "").strip() for r in ("primary", "fallback")):
         L.done("No model credentials — skipping (no changes).")
     prompt = (PROMPT
+              + "\n\n===== CONSTITUTION (AI_CONTEXT_READ_ONLY_BIBLE.md — SUPREME, obey absolutely) =====\n"
+              + (L.BIBLE_FILE.read_text(errors="ignore")[:8000] if L.BIBLE_FILE.exists() else "(missing)")
               + "\n\n===== CONTRACT (AI_CONTEXT.md) =====\n" + L.CONTEXT_FILE.read_text(errors="ignore")[:14000]
               + "\n\n===== JOURNAL (past ideas + learnings) =====\n" + L.journal_tail()
               + "\n\n===== OUTCOMES =====\n" + L.outcomes_summary()

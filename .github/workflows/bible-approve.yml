@@ -1,0 +1,41 @@
+name: Approve a constitution change
+
+# The human owner approves a constitution (AI_CONTEXT_READ_ONLY_BIBLE.md) amendment by commenting
+# on the PR with a line that BEGINS with `/approve-bible`. Only @lukeet332 can do this. On approval
+# it drops the needs-human-approval block and adds `automerge` via the BOT_PAT — and because that
+# label is added by a real-user PAT (not GITHUB_TOKEN), the `labeled` event actually triggers
+# auto-merge.yml, which then merges once CI is green.
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  approve:
+    # Must be a PR comment, authored by the owner, that STARTS with the approval command.
+    # (startsWith is key: the reviewer's instruction comment mentions `/approve-bible` mid-sentence,
+    # so it never matches — only the owner's deliberate command does.)
+    if: >
+      github.event.issue.pull_request &&
+      github.event.comment.user.login == 'lukeet332' &&
+      startsWith(github.event.comment.body, '/approve-bible')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Unblock the PR -> auto-merge
+        env:
+          GH_TOKEN: ${{ secrets.BOT_PAT }}        # BOT_PAT so the 'labeled' event triggers auto-merge.yml
+          PR: ${{ github.event.issue.number }}
+        run: |
+          set -euo pipefail
+          # Only act if the PR is actually awaiting human approval (don't touch unrelated PRs).
+          if gh pr view "$PR" --json labels --jq '.labels[].name' | grep -qx 'needs-human-approval'; then
+            gh pr edit "$PR" --remove-label needs-human-approval
+            gh pr edit "$PR" --add-label automerge
+            gh pr comment "$PR" --body "✅ Constitution amendment approved by @lukeet332 — unblocking and handing to auto-merge."
+          else
+            echo "PR #$PR is not awaiting human approval; ignoring."
+          fi
