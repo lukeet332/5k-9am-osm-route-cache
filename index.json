@@ -974,6 +974,19 @@
   "source": null,
   "status": "gap"
  },
+ "evesham": {
+  "distance_m": 5034,
+  "last_tried": "2026-06-26",
+  "lat": 52.090191,
+  "lon": -1.958122,
+  "long": "Evesham parkrun",
+  "provisional": false,
+  "relation_m": 5008,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2016-11-12",
+  "trace_m": 5034
+ },
  "felixstowe": {
   "distance_m": 4987,
   "last_tried": "2026-06-25",
