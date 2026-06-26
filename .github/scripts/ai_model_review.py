@@ -20,12 +20,13 @@ right now: %(avail)s.
   its context in one prompt, so it is CONTEXT-BOUND. Pick the SMARTEST free code/reasoning model whose
   free INPUT window comfortably fits that prompt with room to grow (see TOKEN CAPACITY). Capability is
   maximised AMONG models that fit — fitting the budget is the hard gate.
-- SLAVE reviewer ("fallback"): the safety gate + critic — AND it runs THIS weekly model-selection. It
-  reviews the author's DIFF (which can be large) and reads the model menu, so it needs a COMFORTABLE
-  context window too (aim for >=32k): an 8k-capped model becomes the pipeline's BOTTLENECK downstream of
-  the 1M-context author. Pick the DEEPEST, smartest free reasoning model WITH a healthy window, from a
-  DIFFERENT provider than the master for a genuinely independent check. Favour reasoning depth — but do
-  NOT pick an 8k-capped model (e.g. github-models) unless nothing bigger is free.
+- SLAVE reviewer ("fallback"): the safety gate + critic; it also runs THIS selection. It reviews the
+  author's DIFF (only the CHANGED lines — on a ~5k-token algorithm a real change is small, so an 8k
+  window is almost always enough) and reads the model menu. Pick the DEEPEST, smartest free reasoning
+  model from a DIFFERENT provider than the master for an independent check; an 8k model (e.g.
+  github-models gpt-4.1) is perfectly fine — a bigger window is a mild plus, NOT a requirement. (If a
+  diff ever exceeds the reviewer's window the pipeline flags it to the human instead of failing
+  silently, so don't over-optimise for context size — favour reasoning quality + reliability.)
 - FAST ("fast"): a fast, cheap model (Flash-class) for trivial delegated subtasks only.
 
 OBJECTIVE: pick the SMARTEST master + reviewer that STILL FIT within the free request limits —
@@ -38,9 +39,9 @@ HARD CONSTRAINTS:
   INPUT limit must be at least ~2x that, for growth headroom. GitHub Models' free tier caps input at
   ~8000 tokens for EVERY model — too small for the master, so NEVER pick a github-models model as
   master. A big-context free model (e.g. Gemini Flash ~1M, or a free OpenRouter model with a large
-  window) fits. The REVIEWER needs a healthy window too (it reviews diffs that can be large AND runs
-  this selection): prefer >=~32k context; an 8k model (e.g. github-models) is a LAST-RESORT reviewer
-  because it bottlenecks the pipeline downstream of the author.
+  window) fits. The REVIEWER sees only a DIFF (rarely more than a few k tokens on this codebase), so an
+  8k model (e.g. github-models gpt-4.1) is fine — a bigger window is a mild plus, not required. If a
+  diff ever exceeds the reviewer's window the pipeline flags it to the human (it never silently merges).
 - This same configuration runs across TWO repositories that may, by chance, pick the SAME models —
   so each model's FREE request quota must comfortably cover BOTH repos' combined usage (a few
   automated calls per week each). Reject any model whose free tier is too tight for that.
