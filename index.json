@@ -560,6 +560,17 @@
   "status": "failed",
   "trace_m": null
  },
+ "brunswickpark": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.556155,
+  "lon": -2.009344,
+  "long": "Brunswick Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "brynaman": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1227,6 +1238,18 @@
   "status": "success",
   "trace_m": null
  },
+ "ferrymeadows": {
+  "distance_m": 5089,
+  "last_tried": "2026-06-26",
+  "lat": 52.565563,
+  "lon": -0.308132,
+  "long": "Ferry Meadows parkrun",
+  "provisional": true,
+  "relation_m": 5089,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
+ },
  "finsbury": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1677,6 +1700,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "hastingshighschool": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.53526,
+  "lon": -1.356127,
+  "long": "Hastings High School parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "havant": {
   "distance_m": 5008,
   "last_tried": "2026-06-25",
@@ -2020,6 +2054,17 @@
   "status": "success",
   "trace_m": null
  },
+ "kingsburywater": {
+  "distance_m": 2881,
+  "last_tried": "2026-06-26",
+  "lat": 52.561983,
+  "lon": -1.698718,
+  "long": "Kingsbury Water parkrun",
+  "relation_m": 2881,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
+ },
  "kingston": {
   "distance_m": 4982,
   "last_tried": "2026-06-25",
@@ -2321,6 +2366,28 @@
   "long": "Malling Rec parkrun",
   "source": null,
   "status": "gap"
+ },
+ "manorfieldwhittlesey": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.551869,
+  "lon": -0.125941,
+  "long": "Manor Field parkrun, Whittlesey",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "march": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.550069,
+  "lon": 0.086208,
+  "long": "March parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "margate": {
   "distance_m": null,
@@ -3403,6 +3470,17 @@
   "long": "Sutcliffe parkrun",
   "source": null,
   "status": "gap"
+ },
+ "suttonpark": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.558716,
+  "lon": -1.844552,
+  "long": "Sutton Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "swanley": {
   "distance_m": null,
