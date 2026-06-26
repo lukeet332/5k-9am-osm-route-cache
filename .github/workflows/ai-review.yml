@@ -61,22 +61,29 @@ jobs:
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
         run: python .github/scripts/ai_review.py
 
-      # ---- approved: hand to auto-merge, UNLESS it amends the constitution (human gate) ----
-      - name: Approve -> automerge (or human-gate a constitution change)
-        if: steps.guard.outputs.rounds < 3 && steps.rev.outputs.approve == 'true'
+      # ---- constitution amendment: ALWAYS human-gated, WITH the reviewer's recommendation ----
+      - name: Constitution change -> human gate (with AI recommendation)
+        if: steps.guard.outputs.rounds < 3 && steps.rev.outputs.bible_touched == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.BOT_PAT }}
+          REC: ${{ steps.rev.outputs.recommend }}
+          ADVICE: ${{ steps.rev.outputs.advice }}
+          REVIEWER: ${{ steps.rev.outputs.reviewer }}
+        run: |
+          # It must NEVER auto-merge: block it and tag the owner with the reviewer's recommendation.
+          gh pr edit "$PR" --add-label needs-human-approval --remove-label needs-ai-review --remove-label automerge || true
+          DIFF=$(git diff origin/main...HEAD -- AI_CONTEXT_READ_ONLY_BIBLE.md | head -150)
+          if [ "$REC" = "approve" ]; then VERDICT="✅ **APPROVE** — the reviewer thinks this amendment is sound"; else VERDICT="⛔ **DO NOT APPROVE** — the reviewer recommends against this amendment"; fi
+          gh pr comment "$PR" --body "$(printf '🔒 **Constitution change — YOUR manual approval is required**\n\n@lukeet332 — this PR edits the read-only constitution (`AI_CONTEXT_READ_ONLY_BIBLE.md`), so it will **NOT** auto-merge on its own. It stays blocked until you act.\n\n### 🤖 AI reviewer (`%s`) recommendation: %s\n> %s\n\n_(Advisory only — the decision is yours.)_\n\n## 👉 ACTION NEEDED: to approve & release this for auto-merge, reply with a comment that **begins** with:\n\n```\n/approve-bible\n```\n\nDo nothing and it stays blocked indefinitely. The proposed amendment:\n\n```diff\n%s\n```' "$REVIEWER" "$VERDICT" "$ADVICE" "$DIFF")"
+
+      # ---- approved (normal, non-constitution PR): hand to auto-merge ----
+      - name: Approve -> automerge
+        if: steps.guard.outputs.rounds < 3 && steps.rev.outputs.bible_touched != 'true' && steps.rev.outputs.approve == 'true'
         env:
           GH_TOKEN: ${{ secrets.BOT_PAT }}
         run: |
           gh pr comment "$PR" --body "✅ AI review (\`${{ steps.rev.outputs.reviewer }}\`) approved: ${{ steps.rev.outputs.feedback }}"
-          if git diff origin/main...HEAD --name-only | grep -qx 'AI_CONTEXT_READ_ONLY_BIBLE.md'; then
-            # This PR edits the read-only CONSTITUTION -> it must NEVER auto-merge. Block it and tag
-            # the human owner; only their `/approve-bible` comment (bible-approve.yml) can unblock it.
-            gh pr edit "$PR" --add-label needs-human-approval --remove-label needs-ai-review --remove-label automerge || true
-            DIFF=$(git diff origin/main...HEAD -- AI_CONTEXT_READ_ONLY_BIBLE.md | head -150)
-            gh pr comment "$PR" --body "$(printf '🔒 **Constitution change — YOUR manual approval is required**\n\n@lukeet332 — this PR edits the read-only constitution (`AI_CONTEXT_READ_ONLY_BIBLE.md`), so it will **NOT** auto-merge on its own, even though the AI reviewer is satisfied. It will sit here blocked until you act.\n\n## 👉 ACTION NEEDED: to approve & release this for auto-merge, reply with a comment that **begins** with:\n\n```\n/approve-bible\n```\n\nLeave it (or do nothing) and it stays blocked indefinitely. Review the proposed amendment first:\n\n```diff\n%s\n```' "$DIFF")"
-          else
-            gh pr edit "$PR" --add-label automerge --remove-label needs-ai-review
-          fi
+          gh pr edit "$PR" --add-label automerge --remove-label needs-ai-review
 
       # ---- rejected: author revises on the same branch (re-triggers this review) ----
       - name: Reject -> author revises
