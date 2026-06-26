@@ -7,7 +7,10 @@ name: AI maintenance (weekly improvement)
 # it cannot merge until a SECOND AI approves it and CI is green.
 on:
   schedule:
-    - cron: "0 6 * * 0"      # 06:00 UTC every Sunday
+    - cron: "0 6 * * *"      # DAILY 06:00 UTC backstop (build-out phase). The PRIMARY driver is
+                             # event-driven: the cache workflow triggers this after each full sweep,
+                             # so the algorithm improves against fresh data ~as often as feasible.
+                             # >>> Dial back to weekly ("0 6 * * 0") once coverage matures. <<<
   workflow_dispatch:
 
 permissions:
