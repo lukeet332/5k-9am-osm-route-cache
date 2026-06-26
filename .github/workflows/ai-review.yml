@@ -73,7 +73,7 @@ jobs:
             # the human owner; only their `/approve-bible` comment (bible-approve.yml) can unblock it.
             gh pr edit "$PR" --add-label needs-human-approval --remove-label needs-ai-review --remove-label automerge || true
             DIFF=$(git diff origin/main...HEAD -- AI_CONTEXT_READ_ONLY_BIBLE.md | head -150)
-            gh pr comment "$PR" --body "$(printf '🔒 **Constitution change — manual approval required**\n\n@lukeet332 this PR edits the read-only constitution (`AI_CONTEXT_READ_ONLY_BIBLE.md`), so it will **not** auto-merge even though the AI reviewer is satisfied. Review the proposed amendment below; to allow it, reply with a comment that **begins** with `/approve-bible`.\n\n```diff\n%s\n```' "$DIFF")"
+            gh pr comment "$PR" --body "$(printf '🔒 **Constitution change — YOUR manual approval is required**\n\n@lukeet332 — this PR edits the read-only constitution (`AI_CONTEXT_READ_ONLY_BIBLE.md`), so it will **NOT** auto-merge on its own, even though the AI reviewer is satisfied. It will sit here blocked until you act.\n\n## 👉 ACTION NEEDED: to approve & release this for auto-merge, reply with a comment that **begins** with:\n\n```\n/approve-bible\n```\n\nLeave it (or do nothing) and it stays blocked indefinitely. Review the proposed amendment first:\n\n```diff\n%s\n```' "$DIFF")"
           else
             gh pr edit "$PR" --add-label automerge --remove-label needs-ai-review
           fi
