@@ -1498,6 +1498,18 @@
   "source": null,
   "status": "gap"
  },
+ "harlestonmagpies": {
+  "distance_m": 5002,
+  "last_tried": "2026-06-26",
+  "lat": 52.384367,
+  "lon": 1.295457,
+  "long": "Harleston Magpies parkrun",
+  "provisional": true,
+  "relation_m": 5002,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": 5234
+ },
  "harlow": {
   "distance_m": null,
   "last_tried": "2026-06-25",
