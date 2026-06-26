@@ -192,12 +192,15 @@ def trace_courses_multi(name, lat, lon):
         valid_traces.append([(p[0], p[1]) for p in path])
     if not valid_traces:
         return None
-    # pointwise mean across traces
-    minlen = min(len(t) for t in valid_traces)
+    # prefer recent traces (last 2 years) to track current course shape; older traces may be obsolete
+    cutoff = datetime.date.today() - datetime.timedelta(days=730)
+    recent = [t for t in valid_traces if datetime.date.fromisoformat(list(traces.keys())[0]) >= cutoff]
+    pool = recent if len(recent) >= 2 else valid_traces
+    minlen = min(len(t) for t in pool)
     avg_path = []
     for i in range(minlen):
-        las = [t[i][0] for t in valid_traces]
-        los = [t[i][1] for t in valid_traces]
+        las = [t[i][0] for t in pool]
+        los = [t[i][1] for t in pool]
         avg_path.append((sum(las)/len(las), sum(los)/len(los)))
     avg_len = length(avg_path)
     first_date = list(traces.keys())[0]
