@@ -55,6 +55,25 @@ jobs:
           done
           echo "::error::author could not pass the self-test after retries — no PR opened."; exit 1
 
+      # GUARANTEED MEMORY: record this change in JOURNAL.md so future runs know what's been tried and
+      # don't re-propose it (the churn we saw — doubling re-proposed because the journal was empty). If
+      # the author already wrote a (richer) entry, keep it; otherwise append a terse one from the
+      # summary. Only when there's a real code change — never create a JOURNAL-only PR.
+      - name: Record a JOURNAL entry (accumulated memory)
+        if: steps.improve.outcome == 'success'
+        run: |
+          if git status --porcelain JOURNAL.md | grep -q .; then
+            echo "author already journaled — keeping its entry."
+          elif git status --porcelain build_cache.py AI_CONTEXT.md | grep -q .; then
+            printf '\n### %s — %s (%s, %s)\n- %s\n' "$(date -u +%Y-%m-%d)" \
+              "${{ steps.improve.outputs.bot_label || 'ai-bot' }}" \
+              "${{ steps.improve.outputs.model_used }}" "${{ steps.improve.outputs.version_bump || 'patch' }}" \
+              "${{ steps.improve.outputs.summary }}" >> JOURNAL.md
+            echo "appended a JOURNAL entry from the summary."
+          else
+            echo "no code change — nothing to journal."
+          fi
+
       - name: Open improvement PR (needs AI review)
         uses: peter-evans/create-pull-request@v8
         with:
@@ -64,6 +83,7 @@ jobs:
           add-paths: |
             build_cache.py
             AI_CONTEXT.md
+            JOURNAL.md
           commit-message: "chore: AI cache-algorithm improvement (${{ steps.improve.outputs.bot_label || 'ai-bot' }})"
           title: "🤖 ${{ steps.improve.outputs.bot_label || 'ai-bot' }}: cache algorithm improvement"
           labels: needs-ai-review
