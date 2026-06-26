@@ -393,6 +393,28 @@ def is_locked(entry):
     """True iff a course is cached within the 4.8-5.2km tolerance."""
     return bool(entry) and entry.get("distance_m") and REL_LO <= entry["distance_m"] <= REL_HI
 
+def best_lap_n(length_m):
+    """Integer lap count 1..6 putting N*length closest to 5k (for N-lap parkruns)."""
+    return min(range(1, 7), key=lambda n: abs(n * length_m - TARGET))
+
+def audit_recoverable(index):
+    """Pure, offline self-audit (no network, tiny output): non-success entries whose stored
+    relation_m/trace_m, at the best integer lap count, lands in the 4800-5200 success band - i.e.
+    current code SHOULD already map them (a stale entry) or a best-integer-N lap rule would. Surfaces
+    regressions like the stale 2-lap relations instead of letting them sit silently as 'failed'.
+    Returns a compact list [(name, kind, value_m, n, n*value)]; main() prioritises these in the sweep."""
+    out = []
+    for name, e in index.items():
+        if e.get("status") == "success":
+            continue
+        for kind in ("relation_m", "trace_m"):
+            v = e.get(kind)
+            if v and REL_LO <= best_lap_n(v) * v <= REL_HI:
+                n = best_lap_n(v)
+                out.append((name, kind, v, n, n * v))
+                break
+    return out
+
 def _git(*a):
     try:
         subprocess.run(["git", *a], cwd=HERE, check=True, capture_output=True)
@@ -438,10 +460,22 @@ def main():
     print(f"coverage {locked}/{total} ({locked/total:.0%}) within 4.8-5.2km -> "
           f"{'REFINE (re-querying accurate ones too)' if refine else 'GAP-FILL (skipping accurate ones)'}")
 
+    # self-audit (pure, offline): entries the current code should be able to map but that sit as
+    # failed/gap (stale entries, or N-lap cases). Prioritise them so they self-heal promptly instead
+    # of waiting behind never-tried events. This is how the stale 2-lap regression surfaces + fixes.
+    recoverable = audit_recoverable(index)
+    rec_names = {r[0] for r in recoverable}
+    if recoverable:
+        ex = ", ".join(f"{n} {k.split('_')[0]}x{nn}={t}" for n, k, v, nn, t in recoverable[:8])
+        print(f"AUDIT: {len(recoverable)} non-success entries look recoverable (best lap-N in band) -> "
+              f"prioritising for re-eval. e.g. {ex}")
+
     # candidates: gaps + inaccurate (or everything once >=80% accurate). Rotate by last_tried so a
-    # perpetual gap can't hog the budget: never-tried first (Havant->north), then oldest-tried first.
+    # perpetual gap can't hog the budget. Audit-flagged recoverables jump the queue (they are near-
+    # certain wins), then never-tried (Havant->north), then oldest-tried first.
     cands = [e for e in events if refine or not is_locked(index.get(e["name"]))]
-    cands.sort(key=lambda e: ((index.get(e["name"]) or {}).get("last_tried", ""), e["ord"]))
+    cands.sort(key=lambda e: (e["name"] not in rec_names,
+                              (index.get(e["name"]) or {}).get("last_tried", ""), e["ord"]))
     if args.limit:
         cands = cands[:args.limit]
 
