@@ -2740,6 +2740,17 @@
   "source": null,
   "status": "gap"
  },
+ "sixfieldsupton": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.228528,
+  "lon": -0.942236,
+  "long": "Sixfields Upton parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "sizewell": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -3197,6 +3208,18 @@
   "long": "Uckfield parkrun",
   "source": null,
   "status": "gap"
+ },
+ "universityofnorthampton": {
+  "distance_m": 5048,
+  "last_tried": "2026-06-26",
+  "lat": 52.230017,
+  "lon": -0.886741,
+  "long": "University of Northampton parkrun",
+  "provisional": true,
+  "relation_m": 5048,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
  },
  "universityparks": {
   "distance_m": null,
