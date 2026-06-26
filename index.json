@@ -1601,6 +1601,17 @@
   "status": "failed",
   "trace_m": null
  },
+ "comber": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.549593,
+  "lon": -5.740415,
+  "long": "Comber parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "concord": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -2223,6 +2234,17 @@
   "long": "Five Arches parkrun",
   "source": null,
   "status": "gap"
+ },
+ "flattslane": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.543872,
+  "lon": -1.151741,
+  "long": "Flatts Lane parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "fleetwoodpromenade": {
   "distance_m": null,
@@ -5809,6 +5831,17 @@
   "trace_date": "2024-11-23",
   "trace_m": 4207
  },
+ "stewart": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.53809,
+  "lon": -1.203561,
+  "long": "Stewart parkrun, Middlesbrough",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "sthelens": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -6077,6 +6110,17 @@
   "status": "failed",
   "trace_date": "2023-10-28",
   "trace_m": 2831
+ },
+ "thedemesnes": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.540052,
+  "lon": -1.919779,
+  "long": "The Demesnes parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "theleas": {
   "distance_m": null,
@@ -6405,6 +6449,17 @@
   "source": null,
   "status": "gap"
  },
+ "wallace": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.516511,
+  "lon": -6.036816,
+  "long": "Wallace parkrun, Lisburn",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "walmeranddealseafront": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -6589,6 +6644,17 @@
   "source": "osm_9am_trace",
   "status": "success",
   "trace_date": "2026-01-24"
+ },
+ "whitehaven": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 54.524733,
+  "lon": -3.573636,
+  "long": "Whitehaven parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "whiteley": {
   "distance_m": null,
