@@ -107,15 +107,38 @@ jobs:
           GH_TOKEN: ${{ secrets.BOT_PAT }}
         run: |
           gh pr comment "$PR" --body "🔁 AI review requested changes: ${{ steps.rev.outputs.feedback }}"
-          python .github/scripts/ai_improve.py
-          python selftest.py
-          if git diff --quiet; then
-            echo "author produced no revision; leaving for next round / human."; exit 0
-          fi
           git config user.name "ai-author-bot"
           git config user.email "ai-author-bot@users.noreply.github.com"
-          git commit -am "chore: revise per AI review [ai-revise]"
-          git push origin "HEAD:$BRANCH"
+          # Self-correcting revision: the author revises, then we run the self-test gate. If it FAILS,
+          # don't push a broken revision and don't fail the job outright — feed the self-test output
+          # back ALONGSIDE the reviewer's critique and let the author fix the root cause (up to 2
+          # attempts), exactly like the maintenance job. Only a self-test-PASSING revision is pushed.
+          ORIG_FB="$REVIEW_FEEDBACK"
+          for attempt in 1 2; do
+            # Refresh the diff so the author's revision mode sees its TRUE change-so-far (incl. a prior
+            # failed attempt's in-tree edits — it patches that, doesn't restart).
+            git diff origin/main > pr.diff || true
+            python .github/scripts/ai_improve.py || { echo "::error::author step errored"; exit 1; }
+            if git diff --quiet; then
+              echo "author produced no revision this round; leaving for next round / human."; exit 0
+            fi
+            if OUT=$(python selftest.py 2>&1); then
+              echo "$OUT"; echo "revision PASSED the self-test on attempt $attempt — pushing."
+              git commit -am "chore: revise per AI review [ai-revise]"
+              git push origin "HEAD:$BRANCH"
+              exit 0
+            fi
+            echo "::warning::revision FAILED the self-test on attempt $attempt:"; echo "$OUT"
+            export REVIEW_FEEDBACK="$ORIG_FB
+
+          ALSO: your revision FAILED the offline self-test gate — fix the ROOT CAUSE and keep the tested function names/signatures intact (see the Tested-contract section of AI_CONTEXT.md). Self-test output:
+          $OUT"
+          done
+          # Still red after the retries — hand to a human rather than push a broken branch.
+          git checkout -- . 2>/dev/null || true
+          gh pr comment "$PR" --body "$(printf '⚠️ **Author could not pass the self-test — needs a human @lukeet332**\n\nThe author revised in response to the review but its change still fails the offline self-test after retries, so nothing was pushed. The last failure is in the job log.')"
+          gh pr edit "$PR" --add-label needs-human-approval || true
+          echo "::error::revision could not pass the self-test after retries — not pushing."; exit 1
 
       # ---- out of rounds: hand to a human ----
       - name: Give up after 3 rounds
