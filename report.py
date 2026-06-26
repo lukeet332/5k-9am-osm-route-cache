@@ -2,12 +2,15 @@
 """Per-country coverage report.
 
 Writes coverage_by_country.json and refreshes the "Coverage by country" table in README.md:
-each country's TOTAL adult parkruns (from the live parkrun event list) vs MAPPED (locked in
-index.json). Only the UK is swept today, so other countries show NA/<total> until the global
-rollout reaches them. Run after a cache build. Kept OUT of build_cache.py (the AI's algorithm
-file) so that file stays lean; reuses build_cache's helpers.
+each country's TOTAL adult parkruns (from the parkrun event list) vs MAPPED (locked in index.json).
+Run after a cache build. Kept OUT of build_cache.py (the AI's algorithm file) so that stays lean.
+
+Network-resilient: the event list is cached ~weekly (.events_cache.json) so this rarely hits the
+network and is kind to OSM; if the fetch fails (e.g. we were just rate-limited) it falls back to the
+cache, and failing that to the last coverage_by_country.json - so the README's worldwide tally still
+updates from the always-current index.json instead of freezing.
 """
-import json, os, re
+import json, os, re, time
 from collections import defaultdict
 import build_cache as bc
 
@@ -20,28 +23,61 @@ COUNTRY_NAMES = {
 }
 README = os.path.join(bc.HERE, "README.md")
 OUT = os.path.join(bc.HERE, "coverage_by_country.json")
+EVENTS_CACHE = os.path.join(bc.HERE, ".events_cache.json")
+EVENTS_TTL_S = 7 * 86400          # parkrun's event list changes slowly; refetch ~weekly (kind to OSM)
 START, END = "<!-- COVERAGE-BY-COUNTRY:START -->", "<!-- COVERAGE-BY-COUNTRY:END -->"
 
 
+def _events():
+    """Cached event features (eventname + countrycode). Cached ~weekly so report.py rarely hits the
+    network and NEVER crashes the build when we are being rate-limited. Returns the features or None."""
+    if os.path.exists(EVENTS_CACHE) and (time.time() - os.path.getmtime(EVENTS_CACHE)) < EVENTS_TTL_S:
+        try:
+            return json.load(open(EVENTS_CACHE))
+        except Exception:
+            pass
+    try:
+        feats = json.loads(bc._get(bc.EVENTS_URL))["events"]["features"]
+        json.dump(feats, open(EVENTS_CACHE, "w"))
+        return feats
+    except Exception:
+        if os.path.exists(EVENTS_CACHE):
+            try:
+                return json.load(open(EVENTS_CACHE))
+            except Exception:
+                pass
+        return None
+
+
 def build():
-    index_path = os.path.join(bc.HERE, "index.json")
-    index = json.load(open(index_path)) if os.path.exists(index_path) else {}
-    feats = json.loads(bc._get(bc.EVENTS_URL))["events"]["features"]
-    total, mapped = defaultdict(int), defaultdict(int)
-    for f in feats:
-        p = f["properties"]
-        if p.get("seriesid") != bc.ADULT:        # adult 5k only (exclude junior 2k)
-            continue
-        cc = p.get("countrycode")
-        total[cc] += 1
-        if bc.is_locked(index.get(p["eventname"])):
-            mapped[cc] += 1
-    rows = sorted(([cc, COUNTRY_NAMES.get(cc, f"country {cc}"), total[cc], mapped[cc]] for cc in total),
-                  key=lambda r: -r[2])
-    world_t, world_m = sum(total.values()), sum(mapped.values())
-    json.dump({"world_total": world_t, "world_mapped": world_m,
-               "countries": [{"code": c, "name": n, "total": t, "mapped": m} for c, n, t, m in rows]},
-              open(OUT, "w"), indent=1)
+    index = json.load(open(os.path.join(bc.HERE, "index.json"))) if os.path.exists(os.path.join(bc.HERE, "index.json")) else {}
+    feats = _events()
+    if feats is not None:
+        total, mapped = defaultdict(int), defaultdict(int)
+        for f in feats:
+            p = f["properties"]
+            if p.get("seriesid") != bc.ADULT:        # adult 5k only (exclude junior 2k)
+                continue
+            cc = p.get("countrycode")
+            total[cc] += 1
+            if bc.is_locked(index.get(p["eventname"])):
+                mapped[cc] += 1
+        rows = sorted(([cc, COUNTRY_NAMES.get(cc, f"country {cc}"), total[cc], mapped[cc]] for cc in total),
+                      key=lambda r: -r[2])
+        world_t, world_m = sum(total.values()), sum(mapped.values())
+        json.dump({"world_total": world_t, "world_mapped": world_m,
+                   "countries": [{"code": c, "name": n, "total": t, "mapped": m} for c, n, t, m in rows]},
+                  open(OUT, "w"), indent=1)
+        return rows, world_t, world_m
+    # FALLBACK: event list unavailable (e.g. just rate-limited). Keep last-known per-country rows but
+    # refresh the worldwide MAPPED tally from the always-current index.json, so the README still updates.
+    world_m = sum(1 for e in index.values() if bc.is_locked(e))
+    try:
+        prev = json.load(open(OUT))
+    except Exception:
+        prev = {}
+    rows = [[c["code"], c["name"], c["total"], c["mapped"]] for c in prev.get("countries", [])]
+    world_t = prev.get("world_total") or 0
     return rows, world_t, world_m
 
 

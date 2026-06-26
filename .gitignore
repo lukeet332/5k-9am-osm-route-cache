@@ -2,6 +2,8 @@
 # republishing raw trace blobs). The derived courses in routes/ + index.json ARE committed.
 .tracecache/
 .relcache/
+# Cached parkrun event list for report.py (per-country totals); refetched ~weekly, never committed.
+.events_cache.json
 __pycache__/
 *.pyc
 # Ban-safety signal written by build_cache.py when OSM throttled us (429s past the breaker).
