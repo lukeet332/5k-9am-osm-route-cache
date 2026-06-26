@@ -30,10 +30,31 @@ TRACECACHE = os.path.join(HERE, ".tracecache")
 
 try:
     from zoneinfo import ZoneInfo
+    try:
+        from timezonefinder import TimezoneFinder   # lat/lon -> IANA zone (global, DST-correct via zoneinfo)
+        _TF = TimezoneFinder()
+    except Exception:
+        _TF = None                          # dep absent -> fall back to Europe/London (UK stays correct)
     _LON = ZoneInfo("Europe/London")
-    def local(dt): return dt.astimezone(_LON)
-except Exception:                          # crude BST fallback
-    def local(dt):
+    _TZCACHE = {}
+    def local(dt, lat=None, lon=None):
+        # event-local time from coordinates (global rollout). Falls back to Europe/London when the
+        # lookup is unavailable: keeps the UK correct, never crashes, and a foreign event with no
+        # resolved zone just misses its 09:00-local traces (no false data, no UK regression).
+        if _TF is not None and lat is not None and lon is not None:
+            key = (round(lat, 1), round(lon, 1))
+            z = _TZCACHE.get(key)
+            if z is None:
+                try:
+                    nm = _TF.timezone_at(lat=lat, lng=lon)
+                    z = ZoneInfo(nm) if nm else _LON
+                except Exception:
+                    z = _LON
+                _TZCACHE[key] = z
+            return dt.astimezone(z)
+        return dt.astimezone(_LON)
+except Exception:                          # crude BST fallback (no zoneinfo)
+    def local(dt, lat=None, lon=None):
         y = dt.year
         def ls(m):
             d = datetime.date(y, m, 31); return d - datetime.timedelta(days=(d.weekday()+1) % 7)
@@ -87,19 +108,25 @@ def _get(url, data=None, timeout=70):
             raise
 
 def load_events():
+    # ALL adult (5k) parkruns worldwide. UK first (Havant -> north, the original rollout), then the
+    # rest of the world (by country, then latitude). Foreign events are never-tried, so the last_tried
+    # rotation in main() sweeps them first - harvesting untapped foreign data while UK gaps wait.
     raw = _get(EVENTS_URL)
     feats = json.loads(raw)["events"]["features"]
-    uk = []
+    evs = []
     for f in feats:
         p = f["properties"]
-        if p["countrycode"] == UK_CC and p["seriesid"] == ADULT:
-            lon, lat = f["geometry"]["coordinates"]
-            uk.append({"name": p["eventname"], "long": p["EventLongName"],
-                       "loc": p.get("EventLocation", ""), "lat": lat, "lon": lon})
+        if p["seriesid"] != ADULT:
+            continue
+        lon, lat = f["geometry"]["coordinates"]
+        evs.append({"name": p["eventname"], "long": p["EventLongName"], "loc": p.get("EventLocation", ""),
+                    "lat": lat, "lon": lon, "cc": p["countrycode"]})
     hav = HAVANT[0]
-    north = sorted([e for e in uk if e["lat"] >= hav], key=lambda e: e["lat"])   # Havant northward
-    south = sorted([e for e in uk if e["lat"] < hav], key=lambda e: -e["lat"])    # then southern outliers
-    ordered = north + south
+    uk = [e for e in evs if e["cc"] == UK_CC]
+    uk_n = sorted([e for e in uk if e["lat"] >= hav], key=lambda e: e["lat"])     # UK: Havant northward
+    uk_s = sorted([e for e in uk if e["lat"] < hav], key=lambda e: -e["lat"])     # then southern UK
+    rest = sorted([e for e in evs if e["cc"] != UK_CC], key=lambda e: (e["cc"], e["lat"]))  # then the world
+    ordered = uk_n + uk_s + rest
     for i, e in enumerate(ordered):
         e["ord"] = i
     return ordered
@@ -171,7 +198,7 @@ def trace_courses_multi(name, lat, lon):
     # group by date: Saturday/Christmas/New-Year, local 09:00-09:45, anchored within 150m of the start
     traces = {}
     for la, lo, t in pts:
-        ldt = local(t)
+        ldt = local(t, lat, lon)
         is_saturday = ldt.weekday() == 5
         is_christmas_day = ldt.month == 12 and ldt.day == 25
         is_new_years_day = ldt.month == 1 and ldt.day == 1
@@ -214,7 +241,7 @@ def trace_course(name, lat, lon):
     pts = trace_points(name, lat, lon)
     win = []
     for la, lo, t in pts:
-        ldt = local(t)
+        ldt = local(t, lat, lon)
         is_saturday = ldt.weekday() == 5
         is_christmas_day = ldt.month == 12 and ldt.day == 25
         is_new_years_day = ldt.month == 1 and ldt.day == 1

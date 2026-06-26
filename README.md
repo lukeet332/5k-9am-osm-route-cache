@@ -2,8 +2,8 @@
 
 ![parkruns successfully mapped](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/lukeet332/5k-9am-osm-route-cache/main/coverage.json)
 
-A cache of UK parkrun-distance (5k) courses as GPX files, built **entirely from
-OpenStreetMap** for offline/navigation use by a personal Wear OS running app. The badge above
+A cache of parkrun-distance (5k) courses as GPX files (UK first, rolling out worldwide), built
+**entirely from OpenStreetMap** for offline/navigation use by a personal Wear OS running app. The badge above
 is the live count of parkruns successfully mapped (within the 4.8–5.2 km success tolerance),
 refreshed every cache run.
 
@@ -94,28 +94,28 @@ the initial cache build, then dial back to weekly), committing each route straig
 ## Coverage by country
 
 <!-- COVERAGE-BY-COUNTRY:START -->
-_Worldwide: 120/2361 parkruns mapped across 20 countries. Only the UK is swept so far; others show NA until the global rollout reaches them._
+_Worldwide: 120/2361 parkruns mapped across 20 countries (UK first; other countries fill in as the global rollout sweeps them)._
 
 | Country | Mapped / Total |
 |---|---|
 | United Kingdom | 120/884 |
-| Australia | NA/543 |
-| South Africa | NA/228 |
-| Ireland | NA/114 |
-| Poland | NA/109 |
-| United States | NA/101 |
-| Germany | NA/79 |
-| New Zealand | NA/74 |
-| Canada | NA/64 |
-| Japan | NA/53 |
-| Netherlands | NA/30 |
-| Italy | NA/15 |
-| Sweden | NA/15 |
-| Denmark | NA/13 |
-| Norway | NA/13 |
-| Finland | NA/9 |
-| Austria | NA/6 |
-| Singapore | NA/5 |
-| Lithuania | NA/5 |
-| Malaysia | NA/1 |
+| Australia | 0/543 |
+| South Africa | 0/228 |
+| Ireland | 0/114 |
+| Poland | 0/109 |
+| United States | 0/101 |
+| Germany | 0/79 |
+| New Zealand | 0/74 |
+| Canada | 0/64 |
+| Japan | 0/53 |
+| Netherlands | 0/30 |
+| Italy | 0/15 |
+| Sweden | 0/15 |
+| Denmark | 0/13 |
+| Norway | 0/13 |
+| Finland | 0/9 |
+| Austria | 0/6 |
+| Singapore | 0/5 |
+| Lithuania | 0/5 |
+| Malaysia | 0/1 |
 <!-- COVERAGE-BY-COUNTRY:END -->

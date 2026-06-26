@@ -39,6 +39,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install timezonefinder (per-event local timezone for the global 09:00 anchor)
+        run: python3 -m pip install --quiet timezonefinder
       - name: Restore the OSM trace cache (persist across runs -> far fewer refetches)
         # .tracecache holds raw OSM trace responses. It's gitignored (we never commit raw blobs), so
         # without this each fresh checkout re-fetched everything. Restoring the most recent cache and
