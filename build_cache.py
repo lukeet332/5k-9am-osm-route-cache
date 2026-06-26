@@ -313,6 +313,16 @@ def build_one(ev):
             return {"source": "osm_relation_doubled", "distance_m": round(doubled_len), "status": "success",
                     "provisional": True, **diag}
 
+    # NEW: Try doubling a half-distance trace
+    if tr and HALF_REL_LO <= tr[0] <= HALF_REL_HI:
+        doubled_path = tr[1] + tr[1]
+        doubled_len = 2 * tr[0] # Use 2 * original trace length to avoid phantom segment
+        if REL_LO <= doubled_len <= REL_HI:
+            write_gpx(name, ev["long"], doubled_path, "osm_9am_trace_doubled")
+            # A doubled trace is still derived from GPS, but it's an inference, so provisional: True
+            return {"source": "osm_9am_trace_doubled", "distance_m": round(doubled_len), "status": "success",
+                    "provisional": True, "trace_date": tr[2], **diag}
+
     # Not a success -> no course geometry. Drop any stale success GPX from a prior run.
     stale = os.path.join(ROUTES, f"{name}.gpx")
     if os.path.exists(stale):
@@ -331,6 +341,14 @@ def build_one(ev):
         doubled_len = 2 * length(rel[2])  # two laps (see above) — not the seam-inflated concat length
         if SANE_LO <= doubled_len <= SANE_HI and not (REL_LO <= doubled_len <= REL_HI):
             cands.append(("osm_relation_doubled_offdist", doubled_len, None))
+
+    # If a trace was a candidate for doubling (i.e., in HALF_REL_LO/HI range)
+    # and its *doubled* length is in SANE_LO/HI but NOT REL_LO/HI (i.e., it failed to be a success)
+    # then add it to cands for diagnostic logging.
+    if tr and HALF_REL_LO <= tr[0] <= HALF_REL_HI:
+        doubled_len = 2 * tr[0]
+        if SANE_LO <= doubled_len <= SANE_HI and not (REL_LO <= doubled_len <= REL_HI):
+            cands.append(("osm_9am_trace_doubled_offdist", doubled_len, tr[2]))
 
     if cands:
         src, dist, date = min(cands, key=lambda c: abs(c[1] - TARGET))
