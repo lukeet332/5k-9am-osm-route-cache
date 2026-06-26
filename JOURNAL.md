@@ -58,11 +58,15 @@ progressively more creative over time. Append-only; newest at the bottom.
 - Multi-Saturday trace averaging (trace_courses_multi, pointwise mean). DONE.
 - Christmas Day + New Year's Day events included in the 09:00-09:45 trace window. DONE.
 - Correct doubled distance uses 2*length(lap), never length(lap+lap). DONE.
+- GLOBAL event query: load_events queries ALL adult parkruns worldwide (~2361), UK-first ordering. DONE.
+- Per-event local timezone via timezonefinder (lat/lon -> IANA zone, DST-correct; graceful fallback to
+  Europe/London). DONE - do NOT revert to hardcoded London or a longitude/offset hack.
+- Per-country coverage reporting (report.py -> coverage_by_country.json + README table). DONE.
 Propose a genuinely NEW idea instead, e.g.: course-topology-aware extraction (N-laps, partial-lap +
 laps, out-and-back, point-to-point - detect lap repetition WITHIN a trace to recover the true course;
-see AI_CONTEXT) - this is the big lever for the ~100 off-tolerance failed entries; prefer/weight recent
-traces (courses change); smarter relation way-chaining / gap-bridging; per-event local timezone for
-global expansion; QA flag for in-band but mis-shaped courses; additional openly-licensed data sources.
+see AI_CONTEXT) - this is the big lever for the off-tolerance failed entries; prefer/weight recent
+traces (courses change); smarter relation way-chaining / gap-bridging; QA flag for in-band but
+mis-shaped courses; additional openly-licensed data sources for thin-coverage countries.
 
 ### 2026-06-26 - deepseek-v4-flash-bot (deepseek-ai/deepseek-v4-flash, minor)
 - Prefer recent traces (last 2 years) in averaging to track current course shape and avoid mixing old/obsolete routes
