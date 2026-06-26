@@ -303,6 +303,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "beacon": {
+  "distance_m": 2555,
+  "last_tried": "2026-06-26",
+  "lat": 52.685891,
+  "lon": -1.83863,
+  "long": "Beacon parkrun",
+  "relation_m": 2555,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
+ },
  "becclesquay": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -1400,6 +1411,19 @@
   "long": "Five Arches parkrun",
   "source": null,
   "status": "gap"
+ },
+ "flegghigh": {
+  "distance_m": 4965,
+  "last_tried": "2026-06-26",
+  "lat": 52.713022,
+  "lon": 1.640492,
+  "long": "Flegg High parkrun",
+  "provisional": false,
+  "relation_m": 4974,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2022-01-22",
+  "trace_m": 4965
  },
  "folkestone": {
   "distance_m": null,
@@ -3371,6 +3395,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "sencevalleyforestpark": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.696067,
+  "lon": -1.408816,
+  "long": "Sence Valley Forest Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "sevenfields": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -3431,6 +3466,17 @@
   "source": "osm_9am_trace",
   "status": "success",
   "trace_date": "2023-12-16"
+ },
+ "shrewsbury": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.706942,
+  "lon": -2.75921,
+  "long": "Shrewsbury parkrun",
+  "relation_m": 175946,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "sittingbourne": {
   "distance_m": null,
@@ -4140,6 +4186,17 @@
   "lat": 52.280789,
   "lon": -1.595954,
   "long": "Warwick Racecourse parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "watermeadcountrypark": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.690658,
+  "lon": -1.103213,
+  "long": "Watermead Country Park parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
