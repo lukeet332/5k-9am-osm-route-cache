@@ -658,6 +658,17 @@
   "status": "failed",
   "trace_m": null
  },
+ "bolton": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.574715,
+  "lon": -2.395615,
+  "long": "Bolton parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "boston": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -1296,6 +1307,17 @@
   "relation_m": 5021,
   "source": "osm_relation",
   "status": "success",
+  "trace_m": null
+ },
+ "clarence": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.604665,
+  "lon": -2.289921,
+  "long": "Clarence parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
   "trace_m": null
  },
  "cleethorpes": {
@@ -2016,6 +2038,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "frickleycountry": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.588573,
+  "lon": -1.290457,
+  "long": "Frickley Country parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "frimleylodge": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -2389,6 +2422,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "haighwoodland": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.572714,
+  "lon": -2.609519,
+  "long": "Haigh Woodland parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "hampsteadheath": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -2755,6 +2799,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "huddersfield": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.650608,
+  "lon": -1.800685,
+  "long": "Huddersfield parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "hunstantonpromenade": {
   "distance_m": 1723,
   "last_tried": "2026-06-26",
@@ -2893,6 +2948,17 @@
   "lat": 52.384226,
   "lon": -0.710653,
   "long": "Kettering parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "kewwoods": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.629073,
+  "lon": -2.995064,
+  "long": "Kew Woods parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -3734,6 +3800,17 @@
   "source": null,
   "status": "gap"
  },
+ "normanbyhall": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.638407,
+  "lon": -0.659924,
+  "long": "Normanby Hall parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "northalafields": {
   "distance_m": 4971,
   "last_tried": "2026-06-25",
@@ -3792,6 +3869,17 @@
   "relation_m": 5052,
   "source": "osm_relation",
   "status": "success",
+  "trace_m": null
+ },
+ "nostell": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.650212,
+  "lon": -1.381241,
+  "long": "Nostell parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
   "trace_m": null
  },
  "novaprestatyn": {
@@ -4592,6 +4680,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "scunthorpe": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.581755,
+  "lon": -0.656476,
+  "long": "Scunthorpe parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "sencevalleyforestpark": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -4861,6 +4960,17 @@
   "status": "success",
   "trace_date": "2020-02-22",
   "trace_m": 5038
+ },
+ "southport": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.656276,
+  "lon": -2.985341,
+  "long": "Southport parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "southwark": {
   "distance_m": 5143,
@@ -5449,6 +5559,17 @@
   "status": "success",
   "trace_m": null
  },
+ "vermuydenway": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.561636,
+  "lon": -0.848034,
+  "long": "Vermuyden Way parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "vicarwatercountrypark": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -5479,6 +5600,17 @@
   "long": "Victoria Park parkrun, Newbury",
   "source": null,
   "status": "gap"
+ },
+ "wakefieldthornes": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.672488,
+  "lon": -1.509682,
+  "long": "Wakefield Thornes parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "wakehurst": {
   "distance_m": null,
@@ -5560,6 +5692,17 @@
   "lat": 52.280789,
   "lon": -1.595954,
   "long": "Warwick Racecourse parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "watergrove": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.657034,
+  "lon": -2.131777,
+  "long": "Watergrove parkrun, Rochdale",
   "relation_m": null,
   "source": null,
   "status": "gap",
