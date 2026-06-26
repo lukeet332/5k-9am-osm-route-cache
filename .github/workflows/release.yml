@@ -15,7 +15,12 @@ permissions:
 
 jobs:
   release:
-    if: github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'ai-improve/')
+    # Algorithm improvements (ai-improve/*) AND AI-model-config switches (ai/model-review) both get a
+    # versioned release — the model the pipeline uses is part of its evolution and belongs in the log.
+    if: >
+      github.event.pull_request.merged == true &&
+      (startsWith(github.event.pull_request.head.ref, 'ai-improve/') ||
+       startsWith(github.event.pull_request.head.ref, 'ai/model-review'))
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
