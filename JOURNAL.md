@@ -30,3 +30,16 @@ progressively more creative over time. Append-only; newest at the bottom.
   prefer recent Saturdays (courses change over the years); handle out-and-back as well as loop
   doublings; trace doubling for ~half-distance traces; averaging more historical Saturdays; smarter
   relation way-chaining / gap-bridging; high-footfall Christmas/New-Year sweeps for extra traces.
+
+### v0.2.1 — fix the doubling distance (human hot-fix) 🐛✅
+- **Bug found:** the doubling measured `length(rel[2] + rel[2])`, i.e. `length(lap+lap)`. Concatenating
+  a polyline to itself makes `length()` add a PHANTOM segment from the lap's end back to its start, so
+  the reported distance was `2*lap + (end→start jump)`. For laps that don't perfectly close this
+  overshoots the 4.8–5.2k band — which is **exactly why doubling produced 0 successes and 2
+  `osm_relation_doubled_offdist`**: real 2-lap courses were being pushed out of band and logged as
+  failures.
+- **Fix:** report `2 * length(rel[2])` (two laps' path length); the doubled *geometry* the app draws is
+  still `rel[2]+rel[2]`. Added a deterministic self-test (`selftestdouble`) that a ~2.5k lap doubles to
+  a ~5.0k SUCCESS — it was RED before the fix, GREEN after. **Lesson: a green self-test does not prove
+  new distance maths is right unless a case actually exercises it; the reviewer now hand-traces
+  distance arithmetic and watches for the self-concatenation phantom-seam trap.**
