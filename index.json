@@ -469,6 +469,17 @@
   "status": "failed",
   "trace_m": null
  },
+ "braunstone": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.626129,
+  "lon": -1.178681,
+  "long": "Braunstone parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "brentwood": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1319,6 +1330,18 @@
   "relation_m": null,
   "source": null,
   "status": "gap",
+  "trace_m": null
+ },
+ "fitzmauricepark": {
+  "distance_m": 5131,
+  "last_tried": "2026-06-26",
+  "lat": 52.638196,
+  "lon": 1.36115,
+  "long": "Fitzmaurice Park parkrun",
+  "provisional": true,
+  "relation_m": 5131,
+  "source": "osm_relation",
+  "status": "success",
   "trace_m": null
  },
  "fivearches": {
@@ -3656,6 +3679,17 @@
   "long": "Tamar Lakes parkrun",
   "source": null,
   "status": "gap"
+ },
+ "tamworthcastlegrounds": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.630232,
+  "lon": -1.695214,
+  "long": "Tamworth Castle Grounds parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "teifimarshesnaturereserve": {
   "distance_m": null,
