@@ -2155,6 +2155,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "leicestervictoria": {
+  "distance_m": 5101,
+  "last_tried": "2026-06-26",
+  "lat": 52.620954,
+  "lon": -1.121659,
+  "long": "Leicester Victoria parkrun",
+  "provisional": true,
+  "relation_m": 5101,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
+ },
  "letchworth": {
   "distance_m": null,
   "last_tried": "2026-06-25",
