@@ -2228,6 +2228,19 @@
   "status": "gap",
   "trace_m": null
  },
+ "lochneaton": {
+  "distance_m": 5106,
+  "last_tried": "2026-06-26",
+  "lat": 52.577558,
+  "lon": 0.8274,
+  "long": "Loch Neaton parkrun, Watton",
+  "provisional": false,
+  "relation_m": 5108,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2019-03-02",
+  "trace_m": 5106
+ },
  "longrunmeadow": {
   "distance_m": null,
   "last_tried": "2026-06-25",
