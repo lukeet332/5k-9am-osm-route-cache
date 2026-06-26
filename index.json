@@ -100,6 +100,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "alexandra": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.450142,
+  "lon": -2.248827,
+  "long": "Alexandra parkrun, Moss Side",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "aliceholt": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1355,6 +1366,17 @@
   "status": "failed",
   "trace_m": null
  },
+ "concord": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.424007,
+  "lon": -1.441612,
+  "long": "Concord parkrun, Sheffield",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "congleton": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -1457,6 +1479,28 @@
   "relation_m": 1977,
   "source": "osm_relation_offdist",
   "status": "failed",
+  "trace_m": null
+ },
+ "crosby": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.48269,
+  "lon": -3.046711,
+  "long": "Crosby parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "croxtethhall": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.44217,
+  "lon": -2.891774,
+  "long": "Croxteth Hall parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
   "trace_m": null
  },
  "crystalpalace": {
@@ -1995,6 +2039,17 @@
   "lat": 51.556982,
   "lon": -0.228223,
   "long": "Gladstone parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "glossop": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.447019,
+  "lon": -1.939503,
+  "long": "Glossop parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -2657,6 +2712,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "hyde": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.45713,
+  "lon": -2.076554,
+  "long": "Hyde parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "ifieldmillpond": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -2837,6 +2903,17 @@
   "lat": 51.821487,
   "lon": -2.272804,
   "long": "Kingsway parkrun, Gloucester",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "kingswayparkurmston": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.458191,
+  "lon": -2.345924,
+  "long": "Kingsway Park parkrun, Urmston",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -3816,6 +3893,17 @@
   "trace_date": "2018-05-12",
   "trace_m": 3878
  },
+ "peel": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.48759,
+  "lon": -2.270682,
+  "long": "Peel parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "pegwellbay": {
   "distance_m": 4913,
   "last_tried": "2026-06-25",
@@ -3871,6 +3959,19 @@
   "source": null,
   "status": "gap",
   "trace_m": null
+ },
+ "philipspark": {
+  "distance_m": 4898,
+  "last_tried": "2026-06-26",
+  "lat": 53.488346,
+  "lon": -2.192484,
+  "long": "Philips Park parkrun",
+  "provisional": false,
+  "relation_m": 4928,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2024-03-09",
+  "trace_m": 4898
  },
  "phoenix": {
   "distance_m": null,
@@ -4200,6 +4301,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "rotherham": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.430538,
+  "lon": -1.343218,
+  "long": "Rotherham parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "rothervalley": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -4289,6 +4401,17 @@
   "lat": 52.643712,
   "lon": -0.624447,
   "long": "Rutland Water parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "salewater": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.429585,
+  "lon": -2.294545,
+  "long": "Sale Water parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -4584,6 +4707,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "southmanchester": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.446072,
+  "lon": -2.224689,
+  "long": "South Manchester parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "southnorwood": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -4682,6 +4816,17 @@
   "trace_date": "2024-11-23",
   "trace_m": 4207
  },
+ "sthelens": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.46322,
+  "lon": -2.744088,
+  "long": "St Helens parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "stmatthewsfield": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -4743,6 +4888,17 @@
   "long": "Street parkrun",
   "source": null,
   "status": "gap"
+ },
+ "stretford": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.446121,
+  "lon": -2.290281,
+  "long": "Stretford parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "sunnyhill": {
   "distance_m": 4942,
@@ -4959,6 +5115,17 @@
   "status": "success",
   "trace_date": "2019-07-06",
   "trace_m": 4933
+ },
+ "thonocklanefarm": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.421158,
+  "lon": -0.763594,
+  "long": "Thonock Lane Farm parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "thornbury": {
   "distance_m": null,
