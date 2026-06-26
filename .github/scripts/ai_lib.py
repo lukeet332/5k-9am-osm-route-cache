@@ -55,9 +55,9 @@ PROVIDERS = {
 # DIFFERENT provider, then a rock-solid anchor — so a single overloaded free endpoint never sinks a run.
 # Picked from an empirical bake-off (changeset output, selftest-gated): see JOURNAL/AI_CONTEXT.
 DEFAULT_AUTHOR = [
-    {"provider": "sambanova", "model": "DeepSeek-V3.2"},   # best idea+code quality in the bake-off
-    {"provider": "sambanova", "model": "DeepSeek-V3.1"},   # bake-off runner-up — reliable, high code quality
-    {"provider": "gemini", "model": "gemini-2.5-flash"},   # rock-solid CROSS-PROVIDER anchor (covers a SambaNova outage)
+    {"provider": "sambanova", "model": "DeepSeek-V3.2"},            # best idea+code quality in the bake-off
+    {"provider": "cloudflare", "model": "@cf/openai/gpt-oss-120b"},  # frontier fallback on a DIFFERENT provider -> catches a SambaNova outage/quota (works now max_tokens is set)
+    {"provider": "gemini", "model": "gemini-2.5-flash"},            # rock-solid anchor (proven, generous output)
 ]
 DEFAULT_REVIEWER = [
     {"provider": "cerebras", "model": "zai-glm-4.7"},               # frontier reasoner, validated as gate
@@ -151,17 +151,18 @@ def _post(url, headers, payload, attempts=3, timeout=300):
             raise
 
 
-def call_json(slot, prompt):
+def call_json(slot, prompt, max_tokens=4000):
     """Call an OpenAI-compatible /chat/completions endpoint and parse a JSON object reply.
     NOTE: max_tokens MUST be set — some providers (Cloudflare Workers AI) default to a tiny 256-token
-    output, which silently truncates a changeset to invalid/empty JSON. 4000 covers a changeset or a
-    review verdict comfortably and stays within the tightest free output cap (GitHub Models = 4000)."""
+    output, which silently truncates a changeset to invalid/empty JSON. The default 4000 covers a
+    review verdict / picker reply and stays within the tightest free output cap (GitHub Models = 4000);
+    the AUTHOR passes a higher value (its providers allow it) so a big changeset never truncates."""
     key = os.environ.get(slot["api_key_env"], "").strip()
     if not key:
         raise RuntimeError(f"no key in env {slot['api_key_env']}")
     data = _post(slot["base_url"].rstrip("/") + "/chat/completions",
                  {"Authorization": f"Bearer {key}"},
-                 {"model": slot["model"], "temperature": 0.1, "max_tokens": 4000,
+                 {"model": slot["model"], "temperature": 0.1, "max_tokens": max_tokens,
                   "response_format": {"type": "json_object"},
                   "messages": [{"role": "user", "content": prompt}]})
     who = f'{slot.get("provider", "?")}/{slot.get("model", "?")}'
@@ -180,13 +181,16 @@ def call_role(prompt, role):
     the frontier primary through a smart fallback to the rock-solid anchor. Returns (result, slot) or
     (None, None)."""
     chain = load_model_config().get(role) or []
+    # The author emits a changeset (occasionally large); give it real output headroom. The reviewer /
+    # fast / picker reply small, and the reviewer anchor (GitHub Models) caps output at 4000.
+    max_tokens = 8000 if role == "author" else 4000
     for slot in chain:
         if not os.environ.get(slot["api_key_env"], "").strip():
             print(f"{role}: skip {slot['provider']}/{slot['model']} (no key)")
             continue
         try:
             print(f"{role}: trying {slot['provider']} ({slot['model']})…")
-            return call_json(slot, prompt), slot
+            return call_json(slot, prompt, max_tokens=max_tokens), slot
         except Exception as e:
             # Surface the real cause (HTTP status + body) — a swallowed HTTPError once hid that the
             # built-in GITHUB_TOKEN can't reach GitHub Models. Don't print the token itself.

@@ -144,7 +144,7 @@ def probe_author(slot):
     prompt = AUTHOR_PROBE + _ctx()
     for i in range(2):
         try:
-            r = L.call_json(slot, prompt)
+            r = L.call_json(slot, prompt, max_tokens=8000)   # author headroom, matches call_role
         except Exception as e:
             print(f"    author probe {i+1}: call failed ({e.__class__.__name__} {getattr(e,'code','')})"); return False
         snap = _snapshot()
