@@ -2153,6 +2153,18 @@
   "status": "success",
   "trace_m": null
  },
+ "miltoncountry": {
+  "distance_m": 5052,
+  "last_tried": "2026-06-26",
+  "lat": 52.236675,
+  "lon": 0.161906,
+  "long": "Milton Country parkrun",
+  "provisional": true,
+  "relation_m": 5052,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
+ },
  "minehead": {
   "distance_m": null,
   "last_tried": "2026-06-25",
