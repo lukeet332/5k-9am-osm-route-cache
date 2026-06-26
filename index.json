@@ -3065,6 +3065,19 @@
   "source": null,
   "status": "gap"
  },
+ "thomasmills": {
+  "distance_m": 4933,
+  "last_tried": "2026-06-26",
+  "lat": 52.228375,
+  "lon": 1.325981,
+  "long": "Thomas Mills parkrun",
+  "provisional": false,
+  "relation_m": 4993,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2019-07-06",
+  "trace_m": 4933
+ },
  "thornbury": {
   "distance_m": null,
   "last_tried": "2026-06-25",
