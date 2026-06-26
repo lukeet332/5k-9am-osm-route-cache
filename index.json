@@ -939,6 +939,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "bayviewroad": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -20.729535,
+  "lon": 116.806181,
+  "long": "Bayview Road parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "beacon": {
   "built_by": "dev",
   "distance_m": 5110,
@@ -1385,6 +1397,18 @@
   "lat": -32.054009,
   "lon": 150.856114,
   "long": "Bill Rose Sports Complex parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "bindapark": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -22.004623,
+  "lon": 148.037729,
+  "long": "Binda Park parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -2632,6 +2656,18 @@
   "status": "success",
   "trace_m": null
  },
+ "centenary": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -22.81841,
+  "lon": 147.642912,
+  "long": "Centenary parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "centennial": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -3209,6 +3245,18 @@
   "lat": 53.870346,
   "lon": -2.39478,
   "long": "Clitheroe Castle parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "cloncurry": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -20.70873,
+  "lon": 140.519814,
+  "long": "Cloncurry parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -7445,6 +7493,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "kershawgardens": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -23.361038,
+  "lon": 150.51636,
+  "long": "Kershaw Gardens parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "kesgrave": {
   "distance_m": 4871,
   "last_tried": "2026-06-25",
@@ -8601,6 +8661,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "mackay": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -21.152238,
+  "lon": 149.155797,
+  "long": "Mackay parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "macquarieuniversity": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -9592,6 +9664,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "mountisa": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -20.702319,
+  "lon": 139.492772,
+  "long": "Mount Isa parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "mountstuart": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -10441,6 +10525,18 @@
   "lat": 52.97016,
   "lon": -3.160221,
   "long": "Old Railway Trail parkrun, Llangollen",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "oldthomsonriverroad": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -23.436746,
+  "lon": 144.243624,
+  "long": "Old Thomson River Road parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -12046,6 +12142,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "rockhampton": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -23.400579,
+  "lon": 150.491432,
+  "long": "Rockhampton parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "rockingham": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -12576,6 +12684,18 @@
   "relation_m": 7555,
   "source": "osm_relation_offdist",
   "status": "failed",
+  "trace_m": null
+ },
+ "seaview": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -21.035236,
+  "lon": 149.165504,
+  "long": "Seaview parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
   "trace_m": null
  },
  "sedgefield": {
@@ -13588,6 +13708,18 @@
   "status": "success",
   "trace_date": "2023-07-01",
   "trace_m": 4942
+ },
+ "sunrisebeach": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -21.634871,
+  "lon": 115.113018,
+  "long": "Sunrise Beach parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "suratmemorialpark": {
   "built_by": "v0.5.0",
@@ -16087,6 +16219,18 @@
   "lat": -33.70206,
   "lon": 136.50305,
   "long": "Yeldulknie Weir Trail parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "yeppoon": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -23.128177,
+  "lon": 150.739086,
+  "long": "Yeppoon parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
