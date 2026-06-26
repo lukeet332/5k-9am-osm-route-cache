@@ -281,6 +281,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "becclesquay": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.465352,
+  "lon": 1.565277,
+  "long": "Beccles Quay parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "beckenhamplace": {
   "distance_m": 5174,
   "last_tried": "2026-06-25",
@@ -423,6 +434,17 @@
   "long": "Bracknell parkrun",
   "source": null,
   "status": "gap"
+ },
+ "brandoncountrypark": {
+  "distance_m": 5249,
+  "last_tried": "2026-06-26",
+  "lat": 52.436339,
+  "lon": 0.625877,
+  "long": "Brandon Country Park parkrun",
+  "relation_m": 5249,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
  },
  "brentwood": {
   "distance_m": null,
@@ -631,6 +653,18 @@
   "long": "California Country parkrun",
   "source": null,
   "status": "gap"
+ },
+ "cannonhill": {
+  "distance_m": 5249,
+  "last_tried": "2026-06-26",
+  "lat": 52.452637,
+  "lon": -1.89997,
+  "long": "Cannon Hill parkrun, Birmingham",
+  "relation_m": null,
+  "source": "osm_9am_trace_offdist",
+  "status": "failed",
+  "trace_date": "2016-09-10",
+  "trace_m": 5249
  },
  "canonspark": {
   "distance_m": null,
@@ -1726,6 +1760,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "holbrooks": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.439154,
+  "lon": -1.509052,
+  "long": "Holbrooks parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "holywellkinggeorgevplayingfields": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1994,6 +2039,17 @@
   "status": "success",
   "trace_m": 3895
  },
+ "littleport": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.463048,
+  "lon": 0.299342,
+  "long": "Littleport parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "llanerchaeron": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -2080,6 +2136,18 @@
   "status": "success",
   "trace_date": "2023-11-04",
   "trace_m": 5010
+ },
+ "lowestoft": {
+  "distance_m": 5016,
+  "last_tried": "2026-06-26",
+  "lat": 52.468286,
+  "lon": 1.747338,
+  "long": "Lowestoft parkrun",
+  "provisional": true,
+  "relation_m": 5016,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
  },
  "ludlow": {
   "distance_m": null,
@@ -2435,6 +2503,17 @@
   "relation_m": 1832,
   "source": "osm_relation_offdist",
   "status": "failed",
+  "trace_m": null
+ },
+ "oaklands": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.466391,
+  "lon": -1.818013,
+  "long": "Oaklands parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
   "trace_m": null
  },
  "oaklandscollege": {
@@ -2918,6 +2997,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "severnvalleycountry": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.453316,
+  "lon": -2.364842,
+  "long": "Severn Valley Country parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "sharphamroadplayingfields": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -3303,6 +3393,17 @@
   "long": "The Old Showfield parkrun",
   "source": null,
   "status": "gap"
+ },
+ "theplens": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.446215,
+  "lon": -0.81857,
+  "long": "The Plens parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "thetford": {
   "distance_m": 5095,
@@ -3704,6 +3805,17 @@
   "long": "Woking parkrun",
   "source": null,
   "status": "gap"
+ },
+ "woodgatevalleycountrypark": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.449447,
+  "lon": -2.005952,
+  "long": "Woodgate Valley Country Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "woodley": {
   "distance_m": null,
