@@ -832,6 +832,18 @@
   "trace_date": "2025-05-03",
   "trace_m": 5058
  },
+ "chasewater": {
+  "distance_m": 5024,
+  "last_tried": "2026-06-26",
+  "lat": 52.661987,
+  "lon": -1.944407,
+  "long": "Chasewater parkrun",
+  "provisional": true,
+  "relation_m": 5024,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
+ },
  "chelmsfordcentral": {
   "distance_m": 6172,
   "last_tried": "2026-06-25",
