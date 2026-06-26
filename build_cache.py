@@ -24,7 +24,6 @@ HALF_REL_LO, HALF_REL_HI = 2300, 2800 # relations in this band are candidates fo
 SANE_LO, SANE_HI = 1500, 9000    # off-tolerance finds in this band -> routes/failed/ as diagnostics
                                  # (e.g. ~2.5km = likely one lap of a 2-lap parkrun); wilder = noise, ignored
 RATE_S = 1.5            # min seconds between network calls (kind to OSM)
-TRACE_RECENCY_YEARS = 2 # Only consider traces from the last N years for averaging/selection
 HAVANT = (50.87577, -0.97557)    # rollout anchor: start here, work north
 COVERAGE_REFINE = 0.80  # only re-query already-accurate courses once >=80% are within tolerance
 
@@ -189,13 +188,11 @@ def trace_courses_multi(name, lat, lon):
             date = ldt.date() # Store as date object for comparison
             traces.setdefault(date, []).append((la, lo, t))
 
-    # Filter traces by recency
-    today = datetime.date.today()
-    cutoff_date = today - datetime.timedelta(days=TRACE_RECENCY_YEARS * 365) # Approx N years ago
-    recent_traces = {d: v for d, v in traces.items() if d >= cutoff_date}
+    if not traces: # Check if any traces were found at all
+        return None
 
     valid_traces = []
-    for date, win in recent_traces.items(): # Iterate over recent_traces
+    for date, win in traces.items(): # Iterate over all collected traces (no recency filter)
         win = sorted(win, key=lambda p: p[2])
         if not win or H(lat, lon, win[0][0], win[0][1]) > 150:
             continue
@@ -205,7 +202,8 @@ def trace_courses_multi(name, lat, lon):
             if d >= 5500 or (p[2] - path[0][2]).total_seconds() > 2700:   # ~5.5k or past 09:45
                 break
         valid_traces.append([(p[0], p[1]) for p in path])
-    if not valid_traces:
+
+    if not valid_traces: # Check if any traces passed the start anchor and length filter
         return None
     # Average the traces pointwise (simple mean for each index)
     minlen = min(len(t) for t in valid_traces)
@@ -215,8 +213,8 @@ def trace_courses_multi(name, lat, lon):
         los = [t[i][1] for t in valid_traces]
         avg_path.append((sum(las)/len(las), sum(los)/len(los)))
     avg_len = length(avg_path)
-    # Use the first date for metadata (from recent_traces)
-    first_date = sorted(recent_traces.keys())[0].isoformat()
+    # Use the first date for metadata (from all traces, since no recency filter)
+    first_date = sorted(traces.keys())[0].isoformat()
     return avg_len, avg_path, first_date
 
 def trace_course(name, lat, lon):
@@ -227,15 +225,9 @@ def trace_course(name, lat, lon):
     # Fallback: single trace (original logic)
     pts = trace_points(name, lat, lon)
     win = []
-    today = datetime.date.today() # Calculate today here for consistency
-    cutoff_date = today - datetime.timedelta(days=TRACE_RECENCY_YEARS * 365) # Approx N years ago
     for la, lo, t in pts:
         ldt = local(t)
         
-        # Filter by recency here too
-        if ldt.date() < cutoff_date:
-            continue
-
         is_saturday = ldt.weekday() == 5
         is_christmas_day = ldt.month == 12 and ldt.day == 25
         is_new_years_day = ldt.month == 1 and ldt.day == 1
