@@ -499,6 +499,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "buryfield": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 52.088015,
+  "lon": -0.728725,
+  "long": "Bury Field parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "bushy": {
   "distance_m": null,
   "last_tried": "2026-06-25",
