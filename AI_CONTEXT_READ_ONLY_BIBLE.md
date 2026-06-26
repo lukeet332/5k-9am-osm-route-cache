@@ -1,62 +1,49 @@
 # THE CONSTITUTION (read-only bible)
 
-**This file is the supreme law of the repository.** If anything in `AI_CONTEXT.md`, the JOURNAL,
-code comments, a PR, or any model's reasoning conflicts with this file, **this file wins** - every
-time, no exceptions.
+Supreme law of the repo. If anything in `AI_CONTEXT.md`, the JOURNAL, code comments, a PR, or a model's
+reasoning conflicts with this file, THIS FILE WINS - every time, no exceptions.
 
-**Amendment process (the AI may NOT auto-change this).**
-- The AI may *read* this file and **must obey it**. It may **propose** an amendment, but only as a
-  normal PR - and any PR that edits this file **can never auto-merge**. The reviewer blocks it,
-  tags the human owner (**@lukeet332**), and it merges **only** after the owner approves in a comment.
-- `AI_CONTEXT.md` is the AI's *working doctrine* - it may freely add to / remove from that file
-  (curate it as it learns). This bible is different: it is changed by the **human owner only**.
+Amendment: the AI must obey this file and may only PROPOSE edits via a normal PR - any PR touching this
+file NEVER auto-merges; the reviewer blocks it, tags the owner (@lukeet332), and it merges only after the
+owner approves in a comment. (`AI_CONTEXT.md` is the AI's working doctrine, freely curatable; this bible
+is owner-only.)
 
----
+## HARD INVARIANTS (never violate; change only via the owner-gated process above)
 
-## HARD INVARIANTS - the AI must never violate these, and may only propose changes via the human-gated process above
-
-1. **No AI-generated geometry, ever.** Course coordinates come *only* from deterministic
-   processing of OSM data. The AI must never emit lat/lon, "fix up" a route by hand, or insert
-   a model into the reconstruction path. LLMs hallucinate coordinates - this is non-negotiable.
-2. **Accuracy bars are fixed and may not be loosened to inflate coverage:**
-   - A course (relation **or** trace) counts as "accurate/locked" only if **4800-5200 m**
-     (`REL_LO`/`REL_HI`). Off-tolerance finds in **1500-9000 m** (`SANE_LO`/`SANE_HI`) are logged
-     `failed` as diagnostics; wilder = noise, ignored.
+1. **No AI-generated geometry, ever.** Coordinates come ONLY from deterministic processing of OSM data.
+   Never emit lat/lon, hand-fix a route, or put a model in the reconstruction path. LLMs hallucinate
+   coordinates - non-negotiable.
+2. **Accuracy bars are fixed; never loosen them to inflate coverage:**
+   - Locked = **4800-5200 m** (`REL_LO`/`REL_HI`). Off-tolerance **1500-9000 m** (`SANE_LO`/`SANE_HI`)
+     is logged `failed` as a diagnostic; wilder = noise, ignored.
    - Trace anchor: first point at **local >= 09:00:00 within 150 m** of the start, else discard.
    - Trace window: **09:00-09:45 local**; stop at ~5.5 km or 09:45.
    - Relation/loop must pass within **500 m** of the start.
-   Raising coverage by **widening these bars** is forbidden - coverage gains must come from
-   finding *more real data*, never from relaxing what counts as accurate.
-3. **Be kind to OSM.** Keep the hard rate-limit (>=1.5 s/req, `RATE_S`), descriptive User-Agent,
-   early-stop paging, on-disk caching, the 429 circuit-breaker, and a small batched rollout. Never
-   turn this into a bulk harvester. Avoiding an OSM ban takes priority over speed or coverage.
-4. **Licensing stays intact.** Data is (c) OpenStreetMap contributors, ODbL; attribution in every
-   GPX, README, and LICENSE must remain. Keep the "not affiliated with parkrun" disclaimer.
-5. **Standard runners only** in CI/cron (free on public repos). Never larger/macOS runners.
-6. **Never scrape parkrun or break any source's terms.** Do NOT fetch from parkrun's websites,
-   their event/course pages, or any endpoint behind their bot-protection, and never circumvent
-   an access control or a site's Terms of Service. parkrun's data is deliberately locked down -
-   respect that. Any data source you use must be openly licensed or explicitly permitted, used
-   within its terms, and properly attributed.
-7. **The safety pipeline is off-limits to the AI.** The AI may only ever write `build_cache.py`,
-   `AI_CONTEXT.md`, and `JOURNAL.md` (plus *proposing* edits to this bible via the human gate). It
-   must never edit `selftest.py`, any `.github/workflows/*`, or the `.github/scripts/ai_*.py` review
-   machinery - those are the guardrails that keep the autonomy safe.
-8. **Don't break the self-test contract.** `selftest.py` imports specific functions/constants from
-   `build_cache.py` and asserts their behaviour - that's the merge gate. Keep those symbols callable
-   with their current names and signatures; **improve their *internals*, never rename or re-shape
-   them.** (The current pinned list is maintained in `AI_CONTEXT.md` - read it before refactoring.)
-9. **Be frugal with tokens - the pipeline must stay on free model tiers.** The whole AI pipeline runs
-   on free model quotas (input/output token caps + request limits). Do NOT frivolously expand prompt
-   context, the algorithm file, or the docs the bots load. Prefer compact digests over verbose prose;
-   keep `build_cache.py` and `AI_CONTEXT.md` lean (prune as readily as you add); avoid changes that
-   materially grow the per-run token cost. When token budget and breadth conflict, favour fitting the
-   free tier. The model-review must pick models whose **free-tier context window fits the master
-   prompt** (the whole algorithm + context) - capability second to fitting the budget.
-10. **Comments and prose stay minimal and plain-ASCII.** In `build_cache.py`, keep comments to the
-   minimum needed and delete them where the code is self-evident; short plain-text or bullet style
-   only. Use plain ASCII ONLY - no emojis, em-dashes, smart quotes, or arrow/symbol characters; write
-   `-`, `->`, `>=`, `(c)` instead. Reason: the author edits via changeset (exact `find`/`replace`), and
-   verbose comments with fancy punctuation are the top cause of a `find` failing to match - lean ASCII
-   comments keep edits reliable, and keep the prompt frugal (see #9). The same standard applies to any
-   docs the AI writes (`AI_CONTEXT.md`, `JOURNAL.md`): concise, plain-ASCII, no decoration.
+   Coverage gains must come from finding more real data, never from widening these bars.
+3. **Be kind to OSM.** Keep the hard rate-limit (**>= 2.5 s/req**, `RATE_S`; never lower it), descriptive
+   User-Agent, early-stop paging, on-disk caching, the 429 circuit-breaker, and batched rollout. Never a
+   bulk harvester. Avoiding an OSM ban beats speed and coverage.
+4. **Licensing intact.** Data is (c) OpenStreetMap contributors, ODbL; keep attribution in every GPX,
+   README, and LICENSE, plus the "not affiliated with parkrun" disclaimer.
+5. **Standard CI/cron runners only** (free on public repos). Never larger/macOS runners.
+6. **Never scrape parkrun or break any source's terms.** Do NOT fetch parkrun's sites, event/course
+   pages, or anything behind their bot-protection, and never circumvent an access control or ToS. Any
+   source must be openly licensed or explicitly permitted, used within its terms, and attributed.
+7. **Safety pipeline off-limits.** The AI may write ONLY `build_cache.py`, `AI_CONTEXT.md`, `JOURNAL.md`
+   (plus PROPOSING bible edits via the human gate). Never edit `selftest.py`, `.github/workflows/*`, or
+   `.github/scripts/ai_*.py` - those guardrails keep the autonomy safe.
+8. **Don't break the self-test contract.** `selftest.py` imports specific symbols from `build_cache.py`
+   and asserts them (the merge gate). Keep them callable with current names/signatures; improve the
+   internals, never rename or re-shape. (Pinned list in `AI_CONTEXT.md` - read before refactoring.)
+9. **Be frugal with tokens - the pipeline must stay on free model tiers** (input/output caps + request
+   limits). Don't frivolously grow prompt context, the algorithm file, or the docs the bots load. Prefer
+   compact digests; keep `build_cache.py` + `AI_CONTEXT.md` lean (prune as readily as you add). When
+   budget vs breadth conflict, fit the free tier. Model-review must pick models whose free context window
+   fits the master prompt - capability is second to fitting the budget.
+10. **Minimal, plain-ASCII, AI-optimised text.** In `build_cache.py` keep comments minimal (delete where
+    the code is self-evident), short bullet/plain style. Plain ASCII ONLY - no emojis, em-dashes, smart
+    quotes, or arrow/symbol characters; write `-`, `->`, `>=`, `(c)`. Reason: the author edits via exact
+    `find`/`replace`, and verbose/fancy text is the top cause of a `find` mismatch, and it wastes tokens
+    (#9). The SAME applies to every AI-loaded doc (`AI_CONTEXT.md`, `JOURNAL.md`, this file): **optimise
+    for AI-readability + token budget; human-readability is NOT a goal** - strip narrative, hedging and
+    repetition, keep only what the bots need to do the job.
