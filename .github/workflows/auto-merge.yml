@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   auto-merge:
-    if: contains(github.event.pull_request.labels.*.name, 'automerge')
+    if: contains(github.event.pull_request.labels.*.name, 'automerge') && !contains(github.event.pull_request.labels.*.name, 'needs-human-approval')
     runs-on: ubuntu-latest
     steps:
       # Native auto-merge WAITS for the required checks (CI self-test + AI review) before merging.

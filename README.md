@@ -18,6 +18,11 @@ refreshed every cache run.
 
 - **Code** (AI maintenance) → PR labelled `automerge` → must pass the CI self-test **and** the
   AI review before auto-merge.
+- **The constitution** (`AI_CONTEXT_READ_ONLY_BIBLE.md`) is the **supreme law** — hard invariants +
+  the fixed accuracy bars — and it supersedes everything else. The AI obeys it and may *curate*
+  `AI_CONTEXT.md` (its working doctrine) freely, but a PR that edits the constitution **can never
+  auto-merge**: the reviewer blocks it, tags the human owner, and it merges only after an owner
+  comment beginning `/approve-bible`.
 - **Cache data** (the cache job) → committed **directly to `main`, one commit per route as it
   locks** (the admin cache bot bypasses the PR rule for *generated data only*; the code self-test
   is irrelevant to data, and CI ignores data-only pushes). Code still goes through PR + CI + review.

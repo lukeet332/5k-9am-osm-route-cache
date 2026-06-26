@@ -5,30 +5,17 @@ OpenStreetMap** (route relations + openly-contributed Saturday-09:00 GPS traces)
 AI maintenance job may propose **one** improvement PR; a second AI reviews it; they iterate
 until both are satisfied and CI passes; then it merges. This file is the contract for that AI.
 
-## HARD INVARIANTS — never change, never propose changing
+## HARD INVARIANTS → see the CONSTITUTION
 
-1. **No AI-generated geometry, ever.** Course coordinates come *only* from deterministic
-   processing of OSM data. The AI must never emit lat/lon, "fix up" a route by hand, or insert
-   a model into the reconstruction path. LLMs hallucinate coordinates — this is non-negotiable.
-2. **Accuracy bars are fixed and may not be loosened to inflate coverage:**
-   - A course (relation **or** trace) counts as "accurate/locked" only if **4800–5200 m**
-     (`REL_LO`/`REL_HI`). Off-tolerance finds in **1500–9000 m** (`SANE_LO`/`SANE_HI`) are logged
-     `failed` as diagnostics; wilder = noise, ignored.
-   - Trace anchor: first point at **local ≥ 09:00:00 within 150 m** of the start, else discard.
-   - Trace window: **09:00–09:45 local**; stop at ~5.5 km or 09:45.
-   - Relation/loop must pass within **500 m** of the start.
-   Raising coverage by **widening these bars** is forbidden — coverage gains must come from
-   finding *more real data* (see Truth metric), never from relaxing what counts as accurate.
-3. **Be kind to OSM.** Keep the hard rate-limit (≥1.5 s/req), descriptive User-Agent, early-stop
-   paging, on-disk caching, and small batched rollout. Never turn this into a bulk harvester.
-4. **Licensing stays intact.** Data is © OpenStreetMap contributors, ODbL; attribution in every
-   GPX, README, and LICENSE must remain. Keep the "not affiliated with parkrun" disclaimer.
-5. **Standard runners only** in CI/cron (free on public repos). Never larger/macOS runners.
-6. **Never scrape parkrun or break any source's terms.** Do NOT fetch from parkrun's websites,
-   their event/course pages, or any endpoint behind their bot-protection, and never circumvent
-   an access control or a site's Terms of Service. parkrun's data is deliberately locked down —
-   respect that. Any data source you use must be openly licensed or explicitly permitted, used
-   within its terms, and properly attributed.
+The hard invariants and the fixed accuracy bars live in **`AI_CONTEXT_READ_ONLY_BIBLE.md`** — the
+read-only **constitution**, which **supersedes this file**. **Read it first and obey it absolutely.**
+You may *propose* an amendment to it, but only as a PR that requires the human owner's approval and
+**can never auto-merge** (the reviewer blocks it and tags @lukeet332).
+
+This file (`AI_CONTEXT.md`) is your **working doctrine** — strategy, learnings, process notes. Unlike
+the constitution, you may **freely curate it: add to it, and remove from it** what you judge obsolete
+or unhelpful — always *within* the constitution's bounds. Anything here that conflicts with the
+constitution is void.
 
 ## Truth metric (what to optimise)
 
