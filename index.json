@@ -659,6 +659,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "christchurchpark": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 52.061985,
+  "lon": 1.15821,
+  "long": "Christchurch Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "churchmead": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1942,6 +1953,18 @@
   "relation_m": null,
   "source": null,
   "status": "gap",
+  "trace_m": null
+ },
+ "millenniumcountry": {
+  "distance_m": 5067,
+  "last_tried": "2026-06-25",
+  "lat": 52.065265,
+  "lon": -0.534082,
+  "long": "Millennium Country parkrun, Forest of Marston Vale",
+  "provisional": true,
+  "relation_m": 5067,
+  "source": "osm_relation",
+  "status": "success",
   "trace_m": null
  },
  "minehead": {
