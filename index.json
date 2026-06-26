@@ -422,6 +422,17 @@
   "source": null,
   "status": "gap"
  },
+ "brixworthcountry": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.318576,
+  "lon": -0.895675,
+  "long": "Brixworth Country parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "broadwater": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -2853,6 +2864,19 @@
   "status": "gap",
   "trace_m": null
  },
+ "sohamvillagecollege": {
+  "distance_m": 4964,
+  "last_tried": "2026-06-26",
+  "lat": 52.329737,
+  "lon": 0.338064,
+  "long": "Soham Village College parkrun",
+  "provisional": false,
+  "relation_m": 5129,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2020-01-04",
+  "trace_m": 4964
+ },
  "somerdalepavilion": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -3447,6 +3471,17 @@
   "lat": 51.821422,
   "lon": -0.060813,
   "long": "Westmill parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "weststowcountry": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.311579,
+  "lon": 0.640728,
+  "long": "West Stow Country parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
