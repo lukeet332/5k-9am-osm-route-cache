@@ -25,7 +25,7 @@ concurrency:
 jobs:
   improve:
     runs-on: ubuntu-latest
-    timeout-minutes: 30        # room for a slow flash generation (~80-150s) + the self-test retry loop
+    timeout-minutes: 45        # async pipeline: room for the author chain (frontier→fallback→anchor) + self-test retry loop
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -46,6 +46,8 @@ jobs:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          SAMBANOVA_API_KEY: ${{ secrets.SAMBANOVA_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
         run: |
           for attempt in 1 2; do
             python .github/scripts/ai_improve.py || { echo "author step errored"; exit 1; }

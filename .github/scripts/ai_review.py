@@ -80,7 +80,7 @@ def main():
                   + (L.BIBLE_FILE.read_text(errors="ignore")[:8000] if L.BIBLE_FILE.exists() else "(missing)")
                   + "\n\n===== OUTCOMES =====\n" + L.outcomes_summary()
                   + "\n\n===== PROPOSED DIFF =====\n" + diff)
-        result, slot = L.call_with_roles(prompt, roles=("fallback", "primary"))
+        result, slot = L.call_role(prompt, "reviewer")
         if result is None:
             L.done("No reviewer model — recommending caution on the constitution change.",
                    bible_touched="true", recommend="reject",
@@ -102,7 +102,7 @@ def main():
               + "\n\n===== OUTCOMES =====\n" + L.outcomes_summary()
               + "\n\n===== DIFF (truncated if very large) =====\n" + diff[:9000])
     # reviewer prefers the fallback model so it isn't the same instance as the author
-    result, slot = L.call_with_roles(prompt, roles=("fallback", "primary"))
+    result, slot = L.call_role(prompt, "reviewer")
     if result is None:
         # Fail SAFE: if no reviewer is available, do NOT approve — leave for a human.
         L.done("No reviewer model available — not approving.", approve="false",
@@ -115,7 +115,8 @@ def main():
     # Did we get the INTENDED independent reviewer, or did it fall back to the author model (e.g. the
     # reviewer 413'd because the diff exceeded its window, or was rate-limited)? Flag it so the human
     # knows the review was degraded (reduced independence) and can swap the reviewer model later.
-    intended = L.load_model_config()["fallback"]
+    chain = L.load_model_config()["reviewer"]
+    intended = chain[0] if chain else slot
     degraded = slot["provider"] != intended["provider"] or slot["model"] != intended["model"]
     print(f"Reviewer ({slot['model']}): approve={approve} degraded={degraded} — {feedback}")
     L.emit(approve="true" if approve else "false", feedback=feedback, reviewer=slot["model"],
