@@ -998,6 +998,19 @@
   "status": "failed",
   "trace_m": null
  },
+ "colneylane": {
+  "distance_m": 4993,
+  "last_tried": "2026-06-26",
+  "lat": 52.621317,
+  "lon": 1.22519,
+  "long": "Colney Lane parkrun",
+  "provisional": false,
+  "relation_m": 5043,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2018-10-20",
+  "trace_m": 4993
+ },
  "corby": {
   "distance_m": null,
   "last_tried": "2026-06-26",
