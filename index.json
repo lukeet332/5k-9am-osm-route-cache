@@ -408,6 +408,17 @@
   "trace_date": "2026-01-31",
   "trace_m": 5204
  },
+ "belvoircastle": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.894882,
+  "lon": -0.786835,
+  "long": "Belvoir Castle parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "bensyardely": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -1880,6 +1891,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "hafanpwllheli": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.888538,
+  "lon": -4.402811,
+  "long": "Hafan Pwllheli parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "hampsteadheath": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -2025,6 +2047,17 @@
   "lat": 51.531978,
   "lon": -0.919288,
   "long": "Henley-on-Thames parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "henleywood": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.862542,
+  "lon": -3.030368,
+  "long": "Henley Wood parkrun, Oswestry",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -2542,6 +2575,17 @@
   "status": "success",
   "trace_date": "2019-03-02",
   "trace_m": 5106
+ },
+ "longeaton": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.895155,
+  "lon": -1.285853,
+  "long": "Long Eaton parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "longrunmeadow": {
   "distance_m": null,
@@ -3479,6 +3523,17 @@
   "lon": -1.238464,
   "long": "Rugby parkrun",
   "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "rushcliffe": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.882497,
+  "lon": -1.149104,
+  "long": "Rushcliffe parkrun",
+  "relation_m": 9950,
   "source": null,
   "status": "gap",
   "trace_m": null
