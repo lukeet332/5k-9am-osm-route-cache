@@ -1183,6 +1183,17 @@
   "status": "success",
   "trace_m": null
  },
+ "greatdenham": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.121602,
+  "lon": -0.509062,
+  "long": "Great Denham parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "greatdunmow": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -3120,6 +3131,17 @@
   "trace_date": "2012-03-31",
   "trace_m": 5515
  },
+ "watermeadows": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.13458,
+  "lon": -0.988391,
+  "long": "Watermeadows parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "wendoverwoods": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -3190,6 +3212,19 @@
   "source": "osm_9am_trace",
   "status": "success",
   "trace_date": "2022-12-31"
+ },
+ "wimpoleestate": {
+  "distance_m": 4897,
+  "last_tried": "2026-06-26",
+  "lat": 52.140442,
+  "lon": -0.047207,
+  "long": "Wimpole Estate parkrun",
+  "provisional": false,
+  "relation_m": 4365,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2019-09-28",
+  "trace_m": 4897
  },
  "winchester": {
   "distance_m": 4760,
