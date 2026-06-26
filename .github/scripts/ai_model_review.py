@@ -137,7 +137,10 @@ def main():
         if avoid:
             prompt += ("\n\nDO NOT choose any of these — they just FAILED a live availability test: "
                        + "; ".join(avoid) + ". Pick DIFFERENT, currently-live models from the menu.")
-        rec, _ = L.call_with_roles(prompt, roles=("primary", "fallback"))
+        # Run the SELECTION on the DEEPER reviewer model first: this prompt is small (menu + config,
+        # not the whole algorithm), so it fits the reviewer's window, and picking the best models is a
+        # reasoning-heavy judgment best given to the smartest model. Falls back to the author if down.
+        rec, _ = L.call_with_roles(prompt, roles=("fallback", "primary"))
         if not isinstance(rec, dict):
             stop("No usable recommendation — keeping current models.")
         new, bad = {}, None
