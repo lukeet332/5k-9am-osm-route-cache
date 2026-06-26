@@ -446,6 +446,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "buckingham": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.998987,
+  "lon": -0.984462,
+  "long": "Buckingham parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "burgess": {
   "distance_m": 6206,
   "last_tried": "2026-06-25",
@@ -941,6 +952,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "fireservicecollege": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.990688,
+  "lon": -1.675487,
+  "long": "Fire Service College parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "fivearches": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1090,6 +1112,18 @@
   "long": "Grangemoor parkrun",
   "source": null,
   "status": "gap"
+ },
+ "greatcornard": {
+  "distance_m": 5068,
+  "last_tried": "2026-06-25",
+  "lat": 52.02463,
+  "lon": 0.751362,
+  "long": "Great Cornard parkrun",
+  "provisional": true,
+  "relation_m": 5068,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
  },
  "greatdunmow": {
   "distance_m": null,
@@ -1568,6 +1602,17 @@
   "lon": -0.403599,
   "long": "Leavesden Country parkrun",
   "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "letchworth": {
+  "distance_m": null,
+  "last_tried": "2026-06-25",
+  "lat": 51.999895,
+  "lon": -0.22279,
+  "long": "Letchworth parkrun",
+  "relation_m": 25485,
   "source": null,
   "status": "gap",
   "trace_m": null
@@ -2652,6 +2697,17 @@
   "lon": -2.155818,
   "long": "Tetbury Goods Shed parkrun",
   "relation_m": 2408,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
+ },
+ "tewkesbury": {
+  "distance_m": 5229,
+  "last_tried": "2026-06-25",
+  "lat": 51.987666,
+  "lon": -2.159373,
+  "long": "Tewkesbury parkrun",
+  "relation_m": 5229,
   "source": "osm_relation_offdist",
   "status": "failed",
   "trace_m": null

@@ -1,9 +1,9 @@
 {
  "schemaVersion": 1,
  "label": "parkruns successfully mapped",
- "message": "45/884 (5.1%)",
+ "message": "46/884 (5.2%)",
  "color": "brightgreen",
- "locked": 45,
+ "locked": 46,
  "total": 884,
- "percent": 5.1
+ "percent": 5.2
 }
