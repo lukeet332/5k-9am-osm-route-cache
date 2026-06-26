@@ -111,6 +111,17 @@
   "trace_date": "2022-03-26",
   "trace_m": 5086
  },
+ "alvaston": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.906173,
+  "lon": -1.440173,
+  "long": "Alvaston parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "andover": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -408,6 +419,17 @@
   "trace_date": "2026-01-31",
   "trace_m": 5204
  },
+ "beeston": {
+  "distance_m": 3526,
+  "last_tried": "2026-06-26",
+  "lat": 52.913592,
+  "lon": -1.201737,
+  "long": "Beeston parkrun",
+  "relation_m": 3526,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
+ },
  "belvoircastle": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -523,6 +545,17 @@
   "long": "Bracknell parkrun",
   "source": null,
   "status": "gap"
+ },
+ "bramshallroad": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.895262,
+  "lon": -1.871048,
+  "long": "Bramshall Road parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "brandoncountrypark": {
   "distance_m": 5249,
@@ -1075,6 +1108,17 @@
   "long": "Clevedon Salthouse Fields parkrun",
   "source": null,
   "status": "gap"
+ },
+ "clifton": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.907144,
+  "lon": -1.163033,
+  "long": "Clifton parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "coedcefnpwlldu": {
   "distance_m": null,
@@ -3249,6 +3293,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "pontybala": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.912396,
+  "lon": -3.593199,
+  "long": "Pont y Bala parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "pontypool": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -3683,6 +3738,18 @@
   "long": "Shepton Mallet parkrun",
   "source": null,
   "status": "gap"
+ },
+ "sheringham": {
+  "distance_m": 4997,
+  "last_tried": "2026-06-26",
+  "lat": 52.928775,
+  "lon": 1.180601,
+  "long": "Sheringham parkrun",
+  "provisional": true,
+  "relation_m": 4997,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
  },
  "shornewoods": {
   "distance_m": 4944,
