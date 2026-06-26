@@ -291,6 +291,15 @@ def build_one(ev):
             return {"source": "osm_relation_doubled", "distance_m": round(doubled_len), "status": "success",
                     "provisional": True, **diag}
 
+    # double a half-distance trace (2-lap course, GPS only)
+    if tr and HALF_REL_LO <= tr[0] <= HALF_REL_HI:
+        doubled_path = tr[1] + tr[1]
+        doubled_len = 2 * length(tr[1])
+        if REL_LO <= doubled_len <= REL_HI:
+            write_gpx(name, ev["long"], doubled_path, "osm_9am_trace_doubled")
+            return {"source": "osm_9am_trace_doubled", "distance_m": round(doubled_len), "status": "success",
+                    "provisional": False, "trace_date": tr[2], **diag}
+
     # not a success: no geometry. drop any stale success GPX from a prior run.
     stale = os.path.join(ROUTES, f"{name}.gpx")
     if os.path.exists(stale):

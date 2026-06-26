@@ -51,3 +51,6 @@ progressively more creative over time. Append-only; newest at the bottom.
 
 ### 2026-06-26 - DeepSeek-V3.2-bot (DeepSeek-V3.2, minor)
 - Add trace doubling for half-distance traces to capture 2-lap parkruns missed by relation-only doubling
+
+### 2026-06-26 — deepseek-v4-flash-bot (deepseek-ai/deepseek-v4-flash, minor)
+- Add trace doubling for half-distance traces to capture 2-lap parkruns missed by relation-only doubling
