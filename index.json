@@ -533,6 +533,19 @@
   "status": "gap",
   "trace_m": null
  },
+ "burystedmunds": {
+  "distance_m": 5000,
+  "last_tried": "2026-06-26",
+  "lat": 52.224887,
+  "lon": 0.730183,
+  "long": "Bury St Edmunds parkrun",
+  "provisional": false,
+  "relation_m": null,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2017-11-11",
+  "trace_m": 5000
+ },
  "bushy": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1834,6 +1847,17 @@
   "source": "osm_relation",
   "status": "success",
   "trace_m": 3895
+ },
+ "llanerchaeron": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.220443,
+  "lon": -4.235798,
+  "long": "Llanerchaeron parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "llanfoistcrossing": {
   "distance_m": null,
