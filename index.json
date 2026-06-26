@@ -303,6 +303,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "battlesteadcroft": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.78924,
+  "lon": -1.683952,
+  "long": "Battlestead Croft parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "beacon": {
   "distance_m": 2555,
   "last_tried": "2026-06-26",
@@ -480,6 +491,17 @@
   "relation_m": null,
   "source": null,
   "status": "gap",
+  "trace_m": null
+ },
+ "blickling": {
+  "distance_m": 4366,
+  "last_tried": "2026-06-26",
+  "lat": 52.813653,
+  "lon": 1.221671,
+  "long": "Blickling parkrun",
+  "relation_m": 4366,
+  "source": "osm_relation_offdist",
+  "status": "failed",
   "trace_m": null
  },
  "bracknell": {
@@ -1253,6 +1275,17 @@
   "long": "Dinton Pastures parkrun",
   "source": null,
   "status": "gap"
+ },
+ "dishleyloughborough": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.787485,
+  "lon": -1.234785,
+  "long": "Dishley parkrun, Loughborough",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "dolgellau": {
   "distance_m": null,
@@ -2188,6 +2221,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "isabeltrail": {
+  "distance_m": 4469,
+  "last_tried": "2026-06-26",
+  "lat": 52.808242,
+  "lon": -2.125953,
+  "long": "Isabel Trail parkrun",
+  "relation_m": 4469,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
+ },
  "itchenvalleycountry": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -2947,6 +2991,19 @@
   "source": "osm_relation_offdist",
   "status": "failed",
   "trace_m": null
+ },
+ "northwalsham": {
+  "distance_m": 4998,
+  "last_tried": "2026-06-26",
+  "lat": 52.818216,
+  "lon": 1.391589,
+  "long": "North Walsham parkrun",
+  "provisional": false,
+  "relation_m": 4941,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2023-09-23",
+  "trace_m": 4998
  },
  "norwich": {
   "distance_m": 5052,
