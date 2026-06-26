@@ -286,6 +286,17 @@
   "source": null,
   "status": "gap"
  },
+ "bedford": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.148125,
+  "lon": -0.459366,
+  "long": "Bedford parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "bedgeburypinetum": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -1086,6 +1097,18 @@
   "source": null,
   "status": "gap"
  },
+ "fulbournhospital": {
+  "distance_m": 4958,
+  "last_tried": "2026-06-26",
+  "lat": 52.184131,
+  "lon": 0.186094,
+  "long": "Fulbourn Hospital parkrun",
+  "provisional": true,
+  "relation_m": 4958,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
+ },
  "fulhampalace": {
   "distance_m": 1800,
   "last_tried": "2026-06-25",
@@ -1253,6 +1276,17 @@
   "relation_m": 3136,
   "source": "osm_relation_offdist",
   "status": "failed",
+  "trace_m": null
+ },
+ "groe": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.150418,
+  "lon": -3.403113,
+  "long": "Groe parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
   "trace_m": null
  },
  "grovefields": {
@@ -2353,6 +2387,17 @@
   "long": "Queen Elizabeth parkrun",
   "source": "osm_relation",
   "status": "success"
+ },
+ "queenswoodcountrypark": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.158443,
+  "lon": -2.723025,
+  "long": "Queenswood Country Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "raphael": {
   "distance_m": 4888,
