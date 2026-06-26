@@ -430,6 +430,17 @@
   "status": "failed",
   "trace_m": null
  },
+ "beltonhouse": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.942743,
+  "lon": -0.620021,
+  "long": "Belton House parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "belvoircastle": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -1178,6 +1189,17 @@
   "status": "success",
   "trace_date": "2018-10-20",
   "trace_m": 4993
+ },
+ "colwick": {
+  "distance_m": 4162,
+  "last_tried": "2026-06-26",
+  "lat": 52.945171,
+  "lon": -1.09786,
+  "long": "Colwick parkrun",
+  "relation_m": 4162,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
  },
  "conkers": {
   "distance_m": 3561,
@@ -2205,6 +2227,29 @@
   "status": "gap",
   "trace_m": null
  },
+ "holkham": {
+  "distance_m": 5089,
+  "last_tried": "2026-06-26",
+  "lat": 52.950159,
+  "lon": 0.801022,
+  "long": "Holkham parkrun",
+  "provisional": true,
+  "relation_m": 5089,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
+ },
+ "holmepierrepont": {
+  "distance_m": 4162,
+  "last_tried": "2026-06-26",
+  "lat": 52.942755,
+  "lon": -1.092866,
+  "long": "Holme Pierrepont parkrun",
+  "relation_m": 4162,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
+ },
  "holywellkinggeorgevplayingfields": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -2255,6 +2300,18 @@
   "source": null,
   "status": "gap",
   "trace_m": null
+ },
+ "hunstantonpromenade": {
+  "distance_m": 1723,
+  "last_tried": "2026-06-26",
+  "lat": 52.941684,
+  "lon": 0.486526,
+  "long": "Hunstanton Promenade parkrun",
+  "relation_m": null,
+  "source": "osm_9am_trace_offdist",
+  "status": "failed",
+  "trace_date": "2024-04-06",
+  "trace_m": 1723
  },
  "huntingdon": {
   "distance_m": null,
@@ -2821,6 +2878,17 @@
   "long": "Marine Parade parkrun",
   "source": null,
   "status": "gap"
+ },
+ "markeaton": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.935408,
+  "lon": -1.504769,
+  "long": "Markeaton parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "marketbosworthcountrypark": {
   "distance_m": 5020,
@@ -4400,6 +4468,17 @@
   "relation_m": 5138,
   "source": "osm_relation",
   "status": "success",
+  "trace_m": null
+ },
+ "victoriaembankment": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.932657,
+  "lon": -1.141872,
+  "long": "Victoria Embankment parkrun, Nottingham",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
   "trace_m": null
  },
  "victoriaparknewbury": {
