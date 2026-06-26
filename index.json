@@ -3532,6 +3532,19 @@
   "source": null,
   "status": "gap"
  },
+ "sandringham": {
+  "distance_m": 5071,
+  "last_tried": "2026-06-26",
+  "lat": 52.829752,
+  "lon": 0.504942,
+  "long": "Sandringham parkrun",
+  "provisional": false,
+  "relation_m": 5125,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2022-01-29",
+  "trace_m": 5071
+ },
  "sandwellvalley": {
   "distance_m": null,
   "last_tried": "2026-06-26",
