@@ -20,7 +20,7 @@ TARGET = 5000
 REL_LO, REL_HI = 4800, 5200      # keep a relation only this close to 5k
 HALF_REL_LO, HALF_REL_HI = 2300, 2800  # half-distance band: candidates for doubling
 SANE_LO, SANE_HI = 1500, 9000    # off-tolerance finds in this band -> diagnostics; wider = noise
-RATE_S = 1.5            # min seconds between network calls
+RATE_S = 2.5            # min seconds between network calls (conservative; ban-safety > speed)
 HAVANT = (50.87577, -0.97557)    # rollout anchor: start here, work north
 COVERAGE_REFINE = 0.80  # re-query accurate courses only once >=80% are within tolerance
 
@@ -92,9 +92,10 @@ def _throttle():
     if wait > 0: time.sleep(wait)
     _last[0] = time.time()
 
-# Ban-safety: if OSM throttles us (429) too often in a run, stop early rather than keep hammering it.
+# Ban-safety: if OSM throttles us (429) this many times in a run, STOP and back off 60 min rather than
+# keep hammering. Kept low (3) on purpose - we'd much rather stop early + resume later than risk a ban.
 RATE_LIMIT_HITS = [0]
-MAX_RATE_LIMIT_HITS = 6
+MAX_RATE_LIMIT_HITS = 3
 
 def _get(url, data=None, timeout=70):
     _throttle()
