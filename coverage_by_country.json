@@ -1,12 +1,12 @@
 {
  "world_total": 2364,
- "world_mapped": 122,
+ "world_mapped": 124,
  "countries": [
   {
    "code": 97,
    "name": "United Kingdom",
    "total": 886,
-   "mapped": 120
+   "mapped": 122
   },
   {
    "code": 3,

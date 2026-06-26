@@ -514,6 +514,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "australianstandingstones": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -29.741602,
+  "lon": 151.752481,
+  "long": "Australian Standing Stones parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "aveley": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -1446,6 +1458,18 @@
   "lat": 55.106922,
   "lon": -1.499456,
   "long": "Blyth Links parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "bognorregis": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.786913,
+  "lon": -0.668305,
+  "long": "Bognor Regis parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -3185,6 +3209,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "cooberpedyoval": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -29.018468,
+  "lon": 134.754566,
+  "long": "Coober Pedy Oval parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "cooksriver": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -3625,6 +3661,18 @@
   "trace_date": "2024-02-03",
   "trace_m": 3037
  },
+ "daventry": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.262374,
+  "lon": -1.15732,
+  "long": "Daventry parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "dawesville": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -3881,6 +3929,19 @@
   "status": "success",
   "trace_date": "2022-08-06",
   "trace_m": 4994
+ },
+ "downslinkshorehambysea": {
+  "built_by": "v0.5.0",
+  "distance_m": 2946,
+  "last_tried": "2026-06-26",
+  "lat": 50.844722,
+  "lon": -0.286738,
+  "long": "Downs Link parkrun, Shoreham-by-Sea",
+  "relation_m": null,
+  "source": "osm_9am_trace_offdist",
+  "status": "failed",
+  "trace_date": "2025-10-25",
+  "trace_m": 2946
  },
  "dragereserve": {
   "built_by": "v0.5.0",
@@ -5235,6 +5296,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "grafton": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -29.643847,
+  "lon": 152.920487,
+  "long": "Grafton parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "grahamstownaquaticcentremedowie": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -6420,6 +6493,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "inverell": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -29.77388,
+  "lon": 151.10897,
+  "long": "Inverell parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "invereskprecinct": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -6593,6 +6678,18 @@
   "status": "success",
   "trace_date": "2025-09-27",
   "trace_m": 5068
+ },
+ "jubileetenterfield": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -29.054042,
+  "lon": 152.01537,
+  "long": "Jubilee parkrun, Tenterfield",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "jubileeway": {
   "built_by": "v0.5.0",
@@ -7445,6 +7542,18 @@
   "lat": -33.494173,
   "lon": 150.151201,
   "long": "Lithgow parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "littlehamptonprom": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 50.802284,
+  "lon": -0.541939,
+  "long": "Littlehampton Prom parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -8578,6 +8687,18 @@
   "lat": 54.065082,
   "lon": -2.885102,
   "long": "Morecambe Prom parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "moree": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -29.46707,
+  "lon": 149.843183,
+  "long": "Moree parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -11133,6 +11254,18 @@
   "lat": 52.643712,
   "lon": -0.624447,
   "long": "Rutland Water parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "salceyforest": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.159223,
+  "lon": -0.841556,
+  "long": "Salcey Forest parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -14458,6 +14591,18 @@
   "lat": -36.316082,
   "lon": 146.838391,
   "long": "Yackandandah Rail Trail parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "yamba": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -29.435742,
+  "lon": 153.357271,
+  "long": "Yamba parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
