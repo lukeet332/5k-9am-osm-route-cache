@@ -81,13 +81,15 @@ def main():
         L.done(f"Constitution amendment — recommend {rec}.",
                bible_touched="true", recommend=rec, advice=advice, reviewer=slot["model"])
 
+    # Keep this prompt lean so the reviewer fits an 8k-token model (github-models) and stays the
+    # cheap, INDEPENDENT check: the reviewer judges a (usually small) DIFF — it needs the constitution
+    # + a doctrine excerpt, not the whole working doc. Caps below; the diff cap bounds a big rewrite.
     prompt = (PROMPT
               + "\n\n===== CONSTITUTION (AI_CONTEXT_READ_ONLY_BIBLE.md — SUPREME) =====\n"
-              + (L.BIBLE_FILE.read_text(errors="ignore")[:8000] if L.BIBLE_FILE.exists() else "(missing)")
-              + "\n\n===== CONTRACT (AI_CONTEXT.md) =====\n" + L.CONTEXT_FILE.read_text(errors="ignore")[:14000]
-              + "\n\n===== JOURNAL (past ideas + learnings) =====\n" + L.journal_tail()
+              + (L.BIBLE_FILE.read_text(errors="ignore")[:6000] if L.BIBLE_FILE.exists() else "(missing)")
+              + "\n\n===== CONTRACT (AI_CONTEXT.md, excerpt) =====\n" + L.CONTEXT_FILE.read_text(errors="ignore")[:5000]
               + "\n\n===== OUTCOMES =====\n" + L.outcomes_summary()
-              + "\n\n===== DIFF =====\n" + diff)
+              + "\n\n===== DIFF (truncated if very large) =====\n" + diff[:9000])
     # reviewer prefers the fallback model so it isn't the same instance as the author
     result, slot = L.call_with_roles(prompt, roles=("fallback", "primary"))
     if result is None:

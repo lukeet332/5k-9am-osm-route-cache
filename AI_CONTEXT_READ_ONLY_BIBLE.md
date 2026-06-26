@@ -46,3 +46,10 @@ time, no exceptions.
    `build_cache.py` and asserts their behaviour — that's the merge gate. Keep those symbols callable
    with their current names and signatures; **improve their *internals*, never rename or re-shape
    them.** (The current pinned list is maintained in `AI_CONTEXT.md` — read it before refactoring.)
+9. **Be frugal with tokens — the pipeline must stay on free model tiers.** The whole AI pipeline runs
+   on free model quotas (input/output token caps + request limits). Do NOT frivolously expand prompt
+   context, the algorithm file, or the docs the bots load. Prefer compact digests over verbose prose;
+   keep `build_cache.py` and `AI_CONTEXT.md` lean (prune as readily as you add); avoid changes that
+   materially grow the per-run token cost. When token budget and breadth conflict, favour fitting the
+   free tier. The model-review must pick models whose **free-tier context window fits the master
+   prompt** (the whole algorithm + context) — capability second to fitting the budget.
