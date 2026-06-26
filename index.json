@@ -3925,6 +3925,17 @@
   "status": "gap",
   "trace_m": null
  },
+ "penningtonflash": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.491608,
+  "lon": -2.542745,
+  "long": "Pennington Flash parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "penrhyn": {
   "distance_m": 2716,
   "last_tried": "2026-06-26",
@@ -4792,6 +4803,17 @@
   "status": "failed",
   "trace_date": "2019-08-17",
   "trace_m": 1787
+ },
+ "stamfordpark": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 53.490901,
+  "lon": -2.066163,
+  "long": "Stamford Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "stanborough": {
   "distance_m": null,
@@ -5718,6 +5740,18 @@
   "relation_m": null,
   "source": null,
   "status": "gap",
+  "trace_m": null
+ },
+ "worsleywoods": {
+  "distance_m": 4877,
+  "last_tried": "2026-06-26",
+  "lat": 53.494328,
+  "lon": -2.359056,
+  "long": "Worsley Woods parkrun",
+  "provisional": true,
+  "relation_m": 4877,
+  "source": "osm_relation",
+  "status": "success",
   "trace_m": null
  },
  "wotton": {
