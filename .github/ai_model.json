@@ -1,14 +1,15 @@
 {
-  "primary": {
-    "provider": "gemini",
-    "model": "gemini-2.5-flash"
-  },
-  "fallback": {
-    "provider": "github-models",
-    "model": "openai/gpt-4.1"
-  },
-  "fast": {
-    "provider": "gemini",
-    "model": "gemini-2.5-flash"
-  }
+  "author": [
+    { "provider": "sambanova", "model": "DeepSeek-V3.2" },
+    { "provider": "cloudflare", "model": "@cf/openai/gpt-oss-120b" },
+    { "provider": "gemini", "model": "gemini-2.5-flash" }
+  ],
+  "reviewer": [
+    { "provider": "cerebras", "model": "zai-glm-4.7" },
+    { "provider": "groq", "model": "openai/gpt-oss-120b" },
+    { "provider": "github-models", "model": "openai/gpt-4.1" }
+  ],
+  "fast": [
+    { "provider": "gemini", "model": "gemini-2.5-flash" }
+  ]
 }

@@ -81,26 +81,26 @@ avoid churn: every addition OR removal must plausibly advance the goal; no cosme
 You edit the deterministic code only — NEVER output coordinates or hand-draw routes; the code computes
 geometry from OSM. Do NOT loosen the accuracy bars (4.8-5.2 relation / 4.5-5.6 trace), weaken the OSM
 rate-limiting, or remove licensing/attribution. If nothing is clearly worth changing this week, return
-an empty "changes" array (still append a short JOURNAL note saying why).
+an empty "edits" array.
 
-Respond with STRICT JSON only:
-{"summary": "<one line>", "version_bump": "patch|minor|major", "changes": [{"path": "<file>", "content": "<COMPLETE new file>"}]}
-"version_bump" classifies THIS change by SCOPE/AMBITION (it cannot break the output contract — you
-can only edit build_cache.py/AI_CONTEXT.md/JOURNAL.md, never the index.json/routes/GPX shape):
+OUTPUT A SMALL CHANGESET — never whole files. Respond with STRICT JSON only:
+{"summary": "<one line>", "version_bump": "patch|minor|major",
+ "edits": [{"path": "build_cache.py", "find": "<exact existing snippet>", "replace": "<new snippet>"}]}
+Each edit's "find" MUST be copied VERBATIM — character-for-character, including exact indentation and
+comments — from the CURRENT build_cache.py shown below, and must match EXACTLY ONCE in the file. If a
+"find" isn't unique or doesn't match, the edit is rejected and your WHOLE change is dropped — so keep
+each "find" minimal but include enough surrounding lines to be unambiguous. "replace" is the new text
+for that snippet. You may give several edits; keep them tight, correct, and self-consistent.
+"version_bump" classifies THIS change by SCOPE/AMBITION:
   - "patch": a small tweak, bugfix, threshold nudge, prune, or refactor.
-  - "minor": a meaningful new capability or a real improvement to extraction/coverage (the usual case
-    — e.g. a new query strategy, multi-Saturday averaging, smarter way-chaining).
-  - "major": an ambitious, substantial rework (a large algorithmic leap, e.g. global expansion or a
-    new data source). Use sparingly.
-If "changes" is empty (nothing worth changing), use "patch".
-"content" is the entire file, not a diff. You SHOULD also APPEND a dated entry to JOURNAL.md (return
-the whole file with your entry added at the END: date, the idea, why from the OUTCOMES, what you
-changed) so future weeks build on it. You MAY append a one-line durable learning under
-AI_CONTEXT.md's "## Learnings (appended by the bot)" section. Normally only touch build_cache.py,
-JOURNAL.md, and AI_CONTEXT.md. You MAY also propose an amendment to the constitution
-(AI_CONTEXT_READ_ONLY_BIBLE.md) — but only rarely and with strong justification, knowing it will NOT
-auto-merge and needs the human owner's explicit approval. NEVER edit selftest.py or anything under
-.github/ (the safety pipeline)."""
+  - "minor": a meaningful new capability or real coverage/accuracy gain (the usual case).
+  - "major": an ambitious, substantial rework. Use sparingly.
+If "edits" is empty, use "patch".
+You normally edit ONLY build_cache.py. You MAY also curate AI_CONTEXT.md with the same find/replace
+edits. You do NOT need to touch JOURNAL.md — the pipeline records a journal entry from your "summary"
+automatically. NEVER edit selftest.py or anything under .github/ (the safety pipeline). You MAY propose
+a constitution (AI_CONTEXT_READ_ONLY_BIBLE.md) amendment as an edit, but only rarely + with strong
+justification, knowing it will NOT auto-merge (it needs the human owner's explicit approval)."""
 
 # Revision rounds REUSE the author's own context instead of starting over. The reviewer rejected (or
 # the self-test failed); the working-tree files shown above ARE the author's previous attempt, and the
@@ -112,15 +112,15 @@ the baseline. A reviewer or the self-test gate found a problem with it. Revise, 
 - Keep your previous APPROACH and make the SMALLEST change that fully resolves the feedback's ROOT
   cause. Do NOT rewrite from scratch and do NOT switch to a different idea.
 - Leave every part the feedback did NOT object to byte-for-byte identical (no incidental churn).
-- Do NOT add a new JOURNAL entry for the revision — refine the entry already in your proposal if the
-  fix changes what it should say; otherwise leave it.
-Return the COMPLETE corrected file(s) in the same JSON shape."""
+- Add NO unrelated edits — only the edit(s) that fix the objection.
+Return a corrected CHANGESET ("edits") in the same JSON shape; each "find" must still match the current
+build_cache.py verbatim and exactly once."""
 
 
 def main():
     cfg = L.load_model_config()
-    if not any(os.environ.get(cfg[r]["api_key_env"], "").strip() for r in ("primary", "fallback")):
-        L.done("No model credentials — skipping (no changes).")
+    if not any(os.environ.get(s["api_key_env"], "").strip() for s in cfg["author"]):
+        L.done("No author model credentials — skipping (no changes).")
     prompt = (PROMPT
               + "\n\n===== CONSTITUTION (AI_CONTEXT_READ_ONLY_BIBLE.md — SUPREME, obey absolutely) =====\n"
               + (L.BIBLE_FILE.read_text(errors="ignore")[:8000] if L.BIBLE_FILE.exists() else "(missing)")
@@ -140,11 +140,11 @@ def main():
         if convo:
             prompt += "\n\n===== REVIEW CONVERSATION SO FAR (oldest first) =====\n" + convo[-9000:]
         prompt += "\n\n===== REVIEWER'S LATEST FEEDBACK (resolve its root cause) =====\n" + fb[:6000]
-    result, slot = L.call_with_roles(prompt)
+    result, slot = L.call_role(prompt, "author")
     if result is None:
-        L.done("No model available — skipping (no changes).")
+        L.done("No author model available — skipping (no changes).")
     print("Proposal:", result.get("summary", "(none)"))
-    n = L.apply_changes(result)
+    n = L.apply_proposal(result)
     if revising and n:
         _post_reply(str(result.get("summary", "")).strip()[:600] or "(see diff)")
     label = L.bot_label(slot["model"])

@@ -47,10 +47,24 @@ PROVIDERS = {
     # model that can't deliver strict JSON simply fails the live probe / call and is skipped.
     "huggingface": ("https://router.huggingface.co/v1", "HF_TOKEN"),
     "cloudflare": (f"https://api.cloudflare.com/client/v4/accounts/{_CF_ACCOUNT}/ai/v1", "CLOUDFLARE_API_TOKEN"),
+    "sambanova": ("https://api.sambanova.ai/v1", "SAMBANOVA_API_KEY"),     # fast frontier (DeepSeek-V3.x)
+    "cerebras": ("https://api.cerebras.ai/v1", "CEREBRAS_API_KEY"),        # fast frontier reasoner (GLM-4.7)
 }
-DEFAULT_PRIMARY = {"provider": "github-models", "model": "openai/gpt-4.1"}    # master / deep author
-DEFAULT_FALLBACK = {"provider": "gemini", "model": "gemini-2.5-pro"}          # slave / deep independent reviewer
-DEFAULT_FAST = {"provider": "gemini", "model": "gemini-2.5-flash"}            # fast tier for delegated quick subtasks (never reviews)
+
+# Each role is a CHAIN tried in order: a bleeding-edge frontier model first, then a smart fallback on a
+# DIFFERENT provider, then a rock-solid anchor — so a single overloaded free endpoint never sinks a run.
+# Picked from an empirical bake-off (changeset output, selftest-gated): see JOURNAL/AI_CONTEXT.
+DEFAULT_AUTHOR = [
+    {"provider": "sambanova", "model": "DeepSeek-V3.2"},            # best idea+code quality in the bake-off
+    {"provider": "cloudflare", "model": "@cf/openai/gpt-oss-120b"},  # frontier fallback, different provider
+    {"provider": "gemini", "model": "gemini-2.5-flash"},            # rock-solid anchor (proven, generous output)
+]
+DEFAULT_REVIEWER = [
+    {"provider": "cerebras", "model": "zai-glm-4.7"},               # frontier reasoner, validated as gate
+    {"provider": "groq", "model": "openai/gpt-oss-120b"},           # frontier + strict JSON, different provider
+    {"provider": "github-models", "model": "openai/gpt-4.1"},       # rock-solid independent anchor
+]
+DEFAULT_FAST = [{"provider": "gemini", "model": "gemini-2.5-flash"}]   # trivial delegated subtasks only
 
 
 def emit(**kv):
@@ -80,28 +94,42 @@ def resolve(slot, default):
     return {"provider": provider, "model": model.strip(), "base_url": base_url, "api_key_env": key_env}
 
 
+def _resolve_chain(items, default):
+    """Resolve a role's CHAIN (ordered list of slots). Falls back to the default chain if absent."""
+    items = items if isinstance(items, list) and items else default
+    return [resolve(s, default[0]) for s in items]
+
+
 def load_model_config():
+    """Return per-role CHAINS: {"author": [...], "reviewer": [...], "fast": [...]}. Each chain is tried
+    in order at call time (frontier first, anchor last). Back-compat: a legacy {primary,fallback,fast}
+    config maps primary->author, fallback->reviewer."""
     data = {}
     try:
         if MODEL_CONFIG.exists():
             data = json.loads(MODEL_CONFIG.read_text())
     except Exception as e:
         print(f"Could not read ai_model.json ({e.__class__.__name__}); using defaults.")
-    return {"primary": resolve(data.get("primary"), DEFAULT_PRIMARY),
-            "fallback": resolve(data.get("fallback"), DEFAULT_FALLBACK),
-            "fast": resolve(data.get("fast"), DEFAULT_FAST)}
+    if "author" in data or "reviewer" in data:          # new per-role-chain schema
+        return {"author": _resolve_chain(data.get("author"), DEFAULT_AUTHOR),
+                "reviewer": _resolve_chain(data.get("reviewer"), DEFAULT_REVIEWER),
+                "fast": _resolve_chain(data.get("fast"), DEFAULT_FAST)}
+    # legacy single-slot schema -> wrap each as a 1-element chain
+    return {"author": _resolve_chain([data["primary"]] if data.get("primary") else None, DEFAULT_AUTHOR),
+            "reviewer": _resolve_chain([data["fallback"]] if data.get("fallback") else None, DEFAULT_REVIEWER),
+            "fast": _resolve_chain([data["fast"]] if data.get("fast") else None, DEFAULT_FAST)}
 
 
 def bot_label(model):
     return re.sub(r"[^A-Za-z0-9._-]", "-", model.split("/")[-1]) + "-bot"
 
 
-def _post(url, headers, payload, attempts=3, timeout=180):
+def _post(url, headers, payload, attempts=3, timeout=300):
     """POST with retry+backoff on TRANSIENT errors (429 rate-limit, 500/502/503/504 server/overload,
-    AND read timeouts — a big author generation returning the whole file can take ~80-150s on a free
-    flash model). One transient blip / slow response should not waste the run. Non-transient errors
-    (400/401/413 …) raise immediately. timeout=180s/attempt; attempts kept low so the worst case stays
-    within the job's timeout-minutes."""
+    AND read timeouts). This is an ASYNC pipeline, so slow-but-correct is fine: a frontier model on a
+    free tier can take a while, hence a generous 300s/attempt. Changeset output is small so calls are
+    usually quick; the timeout just lets a slow tier finish rather than getting cut off. Non-transient
+    errors (400/401/413 …) raise immediately; attempts kept low so worst-case stays within the job."""
     # A real User-Agent: some providers (e.g. Groq) sit behind Cloudflare, which 403s the default
     # "Python-urllib/x.y" signature (error 1010). A normal UA passes and is harmless elsewhere.
     req = urllib.request.Request(url, data=json.dumps(payload).encode(),
@@ -136,15 +164,18 @@ def call_json(slot, prompt):
     return json.loads(data["choices"][0]["message"]["content"])
 
 
-def call_with_roles(prompt, roles=("primary", "fallback")):
-    """Try the given config roles in order; return (result, slot) or (None, None)."""
-    cfg = load_model_config()
-    for role in roles:
-        slot = cfg[role]
+def call_role(prompt, role):
+    """Try each model in the ROLE's chain (author/reviewer/fast) in order; the first that returns valid
+    JSON wins. A model with no key, or that errors/times out, is skipped — so the chain degrades from
+    the frontier primary through a smart fallback to the rock-solid anchor. Returns (result, slot) or
+    (None, None)."""
+    chain = load_model_config().get(role) or []
+    for slot in chain:
         if not os.environ.get(slot["api_key_env"], "").strip():
+            print(f"{role}: skip {slot['provider']}/{slot['model']} (no key)")
             continue
         try:
-            print(f"Asking {role}: {slot['provider']} ({slot['model']})…")
+            print(f"{role}: trying {slot['provider']} ({slot['model']})…")
             return call_json(slot, prompt), slot
         except Exception as e:
             # Surface the real cause (HTTP status + body) — a swallowed HTTPError once hid that the
@@ -156,8 +187,15 @@ def call_with_roles(prompt, roles=("primary", "fallback")):
                     body = e.read().decode("utf-8", "ignore")[:300]
             except Exception:
                 pass
-            print(f"{role} {slot['provider']} unavailable ({e.__class__.__name__} {code}) {body}")
+            print(f"{role}: {slot['provider']} unavailable ({e.__class__.__name__} {code}) {body}")
     return None, None
+
+
+# Backward-compat shim: older callers used call_with_roles((reviewer-ish, author-ish)). Map to the
+# new role chains so nothing breaks during the transition.
+def call_with_roles(prompt, roles=("primary", "fallback")):
+    role = "reviewer" if roles and roles[0] in ("fallback", "reviewer") else "author"
+    return call_role(prompt, role)
 
 
 def is_safe(path):
@@ -169,7 +207,35 @@ def is_safe(path):
     return rf in ALLOWED
 
 
-def apply_changes(result):
+def apply_proposal(result):
+    """Apply an author proposal. Two formats supported:
+      * "edits":   [{path, find, replace}]  — a precise CHANGESET (preferred: small output, fits every
+                    free output cap). Each `find` must appear EXACTLY ONCE in the (allow-listed,
+                    existing) file. Application is ATOMIC: if ANY edit fails to match, NOTHING is
+                    written and 0 is returned, so the caller treats it as a failed attempt and the
+                    chain/retry moves on (a partial apply would corrupt the file).
+      * "changes": [{path, content}]        — whole-file overwrite (legacy / big-context models).
+    Returns the number of files/edits applied (0 = nothing applied)."""
+    edits = result.get("edits") or []
+    if edits:
+        pending = {}                                   # Path -> new content (staged, not yet written)
+        for e in edits:
+            rel = str(e.get("path", "")).lstrip("/")
+            find, repl = e.get("find"), e.get("replace")
+            target = (REPO / rel).resolve() if rel else None
+            if not rel or find is None or repl is None:
+                print("  edit rejected: missing path/find/replace"); return 0
+            if not is_safe(target) or not target.is_file():
+                print(f"  edit rejected (not allow-listed/existing): {rel}"); return 0
+            cur = pending.get(target, target.read_text())
+            n = cur.count(find)
+            if n != 1:                                 # must match exactly once (present + unambiguous)
+                print(f"  edit rejected: 'find' appears {n}x in {rel} (need exactly 1)"); return 0
+            pending[target] = cur.replace(find, repl, 1)
+        for target, content in pending.items():
+            target.write_text(content); print(f"  edited: {target.name}")
+        return len(edits)
+    # whole-file fallback
     changed = 0
     for ch in result.get("changes", []):
         rel = str(ch.get("path", "")).lstrip("/")
@@ -184,6 +250,10 @@ def apply_changes(result):
         target.write_text(content)
         print(f"  patched: {rel}"); changed += 1
     return changed
+
+
+# Old name kept as an alias so existing imports keep working.
+apply_changes = apply_proposal
 
 
 def journal_tail(max_chars=6000):
