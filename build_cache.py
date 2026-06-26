@@ -226,7 +226,11 @@ def trace_courses_multi(name, lat, lon):
     # group by date: Saturday/Christmas/New-Year, local 09:00-09:45, anchored within 150m of the start
     traces = {}
     for la, lo, t in pts:
-        ldt = local(t, lat, lon)
+        try:
+            ldt = local(t, lat, lon)
+        except Exception:
+            continue   # corrupt/extreme trace timestamp -> skip this point, not the whole event
+
         is_saturday = ldt.weekday() == 5
         is_christmas_day = ldt.month == 12 and ldt.day == 25
         is_new_years_day = ldt.month == 1 and ldt.day == 1
@@ -269,7 +273,11 @@ def trace_course(name, lat, lon):
     pts = trace_points(name, lat, lon)
     win = []
     for la, lo, t in pts:
-        ldt = local(t, lat, lon)
+        try:
+            ldt = local(t, lat, lon)
+        except Exception:
+            continue   # corrupt/extreme trace timestamp -> skip this point, not the whole event
+
         is_saturday = ldt.weekday() == 5
         is_christmas_day = ldt.month == 12 and ldt.day == 25
         is_new_years_day = ldt.month == 1 and ldt.day == 1
@@ -442,7 +450,18 @@ def main():
         try:
             res = build_one(ev)
         except Exception as ex:
-            print(f"  {ev['name']:<24} ERROR {ex}"); continue
+            # record ERROR as a first-class outcome (was: print + skip -> invisible to the
+            # maintenance bot, which only reads index.json). status=error + message means a
+            # recurring crash surfaces in outcomes_summary so the author can fix it, and the
+            # event stays a candidate (no distance_m) so it self-heals once the crash is fixed.
+            msg = str(ex)[:200]
+            print(f"  {ev['name']:<24} ERROR {msg}")
+            index[ev["name"]] = {"long": ev["long"], "lat": ev["lat"], "lon": ev["lon"],
+                                 "last_tried": today, "built_by": algo_version(),
+                                 "status": "error", "error": msg, "source": None, "distance_m": None}
+            json.dump(index, open(index_path, "w"), indent=1, sort_keys=True)
+            tally["error"] = tally.get("error", 0) + 1
+            continue
         entry = {"long": ev["long"], "lat": ev["lat"], "lon": ev["lon"], "last_tried": today,
                  "built_by": algo_version(), **res}
         index[ev["name"]] = entry

@@ -99,7 +99,35 @@ def main():
         if os.path.exists(f):
             os.remove(f)
 
-    print(f"OK — reconstructed {L:.0f} m / {len(pts)} pts; helpers + lock + trust + doubling pass.")
+    # 6) a single corrupt/extreme trace timestamp must skip that POINT, not abort the whole event.
+    #    Regression: local()'s astimezone can throw "date value out of range" on a poisoned <time>;
+    #    that exception used to escape the per-point loop and lose the entire course (it showed up as
+    #    ~11 events/sweep "ERROR date value out of range", silently suppressing coverage). Now guarded.
+    base = datetime.datetime(2025, 4, 12, 8, 1, 0, tzinfo=datetime.timezone.utc)
+    lat0p, lon0p = 51.5, -0.1
+    rows = []
+    for i in range(301):
+        t = base + datetime.timedelta(seconds=i * 1.5)
+        rows.append(f'<trkpt lat="{lat0p + i*0.00015:.6f}" lon="{lon0p:.6f}">'
+                    f'<time>{t.strftime("%Y-%m-%dT%H:%M:%SZ")}</time></trkpt>')
+    gpxp = '<?xml version="1.0"?><gpx><trk><trkseg>' + "".join(rows) + '</trkseg></trk></gpx>'
+    open(bc._trace_cache_file("selftestpoison", 900, 0), "w").write(gpxp)
+    poison_t = base + datetime.timedelta(seconds=150 * 1.5)   # one mid-course point blows up in local()
+    real_local = bc.local
+    def poison_local(dt, lat=None, lon=None):
+        if dt == poison_t:
+            raise OverflowError("date value out of range")
+        return real_local(dt, lat, lon)
+    bc.local = poison_local
+    try:
+        resp = bc.trace_course("selftestpoison", lat0p, lon0p)
+    finally:
+        bc.local = real_local
+    assert resp is not None, "one poisoned timestamp must not abort the whole trace"
+    Lp = resp[0]
+    assert bc.REL_LO <= Lp <= bc.REL_HI, f"poisoned-point trace still reconstructs ~5k: {Lp:.0f} m"
+
+    print(f"OK — reconstructed {L:.0f} m / {len(pts)} pts; helpers + lock + trust + doubling + error-guard pass.")
 
 if __name__ == "__main__":
     try:

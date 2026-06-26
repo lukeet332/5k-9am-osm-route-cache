@@ -302,9 +302,19 @@ def outcomes_summary():
     near_miss = sum(1 for e in failed if (e.get("distance_m") or 0) and (4300 <= e["distance_m"] < 4800 or 5200 < e["distance_m"] <= 5700))  # just outside tolerance -> often an incomplete relation
     sample = [{"name": k, "status": status(v), "relation_m": v.get("relation_m"), "trace_m": v.get("trace_m")}
               for k, v in list(idx.items()) if status(v) == "failed"][:8]
+    # ERRORS = events that crashed mid-build (e.g. a corrupt OSM trace point). Recorded as
+    # status=error so a recurring crash is visible HERE and prioritised, not lost to the Actions log.
+    errored = [e for e in idx.values() if status(e) == "error"]
+    err_msgs = {}
+    for e in errored:
+        m = (e.get("error") or "?")[:60]
+        err_msgs[m] = err_msgs.get(m, 0) + 1
+    top_err = sorted(err_msgs.items(), key=lambda kv: -kv[1])[:3]
+    err_line = (f" ERRORS (crashed mid-build, suppressing coverage -> FIX THESE FIRST)={len(errored)}"
+                + (": " + ", ".join(f"{m} x{n}" for m, n in top_err) if top_err else "") + ".") if errored else ""
     return (f"INDEX outcomes (of {len(idx)} attempted): success={counts['success']} "
             f"({trusted} trusted GPS-trace, {provisional} PROVISIONAL relation-sourced -> upgrade to "
             f"real 09:00 traces), failed(off-tolerance, index.json only)={counts['failed']}, gap={counts['gap']}. "
             f"Of the failed: ~{single_lap} have a ~2.0-2.8km relation (likely ONE LAP of a 2-lap parkrun "
             f"— consider doubling), ~{near_miss} are near-misses just outside 4.8-5.2km (often an "
-            f"incomplete relation — consider way-chaining/gap-bridging). Sample failed: {sample}.")
+            f"incomplete relation — consider way-chaining/gap-bridging). Sample failed: {sample}.{err_line}")

@@ -38,7 +38,9 @@ VERDICTS:
   EXCEPTION: a genuine, justified IMPROVEMENT that builds on an existing feature (e.g. extending
   doubling to out-and-back laps, or smarter recency weighting) is NOT churn - judge it normally
   (approve if net-positive, revise if it has a real bug). Only call churn when the change adds nothing
-  over what already exists.
+  over what already exists. A ROBUSTNESS fix that recovers events the OUTCOMES report flags as ERROR
+  (e.g. guarding a crashing call so one bad input is skipped, not the whole event) is always
+  meritorious - never churn; approve it if correct.
 
 Respond with STRICT JSON only:
 {"verdict": "approve"|"revise"|"churn",

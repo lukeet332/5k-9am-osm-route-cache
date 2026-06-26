@@ -83,6 +83,11 @@ geometry from OSM. Do NOT loosen the accuracy bars (4.8-5.2 relation / 4.5-5.6 t
 rate-limiting, or remove licensing/attribution. If nothing is clearly worth changing this week, return
 an empty "edits" array.
 
+PRIORITISE ERRORS: if the OUTCOMES report shows ERRORS (events crashing mid-build), they are
+suppressing coverage RIGHT NOW - fixing the crash (e.g. guard the failing call so one bad input skips
+that ITEM, not the whole event) takes priority over any new idea. A robustness fix that recovers
+erroring events is always worthwhile and is NEVER churn.
+
 OUTPUT A SMALL CHANGESET — never whole files. Respond with STRICT JSON only:
 {"summary": "<one line>", "version_bump": "patch|minor|major",
  "edits": [{"path": "build_cache.py", "find": "<exact existing snippet>", "replace": "<new snippet>"}]}
