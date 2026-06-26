@@ -74,7 +74,32 @@ def main():
         if os.path.exists(f):
             os.remove(f)
 
-    print(f"OK — reconstructed {L:.0f} m / {len(pts)} pts; helpers + lock + trust hierarchy pass.")
+    # 5) relation DOUBLING measures TWO LAPS, not a phantom seam. A 2-lap parkrun's relation is
+    #    ONE lap (~2.5k); doubling must report ~2x the lap's PATH length. length(lap+lap) is WRONG —
+    #    it adds a bogus segment from the lap's end back to its start, overshooting and pushing real
+    #    2-lap courses out of the 4.8-5.2k success band (the "0 doublings, 2 offdist" we saw).
+    lap = [(51.5 + i * 0.0001, -0.1) for i in range(226)]   # straight, open ~2.5k line
+    lap_len = bc.length(lap)
+    assert 2400 <= lap_len <= 2600, f"fixture lap not ~2.5k: {lap_len:.0f}"
+    assert bc.REL_LO <= 2 * lap_len <= bc.REL_HI, f"fixture: two laps must be in-band: {2*lap_len:.0f}"
+    assert bc.length(lap + lap) > bc.REL_HI, "fixture must expose the seam bug (self-concat overshoots)"
+    ev2 = {"name": "selftestdouble", "long": "Double parkrun", "lat": 51.5, "lon": -0.1}
+    orig_rel2, orig_tr2 = bc.relation_course, bc.trace_course
+    try:
+        bc.relation_course = lambda lat, lon, name: ("X parkrun", lap_len, lap)
+        bc.trace_course = lambda name, lat, lon: None
+        r = bc.build_one(ev2)
+        assert r["status"] == "success" and r["source"] == "osm_relation_doubled", \
+            f"a ~2.5k relation must double into a success, not get lost to the seam: {r}"
+        assert abs(r["distance_m"] - round(2 * lap_len)) <= 1, \
+            f"doubled distance must be 2x the lap path ({round(2*lap_len)}), got {r['distance_m']}"
+    finally:
+        bc.relation_course, bc.trace_course = orig_rel2, orig_tr2
+        f = os.path.join(bc.ROUTES, "selftestdouble.gpx")
+        if os.path.exists(f):
+            os.remove(f)
+
+    print(f"OK — reconstructed {L:.0f} m / {len(pts)} pts; helpers + lock + trust + doubling pass.")
 
 if __name__ == "__main__":
     try:

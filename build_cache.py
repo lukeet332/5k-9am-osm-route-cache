@@ -287,8 +287,10 @@ def build_one(ev):
 
     # NEW: Try doubling a half-distance relation
     if rel and HALF_REL_LO <= rel[1] <= HALF_REL_HI:
-        doubled_chain = rel[2] + rel[2] # Append the relation to itself
-        doubled_len = length(doubled_chain)
+        doubled_chain = rel[2] + rel[2]   # geometry: two laps for the app to draw
+        doubled_len = 2 * length(rel[2])  # distance: TWO LAPS. NOT length(chain) — that adds a
+                                          # phantom jump from the lap's end back to its start,
+                                          # overshooting and losing real 2-lap courses.
         if REL_LO <= doubled_len <= REL_HI:
             write_gpx(name, ev["long"], doubled_chain, "osm_relation_doubled")
             return {"source": "osm_relation_doubled", "distance_m": round(doubled_len), "status": "success",
@@ -309,7 +311,7 @@ def build_one(ev):
     # and its *doubled* length is in SANE_LO/HI but NOT REL_LO/HI (i.e., it failed to be a success)
     # then add it to cands for diagnostic logging.
     if rel and HALF_REL_LO <= rel[1] <= HALF_REL_HI:
-        doubled_len = length(rel[2] + rel[2])
+        doubled_len = 2 * length(rel[2])  # two laps (see above) — not the seam-inflated concat length
         if SANE_LO <= doubled_len <= SANE_HI and not (REL_LO <= doubled_len <= REL_HI):
             cands.append(("osm_relation_doubled_offdist", doubled_len, None))
 

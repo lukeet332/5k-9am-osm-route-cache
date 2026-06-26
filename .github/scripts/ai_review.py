@@ -21,6 +21,13 @@ Judge it on TWO axes, then decide:
    coordinates or hard-coded routes; weakens the OSM rate-limiting; removes ODbL attribution / the
    parkrun disclaimer; edits anything outside build_cache.py / JOURNAL.md / an AI_CONTEXT.md append;
    or risks breaking the caching mechanism.
+   You cannot RUN the code, so TRACE THE ARITHMETIC/GEOMETRY of any new distance or coordinate maths
+   BY HAND on a small example and check the number is what the summary claims. Watch known traps:
+   concatenating a polyline to itself (`pts + pts`) makes `length()` add a PHANTOM segment from the
+   first copy's end back to its start — so two laps' distance is `2*length(lap)`, NOT
+   `length(lap+lap)`; off-by-one/unit (m vs km); double-counting a shared endpoint; a band check that
+   silently rejects valid courses. If a distance calc looks numerically wrong, REJECT and show the
+   counter-example — a green self-test does NOT prove the maths is right (the test may not cover it).
 2) MERIT — this is an ALGORITHM, so judge whether the change genuinely moves us toward the goal of
    caching ALL parkruns at ~5k (better coverage AND/OR closeness-to-5k). REJECT pointless churn:
    - a NO-OP / trivial diff — only comments, whitespace, or renames with no behaviour change;
