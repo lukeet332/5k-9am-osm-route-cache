@@ -58,9 +58,11 @@ progressively more creative over time. Append-only; newest at the bottom.
 - Multi-Saturday trace averaging (trace_courses_multi, pointwise mean). DONE.
 - Christmas Day + New Year's Day events included in the 09:00-09:45 trace window. DONE.
 - Correct doubled distance uses 2*length(lap), never length(lap+lap). DONE.
-Propose a genuinely NEW idea instead, e.g.: prefer/weight recent traces (courses change); smarter
-relation way-chaining / gap-bridging; out-and-back doubling; per-event local timezone for global
-expansion; QA flag for in-band but mis-shaped courses; additional openly-licensed data sources.
+Propose a genuinely NEW idea instead, e.g.: course-topology-aware extraction (N-laps, partial-lap +
+laps, out-and-back, point-to-point - detect lap repetition WITHIN a trace to recover the true course;
+see AI_CONTEXT) - this is the big lever for the ~100 off-tolerance failed entries; prefer/weight recent
+traces (courses change); smarter relation way-chaining / gap-bridging; per-event local timezone for
+global expansion; QA flag for in-band but mis-shaped courses; additional openly-licensed data sources.
 
 ### 2026-06-26 - deepseek-v4-flash-bot (deepseek-ai/deepseek-v4-flash, minor)
 - Prefer recent traces (last 2 years) in averaging to track current course shape and avoid mixing old/obsolete routes
