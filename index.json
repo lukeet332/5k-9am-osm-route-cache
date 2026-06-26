@@ -3545,6 +3545,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "geeveston": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -43.163256,
+  "lon": 146.925685,
+  "long": "Geeveston parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "gibraltarbotanicalgardens": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -4865,6 +4877,18 @@
   "long": "Kingston parkrun",
   "source": "osm_relation",
   "status": "success"
+ },
+ "kingstonpark": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": -42.972838,
+  "lon": 147.309649,
+  "long": "Kingston Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "kingsway": {
   "distance_m": null,
