@@ -119,6 +119,14 @@ Operational and algorithmic *means*, as long as outputs still validate against `
 - A **QA flag** for courses whose distance is in-band but whose shape looks wrong
   (self-intersections, spikes) - flag for human review; do not silently rewrite geometry.
 - Diagnosing low-yield regions and reporting *why* (not fabricating data to fill them).
+- **Event-age prioritisation via the events.json `id`.** events.json has no start-date, but each
+  feature has a top-level `id` that is roughly chronological (Bushy = 1, the first parkrun) - lower id
+  ~ older event. Older events have years of Saturdays so are far likelier to have OSM data; brand-new
+  (high-id) events usually have none yet. Capturing `id` in `load_events` lets you prioritise older
+  events first and treat very new ones as EXPECTED gaps (don't churn retrying them). It is a noisy
+  proxy (cancelled/junior/overseas ids interleave) and does NOT save network calls (the trace fetch is
+  bbox-wide + date-agnostic). The true first-run date would need parkrun's event pages - off-limits
+  (invariant #6) - so use only this id proxy, never fetch parkrun for dates.
 - **Additional data sources beyond OSM** - to lift coverage where OSM is thin, the algorithm MAY
   eventually pull from *other openly-licensed / explicitly-permitted* sources (e.g. open GPS-trace
   or public-domain route datasets, government/park open data), used within their terms and
