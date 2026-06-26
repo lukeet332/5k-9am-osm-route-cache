@@ -98,6 +98,19 @@
   "source": null,
   "status": "gap"
  },
+ "arrowvalley": {
+  "distance_m": 5012,
+  "last_tried": "2026-06-26",
+  "lat": 52.305986,
+  "lon": -1.913661,
+  "long": "Arrow Valley parkrun",
+  "provisional": false,
+  "relation_m": 3606,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2024-09-07",
+  "trace_m": 5012
+ },
  "aruwrittle": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -2525,6 +2538,17 @@
   "long": "Queen Elizabeth parkrun",
   "source": "osm_relation",
   "status": "success"
+ },
+ "queensway": {
+  "distance_m": null,
+  "last_tried": "2026-06-26",
+  "lat": 52.30484,
+  "lon": -0.724143,
+  "long": "Queensway parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "queenswoodcountrypark": {
   "distance_m": null,
