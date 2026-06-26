@@ -1,7 +1,7 @@
 {
   "author": [
+    { "provider": "nvidia", "model": "deepseek-ai/deepseek-v4-flash" },
     { "provider": "sambanova", "model": "DeepSeek-V3.2" },
-    { "provider": "cloudflare", "model": "@cf/openai/gpt-oss-120b" },
     { "provider": "gemini", "model": "gemini-2.5-flash" }
   ],
   "reviewer": [

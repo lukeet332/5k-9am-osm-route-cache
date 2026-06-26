@@ -49,15 +49,16 @@ PROVIDERS = {
     "cloudflare": (f"https://api.cloudflare.com/client/v4/accounts/{_CF_ACCOUNT}/ai/v1", "CLOUDFLARE_API_TOKEN"),
     "sambanova": ("https://api.sambanova.ai/v1", "SAMBANOVA_API_KEY"),     # fast frontier (DeepSeek-V3.x)
     "cerebras": ("https://api.cerebras.ai/v1", "CEREBRAS_API_KEY"),        # fast frontier reasoner (GLM-4.7)
+    "nvidia": ("https://integrate.api.nvidia.com/v1", "NVIDIA_API_KEY"),   # frontier (DeepSeek-V4); free, no daily cap
 }
 
 # Each role is a CHAIN tried in order: a bleeding-edge frontier model first, then a smart fallback on a
 # DIFFERENT provider, then a rock-solid anchor — so a single overloaded free endpoint never sinks a run.
 # Picked from an empirical bake-off (changeset output, selftest-gated): see JOURNAL/AI_CONTEXT.
 DEFAULT_AUTHOR = [
-    {"provider": "sambanova", "model": "DeepSeek-V3.2"},            # best idea+code quality in the bake-off
-    {"provider": "cloudflare", "model": "@cf/openai/gpt-oss-120b"},  # frontier fallback on a DIFFERENT provider -> catches a SambaNova outage/quota (works now max_tokens is set)
-    {"provider": "gemini", "model": "gemini-2.5-flash"},            # rock-solid anchor (proven, generous output)
+    {"provider": "nvidia", "model": "deepseek-ai/deepseek-v4-flash"},  # frontier (best SWE-bench); find-matching verified on the clean file
+    {"provider": "sambanova", "model": "DeepSeek-V3.2"},               # proven reliable fallback, different provider
+    {"provider": "gemini", "model": "gemini-2.5-flash"},              # rock-solid anchor, third provider
 ]
 DEFAULT_REVIEWER = [
     {"provider": "cerebras", "model": "zai-glm-4.7"},               # frontier reasoner, validated as gate
