@@ -90,3 +90,32 @@ that stops a run if OSM starts rate-limiting (HTTP 429)** so we never get the IP
 
 A GitHub Action (`.github/workflows/weekly-saturday.yml`) runs it on a schedule (frequent during
 the initial cache build, then dial back to weekly), committing each route straight to `main`.
+
+## Coverage by country
+
+<!-- COVERAGE-BY-COUNTRY:START -->
+_Worldwide: 120/2361 parkruns mapped across 20 countries. Only the UK is swept so far; others show NA until the global rollout reaches them._
+
+| Country | Mapped / Total |
+|---|---|
+| United Kingdom | 120/884 |
+| Australia | NA/543 |
+| South Africa | NA/228 |
+| Ireland | NA/114 |
+| Poland | NA/109 |
+| United States | NA/101 |
+| Germany | NA/79 |
+| New Zealand | NA/74 |
+| Canada | NA/64 |
+| Japan | NA/53 |
+| Netherlands | NA/30 |
+| Italy | NA/15 |
+| Sweden | NA/15 |
+| Denmark | NA/13 |
+| Norway | NA/13 |
+| Finland | NA/9 |
+| Austria | NA/6 |
+| Singapore | NA/5 |
+| Lithuania | NA/5 |
+| Malaysia | NA/1 |
+<!-- COVERAGE-BY-COUNTRY:END -->

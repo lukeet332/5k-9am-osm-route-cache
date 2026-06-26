@@ -1,0 +1,126 @@
+{
+ "world_total": 2361,
+ "world_mapped": 120,
+ "countries": [
+  {
+   "code": 97,
+   "name": "United Kingdom",
+   "total": 884,
+   "mapped": 120
+  },
+  {
+   "code": 3,
+   "name": "Australia",
+   "total": 543,
+   "mapped": 0
+  },
+  {
+   "code": 85,
+   "name": "South Africa",
+   "total": 228,
+   "mapped": 0
+  },
+  {
+   "code": 42,
+   "name": "Ireland",
+   "total": 114,
+   "mapped": 0
+  },
+  {
+   "code": 74,
+   "name": "Poland",
+   "total": 109,
+   "mapped": 0
+  },
+  {
+   "code": 98,
+   "name": "United States",
+   "total": 101,
+   "mapped": 0
+  },
+  {
+   "code": 32,
+   "name": "Germany",
+   "total": 79,
+   "mapped": 0
+  },
+  {
+   "code": 65,
+   "name": "New Zealand",
+   "total": 74,
+   "mapped": 0
+  },
+  {
+   "code": 14,
+   "name": "Canada",
+   "total": 64,
+   "mapped": 0
+  },
+  {
+   "code": 46,
+   "name": "Japan",
+   "total": 53,
+   "mapped": 0
+  },
+  {
+   "code": 64,
+   "name": "Netherlands",
+   "total": 30,
+   "mapped": 0
+  },
+  {
+   "code": 44,
+   "name": "Italy",
+   "total": 15,
+   "mapped": 0
+  },
+  {
+   "code": 88,
+   "name": "Sweden",
+   "total": 15,
+   "mapped": 0
+  },
+  {
+   "code": 23,
+   "name": "Denmark",
+   "total": 13,
+   "mapped": 0
+  },
+  {
+   "code": 67,
+   "name": "Norway",
+   "total": 13,
+   "mapped": 0
+  },
+  {
+   "code": 30,
+   "name": "Finland",
+   "total": 9,
+   "mapped": 0
+  },
+  {
+   "code": 4,
+   "name": "Austria",
+   "total": 6,
+   "mapped": 0
+  },
+  {
+   "code": 82,
+   "name": "Singapore",
+   "total": 5,
+   "mapped": 0
+  },
+  {
+   "code": 54,
+   "name": "Lithuania",
+   "total": 5,
+   "mapped": 0
+  },
+  {
+   "code": 57,
+   "name": "Malaysia",
+   "total": 1,
+   "mapped": 0
+  }
+ ]
+}

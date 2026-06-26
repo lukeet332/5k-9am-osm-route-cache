@@ -54,6 +54,8 @@ jobs:
           git config user.name  cache-bot
           git config user.email cache-bot@users.noreply.github.com
           python3 build_cache.py --limit 50 --commit-each
+      - name: Per-country coverage report (README table + coverage_by_country.json)
+        run: python3 report.py || echo "report skipped"
       - name: Push any trailing gap bookkeeping
         run: |
           git add -A
