@@ -98,8 +98,10 @@ jobs:
           # Strip mermaid/badges/util-links -> dense digest. Fall back to the SHA-bound review .body.
           CR_SOURCE=none; : > coderabbit_review.txt
           if [ -n "$STATE" ]; then
+            # select the WALKTHROUGH/summary comment by its marker - NOT a status reply (CodeRabbit also
+            # posts "auto-generated reply" comments); else CR_SOURCE would mislabel a reply as a walkthrough.
             gh api "repos/${{ github.repository }}/issues/$PR/comments" \
-              --jq "[.[] | select(.user.login==\"$BOT\")] | last | .body // \"\"" 2>/dev/null \
+              --jq "[.[] | select(.user.login==\"$BOT\") | select(.body|test(\"summarize by coderabbit\"))] | last | .body // \"\"" 2>/dev/null \
               | sed '/```mermaid/,/```/d' \
               | sed -E 's/<!--[^>]*-->//g; s/!\[[^]]*\]\([^)]*\)//g; s#</?details[^>]*>##g; s#</?summary>##g' \
               | grep -vE '^[[:space:]]*$|storage\.googleapis|utm_source|coderabbit_public_assets' \
