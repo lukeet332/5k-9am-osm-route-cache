@@ -4444,6 +4444,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "clarens": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -28.514776,
+  "lon": 28.419728,
+  "long": "Clarens parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "clarevalley": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -22397,6 +22409,19 @@
   "relation_m": null,
   "source": null,
   "status": "gap",
+  "trace_m": null
+ },
+ "umfolozi": {
+  "built_by": "v0.5.0",
+  "distance_m": 5048,
+  "last_tried": "2026-06-27",
+  "lat": -28.482914,
+  "lon": 32.180039,
+  "long": "Umfolozi parkrun",
+  "provisional": true,
+  "relation_m": 5048,
+  "source": "osm_relation",
+  "status": "success",
   "trace_m": null
  },
  "umhlanga": {
