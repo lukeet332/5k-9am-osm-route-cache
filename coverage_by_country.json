@@ -1,6 +1,6 @@
 {
  "world_total": 2364,
- "world_mapped": 134,
+ "world_mapped": 138,
  "countries": [
   {
    "code": 97,
@@ -42,7 +42,7 @@
    "code": 32,
    "name": "Germany",
    "total": 79,
-   "mapped": 0
+   "mapped": 4
   },
   {
    "code": 65,

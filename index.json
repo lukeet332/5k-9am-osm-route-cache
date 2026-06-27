@@ -7214,6 +7214,18 @@
   "status": "success",
   "trace_date": "2025-04-12"
  },
+ "havelkanal": {
+  "built_by": "v0.5.0",
+  "distance_m": 4760,
+  "last_tried": "2026-06-27",
+  "lat": 52.613948,
+  "lon": 13.191797,
+  "long": "Havelkanal parkrun",
+  "relation_m": 2380,
+  "source": "osm_relation_doubled_offdist",
+  "status": "failed",
+  "trace_m": null
+ },
  "haverfordwest": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -8681,6 +8693,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "koenigshof": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 53.275351,
+  "lon": 9.491959,
+  "long": "K\u00f6nigshof parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "koonwarra": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -8724,6 +8748,18 @@
   "lat": 51.315327,
   "lon": 12.337807,
   "long": "K\u00fcchenholz parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "kulturparkneubrandenburg": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 53.552073,
+  "lon": 13.255029,
+  "long": "Kulturpark Neubrandenburg parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -16721,6 +16757,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "unisee": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 53.108575,
+  "lon": 8.834818,
+  "long": "Unisee parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "universityofnorthampton": {
   "distance_m": 5048,
   "last_tried": "2026-06-26",
@@ -17478,6 +17526,18 @@
   "lat": 53.205552,
   "lon": -3.056846,
   "long": "Wepre parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "werdersee": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 53.062018,
+  "lon": 8.811122,
+  "long": "Werdersee parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
