@@ -24,8 +24,8 @@ def main():
     ev = {"name": "behavdouble", "long": "Double parkrun", "lat": 51.5, "lon": -0.1}
     orig_rel, orig_tr = bc.relation_course, bc.trace_course
     try:
-        bc.relation_course = lambda lat, lon, name: ("X parkrun", lap_len, lap)
-        bc.trace_course = lambda name, lat, lon: None
+        bc.relation_course = lambda *_: ("X parkrun", lap_len, lap)
+        bc.trace_course = lambda *_: None
         r = bc.build_one(ev)
         assert r["source"] == "osm_relation_doubled", f"doubled source label changed: {r.get('source')}"
         assert abs(r["distance_m"] - round(2 * lap_len)) <= 1, \

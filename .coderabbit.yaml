@@ -34,9 +34,10 @@ reviews:
         request-changes for churn alone - the arbiter owns the close-vs-revise decision). A genuine,
         justified improvement that builds on a done idea is NOT churn; judge it on merit.
         TEST GATE: selftest.py is the FROZEN invariant/safety net - request changes on ANY edit to it. The
-        author MAY edit test_behavior.py, but ONLY to update a behavioural expectation a real build_cache.py
-        change legitimately alters - request changes if a test_behavior.py edit WEAKENS or DELETES a check
-        (loosens a bound, removes an assertion) without a corresponding genuine algorithm change.
+        author MAY edit test_behavior.py, but ONLY IN THE SAME changeset as a real build_cache.py change
+        that legitimately alters one behavioural expectation, and ONLY to update that expectation - request
+        changes on ANY test_behavior.py edit that WEAKENS or DELETES a check (loosens a bound, removes an
+        assertion).
 tone_instructions: >
   Terse, technical, plain-ASCII (no emojis/em-dashes). Prioritise the markdown-defined invariants and
   correctness over style nits.

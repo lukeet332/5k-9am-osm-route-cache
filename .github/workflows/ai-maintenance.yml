@@ -90,6 +90,7 @@ jobs:
             build_cache.py
             AI_CONTEXT.md
             JOURNAL.md
+            test_behavior.py
           commit-message: "chore: AI cache-algorithm improvement (${{ steps.improve.outputs.bot_label || 'ai-bot' }})"
           title: "🤖 ${{ steps.improve.outputs.bot_label || 'ai-bot' }}: cache algorithm improvement"
           labels: needs-ai-review
