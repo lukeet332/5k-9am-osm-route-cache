@@ -1,6 +1,6 @@
 {
  "world_total": 2364,
- "world_mapped": 140,
+ "world_mapped": 142,
  "countries": [
   {
    "code": 97,
@@ -66,7 +66,7 @@
    "code": 64,
    "name": "Netherlands",
    "total": 30,
-   "mapped": 0
+   "mapped": 2
   },
   {
    "code": 44,

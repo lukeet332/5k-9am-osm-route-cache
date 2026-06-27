@@ -390,6 +390,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "amsterdamsebos": {
+  "built_by": "v0.5.0",
+  "distance_m": 3830,
+  "last_tried": "2026-06-27",
+  "lat": 52.325527,
+  "lon": 4.853937,
+  "long": "Amsterdamse Bos parkrun",
+  "relation_m": 3830,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
+ },
  "anagachwoods": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -1237,6 +1249,18 @@
   "relation_m": null,
   "source": null,
   "status": "gap",
+  "trace_m": null
+ },
+ "beatrixpark": {
+  "built_by": "v0.5.0",
+  "distance_m": 2867,
+  "last_tried": "2026-06-27",
+  "lat": 52.376801,
+  "lon": 5.199276,
+  "long": "Beatrixpark parkrun",
+  "relation_m": 2867,
+  "source": "osm_relation_offdist",
+  "status": "failed",
   "trace_m": null
  },
  "beaufortlake": {
@@ -8979,6 +9003,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "jagersplas": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.463247,
+  "lon": 4.832685,
+  "long": "Jagersplas parkun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "jakespoint": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -9166,6 +9202,18 @@
   "relation_m": null,
   "source": null,
   "status": "gap",
+  "trace_m": null
+ },
+ "kagerzoom": {
+  "built_by": "v0.5.0",
+  "distance_m": 3832,
+  "last_tried": "2026-06-27",
+  "lat": 52.185181,
+  "lon": 4.501654,
+  "long": "Kagerzoom parkrun",
+  "relation_m": 3832,
+  "source": "osm_relation_offdist",
+  "status": "failed",
   "trace_m": null
  },
  "kalgoorlieboulder": {
@@ -13009,6 +13057,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "nimmerdor": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.136747,
+  "lon": 5.389645,
+  "long": "Nimmerdor parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "nobles": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -13620,6 +13680,18 @@
   "relation_m": null,
   "source": null,
   "status": "gap",
+  "trace_m": null
+ },
+ "oosterhout": {
+  "built_by": "v0.5.0",
+  "distance_m": 1892,
+  "last_tried": "2026-06-27",
+  "lat": 52.622985,
+  "lon": 4.754383,
+  "long": "Oosterhout parkrun",
+  "relation_m": 1892,
+  "source": "osm_relation_offdist",
+  "status": "failed",
   "trace_m": null
  },
  "oosterplas": {
@@ -16333,6 +16405,18 @@
   "relation_m": null,
   "source": null,
   "status": "gap",
+  "trace_m": null
+ },
+ "schoterbos": {
+  "built_by": "v0.5.0",
+  "distance_m": 5271,
+  "last_tried": "2026-06-27",
+  "lat": 52.411781,
+  "lon": 4.644821,
+  "long": "Schoterbos parkrun",
+  "relation_m": 2635,
+  "source": "osm_relation_doubled_offdist",
+  "status": "failed",
   "trace_m": null
  },
  "schwanenteich": {
@@ -19233,6 +19317,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "vanheekpark": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.228311,
+  "lon": 6.882469,
+  "long": "van Heekpark parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "varsitylakes": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -20097,6 +20193,18 @@
   "lat": 50.625242,
   "lon": -2.447795,
   "long": "Weymouth parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "wezenlanden": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.508571,
+  "lon": 6.106907,
+  "long": "Wezenlanden parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -21105,6 +21213,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "zegerplas": {
+  "built_by": "v0.5.0",
+  "distance_m": 3059,
+  "last_tried": "2026-06-27",
+  "lat": 52.141498,
+  "lon": 4.686521,
+  "long": "Zegerplas parkrun",
+  "relation_m": 3059,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
+ },
  "ziegelwiese": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -21124,6 +21244,18 @@
   "lat": -27.361066,
   "lon": 153.041015,
   "long": "Zillmere parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "zonnestraal": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.202408,
+  "lon": 5.15639,
+  "long": "Zonnestraal parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -21151,6 +21283,18 @@
   "relation_m": 2642,
   "source": "osm_relation_doubled_offdist",
   "status": "failed",
+  "trace_m": null
+ },
+ "zuiderparkhoogeveen": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.711018,
+  "lon": 6.483571,
+  "long": "Zuiderpark parkrun, Hoogeveen",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
   "trace_m": null
  }
 }
