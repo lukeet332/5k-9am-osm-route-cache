@@ -355,7 +355,7 @@
   "trace_m": null
  },
  "alness": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": 1710,
   "last_tried": "2026-06-27",
   "lat": 57.694306,
@@ -2264,6 +2264,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "bladeshotel": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -25.646781,
+  "lon": 28.333911,
+  "long": "Blades Hotel parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "blaisecastle": {
   "built_by": "v0.1.0",
   "distance_m": null,
@@ -3581,7 +3593,7 @@
   "trace_m": null
  },
  "camperdown": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": 5318,
   "last_tried": "2026-06-27",
   "lat": 56.483681,
@@ -5879,7 +5891,7 @@
   "trace_m": null
  },
  "depotten": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": 1621,
   "last_tried": "2026-06-27",
   "lat": 53.033831,
@@ -6345,6 +6357,18 @@
   "lat": -33.259059,
   "lon": 19.128404,
   "long": "Duikersdrift parkrun, Tulbagh",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "dullstroom": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -25.405517,
+  "lon": 30.10707,
+  "long": "Dullstroom parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -10596,7 +10620,7 @@
   "trace_m": null
  },
  "hunstantonpromenade": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": 1723,
   "last_tried": "2026-06-27",
   "lat": 52.941684,
@@ -10903,7 +10927,7 @@
   "trace_m": null
  },
  "jeleniagora": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": 1670,
   "last_tried": "2026-06-27",
   "lat": 50.857558,
@@ -11158,6 +11182,18 @@
   "lat": -33.97993,
   "lon": 151.229992,
   "long": "Kamay parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "kambakugolfclub": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -25.438527,
+  "lon": 31.970637,
+  "long": "Kambaku Golf Club parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -11792,6 +11828,18 @@
   "lat": -26.730736,
   "lon": 27.126513,
   "long": "Kleinplaas parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "klipspringerlodge": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -25.566254,
+  "lon": 31.062886,
+  "long": "Klipspringer Lodge parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -16652,6 +16700,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "onderstepoortcampus": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -25.654647,
+  "lon": 28.179186,
+  "long": "Onderstepoort Campus parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "oosterhout": {
   "built_by": "v0.5.0",
   "distance_m": 1892,
@@ -19091,7 +19151,7 @@
   "trace_m": null
  },
  "rhodes": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
   "last_tried": "2026-06-27",
   "lat": -33.847462,
@@ -19324,6 +19384,18 @@
   "lat": 56.199969,
   "lon": -3.175163,
   "long": "Riverside Park parkrun, Glenrothes",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "riversidereserve": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -25.427402,
+  "lon": 30.955169,
+  "long": "Riverside Reserve parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -19611,6 +19683,18 @@
   "lat": 48.805193,
   "lon": 9.192439,
   "long": "Rosensteinpark parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "roses": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -25.582817,
+  "lon": 28.285817,
+  "long": "Roses parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -20909,7 +20993,7 @@
   "trace_m": null
  },
  "skipton": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
   "last_tried": "2026-06-27",
   "lat": 53.961331,
@@ -21383,7 +21467,7 @@
   "trace_m": null
  },
  "stadsparksittard": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
   "last_tried": "2026-06-27",
   "lat": 50.989588,
@@ -21913,6 +21997,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "suncity": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -25.345457,
+  "lon": 27.09857,
+  "long": "Sun City parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "sunnyhill": {
   "distance_m": 4942,
   "last_tried": "2026-06-25",
@@ -21999,7 +22095,7 @@
   "trace_m": null
  },
  "sutcliffe": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": 1674,
   "last_tried": "2026-06-27",
   "lat": 51.454343,
@@ -23103,7 +23199,7 @@
   "trace_m": null
  },
  "toyen": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
   "last_tried": "2026-06-27",
   "lat": 59.919427,
@@ -25013,6 +25109,19 @@
   "relation_m": null,
   "source": null,
   "status": "gap",
+  "trace_m": null
+ },
+ "whiteriver": {
+  "built_by": "v0.6.0",
+  "distance_m": 5174,
+  "last_tried": "2026-06-27",
+  "lat": -25.342502,
+  "lon": 31.007935,
+  "long": "White River parkrun",
+  "provisional": true,
+  "relation_m": 5174,
+  "source": "osm_relation",
+  "status": "success",
   "trace_m": null
  },
  "whiterock": {
