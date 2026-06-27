@@ -1859,6 +1859,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "bethlehem": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -28.251308,
+  "lon": 28.336215,
+  "long": "Bethlehem parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "bethlemroyalhospital": {
   "built_by": "dev",
   "distance_m": null,
@@ -6589,6 +6601,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "egweniriverlodge": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -26.901128,
+  "lon": 27.446698,
+  "long": "Egweni River Lodge parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "ehrenbreitstein": {
   "built_by": "v0.5.0",
   "distance_m": 4995,
@@ -9193,6 +9217,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "harrismith": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -28.280234,
+  "lon": 29.151949,
+  "long": "Harrismith parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "harrogate": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -9793,6 +9829,18 @@
   "lat": 34.924996,
   "lon": 138.378513,
   "long": "Hirono kaigankoen parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "hluhluwe": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -28.007628,
+  "lon": 32.27309,
+  "long": "Hluhluwe parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -10850,6 +10898,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "kathu": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -27.679389,
+  "lon": 23.06658,
+  "long": "Kathu parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "katowice": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -11482,6 +11542,18 @@
   "relation_m": 5225,
   "source": "osm_relation_offdist",
   "status": "failed",
+  "trace_m": null
+ },
+ "kroonstadcountryclub": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -27.666044,
+  "lon": 27.244103,
+  "long": "Kroonstad Country Club parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
   "trace_m": null
  },
  "krupundersee": {
@@ -17110,6 +17182,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "pietretief": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -26.996714,
+  "lon": 30.813792,
+  "long": "Piet Retief parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "pigglywiggly": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -17117,6 +17201,18 @@
   "lat": -29.458223,
   "lon": 30.136667,
   "long": "Piggly Wiggly parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "pineforest": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -28.292924,
+  "lon": 27.948221,
+  "long": "Pine Forest parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -17341,6 +17437,18 @@
   "lat": 51.479321,
   "lon": -2.47805,
   "long": "Pomphrey Hill parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "pongola": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -27.396878,
+  "lon": 31.657231,
+  "long": "Pongola parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -18701,6 +18809,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "rooipointfarm": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -27.79113,
+  "lon": 29.964782,
+  "long": "Rooi Point Farm parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "rootyhill": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -19200,6 +19320,18 @@
   "trace_date": "2022-01-29",
   "trace_m": 5071
  },
+ "sandriver": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -28.094307,
+  "lon": 26.873588,
+  "long": "Sand River parkrun, Virginia",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "sandwellvalley": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -19429,6 +19561,30 @@
   "lat": 52.696067,
   "lon": -1.408816,
   "long": "Sence Valley Forest Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "senekal": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -28.31856,
+  "lon": 27.617928,
+  "long": "Senekal parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "seotlongagricultureschool": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -28.459059,
+  "lon": 28.854683,
+  "long": "Seotlong Agriculture School parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -20475,6 +20631,18 @@
   "lat": 51.785727,
   "lon": -0.219822,
   "long": "Stanborough parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "standerton": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -26.956032,
+  "lon": 29.250275,
+  "long": "Standerton parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -22543,6 +22711,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "upington": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -28.444304,
+  "lon": 21.269767,
+  "long": "Upington parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "uptoncourt": {
   "built_by": "v0.5.0",
   "distance_m": 5006,
@@ -22918,6 +23098,18 @@
   "lat": -31.664782,
   "lon": 18.497226,
   "long": "Vredendal parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "vryheid": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -27.777853,
+  "lon": 30.794659,
+  "long": "Vryheid parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -23434,6 +23626,18 @@
   "lat": -12.64068,
   "lon": 141.865454,
   "long": "Weipa parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "welkom": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -27.973608,
+  "lon": 26.739236,
+  "long": "Welkom parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
