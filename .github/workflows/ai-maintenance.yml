@@ -98,6 +98,9 @@ jobs:
 
             > ${{ steps.improve.outputs.summary }}
 
+            ### Why / how (author's reasoning)
+            ${{ steps.improve.outputs.why || '_(no rationale given)_' }}
+
             Release-Bump: ${{ steps.improve.outputs.version_bump || 'patch' }}
 
             - Already passed `selftest.py` in this job; CI re-runs it as the merge gate.

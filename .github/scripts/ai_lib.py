@@ -73,7 +73,12 @@ def emit(**kv):
     if out:
         with open(out, "a") as f:
             for k, v in kv.items():
-                f.write(f"{k}={v}\n")
+                v = str(v)
+                if "\n" in v:                       # multiline value -> GitHub Actions heredoc form
+                    d = "GHADELIM_a1b2c3"
+                    f.write(f"{k}<<{d}\n{v}\n{d}\n")
+                else:
+                    f.write(f"{k}={v}\n")
     for k, v in kv.items():
         print(f"{k}={v}")
 
