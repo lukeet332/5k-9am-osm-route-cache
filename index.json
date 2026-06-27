@@ -3870,6 +3870,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "chrzanow": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 50.129465,
+  "lon": 19.358722,
+  "long": "parkrun Chrzan\u00f3w",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "chuokoen": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -20080,6 +20092,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "tychy": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 50.120545,
+  "lon": 19.001032,
+  "long": "parkrun Tychy",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "tymon": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -22392,6 +22416,19 @@
   "status": "gap",
   "trace_m": null
  },
+ "zalewleg": {
+  "built_by": "v0.5.0",
+  "distance_m": 4991,
+  "last_tried": "2026-06-27",
+  "lat": 50.201943,
+  "lon": 19.203501,
+  "long": "parkrun Zalew \u0141\u0119g",
+  "provisional": true,
+  "relation_m": 4991,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
+ },
  "zeehangolfclub": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -22423,6 +22460,18 @@
   "lat": 51.49366,
   "lon": 11.954659,
   "long": "Ziegelwiese parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "zielonyjar": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 50.094923,
+  "lon": 20.058498,
+  "long": "parkrun Zielony Jar",
   "relation_m": null,
   "source": null,
   "status": "gap",
