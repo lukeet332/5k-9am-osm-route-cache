@@ -4779,6 +4779,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "clermontwaterfront": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 28.570116,
+  "lon": -81.779228,
+  "long": "Clermont Waterfront parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "clevedonsalthousefields": {
   "built_by": "dev",
   "distance_m": null,
@@ -5665,6 +5677,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "cypresscreekparkattimberlane": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 30.043643,
+  "lon": -95.402889,
+  "long": "Cypress Creek Park at Timberlane parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "cyrilcurtainreserve": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -5933,6 +5957,18 @@
   "lat": 54.977492,
   "lon": -1.694872,
   "long": "Denton Dene parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "depotpark": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 29.643726,
+  "lon": -82.321475,
+  "long": "Depot Park parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -6816,6 +6852,18 @@
   "lat": 54.867371,
   "lon": -6.259117,
   "long": "Ecos parkrun, Ballymena",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "edaustinregional": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 30.366599,
+  "lon": -81.508085,
+  "long": "Ed Austin Regional parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -9473,6 +9521,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "halsematrailhead": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 30.33788,
+  "lon": -81.87031,
+  "long": "Halsema Trailhead parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "halswellquarry": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -11078,6 +11138,18 @@
   "lat": -37.897912,
   "lon": 145.193976,
   "long": "Jells parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "jenkinspark": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 29.776255,
+  "lon": -94.937769,
+  "long": "Jenkins Park parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -19221,6 +19293,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "recplexnorth": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 30.546055,
+  "lon": -87.212516,
+  "long": "Rec Plex North parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "redcar": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -21650,6 +21734,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "spindletree": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 30.174472,
+  "lon": -95.584524,
+  "long": "Spindle Tree parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "sportirelandcampus": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -22860,6 +22956,18 @@
   "lat": -26.476844,
   "lon": 29.237276,
   "long": "Terra Nova parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "terryhershey": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 29.771321,
+  "lon": -95.620501,
+  "long": "Terry Hershey parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -25200,6 +25308,18 @@
   "lat": 1.297454,
   "lon": 103.762915,
   "long": "West Coast Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "westendcommunity": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 29.65874,
+  "lon": -82.478293,
+  "long": "West End Community parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
