@@ -1,8 +1,8 @@
 {
   "author": [
+    { "provider": "gemini", "model": "gemini-3.5-flash" },
     { "provider": "nvidia", "model": "deepseek-ai/deepseek-v4-flash" },
-    { "provider": "sambanova", "model": "DeepSeek-V3.2" },
-    { "provider": "gemini", "model": "gemini-2.5-flash" }
+    { "provider": "sambanova", "model": "DeepSeek-V3.2" }
   ],
   "reviewer": [
     { "provider": "cerebras", "model": "zai-glm-4.7" },
