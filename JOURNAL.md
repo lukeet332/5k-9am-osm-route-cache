@@ -39,3 +39,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 - 2024-07-30: added Christmas/NYD trace extraction.
 - 2026-06-26 DeepSeek-V3.2: trace doubling for half-distance traces.
 - 2026-06-26 deepseek-v4-flash: prefer recent traces (last 2yr) in averaging.
+
+### 2026-06-27 - deepseek-v4-flash-bot (deepseek-ai/deepseek-v4-flash, minor)
+- Generalise doubling from 2x to best-integer-N lap rule for traces and relations, recovering ~10 more courses from the audit list.
