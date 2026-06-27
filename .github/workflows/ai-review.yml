@@ -1,8 +1,10 @@
 name: AI review (AI-reviews-AI gate)
 
-# A second AI reviews the author bot's PR against AI_CONTEXT.md.
-#   approve  -> swap needs-ai-review for the automerge label (auto-merge.yml then merges
-#               once CI is green).
+# Our MERGE-ARBITER AI decides the PR's fate, consuming CodeRabbit's verdict. CodeRabbit (separate) is
+# the SOURCE OF TRUTH on code quality + churn: its CHANGES_REQUESTED review BLOCKS merge. Our arbiter
+# does NOT re-critique code - it honours CodeRabbit + judges invariants/novelty, then:
+#   approve  -> (only when CodeRabbit is NOT blocking) swap needs-ai-review for the automerge label
+#               (auto-merge.yml then merges once CI is green).
 #   reject   -> post feedback, and have the author REVISE on the branch (re-runs this review). The retry
 #               budget SCALES with review-comment volume (~2 per comment thread, hard-capped) instead of a
 #               flat shared total, and stops early if the author stalls (two identical revisions). Then
@@ -71,7 +73,30 @@ jobs:
           echo "guard: rounds=$ROUNDS max=$MAX (cmts=$CMTS) stalled=$STALLED -> proceed=$PROCEED"
           { echo "proceed=$PROCEED"; echo "rounds=$ROUNDS"; echo "max=$MAX"; echo "stalled=$STALLED"; } >> "$GITHUB_OUTPUT"
 
-      - name: Adversarial AI review
+      # ---- CodeRabbit is the SOURCE OF TRUTH on code quality + churn. WAIT for its review of THIS head
+      #      (it is async + slower than our re-trigger), then read its verdict. CHANGES_REQUESTED = it is
+      #      blocking. Graceful: if it never posts in time / is absent, we do NOT hard-block on it (our
+      #      arbiter + selftest still gate). Its summary -> coderabbit_review.txt for the arbiter to read. ----
+      - name: Wait for CodeRabbit + read its verdict
+        id: crgate
+        if: steps.guard.outputs.proceed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.BOT_PAT }}
+        run: |
+          SHA="${{ github.event.pull_request.head.sha }}"
+          Q="[.[] | select(.user.login|test(\"coderabbit\";\"i\")) | select(.commit_id==\"$SHA\")] | last"
+          STATE=""
+          for i in $(seq 1 15); do        # ~5 min ceiling; breaks as soon as CodeRabbit reviews this SHA
+            STATE=$(gh api "repos/${{ github.repository }}/pulls/$PR/reviews" --jq "$Q | .state // empty" 2>/dev/null || echo "")
+            [ -n "$STATE" ] && break
+            sleep 20
+          done
+          gh api "repos/${{ github.repository }}/pulls/$PR/reviews" --jq "$Q | .body // \"\"" > coderabbit_review.txt 2>/dev/null || true
+          CR_BLOCKING=false; [ "$STATE" = "CHANGES_REQUESTED" ] && CR_BLOCKING=true
+          echo "CodeRabbit review for $SHA: state='${STATE:-<none>}' -> blocking=$CR_BLOCKING"
+          { echo "cr_state=${STATE:-none}"; echo "cr_blocking=$CR_BLOCKING"; } >> "$GITHUB_OUTPUT"
+
+      - name: Merge-arbiter AI review
         id: rev
         if: steps.guard.outputs.proceed == 'true'
         env:
@@ -86,6 +111,7 @@ jobs:
           SAMBANOVA_API_KEY: ${{ secrets.SAMBANOVA_API_KEY }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          CODERABBIT_STATE: ${{ steps.crgate.outputs.cr_state }}    # arbiter honours CodeRabbit's verdict
         run: python .github/scripts/ai_review.py
 
       # ---- flag a DEGRADED review (intended reviewer 413'd on a big diff / was rate-limited, so it
@@ -114,7 +140,7 @@ jobs:
 
       # ---- approved (normal, non-constitution PR): hand to auto-merge ----
       - name: Approve -> automerge
-        if: steps.guard.outputs.proceed == 'true' && steps.rev.outputs.bible_touched != 'true' && steps.rev.outputs.verdict == 'approve'
+        if: steps.guard.outputs.proceed == 'true' && steps.rev.outputs.bible_touched != 'true' && steps.rev.outputs.verdict == 'approve' && steps.crgate.outputs.cr_blocking != 'true'
         env:
           GH_TOKEN: ${{ secrets.BOT_PAT }}
         run: |
@@ -132,7 +158,7 @@ jobs:
 
       # ---- revise: one concrete fixable blocker - author revises on the same branch (re-triggers review) ----
       - name: Reject -> author revises
-        if: steps.guard.outputs.proceed == 'true' && steps.rev.outputs.verdict == 'revise'
+        if: steps.guard.outputs.proceed == 'true' && (steps.rev.outputs.verdict == 'revise' || (steps.crgate.outputs.cr_blocking == 'true' && steps.rev.outputs.verdict == 'approve'))
         env:
           GH_MODELS_TOKEN: ${{ secrets.BOT_PAT }}    # GitHub Models needs a real PAT (the built-in GITHUB_TOKEN is not entitled)
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -145,7 +171,7 @@ jobs:
           SAMBANOVA_API_KEY: ${{ secrets.SAMBANOVA_API_KEY }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
-          REVIEW_FEEDBACK: ${{ steps.rev.outputs.feedback }}
+          REVIEW_FEEDBACK: ${{ (steps.crgate.outputs.cr_blocking == 'true' && steps.rev.outputs.verdict == 'approve') && 'CodeRabbit (the code-quality reviewer) requested changes and is BLOCKING merge. Read its review comments on this PR and resolve the root cause of each, keeping the tested function names/signatures intact.' || steps.rev.outputs.feedback }}
           GH_TOKEN: ${{ secrets.BOT_PAT }}
         run: |
           gh pr comment "$PR" --body "🔁 AI review requested changes: ${{ steps.rev.outputs.feedback }}"
