@@ -54,14 +54,16 @@ def _pr_conversation():
             turns.append(f"--- {who} ---\n{body}")
     return "\n\n".join(turns)
 
-def _post_reply(summary):
-    """The author speaks in the PR thread: what it changed in response. Builds the conversation for
-    the next round and makes the whole debate auditable by the human owner."""
+def _post_reply(summary, why=""):
+    """The author speaks in the PR thread: what it changed in response + WHY. Builds the conversation
+    for the next round and makes the whole debate auditable by the human owner."""
     pr = os.environ.get("PR", "").strip()
     if not pr:
         return
-    _gh_api("POST", f"/issues/{pr}/comments",
-            {"body": "🤖 **Author revised** — targeted fix, kept the prior approach:\n\n> " + summary})
+    body = "🤖 **Author revised** — targeted fix, kept the prior approach:\n\n> " + summary
+    if why:
+        body += "\n\n**Why / how:**\n" + why
+    _gh_api("POST", f"/issues/{pr}/comments", {"body": body})
 
 PROMPT = """You maintain a Python pipeline that caches UK parkrun 5k courses as GPX, derived ONLY
 from OpenStreetMap. The CONSTITUTION (AI_CONTEXT_READ_ONLY_BIBLE.md) is the SUPREME LAW — read it
@@ -89,8 +91,12 @@ that ITEM, not the whole event) takes priority over any new idea. A robustness f
 erroring events is always worthwhile and is NEVER churn.
 
 OUTPUT A SMALL CHANGESET — never whole files. Respond with STRICT JSON only:
-{"summary": "<one line>", "version_bump": "patch|minor|major",
+{"summary": "<one line>", "why": "<2-5 short plain-ASCII bullet lines>", "version_bump": "patch|minor|major",
  "edits": [{"path": "build_cache.py", "find": "<exact existing snippet>", "replace": "<new snippet>"}]}
+"why" becomes the PR description for the reviewers + owner: 2-5 SHORT plain-ASCII bullet lines explaining
+your DECISION - the signal/outcome that motivated it, the mechanism, the expected effect, and how it
+stays within the invariants. Be concrete and decision-explaining, no fluff (one-off per PR, so this is
+NOT reloaded context - a few extra lines here is fine and aids review).
 Each edit's "find" MUST be copied VERBATIM — character-for-character, including exact indentation and
 comments — from the CURRENT build_cache.py shown below, and must match EXACTLY ONCE in the file. If a
 "find" isn't unique or doesn't match, the edit is rejected and your WHOLE change is dropped — so keep
@@ -154,14 +160,15 @@ def main():
         L.done("No author model available — skipping (no changes).")
     print("Proposal:", result.get("summary", "(none)"))
     n = L.apply_proposal(result)
+    why = str(result.get("why", "")).strip()[:1200]
     if revising and n:
-        _post_reply(str(result.get("summary", "")).strip()[:600] or "(see diff)")
+        _post_reply(str(result.get("summary", "")).strip()[:600] or "(see diff)", why)
     label = L.bot_label(slot["model"])
     bump = str(result.get("version_bump", "patch")).strip().lower()
     if bump not in ("patch", "minor", "major"):
         bump = "patch"
     L.emit(model_used=slot["model"], bot_label=label, version_bump=bump,
-           summary=str(result.get("summary", ""))[:300])
+           summary=str(result.get("summary", ""))[:300], why=(why or "(no rationale given)"))
     L.done(f"Applied {n} change(s) from {label} [{bump}].")
 
 
