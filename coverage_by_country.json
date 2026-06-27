@@ -1,6 +1,6 @@
 {
  "world_total": 2364,
- "world_mapped": 142,
+ "world_mapped": 143,
  "countries": [
   {
    "code": 97,
@@ -48,7 +48,7 @@
    "code": 65,
    "name": "New Zealand",
    "total": 74,
-   "mapped": 0
+   "mapped": 1
   },
   {
    "code": 14,
