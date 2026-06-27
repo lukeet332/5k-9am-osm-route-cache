@@ -22,10 +22,13 @@ MODEL_CONFIG = (REPO / ".github" / "ai_model.json").resolve()
 INDEX_FILE = (REPO / "index.json").resolve()
 ALGO_FILE = (REPO / "build_cache.py").resolve()
 JOURNAL_FILE = (REPO / "JOURNAL.md").resolve()   # the bots' running diary of ideas/learnings
+BEHAVIOR_TEST_FILE = (REPO / "test_behavior.py").resolve()   # EDITABLE behavioural expectations (not invariants)
 # Files a bot may write. The BIBLE is included so the AI can *propose* an amendment — but a PR that
-# touches it can NEVER auto-merge: the reviewer (ai-review.yml) blocks it and tags the human owner,
-# who must approve in a comment (`/approve-bible`). selftest.py / .github/** are deliberately NOT here.
-ALLOWED = {ALGO_FILE, CONTEXT_FILE, JOURNAL_FILE, BIBLE_FILE}
+# touches it can NEVER auto-merge: the reviewer (ai-review.yml) blocks it and tags the human owner, who
+# must approve in a comment (`/approve-bible`). test_behavior.py IS writable so the author can UPDATE a
+# behavioural expectation a genuine algorithm change alters — but selftest.py (frozen invariants) and
+# .github/** are deliberately NOT here.
+ALLOWED = {ALGO_FILE, CONTEXT_FILE, JOURNAL_FILE, BIBLE_FILE, BEHAVIOR_TEST_FILE}
 
 # Multi-source menu (all free), same registry as the WearOsGpx app. The weekly review picks
 # the best PAIR — master (author) + slave (reviewer) — from TWO DIFFERENT providers where

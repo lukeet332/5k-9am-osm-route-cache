@@ -213,7 +213,7 @@ jobs:
             if git diff --quiet; then
               echo "author produced no revision this round; leaving for next round / human."; exit 0
             fi
-            if OUT=$(python selftest.py 2>&1); then
+            if OUT=$(python selftest.py 2>&1 && python test_behavior.py 2>&1); then
               echo "$OUT"; echo "revision PASSED the self-test on attempt $attempt — pushing."
               # stamp the resulting full-diff hash so the guard can detect a stalled (identical) revision
               H=$(git diff origin/main | git hash-object --stdin | cut -c1-8)

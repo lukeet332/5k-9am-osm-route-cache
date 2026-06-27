@@ -22,8 +22,10 @@ CONSTITUTION (read-only bible) and CONTRACT (AI_CONTEXT.md) bind; read the JOURN
   is otherwise worth keeping - it is blocking, so the author must address its comments. ALSO pick revise
   if YOU spot a hard-invariant / safety violation (loosened accuracy bars 4.8-5.2 / 4.5-5.6, AI- or
   hand-authored coordinates, weakened OSM rate-limiting, dropped ODbL / parkrun attribution, edits outside
-  build_cache.py / JOURNAL.md / AI_CONTEXT.md, broken self-test contract) - you are the safety backstop
-  even if CodeRabbit missed it. State the one blocker. Do NOT use revise for a churn PR (see churn).
+  build_cache.py / JOURNAL.md / AI_CONTEXT.md / test_behavior.py, ANY edit to selftest.py - the frozen
+  invariants/safety net - or a test_behavior.py edit that WEAKENS/DELETES a check rather than updating a
+  behavioural expectation a real code change altered, broken self-test contract) - you are the safety
+  backstop even if CodeRabbit missed it. State the one blocker. Do NOT use revise for a churn PR (see churn).
 - "churn": the change re-proposes a JOURNAL "ALREADY IMPLEMENTED" idea with no meaningful improvement, or
   is a no-op -> the author should ABANDON it and propose a NEW idea (the PR is CLOSED). Churn takes
   PRECEDENCE: if the change is churn, return churn even if CodeRabbit requested changes - a dead idea is

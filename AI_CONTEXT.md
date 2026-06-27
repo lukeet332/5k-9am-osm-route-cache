@@ -38,9 +38,16 @@ while gaps/failed/provisionals remain. All obey invariants (real data only, neve
 loosened bars).
 
 ## Tested contract
-`selftest.py` (the merge gate, OFF-LIMITS to edit) imports these from `build_cache.py` and asserts their
-behaviour. Rewrite internals freely (that IS how you improve), but DO NOT rename or change signature/
-return shape or the gate fails. Keep current if you add/rename a tested symbol:
+TWO gate files (CI runs both). `selftest.py` = FROZEN invariants/properties + safety net, OFF-LIMITS to
+edit (constitutional bars, source-trust/provisional, no-abort robustness, the best_lap_n argmin PROPERTY,
+audit safety). `test_behavior.py` = EDITABLE behavioural expectations (specific best_lap_n outputs, exact
+doubled distance/source label, exact audit set); you MAY update it IN THE SAME changeset when a real
+build_cache.py change legitimately alters one of those expectations - but ONLY that expectation, NEVER to
+weaken/remove a check (the arbiter + CodeRabbit reject a loosened safety net). A change that can only pass
+by editing selftest.py is breaking an invariant, not improving.
+Both import these from `build_cache.py` and assert their behaviour. Rewrite internals freely (that IS how
+you improve), but DO NOT rename or change signature/return shape or the gate fails. Keep current if you
+add/rename a tested symbol:
 - `assemble(ways) -> [(lat,lon)]`
 - `trace_course(name,lat,lon) -> (m, [(lat,lon)], date_str) | None`
 - `build_one(ev) -> dict{status: success|failed|gap, source, distance_m, relation_m, trace_m, provisional}` (= index.json schema)
@@ -48,7 +55,8 @@ return shape or the gate fails. Keep current if you add/rename a tested symbol:
 - `audit_recoverable(index)`, `best_lap_n(length_m)` (self-audit: flags non-success entries recoverable at the best integer lap count)
 - `write_gpx(name,longname,pts,source)`; `length(pts)`; `algo_version()->str`; `_trace_cache_file(name,half_m,page)`
 - consts `REL_LO`/`REL_HI` (4800/5200), `ROUTES`, `TRACECACHE`
-Must change a contract? Can't edit selftest.py -> keep a thin old-signature wrapper, or leave it to the human.
+Must change a contract? Can't edit selftest.py -> keep a thin old-signature wrapper, update the matching
+expectation in test_behavior.py, or leave it to the human.
 
 ## Levers you MAY improve (within invariants; output must still pass selftest)
 - Querying/rollout: which dates+events, region priority, gap-retry cadence, search radius, backoff.
@@ -105,7 +113,7 @@ losslessly. It is tail-loaded (capped) - density = more retained lessons per tok
 2. Reviewer (a different AI): judge on (a) SAFETY (invariants, bars, geometry, OSM-kindness, licensing)
    and (b) MERIT (real progress vs churn / re-tried failure). Aim for consensus - collaborator, not
    gatekeeper; don't block on style; loop until both satisfied (capped rounds).
-3. Gate: `selftest.py` MUST pass, else no merge.
+3. Gate: `selftest.py` (frozen invariants) + `test_behavior.py` (editable expectations) MUST pass, else no merge.
 4. `version_bump` by scope: patch=tweak/fix/prune, minor=real new capability or quality gain (usual),
    major=ambitious rework (rare). Merge auto-cuts a semver release.
 

@@ -112,10 +112,15 @@ adding one.
   - "major": an ambitious, substantial rework. Use sparingly.
 If "edits" is empty, use "patch".
 You normally edit ONLY build_cache.py. You MAY also curate AI_CONTEXT.md with the same find/replace
-edits. You do NOT need to touch JOURNAL.md — the pipeline records a journal entry from your "summary"
-automatically. NEVER edit selftest.py or anything under .github/ (the safety pipeline). You MAY propose
-a constitution (AI_CONTEXT_READ_ONLY_BIBLE.md) amendment as an edit, but only rarely + with strong
-justification, knowing it will NOT auto-merge (it needs the human owner's explicit approval)."""
+edits. If your change legitimately alters a BEHAVIOURAL expectation (e.g. a specific best_lap_n output,
+the doubled distance/source label, the exact audit set), you MAY also edit test_behavior.py in the SAME
+changeset to update that expectation — but ONLY the expectation that genuinely changed, NEVER to weaken
+or remove a check. You do NOT need to touch JOURNAL.md — the pipeline records a journal entry from your
+"summary" automatically. NEVER edit selftest.py (the FROZEN invariants / safety net — bars, source-trust,
+no-abort, best_lap_n property) or anything under .github/ (the safety pipeline); a change that can only
+pass by editing selftest.py is breaking an invariant, not improving. You MAY propose a constitution
+(AI_CONTEXT_READ_ONLY_BIBLE.md) amendment as an edit, but only rarely + with strong justification,
+knowing it will NOT auto-merge (it needs the human owner's explicit approval)."""
 
 # Revision rounds REUSE the author's own context instead of starting over. The reviewer rejected (or
 # the self-test failed); the working-tree files shown above ARE the author's previous attempt, and the
