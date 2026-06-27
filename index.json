@@ -12666,6 +12666,19 @@
   "status": "gap",
   "trace_m": null
  },
+ "mlynowkakrolewska": {
+  "built_by": "v0.5.0",
+  "distance_m": 5106,
+  "last_tried": "2026-06-27",
+  "lat": 50.076997,
+  "lon": 19.874557,
+  "long": "parkrun M\u0142yn\u00f3wka Kr\u00f3lewska",
+  "provisional": true,
+  "relation_m": 5106,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
+ },
  "moana": {
   "built_by": "v0.5.0",
   "distance_m": null,
