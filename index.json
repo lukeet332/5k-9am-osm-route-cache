@@ -11851,6 +11851,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "ophovenerweiher": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 51.045509,
+  "lon": 7.0634,
+  "long": "Ophovener Weiher parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "orange": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -13028,6 +13040,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "priessnitzgrund": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 51.074417,
+  "lon": 13.762586,
+  "long": "Prie\u00dfnitzgrund parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "princeofwales": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -13234,6 +13258,18 @@
   "lat": -31.679025,
   "lon": 115.69588,
   "long": "Quinns Rocks parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "rabenauergrund": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 50.971079,
+  "lon": 13.619268,
+  "long": "Rabenauer Grund parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -16795,6 +16831,20 @@
   "source": null,
   "status": "gap",
   "trace_m": null
+ },
+ "volksgarten": {
+  "built_by": "v0.5.0",
+  "distance_m": 5060,
+  "last_tried": "2026-06-27",
+  "lat": 51.206472,
+  "lon": 6.801947,
+  "long": "Volksgarten parkrun",
+  "provisional": false,
+  "relation_m": null,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2025-03-22",
+  "trace_m": 5060
  },
  "wagga": {
   "built_by": "v0.5.0",
