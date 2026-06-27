@@ -92,16 +92,24 @@ def main():
     # CodeRabbit's verdict on THIS PR (set by the workflow's crgate step): state + its summary. This is
     # the source of truth on code quality + churn that the arbiter honours.
     cr_state = (os.environ.get("CODERABBIT_STATE", "").strip() or "none")
+    cr_source = (os.environ.get("CODERABBIT_SOURCE", "").strip() or "none")
     crf = L.REPO / "coderabbit_review.txt"
     cr_summary = crf.read_text(errors="ignore").strip()[:4000] if crf.exists() else ""
+    cr_kind = ("Walkthrough below = PR explanation for novelty/churn; not for line critique."
+               if cr_source == "walkthrough"
+               else "Review summary below (walkthrough unavailable); judge novelty on the diff + JOURNAL.")
+    pr_body = (os.environ.get("PR_BODY", "") or "").strip()[:2000]   # author's stated intent (see label below)
     prompt = (PROMPT
               + "\n\n===== CONSTITUTION (AI_CONTEXT_READ_ONLY_BIBLE.md — SUPREME) =====\n"
               + (L.BIBLE_FILE.read_text(errors="ignore")[:6000] if L.BIBLE_FILE.exists() else "(missing)")
               + "\n\n===== CONTRACT (AI_CONTEXT.md, excerpt) =====\n" + L.CONTEXT_FILE.read_text(errors="ignore")[:5000]
               + "\n\n===== JOURNAL (what's already been tried/DONE - use to spot churn) =====\n" + L.journal_tail()
               + "\n\n===== OUTCOMES =====\n" + L.outcomes_summary()
-              + f"\n\n===== CODERABBIT REVIEW (source of truth on code quality + churn) =====\nstate: {cr_state}\n"
-              + (cr_summary or "(no CodeRabbit summary available - judge on the diff + invariants)")
+              + "\n\n===== AUTHOR'S PR DESCRIPTION (its stated intent/why - a CLAIM; verify vs diff + JOURNAL) =====\n"
+              + (pr_body or "(author gave no description)")
+              + "\n\n===== CODERABBIT VERDICT (source of truth on code quality + churn) =====\n"
+              + f"state: {cr_state} (CHANGES_REQUESTED = blocking). {cr_kind}\n"
+              + (cr_summary or "(no CodeRabbit notes available - judge on the diff + invariants)")
               + "\n\n===== DIFF (truncated if very large) =====\n" + diff[:9000])
     # reviewer prefers the fallback model so it isn't the same instance as the author
     result, slot = L.call_role(prompt, "reviewer")

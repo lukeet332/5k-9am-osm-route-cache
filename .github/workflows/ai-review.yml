@@ -84,17 +84,35 @@ jobs:
           GH_TOKEN: ${{ secrets.BOT_PAT }}
         run: |
           SHA="${{ github.event.pull_request.head.sha }}"
-          Q="[.[] | select(.user.login|test(\"coderabbit\";\"i\")) | select(.commit_id==\"$SHA\")] | last"
+          BOT="coderabbitai[bot]"   # exact identity - substring match would trust an impostor login on a public repo
+          Q="[.[] | select(.user.login==\"$BOT\") | select(.commit_id==\"$SHA\")] | last"
           STATE=""
           for i in $(seq 1 15); do        # ~5 min ceiling; breaks as soon as CodeRabbit reviews this SHA
             STATE=$(gh api "repos/${{ github.repository }}/pulls/$PR/reviews" --jq "$Q | .state // empty" 2>/dev/null || echo "")
             [ -n "$STATE" ] && break
             sleep 20
           done
-          gh api "repos/${{ github.repository }}/pulls/$PR/reviews" --jq "$Q | .body // \"\"" > coderabbit_review.txt 2>/dev/null || true
+          # Feed the arbiter CodeRabbit's WALKTHROUGH (PR explanation: summary + change table + related PRs),
+          # not the thin review .body (that points at the author's inline line-fixes; STATE is the gate).
+          # ONLY when a review exists for THIS SHA - else the walkthrough comment may describe an older head.
+          # Strip mermaid/badges/util-links -> dense digest. Fall back to the SHA-bound review .body.
+          CR_SOURCE=none; : > coderabbit_review.txt
+          if [ -n "$STATE" ]; then
+            gh api "repos/${{ github.repository }}/issues/$PR/comments" \
+              --jq "[.[] | select(.user.login==\"$BOT\")] | last | .body // \"\"" 2>/dev/null \
+              | sed '/```mermaid/,/```/d' \
+              | sed -E 's/<!--[^>]*-->//g; s/!\[[^]]*\]\([^)]*\)//g; s#</?details[^>]*>##g; s#</?summary>##g' \
+              | grep -vE '^[[:space:]]*$|storage\.googleapis|utm_source|coderabbit_public_assets' \
+              | head -c 4000 > coderabbit_review.txt || true
+            if [ -s coderabbit_review.txt ]; then CR_SOURCE=walkthrough
+            else
+              gh api "repos/${{ github.repository }}/pulls/$PR/reviews" --jq "$Q | .body // \"\"" > coderabbit_review.txt 2>/dev/null || true
+              [ -s coderabbit_review.txt ] && CR_SOURCE=review_body
+            fi
+          fi
           CR_BLOCKING=false; [ "$STATE" = "CHANGES_REQUESTED" ] && CR_BLOCKING=true
-          echo "CodeRabbit review for $SHA: state='${STATE:-<none>}' -> blocking=$CR_BLOCKING"
-          { echo "cr_state=${STATE:-none}"; echo "cr_blocking=$CR_BLOCKING"; } >> "$GITHUB_OUTPUT"
+          echo "CodeRabbit for $SHA: state='${STATE:-<none>}' source=$CR_SOURCE blocking=$CR_BLOCKING"
+          { echo "cr_state=${STATE:-none}"; echo "cr_blocking=$CR_BLOCKING"; echo "cr_source=$CR_SOURCE"; } >> "$GITHUB_OUTPUT"
 
       - name: Merge-arbiter AI review
         id: rev
@@ -112,6 +130,8 @@ jobs:
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           CODERABBIT_STATE: ${{ steps.crgate.outputs.cr_state }}    # arbiter honours CodeRabbit's verdict
+          CODERABBIT_SOURCE: ${{ steps.crgate.outputs.cr_source }}  # walkthrough | review_body | none - so the label matches the content
+          PR_BODY: ${{ github.event.pull_request.body }}    # the author's own rationale (intent/why) - context for the novelty/merge call
         run: python .github/scripts/ai_review.py
 
       # ---- flag a DEGRADED review (intended reviewer 413'd on a big diff / was rate-limited, so it

@@ -9,3 +9,5 @@ __pycache__/
 # Ban-safety signal written by build_cache.py when OSM throttled us (429s past the breaker).
 # The self-chaining workflow reads it to back off; per-run only, never committed.
 .throttled
+# Local-only agent-integration planning doc (ON HOLD); never commit.
+AGENT_INTEGRATION_PLAN.md
