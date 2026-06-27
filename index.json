@@ -1,4 +1,16 @@
 {
+ "aachenerweiher": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 50.934298,
+  "lon": 6.927553,
+  "long": "Aachener Weiher parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "abbeypark": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -5915,6 +5927,18 @@
   "status": "success",
   "trace_m": null
  },
+ "fuldaaue": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 50.550601,
+  "lon": 9.668586,
+  "long": "Fuldaaue parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "fulhampalace": {
   "built_by": "v0.1.0",
   "distance_m": 1800,
@@ -8642,6 +8666,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "lahnwiesen": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 50.800726,
+  "lon": 8.767856,
+  "long": "Lahnwiesen parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "lakebogaforeshore": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -9422,6 +9458,18 @@
   "relation_m": null,
   "source": null,
   "status": "gap",
+  "trace_m": null
+ },
+ "lousberg": {
+  "built_by": "v0.5.0",
+  "distance_m": 5206,
+  "last_tried": "2026-06-27",
+  "lat": 50.785869,
+  "lon": 6.084436,
+  "long": "Lousberg parkrun",
+  "relation_m": 2603,
+  "source": "osm_relation_doubled_offdist",
+  "status": "failed",
   "trace_m": null
  },
  "lowestoft": {
@@ -10998,6 +11046,18 @@
   "lat": -27.211218,
   "lon": 153.073387,
   "long": "Nathan Road Sports Ground parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "naturlehrpfadwetzlar": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 50.555193,
+  "lon": 8.532644,
+  "long": "Naturlehrpfad parkrun, Wetzlar",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -13348,6 +13408,31 @@
   "status": "gap",
   "trace_m": null
  },
+ "rheinaue": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 50.709057,
+  "lon": 7.148883,
+  "long": "Rheinaue parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "rheinpark": {
+  "built_by": "v0.5.0",
+  "distance_m": 5140,
+  "last_tried": "2026-06-27",
+  "lat": 50.945886,
+  "lon": 6.969983,
+  "long": "Rheinpark parkrun",
+  "provisional": true,
+  "relation_m": 5140,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
+ },
  "rhodes": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -14113,6 +14198,18 @@
   "lat": 49.954444,
   "lon": 9.10789,
   "long": "Sch\u00f6nbusch parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "schwanenteich": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 50.590029,
+  "lon": 8.683406,
+  "long": "Schwanenteich parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -14950,6 +15047,18 @@
   "lat": 49.47441,
   "lon": 10.99843,
   "long": "Stadtpark parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "stadtparkchemnitz": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 50.805049,
+  "lon": 12.901176,
+  "long": "Stadtpark parkrun, Chemnitz",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -18209,6 +18318,18 @@
   "lat": -27.361066,
   "lon": 153.041015,
   "long": "Zillmere parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "zschopauaue": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 50.908207,
+  "lon": 13.023113,
+  "long": "Zschopauaue parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
