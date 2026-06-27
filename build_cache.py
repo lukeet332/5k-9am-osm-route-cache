@@ -18,7 +18,7 @@ OSM_TRACKPOINTS = "https://api.openstreetmap.org/api/0.6/trackpoints"
 UK_CC, ADULT = 97, 1
 TARGET = 5000
 REL_LO, REL_HI = 4800, 5200      # keep a relation only this close to 5k
-HALF_REL_LO, HALF_REL_HI = 2300, 2800  # half-distance band: candidates for doubling
+LAP_LO, LAP_HI = 800, 2800  # lap-length band for N-lap detection (N=2..6); 5-lap ~1000 up to 2-lap ~2600
 SANE_LO, SANE_HI = 1500, 9000    # off-tolerance finds in this band -> diagnostics; wider = noise
 RATE_S = 2.5            # min seconds between network calls (conservative; ban-safety > speed)
 HAVANT = (50.87577, -0.97557)    # rollout anchor: start here, work north
@@ -335,7 +335,7 @@ def build_one(ev):
                 "provisional": False, "trace_date": tr[2], **diag}
 
     # generalise doubling to best-integer-N lap (N=1..6) for traces
-    if tr and HALF_REL_LO <= tr[0] <= HALF_REL_HI:
+    if tr and LAP_LO <= tr[0] <= LAP_HI:
         n = best_lap_n(tr[0])
         if n >= 2:
             n_path = tr[1] * n
@@ -351,7 +351,7 @@ def build_one(ev):
 
     # generalise doubling to best-integer-N lap (N=1..6) for relations. Use N*length(lap), NOT
     # length(lap+lap): concatenation adds a phantom jump from lap end back to start, overshooting.
-    if rel and HALF_REL_LO <= rel[1] <= HALF_REL_HI:
+    if rel and LAP_LO <= rel[1] <= LAP_HI:
         n = best_lap_n(rel[1])
         if n >= 2:
             n_chain = rel[2] * n
@@ -373,14 +373,14 @@ def build_one(ev):
         cands.append(("osm_9am_trace_offdist", tr[0], tr[2]))
 
     # relations whose N-lap length is sane but out of tolerance -> diagnostic
-    if rel and HALF_REL_LO <= rel[1] <= HALF_REL_HI:
+    if rel and LAP_LO <= rel[1] <= LAP_HI:
         n = best_lap_n(rel[1])
         n_len = n * length(rel[2])
         if SANE_LO <= n_len <= SANE_HI and not (REL_LO <= n_len <= REL_HI):
             cands.append(("osm_relation_doubled_offdist", n_len, None))
 
     # half-distance traces that fail to N-lap into tolerance
-    if tr and HALF_REL_LO <= tr[0] <= HALF_REL_HI:
+    if tr and LAP_LO <= tr[0] <= LAP_HI:
         n = best_lap_n(tr[0])
         n_len = n * length(tr[1])
         if SANE_LO <= n_len <= SANE_HI and not (REL_LO <= n_len <= REL_HI):

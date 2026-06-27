@@ -13,9 +13,16 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
   end->start seam that overshoots and loses real 2-lap courses. Use 2*length(lap). A green self-test
   does not prove new distance maths unless a case actually exercises it - hand-trace the arithmetic and
   watch for the seam trap.
+- NO-OP GATE TRAP (v0.6.0): generalising a multiplier/threshold (2x -> best-integer-N) WITHOUT widening
+  the ENTRY GATE is a no-op - the new branch is filtered out before it can run (N-lap kept the 2300-2800
+  gate, so N was always 2; 3/5-lap laps never entered). When relaxing logic, widen the gate too, and add
+  a PROPERTY test that sweeps inputs (expectation from the SAME predicate) so an untested no-op can't
+  pass green. (Reinforces the doubling-distance lesson: exercise the new maths.)
 
 ## ALREADY IMPLEMENTED - do NOT re-propose as-is (a meaningful improvement ON one is fine, not churn)
-- Relation doubling for ~2.3-2.8k (HALF_REL_LO/HI), provisional.
+- N-lap relation/trace recovery: best integer N (2..6) over the LAP_LO/HI 800-2800 lap band, N*lap in
+  4.8-5.2k, provisional. DONE (v0.6.0 generalised the multiplier; the 2026-06-27 hotfix widened the gate
+  so 3/5-lap actually map - they were gated out before).
 - Trace doubling for ~2.3-2.8k Saturday-09:00 traces.
 - Multi-Saturday trace averaging (pointwise mean); prefer recent (last 2yr).
 - Christmas Day + New Year's Day events in the 09:00-09:45 window.
@@ -42,3 +49,8 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-06-27 - deepseek-v4-flash-bot (deepseek-ai/deepseek-v4-flash, minor)
 - Generalise doubling from 2x to best-integer-N lap rule for traces and relations, recovering ~10 more courses from the audit list.
+
+### 2026-06-27 - owner hotfix
+- v0.6.0's best-integer-N was a NO-OP: it generalised the multiplier but kept the 2300-2800 entry gate,
+  so N was always 2 and 3/5-lap cases never entered (recovered nothing). Widened the gate to LAP_LO/HI
+  800-2800 so they actually map; added an N-lap PROPERTY invariant to selftest. See NO-OP GATE TRAP lesson.

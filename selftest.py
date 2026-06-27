@@ -142,7 +142,31 @@ def main():
     flagged = {r[0] for r in bc.audit_recoverable(fake)}
     assert flagged == {"twolap", "threelap", "tracedbl"}, f"audit_recoverable wrong: {flagged}"
 
-    print(f"OK — reconstructed {L:.0f} m / {len(pts)} pts; helpers + lock + trust + doubling + error-guard + audit pass.")
+    # 8) N-LAP PROPERTY INVARIANT (scalable - not a one-off fixture): across synthetic lap lengths,
+    #    build_one MUST succeed EXACTLY when the lap is itself in-band OR best_lap_n (N>=2) lands N*lap in
+    #    4.8-5.2k. Expectation derived from the SAME predicate the self-audit uses, so test + audit can't
+    #    drift. Catches "no-op" generalisations whose N-lap branch is gated out before it runs (v0.6.0
+    #    generalised the multiplier but kept the 2-lap entry gate, so it recovered nothing - RED here).
+    ev_nlap = {"name": "selftestnlap", "long": "N-lap parkrun", "lat": 51.5, "lon": -0.1}
+    orig_rel3, orig_tr3 = bc.relation_course, bc.trace_course
+    bc.trace_course = lambda name, lat, lon: None
+    try:
+        for target in range(900, 5400, 100):
+            k = max(2, round(target / 11.132))                 # ~11.1 m per 0.0001 deg latitude step
+            lap = [(51.5 + i * 0.0001, -0.1) for i in range(k + 1)]
+            Ln = bc.length(lap)                                # distinct name: don't clobber test-2's L
+            n = bc.best_lap_n(Ln)
+            expect = (bc.REL_LO <= Ln <= bc.REL_HI) or (n >= 2 and bc.REL_LO <= n * Ln <= bc.REL_HI)
+            bc.relation_course = lambda lat, lon, name, _l=lap, _L=Ln: ("X parkrun", _L, _l)
+            got = bc.build_one(ev_nlap)["status"] == "success"
+            assert got == expect, f"N-lap invariant broken: lap~{Ln:.0f}m bestN={n} expect={expect} got_success={got}"
+    finally:
+        bc.relation_course, bc.trace_course = orig_rel3, orig_tr3
+        fn = os.path.join(bc.ROUTES, "selftestnlap.gpx")
+        if os.path.exists(fn):
+            os.remove(fn)
+
+    print(f"OK — reconstructed {L:.0f} m / {len(pts)} pts; helpers + lock + trust + doubling + error-guard + audit + n-lap-invariant pass.")
 
 if __name__ == "__main__":
     try:
