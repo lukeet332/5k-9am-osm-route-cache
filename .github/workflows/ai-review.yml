@@ -3,8 +3,10 @@ name: AI review (AI-reviews-AI gate)
 # A second AI reviews the author bot's PR against AI_CONTEXT.md.
 #   approve  -> swap needs-ai-review for the automerge label (auto-merge.yml then merges
 #               once CI is green).
-#   reject   -> post feedback, and have the author REVISE on the branch (re-runs this
-#               review). Capped at 3 revision rounds, then hand to a human.
+#   reject   -> post feedback, and have the author REVISE on the branch (re-runs this review). The retry
+#               budget SCALES with review-comment volume (~2 per comment thread, hard-capped) instead of a
+#               flat shared total, and stops early if the author stalls (two identical revisions). Then
+#               hands to a human.
 on:
   pull_request:
     types: [opened, labeled, synchronize, reopened]
@@ -43,16 +45,35 @@ jobs:
           git fetch origin main --quiet
           git diff origin/main...HEAD > pr.diff || true
 
-      - name: Revision-round guard (max 3)
+      - name: Revision-budget guard (progress-aware; scales with review-comment volume)
         id: guard
+        env:
+          GH_TOKEN: ${{ secrets.BOT_PAT }}
         run: |
-          N=$(git log --pretty=format:'%s' | grep -c '\[ai-revise\]' || true)
-          echo "rounds=$N" >> "$GITHUB_OUTPUT"
-          echo "prior revision rounds: $N"
+          # ROUNDS = author revision commits in THIS PR only (origin/main..HEAD), so [ai-revise] commits
+          # from earlier merged PRs already in main don't inflate the count. Match the new [ai-revise h=...]
+          # stamp as well as a bare [ai-revise].
+          SUBJECTS=$(git log --pretty=format:'%s' origin/main..HEAD)
+          ROUNDS=$(printf '%s\n' "$SUBJECTS" | grep -Ec '\[ai-revise([[:space:]]|\])' || true)
+          # Budget SCALES with review-comment volume so a multi-comment PR gets multiple retries per
+          # comment thread - not one flat shared total that starves it (e.g. 5 rounds across 8 comments).
+          # CMTS = inline review comments on the PR (CodeRabbit findings + any line comments). Capped hard
+          # at CEILING to protect the free-tier token budget (BIBLE #9).
+          CMTS=$(gh api "repos/${{ github.repository }}/pulls/$PR/comments" --jq 'length' 2>/dev/null || echo 0)
+          CEILING=12; MAX=$(( 5 + 2 * CMTS )); [ "$MAX" -gt "$CEILING" ] && MAX=$CEILING
+          # STALL: if the last two revisions produced an IDENTICAL diff, the author is stuck repeating
+          # itself - stop now rather than burn the rest of the budget. Each revise commit stamps its
+          # diff hash as [ai-revise h=...]; two equal in a row = no progress.
+          HLIST=$(printf '%s\n' "$SUBJECTS" | grep -oE '\[ai-revise[[:space:]]+h=[0-9a-f]+\]' | grep -oE 'h=[0-9a-f]+' | head -2)
+          H1=$(printf '%s\n' "$HLIST" | sed -n '1p'); H2=$(printf '%s\n' "$HLIST" | sed -n '2p')
+          STALLED=false; [ -n "$H1" ] && [ "$H1" = "$H2" ] && STALLED=true
+          PROCEED=true; { [ "$ROUNDS" -ge "$MAX" ] || [ "$STALLED" = "true" ]; } && PROCEED=false
+          echo "guard: rounds=$ROUNDS max=$MAX (cmts=$CMTS) stalled=$STALLED -> proceed=$PROCEED"
+          { echo "proceed=$PROCEED"; echo "rounds=$ROUNDS"; echo "max=$MAX"; echo "stalled=$STALLED"; } >> "$GITHUB_OUTPUT"
 
       - name: Adversarial AI review
         id: rev
-        if: steps.guard.outputs.rounds < 5
+        if: steps.guard.outputs.proceed == 'true'
         env:
           GH_MODELS_TOKEN: ${{ secrets.BOT_PAT }}    # GitHub Models needs a real PAT (the built-in GITHUB_TOKEN is not entitled)
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}    # independent reviewer / other providers; skipped if unset
@@ -70,7 +91,7 @@ jobs:
       # ---- flag a DEGRADED review (intended reviewer 413'd on a big diff / was rate-limited, so it
       #      fell back to the author model = reduced independence). Don't block — just surface it. ----
       - name: Flag degraded reviewer
-        if: steps.guard.outputs.rounds < 5 && steps.rev.outputs.degraded == 'true'
+        if: steps.guard.outputs.proceed == 'true' && steps.rev.outputs.degraded == 'true'
         env:
           GH_TOKEN: ${{ secrets.BOT_PAT }}
         run: |
@@ -78,7 +99,7 @@ jobs:
 
       # ---- constitution amendment: ALWAYS human-gated, WITH the reviewer's recommendation ----
       - name: Constitution change -> human gate (with AI recommendation)
-        if: steps.guard.outputs.rounds < 5 && steps.rev.outputs.bible_touched == 'true'
+        if: steps.guard.outputs.proceed == 'true' && steps.rev.outputs.bible_touched == 'true'
         env:
           GH_TOKEN: ${{ secrets.BOT_PAT }}
           REC: ${{ steps.rev.outputs.recommend }}
@@ -93,7 +114,7 @@ jobs:
 
       # ---- approved (normal, non-constitution PR): hand to auto-merge ----
       - name: Approve -> automerge
-        if: steps.guard.outputs.rounds < 5 && steps.rev.outputs.bible_touched != 'true' && steps.rev.outputs.verdict == 'approve'
+        if: steps.guard.outputs.proceed == 'true' && steps.rev.outputs.bible_touched != 'true' && steps.rev.outputs.verdict == 'approve'
         env:
           GH_TOKEN: ${{ secrets.BOT_PAT }}
         run: |
@@ -103,7 +124,7 @@ jobs:
       # ---- churn: already-done / no-op / re-proposed work. Don't revise - CLOSE the PR + delete the
       #      branch so the author abandons this idea and proposes a NEW one on the next run. ----
       - name: Churn -> close PR + delete branch
-        if: steps.guard.outputs.rounds < 5 && steps.rev.outputs.bible_touched != 'true' && steps.rev.outputs.verdict == 'churn'
+        if: steps.guard.outputs.proceed == 'true' && steps.rev.outputs.bible_touched != 'true' && steps.rev.outputs.verdict == 'churn'
         env:
           GH_TOKEN: ${{ secrets.BOT_PAT }}
         run: |
@@ -111,7 +132,7 @@ jobs:
 
       # ---- revise: one concrete fixable blocker - author revises on the same branch (re-triggers review) ----
       - name: Reject -> author revises
-        if: steps.guard.outputs.rounds < 5 && steps.rev.outputs.verdict == 'revise'
+        if: steps.guard.outputs.proceed == 'true' && steps.rev.outputs.verdict == 'revise'
         env:
           GH_MODELS_TOKEN: ${{ secrets.BOT_PAT }}    # GitHub Models needs a real PAT (the built-in GITHUB_TOKEN is not entitled)
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -145,7 +166,9 @@ jobs:
             fi
             if OUT=$(python selftest.py 2>&1); then
               echo "$OUT"; echo "revision PASSED the self-test on attempt $attempt — pushing."
-              git commit -am "chore: revise per AI review [ai-revise]"
+              # stamp the resulting full-diff hash so the guard can detect a stalled (identical) revision
+              H=$(git diff origin/main | git hash-object --stdin | cut -c1-8)
+              git commit -am "chore: revise per AI review [ai-revise h=$H]"
               git push origin "HEAD:$BRANCH"
               exit 0
             fi
@@ -161,11 +184,12 @@ jobs:
           gh pr edit "$PR" --add-label needs-human-approval || true
           echo "::error::revision could not pass the self-test after retries — not pushing."; exit 1
 
-      # ---- out of rounds: hand to a human ----
-      - name: Give up after 5 rounds
-        if: steps.guard.outputs.rounds >= 5
+      # ---- budget reached or author stalled: hand to a human ----
+      - name: Give up -> human
+        if: steps.guard.outputs.proceed != 'true'
         env:
           GH_TOKEN: ${{ secrets.BOT_PAT }}
         run: |
-          gh pr comment "$PR" --body "🛑 The two AIs didn't converge after 5 revision rounds — needs a human. Removing labels."
+          if [ "${{ steps.guard.outputs.stalled }}" = "true" ]; then WHY="the author stalled (two identical revisions in a row)"; else WHY="the revision budget (${{ steps.guard.outputs.max }} rounds) was reached"; fi
+          gh pr comment "$PR" --body "🛑 AI review loop stopped — $WHY — needs a human @lukeet332. Removing labels."
           gh pr edit "$PR" --remove-label needs-ai-review --remove-label automerge || true
