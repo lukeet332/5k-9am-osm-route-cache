@@ -7257,6 +7257,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "geoparkkamiennytrakt": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 50.412032,
+  "lon": 16.451458,
+  "long": "parkrun Geopark Kamienny Trakt",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "georgelanememorial": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -9888,6 +9900,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "kedzierzynkozle": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 50.330054,
+  "lon": 18.145286,
+  "long": "parkrun K\u0119dzierzyn-Ko\u017ale",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "kelvingrove": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -10749,6 +10773,18 @@
   "lat": 54.88843,
   "lon": -5.843595,
   "long": "Larne parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "lasaniolowski": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 50.83462,
+  "lon": 19.139758,
+  "long": "parkrun Las Anio\u0142owski",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -14452,6 +14488,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "opole": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 50.650123,
+  "lon": 17.924448,
+  "long": "parkrun Opole",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "orakeibay": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -14888,6 +14936,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "parkblekitny": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 50.738742,
+  "lon": 16.648744,
+  "long": "parkrun Park B\u0142\u0119kitny",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "parke": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -14991,6 +15051,18 @@
   "lat": 49.688148,
   "lon": 19.200379,
   "long": "parkrun Park Zamkowy w \u017bywcu",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "parkzdrojowykudowazdroj": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 50.443664,
+  "lon": 16.239829,
+  "long": "parkrun Park Zdrojowy, Kudowa-Zdr\u00f3j",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -15847,6 +15919,18 @@
   "lat": 55.204638,
   "lon": -6.648788,
   "long": "Portrush parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "portrzecznysandomierz": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 50.655615,
+  "lon": 21.733285,
+  "long": "parkrun Port Rzeczny Sandomierz",
   "relation_m": null,
   "source": null,
   "status": "gap",
