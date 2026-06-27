@@ -294,6 +294,18 @@
   "trace_date": "2019-07-27",
   "trace_m": 1710
  },
+ "alstervorland": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 53.573708,
+  "lon": 10.002464,
+  "long": "Alstervorland parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "altonabeach": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -685,6 +697,18 @@
   "status": "failed",
   "trace_m": null
  },
+ "avondaleforest": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.908152,
+  "lon": -6.225626,
+  "long": "Avondale Forest parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "avondaleuniversitycollege": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -761,6 +785,18 @@
   "lat": -28.869637,
   "lon": 153.576356,
   "long": "Ballina Coast parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "ballincollig": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 51.891833,
+  "lon": -8.605349,
+  "long": "Ballincollig parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -1392,6 +1428,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "bereisland": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 51.632369,
+  "lon": -9.81755,
+  "long": "Bere Island parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "berkeleygreen": {
   "built_by": "v0.1.0",
   "distance_m": null,
@@ -1820,6 +1868,18 @@
   "lat": -30.372884,
   "lon": 153.066759,
   "long": "Bongil Bongil parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "borrisokanetown": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.998198,
+  "lon": -8.132919,
+  "long": "Borrisokane Town parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -2855,6 +2915,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "carlowtown": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.838536,
+  "lon": -6.93414,
+  "long": "Carlow Town parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "carrickfergus": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -2889,6 +2961,19 @@
   "source": null,
   "status": "gap",
   "trace_m": null
+ },
+ "castlehaven": {
+  "built_by": "v0.5.0",
+  "distance_m": 2902,
+  "last_tried": "2026-06-27",
+  "lat": 51.551575,
+  "lon": -9.170294,
+  "long": "Castlehaven parkrun",
+  "relation_m": null,
+  "source": "osm_9am_trace_offdist",
+  "status": "failed",
+  "trace_date": "2020-02-08",
+  "trace_m": 2902
  },
  "castlemaine": {
   "built_by": "v0.5.0",
@@ -3519,6 +3604,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "clarisford": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.796642,
+  "lon": -8.441796,
+  "long": "Clarisford parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "claudycountrypark": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -3610,6 +3707,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "clonakilty": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 51.617636,
+  "lon": -8.89884,
+  "long": "Clonakilty parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "cloncurry": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -3617,6 +3726,18 @@
   "lat": -20.70873,
   "lon": 140.519814,
   "long": "Cloncurry parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "clonmel": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.352179,
+  "lon": -7.694956,
+  "long": "Clonmel parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -3909,6 +4030,18 @@
   "lat": -33.913708,
   "lon": 151.116857,
   "long": "Cooks River parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "coole": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 53.093422,
+  "lon": -8.838605,
+  "long": "Coole parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -5566,6 +5699,18 @@
   "trace_date": "2019-10-05",
   "trace_m": 5021
  },
+ "fenitgreenway": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.27694,
+  "lon": -9.864883,
+  "long": "Fenit Greenway parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "ferrymeadows": {
   "distance_m": 5089,
   "last_tried": "2026-06-26",
@@ -5576,6 +5721,18 @@
   "relation_m": 5089,
   "source": "osm_relation",
   "status": "success",
+  "trace_m": null
+ },
+ "fethardtown": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.470288,
+  "lon": -7.696725,
+  "long": "Fethard Town parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
   "trace_m": null
  },
  "fingalbay": {
@@ -6315,6 +6472,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "glengarriff": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 51.755548,
+  "lon": -9.566904,
+  "long": "Glengarriff parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "glenoma": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -6322,6 +6491,18 @@
   "lat": -16.899012,
   "lon": 145.708784,
   "long": "Glenoma parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "glenriver": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 51.912716,
+  "lon": -8.455532,
+  "long": "Glen River parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -6453,6 +6634,18 @@
   "lat": -28.54951,
   "lon": 150.307043,
   "long": "Goondiwindi parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "gorey": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.680041,
+  "lon": -6.299324,
+  "long": "Gorey parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -7898,6 +8091,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "illaunmanagh": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.700096,
+  "lon": -8.873242,
+  "long": "Illaunmanagh parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "illeruferkempten": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -7910,6 +8115,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "inchbeach": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.137776,
+  "lon": -9.977697,
+  "long": "Inch Beach parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "ingrebournehill": {
   "built_by": "v0.1.0",
   "distance_m": null,
@@ -7917,6 +8134,18 @@
   "lat": 51.527042,
   "lon": 0.194266,
   "long": "Ingrebourne Hill parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "inismeain": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 53.086057,
+  "lon": -9.58935,
+  "long": "Inis Me\u00e1in parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -8465,6 +8694,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "kilkenny": {
+  "built_by": "v0.5.0",
+  "distance_m": 1976,
+  "last_tried": "2026-06-27",
+  "lat": 52.648977,
+  "lon": -7.245307,
+  "long": "Kilkenny parkrun",
+  "relation_m": 1976,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
+ },
  "kilkennylanecountry": {
   "built_by": "v0.3.1",
   "distance_m": null,
@@ -8472,6 +8713,18 @@
   "lat": 51.774488,
   "lon": -1.595376,
   "long": "Kilkenny Lane Country parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "killarneyhouse": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.057309,
+  "lon": -9.516537,
+  "long": "Killarney House parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -8682,6 +8935,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "knockanacreewoods": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.954397,
+  "lon": -8.040969,
+  "long": "Knockanacree Woods parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "knowsley": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -8736,6 +9001,18 @@
   "lat": 48.783517,
   "lon": 9.143246,
   "long": "Kr\u00e4herwald parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "krupundersee": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 53.625176,
+  "lon": 9.87603,
+  "long": "Krupunder See parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -9126,6 +9403,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "leesroad": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.863938,
+  "lon": -9.003332,
+  "long": "Lees Road parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "leetonsportandrecreationprecinct": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -9252,6 +9541,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "limerick": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.675635,
+  "lon": -8.582395,
+  "long": "Limerick parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "lincoln": {
   "distance_m": 4949,
   "last_tried": "2026-06-26",
@@ -9323,6 +9624,18 @@
   "status": "failed",
   "trace_date": "2020-02-22",
   "trace_m": 2763
+ },
+ "listowel": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.443179,
+  "lon": -9.479681,
+  "long": "Listowel parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "lithgow": {
   "built_by": "v0.5.0",
@@ -9804,6 +10117,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "macroomcastledemesne": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 51.904698,
+  "lon": -8.962054,
+  "long": "Macroom Castle Demesne parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "maesteg": {
   "built_by": "v0.1.0",
   "distance_m": null,
@@ -9907,6 +10232,18 @@
   "lat": 50.880478,
   "lon": 0.011973,
   "long": "Malling Rec parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "mallowcastle": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.134517,
+  "lon": -8.637864,
+  "long": "Mallow Castle parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -10489,6 +10826,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "midletongreenway": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 51.921387,
+  "lon": -8.174868,
+  "long": "Midleton Greenway parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "mildenhallhub": {
   "distance_m": 5023,
   "last_tried": "2026-06-26",
@@ -10756,6 +11105,18 @@
   "lat": -30.638892,
   "lon": 116.004276,
   "long": "Moora parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "moorbek": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 53.70882,
+  "lon": 9.993277,
+  "long": "Moorbek parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -11045,6 +11406,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "mungret": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.632016,
+  "lon": -8.681348,
+  "long": "Mungret parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "musacookstown": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -11326,6 +11699,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "newcastlewest": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.450747,
+  "lon": -9.06854,
+  "long": "Newcastle West parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "newent": {
   "distance_m": null,
   "last_tried": "2026-06-25",
@@ -11369,6 +11754,18 @@
   "lat": -37.840109,
   "lon": 144.870716,
   "long": "Newport Lakes parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "newross": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.316359,
+  "lon": -6.928439,
+  "long": "New Ross parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -12849,6 +13246,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "pobalscoilnatrionoide": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 51.950567,
+  "lon": -7.873244,
+  "long": "Pobalscoil na Tr\u00edon\u00f3ide parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "pocket": {
   "distance_m": 5018,
   "last_tried": "2026-06-26",
@@ -13184,6 +13593,18 @@
   "lat": -41.151526,
   "lon": 146.541641,
   "long": "Port Sorell parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "portumna": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 53.082436,
+  "lon": -8.241043,
+  "long": "Portumna parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -14579,6 +15000,18 @@
   "lat": 52.696067,
   "lon": -1.408816,
   "long": "Sence Valley Forest Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "setuarena": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.251535,
+  "lon": -7.178233,
+  "long": "SETU Arena parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -16009,6 +16442,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "templemore": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.798741,
+  "lon": -7.839498,
+  "long": "Templemore parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "templenewsam": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -16558,6 +17003,42 @@
   "status": "gap",
   "trace_m": null
  },
+ "tralee": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.266242,
+  "lon": -9.705376,
+  "long": "Tralee parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "tramore": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.159283,
+  "lon": -7.141892,
+  "long": "Tramore parkrun, Waterford",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "tramorevalley": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 51.877221,
+  "lon": -8.456427,
+  "long": "Tramore Valley parkrun, Cork",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "traralgon": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -16646,6 +17127,18 @@
   "lat": -35.410284,
   "lon": 149.064989,
   "long": "Tuggeranong parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "tullow": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.794943,
+  "lon": -6.660345,
+  "long": "Tullow parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -16923,6 +17416,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "vandeleur": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.636121,
+  "lon": -9.472935,
+  "long": "Vandeleur parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "varsitylakes": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -16953,6 +17458,18 @@
   "lat": 53.561636,
   "lon": -0.848034,
   "long": "Vermuyden Way parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "vicarstown": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 53.056008,
+  "lon": -7.083459,
+  "long": "Vicarstown parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -17680,6 +18197,18 @@
   "lat": 53.925673,
   "lon": -1.392197,
   "long": "Wetherby parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "wexfordracecourse": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 52.337798,
+  "lon": -6.488119,
+  "long": "Wexford Racecourse parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
