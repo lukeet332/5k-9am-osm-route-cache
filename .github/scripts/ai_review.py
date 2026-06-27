@@ -98,7 +98,8 @@ def main():
     cr_kind = ("Walkthrough below = PR explanation for novelty/churn; not for line critique."
                if cr_source == "walkthrough"
                else "Review summary below (walkthrough unavailable); judge novelty on the diff + JOURNAL.")
-    pr_body = (os.environ.get("PR_BODY", "") or "").strip()[:2000]   # author's stated intent (see label below)
+    # author's stated intent, normalised to a compact plain-ASCII claim (BIBLE: AI-loaded text stays frugal)
+    pr_body = " ".join((os.environ.get("PR_BODY", "") or "").split()).encode("ascii", "ignore").decode()[:2000]
     prompt = (PROMPT
               + "\n\n===== CONSTITUTION (AI_CONTEXT_READ_ONLY_BIBLE.md — SUPREME) =====\n"
               + (L.BIBLE_FILE.read_text(errors="ignore")[:6000] if L.BIBLE_FILE.exists() else "(missing)")

@@ -82,13 +82,14 @@ jobs:
         if: steps.guard.outputs.proceed == 'true'
         env:
           GH_TOKEN: ${{ secrets.BOT_PAT }}
+          GH_REPO: ${{ github.repository }}   # via env, not inline ${{ }} in run, to avoid template-injection (zizmor)
         run: |
           SHA="${{ github.event.pull_request.head.sha }}"
           BOT="coderabbitai[bot]"   # exact identity - substring match would trust an impostor login on a public repo
           Q="[.[] | select(.user.login==\"$BOT\") | select(.commit_id==\"$SHA\")] | last"
           STATE=""
           for i in $(seq 1 15); do        # ~5 min ceiling; breaks as soon as CodeRabbit reviews this SHA
-            STATE=$(gh api "repos/${{ github.repository }}/pulls/$PR/reviews" --jq "$Q | .state // empty" 2>/dev/null || echo "")
+            STATE=$(gh api "repos/$GH_REPO/pulls/$PR/reviews" --jq "$Q | .state // empty" 2>/dev/null || echo "")
             [ -n "$STATE" ] && break
             sleep 20
           done
@@ -100,7 +101,7 @@ jobs:
           if [ -n "$STATE" ]; then
             # select the WALKTHROUGH/summary comment by its marker - NOT a status reply (CodeRabbit also
             # posts "auto-generated reply" comments); else CR_SOURCE would mislabel a reply as a walkthrough.
-            gh api "repos/${{ github.repository }}/issues/$PR/comments" \
+            gh api "repos/$GH_REPO/issues/$PR/comments" \
               --jq "[.[] | select(.user.login==\"$BOT\") | select(.body|test(\"summarize by coderabbit\"))] | last | .body // \"\"" 2>/dev/null \
               | sed '/```mermaid/,/```/d' \
               | sed -E 's/<!--[^>]*-->//g; s/!\[[^]]*\]\([^)]*\)//g; s#</?details[^>]*>##g; s#</?summary>##g' \
@@ -108,7 +109,7 @@ jobs:
               | head -c 4000 > coderabbit_review.txt || true
             if [ -s coderabbit_review.txt ]; then CR_SOURCE=walkthrough
             else
-              gh api "repos/${{ github.repository }}/pulls/$PR/reviews" --jq "$Q | .body // \"\"" > coderabbit_review.txt 2>/dev/null || true
+              gh api "repos/$GH_REPO/pulls/$PR/reviews" --jq "$Q | .body // \"\"" > coderabbit_review.txt 2>/dev/null || true
               [ -s coderabbit_review.txt ] && CR_SOURCE=review_body
             fi
           fi
