@@ -2545,6 +2545,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "boulognerskogen": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 60.672424,
+  "lon": 17.119386,
+  "long": "Boulognerskogen parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "bourkeracecourse": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -3056,6 +3068,18 @@
   "relation_m": 4981,
   "source": "osm_relation",
   "status": "success",
+  "trace_m": null
+ },
+ "broparken": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 63.826124,
+  "lon": 20.249958,
+  "long": "Broparken parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
   "trace_m": null
  },
  "broughtyferryesplanade": {
@@ -6086,6 +6110,18 @@
   "lat": -37.483912,
   "lon": 144.584456,
   "long": "Dixon Field parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "djakneberget": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 59.61135,
+  "lon": 16.533659,
+  "long": "Dj\u00e4kneberget parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -13002,6 +13038,18 @@
   "lat": -29.983414,
   "lon": 24.695644,
   "long": "Lieberwalt Farm parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "lillsjon": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 59.492103,
+  "lon": 17.71812,
+  "long": "Lillsj\u00f6n parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -23962,6 +24010,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "uppsala": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 59.853455,
+  "lon": 17.642296,
+  "long": "Uppsala parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "uptoncourt": {
   "built_by": "v0.5.0",
   "distance_m": 5006,
@@ -24925,6 +24985,18 @@
   "lat": 53.381073,
   "lon": -1.357408,
   "long": "Waverley Lakes parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "weedonislandpreserve": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 27.84707,
+  "lon": -82.608119,
+  "long": "Weedon Island Preserve parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
