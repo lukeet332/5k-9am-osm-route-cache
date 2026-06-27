@@ -9852,6 +9852,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "katowice": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 50.244676,
+  "lon": 19.00202,
+  "long": "parkrun Katowice",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "kawana": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -14945,6 +14957,20 @@
   "source": null,
   "status": "gap",
   "trace_m": null
+ },
+ "parkmiejskisosnowiec": {
+  "built_by": "v0.5.0",
+  "distance_m": 5040,
+  "last_tried": "2026-06-27",
+  "lat": 50.298517,
+  "lon": 19.242408,
+  "long": "parkrun Park Miejski, Sosnowiec",
+  "provisional": false,
+  "relation_m": null,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2022-06-04",
+  "trace_m": 5040
  },
  "parkville": {
   "built_by": "v0.5.0",
