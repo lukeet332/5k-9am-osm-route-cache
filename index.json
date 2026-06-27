@@ -150,6 +150,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "akkerendamnaturereserve": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -31.455321,
+  "lon": 19.773753,
+  "long": "Akkerendam Nature Reserve parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "akwentropicana": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -293,6 +305,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "aliwalnorthgolfclub": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -30.699253,
+  "lon": 26.717566,
+  "long": "Aliwal North Golf Club parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "allerpark": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -397,6 +421,18 @@
   "lat": 55.662538,
   "lon": 12.635341,
   "long": "Amager Strandpark parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "amanzimtoti": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -30.050668,
+  "lon": 30.890231,
+  "long": "Amanzimtoti parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -1125,6 +1161,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "barklyeastgolfclub": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -30.970235,
+  "lon": 27.605384,
+  "long": "Barkly East Golf Club parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "barnsley": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -1390,6 +1438,18 @@
   "lat": -37.439405,
   "lon": 143.382552,
   "long": "Beaufort Lake parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "beavercreek": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -31.044098,
+  "lon": 30.181627,
+  "long": "Beaver Creek parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -6069,6 +6129,19 @@
   "status": "gap",
   "trace_m": 1124
  },
+ "durbanpoint": {
+  "built_by": "v0.5.0",
+  "distance_m": 5025,
+  "last_tried": "2026-06-27",
+  "lat": -29.864284,
+  "lon": 31.043293,
+  "long": "Durban Point parkrun",
+  "provisional": true,
+  "relation_m": 5025,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
+ },
  "durbanville": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -6146,6 +6219,18 @@
   "lat": 50.818691,
   "lon": -0.099373,
   "long": "East Brighton parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "eastcoastbrewery": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -30.195064,
+  "lon": 30.802362,
+  "long": "East Coast Brewery parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -11935,6 +12020,18 @@
   "source": "osm_9am_trace",
   "status": "success",
   "trace_date": "2024-03-02"
+ },
+ "lieberwaltfarm": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -29.983414,
+  "lon": 24.695644,
+  "long": "Lieberwalt Farm parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "lillydalelake": {
   "built_by": "v0.5.0",
@@ -22168,6 +22265,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "uvongo": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -30.820719,
+  "lon": 30.405028,
+  "long": "Uvongo parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "vaaksynkanava": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -24423,6 +24532,18 @@
   "relation_m": 5121,
   "source": "osm_relation",
   "status": "success",
+  "trace_m": null
+ },
+ "zastroncommons": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -30.289115,
+  "lon": 27.077872,
+  "long": "Zastron Commons parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
   "trace_m": null
  },
  "zeehangolfclub": {
