@@ -475,6 +475,18 @@
   "status": "failed",
   "trace_m": null
  },
+ "anacostia": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 38.868085,
+  "lon": -76.995023,
+  "long": "Anacostia parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "anagachwoods": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -778,6 +790,18 @@
   "lat": -26.008602,
   "lon": 28.068379,
   "long": "Asidlale Adventure parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "aspen": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 39.187266,
+  "lon": -106.852397,
+  "long": "Aspen parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -1122,6 +1146,18 @@
   "lat": 53.309692,
   "lon": -6.373278,
   "long": "Ballymount parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "baltimoreandannapolistrail": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 39.121671,
+  "lon": -76.5901,
+  "long": "Baltimore and Annapolis Trail parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -1499,6 +1535,18 @@
   "lat": 52.730411,
   "lon": -1.233675,
   "long": "Beacon Hill Country Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "bearcreekgreenbelt": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 32.927592,
+  "lon": -97.230411,
+  "long": "Bear Creek Greenbelt parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -2748,6 +2796,18 @@
   "lat": 44.222662,
   "lon": -76.495865,
   "long": "Breakwater parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "breareservoir": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 33.893122,
+  "lon": -117.926876,
+  "long": "Brea Reservoir parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -4227,6 +4287,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "charleston": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 38.350322,
+  "lon": -81.639331,
+  "long": "Charleston parkrun, West Virginia",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "charlestonsouthaustralia": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -4919,6 +4991,18 @@
   "status": "failed",
   "trace_m": null
  },
+ "coalcreektrail": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 37.677099,
+  "lon": -113.054042,
+  "long": "Coal Creek Trail parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "cobar": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -5039,12 +5123,36 @@
   "status": "success",
   "trace_m": null
  },
+ "colermountainbikepreserve": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 36.38723,
+  "lon": -94.238106,
+  "long": "Coler Mountain Bike Preserve parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "colinglen": {
   "distance_m": null,
   "last_tried": "2026-06-26",
   "lat": 54.570723,
   "lon": -6.020504,
   "long": "Colin Glen parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "collegepark": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 38.999103,
+  "lon": -76.932737,
+  "long": "College Park parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -5493,6 +5601,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "creekside": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 35.891735,
+  "lon": -79.934662,
+  "long": "Creekside parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "crewe": {
   "distance_m": 1977,
   "last_tried": "2026-06-26",
@@ -5886,6 +6006,18 @@
   "lat": 55.622901,
   "lon": -4.482932,
   "long": "Dean Castle Country Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "deeprun": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 37.624069,
+  "lon": -77.586806,
+  "long": "Deep Run parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -6593,6 +6725,18 @@
   "lat": 54.767605,
   "lon": -1.558852,
   "long": "Durham parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "durhamnc": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 35.955931,
+  "lon": -78.926382,
+  "long": "Durham NC parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -7386,6 +7530,18 @@
   "status": "failed",
   "trace_m": null
  },
+ "explorationplace": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 37.689049,
+  "lon": -97.347301,
+  "long": "Exploration Place parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "faelledparken": {
   "built_by": "v0.5.0",
   "distance_m": 5317,
@@ -7760,6 +7916,18 @@
   "lat": 53.40999,
   "lon": -2.23551,
   "long": "Fletcher Moss parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "fletcherscove": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 38.919711,
+  "lon": -77.10189,
+  "long": "Fletcher\u2019s Cove parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -9663,6 +9831,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "happyhill": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 36.082105,
+  "lon": -80.237017,
+  "long": "Happy Hill parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "harayamakoen": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -9963,6 +10143,18 @@
   "lat": 55.651659,
   "lon": -3.199586,
   "long": "Hay Lodge parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "haysfarm": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 34.639798,
+  "lon": -86.581454,
+  "long": "Hays Farm parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -10383,6 +10575,18 @@
   "lat": -29.539048,
   "lon": 30.296952,
   "long": "Hilton parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "himmel": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 32.234813,
+  "lon": -110.931841,
+  "long": "Himmel parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -11107,6 +11311,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "janalfanotrail": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 34.602931,
+  "lon": -112.452331,
+  "long": "Jan Alfano Trail parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "jarrahdaleheritage": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -11267,6 +11483,18 @@
   "lat": -24.935634,
   "lon": 30.842816,
   "long": "Jock Trail parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "joecreason": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 38.210534,
+  "lon": -85.705759,
+  "long": "Joe Creason parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -11608,6 +11836,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "katytrail": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 33.740918,
+  "lon": -96.564031,
+  "long": "Katy Trail parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "kawana": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -11687,6 +11927,18 @@
   "lat": -36.772141,
   "lon": 144.312232,
   "long": "Kennington Reservoir parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "kensington": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 39.012225,
+  "lon": -77.091204,
+  "long": "Kensington parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -13292,6 +13544,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "littlesugarcreekgreenway": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 35.117097,
+  "lon": -80.867784,
+  "long": "Little Sugar Creek Greenway parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "livingcolour": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -13695,6 +13959,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "lucypark": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 33.919283,
+  "lon": -98.515346,
+  "long": "Lucy Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "ludlow": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -13864,6 +14140,18 @@
   "lat": 53.251413,
   "lon": -2.1303,
   "long": "Macclesfield parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "maceranch": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 38.557207,
+  "lon": -121.710599,
+  "long": "Mace Ranch parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -16505,6 +16793,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "northsidebeltline": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 33.813416,
+  "lon": -84.406514,
+  "long": "Northside Beltline parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "northsydney": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -19033,6 +19333,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "purcell": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 38.428261,
+  "lon": -78.881377,
+  "long": "Purcell parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "puszczaniepolomicka": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -19988,6 +20300,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "rooseveltislanddc": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 38.89638,
+  "lon": -77.063956,
+  "long": "Roosevelt Island DC parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "rootyhill": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -20340,6 +20664,18 @@
   "lat": 52.643712,
   "lon": -0.624447,
   "long": "Rutland Water parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "ryanbonaminio": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 33.975692,
+  "lon": -117.395883,
+  "long": "Ryan Bonaminio parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -22395,6 +22731,18 @@
   "trace_date": "2023-07-01",
   "trace_m": 4942
  },
+ "sunnyvalebaytrail": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 37.419259,
+  "lon": -122.018731,
+  "long": "Sunnyvale Bay Trail parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "sunrisebeach": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -22414,6 +22762,18 @@
   "lat": -32.915013,
   "lon": 28.038654,
   "long": "Sunrise-on-Sea parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "sunsetdunes": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 37.760326,
+  "lon": -122.509961,
+  "long": "Sunset Dunes parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -23230,6 +23590,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "thirdcreekgreenway": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 35.955352,
+  "lon": -83.951128,
+  "long": "Third Creek Greenway parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "thomasmills": {
   "distance_m": 4933,
   "last_tried": "2026-06-26",
@@ -23994,6 +24366,18 @@
   "lat": -29.733319,
   "lon": 31.084602,
   "long": "Umhlanga parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "umsteadpark": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 35.921291,
+  "lon": -79.063261,
+  "long": "Umstead Park parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -25707,6 +26091,18 @@
   "lat": -33.705633,
   "lon": 151.177321,
   "long": "Wildflower parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "willieblakecommunity": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 32.182683,
+  "lon": -110.93838,
+  "long": "Willie Blake Community parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
