@@ -260,7 +260,7 @@
  "alness": {
   "built_by": "v0.5.0",
   "distance_m": 1710,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-27",
   "lat": 57.694306,
   "lon": -4.256669,
   "long": "Alness parkrun",
@@ -2622,7 +2622,7 @@
  "camperdown": {
   "built_by": "v0.5.0",
   "distance_m": 5318,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-27",
   "lat": 56.483681,
   "lon": -3.030896,
   "long": "Camperdown parkrun, Dundee",
@@ -5144,6 +5144,19 @@
   "relation_m": null,
   "source": null,
   "status": "gap",
+  "trace_m": null
+ },
+ "ehrenbreitstein": {
+  "built_by": "v0.5.0",
+  "distance_m": 4995,
+  "last_tried": "2026-06-27",
+  "lat": 50.360641,
+  "lon": 7.609343,
+  "long": "Ehrenbreitstein parkrun",
+  "provisional": true,
+  "relation_m": 4995,
+  "source": "osm_relation",
+  "status": "success",
   "trace_m": null
  },
  "eildonpondage": {
@@ -7708,7 +7721,7 @@
  "hunstantonpromenade": {
   "built_by": "v0.5.0",
   "distance_m": 1723,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-27",
   "lat": 52.941684,
   "lon": 0.486526,
   "long": "Hunstanton Promenade parkrun",
@@ -8589,6 +8602,18 @@
   "lat": -15.791571,
   "lon": 128.700113,
   "long": "Kununurra parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "kurtschumacherpromenade": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 49.778058,
+  "lon": 9.931715,
+  "long": "Kurt-Schumacher-Promenade parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -9533,6 +9558,18 @@
   "lat": 53.744855,
   "lon": -2.977613,
   "long": "Lytham Hall parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "maaraue": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 49.999512,
+  "lon": 8.288876,
+  "long": "Maaraue parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -11189,6 +11226,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "nidda": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 50.141234,
+  "lon": 8.64006,
+  "long": "Nidda parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "nightcliff": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -11632,6 +11681,18 @@
   "lat": -41.338567,
   "lon": 148.274083,
   "long": "O\u2019Connors Beach parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "offenthal": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 49.987123,
+  "lon": 8.753985,
+  "long": "Offenthal parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -13290,7 +13351,7 @@
  "rhodes": {
   "built_by": "v0.5.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-27",
   "lat": -33.847462,
   "lon": 151.081803,
   "long": "Rhodes parkrun",
@@ -14045,6 +14106,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "schoenbusch": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 49.954444,
+  "lon": 9.10789,
+  "long": "Sch\u00f6nbusch parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "scribblygumsconservation": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -14531,7 +14604,7 @@
  "skipton": {
   "built_by": "v0.5.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-27",
   "lat": 53.961331,
   "lon": -2.030004,
   "long": "Skipton parkrun",
@@ -15297,7 +15370,7 @@
  "sutcliffe": {
   "built_by": "v0.5.0",
   "distance_m": 1674,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-27",
   "lat": 51.454343,
   "lon": 0.026739,
   "long": "Sutcliffe parkrun",
