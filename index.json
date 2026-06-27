@@ -3820,6 +3820,30 @@
   "status": "success",
   "trace_m": null
  },
+ "cantonlowerrougetrail": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 42.285578,
+  "lon": -83.485271,
+  "long": "Canton Lower Rouge Trail parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "canyonrimtrail": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 42.598602,
+  "lon": -114.454267,
+  "long": "Canyon Rim Trail parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "capalaba": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -5821,6 +5845,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "cutlerpark": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 42.294685,
+  "lon": -71.213684,
+  "long": "Cutler Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "cwmbran": {
   "built_by": "v0.1.0",
   "distance_m": null,
@@ -5947,6 +5983,18 @@
   "lat": -37.991139,
   "lon": 145.215644,
   "long": "Dandenong parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "danehypark": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 42.389507,
+  "lon": -71.137528,
+  "long": "Danehy Park parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -6933,6 +6981,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "easterntrailbiddeford": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 43.476602,
+  "lon": -70.487389,
+  "long": "Eastern Trail parkrun, Biddeford",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "eastgrinstead": {
   "built_by": "dev",
   "distance_m": null,
@@ -7720,6 +7780,18 @@
   "status": "success",
   "trace_date": "2010-01-02",
   "trace_m": 4801
+ },
+ "farmpond": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 42.280745,
+  "lon": -71.43109,
+  "long": "Farm Pond parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "faskallyforest": {
   "distance_m": 4799,
@@ -11043,6 +11115,18 @@
   "trace_date": "2019-01-12",
   "trace_m": 5043
  },
+ "howardteminlakeshorepath": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 43.076831,
+  "lon": -89.398831,
+  "long": "Howard Temin Lakeshore Path parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "huddersfield": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -11336,6 +11420,18 @@
   "status": "failed",
   "trace_m": null
  },
+ "itccommunitysports": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 42.437305,
+  "lon": -83.549324,
+  "long": "ITC Community Sports parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "itchenvalleycountry": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -11390,6 +11486,18 @@
   "lat": -27.733275,
   "lon": 114.15228,
   "long": "Jakes Point parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "jamaicapond": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 42.320216,
+  "lon": -71.118049,
+  "long": "Jamaica Pond parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -13699,6 +13807,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "livonia": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 42.429645,
+  "lon": -83.395811,
+  "long": "Livonia parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "llanerchaeron": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -15223,6 +15343,18 @@
   "lat": -31.470564,
   "lon": 118.289452,
   "long": "Merredin Peak parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "merrymeeting": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 43.921805,
+  "lon": -69.954915,
+  "long": "Merrymeeting parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -18780,6 +18912,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "pinepark": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 43.713809,
+  "lon": -72.286019,
+  "long": "Pine Park parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "pioneer": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -20243,6 +20387,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "riversidegrandrapids": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 43.018661,
+  "lon": -85.663276,
+  "long": "Riverside parkrun, Grand Rapids",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "riversidekamloops": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -20250,6 +20406,18 @@
   "lat": 50.678505,
   "lon": -120.336451,
   "long": "Riverside parkrun, Kamloops",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "riversidepark": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 43.831259,
+  "lon": -111.786349,
+  "long": "Riverside Park parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -21481,6 +21649,18 @@
   "lat": 51.279496,
   "lon": -2.793181,
   "long": "Sharpham Road Playing Fields parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "shawcherryhillfarm": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 43.690214,
+  "lon": -70.39435,
+  "long": "Shaw Cherry Hill Farm parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -22789,6 +22969,18 @@
   "lat": -27.498722,
   "lon": 153.042469,
   "long": "Stones Corner parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "stonybrookschool": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 42.607161,
+  "lon": -71.456526,
+  "long": "Stony Brook School parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
