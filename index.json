@@ -14574,8 +14574,9 @@
   "trace_m": null
  },
  "macclesfield": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-27",
   "lat": 53.251413,
   "lon": -2.1303,
   "long": "Macclesfield parkrun",
@@ -16023,8 +16024,9 @@
   "trace_m": null
  },
  "monsaltrail": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-27",
   "lat": 53.230788,
   "lon": -1.675286,
   "long": "Monsal Trail parkrun",
