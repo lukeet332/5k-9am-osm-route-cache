@@ -2075,6 +2075,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "billdalsparken": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 57.582383,
+  "lon": 11.943555,
+  "long": "Billdalsparken parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "billericay": {
   "built_by": "v0.1.0",
   "distance_m": null,
@@ -3169,6 +3181,18 @@
   "lat": 52.28625,
   "lon": 0.065252,
   "long": "Bug Hunter Waters parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "bulltofta": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 55.597979,
+  "lon": 13.065903,
+  "long": "Bulltofta parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -9285,6 +9309,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "gustavklingbielnaturereserve": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -25.103554,
+  "lon": 30.486299,
+  "long": "Gustav Klingbiel Nature Reserve parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "gyodashisogokoen": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -9341,6 +9377,19 @@
   "relation_m": null,
   "source": null,
   "status": "gap",
+  "trace_m": null
+ },
+ "haga": {
+  "built_by": "v0.6.0",
+  "distance_m": 5070,
+  "last_tried": "2026-06-27",
+  "lat": 59.354555,
+  "lon": 18.039292,
+  "long": "Haga parkrun",
+  "provisional": true,
+  "relation_m": 5070,
+  "source": "osm_relation",
+  "status": "success",
   "trace_m": null
  },
  "hagley": {
@@ -9870,6 +9919,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "hazyview": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -25.035941,
+  "lon": 31.115198,
+  "long": "Hazyview parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "heartlands": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -10315,6 +10376,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "hoedspruit": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -24.314398,
+  "lon": 30.924097,
+  "long": "Hoedspruit parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "hofgarten": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -10580,6 +10653,18 @@
   "lat": 53.650608,
   "lon": -1.800685,
   "long": "Huddersfield parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "huddinge": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 59.248612,
+  "lon": 17.950678,
+  "long": "Huddinge parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -10866,6 +10951,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "ivydale": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -23.937042,
+  "lon": 29.433666,
+  "long": "Ivydale parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "jablonna": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -11055,6 +11152,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "jocktrail": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -24.935634,
+  "lon": 30.842816,
+  "long": "Jock Trail parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "jubilee": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -11098,6 +11207,18 @@
   "lat": -34.806102,
   "lon": 138.69439,
   "long": "Jubilee Way parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "judarskogen": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 59.341533,
+  "lon": 17.906337,
+  "long": "Judarskogen parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -11194,6 +11315,18 @@
   "lat": -25.438527,
   "lon": 31.970637,
   "long": "Kambaku Golf Club parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "kameeldoring": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -24.212016,
+  "lon": 28.989911,
+  "long": "Kameeldoring parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -12722,6 +12855,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "leeupoort": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -24.91638,
+  "lon": 27.640855,
+  "long": "Leeupoort parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "leicestervictoria": {
   "distance_m": 5101,
   "last_tried": "2026-06-26",
@@ -13358,6 +13503,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "louistrichardt": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -23.042459,
+  "lon": 29.916763,
+  "long": "Louis Trichardt parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "lousberg": {
   "built_by": "v0.5.0",
   "distance_m": 5206,
@@ -13767,6 +13924,18 @@
   "lat": -33.456785,
   "lon": 18.736718,
   "long": "Malmesbury parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "malmoribersborg": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 55.60278,
+  "lon": 12.96944,
+  "long": "Malm\u00f6 Ribersborg parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -14866,6 +15035,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "modimolle": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -24.694698,
+  "lon": 28.385259,
+  "long": "Modimolle parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "mofolo": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -14873,6 +15054,18 @@
   "lat": -26.243398,
   "lon": 27.888986,
   "long": "Mofolo parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "mogol": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -23.686683,
+  "lon": 27.693497,
+  "long": "Mogol parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -16831,6 +17024,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "orebro": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 59.278841,
+  "lon": 15.260544,
+  "long": "\u00d6rebro parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "oriam": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -18135,6 +18340,18 @@
   "lat": 55.82992,
   "lon": -4.307882,
   "long": "Pollok parkrun, Glasgow",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "polokwane": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -23.885076,
+  "lon": 29.457428,
+  "long": "Polokwane parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -20957,6 +21174,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "skatas": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 57.703536,
+  "lon": 12.037793,
+  "long": "Skat\u00e5s parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "skienfritidspark": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -22134,6 +22363,18 @@
   "lat": 52.638607,
   "lon": 0.688461,
   "long": "Swaffham parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "swakopmund": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -22.666375,
+  "lon": 14.528015,
+  "long": "Swakopmund parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -23506,6 +23747,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "tzaneen": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -23.814877,
+  "lon": 30.186946,
+  "long": "Tzaneen parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "uckfield": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -23841,6 +24094,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "vallaskogen": {
+  "built_by": "v0.6.0",
+  "distance_m": 4453,
+  "last_tried": "2026-06-27",
+  "lat": 58.405255,
+  "lon": 15.591793,
+  "long": "Vallaskogen parkrun",
+  "relation_m": 4453,
+  "source": "osm_relation_offdist",
+  "status": "failed",
+  "trace_m": null
+ },
  "valley": {
   "distance_m": null,
   "last_tried": "2026-06-26",
@@ -23883,6 +24148,18 @@
   "lat": -28.084627,
   "lon": 153.410554,
   "long": "Varsity Lakes parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "vaxjosjon": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": 56.872797,
+  "lon": 14.814979,
+  "long": "V\u00e4xj\u00f6sj\u00f6n parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -24294,6 +24571,18 @@
   "lat": 51.84594,
   "lon": 1.269984,
   "long": "Walton Promenade parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "walvisbay": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -22.977195,
+  "lon": 14.481783,
+  "long": "Walvis Bay parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -25347,6 +25636,18 @@
   "status": "failed",
   "trace_date": "2017-02-18",
   "trace_m": 4759
+ },
+ "windhoek": {
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -22.618415,
+  "lon": 17.074891,
+  "long": "Windhoek parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "windsorprecinct": {
   "built_by": "v0.5.0",
