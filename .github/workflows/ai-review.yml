@@ -50,8 +50,11 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.BOT_PAT }}
         run: |
-          # ROUNDS = author revision commits so far.
-          ROUNDS=$(git log --pretty=format:'%s' | grep -c '\[ai-revise\]' || true)
+          # ROUNDS = author revision commits in THIS PR only (origin/main..HEAD), so [ai-revise] commits
+          # from earlier merged PRs already in main don't inflate the count. Match the new [ai-revise h=...]
+          # stamp as well as a bare [ai-revise].
+          SUBJECTS=$(git log --pretty=format:'%s' origin/main..HEAD)
+          ROUNDS=$(printf '%s\n' "$SUBJECTS" | grep -Ec '\[ai-revise([[:space:]]|\])' || true)
           # Budget SCALES with review-comment volume so a multi-comment PR gets multiple retries per
           # comment thread - not one flat shared total that starves it (e.g. 5 rounds across 8 comments).
           # CMTS = inline review comments on the PR (CodeRabbit findings + any line comments). Capped hard
@@ -61,8 +64,8 @@ jobs:
           # STALL: if the last two revisions produced an IDENTICAL diff, the author is stuck repeating
           # itself - stop now rather than burn the rest of the budget. Each revise commit stamps its
           # diff hash as [ai-revise h=...]; two equal in a row = no progress.
-          HLIST=$(git log --pretty=format:'%s' | grep -oE 'h=[0-9a-f]+' | head -2)
-          H1=$(echo "$HLIST" | sed -n '1p'); H2=$(echo "$HLIST" | sed -n '2p')
+          HLIST=$(printf '%s\n' "$SUBJECTS" | grep -oE '\[ai-revise[[:space:]]+h=[0-9a-f]+\]' | grep -oE 'h=[0-9a-f]+' | head -2)
+          H1=$(printf '%s\n' "$HLIST" | sed -n '1p'); H2=$(printf '%s\n' "$HLIST" | sed -n '2p')
           STALLED=false; [ -n "$H1" ] && [ "$H1" = "$H2" ] && STALLED=true
           PROCEED=true; { [ "$ROUNDS" -ge "$MAX" ] || [ "$STALLED" = "true" ]; } && PROCEED=false
           echo "guard: rounds=$ROUNDS max=$MAX (cmts=$CMTS) stalled=$STALLED -> proceed=$PROCEED"
