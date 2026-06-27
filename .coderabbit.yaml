@@ -1,0 +1,44 @@
+# CodeRabbit config — capable second-reviewer for this AI-maintained repo.
+# Reviews EVERY PR (our weekly author bot's + any human/agent PR) alongside the in-pipeline AI reviewer.
+# Free forever for public repos. Docs: https://docs.coderabbit.ai
+language: en-GB
+reviews:
+  profile: assertive            # thorough, not chill - this is a safety-critical autonomous pipeline
+  request_changes_workflow: true
+  high_level_summary: true
+  poem: false
+  auto_review:
+    enabled: true
+    drafts: false
+  path_instructions:
+    - path: "build_cache.py"
+      instructions: >
+        This is the AI-maintained 5k-course algorithm, edited weekly by an autonomous bot. Enforce the
+        AI_CONTEXT_READ_ONLY_BIBLE.md invariants: NO AI-authored coordinates (geometry comes ONLY from
+        deterministic OSM processing); accuracy bars are FIXED (locked = 4800-5200m, REL_LO/REL_HI) and
+        must never be widened to inflate coverage; be kind to OSM (keep the >=2.5s RATE_S throttle, the
+        on-disk caching, and the 429 backoff; never turn it into a bulk harvester).
+        CRITICAL effectiveness checks (a real no-op shipped before):
+        (1) When a change generalises or relaxes logic (e.g. 2x doubling -> best-integer-N lap rule),
+        verify the ENTRY GATE / threshold actually admits the new cases. Flag "no-op generalisations"
+        where the new branch is gated out before it can run and so changes nothing (v0.6.0 generalised
+        the multiplier but kept the 2300-2800 gate, so N was always 2 and it recovered nothing).
+        (2) Any new distance/geometry maths MUST be exercised by a selftest case; a green selftest does
+        NOT prove new maths if no test case actually hits the new path (the JOURNAL v0.2.1 lesson).
+        (3) Cross-check the PR's claimed effect ("recovers ~N courses") against whether the code path can
+        actually reach those cases.
+    - path: ".github/**"
+      instructions: >
+        Safety pipeline. The AI author must NOT edit workflows or .github/scripts/ai_*.py. Flag any such
+        change prominently for human scrutiny.
+    - path: "selftest.py"
+      instructions: >
+        This is the merge gate. Flag any change that DELETES or WEAKENS an assertion - only strengthening
+        is acceptable without explicit human approval. Adding/tightening assertions is good.
+    - path: "report.py"
+      instructions: >
+        Per-country report. Must stay network-resilient (cached events feed + graceful fallback) so the
+        README never freezes when OSM rate-limits us.
+tone_instructions: >
+  Terse, technical, plain-ASCII (no emojis/em-dashes). Prioritise correctness, the BIBLE invariants, and
+  catching no-op / unexercised-logic changes over style nits.
