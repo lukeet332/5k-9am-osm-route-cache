@@ -15134,6 +15134,19 @@
   "status": "gap",
   "trace_m": null
  },
+ "northbeach": {
+  "built_by": "v0.5.0",
+  "distance_m": 5025,
+  "last_tried": "2026-06-27",
+  "lat": -29.838122,
+  "lon": 31.03524,
+  "long": "North Beach parkrun",
+  "provisional": true,
+  "relation_m": 5025,
+  "source": "osm_relation",
+  "status": "success",
+  "trace_m": null
+ },
  "northernpathway": {
   "built_by": "v0.5.0",
   "distance_m": null,
@@ -23334,6 +23347,18 @@
   "lat": 52.311579,
   "lon": 0.640728,
   "long": "West Stow Country parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "westville": {
+  "built_by": "v0.5.0",
+  "distance_m": null,
+  "last_tried": "2026-06-27",
+  "lat": -29.839606,
+  "lon": 30.92459,
+  "long": "Westville parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
