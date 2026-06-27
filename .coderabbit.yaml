@@ -1,6 +1,8 @@
 # CodeRabbit config — capable second-reviewer for this AI-maintained repo.
-# Reviews EVERY PR (our weekly author bot's + any human/agent PR) alongside the in-pipeline AI reviewer.
-# Free forever for public repos. Docs: https://docs.coderabbit.ai
+# Reviews EVERY PR (our weekly author bot's + any human/agent PR). It is the source of truth for code
+# quality + churn/novelty; our own AI reviewer is the MERGE ARBITER that consumes this verdict (its
+# CHANGES_REQUESTED blocks merge - wired in ai_review.py + ai-review.yml in this same change).
+# Public repos get Pro-level reviews free (automatic, no activation). Docs: https://docs.coderabbit.ai
 #
 # SINGLE SOURCE OF TRUTH: this file holds NO rules of its own (so nothing can drift from the docs). It
 # only points CodeRabbit at the repo's markdown, which is the one place the rules live.
@@ -26,6 +28,11 @@ reviews:
         Review each change - especially to build_cache.py - for compliance with those files, and apply
         their lessons as concrete review checks. If those files do not cover something, say so rather
         than inventing a rule.
+        Also assess CHURN / NOVELTY: if the change re-proposes an idea already on JOURNAL.md's "ALREADY
+        IMPLEMENTED - do NOT re-propose" list with no meaningful improvement, or is a no-op that changes
+        nothing, FLAG it clearly in your review so the merge arbiter can CLOSE it as churn (you need not
+        request-changes for churn alone - the arbiter owns the close-vs-revise decision). A genuine,
+        justified improvement that builds on a done idea is NOT churn; judge it on merit.
 tone_instructions: >
   Terse, technical, plain-ASCII (no emojis/em-dashes). Prioritise the markdown-defined invariants and
   correctness over style nits.

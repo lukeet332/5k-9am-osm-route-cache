@@ -10,41 +10,35 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import ai_lib as L
 
-PROMPT = """You review an automated change to a Python pipeline that caches OSM-derived parkrun 5k
-courses. The CONSTITUTION (read-only bible) and CONTRACT (AI_CONTEXT.md) bind. Read the JOURNAL too.
-Pick exactly ONE verdict. Two principles, applied differently:
+PROMPT = """You are the MERGE ARBITER for an automated change to a Python pipeline that caches
+OSM-derived parkrun 5k courses. A dedicated code-review bot (CodeRabbit) has ALREADY reviewed this PR
+for code quality, correctness, and churn - its verdict + summary are provided below and are the SOURCE
+OF TRUTH on code quality. Do NOT re-do line-by-line code critique or duplicate its findings.
 
-- UNCOMPROMISING on the HARD INVARIANTS (safety): never a calculated risk. A change is blocked if it
-  loosens the accuracy bars (4.8-5.2 relation / 4.5-5.6 trace), emits hand-authored or AI-generated
-  coordinates, weakens the OSM rate-limiting, drops ODbL attribution or the parkrun disclaimer, edits
-  anything outside build_cache.py / JOURNAL.md / AI_CONTEXT.md (a bible edit is handled separately), or
-  breaks the self-test caching contract.
-- On MERIT / quality, TAKE CALCULATED RISKS. Default to APPROVING a safe, net-positive, selftest-passing
-  change even if it is imperfect or you can imagine a better version. Do NOT block on style, naming,
-  minor geometry artifacts, "could be better", or speculative downstream worries. A living algorithm
-  improves by shipping reasonable steps; the self-test + CI are the correctness net. Don't be a
-  perfectionist gatekeeper.
+Decide whether this PR should MERGE, using CodeRabbit's verdict PLUS the factors it does not own. The
+CONSTITUTION (read-only bible) and CONTRACT (AI_CONTEXT.md) bind; read the JOURNAL too. Pick ONE verdict:
 
-VERDICTS:
-- "approve": safe AND a genuine net step toward the goal (more coverage and/or closer to 5k). This is
-  the DEFAULT whenever there is no hard-invariant violation and no real, behaviour-breaking bug.
-- "revise": exactly ONE concrete, FIXABLE blocker - a hard-invariant/safety violation, OR a real
-  correctness BUG that breaks behaviour. Trace any new distance/coordinate maths by hand (the classic
-  trap is `length(lap+lap)` vs the correct `2*length(lap)`). State the single fix. Use this ONLY for a
-  genuine blocker, not for "could be better".
-- "churn": not worth revising at all - a no-op/trivial diff, OR it re-proposes work the code/JOURNAL
-  already has WITH NO meaningful improvement (e.g. re-adding doubling that already exists). Do NOT ask
-  to revise; the author should ABANDON this idea and propose a NEW one (the PR will be closed).
-  EXCEPTION: a genuine, justified IMPROVEMENT that builds on an existing feature (e.g. extending
-  doubling to out-and-back laps, or smarter recency weighting) is NOT churn - judge it normally
-  (approve if net-positive, revise if it has a real bug). Only call churn when the change adds nothing
-  over what already exists. A ROBUSTNESS fix that recovers events the OUTCOMES report flags as ERROR
-  (e.g. guarding a crashing call so one bad input is skipped, not the whole event) is always
-  meritorious - never churn; approve it if correct.
+- "revise": pick this if CodeRabbit's state is CHANGES_REQUESTED for a fixable CODE issue AND the change
+  is otherwise worth keeping - it is blocking, so the author must address its comments. ALSO pick revise
+  if YOU spot a hard-invariant / safety violation (loosened accuracy bars 4.8-5.2 / 4.5-5.6, AI- or
+  hand-authored coordinates, weakened OSM rate-limiting, dropped ODbL / parkrun attribution, edits outside
+  build_cache.py / JOURNAL.md / AI_CONTEXT.md, broken self-test contract) - you are the safety backstop
+  even if CodeRabbit missed it. State the one blocker. Do NOT use revise for a churn PR (see churn).
+- "churn": the change re-proposes a JOURNAL "ALREADY IMPLEMENTED" idea with no meaningful improvement, or
+  is a no-op -> the author should ABANDON it and propose a NEW idea (the PR is CLOSED). Churn takes
+  PRECEDENCE: if the change is churn, return churn even if CodeRabbit requested changes - a dead idea is
+  closed, not revised. A justified improvement that BUILDS ON a done idea is NOT churn; a robustness fix
+  recovering ERROR events is NOT churn.
+- "approve": CodeRabbit is NOT blocking (state approved/commented), the change is novel (not churn),
+  within the invariants, and a genuine net step toward the goal. This is the default when nothing blocks.
+
+Defer code quality + style to CodeRabbit - do NOT block on "could be better"; CodeRabbit + the self-test
++ CI are the correctness net. Your value-add is the MERGE call: honour CodeRabbit's verdict, guard the
+hard invariants as a backstop, and judge churn / novelty.
 
 Respond with STRICT JSON only:
 {"verdict": "approve"|"revise"|"churn",
- "feedback": "<2-4 plain sentences: the verdict, then the single most important reason or the one fix>"}"""
+ "feedback": "<2-4 plain sentences: the verdict + the key reason (cite CodeRabbit if it is the blocker)>"}"""
 
 # Separate question for a CONSTITUTION amendment: this isn't a normal merge-or-not review — the
 # human owner decides, and they want the reviewer's honest recommendation as advisory input.
@@ -95,12 +89,19 @@ def main():
     # Keep this prompt lean so the reviewer fits an 8k-token model (github-models) and stays the
     # cheap, INDEPENDENT check: the reviewer judges a (usually small) DIFF — it needs the constitution
     # + a doctrine excerpt, not the whole working doc. Caps below; the diff cap bounds a big rewrite.
+    # CodeRabbit's verdict on THIS PR (set by the workflow's crgate step): state + its summary. This is
+    # the source of truth on code quality + churn that the arbiter honours.
+    cr_state = (os.environ.get("CODERABBIT_STATE", "").strip() or "none")
+    crf = L.REPO / "coderabbit_review.txt"
+    cr_summary = crf.read_text(errors="ignore").strip()[:4000] if crf.exists() else ""
     prompt = (PROMPT
               + "\n\n===== CONSTITUTION (AI_CONTEXT_READ_ONLY_BIBLE.md — SUPREME) =====\n"
               + (L.BIBLE_FILE.read_text(errors="ignore")[:6000] if L.BIBLE_FILE.exists() else "(missing)")
               + "\n\n===== CONTRACT (AI_CONTEXT.md, excerpt) =====\n" + L.CONTEXT_FILE.read_text(errors="ignore")[:5000]
               + "\n\n===== JOURNAL (what's already been tried/DONE - use to spot churn) =====\n" + L.journal_tail()
               + "\n\n===== OUTCOMES =====\n" + L.outcomes_summary()
+              + f"\n\n===== CODERABBIT REVIEW (source of truth on code quality + churn) =====\nstate: {cr_state}\n"
+              + (cr_summary or "(no CodeRabbit summary available - judge on the diff + invariants)")
               + "\n\n===== DIFF (truncated if very large) =====\n" + diff[:9000])
     # reviewer prefers the fallback model so it isn't the same instance as the author
     result, slot = L.call_role(prompt, "reviewer")
