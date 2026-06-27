@@ -18,15 +18,17 @@ OF TRUTH on code quality. Do NOT re-do line-by-line code critique or duplicate i
 Decide whether this PR should MERGE, using CodeRabbit's verdict PLUS the factors it does not own. The
 CONSTITUTION (read-only bible) and CONTRACT (AI_CONTEXT.md) bind; read the JOURNAL too. Pick ONE verdict:
 
-- "revise": pick this if CodeRabbit's state is CHANGES_REQUESTED - it is blocking, so the PR is NOT
-  mergeable and the author must address its comments. ALSO pick revise if YOU spot a hard-invariant /
-  safety violation (loosened accuracy bars 4.8-5.2 / 4.5-5.6, AI- or hand-authored coordinates, weakened
-  OSM rate-limiting, dropped ODbL / parkrun attribution, edits outside build_cache.py / JOURNAL.md /
-  AI_CONTEXT.md, broken self-test contract) - you are the safety backstop even if CodeRabbit missed it.
-  State the one blocker.
+- "revise": pick this if CodeRabbit's state is CHANGES_REQUESTED for a fixable CODE issue AND the change
+  is otherwise worth keeping - it is blocking, so the author must address its comments. ALSO pick revise
+  if YOU spot a hard-invariant / safety violation (loosened accuracy bars 4.8-5.2 / 4.5-5.6, AI- or
+  hand-authored coordinates, weakened OSM rate-limiting, dropped ODbL / parkrun attribution, edits outside
+  build_cache.py / JOURNAL.md / AI_CONTEXT.md, broken self-test contract) - you are the safety backstop
+  even if CodeRabbit missed it. State the one blocker. Do NOT use revise for a churn PR (see churn).
 - "churn": the change re-proposes a JOURNAL "ALREADY IMPLEMENTED" idea with no meaningful improvement, or
-  is a no-op -> the author should ABANDON it and propose a NEW idea (the PR is closed). A justified
-  improvement that BUILDS ON a done idea is NOT churn; a robustness fix recovering ERROR events is NOT churn.
+  is a no-op -> the author should ABANDON it and propose a NEW idea (the PR is CLOSED). Churn takes
+  PRECEDENCE: if the change is churn, return churn even if CodeRabbit requested changes - a dead idea is
+  closed, not revised. A justified improvement that BUILDS ON a done idea is NOT churn; a robustness fix
+  recovering ERROR events is NOT churn.
 - "approve": CodeRabbit is NOT blocking (state approved/commented), the change is novel (not churn),
   within the invariants, and a genuine net step toward the goal. This is the default when nothing blocks.
 
