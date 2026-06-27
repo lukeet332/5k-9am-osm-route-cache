@@ -12,7 +12,7 @@ Safety model mirrors the WearOsGpx repo's proven pipeline:
     AI must approve; branch protection requires the CI check. No unverified/unreviewed merge.
 Standard library only.
 """
-import json, os, re, sys, time, urllib.request, urllib.error
+import json, os, re, sys, time, urllib.request, urllib.error, uuid
 from pathlib import Path
 
 REPO = Path.cwd().resolve()
@@ -75,7 +75,9 @@ def emit(**kv):
             for k, v in kv.items():
                 v = str(v)
                 if "\n" in v:                       # multiline value -> GitHub Actions heredoc form
-                    d = "GHADELIM_a1b2c3"
+                    d = f"GHADELIM_{uuid.uuid4().hex}"   # random per value: a fixed delim is injectable
+                    while d in v:                       # never collide with attacker-influenceable content
+                        d = f"GHADELIM_{uuid.uuid4().hex}"
                     f.write(f"{k}<<{d}\n{v}\n{d}\n")
                 else:
                     f.write(f"{k}={v}\n")
