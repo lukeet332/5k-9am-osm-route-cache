@@ -944,9 +944,9 @@
   "trace_m": null
  },
  "australianstandingstones": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": -29.741602,
   "lon": 151.752481,
   "long": "Australian Standing Stones parkrun",
@@ -1113,9 +1113,9 @@
   "trace_m": null
  },
  "ballinacoast": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": -28.869637,
   "lon": 153.576356,
   "long": "Ballina Coast parkrun",
@@ -5497,9 +5497,9 @@
   "trace_m": null
  },
  "cooberpedyoval": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": -29.018468,
   "lon": 134.754566,
   "long": "Coober Pedy Oval parkrun",
@@ -9488,9 +9488,9 @@
   "trace_m": null
  },
  "grafton": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": -29.643847,
   "lon": 152.920487,
   "long": "Grafton parkrun",
@@ -12056,9 +12056,9 @@
   "trace_m": 5068
  },
  "jubileetenterfield": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": -29.054042,
   "lon": 152.01537,
   "long": "Jubilee parkrun, Tenterfield",
@@ -16350,9 +16350,9 @@
   "trace_m": null
  },
  "moree": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": -29.46707,
   "lon": 149.843183,
   "long": "Moree parkrun",
@@ -28006,9 +28006,9 @@
   "trace_m": null
  },
  "yamba": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": -29.435742,
   "lon": 153.357271,
   "long": "Yamba parkrun",
