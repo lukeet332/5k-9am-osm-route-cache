@@ -8,16 +8,17 @@ name: Course cache refresh
 # Runs FREQUENTLY during the initial build to fill the cache fast while staying kind to OSM:
 # hard rate-limit, 429 backoff, and a circuit-breaker that stops a run early if OSM throttles us.
 #
-# SELF-CHAINING (the primary driver): the last step waits ~25 min then re-dispatches this same
-# workflow (via the BOT_PAT, so the dispatch actually triggers — GITHUB_TOKEN dispatches don't).
-# That gives a reliable ~30-min cadence WITHOUT depending on GitHub's flaky `schedule` cron, which
-# silently drops runs at busy minutes (it had never once fired this workflow). If OSM throttled us
-# (build_cache leaves a .throttled marker), the chain backs off to 60 min — ban-safety first.
-# The `schedule` below is now only a BACKSTOP: if a run ever dies before chaining, cron restarts it.
-# >>> Once coverage is high, dial the cadence back: raise CHAIN_DELAY / change cron to weekly. <<<
+# DAILY RHYTHM: the morning `schedule` (06:00 UTC, ~07:00 UK) STARTS the sweep; the last step then
+# SELF-CHAINS (waits, re-dispatches this workflow via the BOT_PAT — GITHUB_TOKEN dispatches don't
+# trigger) to sweep through the DAY, and PAUSES in the evening (>=18:00 UTC). AI maintenance runs on
+# its own 19:00 UTC schedule against the settled data; its PR reviews/merges overnight; and the next
+# morning's cron restarts a FRESH sweep against whatever improvement merged. A whole day of chaining
+# is ample to cover most locations. If OSM throttled us (build_cache leaves a .throttled marker) the
+# chain backs off 60 min — ban-safety first.
+# >>> Once coverage matures, dial back: change the cron to weekly ("0 6 * * 0"). <<<
 on:
   schedule:
-    - cron: "7,37 * * * *"    # BACKSTOP only (off the contended :00/:30 slots GitHub drops); chain is primary
+    - cron: "0 6 * * *"      # DAILY 06:00 UTC (~morning UK) START; the self-chain below sweeps the day then pauses by evening
   workflow_dispatch:
 
 permissions:
@@ -86,7 +87,6 @@ jobs:
           # still occasionally trip. The per-request 2.5s RATE_S floor never drops (kind to OSM, #3).
           TRIED=$(python3 -c "import json;print(len(json.load(open('index.json'))))" 2>/dev/null || echo 0)
           TOTAL=$(python3 -c "import json;print(json.load(open('coverage.json'))['total'])" 2>/dev/null || echo 884)
-          LOCKED=$(python3 -c "import json;print(json.load(open('coverage.json'))['locked'])" 2>/dev/null || echo 0)
           # Cadence by phase. NOTE: 'tried' plateaus a bit below 100% — the last ~1-4% are events that
           # error / have no resolvable OSM data, so we never literally hit 100%. So once we're >=96%
           # we treat the sweep as DONE-as-it-gets and drop to a slow STEADY-STATE cadence: this stops
@@ -104,23 +104,15 @@ jobs:
             DELAY=3600;  echo "STEADY STATE ($TRIED/$TOTAL, >=96% — effectively all reachable events swept). Easing to a 1h cadence so we stop spinning on the unreachable failed/gap tail every 25 min; still re-checking hourly for new OSM data."
           fi
 
-          # EVENT-DRIVEN AI maintenance: when a FULL sweep over the events the cache actually re-tries
-          # has completed since the last maintenance, the algorithm has fresh data to learn from —
-          # trigger one improvement run BEFORE the next sweep. A "sweep" is one pass over the candidates
-          # at --limit 50/run: in gap-fill mode that's the NOT-YET-cached events (total - locked, which
-          # SHRINKS as coverage grows: 764 -> 744 -> ...); in refine mode (>=80% locked, mirroring
-          # build_cache's COVERAGE_REFINE) it re-queries all. Counting runs-since-last-maintenance by
-          # timestamp (any status) self-resets the moment maintenance starts, so it won't re-fire
-          # mid-run. The reviewer + self-test gate any churn; the daily cron is the fallback.
-          if [ $(( LOCKED * 100 )) -ge $(( TOTAL * 80 )) ]; then CANDS=$TOTAL; else CANDS=$(( TOTAL - LOCKED )); fi
-          SWEEP_RUNS=$(( CANDS / 50 + 1 ))
-          LAST_MAINT=$(gh run list -R "${{ github.repository }}" --workflow=ai-maintenance.yml -L 1 --json createdAt --jq '.[0].createdAt // "1970-01-01T00:00:00Z"' 2>/dev/null || echo "1970-01-01T00:00:00Z")
-          SINCE=$(gh run list -R "${{ github.repository }}" --workflow="${{ github.workflow }}" -L 60 --json createdAt --jq "[.[]|select(.createdAt > \"$LAST_MAINT\")]|length" 2>/dev/null || echo 0)
-          echo "cache runs since last AI maintenance: $SINCE (a full sweep is ~$SWEEP_RUNS runs)"
-          if [ "$SINCE" -ge "$SWEEP_RUNS" ]; then
-            echo "→ a full sweep has completed since the last AI maintenance; triggering ai-maintenance."
-            gh workflow run ai-maintenance.yml -R "${{ github.repository }}" || true
+          # DAILY RHYTHM: sweep through the DAY then PAUSE in the evening, so AI maintenance (its own
+          # 19:00 UTC schedule) proposes an improvement on settled data and the next morning's 06:00 UTC
+          # cron restarts a FRESH sweep against whatever merged overnight. (10#-prefix forces base-10 so a
+          # leading-zero hour like 09 is not mis-read as octal.) Maintenance is now DECOUPLED — it runs on
+          # its own evening cron, not triggered from here, so it fires once per evening, not per sweep.
+          HOUR=$((10#$(date -u +%H)))
+          if [ "$HOUR" -ge 18 ] || [ "$HOUR" -lt 6 ]; then
+            echo "Evening/night (${HOUR}:00 UTC) — pausing the self-chain; the 06:00 UTC cron restarts a fresh daily sweep."
+            exit 0
           fi
-
           sleep "$DELAY"
           gh workflow run "${{ github.workflow }}" --ref "${{ github.ref_name }}"
