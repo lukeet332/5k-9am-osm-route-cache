@@ -52,7 +52,7 @@ jobs:
         run: |
           for attempt in 1 2; do
             python .github/scripts/ai_improve.py || { echo "author step errored"; exit 1; }
-            if OUT=$(python selftest.py 2>&1); then
+            if OUT=$(python selftest.py 2>&1 && python test_behavior.py 2>&1); then
               echo "$OUT"; echo "self-test passed on attempt $attempt"; exit 0
             fi
             echo "::warning::self-test FAILED on attempt $attempt:"; echo "$OUT"
@@ -90,6 +90,7 @@ jobs:
             build_cache.py
             AI_CONTEXT.md
             JOURNAL.md
+            test_behavior.py
           commit-message: "chore: AI cache-algorithm improvement (${{ steps.improve.outputs.bot_label || 'ai-bot' }})"
           title: "🤖 ${{ steps.improve.outputs.bot_label || 'ai-bot' }}: cache algorithm improvement"
           labels: needs-ai-review

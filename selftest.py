@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
 """
-Caching self-test — the CI gate. No network: it builds a synthetic Saturday-09:00 trace
-fixture and asserts the reconstruction still yields a ~5k course, plus checks the pure
-geometry helpers. If this fails, the caching mechanism is broken and the PR must not merge.
+Caching self-test — the FROZEN INVARIANT gate (CI). No network: builds a synthetic Saturday-09:00
+trace fixture and asserts the reconstruction still yields a ~5k course, plus the pure geometry helpers
+and the CONSTITUTIONAL invariants (4800-5200 bars, source-trust/provisional, no-abort robustness) and
+impl-independent PROPERTIES (best_lap_n argmin). If this fails, an invariant is broken and the PR must
+not merge. The AI author may NOT edit this file — it is the safety net. Editable BEHAVIOURAL
+expectations (exact magic values that a better algorithm may legitimately change) live in
+test_behavior.py, which the author MAY update under review.
 """
 import os, datetime, sys
 import build_cache as bc
@@ -89,10 +93,10 @@ def main():
         bc.relation_course = lambda lat, lon, name: ("X parkrun", lap_len, lap)
         bc.trace_course = lambda name, lat, lon: None
         r = bc.build_one(ev2)
-        assert r["status"] == "success" and r["source"] == "osm_relation_doubled", \
-            f"a ~2.5k relation must double into a success, not get lost to the seam: {r}"
-        assert abs(r["distance_m"] - round(2 * lap_len)) <= 1, \
-            f"doubled distance must be 2x the lap path ({round(2*lap_len)}), got {r['distance_m']}"
+        # INVARIANT: a ~2.5k relation must reconstruct to an IN-BAND success via doubling (not be lost to
+        # the seam). The EXACT doubled distance + the source label are behavioural -> test_behavior.py.
+        assert r["status"] == "success", f"a ~2.5k relation must double into a success, not get lost to the seam: {r}"
+        assert bc.REL_LO <= r["distance_m"] <= bc.REL_HI, f"doubled distance must be in-band: {r['distance_m']}"
     finally:
         bc.relation_course, bc.trace_course = orig_rel2, orig_tr2
         f = os.path.join(bc.ROUTES, "selftestdouble.gpx")
@@ -127,22 +131,27 @@ def main():
     Lp = resp[0]
     assert bc.REL_LO <= Lp <= bc.REL_HI, f"poisoned-point trace still reconstructs ~5k: {Lp:.0f} m"
 
-    # 7) self-audit flags recoverable entries (the stale 2-lap regression class) and only those: a
-    #    non-success entry whose relation_m/trace_m hits the band at its best integer lap count must be
-    #    flagged; a genuine no-data gap, an already-success entry, and a truly-off length must not.
-    assert bc.best_lap_n(2450) == 2 and bc.best_lap_n(1666) == 3 and bc.best_lap_n(1000) == 5, "best_lap_n wrong"
-    fake = {
-        "twolap":   {"status": "failed",  "relation_m": 2450},   # x2 = 4900 -> recoverable
-        "threelap": {"status": "failed",  "relation_m": 1666},   # x3 = 4998 -> recoverable
-        "tracedbl": {"status": "failed",  "trace_m": 2500},      # x2 = 5000 -> recoverable (via trace)
-        "genuine":  {"status": "gap",     "relation_m": None},   # no data -> NOT
-        "wayoff":   {"status": "failed",  "relation_m": 3300},   # best N=2 -> 6600, out of band -> NOT
-        "done":     {"status": "success", "relation_m": 2450},   # already success -> NOT
-    }
-    flagged = {r[0] for r in bc.audit_recoverable(fake)}
-    assert flagged == {"twolap", "threelap", "tracedbl"}, f"audit_recoverable wrong: {flagged}"
+    # 7) best_lap_n PROPERTY (impl-independent): it returns an integer lap count in 1..6 that MINIMISES
+    #    |N*length - 5000|. Asserting the PROPERTY (not three magic outputs) lets a smarter implementation
+    #    still pass while freezing the meaning. The exact example values live in test_behavior.py.
+    for L_ in (800, 1000, 1666, 2450, 2500, 4990, 6000):
+        n = bc.best_lap_n(L_)
+        assert n in range(1, 7), f"best_lap_n out of 1..6: {n} for {L_}"
+        assert all(abs(n * L_ - 5000) <= abs(m * L_ - 5000) for m in range(1, 7)), \
+            f"best_lap_n({L_})={n} is not an argmin of |N*len-5000|"
 
-    print(f"OK — reconstructed {L:.0f} m / {len(pts)} pts; helpers + lock + trust + doubling + error-guard + audit pass.")
+    # 7b) self-audit INVARIANTS (safety properties; the EXACT recoverable set is in test_behavior.py): a
+    #     genuine no-data gap must NEVER be flagged, an already-success entry must NEVER be touched, and a
+    #     non-success entry that DOES hit the band at its best integer lap count must be flagged.
+    audit = {r[0] for r in bc.audit_recoverable({
+        "genuine": {"status": "gap",     "relation_m": None},    # no data -> must NOT flag
+        "done":    {"status": "success", "relation_m": 2450},    # already success -> must NOT flag
+        "recover": {"status": "failed",  "relation_m": 2450},    # x2 in-band -> MUST flag
+    })}
+    assert "genuine" not in audit and "done" not in audit, f"audit must not flag gaps/successes: {audit}"
+    assert "recover" in audit, f"audit must flag a recoverable failed entry: {audit}"
+
+    print(f"OK (invariants) — reconstructed {L:.0f} m / {len(pts)} pts; helpers + lock + trust + doubling + error-guard + best_lap_n property + audit invariants pass.")
 
 if __name__ == "__main__":
     try:

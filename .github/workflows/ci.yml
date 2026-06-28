@@ -20,6 +20,8 @@ jobs:
         with:
           python-version: "3.12"
       - name: Syntax check
-        run: python -m py_compile build_cache.py selftest.py
-      - name: Caching self-test
+        run: python -m py_compile build_cache.py selftest.py test_behavior.py
+      - name: Caching self-test (frozen invariants)
         run: python selftest.py
+      - name: Behaviour self-test (editable expectations)
+        run: python test_behavior.py
