@@ -1161,9 +1161,9 @@
   "trace_m": null
  },
  "ballpark": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": -36.000667,
   "lon": 146.393936,
   "long": "Ball Park parkrun",
@@ -1438,9 +1438,9 @@
   "trace_m": null
  },
  "batemansbay": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": -35.712112,
   "lon": 150.185995,
   "long": "Batemans Bay parkrun",
@@ -5194,9 +5194,9 @@
   "trace_m": null
  },
  "cobram": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": -35.913461,
   "lon": 145.668554,
   "long": "Cobram parkrun",
@@ -5254,9 +5254,9 @@
   "trace_m": null
  },
  "cohuna": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": -35.809232,
   "lon": 144.223054,
   "long": "Cohuna parkrun",
@@ -12212,9 +12212,9 @@
   "trace_m": null
  },
  "kangarooisland": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": -35.655848,
   "lon": 137.640473,
   "long": "Kangaroo Island parkrun",
@@ -12476,9 +12476,9 @@
   "trace_m": null
  },
  "kerangregional": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": -35.730934,
   "lon": 143.908707,
   "long": "Kerang Regional parkrun",
@@ -15686,9 +15686,9 @@
   "trace_m": null
  },
  "meningie": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": -35.68627,
   "lon": 139.338438,
   "long": "Meningie parkrun",
@@ -25915,9 +25915,9 @@
   "trace_m": null
  },
  "victorharbor": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": -35.565657,
   "lon": 138.611096,
   "long": "Victor Harbor parkrun",
