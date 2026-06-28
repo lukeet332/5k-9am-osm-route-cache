@@ -24,8 +24,9 @@
   "trace_m": null
  },
  "abbotswood": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 50.844164,
   "lon": 0.211797,
   "long": "Abbot\u2019s Wood parkrun",
@@ -59,8 +60,9 @@
   "trace_m": null
  },
  "aberdeen": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 57.173898,
   "lon": -2.086256,
   "long": "Aberdeen parkrun",
@@ -507,8 +509,9 @@
   "trace_m": null
  },
  "anagachwoods": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 57.327939,
   "lon": -3.602646,
   "long": "Anagach Woods parkrun",
@@ -978,14 +981,15 @@
   "trace_m": 4793
  },
  "aviemore": {
-  "distance_m": 6916,
-  "last_tried": "2026-06-26",
+  "built_by": "v0.6.0",
+  "distance_m": null,
+  "last_tried": "2026-06-28",
   "lat": 57.205275,
   "lon": -3.818635,
   "long": "Aviemore parkrun",
-  "relation_m": 6916,
-  "source": "osm_relation_offdist",
-  "status": "failed",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
   "trace_m": null
  },
  "avondaleforest": {
@@ -1792,8 +1796,9 @@
   "trace_m": null
  },
  "belladrum": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 57.439282,
   "lon": -4.46818,
   "long": "Belladrum parkrun",
@@ -2067,8 +2072,9 @@
   "trace_m": null
  },
  "bevendeandown": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 50.844709,
   "lon": -0.107027,
   "long": "Bevendean Down parkrun",
@@ -2404,8 +2410,9 @@
   "trace_m": null
  },
  "blandford": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 50.863122,
   "lon": -2.16627,
   "long": "Blandford parkrun",
@@ -2941,8 +2948,9 @@
   "trace_m": null
  },
  "bressay": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 60.158081,
   "lon": -1.119683,
   "long": "Bressay parkrun",
@@ -3012,8 +3020,9 @@
   "trace_m": null
  },
  "brighton": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 50.84214,
   "lon": -0.172498,
   "long": "Brighton & Hove parkrun",
@@ -3119,8 +3128,9 @@
   "trace_m": null
  },
  "brockenhurst": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 50.821853,
   "lon": -1.567476,
   "long": "Brockenhurst parkrun",
@@ -3236,9 +3246,9 @@
   "trace_m": null
  },
  "broughtyferryesplanade": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 56.468603,
   "lon": -2.851584,
   "long": "Broughty Ferry Esplanade parkrun",
@@ -4211,8 +4221,9 @@
   "trace_m": null
  },
  "castlewoods": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 57.076082,
   "lon": -2.784634,
   "long": "Castle Woods parkrun",
@@ -4602,8 +4613,9 @@
   "trace_m": null
  },
  "chichester": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 50.846182,
   "lon": -0.777535,
   "long": "Chichester parkrun",
@@ -5792,8 +5804,9 @@
   "trace_m": null
  },
  "crathescastle": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 57.061178,
   "lon": -2.440954,
   "long": "Crathes Castle parkrun",
@@ -6720,9 +6733,9 @@
   "trace_m": 4994
  },
  "downslinkshorehambysea": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": 2946,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 50.844722,
   "lon": -0.286738,
   "long": "Downs Link parkrun, Shoreham-by-Sea",
@@ -7561,8 +7574,9 @@
   "trace_m": null
  },
  "elgin": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 57.653393,
   "lon": -3.313072,
   "long": "Elgin parkrun",
@@ -7609,8 +7623,9 @@
   "trace_m": null
  },
  "ellon": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 57.359262,
   "lon": -2.056968,
   "long": "Ellon parkrun",
@@ -7955,8 +7970,9 @@
   "trace_m": null
  },
  "fareham": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 50.848448,
   "lon": -1.167385,
   "long": "Fareham parkrun",
@@ -7992,8 +8008,9 @@
   "trace_m": null
  },
  "faskallyforest": {
+  "built_by": "v0.6.0",
   "distance_m": 4799,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 56.7118,
   "lon": -3.767296,
   "long": "Faskally Forest parkrun",
@@ -8027,8 +8044,9 @@
   "trace_m": null
  },
  "feldyroofitnesstrail": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 56.622075,
   "lon": -3.875777,
   "long": "FeldyRoo Fitness Trail parkrun",
@@ -8414,8 +8432,9 @@
   "trace_m": 4967
  },
  "forfarloch": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 56.642663,
   "lon": -2.908213,
   "long": "Forfar Loch parkrun",
@@ -8485,8 +8504,9 @@
   "trace_m": null
  },
  "fortwilliam": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 56.851484,
   "lon": -4.999161,
   "long": "Fort William parkrun",
@@ -8772,8 +8792,9 @@
   "trace_m": null
  },
  "ganavansands": {
+  "built_by": "v0.6.0",
   "distance_m": 1863,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 56.437766,
   "lon": -5.469021,
   "long": "Ganavan Sands parkrun",
@@ -10448,8 +10469,9 @@
   "trace_m": 5055
  },
  "hastings": {
+  "built_by": "v0.6.0",
   "distance_m": 4706,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 50.850291,
   "lon": 0.539739,
   "long": "Hastings parkrun",
@@ -10614,8 +10636,9 @@
   "trace_m": null
  },
  "hazlehead": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 57.141371,
   "lon": -2.175647,
   "long": "Hazlehead parkrun, Aberdeen",
@@ -12768,8 +12791,9 @@
   "trace_m": null
  },
  "kirkwall": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 58.982282,
   "lon": -2.948069,
   "long": "Kirkwall parkrun",
@@ -13152,8 +13176,9 @@
   "trace_m": null
  },
  "ladymaryswalk": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 56.374281,
   "lon": -3.858359,
   "long": "Lady Mary\u2019s Walk parkrun",
@@ -16206,8 +16231,9 @@
   "trace_m": null
  },
  "montrose": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 56.726297,
   "lon": -2.455223,
   "long": "Montrose parkrun",
@@ -16265,8 +16291,9 @@
   "trace_m": null
  },
  "moorsvalley": {
+  "built_by": "v0.6.0",
   "distance_m": 5469,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 50.85124,
   "lon": -1.849419,
   "long": "Moors Valley parkrun",
@@ -16768,8 +16795,9 @@
   "trace_m": null
  },
  "nairnlinks": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 57.589215,
   "lon": -3.871407,
   "long": "Nairn Links parkrun",
@@ -16984,8 +17012,9 @@
   "trace_m": null
  },
  "netleyabbey": {
+  "built_by": "v0.6.0",
   "distance_m": 1905,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 50.865345,
   "lon": -1.334453,
   "long": "Netley Abbey parkrun",
@@ -19167,8 +19196,9 @@
   "trace_m": null
  },
  "perth": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 56.40515,
   "lon": -3.435422,
   "long": "Perth parkrun",
@@ -19912,8 +19942,9 @@
   "trace_m": null
  },
  "portsmouthlakeside": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 50.840654,
   "lon": -1.08157,
   "long": "Portsmouth Lakeside parkrun",
@@ -20007,8 +20038,9 @@
   "trace_m": null
  },
  "prestonpark": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 50.841557,
   "lon": -0.148616,
   "long": "Preston Park parkrun, Brighton",
@@ -22612,8 +22644,9 @@
   "trace_m": null
  },
  "skinadin": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 57.259099,
   "lon": -5.941175,
   "long": "Skinadin parkrun",
@@ -23236,8 +23269,9 @@
   "trace_m": null
  },
  "standrews": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 56.317711,
   "lon": -2.838234,
   "long": "St Andrews parkrun",
@@ -23475,8 +23509,9 @@
   "trace_m": null
  },
  "stonehaven": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 56.969993,
   "lon": -2.212502,
   "long": "Stonehaven parkrun",
@@ -24747,8 +24782,9 @@
   "trace_m": null
  },
  "thurso": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 58.589573,
   "lon": -3.521554,
   "long": "Thurso parkrun",
@@ -24961,8 +24997,9 @@
   "trace_m": null
  },
  "torvean": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 57.462669,
   "lon": -4.24886,
   "long": "Torvean parkrun",
@@ -25622,8 +25659,9 @@
   "trace_m": null
  },
  "uryriverside": {
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-26",
+  "last_tried": "2026-06-28",
   "lat": 57.291953,
   "lon": -2.372062,
   "long": "Ury Riverside parkrun",
