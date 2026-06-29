@@ -1,16 +1,17 @@
 name: AI maintenance (weekly improvement)
 
-# Once a week, a deep-thinking GitHub Models model reviews the cache outcomes + the
+# Each evening (19:00 UTC), a deep-thinking GitHub Models model reviews the cache outcomes + the
 # algorithm and proposes ONE improvement (within AI_CONTEXT.md). The change MUST pass the
 # offline self-test in this job before a PR opens (bad edits never reach a PR). The PR is
 # opened with BOT_PAT (so it triggers CI + the AI reviewer) and labelled needs-ai-review —
 # it cannot merge until a SECOND AI approves it and CI is green.
 on:
   schedule:
-    - cron: "0 6 * * *"      # DAILY 06:00 UTC backstop (build-out phase). The PRIMARY driver is
-                             # event-driven: the cache workflow triggers this after each full sweep,
-                             # so the algorithm improves against fresh data ~as often as feasible.
-                             # >>> Dial back to weekly ("0 6 * * 0") once coverage matures. <<<
+    - cron: "0 19 * * *"     # DAILY 19:00 UTC (~evening UK). Runs AFTER the day's cache sweep (the Course
+                             # cache refresh starts 06:00 UTC and self-chains through the day, pausing by
+                             # 18:00), so the algorithm improves against FRESH data; the PR then reviews/
+                             # merges overnight and the next morning's sweep runs against the improvement.
+                             # >>> Dial back to weekly ("0 19 * * 0") once coverage matures. <<<
   workflow_dispatch:
 
 permissions:
