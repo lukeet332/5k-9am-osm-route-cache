@@ -351,9 +351,9 @@
   "trace_m": null
  },
  "allerpark": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 52.435226,
   "lon": 10.817604,
   "long": "Allerpark parkrun",
@@ -388,9 +388,9 @@
   "trace_m": 1710
  },
  "alstervorland": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 53.573708,
   "lon": 10.002464,
   "long": "Alstervorland parkrun",
@@ -1137,9 +1137,9 @@
   "trace_m": null
  },
  "ballincollig": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 51.891833,
   "lon": -8.605349,
   "long": "Ballincollig parkrun",
@@ -1952,9 +1952,9 @@
   "trace_m": null
  },
  "bereisland": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 51.632369,
   "lon": -9.81755,
   "long": "Bere Island parkrun",
@@ -3356,9 +3356,9 @@
   "trace_m": null
  },
  "bugasee": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 51.292225,
   "lon": 9.504789,
   "long": "Bugasee parkrun, Kassel",
@@ -3971,9 +3971,9 @@
   "trace_m": null
  },
  "caputhersee": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 52.342665,
   "lon": 12.999986,
   "long": "Caputher See parkrun",
@@ -4163,9 +4163,9 @@
   "trace_m": null
  },
  "castlehaven": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": 2902,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 51.551575,
   "lon": -9.170294,
   "long": "Castlehaven parkrun",
@@ -5098,9 +5098,9 @@
   "trace_m": null
  },
  "clonakilty": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 51.617636,
   "lon": -8.89884,
   "long": "Clonakilty parkrun",
@@ -7679,9 +7679,9 @@
   "trace_m": null
  },
  "emmerwiesen": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 51.979457,
   "lon": 9.25315,
   "long": "Emmerwiesen parkrun",
@@ -9019,9 +9019,9 @@
   "trace_m": null
  },
  "georgengarten": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 52.3905,
   "lon": 9.702945,
   "long": "Georgengarten parkrun",
@@ -9163,9 +9163,9 @@
   "trace_m": null
  },
  "glengarriff": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 51.755548,
   "lon": -9.566904,
   "long": "Glengarriff parkrun",
@@ -9187,9 +9187,9 @@
   "trace_m": null
  },
  "glenriver": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 51.912716,
   "lon": -8.455532,
   "long": "Glen River parkrun",
@@ -10554,9 +10554,9 @@
   "trace_date": "2025-04-12"
  },
  "havelkanal": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": 4760,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 52.613948,
   "lon": 13.191797,
   "long": "Havelkanal parkrun",
@@ -12440,9 +12440,9 @@
   "trace_m": null
  },
  "kemnadersee": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 51.438069,
   "lon": 7.281266,
   "long": "Kemnader See parkrun",
@@ -12572,9 +12572,9 @@
   "trace_m": null
  },
  "kiessee": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 51.519354,
   "lon": 9.923981,
   "long": "Kiessee parkrun",
@@ -12620,9 +12620,9 @@
   "trace_m": null
  },
  "killarneyhouse": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 52.057309,
   "lon": -9.516537,
   "long": "Killarney House parkrun",
@@ -12939,9 +12939,9 @@
   "trace_m": null
  },
  "koenigshof": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 53.275351,
   "lon": 9.491959,
   "long": "K\u00f6nigshof parkrun",
@@ -13096,9 +13096,9 @@
   "trace_m": null
  },
  "krupundersee": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 53.625176,
   "lon": 9.87603,
   "long": "Krupunder See parkrun",
@@ -13108,9 +13108,9 @@
   "trace_m": null
  },
  "kuechenholz": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 51.315327,
   "lon": 12.337807,
   "long": "K\u00fcchenholz parkrun",
@@ -13132,9 +13132,9 @@
   "trace_m": null
  },
  "kulturparkneubrandenburg": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 53.552073,
   "lon": 13.255029,
   "long": "Kulturpark Neubrandenburg parkrun",
@@ -14817,9 +14817,9 @@
   "trace_m": null
  },
  "macroomcastledemesne": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 51.904698,
   "lon": -8.962054,
   "long": "Macroom Castle Demesne parkrun",
@@ -15480,9 +15480,9 @@
   "trace_m": null
  },
  "mauerweg": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 52.407965,
   "lon": 13.341577,
   "long": "Mauerweg parkrun",
@@ -15830,9 +15830,9 @@
   "trace_m": null
  },
  "midletongreenway": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 51.921387,
   "lon": -8.174868,
   "long": "Midleton Greenway parkrun",
@@ -16289,9 +16289,9 @@
   "trace_m": null
  },
  "moorbek": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 53.70882,
   "lon": 9.993277,
   "long": "Moorbek parkrun",
@@ -17795,9 +17795,9 @@
   "trace_m": null
  },
  "obersee": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 52.058616,
   "lon": 8.558893,
   "long": "Obersee parkrun",
@@ -18131,9 +18131,9 @@
   "trace_m": null
  },
  "ophovenerweiher": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 51.045509,
   "lon": 7.0634,
   "long": "Ophovener Weiher parkrun",
@@ -18489,9 +18489,9 @@
   "trace_m": null
  },
  "padersee": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 51.734172,
   "lon": 8.726548,
   "long": "Padersee parkrun",
@@ -19271,9 +19271,9 @@
   "trace_m": null
  },
  "pferdebachtal": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 51.476712,
   "lon": 7.470435,
   "long": "Pferdebachtal parkrun",
@@ -19501,9 +19501,9 @@
   "trace_m": null
  },
  "pobalscoilnatrionoide": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 51.950567,
   "lon": -7.873244,
   "long": "Pobalscoil na Tr\u00edon\u00f3ide parkrun",
@@ -20079,9 +20079,9 @@
   "trace_m": null
  },
  "priessnitzgrund": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 51.074417,
   "lon": 13.762586,
   "long": "Prie\u00dfnitzgrund parkrun",
@@ -20116,9 +20116,9 @@
   "trace_m": 5068
  },
  "prinzenpark": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 52.264598,
   "lon": 10.552539,
   "long": "Prinzenpark parkrun",
@@ -20379,9 +20379,9 @@
   "trace_m": null
  },
  "rabenauergrund": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 50.971079,
   "lon": 13.619268,
   "long": "Rabenauer Grund parkrun",
@@ -21465,9 +21465,9 @@
   "trace_date": "2017-03-04"
  },
  "rubbenbruchsee": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 52.289292,
   "lon": 7.989072,
   "long": "Rubbenbruchsee parkrun",
@@ -24325,9 +24325,9 @@
   "trace_m": 4180
  },
  "tempelhoferfeld": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 52.474315,
   "lon": 13.39117,
   "long": "Tempelhofer Feld parkrun",
@@ -25120,9 +25120,9 @@
   "trace_m": null
  },
  "tramorevalley": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 51.877221,
   "lon": -8.456427,
   "long": "Tramore Valley parkrun, Cork",
@@ -25432,9 +25432,9 @@
   "trace_m": null
  },
  "uerdingerstadtpark": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 51.362075,
   "lon": 6.637494,
   "long": "Uerdinger Stadtpark parkrun",
@@ -25517,9 +25517,9 @@
   "trace_m": null
  },
  "unisee": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 53.108575,
   "lon": 8.834818,
   "long": "Unisee parkrun",
@@ -26758,9 +26758,9 @@
   "trace_m": null
  },
  "werdersee": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 53.062018,
   "lon": 8.811122,
   "long": "Werdersee parkrun",
@@ -27262,9 +27262,9 @@
   "trace_m": null
  },
  "wienburgpark": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 51.981959,
   "lon": 7.622357,
   "long": "Wienburgpark parkrun",
@@ -28333,9 +28333,9 @@
   "trace_m": null
  },
  "ziegelwiese": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.0",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-29",
   "lat": 51.49366,
   "lon": 11.954659,
   "long": "Ziegelwiese parkrun",
