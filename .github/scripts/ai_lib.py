@@ -199,20 +199,33 @@ def call_role(prompt, role):
         if not os.environ.get(slot["api_key_env"], "").strip():
             print(f"{role}: skip {slot['provider']}/{slot['model']} (no key)")
             continue
-        try:
-            print(f"{role}: trying {slot['provider']} ({slot['model']})…")
-            return call_json(slot, prompt, max_tokens=max_tokens), slot
-        except Exception as e:
-            # Surface the real cause (HTTP status + body) — a swallowed HTTPError once hid that the
-            # built-in GITHUB_TOKEN can't reach GitHub Models. Don't print the token itself.
-            code = getattr(e, "code", "")
-            body = ""
+        # Retry ONCE on the same tier for a transient REPLY error (malformed/empty/odd-shape JSON — a
+        # model occasionally emits a stray token or a reasoning-only reply) before demoting. A flaky
+        # one-off here used to needlessly drop us to a weaker tier (e.g. Gemini JSONDecodeError -> fall
+        # through). HTTP/connection errors are NOT retried here (_post already retried transient 429/5xx;
+        # a 400/401/413 would just repeat) — they demote immediately.
+        err = None
+        for attempt in (1, 2):
             try:
-                if hasattr(e, "read"):
-                    body = e.read().decode("utf-8", "ignore")[:300]
-            except Exception:
-                pass
-            print(f"{role}: {slot['provider']} unavailable ({e.__class__.__name__} {code}) {body}")
+                print(f"{role}: trying {slot['provider']} ({slot['model']})… (try {attempt})")
+                return call_json(slot, prompt, max_tokens=max_tokens), slot
+            except (json.JSONDecodeError, RuntimeError) as e:
+                err = e
+                if attempt == 1:
+                    print(f"{role}: {slot['provider']} transient reply error ({e.__class__.__name__}) — retrying once")
+                    time.sleep(2); continue
+            except Exception as e:
+                err = e; break
+        # Surface the real cause (HTTP status + body) — a swallowed HTTPError once hid that the
+        # built-in GITHUB_TOKEN can't reach GitHub Models. Don't print the token itself.
+        code = getattr(err, "code", "")
+        body = ""
+        try:
+            if hasattr(err, "read"):
+                body = err.read().decode("utf-8", "ignore")[:300]
+        except Exception:
+            pass
+        print(f"{role}: {slot['provider']} unavailable ({err.__class__.__name__} {code}) {body}")
     return None, None
 
 
@@ -256,7 +269,10 @@ def apply_proposal(result):
             n = cur.count(find)
             if n != 1:                                 # must match exactly once (present + unambiguous)
                 print(f"  edit rejected: 'find' appears {n}x in {rel} (need exactly 1)"); return 0
-            pending[target] = cur.replace(find, repl, 1)
+            new = cur.replace(find, repl, 1)
+            if new == cur:                             # no-op (find == replace) -> "applied" but zero diff
+                print(f"  edit rejected: no-op in {rel} (replace identical to find — propose a real change)"); return 0
+            pending[target] = new
         for target, content in pending.items():
             target.write_text(content); print(f"  edited: {target.name}")
         return len(edits)

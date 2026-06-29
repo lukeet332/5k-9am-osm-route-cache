@@ -11,7 +11,10 @@ name: AI review (AI-reviews-AI gate)
 #               hands to a human.
 on:
   pull_request:
-    types: [opened, labeled, synchronize, reopened]
+    # NOT 'opened': the bot opens its PR WITH the needs-ai-review label, so 'opened' AND 'labeled' both
+    # fired -> two duplicate review runs (double model spend). 'labeled' alone covers PR creation (the
+    # label gates the job anyway); 'synchronize' covers revises; 'reopened' covers reopen.
+    types: [labeled, synchronize, reopened]
 
 permissions:
   contents: write
@@ -205,13 +208,19 @@ jobs:
           # back ALONGSIDE the reviewer's critique and let the author fix the root cause (up to 2
           # attempts), exactly like the maintenance job. Only a self-test-PASSING revision is pushed.
           ORIG_FB="$REVIEW_FEEDBACK"
-          for attempt in 1 2; do
+          for attempt in 1 2 3; do
             # Refresh the diff so the author's revision mode sees its TRUE change-so-far (incl. a prior
             # failed attempt's in-tree edits — it patches that, doesn't restart).
             git diff origin/main > pr.diff || true
             python .github/scripts/ai_improve.py || { echo "::error::author step errored"; exit 1; }
             if git diff --quiet; then
-              echo "author produced no revision this round; leaving for next round / human."; exit 0
+              # No NET change (a no-op edit, or a 'find' that didn't match). DON'T hand off to a human —
+              # re-prompt for a concrete, applicable edit and try again, so the AIs converge on a merge.
+              echo "::warning::author produced no net change on attempt $attempt — re-prompting for a concrete edit."
+              export REVIEW_FEEDBACK="$ORIG_FB
+
+          ALSO: your previous attempt produced NO net change — either a no-op (replace identical to find) or a 'find' that did not match the CURRENT build_cache.py. Output a concrete, DIFFERENT changeset: copy each 'find' VERBATIM from the current file and make 'replace' genuinely differ, addressing the specific objection above."
+              continue
             fi
             if OUT=$(python selftest.py 2>&1 && python test_behavior.py 2>&1); then
               echo "$OUT"; echo "revision PASSED the self-test on attempt $attempt — pushing."
@@ -227,18 +236,23 @@ jobs:
           ALSO: your revision FAILED the offline self-test gate — fix the ROOT CAUSE and keep the tested function names/signatures intact (see the Tested-contract section of AI_CONTEXT.md). Self-test output:
           $OUT"
           done
-          # Still red after the retries — hand to a human rather than push a broken branch.
+          # Could not converge after the retries (still-failing self-test, or no applicable edit). Don't
+          # push a broken branch AND don't hand off to a human — ABANDON this attempt autonomously so the
+          # next scheduled maintenance run proposes a FRESH idea. The JOURNAL already records what was
+          # tried, so the author won't simply re-propose it. (Prefer convergence; abandon beats limbo.)
           git checkout -- . 2>/dev/null || true
-          gh pr comment "$PR" --body "$(printf '⚠️ **Author could not pass the self-test — needs a human @lukeet332**\n\nThe author revised in response to the review but its change still fails the offline self-test after retries, so nothing was pushed. The last failure is in the job log.')"
-          gh pr edit "$PR" --add-label needs-human-approval || true
-          echo "::error::revision could not pass the self-test after retries — not pushing."; exit 1
+          gh pr comment "$PR" --body "$(printf '🌀 **Abandoned — could not converge.**\n\nAfter several attempts the author could not produce a self-test-passing fix for the review, so this attempt is dropped (not escalated). The next maintenance run will propose a fresh idea.')" || true
+          gh pr close "$PR" --delete-branch || true
+          echo "::warning::revision could not converge after retries — abandoned autonomously (no human handoff)."
 
       # ---- budget reached or author stalled: hand to a human ----
-      - name: Give up -> human
+      - name: Budget/stall reached -> abandon autonomously (no human handoff)
         if: steps.guard.outputs.proceed != 'true'
         env:
           GH_TOKEN: ${{ secrets.BOT_PAT }}
         run: |
           if [ "${{ steps.guard.outputs.stalled }}" = "true" ]; then WHY="the author stalled (two identical revisions in a row)"; else WHY="the revision budget (${{ steps.guard.outputs.max }} rounds) was reached"; fi
-          gh pr comment "$PR" --body "🛑 AI review loop stopped — $WHY — needs a human @lukeet332. Removing labels."
-          gh pr edit "$PR" --remove-label needs-ai-review --remove-label automerge || true
+          # Prefer convergence; when the loop can't converge, ABANDON this attempt rather than escalate to
+          # a human — the next scheduled maintenance run proposes a fresh idea (the JOURNAL records this one).
+          gh pr comment "$PR" --body "🌀 AI review loop stopped — $WHY — abandoning this attempt; the next maintenance run will propose a fresh idea." || true
+          gh pr close "$PR" --delete-branch || true

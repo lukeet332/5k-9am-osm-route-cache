@@ -26,6 +26,11 @@ CONSTITUTION (read-only bible) and CONTRACT (AI_CONTEXT.md) bind; read the JOURN
   invariants/safety net - or a test_behavior.py edit that WEAKENS/DELETES a check rather than updating a
   behavioural expectation a real code change altered, broken self-test contract) - you are the safety
   backstop even if CodeRabbit missed it. State the one blocker. Do NOT use revise for a churn PR (see churn).
+  CRITICAL - lean toward AGREEMENT, not a stalled loop: if CodeRabbit's state is NOT CHANGES_REQUESTED
+  (approved/commented), you may ONLY revise for a HARD-INVARIANT/safety violation from the list above. A
+  functional/correctness/quality concern that CodeRabbit chose NOT to block on is NOT grounds to revise -
+  CodeRabbit + the self-test + CI are the correctness net, so APPROVE and let them catch it. Re-blocking a
+  PR that CodeRabbit already cleared just deadlocks the loop.
 - "churn": the change re-proposes a JOURNAL "ALREADY IMPLEMENTED" idea with no meaningful improvement, or
   is a no-op -> the author should ABANDON it and propose a NEW idea (the PR is CLOSED). Churn takes
   PRECEDENCE: if the change is churn, return churn even if CodeRabbit requested changes - a dead idea is
