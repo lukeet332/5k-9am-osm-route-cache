@@ -40,6 +40,7 @@ try:
     _LON = ZoneInfo("Europe/London")
     _TZCACHE = {}
     def local(dt, lat=None, lon=None):
+        """Get local time from datetime and coordinates."""
         # event-local time from coordinates (global rollout). Falls back to Europe/London when the
         # lookup is unavailable: keeps the UK correct, never crashes, and a foreign event with no
         # resolved zone just misses its 09:00-local traces (no false data, no UK regression).
@@ -57,17 +58,21 @@ try:
         return dt.astimezone(_LON)
 except Exception:                          # crude BST fallback (no zoneinfo)
     def local(dt, lat=None, lon=None):
+        """Get local time from datetime and coordinates."""
         y = dt.year
         def ls(m):
             d = datetime.date(y, m, 31); return d - datetime.timedelta(days=(d.weekday()+1) % 7)
         return dt + datetime.timedelta(hours=1 if ls(3) <= dt.date() < ls(10) else 0)
 
 def H(a, b, c, e):
+    """Calculate haversine distance between two points."""
     R = 6371000.0; dl = math.radians(c-a); dn = math.radians(e-b)
     h = math.sin(dl/2)**2 + math.cos(math.radians(a))*math.cos(math.radians(c))*math.sin(dn/2)**2
     return 2*R*math.asin(min(1, math.sqrt(h)))
 
-def length(pts): return sum(H(pts[i-1][0], pts[i-1][1], pts[i][0], pts[i][1]) for i in range(1, len(pts)))
+def length(pts):
+    """Calculate total length of a path."""
+    return sum(H(pts[i-1][0], pts[i-1][1], pts[i][0], pts[i][1]) for i in range(1, len(pts)))
 
 def assemble(ways):
     """Greedily chain unordered member ways into one polyline, flipping to connect endpoints."""
@@ -88,6 +93,7 @@ def assemble(ways):
 
 _last = [0.0]
 def _throttle():
+    """Throttle requests to respect rate limits."""
     wait = RATE_S - (time.time() - _last[0])
     if wait > 0: time.sleep(wait)
     _last[0] = time.time()
@@ -98,6 +104,7 @@ RATE_LIMIT_HITS = [0]
 MAX_RATE_LIMIT_HITS = 3
 
 def _get(url, data=None, timeout=70):
+    """Perform a throttled HTTP GET request."""
     _throttle()
     req = urllib.request.Request(url, data=data, headers={"User-Agent": UA})
     for attempt in range(4):
@@ -113,6 +120,7 @@ def _get(url, data=None, timeout=70):
             raise
 
 def load_events():
+    """Load and order all adult parkrun events."""
     # ALL adult (5k) parkruns worldwide. UK first (Havant -> north, the original rollout), then the
     # rest of the world (by country, then latitude). Foreign events are never-tried, so the last_tried
     # rotation in main() sweeps them first - harvesting untapped foreign data while UK gaps wait.
@@ -166,6 +174,7 @@ def _cell_relations(lat, lon):
     return rels
 
 def relation_course(lat, lon, name):
+    """Find the best matching relation course."""
     # Match this event against its cell's batched relations (parkrun in name OR the event name),
     # nearest-to-5k among those passing within 500m of the start. No per-event Overpass call.
     best = None
@@ -188,6 +197,7 @@ def _trace_cache_file(name, half_m, page):
     return os.path.join(TRACECACHE, f"{name}_h{int(half_m)}_p{page}.gpx")
 
 def trace_points(name, lat, lon, half_m=900, max_pages=5):
+    """Fetch GPS trackpoints from OSM."""
     os.makedirs(TRACECACHE, exist_ok=True)
     dlat = half_m/111000.0; dlon = half_m/(111000.0*math.cos(math.radians(lat)))
     bbox = f"{lon-dlon:.6f},{lat-dlat:.6f},{lon+dlon:.6f},{lat+dlat:.6f}"
@@ -222,6 +232,7 @@ def trace_points(name, lat, lon, half_m=900, max_pages=5):
     return pts
 
 def trace_courses_multi(name, lat, lon):
+    """Extract and average multiple Saturday traces."""
     pts = trace_points(name, lat, lon)
     # group by date: Saturday/Christmas/New-Year, local 09:00-09:45, anchored within 150m of the start
     traces = {}
@@ -266,6 +277,7 @@ def trace_courses_multi(name, lat, lon):
     return avg_len, avg_path, first_date
 
 def trace_course(name, lat, lon):
+    """Extract a single Saturday trace."""
     res = trace_courses_multi(name, lat, lon)
     if res:
         return res
@@ -308,6 +320,7 @@ def algo_version():
     return _VERSION[0]
 
 def write_gpx(name, longname, pts, source):
+    """Write course points to a GPX file."""
     os.makedirs(ROUTES, exist_ok=True)
     with open(os.path.join(ROUTES, f"{name}.gpx"), "w") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
@@ -422,6 +435,7 @@ def audit_recoverable(index):
     return out
 
 def _git(*a):
+    """Run a git command."""
     try:
         subprocess.run(["git", *a], cwd=HERE, check=True, capture_output=True)
         return True
@@ -451,6 +465,7 @@ def commit_route(name, res):
         _git("push")
 
 def main():
+    """Main execution loop."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit", type=int, default=0, help="max OPEN parkruns to query this run (0 = all open)")
     ap.add_argument("--commit-each", action="store_true", help="git commit+push each route the moment it locks (real-time)")
