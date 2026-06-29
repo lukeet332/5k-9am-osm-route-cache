@@ -338,10 +338,9 @@ def build_one(ev):
     if tr and HALF_REL_LO <= tr[0] <= HALF_REL_HI:
         n = best_lap_n(tr[0])
         if n >= 2:
-            n_path = tr[1] * n
             n_len = n * length(tr[1])
             if REL_LO <= n_len <= REL_HI:
-                write_gpx(name, ev["long"], n_path, "osm_9am_trace_doubled")
+                write_gpx(name, ev["long"], tr[1], "osm_9am_trace_doubled")
                 return {"source": "osm_9am_trace_doubled", "distance_m": round(n_len), "status": "success",
                         "provisional": False, "trace_date": tr[2], **diag}
     if rel and REL_LO <= rel[1] <= REL_HI:        # success: OSM relation (provisional)
