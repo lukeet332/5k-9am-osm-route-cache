@@ -248,13 +248,13 @@ def trace_courses_multi(name, lat, lon):
             d += H(path[-1][0], path[-1][1], p[0], p[1]); path.append(p)
             if d >= 5500 or (p[2] - path[0][2]).total_seconds() > 2700:   # ~5.5k or past 09:45
                 break
-        valid_traces.append([(p[0], p[1]) for p in path])
+        valid_traces.append((date, [(p[0], p[1]) for p in path]))
     if not valid_traces:
         return None
     # prefer recent traces (last 2 years) to track current course shape; older traces may be obsolete
     cutoff = datetime.date.today() - datetime.timedelta(days=730)
-    recent = [t for t, d in zip(valid_traces, traces.keys()) if datetime.date.fromisoformat(d) >= cutoff]
-    pool = recent if len(recent) >= 2 else valid_traces
+    recent = [(d, t) for d, t in valid_traces if datetime.date.fromisoformat(d) >= cutoff]
+    pool = [t for _, t in (recent if len(recent) >= 2 else valid_traces)]
     minlen = min(len(t) for t in pool)
     avg_path = []
     for i in range(minlen):
@@ -262,7 +262,7 @@ def trace_courses_multi(name, lat, lon):
         los = [t[i][1] for t in pool]
         avg_path.append((sum(las)/len(las), sum(los)/len(los)))
     avg_len = length(avg_path)
-    first_date = list(traces.keys())[0]
+    first_date = valid_traces[0][0]
     return avg_len, avg_path, first_date
 
 def trace_course(name, lat, lon):
