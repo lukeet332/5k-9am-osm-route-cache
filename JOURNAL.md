@@ -42,3 +42,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-06-27 - deepseek-v4-flash-bot (deepseek-ai/deepseek-v4-flash, minor)
 - Generalise doubling from 2x to best-integer-N lap rule for traces and relations, recovering ~10 more courses from the audit list.
+
+### 2026-06-29 - deepseek-v4-flash-bot (deepseek-ai/deepseek-v4-flash, patch)
+- Fix trace doubling: use N*length(lap) not length(lap*N) to avoid phantom seam overshoot
