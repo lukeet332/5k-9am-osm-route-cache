@@ -41,18 +41,23 @@ def _pr_diff():
     return p.read_text(errors="ignore") if p.exists() else ""
 
 def _pr_conversation():
-    """The review debate so far (reviewer critiques + the author's own prior replies), oldest first."""
+    """The review debate so far, oldest first: reviewer/arbiter issue-comments AND CodeRabbit's
+    line-anchored INLINE review comments — so the author sees EXACTLY what was flagged and on which
+    line (it used to see only issue-comments, missing CodeRabbit's specific objections, so it fixed
+    the wrong thing). Inline bodies are capped to their headline (the objection sits at the top)."""
     pr = os.environ.get("PR", "").strip()
     if not pr:
         return ""
-    data = _gh_api("GET", f"/issues/{pr}/comments") or []
-    turns = []
-    for c in data:
-        who = (c.get("user") or {}).get("login", "?")
-        body = (c.get("body") or "").strip()
-        if body:
-            turns.append(f"--- {who} ---\n{body}")
-    return "\n\n".join(turns)
+    items = []
+    for c in (_gh_api("GET", f"/issues/{pr}/comments") or []):
+        items.append((c.get("created_at", ""), (c.get("user") or {}).get("login", "?"), "",
+                      (c.get("body") or "").strip()))
+    for c in (_gh_api("GET", f"/pulls/{pr}/comments") or []):   # CodeRabbit's line-level objections
+        loc = f' [{c.get("path", "?")}:{c.get("line") or c.get("original_line") or "?"}]'
+        items.append((c.get("created_at", ""), (c.get("user") or {}).get("login", "?"), loc,
+                      (c.get("body") or "").strip()[:700]))
+    items.sort(key=lambda x: x[0])
+    return "\n\n".join(f"--- {who}{loc} ---\n{body}" for _, who, loc, body in items if body)
 
 def _post_reply(summary, why=""):
     """The author speaks in the PR thread: what it changed in response + WHY. Builds the conversation

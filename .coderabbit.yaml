@@ -33,6 +33,9 @@ reviews:
         nothing, FLAG it clearly in your review so the merge arbiter can CLOSE it as churn (you need not
         request-changes for churn alone - the arbiter owns the close-vs-revise decision). A genuine,
         justified improvement that builds on a done idea is NOT churn; judge it on merit.
+        STYLE: do NOT request docstrings or expanded comments/naming for their own sake. Invariant #10
+        (AI_CONTEXT_READ_ONLY_BIBLE.md) mandates minimal, token-frugal text - treat sparse docstrings/
+        comments as INTENTIONAL, not a defect. Flag only genuine correctness, safety, or invariant issues.
         TEST GATE: selftest.py is the FROZEN invariant/safety net - request changes on ANY edit to it. The
         author MAY edit test_behavior.py, but ONLY IN THE SAME changeset as a real build_cache.py change
         that legitimately alters one behavioural expectation, and ONLY to update that expectation - request
