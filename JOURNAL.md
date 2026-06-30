@@ -46,5 +46,3 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 ### 2026-06-29 - deepseek-v4-flash-bot (deepseek-ai/deepseek-v4-flash, patch)
 - Fix trace doubling: use N*length(lap) not length(lap*N) to avoid phantom seam overshoot
 
-### 2026-06-30 - deepseek-v4-flash-bot (deepseek-ai/deepseek-v4-flash, patch)
-- Fix trace doubling to use N*length(lap) not length(lap*N) to avoid phantom seam overshoot
