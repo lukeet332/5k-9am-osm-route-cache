@@ -485,9 +485,9 @@
   "trace_m": null
  },
  "amsterdamsebos": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": 3830,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 52.325527,
   "lon": 4.853937,
   "long": "Amsterdamse Bos parkrun",
@@ -1089,9 +1089,9 @@
   "trace_m": null
  },
  "balijbos": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 52.045036,
   "lon": 4.456276,
   "long": "Balijbos parkrun",
@@ -1595,9 +1595,9 @@
   "trace_m": null
  },
  "beatrixpark": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": 2867,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 52.376801,
   "lon": 5.199276,
   "long": "Beatrixpark parkrun",
@@ -4629,9 +4629,9 @@
   "trace_m": null
  },
  "chichibumusepark": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 35.993188,
   "lon": 139.052054,
   "long": "Chichibu Muse Park parkrun",
@@ -4773,9 +4773,9 @@
   "trace_m": null
  },
  "chuokoen": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 39.692853,
   "lon": 141.125657,
   "long": "Chuo koen parkrun",
@@ -6085,9 +6085,9 @@
   "trace_m": null
  },
  "dainai": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 55.917825,
   "lon": 23.275153,
   "long": "parkrun Dainai",
@@ -6157,9 +6157,9 @@
   "trace_m": null
  },
  "danesdviraciutakas": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 55.726773,
   "lon": 21.162167,
   "long": "parkrun Dan\u0117s dvira\u010di\u0173 takas",
@@ -6340,9 +6340,9 @@
   "trace_m": null
  },
  "delftsehout": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": 5318,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 52.02092,
   "lon": 4.373572,
   "long": "Delftse Hout parkrun",
@@ -6521,9 +6521,9 @@
   "trace_m": null
  },
  "didziojidailide": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 54.387397,
   "lon": 24.071127,
   "long": "parkrun Did\u017eioji Dailid\u0117",
@@ -8658,9 +8658,9 @@
   "trace_m": null
  },
  "fuganungakansuikoen": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 36.708301,
   "lon": 137.212694,
   "long": "Fugan unga kansui koen parkrun",
@@ -9283,9 +9283,9 @@
   "trace_m": null
  },
  "goffert": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": 5294,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 51.82902,
   "lon": 5.833825,
   "long": "Goffert parkrun",
@@ -9331,9 +9331,9 @@
   "trace_m": null
  },
  "gongendo2goukouen": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 36.10136,
   "lon": 139.724434,
   "long": "Gongendo 2gou kouen parkrun",
@@ -10000,9 +10000,9 @@
   "trace_m": null
  },
  "gyodashisogokoen": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 36.154306,
   "lon": 139.449093,
   "long": "Gyodashi sogokoen parkrun",
@@ -11793,9 +11793,9 @@
   "trace_m": null
  },
  "jagersplas": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 52.463247,
   "lon": 4.832685,
   "long": "Jagersplas parkun",
@@ -12116,9 +12116,9 @@
   "trace_m": null
  },
  "kagerzoom": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": 3832,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 52.185181,
   "lon": 4.501654,
   "long": "Kagerzoom parkrun",
@@ -12284,9 +12284,9 @@
   "trace_m": null
  },
  "karpendonkseplas": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": 5203,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 51.451601,
   "lon": 5.498621,
   "long": "Karpendonkse Plas parkrun",
@@ -12296,9 +12296,9 @@
   "trace_m": null
  },
  "kashiwanoha": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 35.894203,
   "lon": 139.941344,
   "long": "Kashiwanoha parkrun",
@@ -13072,9 +13072,9 @@
   "trace_m": null
  },
  "kralingsebos": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": 5225,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 51.934845,
   "lon": 4.523562,
   "long": "Kralingse Bos parkrun",
@@ -13120,9 +13120,9 @@
   "trace_m": null
  },
  "kulturosirpoilsioparkas": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 55.737389,
   "lon": 24.32339,
   "long": "parkrun Kult\u016bros Ir Poilsio Parkas",
@@ -17288,9 +17288,9 @@
   "trace_m": null
  },
  "nimmerdor": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 52.136747,
   "lon": 5.389645,
   "long": "Nimmerdor parkrun",
@@ -18095,9 +18095,9 @@
   "trace_m": null
  },
  "oosterhout": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": 1892,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 52.622985,
   "lon": 4.754383,
   "long": "Oosterhout parkrun",
@@ -18107,9 +18107,9 @@
   "trace_m": null
  },
  "oosterplas": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": 5343,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 51.686449,
   "lon": 5.339595,
   "long": "Oosterplas parkrun",
@@ -18369,9 +18369,9 @@
   "trace_m": null
  },
  "oudewarande": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 51.565259,
   "lon": 5.037521,
   "long": "Oude Warande parkrun",
@@ -20031,9 +20031,9 @@
   "trace_m": null
  },
  "presint18": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 2.916852,
   "lon": 101.698056,
   "long": "Presint 18 parkrun, Putrajaya",
@@ -21645,9 +21645,9 @@
   "trace_m": null
  },
  "saigawaryokuchikoen": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 36.547551,
   "lon": 136.661699,
   "long": "Saigawa ryokuchi koen parkrun",
@@ -21874,9 +21874,9 @@
   "trace_m": null
  },
  "sanumakoikikoenkanouen": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 36.192134,
   "lon": 139.950163,
   "long": "Sanuma koikikoen Kanouen parkrun",
@@ -21934,9 +21934,9 @@
   "trace_m": null
  },
  "schoterbos": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": 5271,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 52.411781,
   "lon": 4.644821,
   "long": "Schoterbos parkrun",
@@ -22811,9 +22811,9 @@
   "trace_m": null
  },
  "sonsbeek": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": 5320,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 51.99136,
   "lon": 5.899337,
   "long": "Sonsbeek parkrun",
@@ -23193,9 +23193,9 @@
   "trace_m": null
  },
  "stadspark": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": 1899,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 53.203176,
   "lon": 6.540406,
   "long": "Stadspark parkrun, Groningen",
@@ -24193,9 +24193,9 @@
   "trace_m": null
  },
  "tapijn": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": 1923,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 50.843369,
   "lon": 5.687415,
   "long": "Tapijn parkrun",
@@ -25807,9 +25807,9 @@
   "trace_m": null
  },
  "vanheekpark": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 52.228311,
   "lon": 6.882469,
   "long": "van Heekpark parkrun",
@@ -26035,9 +26035,9 @@
   "trace_m": null
  },
  "vingis": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 54.682498,
   "lon": 25.245432,
   "long": "parkrun Vingis",
@@ -26338,9 +26338,9 @@
   "trace_m": 5515
  },
  "wantijpark": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 51.813845,
   "lon": 4.69623,
   "long": "Wantijpark parkrun",
@@ -26530,9 +26530,9 @@
   "trace_m": null
  },
  "wataraseyusuichi": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 36.209432,
   "lon": 139.668674,
   "long": "Wataraseyusuichi parkrun",
@@ -26542,9 +26542,9 @@
   "trace_m": null
  },
  "waterakkers": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": 3324,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 51.611246,
   "lon": 4.806896,
   "long": "Waterakkers parkrun",
@@ -27010,9 +27010,9 @@
   "trace_m": null
  },
  "wezenlanden": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 52.508571,
   "lon": 6.106907,
   "long": "Wezenlanden parkrun",
@@ -28321,9 +28321,9 @@
   "trace_m": null
  },
  "zegerplas": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": 3059,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 52.141498,
   "lon": 4.686521,
   "long": "Zegerplas parkrun",
@@ -28381,9 +28381,9 @@
   "trace_m": null
  },
  "zonnestraal": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 52.202408,
   "lon": 5.15639,
   "long": "Zonnestraal parkrun",
@@ -28405,9 +28405,9 @@
   "trace_m": null
  },
  "zuiderpark": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": 5284,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 52.057393,
   "lon": 4.290593,
   "long": "Zuiderpark parkrun, Den Haag",
@@ -28417,9 +28417,9 @@
   "trace_m": null
  },
  "zuiderparkhoogeveen": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-06-30",
   "lat": 52.711018,
   "lon": 6.483571,
   "long": "Zuiderpark parkrun, Hoogeveen",
