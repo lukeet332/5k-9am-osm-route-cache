@@ -121,7 +121,9 @@ edits. If your change legitimately alters a BEHAVIOURAL expectation (e.g. a spec
 the doubled distance/source label, the exact audit set), you MAY also edit test_behavior.py in the SAME
 changeset to update that expectation — but ONLY the expectation that genuinely changed, NEVER to weaken
 or remove a check. You do NOT need to touch JOURNAL.md — the pipeline records a journal entry from your
-"summary" automatically. NEVER edit selftest.py (the FROZEN invariants / safety net — bars, source-trust,
+"summary" automatically. JOURNAL.md is APPEND-ONLY: you may ADD an entry but must NEVER remove or rewrite
+an existing one (it is the immutable churn-detection record — the apply step rejects any removal, and
+deleting an entry to dodge a churn/duplicate finding is forbidden; fix the CHANGE, not the memory). NEVER edit selftest.py (the FROZEN invariants / safety net — bars, source-trust,
 no-abort, best_lap_n property) or anything under .github/ (the safety pipeline); a change that can only
 pass by editing selftest.py is breaking an invariant, not improving. You MAY propose a constitution
 (AI_CONTEXT_READ_ONLY_BIBLE.md) amendment as an edit, but only rarely + with strong justification,

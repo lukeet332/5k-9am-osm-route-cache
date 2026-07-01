@@ -272,6 +272,14 @@ def apply_proposal(result):
             new = cur.replace(find, repl, 1)
             if new == cur:                             # no-op (find == replace) -> "applied" but zero diff
                 print(f"  edit rejected: no-op in {rel} (replace identical to find — propose a real change)"); return 0
+            if target == JOURNAL_FILE:
+                # JOURNAL.md is APPEND-ONLY memory: existing entries are the churn-detection record and are
+                # IMMUTABLE. An edit may ADD lines but must not REMOVE or REWRITE any existing non-blank line
+                # (an author once deleted an entry to evade churn detection). Additions are fine.
+                new_lines = set(new.splitlines())
+                lost = [l for l in cur.splitlines() if l.strip() and l not in new_lines]
+                if lost:
+                    print(f"  edit rejected: JOURNAL.md is APPEND-ONLY — must not remove/rewrite existing entries ({len(lost)} line(s) would be lost)"); return 0
             pending[target] = new
         for target, content in pending.items():
             target.write_text(content); print(f"  edited: {target.name}")
