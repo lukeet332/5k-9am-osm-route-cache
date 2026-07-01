@@ -1149,9 +1149,9 @@
   "trace_m": null
  },
  "ballito": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -29.492418,
   "lon": 31.18044,
   "long": "Ballito parkrun",
@@ -2036,9 +2036,9 @@
   "trace_m": null
  },
  "bethlehem": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -28.251308,
   "lon": 28.336215,
   "long": "Bethlehem parkrun",
@@ -2830,9 +2830,9 @@
   "trace_m": null
  },
  "brandkop": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -29.145325,
   "lon": 26.168249,
   "long": "Brandkop parkrun",
@@ -3825,9 +3825,9 @@
   "trace_m": 1648
  },
  "cannibalscave": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -28.682918,
   "lon": 28.976784,
   "long": "Cannibals Cave parkrun",
@@ -4954,9 +4954,9 @@
   "trace_m": null
  },
  "clarens": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -28.514776,
   "lon": 28.419728,
   "long": "Clarens parkrun",
@@ -6593,9 +6593,9 @@
   "trace_m": null
  },
  "dlinzaforest": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -28.891922,
   "lon": 31.451233,
   "long": "Dlinza Forest parkrun",
@@ -7473,9 +7473,9 @@
   "trace_m": null
  },
  "egweniriverlodge": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -26.901128,
   "lon": 27.446698,
   "long": "Egweni River Lodge parkrun",
@@ -8151,9 +8151,9 @@
   "trace_m": null
  },
  "ficksburg": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -28.863554,
   "lon": 27.881193,
   "long": "Ficksburg parkrun",
@@ -10373,9 +10373,9 @@
   "trace_m": null
  },
  "harrismith": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -28.280234,
   "lon": 29.151949,
   "long": "Harrismith parkrun",
@@ -10698,9 +10698,9 @@
   "trace_m": null
  },
  "heidedal": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -29.147255,
   "lon": 26.261942,
   "long": "Heidedal parkrun",
@@ -11046,9 +11046,9 @@
   "trace_m": null
  },
  "hilton": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -29.539048,
   "lon": 30.296952,
   "long": "Hilton parkrun",
@@ -11082,9 +11082,9 @@
   "trace_m": null
  },
  "hluhluwe": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -28.007628,
   "lon": 32.27309,
   "long": "Hluhluwe parkrun",
@@ -11625,9 +11625,9 @@
   "trace_m": null
  },
  "inibos": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -29.106928,
   "lon": 26.143802,
   "long": "Inibos parkrun",
@@ -12128,9 +12128,9 @@
   "trace_m": null
  },
  "kaikai": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -29.273321,
   "lon": 16.87856,
   "long": "Kai Kai parkrun",
@@ -12344,9 +12344,9 @@
   "trace_m": null
  },
  "kathu": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -27.679389,
   "lon": 23.06658,
   "long": "Kathu parkrun",
@@ -12656,9 +12656,9 @@
   "trace_m": null
  },
  "kimberley": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -28.759379,
   "lon": 24.826695,
   "long": "Kimberley parkrun",
@@ -13084,9 +13084,9 @@
   "trace_m": null
  },
  "kroonstadcountryclub": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -27.666044,
   "lon": 27.244103,
   "long": "Kroonstad Country Club parkrun",
@@ -13204,9 +13204,9 @@
   "trace_m": null
  },
  "ladysmith": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -28.546259,
   "lon": 29.769942,
   "long": "Ladysmith parkrun",
@@ -15432,9 +15432,9 @@
   "trace_m": null
  },
  "matlosanabird": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -26.844873,
   "lon": 26.663535,
   "long": "Matlosana Bird parkrun",
@@ -16602,9 +16602,9 @@
   "trace_m": null
  },
  "mtunzini": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -28.944959,
   "lon": 31.761372,
   "long": "Mtunzini parkrun",
@@ -17639,9 +17639,9 @@
   "trace_m": null
  },
  "nottinghamroad": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -29.317355,
   "lon": 30.049367,
   "long": "Nottingham Road parkrun",
@@ -19356,9 +19356,9 @@
   "trace_m": null
  },
  "pietretief": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -26.996714,
   "lon": 30.813792,
   "long": "Piet Retief parkrun",
@@ -19368,9 +19368,9 @@
   "trace_m": null
  },
  "pigglywiggly": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -29.458223,
   "lon": 30.136667,
   "long": "Piggly Wiggly parkrun",
@@ -19380,9 +19380,9 @@
   "trace_m": null
  },
  "pineforest": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -28.292924,
   "lon": 27.948221,
   "long": "Pine Forest parkrun",
@@ -19645,9 +19645,9 @@
   "trace_m": null
  },
  "pongola": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -27.396878,
   "lon": 31.657231,
   "long": "Pongola parkrun",
@@ -19657,9 +19657,9 @@
   "trace_m": null
  },
  "pontdeval": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -26.769375,
   "lon": 27.680009,
   "long": "Pont De Val parkrun",
@@ -20707,9 +20707,9 @@
   "trace_m": 1017
  },
  "richardsbay": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -28.79858,
   "lon": 32.094501,
   "long": "Richards Bay parkrun",
@@ -21214,9 +21214,9 @@
   "trace_m": null
  },
  "rooipointfarm": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -27.79113,
   "lon": 29.964782,
   "long": "Rooi Point Farm parkrun",
@@ -21814,9 +21814,9 @@
   "trace_m": 5071
  },
  "sandriver": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -28.094307,
   "lon": 26.873588,
   "long": "Sand River parkrun, Virginia",
@@ -21898,9 +21898,9 @@
   "trace_m": null
  },
  "sasolburgstadium": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -26.791098,
   "lon": 27.825132,
   "long": "Sasolburg Stadium parkrun",
@@ -22091,9 +22091,9 @@
   "trace_m": null
  },
  "senekal": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -28.31856,
   "lon": 27.617928,
   "long": "Senekal parkrun",
@@ -22103,9 +22103,9 @@
   "trace_m": null
  },
  "seotlongagricultureschool": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -28.459059,
   "lon": 28.854683,
   "long": "Seotlong Agriculture School parkrun",
@@ -22127,9 +22127,9 @@
   "trace_m": null
  },
  "settlerspark": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -29.578627,
   "lon": 30.363324,
   "long": "Settlers Park parkrun",
@@ -23290,9 +23290,9 @@
   "trace_m": null
  },
  "standerton": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -26.956032,
   "lon": 29.250275,
   "long": "Standerton parkrun",
@@ -23338,9 +23338,9 @@
   "trace_m": null
  },
  "starraceway": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -26.851291,
   "lon": 26.608491,
   "long": "Star Raceway parkun",
@@ -24868,9 +24868,9 @@
   "trace_m": null
  },
  "tinleymanor": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -29.438383,
   "lon": 31.251665,
   "long": "Tinley Manor parkrun",
@@ -25613,9 +25613,9 @@
   "trace_m": null
  },
  "upington": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -28.444304,
   "lon": 21.269767,
   "long": "Upington parkrun",
@@ -26097,9 +26097,9 @@
   "trace_m": null
  },
  "vryheid": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -27.777853,
   "lon": 30.794659,
   "long": "Vryheid parkrun",
@@ -26674,9 +26674,9 @@
   "trace_m": null
  },
  "welkom": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -27.973608,
   "lon": 26.739236,
   "long": "Welkom parkrun",
@@ -27454,9 +27454,9 @@
   "trace_m": null
  },
  "winterton": {
-  "built_by": "v0.5.0",
+  "built_by": "v0.6.1",
   "distance_m": null,
-  "last_tried": "2026-06-27",
+  "last_tried": "2026-07-01",
   "lat": -28.898131,
   "lon": 29.541956,
   "long": "Winterton parkrun",
