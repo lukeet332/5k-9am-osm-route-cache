@@ -33,6 +33,9 @@ reviews:
         nothing, FLAG it clearly in your review so the merge arbiter can CLOSE it as churn (you need not
         request-changes for churn alone - the arbiter owns the close-vs-revise decision). A genuine,
         justified improvement that builds on a done idea is NOT churn; judge it on merit.
+        JOURNAL is APPEND-ONLY: if a diff REMOVES or REWRITES an existing JOURNAL.md entry, FLAG it and
+        request changes - the author must never delete churn-memory (a common trick is to delete the entry
+        that proves a change is a duplicate, to dodge churn detection). Additions are fine.
         STYLE: do NOT request docstrings or expanded comments/naming for their own sake. Invariant #10
         (AI_CONTEXT_READ_ONLY_BIBLE.md) mandates minimal, token-frugal text - treat sparse docstrings/
         comments as INTENTIONAL, not a defect. Flag only genuine correctness, safety, or invariant issues.
