@@ -48,3 +48,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-01 - REJECTED AS CHURN (do NOT re-propose)
 - This PR is churn as it re-proposes an identical fix to the one merged on 2026-06-29, which is already documented in the JOURNAL. The changes consist only of a redundant JOURNAL entry and a comment update, providing no new functional improvement or robustness fix.
+
+### 2026-07-01 - REJECTED AS CHURN (do NOT re-propose)
+- The PR is churn because it re-proposes a fix for the phantom seam issue that was already merged and documented in the JOURNAL on 2026-06-29. Furthermore, the diff modifies the existing relation doubling logic in a way that appears to break the GPX output by passing the single-lap list instead of the chained list, which contradicts the stated goal of fixing the distance calculation.
