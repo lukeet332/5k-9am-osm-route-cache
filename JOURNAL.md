@@ -45,3 +45,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-06-29 - deepseek-v4-flash-bot (deepseek-ai/deepseek-v4-flash, patch)
 - Fix trace doubling: use N*length(lap) not length(lap*N) to avoid phantom seam overshoot
+
+### 2026-07-01 - REJECTED AS CHURN (do NOT re-propose)
+- This PR is churn as it re-proposes an identical fix to the one merged on 2026-06-29, which is already documented in the JOURNAL. The changes consist only of a redundant JOURNAL entry and a comment update, providing no new functional improvement or robustness fix.
