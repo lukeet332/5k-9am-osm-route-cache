@@ -173,14 +173,52 @@ jobs:
           gh pr comment "$PR" --body "✅ AI review (\`${{ steps.rev.outputs.reviewer }}\`) approved: ${{ steps.rev.outputs.feedback }}"
           gh pr edit "$PR" --add-label automerge --remove-label needs-ai-review
 
-      # ---- churn: already-done / no-op / re-proposed work. Don't revise - CLOSE the PR + delete the
-      #      branch so the author abandons this idea and proposes a NEW one on the next run. ----
-      - name: Churn -> close PR + delete branch
+      # ---- churn: already-done / no-op / re-proposed work. RECORD the rejection to the JOURNAL (so it is
+      #      not re-proposed), then ask the author for a genuinely NEW idea RIGHT NOW - converge in-run
+      #      instead of just waiting for the next scheduled run. Bounded by the revision-budget guard. ----
+      - name: Churn -> record it + propose a fresh idea (converge)
         if: steps.guard.outputs.proceed == 'true' && steps.rev.outputs.bible_touched != 'true' && steps.rev.outputs.verdict == 'churn'
         env:
+          GH_MODELS_TOKEN: ${{ secrets.BOT_PAT }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          SAMBANOVA_API_KEY: ${{ secrets.SAMBANOVA_API_KEY }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           GH_TOKEN: ${{ secrets.BOT_PAT }}
+          FEEDBACK: ${{ steps.rev.outputs.feedback }}
         run: |
-          gh pr close "$PR" --delete-branch --comment "$(printf '🌀 **Closed as churn** by AI review (`%s`).\n\n> %s\n\nThis idea is already implemented / a no-op, so revising it is pointless - the author should propose a genuinely NEW idea on the next maintenance run (this is recorded so it is not re-proposed).' "${{ steps.rev.outputs.reviewer }}" "${{ steps.rev.outputs.feedback }}")"
+          git config user.name "ai-author-bot"
+          git config user.email "ai-author-bot@users.noreply.github.com"
+          # 1) PERSIST the rejection to main's JOURNAL (append-only) so this idea is NOT re-proposed - by
+          #    this run's fresh attempt OR future runs. The churn change is discarded (already-done/no-op),
+          #    so we reset to clean main, which also drops the misleading "did X" entry the proposal wrote.
+          git fetch origin main --quiet
+          git checkout -B main origin/main
+          printf '\n### %s - REJECTED AS CHURN (do NOT re-propose)\n- %s\n' "$(date -u +%F)" "$FEEDBACK" >> JOURNAL.md
+          git commit -aqm "journal: record a churn rejection [skip ci]"
+          git push origin main || (git pull --rebase origin main && git push origin main) || echo "journal push skipped"
+          # 2) Ask the author for a genuinely DIFFERENT idea from clean main (NORMAL mode, no revise feedback,
+          #    so it restarts rather than patching the churn). It reads the JOURNAL rejection and picks a new
+          #    lever. If it produces a self-test-passing change, push it -> review re-runs on the NEW idea
+          #    (the [ai-revise] stamp counts toward the budget guard, so churn->fresh can't loop forever).
+          git checkout -B "$BRANCH" origin/main
+          python .github/scripts/ai_improve.py || true
+          if ! git diff --quiet && OUT=$(python selftest.py 2>&1 && python test_behavior.py 2>&1); then
+            echo "$OUT"
+            H=$(git diff origin/main | git hash-object --stdin | cut -c1-8)
+            git commit -aqm "chore: fresh idea after churn [ai-revise h=$H]"
+            git push --force origin "HEAD:$BRANCH"    # bot scratch branch; the churn commit is intentionally replaced
+            gh pr comment "$PR" --body "🌀 Prior idea was churn (recorded in the JOURNAL so it isn't re-proposed). The author proposed a fresh idea — re-reviewing now." || true
+          else
+            [ -n "$OUT" ] && echo "$OUT"
+            gh pr close "$PR" --delete-branch --comment "$(printf '🌀 **Closed as churn** — recorded in the JOURNAL so it is not re-proposed. A fresh idea did not converge this run; the next maintenance run will try again.')" || true
+          fi
 
       # ---- revise: one concrete fixable blocker - author revises on the same branch (re-triggers review) ----
       - name: Reject -> author revises
