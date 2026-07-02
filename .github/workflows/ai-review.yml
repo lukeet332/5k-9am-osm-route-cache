@@ -279,9 +279,19 @@ jobs:
           # next scheduled maintenance run proposes a FRESH idea. The JOURNAL already records what was
           # tried, so the author won't simply re-propose it. (Prefer convergence; abandon beats limbo.)
           git checkout -- . 2>/dev/null || true
-          gh pr comment "$PR" --body "$(printf '🌀 **Abandoned — could not converge.**\n\nAfter several attempts the author could not produce a self-test-passing fix for the review, so this attempt is dropped (not escalated). The next maintenance run will propose a fresh idea.')" || true
+          # PERSIST the unresolved reviewer finding to main's JOURNAL (append-only) BEFORE deleting the
+          # branch - else a real bug the reviewer identified is LOST with the branch (it once was: a
+          # trace_courses_multi bug found in review vanished when its PR was abandoned). Recorded as a
+          # KNOWN ISSUE so future runs see it and can prioritise a real fix instead of re-discovering it.
+          git config user.name "ai-author-bot"; git config user.email "ai-author-bot@users.noreply.github.com"
+          if git fetch origin main --quiet && git checkout -B main origin/main; then
+            printf '\n### %s - KNOWN ISSUE (unfixed; author could not converge on PR #%s)\n- %s\n' "$(date -u +%F)" "$PR" "$ORIG_FB" >> JOURNAL.md
+            git commit -aqm "journal: record an unfixed reviewer finding [skip ci]"
+            git push origin main || (git pull --rebase origin main && git push origin main) || echo "::warning::known-issue journal push failed"
+          fi
+          gh pr comment "$PR" --body "$(printf '🌀 **Abandoned — could not converge.**\n\nAfter several attempts the author could not produce a self-test-passing fix, so this attempt is dropped (not escalated). The unresolved finding is recorded in the JOURNAL as a KNOWN ISSUE; the next maintenance run will try again.')" || true
           gh pr close "$PR" --delete-branch || true
-          echo "::warning::revision could not converge after retries — abandoned autonomously (no human handoff)."
+          echo "::warning::revision could not converge after retries — abandoned autonomously (finding recorded; no human handoff)."
 
       # ---- budget reached or author stalled: hand to a human ----
       - name: Budget/stall reached -> abandon autonomously (no human handoff)

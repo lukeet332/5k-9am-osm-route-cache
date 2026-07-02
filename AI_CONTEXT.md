@@ -53,6 +53,7 @@ add/rename a tested symbol:
 - `build_one(ev) -> dict{status: success|failed|gap, source, distance_m, relation_m, trace_m, provisional}` (= index.json schema)
 - `is_locked(entry) -> bool` (distance_m in 4800-5200)
 - `audit_recoverable(index)`, `best_lap_n(length_m)` (self-audit: flags non-success entries recoverable at the best integer lap count)
+- `_recent_pool(valid_traces, cutoff)` (multi-trace averaging: keeps each path paired with its date; recent-or-all pool)
 - `write_gpx(name,longname,pts,source)`; `length(pts)`; `algo_version()->str`; `_trace_cache_file(name,half_m,page)`
 - consts `REL_LO`/`REL_HI` (4800/5200), `ROUTES`, `TRACECACHE`
 Must change a contract? Can't edit selftest.py -> keep a thin old-signature wrapper, update the matching

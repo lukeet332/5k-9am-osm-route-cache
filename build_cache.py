@@ -221,6 +221,14 @@ def trace_points(name, lat, lon, half_m=900, max_pages=5):
             break          # last page reached
     return pts
 
+def _recent_pool(valid_traces, cutoff):
+    """The trace paths to average, from [(date_iso, path)]: those on/after cutoff if >=2 exist, else all.
+    The date stays PAIRED with its path - a prior bug zipped paths against every trace date (incl.
+    filtered-out ones), so the recency filter used the wrong date per trace and could average obsolete
+    traces."""
+    recent = [t for d, t in valid_traces if datetime.date.fromisoformat(d) >= cutoff]
+    return recent if len(recent) >= 2 else [t for _, t in valid_traces]
+
 def trace_courses_multi(name, lat, lon):
     pts = trace_points(name, lat, lon)
     # group by date: Saturday/Christmas/New-Year, local 09:00-09:45, anchored within 150m of the start
@@ -248,13 +256,12 @@ def trace_courses_multi(name, lat, lon):
             d += H(path[-1][0], path[-1][1], p[0], p[1]); path.append(p)
             if d >= 5500 or (p[2] - path[0][2]).total_seconds() > 2700:   # ~5.5k or past 09:45
                 break
-        valid_traces.append([(p[0], p[1]) for p in path])
+        valid_traces.append((date, [(p[0], p[1]) for p in path]))   # keep each path WITH its date
     if not valid_traces:
         return None
     # prefer recent traces (last 2 years) to track current course shape; older traces may be obsolete
     cutoff = datetime.date.today() - datetime.timedelta(days=730)
-    recent = [t for t, d in zip(valid_traces, traces.keys()) if datetime.date.fromisoformat(d) >= cutoff]
-    pool = recent if len(recent) >= 2 else valid_traces
+    pool = _recent_pool(valid_traces, cutoff)
     minlen = min(len(t) for t in pool)
     avg_path = []
     for i in range(minlen):
@@ -262,7 +269,7 @@ def trace_courses_multi(name, lat, lon):
         los = [t[i][1] for t in pool]
         avg_path.append((sum(las)/len(las), sum(los)/len(los)))
     avg_len = length(avg_path)
-    first_date = list(traces.keys())[0]
+    first_date = valid_traces[0][0]   # date of a real valid trace, not just any grouped key
     return avg_len, avg_path, first_date
 
 def trace_course(name, lat, lon):
