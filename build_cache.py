@@ -223,6 +223,8 @@ def trace_points(name, lat, lon, half_m=900, max_pages=5):
 
 def trace_courses_multi(name, lat, lon):
     pts = trace_points(name, lat, lon)
+    if pts is None:
+        return None
     # group by date: Saturday/Christmas/New-Year, local 09:00-09:45, anchored within 150m of the start
     traces = {}
     for la, lo, t in pts:
@@ -271,6 +273,8 @@ def trace_course(name, lat, lon):
         return res
     # fallback: single trace
     pts = trace_points(name, lat, lon)
+    if pts is None:
+        return None
     win = []
     for la, lo, t in pts:
         try:

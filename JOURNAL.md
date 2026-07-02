@@ -51,3 +51,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-01 - REJECTED AS CHURN (do NOT re-propose)
 - The PR is churn because it re-proposes a fix for the phantom seam issue that was already merged and documented in the JOURNAL on 2026-06-29. Furthermore, the diff modifies the existing relation doubling logic in a way that appears to break the GPX output by passing the single-lap list instead of the chained list, which contradicts the stated goal of fixing the distance calculation.
+
+### 2026-07-02 - deepseek-v4-flash-bot (deepseek-ai/deepseek-v4-flash, patch)
+- Fix error crash in trace_courses_multi when trace_points returns None
