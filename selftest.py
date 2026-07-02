@@ -151,7 +151,17 @@ def main():
     assert "genuine" not in audit and "done" not in audit, f"audit must not flag gaps/successes: {audit}"
     assert "recover" in audit, f"audit must flag a recoverable failed entry: {audit}"
 
-    print(f"OK (invariants) — reconstructed {L:.0f} m / {len(pts)} pts; helpers + lock + trust + doubling + error-guard + best_lap_n property + audit invariants pass.")
+    # 8) trace recency pool keeps each path PAIRED with its date (regression: a prior bug zipped paths
+    #    against every trace date incl. filtered-out ones, so the recency filter used the wrong date per
+    #    trace). With >=2 recent the old trace is dropped; with <2 recent all are used - RIGHT paths either way.
+    old = ("2019-01-05", [(0.0, 0.0)])
+    r1  = ("2025-04-12", [(1.0, 1.0)])
+    r2  = ("2025-05-10", [(2.0, 2.0)])
+    cut = datetime.date(2024, 1, 1)
+    assert bc._recent_pool([old, r1, r2], cut) == [[(1.0, 1.0)], [(2.0, 2.0)]], "recency pool misaligned (>=2 recent)"
+    assert bc._recent_pool([old, r1], cut) == [[(0.0, 0.0)], [(1.0, 1.0)]], "recency pool should fall back to all (<2 recent)"
+
+    print(f"OK (invariants) — reconstructed {L:.0f} m / {len(pts)} pts; helpers + lock + trust + doubling + error-guard + best_lap_n property + audit + trace-pool alignment pass.")
 
 if __name__ == "__main__":
     try:

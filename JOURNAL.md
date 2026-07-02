@@ -54,3 +54,11 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-02 - deepseek-v4-flash-bot (deepseek-ai/deepseek-v4-flash, patch)
 - Fix error crash in trace_courses_multi when trace_points returns None
+
+### 2026-07-02 - CORRECTION (owner)
+- The entry above (#94) was a NO-OP: `trace_points` never returns None (it returns a list), so the added
+  `if pts is None: return None` guard is unreachable dead code and fixed no crash. Do NOT re-add such guards.
+- The REAL trace_courses_multi bug was elsewhere and had been flagged in the abandoned PR #88 then lost:
+  the recency filter zipped paths against ALL grouped dates (incl. filtered-out ones), misaligning each
+  trace's date -> it could average obsolete traces. FIXED: dates now travel with their path via
+  `_recent_pool(valid_traces, cutoff)` (tested in selftest #8).
