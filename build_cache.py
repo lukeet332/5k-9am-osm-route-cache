@@ -271,6 +271,8 @@ def trace_course(name, lat, lon):
         return res
     # fallback: single trace
     pts = trace_points(name, lat, lon)
+    if pts is None:
+        return None
     win = []
     for la, lo, t in pts:
         try:
