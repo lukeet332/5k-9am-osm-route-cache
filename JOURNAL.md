@@ -62,3 +62,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
   the recency filter zipped paths against ALL grouped dates (incl. filtered-out ones), misaligning each
   trace's date -> it could average obsolete traces. FIXED: dates now travel with their path via
   `_recent_pool(valid_traces, cutoff)` (tested in selftest #8).
+
+### 2026-07-03 - DeepSeek-V3.2-bot (DeepSeek-V3.2, patch)
+- Fix trace_course fallback crash when trace_points returns empty list
