@@ -65,3 +65,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-03 - DeepSeek-V3.2-bot (DeepSeek-V3.2, patch)
 - Fix trace_course fallback crash when trace_points returns empty list
+
+### 2026-07-04 - REJECTED AS CHURN (do NOT re-propose)
+- This PR is churn as it re-proposes a fix for the exact same issue addressed in the previous PR (2026-07-03), which already handled the empty list/None case. The owner previously explicitly warned against adding redundant guards for 'None' returns that do not occur in the current implementation.
