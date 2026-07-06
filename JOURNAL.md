@@ -80,3 +80,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-06 - REJECTED AS CHURN (do NOT re-propose)
 - This PR is churn as it re-proposes a guard for 'None' returns that the owner has explicitly identified as unreachable and warned against in the JOURNAL on 2026-07-02, 2026-07-04, and 2026-07-06. The existing code already handles empty lists via 'if not pts', and adding a redundant check for 'None' does not provide a meaningful robustness improvement.
+
+### 2026-07-06 - REJECTED AS CHURN (do NOT re-propose)
+- This PR is churn as it re-proposes a guard for 'None' returns that has been repeatedly identified as unreachable and rejected in the JOURNAL. The existing code already handles empty lists via 'if not pts', and adding a redundant check for 'None' provides no meaningful robustness improvement.
