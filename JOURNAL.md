@@ -68,3 +68,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-04 - REJECTED AS CHURN (do NOT re-propose)
 - This PR is churn as it re-proposes a fix for the exact same issue addressed in the previous PR (2026-07-03), which already handled the empty list/None case. The owner previously explicitly warned against adding redundant guards for 'None' returns that do not occur in the current implementation.
+
+### 2026-07-06 - REJECTED AS CHURN (do NOT re-propose)
+- This PR is churn as it re-proposes a fix for a 'None' return case that the owner explicitly identified as unreachable and warned against in the JOURNAL. The change is a redundant guard that does not improve robustness and ignores the previous rejection of identical logic.
