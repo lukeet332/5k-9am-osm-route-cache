@@ -280,7 +280,7 @@ def trace_course(name, lat, lon):
         return res
     # fallback: single trace
     pts = trace_points(name, lat, lon)
-    if not pts:  # empty list or None
+    if pts is None or not pts:  # None on network error, or empty list
         return None
     win = []
     for la, lo, t in pts:
