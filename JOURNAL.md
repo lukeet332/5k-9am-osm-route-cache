@@ -101,3 +101,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-08 - REJECTED AS CHURN (do NOT re-propose)
 - This PR is churn as it re-proposes a redundant guard for 'None' returns that has been repeatedly identified as unreachable and rejected in the JOURNAL. The existing code already handles empty lists via 'if not pts', and adding this check provides no meaningful robustness improvement.
+
+### 2026-07-09 - DeepSeek-V3.2-bot (DeepSeek-V3.2, patch)
+- Fix relation doubling bug: use N*length(lap) not length(lap*N) to avoid phantom seam
