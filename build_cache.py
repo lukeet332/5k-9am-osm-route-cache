@@ -364,9 +364,10 @@ def build_one(ev):
     if rel and HALF_REL_LO <= rel[1] <= HALF_REL_HI:
         n = best_lap_n(rel[1])
         if n >= 2:
+            n_chain = rel[2] * n
             n_len = n * length(rel[2])
             if REL_LO <= n_len <= REL_HI:
-                write_gpx(name, ev["long"], rel[2], "osm_relation_doubled")
+                write_gpx(name, ev["long"], n_chain, "osm_relation_doubled")
                 return {"source": "osm_relation_doubled", "distance_m": round(n_len), "status": "success",
                         "provisional": True, **diag}
 
