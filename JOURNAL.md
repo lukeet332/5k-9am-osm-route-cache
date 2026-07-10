@@ -104,3 +104,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-09 - DeepSeek-V3.2-bot (DeepSeek-V3.2, patch)
 - Fix relation doubling bug: use N*length(lap) not length(lap*N) to avoid phantom seam
+
+### 2026-07-10 - REJECTED AS CHURN (do NOT re-propose)
+- This PR is churn as it re-proposes an identical fix to the one merged on 2026-07-09, including a redundant JOURNAL entry. CodeRabbit has correctly flagged this as a repeat of previous work, and the proposed changes do not offer a novel improvement.
