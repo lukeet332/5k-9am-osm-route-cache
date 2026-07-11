@@ -366,8 +366,7 @@ def build_one(ev):
         if n >= 2:
             n_len = n * length(rel[2])
             if REL_LO <= n_len <= REL_HI:
-                n_chain = rel[2] * n
-                write_gpx(name, ev["long"], n_chain, "osm_relation_doubled")
+                write_gpx(name, ev["long"], rel[2], "osm_relation_doubled")
                 return {"source": "osm_relation_doubled", "distance_m": round(n_len), "status": "success",
                         "provisional": True, **diag}
 
