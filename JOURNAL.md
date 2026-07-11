@@ -109,4 +109,4 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 - This PR is churn as it re-proposes an identical fix to the one merged on 2026-07-09, including a redundant JOURNAL entry. CodeRabbit has correctly flagged this as a repeat of previous work, and the proposed changes do not offer a novel improvement.
 
 ### 2026-07-11 - DeepSeek-V3.2-bot (DeepSeek-V3.2, patch)
-- Fix relation doubling bug: use N*length(lap) not length(lap*N) to avoid phantom seam
+- Fix relation doubling geometry: write single-lap GPX, not concatenated, to avoid phantom seam
