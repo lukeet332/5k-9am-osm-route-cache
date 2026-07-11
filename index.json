@@ -642,9 +642,9 @@
   "trace_m": null
  },
  "ardgillan": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.586088,
   "lon": -6.161152,
   "long": "Ardgillan parkrun",
@@ -848,9 +848,9 @@
   "trace_m": null
  },
  "athlonersc": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.428665,
   "lon": -7.922188,
   "long": "Athlone RSC parkrun",
@@ -1173,9 +1173,9 @@
   "trace_m": null
  },
  "ballymount": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.309692,
   "lon": -6.373278,
   "long": "Ballymount parkrun",
@@ -2974,9 +2974,9 @@
   "trace_m": null
  },
  "brickfields": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.331707,
   "lon": -6.310669,
   "long": "Brickfields parkrun",
@@ -3106,9 +3106,9 @@
   "trace_m": null
  },
  "broadmeadowlinear": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.474318,
   "lon": -6.232618,
   "long": "Broadmeadow Linear parkrun",
@@ -3633,9 +3633,9 @@
   "trace_m": null
  },
  "bushydublin": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.298951,
   "lon": -6.296455,
   "long": "Bushy parkrun, Dublin",
@@ -4942,9 +4942,9 @@
   "trace_m": null
  },
  "claremorris": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.712598,
   "lon": -8.997864,
   "long": "Claremorris parkrun",
@@ -5122,9 +5122,9 @@
   "trace_m": null
  },
  "clonburwoods": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.547406,
   "lon": -9.361828,
   "long": "Clonbur Woods parkrun",
@@ -5617,9 +5617,9 @@
   "trace_m": null
  },
  "corkagh": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.315227,
   "lon": -6.410276,
   "long": "Corkagh parkrun",
@@ -6206,9 +6206,9 @@
   "trace_m": 5026
  },
  "darndale": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.402785,
   "lon": -6.18863,
   "long": "Darndale parkrun",
@@ -6617,9 +6617,9 @@
   "trace_m": null
  },
  "doddervalley": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.27877,
   "lon": -6.35667,
   "long": "Dodder Valley parkrun",
@@ -6665,9 +6665,9 @@
   "trace_m": null
  },
  "donabate": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.486227,
   "lon": -6.167897,
   "long": "Donabate parkrun",
@@ -7932,9 +7932,9 @@
   "trace_m": null
  },
  "fairview": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.363864,
   "lon": -6.228896,
   "long": "Fairview parkrun",
@@ -8042,9 +8042,9 @@
   "trace_m": null
  },
  "fathercollins": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.405158,
   "lon": -6.16021,
   "long": "Father Collins parkrun",
@@ -9836,9 +9836,9 @@
   "trace_m": null
  },
  "griffeen": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.343685,
   "lon": -6.445112,
   "long": "Griffeen parkrun",
@@ -10457,9 +10457,9 @@
   "trace_m": null
  },
  "hartstown": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.395076,
   "lon": -6.415828,
   "long": "Hartstown parkrun",
@@ -12915,9 +12915,9 @@
   "trace_m": null
  },
  "knocknacarra": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": 5426,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.265061,
   "lon": -9.134823,
   "long": "Knocknacarra parkrun",
@@ -13708,9 +13708,9 @@
   "trace_m": null
  },
  "laytownbeach": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.678586,
   "lon": -6.236935,
   "long": "Laytown Beach parkrun",
@@ -14901,9 +14901,9 @@
   "trace_m": null
  },
  "malahide": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.444487,
   "lon": -6.162729,
   "long": "Malahide parkrun",
@@ -15336,9 +15336,9 @@
   "trace_m": null
  },
  "marlay": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.27689,
   "lon": -6.271777,
   "long": "Marlay parkrun",
@@ -16506,9 +16506,9 @@
   "trace_m": null
  },
  "mountbellewforest": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.468051,
   "lon": -8.509254,
   "long": "Mountbellew Forest parkrun",
@@ -16566,9 +16566,9 @@
   "trace_m": null
  },
  "mountlucas": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.281689,
   "lon": -7.206523,
   "long": "Mountlucas parkrun",
@@ -16686,9 +16686,9 @@
   "trace_m": null
  },
  "mullingar": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.517513,
   "lon": -7.368025,
   "long": "Mullingar parkrun",
@@ -17010,9 +17010,9 @@
   "trace_m": null
  },
  "navan": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.661214,
   "lon": -6.693934,
   "long": "Navan parkrun",
@@ -17999,9 +17999,9 @@
   "trace_m": null
  },
  "oldbridge": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.723043,
   "lon": -6.418183,
   "long": "Oldbridge parkrun",
@@ -18429,9 +18429,9 @@
   "trace_m": null
  },
  "oughterard": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.428361,
   "lon": -9.315907,
   "long": "Oughterard parkrun",
@@ -19766,9 +19766,9 @@
   "trace_m": null
  },
  "poolbeg": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.337026,
   "lon": -6.210301,
   "long": "Poolbeg parkrun",
@@ -19802,9 +19802,9 @@
   "trace_m": null
  },
  "poppintree": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.398403,
   "lon": -6.286613,
   "long": "Poppintree parkrun",
@@ -19814,9 +19814,9 @@
   "trace_m": null
  },
  "porchfield": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.554741,
   "lon": -6.782598,
   "long": "Porch Field parkrun",
@@ -19899,9 +19899,9 @@
   "trace_m": null
  },
  "porterstown": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.370116,
   "lon": -6.402238,
   "long": "Porterstown parkrun",
@@ -21034,9 +21034,9 @@
   "trace_m": 212
  },
  "rivervalley": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.454443,
   "lon": -6.243532,
   "long": "River Valley parkrun",
@@ -21491,9 +21491,9 @@
   "trace_m": null
  },
  "royalcanalkilcock": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.400501,
   "lon": -6.670893,
   "long": "Royal Canal parkrun, Kilcock",
@@ -23159,9 +23159,9 @@
   "trace_m": null
  },
  "sportirelandcampus": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.392563,
   "lon": -6.357092,
   "long": "Sport Ireland Campus parkrun",
@@ -23374,9 +23374,9 @@
   "trace_m": null
  },
  "stannes": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.371179,
   "lon": -6.174574,
   "long": "St Anne\u2019s parkrun",
@@ -24579,9 +24579,9 @@
   "trace_m": null
  },
  "thegrandcanalway": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.2784,
   "lon": -7.4862,
   "long": "The Grand Canal Way parkrun, Tullamore",
@@ -24952,9 +24952,9 @@
   "trace_m": null
  },
  "tolkavalley": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.378396,
   "lon": -6.297293,
   "long": "Tolka Valley parkrun",
@@ -25108,9 +25108,9 @@
   "trace_m": null
  },
  "tourmakeadywood": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.654072,
   "lon": -9.37888,
   "long": "Tourmakeady Wood parkrun",
@@ -25408,9 +25408,9 @@
   "trace_m": null
  },
  "tymon": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.295314,
   "lon": -6.3282,
   "long": "Tymon parkrun",
@@ -25589,9 +25589,9 @@
   "trace_m": null
  },
  "universityofgalway": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.291747,
   "lon": -9.07094,
   "long": "University of Galway parkrun",
@@ -26674,9 +26674,9 @@
   "trace_m": null
  },
  "waterstown": {
-  "built_by": "v0.6.3",
+  "built_by": "v0.6.6",
   "distance_m": null,
-  "last_tried": "2026-07-05",
+  "last_tried": "2026-07-11",
   "lat": 53.358719,
   "lon": -6.370558,
   "long": "Waterstown parkrun",
