@@ -1988,9 +1988,9 @@
   "trace_m": null
  },
  "berrinba": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.665606,
   "lon": 153.077193,
   "long": "Berrinba parkrun",
@@ -3094,9 +3094,9 @@
   "trace_m": null
  },
  "broadbeachwaters": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -28.018497,
   "lon": 153.412292,
   "long": "Broadbeach Waters parkrun",
@@ -3717,9 +3717,9 @@
   "trace_m": null
  },
  "calamvale": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.620775,
   "lon": 153.039287,
   "long": "Calamvale parkrun",
@@ -5062,9 +5062,9 @@
   "trace_m": null
  },
  "cleveland": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.539355,
   "lon": 153.274298,
   "long": "Cleveland parkrun",
@@ -5569,9 +5569,9 @@
   "trace_m": null
  },
  "coomera": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.885247,
   "lon": 153.281709,
   "long": "Coomera parkrun",
@@ -7317,9 +7317,9 @@
   "trace_m": null
  },
  "eccoripley": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.681056,
   "lon": 152.80014,
   "long": "Ecco Ripley parkrun",
@@ -8356,9 +8356,9 @@
   "trace_m": null
  },
  "fodderforest": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.583123,
   "lon": 153.293958,
   "long": "Fodder Forest parkrun",
@@ -8417,9 +8417,9 @@
   "trace_m": null
  },
  "forestlake": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.61964,
   "lon": 152.967745,
   "long": "Forest Lake parkrun",
@@ -8778,9 +8778,9 @@
   "trace_m": null
  },
  "gainsboroughparklands": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.812345,
   "lon": 153.299229,
   "long": "Gainsborough Parklands parkrun",
@@ -8886,9 +8886,9 @@
   "trace_m": null
  },
  "gatton": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.570426,
   "lon": 152.270476,
   "long": "Gatton parkrun",
@@ -9680,9 +9680,9 @@
   "trace_m": 3825
  },
  "greenbank": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.739202,
   "lon": 152.922846,
   "long": "Greenbank parkrun",
@@ -9728,9 +9728,9 @@
   "trace_m": null
  },
  "greenheartrobinaparklands": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -28.063017,
   "lon": 153.382328,
   "long": "Greenheart Robina Parklands parkrun",
@@ -10914,9 +10914,9 @@
   "trace_m": null
  },
  "hiddenvale": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.716932,
   "lon": 152.46597,
   "long": "Hidden Vale parkrun",
@@ -11721,9 +11721,9 @@
   "trace_m": null
  },
  "ipswichqld": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.625421,
   "lon": 152.764292,
   "long": "Ipswich QLD parkrun",
@@ -11817,9 +11817,9 @@
   "trace_m": null
  },
  "jakespoint": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.733275,
   "lon": 114.15228,
   "long": "Jakes Point parkrun",
@@ -11959,9 +11959,9 @@
   "trace_m": null
  },
  "jeunepark": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.993368,
   "lon": 152.992548,
   "long": "Jeune Park parkrun",
@@ -12831,9 +12831,9 @@
   "trace_m": null
  },
  "kirra": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -28.166758,
   "lon": 153.522781,
   "long": "Kirra parkrun",
@@ -14359,9 +14359,9 @@
   "trace_m": null
  },
  "loganriver": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.698831,
   "lon": 153.192024,
   "long": "Logan River parkrun",
@@ -14877,9 +14877,9 @@
   "trace_m": null
  },
  "mainbeach": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.972706,
   "lon": 153.428879,
   "long": "Main Beach parkrun",
@@ -15589,9 +15589,9 @@
   "trace_m": null
  },
  "meadowbrook": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.673493,
   "lon": 153.155785,
   "long": "Meadowbrook parkrun",
@@ -16662,9 +16662,9 @@
   "trace_m": null
  },
  "mudgeeraba": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -28.086682,
   "lon": 153.364098,
   "long": "Mudgeeraba parkrun",
@@ -18597,9 +18597,9 @@
   "trace_m": null
  },
  "pallara": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.609314,
   "lon": 153.011071,
   "long": "Pallara parkrun",
@@ -18681,9 +18681,9 @@
   "trace_m": null
  },
  "paradisepoint": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.885082,
   "lon": 153.396218,
   "long": "Paradise Point parkrun",
@@ -19368,9 +19368,9 @@
   "trace_m": null
  },
  "picnicpointparklands": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.578938,
   "lon": 151.986016,
   "long": "Picnic Point Parklands parkrun",
@@ -19488,9 +19488,9 @@
   "trace_m": null
  },
  "pittsworth": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.712352,
   "lon": 151.641106,
   "long": "Pittsworth parkrun",
@@ -20572,9 +20572,9 @@
   "trace_m": null
  },
  "redlandbay": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.614582,
   "lon": 153.307539,
   "long": "Redland Bay parkrun",
@@ -21082,9 +21082,9 @@
   "trace_m": null
  },
  "robelledomain": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.680012,
   "lon": 152.903883,
   "long": "Robelle Domain parkrun",
@@ -21154,9 +21154,9 @@
   "trace_m": null
  },
  "rocksriverside": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.542633,
   "lon": 152.959235,
   "long": "Rocks Riverside parkrun",
@@ -22006,9 +22006,9 @@
   "trace_m": null
  },
  "scribblygumsconservation": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.52964,
   "lon": 153.235428,
   "long": "Scribbly Gums Conservation parkrun",
@@ -22629,9 +22629,9 @@
   "trace_m": null
  },
  "sirromet": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.593935,
   "lon": 153.230817,
   "long": "Sirromet parkrun",
@@ -23064,9 +23064,9 @@
   "trace_m": null
  },
  "southtoowoomba": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.594604,
   "lon": 151.956346,
   "long": "South Toowoomba parkrun",
@@ -23495,9 +23495,9 @@
   "trace_m": null
  },
  "stgeorge": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -28.044422,
   "lon": 148.568244,
   "long": "St George parkrun",
@@ -23928,9 +23928,9 @@
   "trace_m": null
  },
  "surfersparadise": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -28.000737,
   "lon": 153.417365,
   "long": "Surfers Paradise parkrun",
@@ -24181,9 +24181,9 @@
   "trace_m": null
  },
  "tamborinemountain": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.941377,
   "lon": 153.193434,
   "long": "Tamborine Mountain parkrun",
@@ -25036,9 +25036,9 @@
   "trace_m": null
  },
  "toowoomba": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.56019,
   "lon": 151.963926,
   "long": "Toowoomba parkrun",
@@ -25565,9 +25565,9 @@
   "trace_m": null
  },
  "underwoodpark": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.598691,
   "lon": 153.147211,
   "long": "Underwood Park parkrun",
@@ -25891,9 +25891,9 @@
   "trace_m": null
  },
  "varsitylakes": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -28.084627,
   "lon": 153.410554,
   "long": "Varsity Lakes parkrun",
@@ -27249,9 +27249,9 @@
   "trace_m": null
  },
  "whiterock": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.676652,
   "lon": 152.849745,
   "long": "White Rock parkrun",
@@ -27562,9 +27562,9 @@
   "trace_m": null
  },
  "wishart": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.560975,
   "lon": 153.103468,
   "long": "Wishart parkrun",
@@ -28103,9 +28103,9 @@
   "trace_m": 5001
  },
  "yarrabilba": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-16",
   "lat": -27.80288,
   "lon": 153.10409,
   "long": "Yarrabilba parkrun",
