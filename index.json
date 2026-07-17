@@ -437,9 +437,9 @@
   "trace_m": null
  },
  "amager": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 55.653057,
   "lon": 12.575108,
   "long": "Amager F\u00e6lled parkrun",
@@ -449,9 +449,9 @@
   "trace_m": null
  },
  "amagerstrandpark": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 55.662538,
   "lon": 12.635341,
   "long": "Amager Strandpark parkrun",
@@ -473,9 +473,9 @@
   "trace_m": null
  },
  "ambleside": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 49.326794,
   "lon": -123.155175,
   "long": "Ambleside parkrun",
@@ -2253,9 +2253,9 @@
   "trace_m": null
  },
  "birchwoodtrails": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 56.733336,
   "lon": -111.438878,
   "long": "Birchwood Trails parkrun",
@@ -2734,9 +2734,9 @@
   "trace_m": null
  },
  "brabrand": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 56.165699,
   "lon": 10.141282,
   "long": "Brabrand parkrun",
@@ -3669,9 +3669,9 @@
   "trace_m": null
  },
  "bygholm": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 55.864821,
   "lon": 9.826912,
   "long": "Bygholm parkrun",
@@ -4317,9 +4317,9 @@
   "trace_m": null
  },
  "centralburnaby": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 49.229288,
   "lon": -123.012837,
   "long": "Central parkrun, Burnaby",
@@ -4809,9 +4809,9 @@
   "trace_m": null
  },
  "churchillparkway": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 49.866258,
   "lon": -97.114076,
   "long": "Churchill Parkway parkrun",
@@ -5725,9 +5725,9 @@
   "trace_m": null
  },
  "courtenayairpark": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 49.681959,
   "lon": -124.982817,
   "long": "Courtenay Airpark parkrun",
@@ -6133,9 +6133,9 @@
   "trace_m": null
  },
  "damhusengen": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 55.681924,
   "lon": 12.471907,
   "long": "Damhusengen parkrun",
@@ -7799,9 +7799,9 @@
   "trace_m": null
  },
  "esbjerg": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 55.482349,
   "lon": 8.442703,
   "long": "Esbjerg parkrun",
@@ -7920,9 +7920,9 @@
   "trace_m": null
  },
  "faelledparken": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": 5317,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 55.701775,
   "lon": 12.568917,
   "long": "F\u00e6lledparken parkrun",
@@ -8682,9 +8682,9 @@
   "trace_m": null
  },
  "fuglsangso": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 56.156235,
   "lon": 8.954318,
   "long": "Fuglsang S\u00f8 parkrun",
@@ -9019,9 +9019,9 @@
   "trace_m": 1501
  },
  "georgelanememorial": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 50.579381,
   "lon": -113.879142,
   "long": "George Lane Memorial parkrun",
@@ -10758,9 +10758,9 @@
   "trace_m": null
  },
  "hendersonlake": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 49.687498,
   "lon": -112.80646,
   "long": "Henderson Lake parkrun",
@@ -11215,9 +11215,9 @@
   "trace_m": null
  },
  "holbaekfaelled": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 55.708668,
   "lon": 11.740032,
   "long": "Holb\u00e6k F\u00e6lled parkrun",
@@ -13035,9 +13035,9 @@
   "trace_m": null
  },
  "kovach": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 50.987447,
   "lon": -118.1921,
   "long": "Kovach parkrun",
@@ -13228,9 +13228,9 @@
   "trace_m": null
  },
  "lahdensatama": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 60.991561,
   "lon": 25.645077,
   "long": "Lahden satama parkrun",
@@ -14721,9 +14721,9 @@
   "trace_m": null
  },
  "lyngby": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 55.77637,
   "lon": 12.49826,
   "long": "Lyngby parkrun",
@@ -15010,9 +15010,9 @@
   "trace_m": null
  },
  "mamquamspawningtrail": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 49.730891,
   "lon": -123.134596,
   "long": "Mamquam Spawning Trail parkrun",
@@ -15710,9 +15710,9 @@
   "trace_m": null
  },
  "mendelriverbank": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 52.134511,
   "lon": -106.648378,
   "long": "Mendel Riverbank parkrun",
@@ -16722,9 +16722,9 @@
   "trace_m": null
  },
  "mundy": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 49.261576,
   "lon": -122.834541,
   "long": "Mundy parkrun",
@@ -17288,9 +17288,9 @@
   "trace_m": null
  },
  "nibe": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 56.987144,
   "lon": 9.654837,
   "long": "Nibe parkrun",
@@ -17408,9 +17408,9 @@
   "trace_m": null
  },
  "nordrefaelled": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 56.48583,
   "lon": 10.031231,
   "long": "Nordre F\u00e6lled parkrun, Randers",
@@ -17651,9 +17651,9 @@
   "trace_m": null
  },
  "nosehill": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 51.12534,
   "lon": -114.129961,
   "long": "Nose Hill parkrun",
@@ -17975,9 +17975,9 @@
   "trace_m": null
  },
  "okanagan": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 49.883293,
   "lon": -119.456654,
   "long": "Okanagan parkrun",
@@ -17987,9 +17987,9 @@
   "trace_m": null
  },
  "okanaganrailtrail": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 50.227507,
   "lon": -119.2817,
   "long": "Okanagan Rail Trail parkrun",
@@ -19199,9 +19199,9 @@
   "trace_m": null
  },
  "penticton": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 49.502306,
   "lon": -119.597222,
   "long": "Penticton parkrun",
@@ -19826,9 +19826,9 @@
   "trace_m": null
  },
  "porinmetsa": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 61.47482,
   "lon": 21.773003,
   "long": "Porin mets\u00e4 parkrun",
@@ -20224,9 +20224,9 @@
   "trace_m": null
  },
  "puolarmaari": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 60.177056,
   "lon": 24.697029,
   "long": "Puolarmaari parkrun",
@@ -20974,9 +20974,9 @@
   "trace_m": null
  },
  "riversidekamloops": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 50.678505,
   "lon": -120.336451,
   "long": "Riverside parkrun, Kamloops",
@@ -21046,9 +21046,9 @@
   "trace_m": null
  },
  "rivervalleyedmonton": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 53.533495,
   "lon": -113.52638,
   "long": "River Valley parkrun, Edmonton",
@@ -22307,9 +22307,9 @@
   "trace_m": null
  },
  "sheepriver": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 50.722089,
   "lon": -113.979312,
   "long": "Sheep River parkrun",
@@ -23111,9 +23111,9 @@
   "trace_m": null
  },
  "spanishbanksbeach": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 49.275962,
   "lon": -123.213802,
   "long": "Spanish Banks Beach parkrun",
@@ -23735,9 +23735,9 @@
   "trace_m": null
  },
  "strathconaisland": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 50.037613,
   "lon": -110.652522,
   "long": "Strathcona Island parkrun",
@@ -24940,9 +24940,9 @@
   "trace_m": null
  },
  "tokoinranta": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 60.180235,
   "lon": 24.946594,
   "long": "Tokoinranta parkrun",
@@ -25735,9 +25735,9 @@
   "trace_m": null
  },
  "urheilupuisto": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 60.442292,
   "lon": 22.259078,
   "long": "Urheilupuisto parkrun",
@@ -25795,9 +25795,9 @@
   "trace_m": null
  },
  "vaaksynkanava": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 61.177524,
   "lon": 25.538652,
   "long": "V\u00e4\u00e4ksyn kanava parkrun",
@@ -25915,9 +25915,9 @@
   "trace_m": null
  },
  "vejen": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 55.474609,
   "lon": 9.120852,
   "long": "Vejen parkrun",
@@ -26590,9 +26590,9 @@
   "trace_m": null
  },
  "wascana": {
-  "built_by": "v0.6.6",
+  "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-11",
+  "last_tried": "2026-07-17",
   "lat": 50.430422,
   "lon": -104.60409,
   "long": "Wascana parkrun",
