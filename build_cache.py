@@ -344,31 +344,30 @@ def build_one(ev):
         write_gpx(name, ev["long"], tr[1], "osm_9am_trace")
         return {"source": "osm_9am_trace", "distance_m": round(tr[0]), "status": "success",
                 "provisional": False, "trace_date": tr[2], **diag}
-
-    # generalise doubling to best-integer-N lap (N=1..6) for traces
-    if tr and HALF_REL_LO <= tr[0] <= HALF_REL_HI:
-        n = best_lap_n(tr[0])
-        if n >= 2:
-            n_len = n * length(tr[1])
-            if REL_LO <= n_len <= REL_HI:
-                write_gpx(name, ev["long"], tr[1], "osm_9am_trace_doubled")
-                return {"source": "osm_9am_trace_doubled", "distance_m": round(n_len), "status": "success",
-                        "provisional": False, "trace_date": tr[2], **diag}
     if rel and REL_LO <= rel[1] <= REL_HI:        # success: OSM relation (provisional)
         write_gpx(name, ev["long"], rel[2], "osm_relation")
         return {"source": "osm_relation", "distance_m": round(rel[1]), "status": "success",
                 "provisional": True, **diag}
 
-    # generalise doubling to best-integer-N lap (N=1..6) for relations. Use N*length(lap), NOT
-    # length(lap+lap): concatenation adds a phantom jump from lap end back to start, overshooting.
-    if rel and HALF_REL_LO <= rel[1] <= HALF_REL_HI:
+    # generalise to best-integer-N lap (N=1..6) for traces
+    if tr and SANE_LO <= tr[0] <= SANE_HI:
+        n = best_lap_n(tr[0])
+        n_len = n * length(tr[1])
+        if REL_LO <= n_len <= REL_HI:
+            src = "osm_9am_trace_doubled" if n > 1 else "osm_9am_trace"
+            write_gpx(name, ev["long"], tr[1], src)
+            return {"source": src, "distance_m": round(n_len), "status": "success",
+                    "provisional": False, "trace_date": tr[2], **diag}
+
+    # generalise to best-integer-N lap (N=1..6) for relations
+    if rel and SANE_LO <= rel[1] <= SANE_HI:
         n = best_lap_n(rel[1])
-        if n >= 2:
-            n_len = n * length(rel[2])
-            if REL_LO <= n_len <= REL_HI:
-                write_gpx(name, ev["long"], rel[2], "osm_relation_doubled")
-                return {"source": "osm_relation_doubled", "distance_m": round(n_len), "status": "success",
-                        "provisional": True, **diag}
+        n_len = n * length(rel[2])
+        if REL_LO <= n_len <= REL_HI:
+            src = "osm_relation_doubled" if n > 1 else "osm_relation"
+            write_gpx(name, ev["long"], rel[2], src)
+            return {"source": src, "distance_m": round(n_len), "status": "success",
+                    "provisional": True, **diag}
 
     # not a success: no geometry. drop any stale success GPX from a prior run.
     stale = os.path.join(ROUTES, f"{name}.gpx")
@@ -381,15 +380,15 @@ def build_one(ev):
     if tr  and SANE_LO <= tr[0]  <= SANE_HI:
         cands.append(("osm_9am_trace_offdist", tr[0], tr[2]))
 
-    # relations whose N-lap length is sane but out of tolerance -> diagnostic
-    if rel and HALF_REL_LO <= rel[1] <= HALF_REL_HI:
+    # N-lap relations that are sane but out of tolerance -> diagnostic
+    if rel and SANE_LO <= rel[1] <= SANE_HI:
         n = best_lap_n(rel[1])
         n_len = n * length(rel[2])
         if SANE_LO <= n_len <= SANE_HI and not (REL_LO <= n_len <= REL_HI):
             cands.append(("osm_relation_doubled_offdist", n_len, None))
 
-    # half-distance traces that fail to N-lap into tolerance
-    if tr and HALF_REL_LO <= tr[0] <= HALF_REL_HI:
+    # N-lap traces that are sane but out of tolerance -> diagnostic
+    if tr and SANE_LO <= tr[0] <= SANE_HI:
         n = best_lap_n(tr[0])
         n_len = n * length(tr[1])
         if SANE_LO <= n_len <= SANE_HI and not (REL_LO <= n_len <= REL_HI):
