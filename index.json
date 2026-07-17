@@ -305,7 +305,7 @@
  "alexandra": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.450142,
   "lon": -2.248827,
   "long": "Alexandra parkrun, Moss Side",
@@ -523,7 +523,7 @@
  "ancholmevalleyway": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.553676,
   "lon": -0.496441,
   "long": "Ancholme Valley Way parkrun",
@@ -1332,7 +1332,7 @@
  "barnsley": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.544369,
   "lon": -1.486115,
   "long": "Barnsley parkrun",
@@ -2544,7 +2544,7 @@
  "bolton": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.574715,
   "lon": -2.395615,
   "long": "Bolton parkrun",
@@ -4214,7 +4214,7 @@
  "castlerea": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.767763,
   "lon": -8.480996,
   "long": "Castlerea parkrun",
@@ -4391,7 +4391,7 @@
  "chaddertonhall": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.554066,
   "lon": -2.158552,
   "long": "Chadderton Hall parkrun",
@@ -4956,7 +4956,7 @@
  "clarence": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.604665,
   "lon": -2.289921,
   "long": "Clarence parkrun",
@@ -5016,7 +5016,7 @@
  "cleethorpes": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.541552,
   "lon": -0.025384,
   "long": "Cleethorpes parkrun",
@@ -5415,7 +5415,7 @@
  "concord": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.424007,
   "lon": -1.441612,
   "long": "Concord parkrun, Sheffield",
@@ -5907,7 +5907,7 @@
  "crosby": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.48269,
   "lon": -3.046711,
   "long": "Crosby parkrun",
@@ -5931,7 +5931,7 @@
  "croxtethhall": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.44217,
   "lon": -2.891774,
   "long": "Croxteth Hall parkrun",
@@ -6003,7 +6003,7 @@
  "cusworthhall": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.529479,
   "lon": -1.177617,
   "long": "Cusworth Hall parkrun",
@@ -6303,7 +6303,7 @@
  "deerparkcarlanstown": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.765863,
   "lon": -6.836092,
   "long": "Deerpark parkrun, Carlanstown",
@@ -7451,7 +7451,7 @@
  "edwincarolancommunity": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.807985,
   "lon": -6.939783,
   "long": "Edwin Carolan Community parkrun",
@@ -8612,7 +8612,7 @@
  "frickleycountry": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.588573,
   "lon": -1.290457,
   "long": "Frickley Country parkrun",
@@ -9237,7 +9237,7 @@
  "glossop": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.447019,
   "lon": -1.939503,
   "long": "Glossop parkrun",
@@ -10099,7 +10099,7 @@
  "haighwoodland": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.572714,
   "lon": -2.609519,
   "long": "Haigh Woodland parkrun",
@@ -10700,7 +10700,7 @@
  "heaton": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.531975,
   "lon": -2.256263,
   "long": "Heaton parkrun",
@@ -11555,7 +11555,7 @@
  "hyde": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.45713,
   "lon": -2.076554,
   "long": "Hyde parkrun",
@@ -11945,6 +11945,18 @@
   "status": "success",
   "trace_date": "2024-04-20",
   "trace_m": 5130
+ },
+ "jeskynscommunitywoodland": {
+  "built_by": "v0.6.7",
+  "distance_m": null,
+  "last_tried": "2026-07-17",
+  "lat": 51.402538,
+  "lon": 0.387448,
+  "long": "Jeskyns Community Woodland parkun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "jesmonddene": {
   "built_by": "v0.6.7",
@@ -12562,7 +12574,7 @@
  "kewwoods": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.629073,
   "lon": -2.995064,
   "long": "Kew Woods parkrun",
@@ -12773,7 +12785,7 @@
  "kingswayparkurmston": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.458191,
   "lon": -2.345924,
   "long": "Kingsway Park parkrun, Urmston",
@@ -14397,7 +14409,7 @@
  "longford": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.732429,
   "lon": -7.789952,
   "long": "Longford parkrun",
@@ -15984,6 +15996,18 @@
   "relation_m": 5067,
   "source": "osm_relation",
   "status": "success",
+  "trace_m": null
+ },
+ "millenniumgrandrapids": {
+  "built_by": "v0.6.7",
+  "distance_m": null,
+  "last_tried": "2026-07-17",
+  "lat": 42.953815,
+  "lon": -85.707095,
+  "long": "Millennium parkrun, Grand Rapids",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
   "trace_m": null
  },
  "millfield": {
@@ -18037,7 +18061,7 @@
  "oldham": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.534187,
   "lon": -2.104118,
   "long": "Oldham parkrun",
@@ -19034,7 +19058,7 @@
  "peel": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.48759,
   "lon": -2.270682,
   "long": "Peel parkrun",
@@ -19116,7 +19140,7 @@
  "penistone": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.526568,
   "lon": -1.635407,
   "long": "Penistone parkrun",
@@ -19128,7 +19152,7 @@
  "penningtonflash": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.491608,
   "lon": -2.542745,
   "long": "Pennington Flash parkrun",
@@ -21421,7 +21445,7 @@
  "rotherham": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.430538,
   "lon": -1.343218,
   "long": "Rotherham parkrun",
@@ -21755,7 +21779,7 @@
  "salewater": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.429585,
   "lon": -2.294545,
   "long": "Sale Water parkrun",
@@ -21803,7 +21827,7 @@
  "sandallpark": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.544969,
   "lon": -1.089474,
   "long": "Sandall Park parkrun",
@@ -22020,7 +22044,7 @@
  "scunthorpe": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.581755,
   "lon": -0.656476,
   "long": "Scunthorpe parkrun",
@@ -22981,7 +23005,7 @@
  "southmanchester": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.446072,
   "lon": -2.224689,
   "long": "South Manchester parkrun",
@@ -23328,7 +23352,7 @@
  "stamfordpark": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.490901,
   "lon": -2.066163,
   "long": "Stamford Park parkrun",
@@ -23521,7 +23545,7 @@
  "sthelens": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.46322,
   "lon": -2.744088,
   "long": "St Helens parkrun",
@@ -23761,7 +23785,7 @@
  "stretford": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.446121,
   "lon": -2.290281,
   "long": "Stretford parkrun",
@@ -23773,7 +23797,7 @@
  "strokestown": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.776186,
   "lon": -8.098492,
   "long": "Strokestown parkrun",
@@ -24303,7 +24327,7 @@
  "tawdvalley": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.550281,
   "lon": -2.775829,
   "long": "Tawd Valley parkrun",
@@ -25941,7 +25965,7 @@
  "vermuydenway": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.561636,
   "lon": -0.848034,
   "long": "Vermuyden Way parkrun",
@@ -27012,7 +27036,7 @@
  "westport": {
   "built_by": "v0.6.7",
   "distance_m": null,
-  "last_tried": "2026-07-12",
+  "last_tried": "2026-07-17",
   "lat": 53.797982,
   "lon": -9.519267,
   "long": "Westport parkrun",
