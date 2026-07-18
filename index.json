@@ -11516,15 +11516,16 @@
   "trace_m": null
  },
  "hunstantonpromenade": {
-  "built_by": "v0.6.7",
-  "distance_m": 1723,
-  "last_tried": "2026-07-17",
+  "built_by": "v0.6.8",
+  "distance_m": 5168,
+  "last_tried": "2026-07-18",
   "lat": 52.941684,
   "lon": 0.486526,
   "long": "Hunstanton Promenade parkrun",
+  "provisional": false,
   "relation_m": null,
-  "source": "osm_9am_trace_offdist",
-  "status": "failed",
+  "source": "osm_9am_trace_doubled",
+  "status": "success",
   "trace_date": "2024-04-06",
   "trace_m": 1723
  },
