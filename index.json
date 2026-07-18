@@ -3825,15 +3825,17 @@
   "trace_m": null
  },
  "camperdown": {
-  "built_by": "v0.6.7",
-  "distance_m": 5318,
-  "last_tried": "2026-07-17",
+  "built_by": "v0.6.8",
+  "distance_m": 4945,
+  "last_tried": "2026-07-18",
   "lat": 56.483681,
   "lon": -3.030896,
   "long": "Camperdown parkrun, Dundee",
+  "provisional": false,
   "relation_m": 5318,
-  "source": "osm_relation_offdist",
-  "status": "failed",
+  "source": "osm_9am_trace_doubled",
+  "status": "success",
+  "trace_date": "2025-11-15",
   "trace_m": 1648
  },
  "cannibalscave": {
@@ -22762,9 +22764,9 @@
   "trace_m": null
  },
  "skipton": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-18",
   "lat": 53.961331,
   "lon": -2.030004,
   "long": "Skipton parkrun",
