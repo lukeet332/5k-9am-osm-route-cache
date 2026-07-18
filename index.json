@@ -23976,15 +23976,16 @@
   "trace_m": null
  },
  "sutcliffe": {
-  "built_by": "v0.6.7",
-  "distance_m": 1674,
-  "last_tried": "2026-07-17",
+  "built_by": "v0.6.8",
+  "distance_m": 5022,
+  "last_tried": "2026-07-18",
   "lat": 51.454343,
   "lon": 0.026739,
   "long": "Sutcliffe parkrun",
+  "provisional": true,
   "relation_m": 1674,
-  "source": "osm_relation_offdist",
-  "status": "failed",
+  "source": "osm_relation_doubled",
+  "status": "success",
   "trace_m": null
  },
  "suttonmanor": {
