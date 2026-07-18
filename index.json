@@ -11882,15 +11882,16 @@
   "trace_m": null
  },
  "jeleniagora": {
-  "built_by": "v0.6.7",
-  "distance_m": 1670,
-  "last_tried": "2026-07-17",
+  "built_by": "v0.6.8",
+  "distance_m": 5011,
+  "last_tried": "2026-07-18",
   "lat": 50.857558,
   "lon": 15.678754,
   "long": "parkrun Jelenia G\u00f3ra",
+  "provisional": true,
   "relation_m": 1670,
-  "source": "osm_relation_offdist",
-  "status": "failed",
+  "source": "osm_relation_doubled",
+  "status": "success",
   "trace_m": null
  },
  "jells": {
@@ -25174,9 +25175,9 @@
   "trace_m": null
  },
  "toyen": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-18",
   "lat": 59.919427,
   "lon": 10.77791,
   "long": "T\u00f8yen parkrun",
