@@ -1,12 +1,12 @@
 {
  "world_total": 2369,
- "world_mapped": 155,
+ "world_mapped": 161,
  "countries": [
   {
    "code": 97,
    "name": "United Kingdom",
    "total": 889,
-   "mapped": 133
+   "mapped": 137
   },
   {
    "code": 3,
@@ -30,7 +30,7 @@
    "code": 74,
    "name": "Poland",
    "total": 109,
-   "mapped": 5
+   "mapped": 6
   },
   {
    "code": 98,
@@ -66,7 +66,7 @@
    "code": 64,
    "name": "Netherlands",
    "total": 30,
-   "mapped": 2
+   "mapped": 3
   },
   {
    "code": 44,
