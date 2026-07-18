@@ -6403,15 +6403,16 @@
   "trace_m": null
  },
  "depotten": {
-  "built_by": "v0.6.7",
-  "distance_m": 1621,
-  "last_tried": "2026-07-17",
+  "built_by": "v0.6.8",
+  "distance_m": 4862,
+  "last_tried": "2026-07-18",
   "lat": 53.033831,
   "lon": 5.727314,
   "long": "De Potten parkrun",
+  "provisional": true,
   "relation_m": 1621,
-  "source": "osm_relation_offdist",
-  "status": "failed",
+  "source": "osm_relation_doubled",
+  "status": "success",
   "trace_m": null
  },
  "dereham": {
@@ -20771,9 +20772,9 @@
   "trace_m": null
  },
  "rhodes": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-18",
   "lat": -33.847462,
   "lon": 151.081803,
   "long": "Rhodes parkrun",
@@ -23293,9 +23294,9 @@
   "trace_m": null
  },
  "stadsparksittard": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-18",
   "lat": 50.989588,
   "lon": 5.863624,
   "long": "Stadspark parkrun, Sittard",
