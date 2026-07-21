@@ -438,9 +438,9 @@
   "trace_m": null
  },
  "amager": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 55.653057,
   "lon": 12.575108,
   "long": "Amager F\u00e6lled parkrun",
@@ -450,9 +450,9 @@
   "trace_m": null
  },
  "amagerstrandpark": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 55.662538,
   "lon": 12.635341,
   "long": "Amager Strandpark parkrun",
@@ -2254,9 +2254,9 @@
   "trace_m": null
  },
  "birchwoodtrails": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 56.733336,
   "lon": -111.438878,
   "long": "Birchwood Trails parkrun",
@@ -2735,9 +2735,9 @@
   "trace_m": null
  },
  "brabrand": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 56.165699,
   "lon": 10.141282,
   "long": "Brabrand parkrun",
@@ -3670,9 +3670,9 @@
   "trace_m": null
  },
  "bygholm": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 55.864821,
   "lon": 9.826912,
   "long": "Bygholm parkrun",
@@ -6137,9 +6137,9 @@
   "trace_m": null
  },
  "damhusengen": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 55.681924,
   "lon": 12.471907,
   "long": "Damhusengen parkrun",
@@ -6550,9 +6550,9 @@
   "trace_m": null
  },
  "dietenbach": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 47.999723,
   "lon": 7.805913,
   "long": "Dietenbach parkrun",
@@ -6792,9 +6792,9 @@
   "trace_m": null
  },
  "dreilaendergarten": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 47.586611,
   "lon": 7.610583,
   "long": "Dreil\u00e4ndergarten parkrun",
@@ -7804,9 +7804,9 @@
   "trace_m": null
  },
  "esbjerg": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 55.482349,
   "lon": 8.442703,
   "long": "Esbjerg parkrun",
@@ -7925,9 +7925,9 @@
   "trace_m": null
  },
  "faelledparken": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": 5317,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 55.701775,
   "lon": 12.568917,
   "long": "F\u00e6lledparken parkrun",
@@ -8627,9 +8627,9 @@
   "trace_m": null
  },
  "friedrichsau": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 48.411138,
   "lon": 10.012702,
   "long": "Friedrichsau parkrun",
@@ -8687,9 +8687,9 @@
   "trace_m": null
  },
  "fuglsangso": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 56.156235,
   "lon": 8.954318,
   "long": "Fuglsang S\u00f8 parkrun",
@@ -9024,9 +9024,9 @@
   "trace_m": 1501
  },
  "georgelanememorial": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 50.579381,
   "lon": -113.879142,
   "long": "George Lane Memorial parkrun",
@@ -9937,14 +9937,14 @@
   "trace_m": null
  },
  "gruenerweg": {
-  "built_by": "v0.6.7",
-  "distance_m": 3237,
-  "last_tried": "2026-07-17",
+  "built_by": "v0.6.8",
+  "distance_m": 6474,
+  "last_tried": "2026-07-21",
   "lat": 48.466077,
   "lon": 9.422082,
   "long": "Gr\u00fcner Weg parkrun",
   "relation_m": 3237,
-  "source": "osm_relation_offdist",
+  "source": "osm_relation_doubled_offdist",
   "status": "failed",
   "trace_m": null
  },
@@ -11147,9 +11147,9 @@
   "trace_m": null
  },
  "hockgraben": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 47.682837,
   "lon": 9.184252,
   "long": "Hockgraben parkrun",
@@ -11220,9 +11220,9 @@
   "trace_m": null
  },
  "holbaekfaelled": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 55.708668,
   "lon": 11.740032,
   "long": "Holb\u00e6k F\u00e6lled parkrun",
@@ -11607,9 +11607,9 @@
   "trace_m": null
  },
  "illeruferkempten": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 47.741133,
   "lon": 10.308598,
   "long": "Illerufer parkrun, Kempten",
@@ -12339,9 +12339,9 @@
   "trace_m": null
  },
  "kastanienallee": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 48.515457,
   "lon": 9.046693,
   "long": "Kastanienallee parkrun",
@@ -13054,9 +13054,9 @@
   "trace_m": null
  },
  "kovach": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 50.987447,
   "lon": -118.1921,
   "long": "Kovach parkrun",
@@ -13066,9 +13066,9 @@
   "trace_m": null
  },
  "kraeherwald": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 48.783517,
   "lon": 9.143246,
   "long": "Kr\u00e4herwald parkrun",
@@ -13247,9 +13247,9 @@
   "trace_m": null
  },
  "lahdensatama": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 60.991561,
   "lon": 25.645077,
   "long": "Lahden satama parkrun",
@@ -14631,9 +14631,9 @@
   "trace_m": null
  },
  "luitpold": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 48.755364,
   "lon": 11.427231,
   "long": "Luitpold parkrun",
@@ -14740,9 +14740,9 @@
   "trace_m": null
  },
  "lyngby": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 55.77637,
   "lon": 12.49826,
   "long": "Lyngby parkrun",
@@ -15511,9 +15511,9 @@
   "trace_m": null
  },
  "mattilanniemi": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 62.229396,
   "lon": 25.732898,
   "long": "Mattilanniemi parkrun",
@@ -15729,9 +15729,9 @@
   "trace_m": null
  },
  "mendelriverbank": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 52.134511,
   "lon": -106.648378,
   "long": "Mendel Riverbank parkrun",
@@ -17078,9 +17078,9 @@
   "trace_m": 2720
  },
  "neckaruferesslingen": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 48.728248,
   "lon": 9.324445,
   "long": "Neckarufer parkrun, Esslingen",
@@ -17319,9 +17319,9 @@
   "trace_m": null
  },
  "nibe": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 56.987144,
   "lon": 9.654837,
   "long": "Nibe parkrun",
@@ -17439,9 +17439,9 @@
   "trace_m": null
  },
  "nordrefaelled": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 56.48583,
   "lon": 10.031231,
   "long": "Nordre F\u00e6lled parkrun, Randers",
@@ -17682,9 +17682,9 @@
   "trace_m": null
  },
  "nosehill": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 51.12534,
   "lon": -114.129961,
   "long": "Nose Hill parkrun",
@@ -19640,9 +19640,9 @@
   "trace_m": null
  },
  "pokkinen": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 65.015719,
   "lon": 25.4689,
   "long": "Pokkinen parkrun",
@@ -19857,9 +19857,9 @@
   "trace_m": null
  },
  "porinmetsa": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 61.47482,
   "lon": 21.773003,
   "long": "Porin mets\u00e4 parkrun",
@@ -20255,9 +20255,9 @@
   "trace_m": null
  },
  "puolarmaari": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 60.177056,
   "lon": 24.697029,
   "long": "Puolarmaari parkrun",
@@ -20860,9 +20860,9 @@
   "trace_m": null
  },
  "riemer": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 48.12678,
   "lon": 11.692037,
   "long": "Riemer parkrun",
@@ -21005,9 +21005,9 @@
   "trace_m": null
  },
  "riversidekamloops": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 50.678505,
   "lon": -120.336451,
   "long": "Riverside parkrun, Kamloops",
@@ -21077,9 +21077,9 @@
   "trace_m": null
  },
  "rivervalleyedmonton": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 53.533495,
   "lon": -113.52638,
   "long": "River Valley parkrun, Edmonton",
@@ -21354,9 +21354,9 @@
   "trace_m": null
  },
  "rosensteinpark": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 48.805193,
   "lon": 9.192439,
   "long": "Rosensteinpark parkrun",
@@ -22338,9 +22338,9 @@
   "trace_m": null
  },
  "sheepriver": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 50.722089,
   "lon": -113.979312,
   "long": "Sheep River parkrun",
@@ -23202,9 +23202,9 @@
   "trace_m": null
  },
  "sportparkrems": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 48.814706,
   "lon": 9.540467,
   "long": "Sportpark Rems parkrun",
@@ -24141,9 +24141,9 @@
   "trace_m": null
  },
  "talaue": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 48.831451,
   "lon": 9.320452,
   "long": "Talaue parkrun",
@@ -24225,9 +24225,9 @@
   "trace_m": null
  },
  "tampere": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": 5495,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 61.492554,
   "lon": 23.759243,
   "long": "Tampere parkrun",
@@ -24972,9 +24972,9 @@
   "trace_m": null
  },
  "tokoinranta": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 60.180235,
   "lon": 24.946594,
   "long": "Tokoinranta parkrun",
@@ -25767,9 +25767,9 @@
   "trace_m": null
  },
  "urheilupuisto": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 60.442292,
   "lon": 22.259078,
   "long": "Urheilupuisto parkrun",
@@ -25827,9 +25827,9 @@
   "trace_m": null
  },
  "vaaksynkanava": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 61.177524,
   "lon": 25.538652,
   "long": "V\u00e4\u00e4ksyn kanava parkrun",
@@ -25947,9 +25947,9 @@
   "trace_m": null
  },
  "vejen": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 55.474609,
   "lon": 9.120852,
   "long": "Vejen parkrun",
@@ -27030,9 +27030,9 @@
   "trace_m": null
  },
  "westpark": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 48.122967,
   "lon": 11.531027,
   "long": "Westpark parkrun",
@@ -27642,9 +27642,9 @@
   "trace_m": null
  },
  "wittelsbacher": {
-  "built_by": "v0.6.7",
+  "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-17",
+  "last_tried": "2026-07-21",
   "lat": 48.359944,
   "lon": 10.886209,
   "long": "Wittelsbacher parkrun",
