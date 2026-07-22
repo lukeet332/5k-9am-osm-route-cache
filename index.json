@@ -243,7 +243,7 @@
  "albygard": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 59.42457,
   "lon": 10.609747,
   "long": "Alby G\u00e5rd parkrun",
@@ -561,7 +561,7 @@
  "ankerskogen": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 60.803464,
   "lon": 11.068693,
   "long": "Ankerskogen parkrun",
@@ -1369,7 +1369,7 @@
  "barrycurtis": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": -36.9597,
   "lon": 174.914382,
   "long": "Barry Curtis parkrun",
@@ -1967,7 +1967,7 @@
  "bergerstadion": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 59.835099,
   "lon": 10.675178,
   "long": "Berger Stadion parkrun",
@@ -3407,7 +3407,7 @@
  "bulwarnadwisla": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 50.01101,
   "lon": 19.11971,
   "long": "parkrun Bulwar nad Wis\u0142\u0105",
@@ -4779,7 +4779,7 @@
  "chrzanow": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 50.129465,
   "lon": 19.358722,
   "long": "parkrun Chrzan\u00f3w",
@@ -4839,7 +4839,7 @@
  "cieszyn": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 49.741202,
   "lon": 18.629197,
   "long": "parkrun Cieszyn",
@@ -5671,7 +5671,7 @@
  "cornwallpark": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": -36.895495,
   "lon": 174.789414,
   "long": "Cornwall Park parkrun",
@@ -7529,7 +7529,7 @@
  "ekebergsletta": {
   "built_by": "v0.6.8",
   "distance_m": 6052,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 59.895921,
   "lon": 10.777104,
   "long": "Ekebergsletta parkrun",
@@ -8146,7 +8146,7 @@
  "festningen": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 63.430394,
   "lon": 10.410776,
   "long": "Festningen parkrun",
@@ -8351,7 +8351,7 @@
  "flomvollen": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 59.95398,
   "lon": 11.034669,
   "long": "Flomvollen parkrun",
@@ -9001,7 +9001,7 @@
  "geoparkkamiennytrakt": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 50.412032,
   "lon": 16.451458,
   "long": "parkrun Geopark Kamienny Trakt",
@@ -9819,7 +9819,7 @@
  "greveskogen": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 59.284998,
   "lon": 10.413426,
   "long": "Greveskogen parkrun",
@@ -11137,7 +11137,7 @@
  "hobsonvillepoint": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": -36.790147,
   "lon": 174.672716,
   "long": "Hobsonville Point parkrun",
@@ -12389,7 +12389,7 @@
  "katowice": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 50.244676,
   "lon": 19.00202,
   "long": "parkrun Katowice",
@@ -12437,7 +12437,7 @@
  "kedzierzynkozle": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 50.330054,
   "lon": 18.145286,
   "long": "parkrun K\u0119dzierzyn-Ko\u017ale",
@@ -13585,7 +13585,7 @@
  "lasaniolowski": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 50.83462,
   "lon": 19.139758,
   "long": "parkrun Las Anio\u0142owski",
@@ -14368,7 +14368,7 @@
  "loftsgardsbrua": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 61.770948,
   "lon": 9.544284,
   "long": "Loftsgardsbrua parkrun",
@@ -14561,7 +14561,7 @@
  "lovstien": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 60.376694,
   "lon": 5.322763,
   "long": "L\u00f8vstien parkrun, Bergen",
@@ -16056,7 +16056,7 @@
  "millwater": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": -36.602838,
   "lon": 174.679409,
   "long": "Millwater parkrun",
@@ -16911,7 +16911,7 @@
  "nansenparken": {
   "built_by": "v0.6.8",
   "distance_m": 5496,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 59.89577,
   "lon": 10.614464,
   "long": "Nansenparken parkrun",
@@ -17539,7 +17539,7 @@
  "northernpathway": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": -36.728682,
   "lon": 174.713764,
   "long": "Northern Pathway parkrun",
@@ -18212,7 +18212,7 @@
  "opole": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 50.650123,
   "lon": 17.924448,
   "long": "parkrun Opole",
@@ -18224,7 +18224,7 @@
  "orakeibay": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": -36.863563,
   "lon": 174.812349,
   "long": "\u014cr\u0101kei Bay parkrun",
@@ -18498,7 +18498,7 @@
  "owairaka": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": -36.896454,
   "lon": 174.722758,
   "long": "Owairaka parkrun",
@@ -18750,7 +18750,7 @@
  "parkblekitny": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 50.738742,
   "lon": 16.648744,
   "long": "parkrun Park B\u0142\u0119kitny",
@@ -18810,7 +18810,7 @@
  "parkjanapawlaiirymanowzdroj": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 49.548793,
   "lon": 21.851478,
   "long": "parkrun Park Jana Paw\u0142a II, Ryman\u00f3w-Zdr\u00f3j",
@@ -18834,7 +18834,7 @@
  "parklipowy": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 49.879554,
   "lon": 19.204795,
   "long": "parkrun Park Lipowy",
@@ -18956,7 +18956,7 @@
  "parkzamkowywzywcu": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 49.688148,
   "lon": 19.200379,
   "long": "parkrun Park Zamkowy w \u017bywcu",
@@ -18968,7 +18968,7 @@
  "parkzdrojowykudowazdroj": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 50.443664,
   "lon": 16.239829,
   "long": "parkrun Park Zdrojowy, Kudowa-Zdr\u00f3j",
@@ -18992,7 +18992,7 @@
  "parrspark": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": -36.904598,
   "lon": 174.630589,
   "long": "Parrs Park parkrun",
@@ -20040,7 +20040,7 @@
  "portrzecznysandomierz": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 50.655615,
   "lon": 21.733285,
   "long": "parkrun Port Rzeczny Sandomierz",
@@ -20281,7 +20281,7 @@
  "puszczaniepolomicka": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 50.014497,
   "lon": 20.240746,
   "long": "parkrun Puszcza Niepo\u0142omicka",
@@ -20521,7 +20521,7 @@
  "raumangastream": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": -35.738171,
   "lon": 174.309155,
   "long": "Raumanga Stream parkrun",
@@ -21702,7 +21702,7 @@
  "rzeszow": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 50.029829,
   "lon": 22.004013,
   "long": "parkrun Rzesz\u00f3w",
@@ -22448,7 +22448,7 @@
  "sherwoodreserve": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": -36.717634,
   "lon": 174.736541,
   "long": "Sherwood Reserve parkrun",
@@ -22734,7 +22734,7 @@
  "skienfritidspark": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 59.185094,
   "lon": 9.596503,
   "long": "Skien Fritidspark parkrun",
@@ -22976,7 +22976,7 @@
  "southendreserve": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": -37.02786,
   "lon": 175.871613,
   "long": "South End Reserve parkrun",
@@ -23000,7 +23000,7 @@
  "southernpath": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": -37.04751,
   "lon": 174.913971,
   "long": "Southern Path parkrun",
@@ -23443,7 +23443,7 @@
  "stavanger": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 58.952586,
   "lon": 5.717011,
   "long": "Stavanger parkrun",
@@ -25382,7 +25382,7 @@
  "tuffcraterreserve": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": -36.802002,
   "lon": 174.757418,
   "long": "Tuff Crater Reserve parkrun",
@@ -25430,7 +25430,7 @@
  "tychy": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 50.120545,
   "lon": 19.001032,
   "long": "parkrun Tychy",
@@ -26456,7 +26456,7 @@
  "warkworthshowgrounds": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": -36.389602,
   "lon": 174.654358,
   "long": "Warkworth Showgrounds parkrun",
@@ -26996,7 +26996,7 @@
  "westernsprings": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": -36.865137,
   "lon": 174.720411,
   "long": "Western Springs parkrun",
@@ -27164,7 +27164,7 @@
  "whangarei": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": -35.734968,
   "lon": 174.334078,
   "long": "Whangarei parkrun",
@@ -28463,7 +28463,7 @@
  "zielonyjar": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-18",
+  "last_tried": "2026-07-22",
   "lat": 50.094923,
   "lon": 20.058498,
   "long": "parkrun Zielony Jar",
