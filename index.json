@@ -158,7 +158,7 @@
  "aintreereserve": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.712795,
   "lon": 144.673619,
   "long": "Aintree Reserve parkrun",
@@ -645,7 +645,7 @@
  "ararat": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.279712,
   "lon": 142.928756,
   "long": "Ararat parkrun",
@@ -947,7 +947,7 @@
  "aurora": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.622365,
   "lon": 145.00465,
   "long": "Aurora parkrun",
@@ -1080,7 +1080,7 @@
  "bairnsdale": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.823487,
   "lon": 147.632774,
   "long": "Bairnsdale parkrun",
@@ -1622,7 +1622,7 @@
  "beaufortlake": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.439405,
   "lon": 143.382552,
   "long": "Beaufort Lake parkrun",
@@ -3085,7 +3085,7 @@
  "brimbank": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.727547,
   "lon": 144.834123,
   "long": "Brimbank parkrun",
@@ -3768,7 +3768,7 @@
  "calembeen": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.419365,
   "lon": 143.889512,
   "long": "Calembeen parkrun",
@@ -3828,7 +3828,7 @@
  "campaspe": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.354683,
   "lon": 144.531445,
   "long": "Campaspe parkrun",
@@ -4217,7 +4217,7 @@
  "castlemaine": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.050794,
   "lon": 144.217649,
   "long": "Castlemaine parkrun",
@@ -5248,7 +5248,7 @@
  "coburg": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.733811,
   "lon": 144.968861,
   "long": "Coburg parkrun",
@@ -5971,7 +5971,7 @@
  "cruickshankpark": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.817195,
   "lon": 144.876886,
   "long": "Cruickshank Park parkrun",
@@ -6211,7 +6211,7 @@
  "darebin": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.721239,
   "lon": 145.034293,
   "long": "Darebin parkrun",
@@ -6492,7 +6492,7 @@
  "desoza": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.649085,
   "lon": 143.883626,
   "long": "De Soza parkrun",
@@ -6540,7 +6540,7 @@
  "diamondcreek": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.673576,
   "lon": 145.153249,
   "long": "Diamond Creek parkrun",
@@ -6612,7 +6612,7 @@
  "dixonfield": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.483912,
   "lon": 144.584456,
   "long": "Dixon Field parkrun",
@@ -6744,7 +6744,7 @@
  "dorsetrecreationreserve": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.805244,
   "lon": 145.29128,
   "long": "Dorset Recreation Reserve parkrun",
@@ -7541,7 +7541,7 @@
  "eildonpondage": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.242627,
   "lon": 145.906145,
   "long": "Eildon Pondage parkrun",
@@ -9362,7 +9362,7 @@
  "goldfieldsreservoir": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.065018,
   "lon": 143.731855,
   "long": "Goldfields Reservoir parkrun",
@@ -9507,7 +9507,7 @@
  "goulburnrivertrailseymour": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.018279,
   "lon": 145.124768,
   "long": "Goulburn River Trail parkrun, Seymour",
@@ -10188,7 +10188,7 @@
  "hamilton": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.737592,
   "lon": 142.040024,
   "long": "Hamilton parkrun",
@@ -11005,7 +11005,7 @@
  "highlands": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.59106,
   "lon": 144.903713,
   "long": "Highlands parkrun",
@@ -12701,7 +12701,7 @@
  "kilmoreracecoursewalkingtrack": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.288433,
   "lon": 144.960419,
   "long": "Kilmore Racecourse Walking Track parkrun",
@@ -12840,7 +12840,7 @@
  "kirkdalereserve": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.770512,
   "lon": 144.983855,
   "long": "Kirkdale Reserve parkrun",
@@ -13357,7 +13357,7 @@
  "lakefyanswalkingtrack": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.145642,
   "lon": 142.616196,
   "long": "Lake Fyans Walking Track parkrun",
@@ -13441,7 +13441,7 @@
  "lakewallace": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.033988,
   "lon": 141.295153,
   "long": "Lake Wallace parkrun",
@@ -13453,7 +13453,7 @@
  "lalor": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.668084,
   "lon": 144.985422,
   "long": "Lalor parkrun",
@@ -13489,7 +13489,7 @@
  "lancefield": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.279321,
   "lon": 144.724258,
   "long": "Lancefield parkrun",
@@ -14027,7 +14027,7 @@
  "lillydalelake": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.766218,
   "lon": 145.357071,
   "long": "Lillydale Lake parkrun",
@@ -15139,7 +15139,7 @@
  "mansfieldbotanic": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.052419,
   "lon": 146.093889,
   "long": "Mansfield Botanic parkrun",
@@ -15284,7 +15284,7 @@
  "maribyrnong": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.770632,
   "lon": 144.897858,
   "long": "Maribyrnong parkrun",
@@ -15405,7 +15405,7 @@
  "maroondahdam": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.642875,
   "lon": 145.552323,
   "long": "Maroondah Dam parkrun",
@@ -15815,7 +15815,7 @@
  "mernda": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.593706,
   "lon": 145.100493,
   "long": "Mernda parkrun",
@@ -16755,7 +16755,7 @@
  "mullummullum": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.811673,
   "lon": 145.21251,
   "long": "Mullum Mullum parkrun",
@@ -16819,6 +16819,18 @@
   "lat": 43.839078,
   "lon": 10.500336,
   "long": "Mura di Lucca parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "murdochuniversity": {
+  "built_by": "v0.6.8",
+  "distance_m": null,
+  "last_tried": "2026-07-25",
+  "lat": -32.067009,
+  "lon": 115.83584,
+  "long": "Murdoch University parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -16971,7 +16983,7 @@
  "naracoortelake": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -36.949411,
   "lon": 140.741843,
   "long": "Naracoorte Lake parkrun",
@@ -18968,7 +18980,7 @@
  "parkville": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.784837,
   "lon": 144.961755,
   "long": "Parkville parkrun",
@@ -19268,7 +19280,7 @@
  "peppertree": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.68168,
   "lon": 144.432973,
   "long": "Peppertree parkrun",
@@ -20196,7 +20208,7 @@
  "princeofwales": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.548659,
   "lon": 143.816194,
   "long": "Prince of Wales parkrun",
@@ -20800,7 +20812,7 @@
  "rhodes": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-25",
   "lat": -33.847462,
   "lon": 151.081803,
   "long": "Rhodes parkrun",
@@ -22794,7 +22806,7 @@
  "skipton": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-25",
   "lat": 53.961331,
   "lon": -2.030004,
   "long": "Skipton parkrun",
@@ -23322,7 +23334,7 @@
  "stadsparksittard": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-25",
   "lat": 50.989588,
   "lon": 5.863624,
   "long": "Stadspark parkrun, Sittard",
@@ -23840,7 +23852,7 @@
  "studley": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.80083,
   "lon": 145.008858,
   "long": "Studley parkrun",
@@ -23864,7 +23876,7 @@
  "sunbury": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.580542,
   "lon": 144.739936,
   "long": "Sunbury parkrun",
@@ -25070,7 +25082,7 @@
  "toolerncreek": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.714776,
   "lon": 144.583229,
   "long": "Toolern Creek parkrun",
@@ -25202,7 +25214,7 @@
  "toyen": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-25",
   "lat": 59.919427,
   "lon": 10.77791,
   "long": "T\u00f8yen parkrun",
@@ -26323,7 +26335,7 @@
  "wallabytrack": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.552061,
   "lon": 143.898319,
   "long": "Wallaby Track parkrun",
@@ -26516,7 +26528,7 @@
  "warrandyteriverreserve": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.73646,
   "lon": 145.219969,
   "long": "Warrandyte River Reserve parkrun",
@@ -26540,7 +26552,7 @@
  "warringalparklands": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.755246,
   "lon": 145.074478,
   "long": "Warringal Parklands parkrun",
@@ -27008,7 +27020,7 @@
  "westerfolds": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.746092,
   "lon": 145.133986,
   "long": "Westerfolds parkrun",
@@ -27824,7 +27836,7 @@
  "woodlandshistoricpark": {
   "built_by": "v0.6.8",
   "distance_m": null,
-  "last_tried": "2026-07-20",
+  "last_tried": "2026-07-25",
   "lat": -37.640182,
   "lon": 144.843618,
   "long": "Woodlands Historic Park parkrun",
