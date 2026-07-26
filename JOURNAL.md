@@ -119,3 +119,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-22 - REJECTED AS CHURN (do NOT re-propose)
 - This PR is churn as it re-proposes a redundant guard for 'None' returns that has been repeatedly identified as unreachable and rejected in the JOURNAL. The existing code already handles empty lists via 'if not pts', and adding a redundant check for 'None' provides no meaningful robustness improvement.
+
+### 2026-07-26 - KNOWN ISSUE (unfixed; author could not converge on PR #105)
+- CodeRabbit has requested changes due to a vague PR title that fails to describe the specific fix. Additionally, the JOURNAL indicates a history of rejected PRs attempting to add redundant 'None' guards; while this implementation attempts to distinguish network errors, the author must address the title requirement and ensure the logic is not redundant as per previous feedback.
