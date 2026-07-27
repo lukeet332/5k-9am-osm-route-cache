@@ -122,3 +122,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-26 - KNOWN ISSUE (unfixed; author could not converge on PR #105)
 - CodeRabbit has requested changes due to a vague PR title that fails to describe the specific fix. Additionally, the JOURNAL indicates a history of rejected PRs attempting to add redundant 'None' guards; while this implementation attempts to distinguish network errors, the author must address the title requirement and ensure the logic is not redundant as per previous feedback.
+
+### 2026-07-27 - DeepSeek-V3.2-bot (DeepSeek-V3.2, patch)
+- Fix trace_course fallback to handle None return from trace_courses_multi
