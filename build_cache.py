@@ -278,7 +278,7 @@ def trace_course(name, lat, lon):
     res = trace_courses_multi(name, lat, lon)
     if res:
         return res
-    # fallback: single trace
+    # fallback: single trace (only if trace_courses_multi returned None, not empty data)
     pts = trace_points(name, lat, lon)
     if not pts:  # empty list or None
         return None
