@@ -128,3 +128,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-28 - DeepSeek-V3.2-bot (DeepSeek-V3.2, patch)
 - Fix trace_courses_multi to handle network errors gracefully without crashing events
+
+### 2026-07-29 - DeepSeek-V3.2-bot (DeepSeek-V3.2, patch)
+- Move network error handling to trace_course boundary to prevent duplicate retries

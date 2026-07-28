@@ -230,10 +230,7 @@ def _recent_pool(valid_traces, cutoff):
     return recent if len(recent) >= 2 else [t for _, t in valid_traces]
 
 def trace_courses_multi(name, lat, lon):
-    try:
-        pts = trace_points(name, lat, lon)
-    except Exception:
-        return None  # network/timeout error -> skip trace for this event
+    pts = trace_points(name, lat, lon)
     if not pts:  # empty list -> no traces
         return None
     # group by date: Saturday/Christmas/New-Year, local 09:00-09:45, anchored within 150m of the start
@@ -278,13 +275,16 @@ def trace_courses_multi(name, lat, lon):
     return avg_len, avg_path, first_date
 
 def trace_course(name, lat, lon):
-    res = trace_courses_multi(name, lat, lon)
-    if res:
-        return res
-    # fallback: single trace (only if trace_courses_multi returned None, not empty data)
-    pts = trace_points(name, lat, lon)
-    if not pts:  # empty list or None
-        return None
+    try:
+        res = trace_courses_multi(name, lat, lon)
+        if res:
+            return res
+        # fallback: single trace (only if trace_courses_multi returned None, not empty data)
+        pts = trace_points(name, lat, lon)
+        if not pts:  # empty list or None
+            return None
+    except Exception:
+        return None  # network/timeout error -> skip trace for this event
     win = []
     for la, lo, t in pts:
         try:
