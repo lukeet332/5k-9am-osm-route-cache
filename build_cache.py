@@ -275,13 +275,16 @@ def trace_courses_multi(name, lat, lon):
     return avg_len, avg_path, first_date
 
 def trace_course(name, lat, lon):
-    res = trace_courses_multi(name, lat, lon)
-    if res:
-        return res
-    # fallback: single trace (only if trace_courses_multi returned None, not empty data)
-    pts = trace_points(name, lat, lon)
-    if not pts:  # empty list or None
-        return None
+    try:
+        res = trace_courses_multi(name, lat, lon)
+        if res:
+            return res
+        # fallback: single trace (only if trace_courses_multi returned None, not empty data)
+        pts = trace_points(name, lat, lon)
+        if not pts:  # empty list or None
+            return None
+    except Exception:
+        return None  # network/timeout error -> skip trace for this event
     win = []
     for la, lo, t in pts:
         try:
