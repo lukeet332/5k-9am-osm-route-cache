@@ -125,3 +125,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-27 - DeepSeek-V3.2-bot (DeepSeek-V3.2, patch)
 - Fix trace_course fallback to handle None return from trace_courses_multi
+
+### 2026-07-28 - DeepSeek-V3.2-bot (DeepSeek-V3.2, patch)
+- Fix trace_courses_multi to handle network errors gracefully without crashing events
