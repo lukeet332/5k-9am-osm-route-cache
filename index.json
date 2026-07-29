@@ -180,9 +180,9 @@
   "trace_m": null
  },
  "akkerendamnaturereserve": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -31.455321,
   "lon": 19.773753,
   "long": "Akkerendam Nature Reserve parkrun",
@@ -1632,9 +1632,9 @@
   "trace_m": null
  },
  "beavercreek": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -31.044098,
   "lon": 30.181627,
   "long": "Beaver Creek parkrun",
@@ -11233,9 +11233,9 @@
   "trace_m": 5506
  },
  "hogsback": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -32.601434,
   "lon": 26.917929,
   "long": "Hogsback parkrun",
@@ -12472,9 +12472,9 @@
   "trace_m": null
  },
  "keimouth": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -32.696233,
   "lon": 28.364151,
   "long": "Kei Mouth parkrun",
@@ -13019,9 +13019,9 @@
   "trace_m": null
  },
  "komani": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -31.899593,
   "lon": 26.889812,
   "long": "Komani parkrun",
@@ -13908,9 +13908,9 @@
   "trace_m": null
  },
  "letsatsilodge": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -31.607828,
   "lon": 18.72741,
   "long": "Letsatsi Lodge parkrun",
@@ -16514,9 +16514,9 @@
   "trace_m": null
  },
  "mountaindrive": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -32.244765,
   "lon": 24.524985,
   "long": "Mountain Drive parkrun, Graaff-Reinet",
@@ -16670,9 +16670,9 @@
   "trace_m": null
  },
  "mthatha": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -31.58678,
   "lon": 28.776247,
   "long": "Mthatha parkrun",
@@ -22916,9 +22916,9 @@
   "trace_m": null
  },
  "somerseteast": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -32.710641,
   "lon": 25.560808,
   "long": "Somerset East parkrun",
@@ -23876,9 +23876,9 @@
   "trace_m": null
  },
  "stutterheim": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -32.567059,
   "lon": 27.412219,
   "long": "Stutterheim parkrun",
@@ -26009,9 +26009,9 @@
   "trace_m": null
  },
  "velskoendraai": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -32.173377,
   "lon": 18.885872,
   "long": "Velskoendraai parkrun",
@@ -26239,9 +26239,9 @@
   "trace_m": null
  },
  "vredendal": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -31.664782,
   "lon": 18.497226,
   "long": "Vredendal parkrun",
