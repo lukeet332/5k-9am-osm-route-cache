@@ -152,3 +152,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-29 - REJECTED AS CHURN (do NOT re-propose)
 - This PR re-proposes the network error handling fix (moving fallback outside try/except in trace_course) that was already merged on 2026-07-29 per the JOURNAL. The author's description claims N-lap recovery but the diff only shows the already-implemented network error handling. Multiple JOURNAL entries explicitly reject re-proposing this as churn. Churn takes precedence over CodeRabbit's CHANGES_REQUESTED state.
+
+### 2026-07-29 - REJECTED AS CHURN (do NOT re-propose)
+- This PR re-proposes the trace_course network error fallback handling that was already merged on 2026-07-29 per the JOURNAL (entries for 2026-07-28, 2026-07-29 confirm implementation). The author's description claims N-lap recovery but the diff only shows the already-implemented trace fallback. Multiple JOURNAL entries explicitly reject re-proposing this as churn. Churn takes precedence over CodeRabbit's APPROVED state.
