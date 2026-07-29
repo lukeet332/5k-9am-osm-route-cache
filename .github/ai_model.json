@@ -1,14 +1,32 @@
 {
   "author": [
-    { "provider": "nvidia", "model": "deepseek-ai/deepseek-v4-flash" },
-    { "provider": "sambanova", "model": "DeepSeek-V3.2" },
-    { "provider": "gemini", "model": "gemini-3.1-flash-lite" }
+    {
+      "provider": "nvidia",
+      "model": "deepseek-ai/deepseek-v4-flash"
+    },
+    {
+      "provider": "sambanova",
+      "model": "DeepSeek-V3.2"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-3.1-flash-lite"
+    }
   ],
   "reviewer": [
-    { "provider": "gemini", "model": "gemini-3.1-flash-lite" },
-    { "provider": "github-models", "model": "openai/gpt-4.1" }
+    {
+      "provider": "nvidia",
+      "model": "nvidia/nemotron-3-ultra-550b-a55b"
+    },
+    {
+      "provider": "github-models",
+      "model": "openai/gpt-4.1"
+    }
   ],
   "fast": [
-    { "provider": "gemini", "model": "gemini-3.1-flash-lite" }
+    {
+      "provider": "gemini",
+      "model": "gemini-3.1-flash-lite"
+    }
   ]
 }
