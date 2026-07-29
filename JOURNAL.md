@@ -143,3 +143,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-29 - REJECTED AS CHURN (do NOT re-propose)
 - This PR re-proposes work already implemented: the N-lap recovery feature was merged on 2026-07-29 per the JOURNAL, and the 'single-lap geometry' fix was merged on 2026-07-11. The diff only adds a comment describing the already-merged 2026-07-11 fix. Churn takes precedence per the Constitution - a dead idea is closed, not revised.
+
+### 2026-07-29 - REJECTED AS CHURN (do NOT re-propose)
+- This PR re-proposes work already implemented per the JOURNAL: the N-lap recovery feature was merged on 2026-07-29, and the network error handling in trace_course was merged on 2026-07-27 and 2026-07-29. Multiple JOURNAL entries explicitly reject re-proposing these as churn. The diff shown only adds try/except for network errors (already done), not the claimed N-lap recovery logic. Churn takes precedence - a dead idea is closed, not revised.
