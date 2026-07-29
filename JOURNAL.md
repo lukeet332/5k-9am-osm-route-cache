@@ -158,3 +158,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-29 - REJECTED AS CHURN (do NOT re-propose)
 - This PR re-proposes network error handling in trace_courses_multi() that was already merged on 2026-07-28 per the JOURNAL. The author's description claims N-lap recovery but the diff only shows the already-implemented try/except block. Multiple JOURNAL entries from 2026-07-29 explicitly reject re-proposing this work as churn. Churn takes precedence over CodeRabbit's CHANGES_REQUESTED state.
+
+### 2026-07-29 - REJECTED AS CHURN (do NOT re-propose)
+- The PR re-proposes N-lap recovery for failed entries with relation_m ~2.0-2.8km, which the JOURNAL confirms was already implemented and merged on 2026-07-29 (multiple entries explicitly reject re-proposing this as churn). The diff shown modifies trace_course filtering logic, not N-lap recovery, but the PR description claims the already-done feature. Churn takes precedence per the Constitution - a dead idea is closed, not revised.
