@@ -161,3 +161,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-29 - REJECTED AS CHURN (do NOT re-propose)
 - The PR re-proposes N-lap recovery for failed entries with relation_m ~2.0-2.8km, which the JOURNAL confirms was already implemented and merged on 2026-07-29 (multiple entries explicitly reject re-proposing this as churn). The diff shown modifies trace_course filtering logic, not N-lap recovery, but the PR description claims the already-done feature. Churn takes precedence per the Constitution - a dead idea is closed, not revised.
+
+### 2026-07-29 - REJECTED AS CHURN (do NOT re-propose)
+- This PR re-proposes N-lap recovery for failed entries with relation_m ~2.0-2.8km, which the JOURNAL confirms was already implemented and merged on 2026-07-29 (multiple entries explicitly reject re-proposing this as churn). The diff only shows moving fallback logic in trace_course (network error handling), which was also already merged on 2026-07-28 and 2026-07-29 per the JOURNAL. Churn takes precedence per the Constitution - a dead idea is closed, not revised.
