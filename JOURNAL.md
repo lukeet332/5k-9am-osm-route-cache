@@ -137,3 +137,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-29 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL shows this exact N-lap recovery feature was already implemented today (2026-07-29) by DeepSeek-V3.2-bot, and this PR re-proposes it with a duplicate JOURNAL entry. Churn takes precedence per the Constitution - a dead idea is closed, not revised.
+
+### 2026-07-29 - REJECTED AS CHURN (do NOT re-propose)
+- This PR re-proposes network error handling fixes that were already merged on 2026-07-28 and 2026-07-29 per the JOURNAL. The diff shows try/except in trace_courses_multi (the 2026-07-28 fix) but the 2026-07-29 fix moved it to trace_course boundary. The PR description claims N-lap recovery which was also implemented 2026-07-29. This is a duplicate of already-merged work.
