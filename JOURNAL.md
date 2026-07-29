@@ -179,3 +179,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-29 - REJECTED AS CHURN (do NOT re-propose)
 - The PR claims to implement N-lap recovery for failed entries with relation_m ~2.0-2.8km, but the JOURNAL contains 10+ explicit entries from 2026-07-29 confirming this feature was already merged that day and rejecting re-proposals as churn. The diff only adds a defensive `if not pts: return None` check, not the claimed N-lap logic. Per the Constitution, churn takes precedence - a dead idea is closed, not revised.
+
+### 2026-07-29 - REJECTED AS CHURN (do NOT re-propose)
+- This PR re-proposes the trace_course network error handling fix (moving fallback outside try/except) that the JOURNAL confirms was already merged on 2026-07-28 and 2026-07-29. The author claims N-lap recovery but the diff only shows the already-implemented error handling. The JOURNAL contains 10+ explicit entries from 2026-07-29 rejecting re-proposals of this work as churn. Per the Constitution, churn takes precedence over any CodeRabbit state - a dead idea is closed, not revised.
