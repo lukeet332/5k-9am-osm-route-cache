@@ -170,3 +170,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-29 - REJECTED AS CHURN (do NOT re-propose)
 - This PR re-proposes work already implemented and merged on 2026-07-29 per the JOURNAL. The JOURNAL contains multiple explicit entries confirming N-lap recovery for failed entries with relation_m ~2.0-2.8km was already merged that day, and the network error handling fix (moving fallback outside try/except in trace_course) was also already merged on 2026-07-28 and 2026-07-29. The diff only shows the already-implemented network error handling, not the claimed N-lap recovery. Per the Constitution, churn takes precedence over CodeRabbit's state - a dead idea is closed, not revised.
+
+### 2026-07-29 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL contains multiple explicit entries from 2026-07-29 confirming that both the N-lap recovery feature and the network error handling fix (moving fallback outside try/except in trace_course) were already merged on that date. This PR re-proposes already-implemented work and adds a duplicate JOURNAL entry, violating the append-only principle. Per the Constitution, churn takes precedence over CodeRabbit's state - a dead idea is closed, not revised.
