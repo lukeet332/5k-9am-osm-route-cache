@@ -12712,9 +12712,9 @@
   "trace_m": null
  },
  "kimberley": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -28.759379,
   "lon": 24.826695,
   "long": "Kimberley parkrun",
