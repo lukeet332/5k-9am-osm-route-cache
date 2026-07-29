@@ -2049,9 +2049,9 @@
   "trace_m": null
  },
  "bethlehem": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -28.251308,
   "lon": 28.336215,
   "long": "Bethlehem parkrun",
@@ -3865,9 +3865,9 @@
   "trace_m": 1648
  },
  "cannibalscave": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -28.682918,
   "lon": 28.976784,
   "long": "Cannibals Cave parkrun",
@@ -4995,9 +4995,9 @@
   "trace_m": null
  },
  "clarens": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -28.514776,
   "lon": 28.419728,
   "long": "Clarens parkrun",
@@ -10415,9 +10415,9 @@
   "trace_m": null
  },
  "harrismith": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -28.280234,
   "lon": 29.151949,
   "long": "Harrismith parkrun",
@@ -11124,9 +11124,9 @@
   "trace_m": null
  },
  "hluhluwe": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -28.007628,
   "lon": 32.27309,
   "long": "Hluhluwe parkrun",
@@ -12400,9 +12400,9 @@
   "trace_m": null
  },
  "kathu": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -27.679389,
   "lon": 23.06658,
   "long": "Kathu parkrun",
@@ -13260,9 +13260,9 @@
   "trace_m": null
  },
  "ladysmith": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -28.546259,
   "lon": 29.769942,
   "long": "Ladysmith parkrun",
@@ -19485,9 +19485,9 @@
   "trace_m": null
  },
  "pineforest": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -28.292924,
   "lon": 27.948221,
   "long": "Pine Forest parkrun",
@@ -21332,9 +21332,9 @@
   "trace_m": null
  },
  "rooipointfarm": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -27.79113,
   "lon": 29.964782,
   "long": "Rooi Point Farm parkrun",
@@ -21932,9 +21932,9 @@
   "trace_m": 5071
  },
  "sandriver": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -28.094307,
   "lon": 26.873588,
   "long": "Sand River parkrun, Virginia",
@@ -22209,9 +22209,9 @@
   "trace_m": null
  },
  "senekal": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -28.31856,
   "lon": 27.617928,
   "long": "Senekal parkrun",
@@ -22221,9 +22221,9 @@
   "trace_m": null
  },
  "seotlongagricultureschool": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -28.459059,
   "lon": 28.854683,
   "long": "Seotlong Agriculture School parkrun",
@@ -25756,9 +25756,9 @@
   "trace_m": null
  },
  "upington": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -28.444304,
   "lon": 21.269767,
   "long": "Upington parkrun",
@@ -26252,9 +26252,9 @@
   "trace_m": null
  },
  "vryheid": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -27.777853,
   "lon": 30.794659,
   "long": "Vryheid parkrun",
@@ -26829,9 +26829,9 @@
   "trace_m": null
  },
  "welkom": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-23",
+  "last_tried": "2026-07-29",
   "lat": -27.973608,
   "lon": 26.739236,
   "long": "Welkom parkrun",
