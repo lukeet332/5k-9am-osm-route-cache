@@ -347,7 +347,7 @@ def build_one(ev):
         write_gpx(name, ev["long"], tr[1], "osm_9am_trace")
         return {"source": "osm_9am_trace", "distance_m": round(tr[0]), "status": "success",
                 "provisional": False, "trace_date": tr[2], **diag}
-    if rel and REL_LO <= rel[1] <= REL_HI:        # success: OSM relation (provisional)
+    if rel and REL_LO <= rel[1] <= REL_HI and len(rel[2]) >= 2:        # success: OSM relation (provisional)
         write_gpx(name, ev["long"], rel[2], "osm_relation")
         return {"source": "osm_relation", "distance_m": round(rel[1]), "status": "success",
                 "provisional": True, **diag}
