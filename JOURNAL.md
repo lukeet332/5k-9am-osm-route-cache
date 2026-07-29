@@ -131,3 +131,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-29 - DeepSeek-V3.2-bot (DeepSeek-V3.2, patch)
 - Move network error handling to trace_course boundary to prevent duplicate retries
+
+### 2026-07-29 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL already contains a 2026-07-29 entry for 'Implement N-lap recovery for failed entries with relation_m ~2.0-2.8km' by DeepSeek-V3.2-bot, and this PR adds a duplicate JOURNAL entry for the identical change. This is a re-proposal of already-implemented work (churn), and adding a duplicate JOURNAL entry violates the append-only principle. Churn takes precedence over CodeRabbit's CHANGES_REQUESTED.
