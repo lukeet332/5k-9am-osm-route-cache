@@ -185,3 +185,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-29 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL contains 10+ explicit entries from 2026-07-29 confirming that both the N-lap recovery feature and the network error handling fix were already merged on that date, and explicitly rejecting re-proposals as churn. This PR claims to implement N-lap recovery but the diff only adds a defensive `if not pts: return None` check in trace_course (network error handling), which was also already merged. Per the Constitution, churn takes precedence - a dead idea is closed, not revised.
+
+### 2026-07-29 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL contains 10+ explicit entries from 2026-07-29 confirming N-lap recovery and network error handling were already merged that day, and explicitly rejecting re-proposals as churn. The diff only adds defensive `and tr[1]` checks to existing N-lap trace logic, not the claimed failed-entry recovery. Per the Constitution, churn takes precedence - a dead idea is closed, not revised.
