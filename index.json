@@ -7094,9 +7094,9 @@
   "trace_m": null
  },
  "durlstoncountrypark": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-30",
   "lat": 50.595211,
   "lon": -1.954023,
   "long": "Durlston Country Park parkrun",
@@ -7927,9 +7927,9 @@
   "trace_m": null
  },
  "exmouth": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-30",
   "lat": 50.614697,
   "lon": -3.412392,
   "long": "Exmouth parkrun",
@@ -9723,9 +9723,9 @@
   "trace_m": null
  },
  "greendalefarmshop": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-30",
   "lat": 50.703157,
   "lon": -3.398836,
   "long": "Greendale Farm Shop parkrun",
@@ -10140,9 +10140,9 @@
   "trace_m": null
  },
  "haldonforest": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-30",
   "lat": 50.653392,
   "lon": -3.579359,
   "long": "Haldon Forest parkrun",
@@ -13549,9 +13549,9 @@
   "trace_m": null
  },
  "lanhydrock": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": 3911,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-30",
   "lat": 50.441131,
   "lon": -4.69614,
   "long": "Lanhydrock parkrun",
@@ -18811,9 +18811,9 @@
   "trace_m": null
  },
  "parke": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-30",
   "lat": 50.59305,
   "lon": -3.686562,
   "long": "Parke parkrun",
@@ -22126,9 +22126,9 @@
   "trace_m": 2146
  },
  "seaton": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-30",
   "lat": 50.703349,
   "lon": -3.072064,
   "long": "Seaton parkrun",
@@ -24253,9 +24253,9 @@
   "trace_m": null
  },
  "tamartrails": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-30",
   "lat": 50.535163,
   "lon": -4.201763,
   "long": "Tamar Trails parkrun",
@@ -24445,9 +24445,9 @@
   "trace_m": null
  },
  "teignmouthpromenade": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-30",
   "lat": 50.544428,
   "lon": -3.494987,
   "long": "Teignmouth Promenade parkrun",
@@ -24675,9 +24675,9 @@
   "trace_m": null
  },
  "thegreatfield": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-30",
   "lat": 50.713642,
   "lon": -2.458095,
   "long": "The Great Field parkrun",
@@ -27154,9 +27154,9 @@
   "trace_m": null
  },
  "weymouth": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.11",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-30",
   "lat": 50.625242,
   "lon": -2.447795,
   "long": "Weymouth parkrun",
