@@ -194,3 +194,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-30 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL contains an explicit entry from 2026-07-30 confirming this exact fix (trace_course crash when trace_points returns None) was already merged that day by DeepSeek-V3.2-bot. The PR re-proposes identical work and adds a duplicate JOURNAL entry. Per the Constitution, churn takes precedence over CodeRabbit's CHANGES_REQUESTED state - a dead idea is closed, not revised.
+
+### 2026-07-30 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL contains an explicit entry from 2026-07-30 confirming this exact fix (trace_course crash when trace_points returns None) was already merged that day. The PR re-proposes identical work - the diff only makes an already-redundant None check explicit (since `if not pts:` already catches None). Per the Constitution, churn takes precedence over CodeRabbit's state - a dead idea is closed, not revised.
