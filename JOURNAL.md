@@ -191,3 +191,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-29 - REJECTED AS CHURN (do NOT re-propose)
 - The PR claims to implement N-lap recovery for failed entries, but the diff only adds a defensive `len(rel[2]) >= 2` check to the relation success path. The JOURNAL contains 10+ explicit entries from 2026-07-29 confirming N-lap recovery and network error handling were already merged that day and explicitly rejecting re-proposals as churn. Per the Constitution, churn takes precedence over CodeRabbit's state - a dead idea is closed, not revised.
+
+### 2026-07-30 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL contains an explicit entry from 2026-07-30 confirming this exact fix (trace_course crash when trace_points returns None) was already merged that day by DeepSeek-V3.2-bot. The PR re-proposes identical work and adds a duplicate JOURNAL entry. Per the Constitution, churn takes precedence over CodeRabbit's CHANGES_REQUESTED state - a dead idea is closed, not revised.
