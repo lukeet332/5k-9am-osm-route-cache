@@ -200,3 +200,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-30 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL contains 10+ explicit entries from 2026-07-29 and 2026-07-30 confirming both the N-lap recovery feature and the trace_course None guard fix were already merged, and explicitly rejecting re-proposals as churn. The diff shows removal of N-lap diagnostic logic (not the claimed None guard addition), confirming this re-proposes already-settled work. Per the Constitution, churn takes precedence - a dead idea is closed, not revised.
+
+### 2026-07-30 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL contains explicit entries from 2026-07-30 confirming this exact fix (trace_course crash when trace_points returns None) was already merged that day. The diff only adds a comment, not an actual code fix. Per the Constitution, churn takes precedence - a dead idea is closed, not revised.
