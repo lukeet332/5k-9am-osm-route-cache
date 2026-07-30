@@ -230,3 +230,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-30 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL contains 10+ explicit entries from 2026-07-30 confirming the exact fix (trace_course crash when trace_points returns None) was already merged that day and rejecting re-proposals as churn. The diff doesn't match the claimed fix - it removes N-lap diagnostic logic instead of adding a None guard. Per the Constitution, churn takes precedence over CodeRabbit's state - a dead idea is closed, not revised.
+
+### 2026-07-30 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL contains 10+ explicit entries from 2026-07-30 confirming this exact fix (trace_course crash when trace_points returns None) was already merged that day and explicitly rejecting re-proposals as churn. The diff only updates a comment, not an actual code fix. Per the Constitution, churn takes precedence - a dead idea is closed, not revised.
