@@ -218,3 +218,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-30 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL contains multiple explicit entries from 2026-07-30 confirming this exact fix (trace_course crash when trace_points returns None) was already merged that day. The PR re-proposes identical work - the diff only adds redundant `tr[0] is not None` checks in build_one. Per the Constitution, churn takes precedence - a dead idea is closed, not revised.
+
+### 2026-07-30 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL contains multiple explicit entries from 2026-07-30 confirming this exact fix (adding defensive `tr[0] is not None` checks in build_one) was already merged that day. The PR re-proposes identical work. Per the Constitution, churn takes precedence - a dead idea is closed, not revised.
