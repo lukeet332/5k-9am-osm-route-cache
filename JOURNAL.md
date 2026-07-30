@@ -224,3 +224,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-30 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL contains multiple explicit entries from 2026-07-30 confirming this exact fix (trace_course crash when trace_points returns None) was already merged that day. The diff only makes an already-redundant None check explicit since `if not pts:` already catches both None and empty list in Python. Per the Constitution, churn takes precedence - a dead idea is closed, not revised.
+
+### 2026-07-30 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL contains multiple explicit entries from 2026-07-30 confirming this exact fix (trace_course/trace_courses_multi crash when trace_points returns None) was already merged that day. The PR re-proposes identical work - the diff only adds a redundant `pts is None` check to an existing `if not pts:` guard. Per the Constitution, churn takes precedence over CodeRabbit's state - a dead idea is closed, not revised.
