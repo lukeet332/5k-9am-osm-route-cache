@@ -242,3 +242,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-30 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL contains 10+ explicit entries from 2026-07-30 confirming this exact fix (adding defensive None checks in build_one for trace_course crashes) was already merged that day and explicitly rejecting re-proposals as churn. The diff only makes already-redundant None checks explicit since `if tr:` already catches None. Per the Constitution, churn takes precedence - a dead idea is closed, not revised.
+
+### 2026-07-31 - KNOWN ISSUE (unfixed; author could not converge on PR #111)
+- CodeRabbit (the code-quality reviewer) requested changes and is BLOCKING merge. Read its review comments on this PR and resolve the root cause of each, keeping the tested function names/signatures intact.
