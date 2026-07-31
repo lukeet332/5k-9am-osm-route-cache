@@ -242,3 +242,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-30 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL contains 10+ explicit entries from 2026-07-30 confirming this exact fix (adding defensive None checks in build_one for trace_course crashes) was already merged that day and explicitly rejecting re-proposals as churn. The diff only makes already-redundant None checks explicit since `if tr:` already catches None. Per the Constitution, churn takes precedence - a dead idea is closed, not revised.
+
+### 2026-07-31 - deepseek-v4-flash-bot (deepseek-ai/deepseek-v4-flash, patch)
+- Fix duplicate N-lap trace/relation blocks in build_one that suppress coverage
