@@ -291,9 +291,9 @@
   "trace_m": null
  },
  "alderleypark": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-25",
+  "last_tried": "2026-07-31",
   "lat": 53.2793,
   "lon": -2.231854,
   "long": "Alderley Park parkrun",
@@ -3939,9 +3939,9 @@
   "trace_m": null
  },
  "cantonlowerrougetrail": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 42.285578,
   "lon": -83.485271,
   "long": "Canton Lower Rouge Trail parkrun",
@@ -3951,9 +3951,9 @@
   "trace_m": null
  },
  "canyonrimtrail": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 42.598602,
   "lon": -114.454267,
   "long": "Canyon Rim Trail parkrun",
@@ -5199,9 +5199,9 @@
   "trace_m": null
  },
  "clumberpark": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": 6052,
-  "last_tried": "2026-07-25",
+  "last_tried": "2026-07-31",
   "lat": 53.268022,
   "lon": -1.065717,
   "long": "Clumber Park parkrun",
@@ -5430,9 +5430,9 @@
   "trace_m": null
  },
  "comopark": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 44.983345,
   "lon": -93.143248,
   "long": "Como Park parkrun",
@@ -5514,9 +5514,9 @@
   "trace_m": null
  },
  "conwy": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": 6730,
-  "last_tried": "2026-07-25",
+  "last_tried": "2026-07-31",
   "lat": 53.282144,
   "lon": -3.820297,
   "long": "Conwy parkrun",
@@ -5682,9 +5682,9 @@
   "trace_m": null
  },
  "cornerstonelakes": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 41.930491,
   "lon": -88.248271,
   "long": "Cornerstone Lakes parkrun",
@@ -5766,9 +5766,9 @@
   "trace_m": null
  },
  "courthouselake": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 44.786109,
   "lon": -93.592878,
   "long": "Courthouse Lake parkrun",
@@ -6042,9 +6042,9 @@
   "trace_m": null
  },
  "cutlerpark": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 42.294685,
   "lon": -71.213684,
   "long": "Cutler Park parkrun",
@@ -6186,9 +6186,9 @@
   "trace_m": null
  },
  "danehypark": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 42.389507,
   "lon": -71.137528,
   "long": "Danehy Park parkrun",
@@ -6479,9 +6479,9 @@
   "trace_m": null
  },
  "desmoinescreek": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 47.40419,
   "lon": -122.329949,
   "long": "Des Moines Creek parkrun",
@@ -7142,9 +7142,9 @@
   "trace_m": null
  },
  "eagan": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 44.797663,
   "lon": -93.175378,
   "long": "Eagan parkrun",
@@ -7227,9 +7227,9 @@
   "trace_m": null
  },
  "easterntrailbiddeford": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 43.476602,
   "lon": -70.487389,
   "long": "Eastern Trail parkrun, Biddeford",
@@ -7648,9 +7648,9 @@
   "trace_m": null
  },
  "ellesmereport": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": 4740,
-  "last_tried": "2026-07-25",
+  "last_tried": "2026-07-31",
   "lat": 53.272524,
   "lon": -2.902542,
   "long": "Ellesmere Port parkrun",
@@ -8049,9 +8049,9 @@
   "trace_m": 4801
  },
  "farmpond": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 42.280745,
   "lon": -71.43109,
   "long": "Farm Pond parkrun",
@@ -8363,9 +8363,9 @@
   "trace_m": null
  },
  "flintcastle": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-25",
+  "last_tried": "2026-07-31",
   "lat": 53.252769,
   "lon": -3.13028,
   "long": "Flint Castle parkrun",
@@ -8545,9 +8545,9 @@
   "trace_m": null
  },
  "fortward": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 47.580654,
   "lon": -122.525322,
   "long": "Fort Ward parkrun",
@@ -9747,9 +9747,9 @@
   "trace_m": null
  },
  "greenfieldvalley": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-25",
+  "last_tried": "2026-07-31",
   "lat": 53.275044,
   "lon": -3.220992,
   "long": "Greenfield Valley parkrun",
@@ -10248,9 +10248,9 @@
   "trace_m": null
  },
  "hamletpark": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 44.821408,
   "lon": -92.957775,
   "long": "Hamlet Park parkrun",
@@ -11487,9 +11487,9 @@
   "trace_m": 5043
  },
  "howardteminlakeshorepath": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 43.076831,
   "lon": -89.398831,
   "long": "Howard Temin Lakeshore Path parkrun",
@@ -11801,9 +11801,9 @@
   "trace_m": null
  },
  "itccommunitysports": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 42.437305,
   "lon": -83.549324,
   "long": "ITC Community Sports parkrun",
@@ -11873,9 +11873,9 @@
   "trace_m": null
  },
  "jamaicapond": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 42.320216,
   "lon": -71.118049,
   "long": "Jamaica Pond parkrun",
@@ -11992,9 +11992,9 @@
   "trace_m": 5130
  },
  "jeskynscommunitywoodland": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-25",
+  "last_tried": "2026-07-31",
   "lat": 51.402538,
   "lon": 0.387448,
   "long": "Jeskyns Community Woodland parkrun",
@@ -13417,9 +13417,9 @@
   "trace_m": null
  },
  "lakepacawa": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 44.448915,
   "lon": -89.524757,
   "long": "Lake Pacawa parkrun",
@@ -14015,9 +14015,9 @@
   "trace_m": null
  },
  "lillie": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 42.223759,
   "lon": -83.697915,
   "long": "Lillie parkrun, Ann Arbor",
@@ -14245,9 +14245,9 @@
   "trace_m": null
  },
  "livonia": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 42.429645,
   "lon": -83.395811,
   "long": "Livonia parkrun",
@@ -15489,9 +15489,9 @@
   "trace_m": null
  },
  "marysyoung": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 45.379698,
   "lon": -122.627926,
   "long": "Mary S. Young parkrun",
@@ -15851,9 +15851,9 @@
   "trace_m": null
  },
  "merrymeeting": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 43.921805,
   "lon": -69.954915,
   "long": "Merrymeeting parkrun",
@@ -16983,9 +16983,9 @@
   "trace_m": null
  },
  "nantypandy": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-25",
+  "last_tried": "2026-07-31",
   "lat": 53.257642,
   "lon": -4.313233,
   "long": "Nant y Pandy parkrun",
@@ -17684,9 +17684,9 @@
   "trace_m": 4998
  },
  "northwich": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-25",
+  "last_tried": "2026-07-31",
   "lat": 53.265511,
   "lon": -2.510876,
   "long": "Northwich parkrun",
@@ -19065,9 +19065,9 @@
   "trace_m": null
  },
  "paviliongardens": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-25",
+  "last_tried": "2026-07-31",
   "lat": 53.254611,
   "lon": -1.918759,
   "long": "Pavilion Gardens parkrun",
@@ -19305,9 +19305,9 @@
   "trace_m": null
  },
  "perrigo": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 47.684137,
   "lon": -122.080892,
   "long": "Perrigo parkrun",
@@ -19510,9 +19510,9 @@
   "trace_m": null
  },
  "pinepark": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 43.713809,
   "lon": -72.286019,
   "long": "Pine Park parkrun",
@@ -19872,9 +19872,9 @@
   "trace_m": null
  },
  "poolsbrook": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-25",
+  "last_tried": "2026-07-31",
   "lat": 53.259118,
   "lon": -1.348842,
   "long": "Poolsbrook parkrun",
@@ -20666,9 +20666,9 @@
   "trace_m": null
  },
  "redmondcentralconnectortrail": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 47.673754,
   "lon": -122.127259,
   "long": "Redmond Central Connector Trail parkrun",
@@ -20752,9 +20752,9 @@
   "trace_m": null
  },
  "renton": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 47.480273,
   "lon": -122.1992,
   "long": "Renton parkrun",
@@ -21069,9 +21069,9 @@
   "trace_m": null
  },
  "riversidepark": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 43.831259,
   "lon": -111.786349,
   "long": "Riverside Park parkrun",
@@ -21201,9 +21201,9 @@
   "trace_m": null
  },
  "rockcreektrail": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 45.557118,
   "lon": -122.862376,
   "long": "Rock Creek Trail parkrun",
@@ -21872,9 +21872,9 @@
   "trace_m": null
  },
  "salmoncreektrail": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 45.708036,
   "lon": -122.663147,
   "long": "Salmon Creek Trail parkrun",
@@ -22378,9 +22378,9 @@
   "trace_m": null
  },
  "shawcherryhillfarm": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 43.690214,
   "lon": -70.39435,
   "long": "Shaw Cherry Hill Farm parkrun",
@@ -23302,9 +23302,9 @@
   "trace_m": null
  },
  "springrock": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 41.805853,
   "lon": -87.907605,
   "long": "Spring Rock parkrun",
@@ -23746,9 +23746,9 @@
   "trace_m": null
  },
  "stonybrookschool": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 42.607161,
   "lon": -71.456526,
   "long": "Stony Brook School parkrun",
@@ -25096,9 +25096,9 @@
   "trace_m": null
  },
  "tollgatefarmparkbaqwab": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 47.50298,
   "lon": -121.799587,
   "long": "Tollgate Farm Park parkrun, baq\u02b7ab",
@@ -27514,9 +27514,9 @@
   "trace_m": null
  },
  "wilmslow": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-25",
+  "last_tried": "2026-07-31",
   "lat": 53.331288,
   "lon": -2.231588,
   "long": "Wilmslow parkrun",
@@ -27658,9 +27658,9 @@
   "trace_m": null
  },
  "winthroptrailhead": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-24",
+  "last_tried": "2026-07-31",
   "lat": 48.468375,
   "lon": -120.182261,
   "long": "Winthrop Trailhead parkrun",
@@ -28368,9 +28368,9 @@
   "trace_m": null
  },
  "ypromenadllandrilloynrhos": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-25",
+  "last_tried": "2026-07-31",
   "lat": 53.308381,
   "lon": -3.738822,
   "long": "Y Promen\u00e2d parkrun, Llandrillo-yn-Rhos",
