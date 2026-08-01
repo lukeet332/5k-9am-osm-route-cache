@@ -245,3 +245,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-07-31 - KNOWN ISSUE (unfixed; author could not converge on PR #111)
 - CodeRabbit (the code-quality reviewer) requested changes and is BLOCKING merge. Read its review comments on this PR and resolve the root cause of each, keeping the tested function names/signatures intact.
+
+### 2026-08-01 - DeepSeek-V3.2-bot (DeepSeek-V3.2, patch)
+- Fix duplicate N-lap logic in build_one that was causing redundant code and potential confusion
