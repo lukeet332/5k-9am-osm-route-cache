@@ -691,9 +691,9 @@
   "trace_m": null
  },
  "armidale": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-01",
   "lat": -30.491998,
   "lon": 151.639419,
   "long": "Armidale parkrun",
@@ -957,9 +957,9 @@
   "trace_m": null
  },
  "australianstandingstones": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-01",
   "lat": -29.741602,
   "lon": 151.752481,
   "long": "Australian Standing Stones parkrun",
@@ -2603,9 +2603,9 @@
   "trace_m": null
  },
  "bongilbongil": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-01",
   "lat": -30.372884,
   "lon": 153.066759,
   "long": "Bongil Bongil parkrun",
@@ -2699,9 +2699,9 @@
   "trace_m": null
  },
  "bourkeracecourse": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-01",
   "lat": -30.09756,
   "lon": 145.92572,
   "long": "Bourke Racecourse parkrun",
@@ -4429,9 +4429,9 @@
   "trace_m": null
  },
  "chaffeypark": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-01",
   "lat": -30.743124,
   "lon": 150.73018,
   "long": "Chaffey Park parkrun",
@@ -5283,9 +5283,9 @@
   "trace_m": null
  },
  "coffsharbour": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-01",
   "lat": -30.295687,
   "lon": 153.1376,
   "long": "Coffs Harbour parkrun",
@@ -5502,9 +5502,9 @@
   "trace_m": null
  },
  "constellationsofthesouth": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-01",
   "lat": -30.637282,
   "lon": 151.507,
   "long": "Constellations of the South parkrun",
@@ -9543,9 +9543,9 @@
   "trace_m": null
  },
  "grafton": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-01",
   "lat": -29.643847,
   "lon": 152.920487,
   "long": "Grafton parkrun",
@@ -11729,9 +11729,9 @@
   "trace_m": null
  },
  "inverell": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-01",
   "lat": -29.77388,
   "lon": 151.10897,
   "long": "Inverell parkrun",
@@ -12161,9 +12161,9 @@
   "trace_m": null
  },
  "jurienbayforeshore": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-01",
   "lat": -30.302452,
   "lon": 115.037533,
   "long": "Jurien Bay Foreshore parkrun",
@@ -12209,9 +12209,9 @@
   "trace_m": null
  },
  "kalgoorlieboulder": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-01",
   "lat": -30.718868,
   "lon": 121.456625,
   "long": "Kalgoorlie-Boulder parkrun",
@@ -16382,9 +16382,9 @@
   "trace_m": null
  },
  "moora": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-01",
   "lat": -30.638892,
   "lon": 116.004276,
   "long": "Moora parkrun",
@@ -16455,9 +16455,9 @@
   "trace_m": null
  },
  "moree": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-01",
   "lat": -29.46707,
   "lon": 149.843183,
   "long": "Moree parkrun",
@@ -17031,9 +17031,9 @@
   "trace_m": null
  },
  "narrabri": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-01",
   "lat": -30.33885,
   "lon": 149.755908,
   "long": "Narrabri parkrun",
@@ -25867,9 +25867,9 @@
   "trace_m": null
  },
  "urunga": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-01",
   "lat": -30.497475,
   "lon": 153.022849,
   "long": "Urunga parkrun",
@@ -28199,9 +28199,9 @@
   "trace_m": null
  },
  "yamba": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-01",
   "lat": -29.435742,
   "lon": 153.357271,
   "long": "Yamba parkrun",

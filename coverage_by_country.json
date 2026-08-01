@@ -1,5 +1,5 @@
 {
- "world_total": 2371,
+ "world_total": 2374,
  "world_mapped": 163,
  "countries": [
   {
@@ -11,7 +11,7 @@
   {
    "code": 3,
    "name": "Australia",
-   "total": 546,
+   "total": 545,
    "mapped": 2
   },
   {
@@ -35,13 +35,13 @@
   {
    "code": 98,
    "name": "United States",
-   "total": 101,
+   "total": 102,
    "mapped": 0
   },
   {
    "code": 32,
    "name": "Germany",
-   "total": 78,
+   "total": 79,
    "mapped": 3
   },
   {
@@ -83,7 +83,7 @@
   {
    "code": 23,
    "name": "Denmark",
-   "total": 13,
+   "total": 14,
    "mapped": 0
   },
   {
@@ -119,7 +119,7 @@
   {
    "code": 57,
    "name": "Malaysia",
-   "total": 1,
+   "total": 2,
    "mapped": 0
   }
  ]
