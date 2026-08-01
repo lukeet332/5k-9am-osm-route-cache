@@ -1833,9 +1833,9 @@
   "trace_m": null
  },
  "bellevue": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-01",
   "lat": 46.500362,
   "lon": -84.298049,
   "long": "Bellevue parkrun",
@@ -2675,9 +2675,9 @@
   "trace_m": null
  },
  "boulevardlake": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-01",
   "lat": 48.454808,
   "lon": -89.197557,
   "long": "Boulevard Lake parkrun",
@@ -5187,9 +5187,9 @@
   "trace_m": null
  },
  "cloverpoint": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-01",
   "lat": 48.40457,
   "lon": -123.350007,
   "long": "Clover Point parkrun",
@@ -9110,9 +9110,9 @@
   "trace_m": null
  },
  "gillieslake": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-01",
   "lat": 48.480373,
   "lon": -81.321352,
   "long": "Gillies Lake parkrun",
@@ -17562,9 +17562,9 @@
   "trace_m": null
  },
  "northbay": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-01",
   "lat": 46.298808,
   "lon": -79.455704,
   "long": "North Bay parkrun",
@@ -21800,9 +21800,9 @@
   "trace_m": null
  },
  "saintpaulin": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-01",
   "lat": 46.422567,
   "lon": -73.014185,
   "long": "Saint-Paulin parkrun",
@@ -22474,9 +22474,9 @@
   "trace_m": null
  },
  "sheriffcreekwildlifesanctuary": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.12",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-01",
   "lat": 46.402282,
   "lon": -82.633675,
   "long": "Sheriff Creek Wildlife Sanctuary parkrun",
