@@ -261,3 +261,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-08-02 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL contains 10+ explicit entries from 2026-07-30 and 2026-08-02 confirming this exact fix (adding redundant `pts is None` check to `if not pts:`) was already merged and re-proposals rejected as churn. The PR description claims to consolidate N-lap logic but the diff only makes an already-redundant None check explicit. Per the Constitution, churn takes precedence - a dead idea is closed, not revised.
+
+### 2026-08-02 - REJECTED AS CHURN (do NOT re-propose)
+- The PR re-proposes an identical change already merged on 2026-07-30 and rejected 10+ times as churn per the JOURNAL. The diff only makes a redundant `pts is None` check explicit in `trace_course` (since `if not pts:` already catches both None and empty list), not the claimed N-lap consolidation in `build_one`. Per the Constitution, churn takes precedence - a dead idea is closed, not revised.
