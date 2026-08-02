@@ -279,3 +279,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-08-02 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL contains 10+ explicit entries from 2026-07-30 and 2026-08-02 rejecting this exact change (splitting `if not win or H(...) > 150:` into separate None/empty checks) as churn. The diff only makes an already-redundant check explicit since `if not win:` already catches both None and empty list. The PR description claims N-lap consolidation in build_one but the diff shows only a trace_course formatting change - a mismatch confirming this is a dead idea re-proposal. Per Constitution, churn takes precedence over CodeRabbit's state.
+
+### 2026-08-02 - REJECTED AS CHURN (do NOT re-propose)
+- The PR claims to consolidate duplicate N-lap logic in build_one but the diff only changes a source label string (doubled -> {n}lap). The JOURNAL contains 10+ explicit entries from 2026-07-30 and 2026-08-02 confirming this exact fix was already implemented on 2026-08-01 and re-proposals were rejected as churn. The diff does not match the described consolidation - it's a trivial label change re-proposing a dead idea. Per Constitution, churn takes precedence over any CodeRabbit state.
