@@ -267,3 +267,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-08-02 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL contains explicit entries from 2026-08-01 and 2026-08-02 confirming this exact fix (consolidating duplicate N-lap logic in build_one) was already implemented and recorded, then re-proposals were rejected as churn. The diff only adds redundant `tr is not None and tr[0] is not None` checks that `if tr:` already handles in Python, not the claimed N-lap consolidation. Per the Constitution, churn takes precedence over CodeRabbit's state - a dead idea is closed, not revised.
+
+### 2026-08-02 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL contains 10+ explicit entries from 2026-07-30 and 2026-08-02 confirming this exact type of change (trace_course cleanup, redundant None checks, comment removal) was already merged and re-proposals rejected as churn. The PR claims to consolidate N-lap logic in build_one but the diff only shows trace_course formatting changes - a mismatch confirming this is a dead idea re-proposal. Per Constitution, churn takes precedence over CodeRabbit's state.
