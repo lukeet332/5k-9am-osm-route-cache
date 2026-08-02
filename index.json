@@ -3393,9 +3393,9 @@
   "trace_m": null
  },
  "bugasee": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.13",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-02",
   "lat": 51.292225,
   "lon": 9.504789,
   "long": "Bugasee parkrun, Kassel",
@@ -13177,9 +13177,9 @@
   "trace_m": null
  },
  "kuechenholz": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.13",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-02",
   "lat": 51.315327,
   "lon": 12.337807,
   "long": "K\u00fcchenholz parkrun",
@@ -18249,9 +18249,9 @@
   "trace_m": null
  },
  "ophovenerweiher": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.13",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-02",
   "lat": 51.045509,
   "lon": 7.0634,
   "long": "Ophovener Weiher parkrun",
@@ -20209,9 +20209,9 @@
   "trace_m": null
  },
  "priessnitzgrund": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.13",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-02",
   "lat": 51.074417,
   "lon": 13.762586,
   "long": "Prie\u00dfnitzgrund parkrun",
@@ -20509,9 +20509,9 @@
   "trace_m": null
  },
  "rabenauergrund": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.13",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-02",
   "lat": 50.971079,
   "lon": 13.619268,
   "long": "Rabenauer Grund parkrun",
@@ -25612,9 +25612,9 @@
   "trace_m": null
  },
  "uerdingerstadtpark": {
-  "built_by": "v0.6.8",
+  "built_by": "v0.6.13",
   "distance_m": null,
-  "last_tried": "2026-07-26",
+  "last_tried": "2026-08-02",
   "lat": 51.362075,
   "lon": 6.637494,
   "long": "Uerdinger Stadtpark parkrun",
