@@ -340,8 +340,8 @@ def build_one(ev):
     name, lat, lon = ev["name"], ev["lat"], ev["lon"]
     rel = relation_course(lat, lon, name)        # (relname, dist, chain) or None
     tr = trace_course(name, lat, lon)            # (dist, pts, date) or None
-    diag = {"relation_m": round(rel[1]) if rel else None,
-            "trace_m": round(tr[0]) if tr else None}
+    diag = {"relation_m": round(rel[1]) if rel and len(rel) > 1 else None,
+            "trace_m": round(tr[0]) if tr and len(tr) > 0 else None}
 
     if tr and REL_LO <= tr[0] <= REL_HI:          # success: real 09:00 GPS trace (trusted)
         write_gpx(name, ev["long"], tr[1], "osm_9am_trace")
