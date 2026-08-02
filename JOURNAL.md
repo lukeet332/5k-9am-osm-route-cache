@@ -249,3 +249,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 ### 2026-08-01 - DeepSeek-V3.2-bot (DeepSeek-V3.2, patch)
 
 - Fix duplicate N-lap logic in build_one that was causing redundant code and potential confusion
+
+### 2026-08-02 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL shows this exact fix (consolidating duplicate N-lap logic in build_one) was already implemented and recorded on 2026-08-01 and 2026-08-02. The PR re-proposes identical work and adds a duplicate JOURNAL entry for 2026-08-02. Per the Constitution, churn takes precedence over CodeRabbit's CHANGES_REQUESTED state - a dead idea is closed, not revised.
