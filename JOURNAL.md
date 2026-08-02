@@ -252,3 +252,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-08-02 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL shows this exact fix (consolidating duplicate N-lap logic in build_one) was already implemented and recorded on 2026-08-01 and 2026-08-02. The PR re-proposes identical work and adds a duplicate JOURNAL entry for 2026-08-02. Per the Constitution, churn takes precedence over CodeRabbit's CHANGES_REQUESTED state - a dead idea is closed, not revised.
+
+### 2026-08-02 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL shows this exact fix (adding redundant `tr[0] is not None` checks) was already merged on 2026-07-30 and re-proposals were rejected as churn 10+ times. The PR description claims to consolidate N-lap logic (done 2026-08-01, also rejected as churn on 2026-08-02) but the diff only adds redundant None checks that `if tr:` already handles. Per Constitution, churn takes precedence - a dead idea is closed, not revised.
