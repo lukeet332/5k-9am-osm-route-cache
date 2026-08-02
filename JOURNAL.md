@@ -270,3 +270,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-08-02 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL contains 10+ explicit entries from 2026-07-30 and 2026-08-02 confirming this exact type of change (trace_course cleanup, redundant None checks, comment removal) was already merged and re-proposals rejected as churn. The PR claims to consolidate N-lap logic in build_one but the diff only shows trace_course formatting changes - a mismatch confirming this is a dead idea re-proposal. Per Constitution, churn takes precedence over CodeRabbit's state.
+
+### 2026-08-02 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL contains multiple explicit entries from 2026-07-30 and 2026-08-02 confirming this exact change (adding redundant `pts is None` check to `if not pts:`) was already merged and re-proposals rejected as churn. The PR description claims to consolidate N-lap logic in build_one but the diff only shows a trace_course formatting change - a mismatch confirming this is a dead idea re-proposal. Per Constitution, churn takes precedence over CodeRabbit's state.
