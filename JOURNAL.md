@@ -264,3 +264,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-08-02 - REJECTED AS CHURN (do NOT re-propose)
 - The PR re-proposes an identical change already merged on 2026-07-30 and rejected 10+ times as churn per the JOURNAL. The diff only makes a redundant `pts is None` check explicit in `trace_course` (since `if not pts:` already catches both None and empty list), not the claimed N-lap consolidation in `build_one`. Per the Constitution, churn takes precedence - a dead idea is closed, not revised.
+
+### 2026-08-02 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL contains explicit entries from 2026-08-01 and 2026-08-02 confirming this exact fix (consolidating duplicate N-lap logic in build_one) was already implemented and recorded, then re-proposals were rejected as churn. The diff only adds redundant `tr is not None and tr[0] is not None` checks that `if tr:` already handles in Python, not the claimed N-lap consolidation. Per the Constitution, churn takes precedence over CodeRabbit's state - a dead idea is closed, not revised.
