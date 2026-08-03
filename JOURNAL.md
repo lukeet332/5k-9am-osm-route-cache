@@ -291,3 +291,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-08-03 - REJECTED AS CHURN (do NOT re-propose)
 - The PR is a no-op: the diff only removes an explanatory comment from an existing guard (`if not pts:`) that already correctly handles both None and empty lists. The author's description claims a new crash fix and added guard, but the guard already existed. CodeRabbit's only block is a title-warning, not a code issue. Per the Constitution, churn (no meaningful improvement) takes precedence over CodeRabbit's state - a dead/no-op idea is closed, not revised.
+
+### 2026-08-03 - REJECTED AS CHURN (do NOT re-propose)
+- This PR re-proposes a trivial label change (doubled -> n_lap) that the JOURNAL records was already implemented on 2026-08-01 and rejected 10+ times as churn. The PR description claims a crash fix with a new guard in trace_courses_multi, but the diff only shows the label change - a mismatch confirming this is a dead idea re-proposal. Per the Constitution, churn takes precedence over CodeRabbit's state.
