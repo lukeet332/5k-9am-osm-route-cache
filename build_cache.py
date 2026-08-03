@@ -264,6 +264,8 @@ def trace_courses_multi(name, lat, lon):
     # prefer recent traces (last 2 years) to track current course shape; older traces may be obsolete
     cutoff = datetime.date.today() - datetime.timedelta(days=730)
     pool = _recent_pool(valid_traces, cutoff)
+    if not pool:
+        return None
     minlen = min(len(t) for t in pool)
     avg_path = []
     for i in range(minlen):
