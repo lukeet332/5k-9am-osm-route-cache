@@ -294,3 +294,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-08-03 - REJECTED AS CHURN (do NOT re-propose)
 - This PR re-proposes a trivial label change (doubled -> n_lap) that the JOURNAL records was already implemented on 2026-08-01 and rejected 10+ times as churn. The PR description claims a crash fix with a new guard in trace_courses_multi, but the diff only shows the label change - a mismatch confirming this is a dead idea re-proposal. Per the Constitution, churn takes precedence over CodeRabbit's state.
+
+### 2026-08-04 - REJECTED AS CHURN (do NOT re-propose)
+- The PR re-proposes a change already recorded in the JOURNAL as implemented on 2026-08-04 (the last entry in the provided journal). The journal entry and code changes (prioritising audit-recoverable entries, guard in build_one) are duplicates of an already-merged improvement. Per the Constitution, churn takes precedence - a dead idea is closed, not revised.
