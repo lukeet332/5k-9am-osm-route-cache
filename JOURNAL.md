@@ -300,3 +300,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-08-04 - REJECTED AS CHURN (do NOT re-propose)
 - The diff only removes an explanatory comment from `if not pts:` in `trace_courses_multi` - a no-op change the JOURNAL records was already merged on 2026-07-30 and rejected 10+ times as churn on 2026-08-02 and 2026-08-03. The author's description claims audit-recoverable prioritisation and a build_one guard, but the diff shows neither - a mismatch confirming this is a dead idea re-proposal. Per the Constitution, churn takes precedence over CodeRabbit's state.
+
+### 2026-08-04 - REJECTED AS CHURN (do NOT re-propose)
+- The diff only changes two diagnostic label strings (doubled -> n_lap) but the PR description claims sorting recoverable entries and adding a build_one guard - a mismatch confirming this re-proposes a dead idea. The JOURNAL records 10+ explicit rejections of this exact label change as churn (2026-07-30, 2026-08-01, 2026-08-02, 2026-08-03). Per the Constitution, churn takes precedence over CodeRabbit's state - a dead idea is closed, not revised.
