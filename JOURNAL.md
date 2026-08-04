@@ -297,3 +297,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-08-04 - REJECTED AS CHURN (do NOT re-propose)
 - The PR re-proposes a change already recorded in the JOURNAL as implemented on 2026-08-04 (the last entry in the provided journal). The journal entry and code changes (prioritising audit-recoverable entries, guard in build_one) are duplicates of an already-merged improvement. Per the Constitution, churn takes precedence - a dead idea is closed, not revised.
+
+### 2026-08-04 - REJECTED AS CHURN (do NOT re-propose)
+- The diff only removes an explanatory comment from `if not pts:` in `trace_courses_multi` - a no-op change the JOURNAL records was already merged on 2026-07-30 and rejected 10+ times as churn on 2026-08-02 and 2026-08-03. The author's description claims audit-recoverable prioritisation and a build_one guard, but the diff shows neither - a mismatch confirming this is a dead idea re-proposal. Per the Constitution, churn takes precedence over CodeRabbit's state.
