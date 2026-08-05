@@ -5319,6 +5319,20 @@
   "trace_date": "2015-12-26",
   "trace_m": 5004
  },
+ "colbywoodlandgarden": {
+  "built_by": "v0.6.14",
+  "distance_m": 5004,
+  "last_tried": "2026-08-05",
+  "lat": 51.74064,
+  "lon": -4.669924,
+  "long": "Colby Woodland Garden parkrun",
+  "provisional": false,
+  "relation_m": null,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2015-12-26",
+  "trace_m": 5004
+ },
  "colchestercastle": {
   "built_by": "v0.6.13",
   "distance_m": null,
