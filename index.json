@@ -144,9 +144,9 @@
   "trace_m": null
  },
  "ahrenspark": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 41.749132,
   "lon": -92.707321,
   "long": "Ahrens Park parkrun",
@@ -510,9 +510,9 @@
   "trace_m": null
  },
  "anacostia": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 38.868085,
   "lon": -76.995023,
   "long": "Anacostia parkrun",
@@ -837,9 +837,9 @@
   "trace_m": null
  },
  "aspen": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 39.187266,
   "lon": -106.852397,
   "long": "Aspen parkrun",
@@ -1198,9 +1198,9 @@
   "trace_m": null
  },
  "baltimoreandannapolistrail": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 39.121671,
   "lon": -76.5901,
   "long": "Baltimore and Annapolis Trail parkrun",
@@ -2338,9 +2338,9 @@
   "trace_m": null
  },
  "blackbutt": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": -32.932526,
   "lon": 151.699755,
   "long": "Blackbutt parkrun",
@@ -2855,9 +2855,9 @@
   "trace_m": null
  },
  "branchbrookpark": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 40.775247,
   "lon": -74.173977,
   "long": "Branch Brook Park parkrun",
@@ -3261,9 +3261,9 @@
   "trace_m": null
  },
  "brooklynbridge": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 40.701797,
   "lon": -73.996763,
   "long": "Brooklyn Bridge parkrun",
@@ -4477,9 +4477,9 @@
   "trace_m": null
  },
  "charleston": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 38.350322,
   "lon": -81.639331,
   "long": "Charleston parkrun, West Virginia",
@@ -4899,9 +4899,9 @@
   "trace_m": null
  },
  "cityparkiowa": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 41.67568,
   "lon": -91.534945,
   "long": "City Park parkrun, Iowa",
@@ -5383,9 +5383,9 @@
   "trace_m": null
  },
  "collegepark": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 38.999103,
   "lon": -76.932737,
   "long": "College Park parkrun",
@@ -5696,9 +5696,9 @@
   "trace_m": null
  },
  "cornerstonelakes": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 41.930491,
   "lon": -88.248271,
   "long": "Cornerstone Lakes parkrun",
@@ -6383,9 +6383,9 @@
   "trace_m": 4849
  },
  "delawareandraritancanal": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 40.558923,
   "lon": -74.530322,
   "long": "Delaware and Raritan Canal parkrun",
@@ -7903,9 +7903,9 @@
   "trace_m": null
  },
  "evergreen": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 40.9496,
   "lon": -74.79777,
   "long": "Evergreen parkrun",
@@ -7953,9 +7953,9 @@
   "trace_m": null
  },
  "explorationplace": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 37.689049,
   "lon": -97.347301,
   "long": "Exploration Place parkrun",
@@ -8365,9 +8365,9 @@
   "trace_m": null
  },
  "fletcherscove": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 38.919711,
   "lon": -77.10189,
   "long": "Fletcher\u2019s Cove parkrun",
@@ -10911,9 +10911,9 @@
   "trace_m": null
  },
  "heritageharbor": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 41.341177,
   "lon": -88.785212,
   "long": "Heritage Harbor parkrun, Ottawa",
@@ -12102,9 +12102,9 @@
   "trace_m": null
  },
  "joecreason": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 38.210534,
   "lon": -85.705759,
   "long": "Joe Creason parkrun",
@@ -12559,9 +12559,9 @@
   "trace_m": null
  },
  "kensington": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 39.012225,
   "lon": -77.091204,
   "long": "Kensington parkrun",
@@ -13431,9 +13431,9 @@
   "trace_m": null
  },
  "lakemac": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": -32.972596,
   "lon": 151.612487,
   "long": "Lake Mac parkrun",
@@ -13479,9 +13479,9 @@
   "trace_m": null
  },
  "lakeview": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": -33.030093,
   "lon": 151.642302,
   "long": "Lakeview parkrun",
@@ -13815,9 +13815,9 @@
   "trace_m": null
  },
  "leakinpark": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 39.303486,
   "lon": -76.707602,
   "long": "Leakin Park parkrun",
@@ -14719,9 +14719,9 @@
   "trace_m": null
  },
  "lukens": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 40.172336,
   "lon": -75.141836,
   "long": "Lukens parkrun",
@@ -14888,9 +14888,9 @@
   "trace_m": null
  },
  "maceranch": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 38.557207,
   "lon": -121.710599,
   "long": "Mace Ranch parkrun",
@@ -15141,9 +15141,9 @@
   "trace_m": null
  },
  "mangerebridge": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": -36.937539,
   "lon": 174.787717,
   "long": "M\u0101ngere Bridge parkrun",
@@ -15201,9 +15201,9 @@
   "trace_m": null
  },
  "mansfieldoh": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 40.767616,
   "lon": -82.538434,
   "long": "Mansfield OH parkrun",
@@ -16179,9 +16179,9 @@
   "trace_m": null
  },
  "mingo": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 40.306738,
   "lon": -83.062277,
   "long": "Mingo parkrun",
@@ -16529,9 +16529,9 @@
   "trace_m": null
  },
  "morrisseypark": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 40.086144,
   "lon": -88.266416,
   "long": "Morrissey Park parkrun",
@@ -16901,9 +16901,9 @@
   "trace_m": null
  },
  "murdochuniversity": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": -32.067009,
   "lon": 115.83584,
   "long": "Murdoch University parkrun",
@@ -18083,9 +18083,9 @@
   "trace_m": null
  },
  "ohioanderiecanalreservation": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 41.431816,
   "lon": -81.662319,
   "long": "Ohio and Erie Canal Reservation parkrun",
@@ -18215,9 +18215,9 @@
   "trace_m": null
  },
  "oldtownhousepark": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 41.6843,
   "lon": -70.216886,
   "long": "Old Town House Park parkrun",
@@ -18489,9 +18489,9 @@
   "trace_date": "2022-12-10"
  },
  "osbornmetropark": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 41.414289,
   "lon": -82.635065,
   "long": "Osborn MetroPark parkrun",
@@ -19151,9 +19151,9 @@
   "trace_m": null
  },
  "peacevalley": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 40.320986,
   "lon": -75.192769,
   "long": "Peace Valley parkrun",
@@ -20380,9 +20380,9 @@
   "trace_m": null
  },
  "purcell": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 38.428261,
   "lon": -78.881377,
   "long": "Purcell parkrun",
@@ -21419,9 +21419,9 @@
   "trace_m": null
  },
  "rooseveltislanddc": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 38.89638,
   "lon": -77.063956,
   "long": "Roosevelt Island DC parkrun",
@@ -22762,9 +22762,9 @@
   "trace_m": null
  },
  "sippolake": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 40.808339,
   "lon": -81.460174,
   "long": "Sippo Lake parkrun",
@@ -23088,9 +23088,9 @@
   "trace_m": null
  },
  "southbouldercreek": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 39.992167,
   "lon": -105.217127,
   "long": "South Boulder Creek parkrun",
@@ -23376,9 +23376,9 @@
   "trace_m": null
  },
  "springrock": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 41.805853,
   "lon": -87.907605,
   "long": "Spring Rock parkrun",
@@ -23772,9 +23772,9 @@
   "trace_m": null
  },
  "stockton": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": -32.919273,
   "lon": 151.78442,
   "long": "Stockton parkrun",
@@ -24061,9 +24061,9 @@
   "trace_m": null
  },
  "sunsetdunes": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 37.760326,
   "lon": -122.509961,
   "long": "Sunset Dunes parkrun",
@@ -24121,9 +24121,9 @@
   "trace_m": null
  },
  "susquehannariverwalk": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 41.235406,
   "lon": -77.004952,
   "long": "Susquehanna Riverwalk parkrun",
@@ -24712,9 +24712,9 @@
   "trace_m": null
  },
  "thebeaches": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": -32.946293,
   "lon": 151.760065,
   "long": "The Beaches parkrun",
@@ -25062,9 +25062,9 @@
   "trace_m": null
  },
  "threeriversheritagetrail": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 40.453551,
   "lon": -79.990629,
   "long": "Three Rivers Heritage Trail parkrun",
@@ -26169,9 +26169,9 @@
   "trace_m": null
  },
  "veteranspark": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 40.204293,
   "lon": -74.678006,
   "long": "Veterans Park parkrun",
@@ -26688,9 +26688,9 @@
   "trace_m": null
  },
  "warrencountyarmco": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 39.461468,
   "lon": -84.276402,
   "long": "Warren County Armco parkrun",
@@ -27430,9 +27430,9 @@
   "trace_m": null
  },
  "whitelickcreek": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": 39.695164,
   "lon": -86.401957,
   "long": "White Lick Creek parkrun",
@@ -27516,9 +27516,9 @@
   "trace_m": 3218
  },
  "whyallaforeshore": {
-  "built_by": "v0.6.12",
+  "built_by": "v0.6.14",
   "distance_m": null,
-  "last_tried": "2026-07-31",
+  "last_tried": "2026-08-05",
   "lat": -33.040603,
   "lon": 137.585902,
   "long": "Whyalla Foreshore parkrun",
