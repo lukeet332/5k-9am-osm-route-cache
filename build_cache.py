@@ -231,7 +231,7 @@ def _recent_pool(valid_traces, cutoff):
 
 def trace_courses_multi(name, lat, lon):
     pts = trace_points(name, lat, lon)
-    if not pts:  # empty list -> no traces
+    if pts is None or not pts:  # None (network error) or empty list -> no traces
         return None
     # group by date: Saturday/Christmas/New-Year, local 09:00-09:45, anchored within 150m of the start
     traces = {}

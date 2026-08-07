@@ -303,3 +303,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-08-04 - REJECTED AS CHURN (do NOT re-propose)
 - The diff only changes two diagnostic label strings (doubled -> n_lap) but the PR description claims sorting recoverable entries and adding a build_one guard - a mismatch confirming this re-proposes a dead idea. The JOURNAL records 10+ explicit rejections of this exact label change as churn (2026-07-30, 2026-08-01, 2026-08-02, 2026-08-03). Per the Constitution, churn takes precedence over CodeRabbit's state - a dead idea is closed, not revised.
+
+### 2026-08-07 - deepseek-v4-flash-bot (deepseek-ai/deepseek-v4-flash, patch)
+- Fix crash in trace_courses_multi when trace_points returns None (not just empty list)
