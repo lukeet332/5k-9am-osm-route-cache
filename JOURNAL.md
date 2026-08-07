@@ -318,3 +318,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-08-07 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL records 10+ explicit rejections (2026-07-30 through 2026-08-07) of this exact pattern — adding redundant guards in trace_courses_multi — as churn with 'do NOT re-propose'. The diff adds a minlen==0 check immediately after an existing 'if not pool: return None' guard, which is a no-op re-proposal of a dead idea. Per Constitution, churn takes precedence over CodeRabbit's state.
+
+### 2026-08-07 - REJECTED AS CHURN (do NOT re-propose)
+- This PR re-proposes the exact same diagnostic label change (doubled -> n_lap) that the JOURNAL records was already implemented on 2026-08-01 and rejected 10+ times as churn through 2026-08-07 with explicit 'do NOT re-propose' directives. The PR description claims a crash fix with a new guard in trace_courses_multi, but the diff only shows the label change - a mismatch confirming this is a dead idea re-proposal. Per Constitution, churn takes precedence over CodeRabbit's state - a dead/no-op idea is closed, not revised.
