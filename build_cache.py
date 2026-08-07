@@ -210,7 +210,7 @@ def trace_points(name, lat, lon, half_m=900, max_pages=5):
         for m in re.finditer(r'<trkpt lat="([\-\d.]+)" lon="([\-\d.]+)"[^>]*>(.*?)</trkpt>', txt, re.S):
             n += 1
             tm = re.search(r'<time>([^<]+)</time>', m.group(3))
-            if not tm:
+            if not tm or not tm.group(1):
                 continue
             try:
                 t = datetime.datetime.fromisoformat(tm.group(1).replace("Z", "+00:00"))
