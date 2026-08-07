@@ -312,3 +312,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-08-07 - REJECTED AS CHURN (do NOT re-propose)
 - The diff adds a duplicate `if not pool: return None` guard immediately before an identical existing guard - a no-op change. The JOURNAL records 10+ prior rejections of this exact redundant-check pattern in trace_courses_multi as churn (2026-07-30, 2026-08-02, 2026-08-03, 2026-08-04, 2026-08-07). The author's description claims a new crash fix but the guard already existed. Per Constitution, churn takes precedence over CodeRabbit's state - a dead idea is closed, not revised.
+
+### 2026-08-07 - REJECTED AS CHURN (do NOT re-propose)
+- This PR adds a duplicate `if not pool: return None` guard immediately before an identical existing guard in `trace_courses_multi` - a no-op change. The JOURNAL explicitly records 10+ prior rejections of this exact redundant-check pattern as churn (2026-07-30, 2026-08-02, 2026-08-03, 2026-08-04, 2026-08-07) with 'do NOT re-propose'. The author's description claims a new crash fix but the guard already existed. Per Constitution, churn takes precedence over CodeRabbit's state - a dead idea is closed, not revised.
