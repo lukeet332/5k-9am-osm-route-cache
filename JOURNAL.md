@@ -309,3 +309,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-08-07 - REJECTED AS CHURN (do NOT re-propose)
 - This PR is churn: the diff only removes a comment from an existing `if not pts:` guard that already handles empty lists, while the author's description falsely claims a new crash fix was added. The JOURNAL records 10+ prior rejections of this exact no-op change (2026-07-30, 2026-08-02, 2026-08-03, 2026-08-04, 2026-08-07) as churn. Per Constitution, churn takes precedence over CodeRabbit's CHANGES_REQUESTED state - a dead idea is closed, not revised.
+
+### 2026-08-07 - REJECTED AS CHURN (do NOT re-propose)
+- The diff adds a duplicate `if not pool: return None` guard immediately before an identical existing guard - a no-op change. The JOURNAL records 10+ prior rejections of this exact redundant-check pattern in trace_courses_multi as churn (2026-07-30, 2026-08-02, 2026-08-03, 2026-08-04, 2026-08-07). The author's description claims a new crash fix but the guard already existed. Per Constitution, churn takes precedence over CodeRabbit's state - a dead idea is closed, not revised.
