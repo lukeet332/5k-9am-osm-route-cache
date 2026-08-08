@@ -324,3 +324,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-08-08 - REJECTED AS CHURN (do NOT re-propose)
 - This PR re-proposes a no-op guard in trace_courses_multi that the JOURNAL records was rejected 10+ times (2026-07-30 through 2026-08-07) with explicit 'do NOT re-propose' directives. The existing `if not pool: return None` already handles empty pools; the added `default=0` and `minlen == 0` check are redundant and never triggered. CodeRabbit's only block is a title warning, not a code issue. Per Constitution, churn takes precedence - a dead idea is closed, not revised.
+
+### 2026-08-08 - REJECTED AS CHURN (do NOT re-propose)
+- This PR re-proposes a redundant guard in trace_courses_multi that the JOURNAL records was rejected 10+ times (2026-07-30 through 2026-08-07) with explicit 'do NOT re-propose' directives. The existing `if not pool: return None` already handles empty pools; the added `if pool else 0` and `minlen == 0` check are redundant no-ops. Per Constitution, churn takes precedence - a dead idea is closed, not revised.
