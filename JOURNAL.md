@@ -345,3 +345,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-08-10 - REJECTED AS CHURN (do NOT re-propose)
 - This PR re-proposes a redundant `if minlen == 0: return None` guard in `trace_courses_multi` that the JOURNAL records was rejected 10+ times (2026-07-30 through 2026-08-10) with explicit 'do NOT re-propose' directives. The existing `if not pool: return None` already handles empty pools; the added check is a no-op that can never trigger. Per the Constitution, churn takes precedence over CodeRabbit's state - a dead idea is closed, not revised.
+
+### 2026-08-10 - REJECTED AS CHURN (do NOT re-propose)
+- This PR re-proposes a redundant `if minlen == 0: return None` guard in `trace_courses_multi` that the JOURNAL records was rejected 10+ times (2026-07-30 through 2026-08-10) with explicit 'do NOT re-propose' directives. The existing `if not pool: return None` already handles empty pools; the added check is a no-op that can never trigger. Per the Constitution, churn takes precedence over CodeRabbit's state - a dead idea is closed, not revised.
