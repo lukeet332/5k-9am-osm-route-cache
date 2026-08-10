@@ -333,3 +333,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-08-10 - REJECTED AS CHURN (do NOT re-propose)
 - This PR re-proposes a redundant empty-pool guard in trace_courses_multi that the JOURNAL records was rejected 10+ times (2026-07-30 through 2026-08-08) with explicit 'do NOT re-propose' directives. The existing `if not pool: return None` already handles empty pools; the added `minlen = min(...) if pool else 0` and `if minlen == 0: return None` are no-ops that can never trigger. Per the Constitution, churn takes precedence over CodeRabbit's state - a dead idea is closed, not revised.
+
+### 2026-08-10 - REJECTED AS CHURN (do NOT re-propose)
+- The PR description claims a crash fix in trace_courses_multi, but the diff only adds redundant len() checks in build_one's diagnostic dict (rel/tr are 3-tuples when not None, so len>1/len>0 are always true). This no-op pattern has been rejected 10+ times in the JOURNAL as churn. Churn takes precedence over CodeRabbit's absent review.
