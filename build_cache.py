@@ -267,6 +267,8 @@ def trace_courses_multi(name, lat, lon):
     if not pool:
         return None
     minlen = min(len(t) for t in pool)
+    if minlen == 0:
+        return None
     avg_path = []
     for i in range(minlen):
         las = [t[i][0] for t in pool]
