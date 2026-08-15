@@ -1,5 +1,5 @@
 {
- "world_total": 2383,
+ "world_total": 2388,
  "world_mapped": 163,
  "countries": [
   {
@@ -17,7 +17,7 @@
   {
    "code": 85,
    "name": "South Africa",
-   "total": 228,
+   "total": 230,
    "mapped": 6
   },
   {
@@ -35,13 +35,13 @@
   {
    "code": 98,
    "name": "United States",
-   "total": 103,
+   "total": 102,
    "mapped": 0
   },
   {
    "code": 32,
    "name": "Germany",
-   "total": 80,
+   "total": 81,
    "mapped": 3
   },
   {
@@ -59,13 +59,13 @@
   {
    "code": 46,
    "name": "Japan",
-   "total": 52,
+   "total": 53,
    "mapped": 0
   },
   {
    "code": 64,
    "name": "Netherlands",
-   "total": 30,
+   "total": 31,
    "mapped": 3
   },
   {
@@ -95,7 +95,7 @@
   {
    "code": 30,
    "name": "Finland",
-   "total": 9,
+   "total": 10,
    "mapped": 0
   },
   {
