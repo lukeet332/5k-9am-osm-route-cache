@@ -1525,7 +1525,7 @@
  "bayeastgarden": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": 1.294155,
   "lon": 103.866771,
   "long": "Bay East Garden parkrun",
@@ -1726,7 +1726,7 @@
  "bedokreservoir": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": 1.340544,
   "lon": 103.920588,
   "long": "Bedok Reservoir parkrun",
@@ -1943,7 +1943,7 @@
  "benguelacove": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -34.346162,
   "lon": 19.132696,
   "long": "Benguela Cove parkrun",
@@ -2075,7 +2075,7 @@
  "bettysbay": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -34.351851,
   "lon": 18.926615,
   "long": "Betty\u2019s Bay parkrun",
@@ -2316,7 +2316,7 @@
  "bishan": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": 1.360729,
   "lon": 103.850291,
   "long": "Bishan parkrun",
@@ -2593,7 +2593,7 @@
  "bongamereserve": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -34.18203,
   "lon": 21.752808,
   "long": "Bon Game Reserve parkrun",
@@ -2941,7 +2941,7 @@
  "bredasdorp": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -34.533186,
   "lon": 20.028241,
   "long": "Bredasdorp parkrun",
@@ -3025,7 +3025,7 @@
  "bridgetown": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -33.960435,
   "lon": 18.526226,
   "long": "Bridgetown parkrun",
@@ -3757,7 +3757,7 @@
  "caledongolfcourse": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -34.235934,
   "lon": 19.433708,
   "long": "Caledon Golf Course parkrun",
@@ -3977,7 +3977,7 @@
  "capeagulhas": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -34.820522,
   "lon": 20.028127,
   "long": "Cape Agulhas parkrun",
@@ -5518,7 +5518,7 @@
  "constantiagreenbelt": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -34.008575,
   "lon": 18.440688,
   "long": "Constantia Greenbelt parkrun",
@@ -6046,7 +6046,7 @@
  "curromosselbayschool": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -34.192672,
   "lon": 22.110286,
   "long": "Curro Mossel Bay School parkrun",
@@ -7219,7 +7219,7 @@
  "eastcoastpark": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": 1.294954,
   "lon": 103.893129,
   "long": "East Coast Park parkrun",
@@ -8003,7 +8003,7 @@
  "faktoria": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": 54.253727,
   "lon": 18.630825,
   "long": "parkrun Faktoria",
@@ -8294,7 +8294,7 @@
  "fishhoek": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -34.120577,
   "lon": 18.398581,
   "long": "Fish Hoek parkrun",
@@ -9005,7 +9005,7 @@
  "gdansk": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": 54.41428,
   "lon": 18.6017,
   "long": "parkrun Gda\u0144sk",
@@ -9017,7 +9017,7 @@
  "gdanskpoludnie": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": 54.316715,
   "lon": 18.576999,
   "long": "parkrun Gda\u0144sk-Po\u0142udnie",
@@ -9029,7 +9029,7 @@
  "gdynia": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": 54.502632,
   "lon": 18.558699,
   "long": "parkrun Gdynia",
@@ -9967,7 +9967,7 @@
  "groeneweide": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -34.589826,
   "lon": 19.404299,
   "long": "Groeneweide parkrun",
@@ -10408,7 +10408,7 @@
  "harkerville": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -34.038421,
   "lon": 23.24131,
   "long": "Harkerville parkrun",
@@ -10516,7 +10516,7 @@
  "hartenboschvillage": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -34.112649,
   "lon": 22.106174,
   "long": "Hart & Bosch Village parkrun",
@@ -10949,7 +10949,7 @@
  "hermanus": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -34.397417,
   "lon": 19.215074,
   "long": "Hermanus parkrun",
@@ -11430,7 +11430,7 @@
  "hopkinsland": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -34.392084,
   "lon": 20.838376,
   "long": "Hopkins Land parkrun",
@@ -11514,7 +11514,7 @@
  "houtbay": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -34.034137,
   "lon": 18.351688,
   "long": "Hout Bay parkrun",
@@ -12080,7 +12080,7 @@
  "jeziorogorne": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": 54.081372,
   "lon": 21.379051,
   "long": "parkrun Jezioro G\u00f3rne, K\u0119trzyn",
@@ -13072,7 +13072,7 @@
  "knysna": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -34.045911,
   "lon": 23.06934,
   "long": "Knysna parkrun",
@@ -13096,7 +13096,7 @@
  "kolobrzeg": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": 54.184504,
   "lon": 15.575563,
   "long": "parkrun Ko\u0142obrzeg",
@@ -13156,7 +13156,7 @@
  "koszalin": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": 54.179399,
   "lon": 16.210552,
   "long": "parkrun Koszalin",
@@ -15879,7 +15879,7 @@
  "mentorscountryestate": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -34.017025,
   "lon": 24.892898,
   "long": "Mentors Country Estate parkrun",
@@ -16241,7 +16241,7 @@
  "mitchellsplain": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -34.043918,
   "lon": 18.597581,
   "long": "Mitchells Plain parkrun",
@@ -17613,7 +17613,7 @@
  "normhudlintrails": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -33.969224,
   "lon": 25.45499,
   "long": "Norm-Hudlin Trails parkrun",
@@ -19033,7 +19033,7 @@
  "parkmiejskiwejherowo": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": 54.598679,
   "lon": 18.235979,
   "long": "parkrun Park Miejski, Wejherowo",
@@ -19045,7 +19045,7 @@
  "parkmodrzewie": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": 54.18425,
   "lon": 19.392936,
   "long": "parkrun Park Modrzewie",
@@ -19248,7 +19248,7 @@
  "pehobiebeach": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -33.980149,
   "lon": 25.657368,
   "long": "PE Hobie Beach parkrun",
@@ -20888,7 +20888,7 @@
  "rezerwatstrzelnica": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": 54.130316,
   "lon": 17.95747,
   "long": "parkrun Rezerwat Strzelnica",
@@ -21409,7 +21409,7 @@
  "rondeboschcommon": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -33.959376,
   "lon": 18.480871,
   "long": "Rondebosch Common parkrun",
@@ -21744,7 +21744,7 @@
  "rumia": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": 54.574728,
   "lon": 18.395666,
   "long": "parkrun Rumia",
@@ -22129,7 +22129,7 @@
  "sardiniabay": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -34.012166,
   "lon": 25.495691,
   "long": "Sardinia Bay parkrun",
@@ -23714,7 +23714,7 @@
  "stfrancis": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -34.162285,
   "lon": 24.815401,
   "long": "St Francis parkrun",
@@ -23738,7 +23738,7 @@
  "stgeorges": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -33.966819,
   "lon": 25.604333,
   "long": "St George\u2019s parkrun",
@@ -23762,7 +23762,7 @@
  "stilbaaiwestbeach": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -34.383798,
   "lon": 21.422696,
   "long": "Stilbaai West Beach parkrun",
@@ -24281,7 +24281,7 @@
  "swellendam": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -34.00627,
   "lon": 20.439211,
   "long": "Swellendam parkrun",
@@ -24581,7 +24581,7 @@
  "tczew": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": 54.090568,
   "lon": 18.802342,
   "long": "parkrun Tczew",
@@ -27254,7 +27254,7 @@
  "westcoastpark": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": 1.297454,
   "lon": 103.762915,
   "long": "West Coast Park parkrun",
@@ -28359,7 +28359,7 @@
  "wzniesienieosowy": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": 54.435529,
   "lon": 18.472494,
   "long": "parkrun Wzniesienie Osowy",
@@ -28673,7 +28673,7 @@
  "zandvlei": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-17",
   "lat": -34.098764,
   "lon": 18.469422,
   "long": "Zandvlei parkrun",
