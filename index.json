@@ -1261,7 +1261,7 @@
  "banstead": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": 51.307648,
   "lon": -0.184225,
   "long": "Banstead Woods parkrun",
@@ -1465,7 +1465,7 @@
  "bathskyline": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": 51.372899,
   "lon": -2.330376,
   "long": "Bath Skyline parkrun",
@@ -1477,7 +1477,7 @@
  "bathurst": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": -33.414176,
   "lon": 149.586917,
   "long": "Bathurst parkrun",
@@ -3013,7 +3013,7 @@
  "brickfieldspark": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": 51.377397,
   "lon": -2.385904,
   "long": "Brickfields Park parkrun",
@@ -3443,7 +3443,7 @@
  "bunbury": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": -33.342966,
   "lon": 115.633228,
   "long": "Bunbury parkrun",
@@ -3781,7 +3781,7 @@
  "californiacountry": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": 51.379583,
   "lon": -0.867647,
   "long": "California Country parkrun",
@@ -5409,7 +5409,7 @@
  "collierivertrail": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": -33.357664,
   "lon": 116.156872,
   "long": "Collie River Trail parkrun",
@@ -7423,7 +7423,7 @@
  "edenbrookcountry": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": 51.280199,
   "lon": -0.867088,
   "long": "Edenbrook Country parkrun",
@@ -7543,7 +7543,7 @@
  "egweniriverlodge": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-18",
   "lat": -26.901128,
   "lon": 27.446698,
   "long": "Egweni River Lodge parkrun",
@@ -7737,7 +7737,7 @@
  "emeraldresort": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-18",
   "lat": -26.73561,
   "lon": 27.873641,
   "long": "Emerald Resort parkrun",
@@ -8318,7 +8318,7 @@
  "fivearches": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": 51.292354,
   "lon": -2.452787,
   "long": "Five Arches parkrun",
@@ -8717,7 +8717,7 @@
  "frimleylodge": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": 51.298622,
   "lon": -0.724851,
   "long": "Frimley Lodge parkrun",
@@ -9799,7 +9799,7 @@
  "greenhamcommon": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": 51.378426,
   "lon": -1.292267,
   "long": "Greenham Common parkrun, Newbury",
@@ -11418,7 +11418,7 @@
  "homewood": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": 51.366808,
   "lon": -0.539078,
   "long": "Homewood parkrun",
@@ -12261,7 +12261,7 @@
  "kalgarden": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-18",
   "lat": 60.61662,
   "lon": 15.618091,
   "long": "K\u00e5lg\u00e5rden parkrun",
@@ -13000,7 +13000,7 @@
  "kleinplaas": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-18",
   "lat": -26.730736,
   "lon": 27.126513,
   "long": "Kleinplaas parkrun",
@@ -14249,7 +14249,7 @@
  "lithgow": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": -33.494173,
   "lon": 150.151201,
   "long": "Lithgow parkrun",
@@ -14369,7 +14369,7 @@
  "lloyd": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": 51.364807,
   "lon": -0.079973,
   "long": "Lloyd parkrun, Croydon",
@@ -14998,7 +14998,7 @@
  "maidstoneriverpark": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": 51.29641,
   "lon": 0.507689,
   "long": "Maidstone River Park parkrun",
@@ -15396,7 +15396,7 @@
  "marineparade": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": 51.342355,
   "lon": -2.981436,
   "long": "Marine Parade parkrun",
@@ -15794,7 +15794,7 @@
  "melksham": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": 51.377226,
   "lon": -2.136235,
   "long": "Melksham parkrun",
@@ -15975,7 +15975,7 @@
  "meyerton": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-18",
   "lat": -26.57717,
   "lon": 28.022153,
   "long": "Meyerton parkrun",
@@ -16120,7 +16120,7 @@
  "millenniumgrandrapids": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-18",
   "lat": 42.953815,
   "lon": -85.707095,
   "long": "Millennium parkrun, Grand Rapids",
@@ -16603,7 +16603,7 @@
  "motepark": {
   "built_by": "v0.7.0",
   "distance_m": 6258,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": 51.269539,
   "lon": 0.541967,
   "long": "Mote Park parkrun",
@@ -16795,7 +16795,7 @@
  "mtpenang": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": -33.426328,
   "lon": 151.293178,
   "long": "Mt Penang parkrun",
@@ -17553,7 +17553,7 @@
  "nonsuch": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": 51.356926,
   "lon": -0.231078,
   "long": "Nonsuch parkrun",
@@ -18385,7 +18385,7 @@
  "orange": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": -33.325825,
   "lon": 149.089749,
   "long": "Orange parkrun",
@@ -19538,7 +19538,7 @@
  "phoenixpark": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-18",
   "lat": -26.731248,
   "lon": 27.839921,
   "long": "Phoenix Park parkrun",
@@ -19887,7 +19887,7 @@
  "pontdeval": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-18",
   "lat": -26.769375,
   "lon": 27.680009,
   "long": "Pont De Val parkrun",
@@ -20467,7 +20467,7 @@
  "quakerswalk": {
   "built_by": "v0.7.0",
   "distance_m": 4585,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": 51.355501,
   "lon": -1.99217,
   "long": "Quakers Walk parkrun",
@@ -20988,7 +20988,7 @@
  "riddlesdown": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": 51.318485,
   "lon": -0.079549,
   "long": "Riddlesdown parkrun",
@@ -21253,7 +21253,7 @@
  "rivieraonvaal": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-18",
   "lat": -26.672568,
   "lon": 27.93956,
   "long": "Riviera on Vaal parkrun",
@@ -21650,7 +21650,7 @@
  "roundshaw": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": 51.352253,
   "lon": -0.11872,
   "long": "Roundshaw Downs parkrun",
@@ -21780,7 +21780,7 @@
  "rushmoor": {
   "built_by": "v0.7.0",
   "distance_m": 6569,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": 51.265798,
   "lon": -0.755847,
   "long": "Rushmoor parkrun",
@@ -22020,7 +22020,7 @@
  "sandhurstmemorial": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": 51.343825,
   "lon": -0.791694,
   "long": "Sandhurst Memorial parkrun",
@@ -22141,7 +22141,7 @@
  "sasolburgstadium": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-18",
   "lat": -26.791098,
   "lon": 27.825132,
   "long": "Sasolburg Stadium parkrun",
@@ -22478,7 +22478,7 @@
  "sharphamroadplayingfields": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": 51.279496,
   "lon": -2.793181,
   "long": "Sharpham Road Playing Fields parkrun",
@@ -22776,7 +22776,7 @@
  "silveroaks": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-18",
   "lat": -26.567052,
   "lon": 28.423224,
   "long": "Silveroaks parkrun",
@@ -22860,7 +22860,7 @@
  "sittingbourne": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": 51.354976,
   "lon": 0.740569,
   "long": "Sittingbourne parkrun",
@@ -23306,7 +23306,7 @@
  "southwickcountrypark": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": 51.306461,
   "lon": -2.234092,
   "long": "Southwick Country parkrun",
@@ -23629,7 +23629,7 @@
  "starraceway": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-18",
   "lat": -26.851291,
   "lon": 26.608491,
   "long": "Star Raceway parkrun",
@@ -24823,7 +24823,7 @@
  "theentrance": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": -33.338401,
   "lon": 151.493202,
   "long": "The Entrance parkrun",
@@ -25965,7 +25965,7 @@
  "upperlasvirgenescanyon": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-13",
+  "last_tried": "2026-08-18",
   "lat": 34.18562,
   "lon": -118.668984,
   "long": "Upper Las Virgenes Canyon parkrun",
@@ -27613,7 +27613,7 @@
  "whitstable": {
   "built_by": "v0.7.0",
   "distance_m": 6436,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": 51.365295,
   "lon": 1.041942,
   "long": "Whitstable parkrun",
@@ -27986,7 +27986,7 @@
  "woking": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": 51.311708,
   "lon": -0.556204,
   "long": "Woking parkrun",
@@ -28250,7 +28250,7 @@
  "woywoy": {
   "built_by": "v0.7.0",
   "distance_m": null,
-  "last_tried": "2026-08-14",
+  "last_tried": "2026-08-18",
   "lat": -33.484787,
   "lon": 151.336038,
   "long": "Woy Woy parkrun",
