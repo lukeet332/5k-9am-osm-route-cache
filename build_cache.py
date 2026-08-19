@@ -387,7 +387,7 @@ def build_one(ev):
     # N-lap traces that are sane but out of tolerance -> diagnostic
     if tr and SANE_LO <= tr[0] <= SANE_HI:
         n = best_lap_n(tr[0])
-        n_len = n * length(tr[1])
+        n_len = n * tr[0]  # use stored length, not recomputed (tiny rounding diff ok)
         if SANE_LO <= n_len <= SANE_HI and not (REL_LO <= n_len <= REL_HI):
             cands.append(("osm_9am_trace_doubled_offdist", n_len, tr[2]))
 

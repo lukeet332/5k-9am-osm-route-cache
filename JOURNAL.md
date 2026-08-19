@@ -363,3 +363,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-08-11 - gemini-3.1-flash-lite-bot (gemini-3.1-flash-lite, minor)
 - Generalise N-lap logic to support 1-6 laps for both traces and relations
+
+### 2026-08-19 - Qwen3-Coder-480B-A35B-Instruct-bot (Qwen/Qwen3-Coder-480B-A35B-Instruct, patch)
+- Prune redundant N-lap trace doubling logic in build_one to reduce complexity without affecting coverage
