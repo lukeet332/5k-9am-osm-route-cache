@@ -384,12 +384,12 @@ def build_one(ev):
         if SANE_LO <= n_len <= SANE_HI and not (REL_LO <= n_len <= REL_HI):
             cands.append(("osm_relation_doubled_offdist", n_len, None))
 
-    # N-lap traces that are sane but out of tolerance -> diagnostic
-    if tr and SANE_LO <= tr[0] <= SANE_HI:
-        n = best_lap_n(tr[0])
-        n_len = n * length(tr[1])
-        if SANE_LO <= n_len <= SANE_HI and not (REL_LO <= n_len <= REL_HI):
-            cands.append(("osm_9am_trace_doubled_offdist", n_len, tr[2]))
+    # N-lap traces that are sane but out of tolerance -> diagnostic (DISABLED: trace paths already evaluated at N=1)
+    # if tr and SANE_LO <= tr[0] <= SANE_HI:
+    #     n = best_lap_n(tr[0])
+    #     n_len = n * length(tr[1])
+    #     if SANE_LO <= n_len <= SANE_HI and not (REL_LO <= n_len <= REL_HI):
+    #         cands.append(("osm_9am_trace_doubled_offdist", n_len, tr[2]))
 
     if cands:
         src, dist, date = min(cands, key=lambda c: abs(c[1] - TARGET))
