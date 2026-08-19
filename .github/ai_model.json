@@ -1,8 +1,8 @@
 {
   "author": [
     {
-      "provider": "nvidia",
-      "model": "deepseek-ai/deepseek-v4-flash"
+      "provider": "huggingface",
+      "model": "Qwen/Qwen3-Coder-480B-A35B-Instruct"
     },
     {
       "provider": "sambanova",
