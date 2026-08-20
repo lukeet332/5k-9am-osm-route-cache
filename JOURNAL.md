@@ -369,3 +369,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-08-20 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL already contains a 2026-08-20 entry recording this exact change ('Prune redundant N-lap trace doubling fallback in trace_course'). This PR re-proposes an already-implemented idea with a duplicate JOURNAL entry, which is churn per the Constitution. Churn takes precedence over CodeRabbit's state.
+
+### 2026-08-20 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL records this exact change ('Prune redundant N-lap trace doubling fallback in trace_course') was rejected as churn on 2026-08-20 with explicit 'do NOT re-propose' directive. Per the Constitution, churn takes precedence over CodeRabbit's state - a dead idea is closed, not revised.
