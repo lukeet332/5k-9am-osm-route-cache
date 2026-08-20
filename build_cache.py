@@ -281,34 +281,10 @@ def trace_course(name, lat, lon):
         res = trace_courses_multi(name, lat, lon)
         if res:
             return res
-        # fallback: single trace (only if trace_courses_multi returned None, not empty data)
-        pts = trace_points(name, lat, lon)
-        if not pts:  # empty list or None
-            return None
+        # No fallback needed - trace_courses_multi already handles all cases including single traces
+        return None
     except Exception:
         return None  # network/timeout error -> skip trace for this event
-    win = []
-    for la, lo, t in pts:
-        try:
-            ldt = local(t, lat, lon)
-        except Exception:
-            continue   # corrupt/extreme trace timestamp -> skip this point, not the whole event
-
-        is_saturday = ldt.weekday() == 5
-        is_christmas_day = ldt.month == 12 and ldt.day == 25
-        is_new_years_day = ldt.month == 1 and ldt.day == 1
-        if (is_saturday or is_christmas_day or is_new_years_day) and ldt.hour == 9 and ldt.minute < 45:
-            win.append((la, lo, t))
-    win = sorted(win, key=lambda p: p[2])
-
-    if not win or H(lat, lon, win[0][0], win[0][1]) > 150:
-        return None
-    path = [win[0]]; d = 0.0
-    for p in win[1:]:
-        d += H(path[-1][0], path[-1][1], p[0], p[1]); path.append(p)
-        if d >= 5500 or (p[2] - path[0][2]).total_seconds() > 2700:   # ~5.5k or past 09:45
-            break
-    return length(path), [(p[0], p[1]) for p in path], win[0][2].date().isoformat()
 
 _VERSION = [None]
 def algo_version():
