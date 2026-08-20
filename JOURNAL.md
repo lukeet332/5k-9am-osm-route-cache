@@ -366,3 +366,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-08-19 - Qwen3-Coder-480B-A35B-Instruct-bot (Qwen/Qwen3-Coder-480B-A35B-Instruct, patch)
 - Prune redundant N-lap trace doubling logic in build_one to reduce complexity without affecting coverage
+
+### 2026-08-20 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL already contains a 2026-08-20 entry recording this exact change ('Prune redundant N-lap trace doubling fallback in trace_course'). This PR re-proposes an already-implemented idea with a duplicate JOURNAL entry, which is churn per the Constitution. Churn takes precedence over CodeRabbit's state.
