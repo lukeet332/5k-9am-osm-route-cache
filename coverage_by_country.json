@@ -1,11 +1,11 @@
 {
- "world_total": 2388,
+ "world_total": 2390,
  "world_mapped": 163,
  "countries": [
   {
    "code": 97,
    "name": "United Kingdom",
-   "total": 895,
+   "total": 896,
    "mapped": 139
   },
   {
@@ -17,7 +17,7 @@
   {
    "code": 85,
    "name": "South Africa",
-   "total": 230,
+   "total": 231,
    "mapped": 6
   },
   {
@@ -41,7 +41,7 @@
   {
    "code": 32,
    "name": "Germany",
-   "total": 81,
+   "total": 80,
    "mapped": 3
   },
   {
@@ -71,7 +71,7 @@
   {
    "code": 44,
    "name": "Italy",
-   "total": 16,
+   "total": 17,
    "mapped": 1
   },
   {
