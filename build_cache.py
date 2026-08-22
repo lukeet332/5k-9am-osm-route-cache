@@ -356,15 +356,16 @@ def build_one(ev):
 
     # generalise to best-integer-N lap (N=1..6)
     for src_type, data, is_trace in [("osm_9am_trace", tr, True), ("osm_relation", rel, False)]:
-        if data and SANE_LO <= (data[0] if is_trace else data[1]) <= SANE_HI:
+        if data:
             val = data[0] if is_trace else data[1]
-            n = best_lap_n(val)
-            n_len = n * val
-            if REL_LO <= n_len <= REL_HI:
-                src = f"{src_type}_doubled" if n > 1 else src_type
-                write_gpx(name, ev["long"], data[1] if is_trace else data[2], src)
-                return {"source": src, "distance_m": round(n_len), "status": "success",
-                        "provisional": not is_trace, **({ "trace_date": data[2] } if is_trace else {}), **diag}
+            if SANE_LO <= val <= SANE_HI:
+                n = best_lap_n(val)
+                n_len = n * val
+                if REL_LO <= n_len <= REL_HI:
+                    src = f"{src_type}_doubled" if n > 1 else src_type
+                    write_gpx(name, ev["long"], data[1] if is_trace else data[2], src)
+                    return {"source": src, "distance_m": round(n_len), "status": "success",
+                            "provisional": not is_trace, **({ "trace_date": data[2] } if is_trace else {}), **diag}
 
     # not a success: no geometry. drop any stale success GPX from a prior run.
     stale = os.path.join(ROUTES, f"{name}.gpx")
