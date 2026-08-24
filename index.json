@@ -633,7 +633,7 @@
  "araharakeke": {
   "built_by": "v0.7.2",
   "distance_m": 4174,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -41.075446,
   "lon": 174.874347,
   "long": "Ara Harakeke parkrun",
@@ -766,7 +766,7 @@
  "ashburtondomain": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -43.894839,
   "lon": 171.751749,
   "long": "Ashburton Domain parkrun",
@@ -1092,7 +1092,7 @@
  "balclutha": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -46.238883,
   "lon": 169.731177,
   "long": "Balclutha parkrun",
@@ -2449,7 +2449,7 @@
  "blenheim": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -41.511842,
   "lon": 173.95879,
   "long": "Blenheim parkrun",
@@ -3145,7 +3145,7 @@
  "broadpark": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -43.483997,
   "lon": 172.722052,
   "long": "Broad Park parkrun",
@@ -4133,7 +4133,7 @@
  "carolinebay": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -44.391483,
   "lon": 171.248407,
   "long": "Caroline Bay parkrun",
@@ -7013,7 +7013,7 @@
  "dunedin": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -45.857088,
   "lon": 170.519225,
   "long": "Dunedin parkrun",
@@ -7267,7 +7267,7 @@
  "easterntrailbiddeford": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 43.476602,
   "lon": -70.487389,
   "long": "Eastern Trail parkrun, Biddeford",
@@ -7315,7 +7315,7 @@
  "eastotagohighschool": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -45.479897,
   "lon": 170.720595,
   "long": "East Otago High School parkrun",
@@ -8621,7 +8621,7 @@
  "foster": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -43.608599,
   "lon": 172.385129,
   "long": "Foster parkrun",
@@ -9919,7 +9919,7 @@
  "greytownwoodsidetrail": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -41.067449,
   "lon": 175.403236,
   "long": "Greytown Woodside Trail parkrun",
@@ -9967,7 +9967,7 @@
  "groenester": {
   "built_by": "v0.7.2",
   "distance_m": 5203,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 53.214822,
   "lon": 5.873083,
   "long": "Groene Ster parkrun",
@@ -10180,7 +10180,7 @@
  "hagley": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -43.528594,
   "lon": 172.62282,
   "long": "Hagley parkrun",
@@ -10240,7 +10240,7 @@
  "halswellquarry": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -43.599389,
   "lon": 172.579997,
   "long": "Halswell Quarry parkrun",
@@ -10288,7 +10288,7 @@
  "hamiltonpark": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -46.095775,
   "lon": 168.958159,
   "long": "Hamilton Park parkrun, Gore",
@@ -10360,7 +10360,7 @@
  "hanmerforest": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -42.526529,
   "lon": 172.833177,
   "long": "Hanmer Forest parkrun",
@@ -10865,7 +10865,7 @@
  "henleylake": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -40.951913,
   "lon": 175.677348,
   "long": "Henley Lake parkrun",
@@ -11551,7 +11551,7 @@
  "howardteminlakeshorepath": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 43.076831,
   "lon": -89.398831,
   "long": "Howard Temin Lakeshore Path parkrun",
@@ -11781,7 +11781,7 @@
  "invercargill": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -46.404097,
   "lon": 168.356606,
   "long": "Invercargill parkrun",
@@ -12381,7 +12381,7 @@
  "kapiticoast": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -40.877245,
   "lon": 175.019587,
   "long": "Kapiti Coast parkrun",
@@ -12393,7 +12393,7 @@
  "karamustream": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -39.668695,
   "lon": 176.874319,
   "long": "Karamu Stream parkrun",
@@ -13397,7 +13397,7 @@
  "lake2laketrail": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -45.442115,
   "lon": 167.688869,
   "long": "Lake2Lake Trail parkrun",
@@ -13445,7 +13445,7 @@
  "lakedunstan": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -45.043898,
   "lon": 169.214211,
   "long": "Lake Dunstan parkrun",
@@ -14589,7 +14589,7 @@
  "lostlagoon": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -41.743882,
   "lon": 171.596129,
   "long": "Lost Lagoon parkrun",
@@ -14697,7 +14697,7 @@
  "lowerhutt": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -41.210738,
   "lon": 174.899498,
   "long": "Lower Hutt parkrun",
@@ -15167,7 +15167,7 @@
  "mandeville": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -43.387793,
   "lon": 172.533266,
   "long": "Mandeville parkrun",
@@ -15939,7 +15939,7 @@
  "merrymeeting": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 43.921805,
   "lon": -69.954915,
   "long": "Merrymeeting parkrun",
@@ -16627,7 +16627,7 @@
  "motuekabeachreserve": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -41.136117,
   "lon": 173.022733,
   "long": "Motueka Beach Reserve parkrun",
@@ -17215,7 +17215,7 @@
  "nealepark": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -41.262522,
   "lon": 173.294553,
   "long": "Neale Park parkrun",
@@ -18013,7 +18013,7 @@
  "oamarupublicgardens": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -45.098254,
   "lon": 170.959005,
   "long": "\u014camaru Public Gardens parkrun",
@@ -18517,7 +18517,7 @@
  "orouariverwalkway": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -40.234658,
   "lon": 175.582634,
   "long": "\u014croua River Walkway parkrun",
@@ -18563,7 +18563,7 @@
  "otagocentralrailtrailalexandra": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -45.236725,
   "lon": 169.384943,
   "long": "Otago Central Rail Trail parkrun, Alexandra",
@@ -18575,7 +18575,7 @@
  "otakiriver": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -40.771022,
   "lon": 175.148119,
   "long": "\u014ctaki River parkrun",
@@ -18827,7 +18827,7 @@
  "palmerstonnorth": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -40.372724,
   "lon": 175.622671,
   "long": "Palmerston North parkrun",
@@ -19238,7 +19238,7 @@
  "pegasus": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -43.310381,
   "lon": 172.695338,
   "long": "Pegasus parkrun",
@@ -19622,7 +19622,7 @@
  "pinepark": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 43.713809,
   "lon": -72.286019,
   "long": "Pine Park parkrun",
@@ -20573,7 +20573,7 @@
  "queenstown": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -45.033598,
   "lon": 168.661454,
   "long": "Queenstown parkrun",
@@ -21109,7 +21109,7 @@
  "riverlution": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -43.521325,
   "lon": 172.659856,
   "long": "Riverlution parkrun",
@@ -21181,7 +21181,7 @@
  "riversidepark": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 43.831259,
   "lon": -111.786349,
   "long": "Riverside Park parkrun",
@@ -21816,7 +21816,7 @@
  "russellpark": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -39.992327,
   "lon": 176.558012,
   "long": "Russell Park parkrun",
@@ -22177,7 +22177,7 @@
  "scarborough": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -43.57302,
   "lon": 172.769775,
   "long": "Scarborough parkrun",
@@ -22514,7 +22514,7 @@
  "shawcherryhillfarm": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 43.690214,
   "lon": -70.39435,
   "long": "Shaw Cherry Hill Farm parkrun",
@@ -25580,7 +25580,7 @@
  "trenthammemorial": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -41.13057,
   "lon": 175.031273,
   "long": "Trentham Memorial parkrun",
@@ -26569,7 +26569,7 @@
  "waitangi": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -41.291725,
   "lon": 174.785758,
   "long": "Waitangi parkrun",
@@ -26713,7 +26713,7 @@
  "wanaka": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -44.699987,
   "lon": 169.116607,
   "long": "Wanaka parkrun",
@@ -27482,7 +27482,7 @@
  "whanganuiriverbank": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": -39.946268,
   "lon": 175.041195,
   "long": "Whanganui Riverbank parkrun",
