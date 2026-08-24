@@ -396,7 +396,7 @@ def build_one(ev):
         r = {"source": src, "distance_m": round(dist), "status": "failed", **diag}
         if date:
             r["trace_date"] = date
-        return r
+        return {k: v for k, v in r.items() if v is not None}
 
     return {"source": None, "distance_m": None, "status": "gap", **diag}   # gap: no usable data
 
