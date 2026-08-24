@@ -122,7 +122,7 @@
  "aeforest": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.195188,
   "lon": -3.599889,
   "long": "Ae Forest parkrun",
@@ -802,7 +802,7 @@
  "ashingtoncommunitywoodland": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.190433,
   "lon": -1.572397,
   "long": "Ashington Community Woodland parkrun",
@@ -1044,7 +1044,7 @@
  "ayr": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.436189,
   "lon": -4.624316,
   "long": "Ayr parkrun",
@@ -2521,7 +2521,7 @@
  "blythlinks": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.106922,
   "lon": -1.499456,
   "long": "Blyth Links parkrun",
@@ -4073,7 +4073,7 @@
  "carlingwarkloch": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 54.934903,
   "lon": -3.927163,
   "long": "Carlingwark Loch parkrun",
@@ -4097,7 +4097,7 @@
  "carlislepark": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.165172,
   "lon": -1.691159,
   "long": "Carlisle Park parkrun, Morpeth",
@@ -4780,7 +4780,7 @@
  "christie": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.123837,
   "lon": -6.671908,
   "long": "Christie parkrun",
@@ -5938,7 +5938,7 @@
  "crichton": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.050773,
   "lon": -3.594589,
   "long": "Crichton parkrun",
@@ -6034,7 +6034,7 @@
  "cuningarloop": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.84069,
   "lon": -4.201428,
   "long": "Cuningar Loop parkrun",
@@ -6346,7 +6346,7 @@
  "deancastlecountrypark": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.622901,
   "lon": -4.482932,
   "long": "Dean Castle Country Park parkrun",
@@ -6445,7 +6445,7 @@
  "dentondene": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 54.977492,
   "lon": -1.694872,
   "long": "Denton Dene parkrun",
@@ -6495,7 +6495,7 @@
  "derrycity": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.006966,
   "lon": -7.318933,
   "long": "Derry City parkrun",
@@ -6893,7 +6893,7 @@
  "drumlanrigcastle": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.27479,
   "lon": -3.808622,
   "long": "Drumlanrig Castle parkrun",
@@ -6917,7 +6917,7 @@
  "druridgebay": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.292765,
   "lon": -1.572348,
   "long": "Druridge Bay parkrun",
@@ -7543,7 +7543,7 @@
  "eglinton": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.643935,
   "lon": -4.669662,
   "long": "Eglinton parkrun",
@@ -8837,7 +8837,7 @@
  "fulwellquarry": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 54.9329,
   "lon": -1.396723,
   "long": "Fulwell Quarry parkrun",
@@ -8945,7 +8945,7 @@
  "garvaghforest": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 54.977416,
   "lon": -6.695537,
   "long": "Garvagh Forest parkrun",
@@ -8969,7 +8969,7 @@
  "gateshead": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 54.944733,
   "lon": -1.602094,
   "long": "Gateshead parkrun",
@@ -9198,7 +9198,7 @@
  "girvanprom": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.243994,
   "lon": -4.862538,
   "long": "Girvan Prom parkrun",
@@ -10697,7 +10697,7 @@
  "haylodge": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.651659,
   "lon": -3.199586,
   "long": "Hay Lodge parkrun",
@@ -12068,7 +12068,7 @@
  "jesmonddene": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 54.99188,
   "lon": -1.592839,
   "long": "Jesmond Dene parkrun",
@@ -12952,7 +12952,7 @@
  "kirkharlecourtyard": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.136742,
   "lon": -1.977584,
   "long": "Kirkharle Courtyard parkrun",
@@ -13565,7 +13565,7 @@
  "lanarkmoor": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.666318,
   "lon": -3.750284,
   "long": "Lanark Moor parkrun",
@@ -13685,7 +13685,7 @@
  "largsprom": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.802062,
   "lon": -4.873064,
   "long": "Largs Prom parkrun",
@@ -13901,7 +13901,7 @@
  "leazes": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 54.977078,
   "lon": -1.625633,
   "long": "Leazes parkrun",
@@ -14139,7 +14139,7 @@
  "limavady": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.047128,
   "lon": -6.944777,
   "long": "Limavady parkrun",
@@ -14151,7 +14151,7 @@
  "limeparkplayingfields": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.123827,
   "lon": -6.32179,
   "long": "Limepark Playing Fields parkrun",
@@ -16759,7 +16759,7 @@
  "mountstuart": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.792888,
   "lon": -5.019453,
   "long": "Mount Stuart parkrun",
@@ -17288,7 +17288,7 @@
  "newbigginbythesea": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.185215,
   "lon": -1.505386,
   "long": "Newbiggin-by-the-Sea parkrun",
@@ -19839,7 +19839,7 @@
  "pollok": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.82992,
   "lon": -4.307882,
   "long": "Pollok parkrun, Glasgow",
@@ -20189,7 +20189,7 @@
  "portrush": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.204638,
   "lon": -6.648788,
   "long": "Portrush parkrun",
@@ -20382,7 +20382,7 @@
  "prudhoeriverside": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 54.968071,
   "lon": -1.863141,
   "long": "Prudhoe Riverside parkrun",
@@ -20561,7 +20561,7 @@
  "queensglasgow": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.833509,
   "lon": -4.270076,
   "long": "Queen\u2019s parkrun, Glasgow",
@@ -21073,7 +21073,7 @@
  "risingsun": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.01998,
   "lon": -1.532028,
   "long": "Rising Sun parkrun",
@@ -21145,7 +21145,7 @@
  "riversideballymoney": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.069,
   "lon": -6.507566,
   "long": "Riverside parkrun, Ballymoney",
@@ -23295,7 +23295,7 @@
  "southshields": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 54.995687,
   "lon": -1.408052,
   "long": "South Shields parkrun",
@@ -23990,7 +23990,7 @@
  "strathclyde": {
   "built_by": "v0.7.2",
   "distance_m": 3917,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.789631,
   "lon": -4.031425,
   "long": "Strathclyde parkrun",
@@ -24389,7 +24389,7 @@
  "talkintarncountrypark": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 54.924753,
   "lon": -2.707392,
   "long": "Talkin Tarn Country Park parkrun",
@@ -24943,7 +24943,7 @@
  "thepastures": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.418455,
   "lon": -1.705393,
   "long": "The Pastures parkrun",
@@ -25448,7 +25448,7 @@
  "townmoor": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 54.988451,
   "lon": -1.617143,
   "long": "Town Moor parkrun",
@@ -25604,7 +25604,7 @@
  "troon": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.541413,
   "lon": -4.670058,
   "long": "Troon parkrun",
@@ -25736,7 +25736,7 @@
  "tynegreen": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 54.977878,
   "lon": -2.101526,
   "long": "Tyne Green parkrun",
@@ -26641,7 +26641,7 @@
  "wallaceneuk": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.585864,
   "lon": -2.448162,
   "long": "Wallaceneuk parkrun",
@@ -27637,7 +27637,7 @@
  "whitleybay": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.048875,
   "lon": -1.448736,
   "long": "Whitley Bay parkrun",
@@ -27794,7 +27794,7 @@
  "wiltonlodgepark": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 55.422268,
   "lon": -2.802641,
   "long": "Wilton Lodge Park parkrun",
@@ -27878,7 +27878,7 @@
  "windynook": {
   "built_by": "v0.7.2",
   "distance_m": null,
-  "last_tried": "2026-08-20",
+  "last_tried": "2026-08-24",
   "lat": 54.940189,
   "lon": -1.563025,
   "long": "Windy Nook parkrun",
