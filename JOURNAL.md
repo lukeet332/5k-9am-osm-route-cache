@@ -378,3 +378,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-08-22 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL records this exact change ('Generalise N-lap logic to support 1-6 laps for both traces and relations') as already implemented on 2026-08-11 by gemini-3.1-flash-lite-bot. A 2026-08-22 entry explicitly rejected a re-proposal as churn with 'do NOT re-propose'. Per the Constitution, churn takes precedence - a dead idea is closed, not revised.
+
+### 2026-08-24 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL already records this exact change ('Generalise N-lap logic to support 1-6 laps for both traces and relations') as implemented on 2026-08-24 by gemini-3.1-flash-lite-bot. This PR re-proposes the same idea with a duplicate JOURNAL entry for the same date, which is churn per the Constitution. Churn takes precedence over CodeRabbit's state - a dead idea is closed, not revised.
