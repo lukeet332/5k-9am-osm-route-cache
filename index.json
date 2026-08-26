@@ -485,9 +485,9 @@
   "trace_m": null
  },
  "ambleside": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 49.326794,
   "lon": -123.155175,
   "long": "Ambleside parkrun",
@@ -1413,9 +1413,9 @@
   "trace_m": null
  },
  "bartontrail": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 44.118501,
   "lon": -79.113992,
   "long": "Barton Trail parkrun",
@@ -1642,9 +1642,9 @@
   "trace_m": null
  },
  "beban": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 49.198597,
   "lon": -123.995057,
   "long": "Beban parkrun",
@@ -1831,9 +1831,9 @@
   "trace_m": null
  },
  "bellevue": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 46.500362,
   "lon": -84.298049,
   "long": "Bellevue parkrun",
@@ -2228,9 +2228,9 @@
   "trace_m": null
  },
  "billthorpewalkingbridge": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 45.966319,
   "lon": -66.649023,
   "long": "Bill Thorpe Walking Bridge parkrun",
@@ -2673,9 +2673,9 @@
   "trace_m": null
  },
  "boulevardlake": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 48.454808,
   "lon": -89.197557,
   "long": "Boulevard Lake parkrun",
@@ -2913,9 +2913,9 @@
   "trace_m": null
  },
  "breakwater": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 44.222662,
   "lon": -76.495865,
   "long": "Breakwater parkrun",
@@ -3666,9 +3666,9 @@
   "trace_m": null
  },
  "buttertrail": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 45.711271,
   "lon": -63.286367,
   "long": "Butter Trail parkrun",
@@ -4340,9 +4340,9 @@
   "trace_m": null
  },
  "centralburnaby": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 49.229288,
   "lon": -123.012837,
   "long": "Central parkrun, Burnaby",
@@ -4436,9 +4436,9 @@
   "trace_m": null
  },
  "chainoflakes": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 44.639531,
   "lon": -63.661271,
   "long": "Chain of Lakes parkrun",
@@ -4833,9 +4833,9 @@
   "trace_m": null
  },
  "churchillparkway": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 49.866258,
   "lon": -97.114076,
   "long": "Churchill Parkway parkrun",
@@ -5181,9 +5181,9 @@
   "trace_m": null
  },
  "cloverpoint": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 48.40457,
   "lon": -123.350007,
   "long": "Clover Point parkrun",
@@ -5702,9 +5702,9 @@
   "trace_m": null
  },
  "cornerbrookstreamtrail": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 48.944105,
   "lon": -57.937618,
   "long": "Corner Brook Stream Trail parkrun",
@@ -5786,9 +5786,9 @@
   "trace_m": null
  },
  "courtenayairpark": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 49.681959,
   "lon": -124.982817,
   "long": "Courtenay Airpark parkrun",
@@ -6824,9 +6824,9 @@
   "trace_m": 2946
  },
  "downsview": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 43.74385,
   "lon": -79.479977,
   "long": "Downsview parkrun",
@@ -6944,9 +6944,9 @@
   "trace_m": null
  },
  "duffinstrail": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 43.853253,
   "lon": -79.061685,
   "long": "Duffins Trail parkrun",
@@ -8561,9 +8561,9 @@
   "trace_m": null
  },
  "fortlatour": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 45.27233,
   "lon": -66.072538,
   "long": "Fort La Tour parkrun",
@@ -8669,9 +8669,9 @@
   "trace_m": null
  },
  "fredericback": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 45.558862,
   "lon": -73.620363,
   "long": "Fr\u00e9d\u00e9ric Back parkrun",
@@ -9149,9 +9149,9 @@
   "trace_m": null
  },
  "gillieslake": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 48.480373,
   "lon": -81.321352,
   "long": "Gillies Lake parkrun",
@@ -10837,9 +10837,9 @@
   "trace_m": null
  },
  "hendersonlake": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 49.687498,
   "lon": -112.80646,
   "long": "Henderson Lake parkrun",
@@ -12329,9 +12329,9 @@
   "trace_m": null
  },
  "kanata": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 45.331895,
   "lon": -75.919788,
   "long": "Kanata parkrun, Ottawa",
@@ -15139,9 +15139,9 @@
   "trace_m": null
  },
  "mamquamspawningtrail": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 49.730891,
   "lon": -123.134596,
   "long": "Mamquam Spawning Trail parkrun",
@@ -15596,9 +15596,9 @@
   "trace_m": null
  },
  "matsquitrailregional": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 49.12229,
   "lon": -122.300786,
   "long": "Matsqui Trail Regional parkrun",
@@ -16090,9 +16090,9 @@
   "trace_m": null
  },
  "millcreeknature": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 46.061925,
   "lon": -64.76324,
   "long": "Mill Creek Nature parkrun",
@@ -16501,9 +16501,9 @@
   "trace_m": 5469
  },
  "moosebeach": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 44.606754,
   "lon": -79.389964,
   "long": "Moose Beach parkrun",
@@ -16753,9 +16753,9 @@
   "trace_m": null
  },
  "moussette": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 45.419427,
   "lon": -75.749844,
   "long": "Moussette parkrun",
@@ -16885,9 +16885,9 @@
   "trace_m": null
  },
  "mundy": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 49.261576,
   "lon": -122.834541,
   "long": "Mundy parkrun",
@@ -17424,9 +17424,9 @@
   "trace_m": null
  },
  "newyorkcentralfitnesstrail": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 45.262918,
   "lon": -75.361261,
   "long": "New York Central Fitness Trail parkrun",
@@ -17520,9 +17520,9 @@
   "trace_m": null
  },
  "noelboothcommunity": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 49.065838,
   "lon": -122.66133,
   "long": "Noel Booth Community parkrun",
@@ -17653,9 +17653,9 @@
   "trace_m": null
  },
  "northbay": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 46.298808,
   "lon": -79.455704,
   "long": "North Bay parkrun",
@@ -18147,9 +18147,9 @@
   "trace_m": null
  },
  "okanagan": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 49.883293,
   "lon": -119.456654,
   "long": "Okanagan parkrun",
@@ -18459,9 +18459,9 @@
   "trace_m": null
  },
  "orleans": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 45.482673,
   "lon": -75.542182,
   "long": "Orleans parkrun",
@@ -18565,9 +18565,9 @@
   "trace_m": null
  },
  "ottawacarletontrailway": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 45.267695,
   "lon": -75.905183,
   "long": "Ottawa-Carleton Trailway parkrun",
@@ -19370,9 +19370,9 @@
   "trace_m": null
  },
  "penticton": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 49.502306,
   "lon": -119.597222,
   "long": "Penticton parkrun",
@@ -20950,9 +20950,9 @@
   "trace_m": 3409
  },
  "richmondolympic": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 49.184871,
   "lon": -123.138582,
   "long": "Richmond Olympic parkrun",
@@ -21887,9 +21887,9 @@
   "trace_m": null
  },
  "saintpaulin": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 46.422567,
   "lon": -73.014185,
   "long": "Saint-Paulin parkrun",
@@ -22501,9 +22501,9 @@
   "trace_m": null
  },
  "shawniganhills": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 48.655546,
   "lon": -123.650306,
   "long": "Shawnigan Hills parkrun",
@@ -22585,9 +22585,9 @@
   "trace_m": null
  },
  "sheriffcreekwildlifesanctuary": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 46.402282,
   "lon": -82.633675,
   "long": "Sheriff Creek Wildlife Sanctuary parkrun",
@@ -23327,9 +23327,9 @@
   "trace_m": null
  },
  "spanishbanksbeach": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 49.275962,
   "lon": -123.213802,
   "long": "Spanish Banks Beach parkrun",
@@ -23901,9 +23901,9 @@
   "trace_m": null
  },
  "stpatrickslane": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 44.740319,
   "lon": -65.500276,
   "long": "St Patrick\u2019s Lane parkrun",
@@ -23972,9 +23972,9 @@
   "trace_m": null
  },
  "strathconaisland": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 50.037613,
   "lon": -110.652522,
   "long": "Strathcona Island parkrun",
@@ -25274,9 +25274,9 @@
   "trace_m": null
  },
  "tomtaylortrail": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 44.054998,
   "lon": -79.45552,
   "long": "Tom Taylor Trail parkrun",
@@ -25435,7 +25435,7 @@
   "lat": 59.919427,
   "lon": 10.77791,
   "long": "T\u00f8yen parkrun",
-  "relation_m": 1022,
+  "relation_m": 1009,
   "source": null,
   "status": "gap",
   "trace_m": null
@@ -25717,9 +25717,9 @@
   "trace_m": null
  },
  "tyneheadregional": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 49.184318,
   "lon": -122.756237,
   "long": "Tynehead Regional parkrun",
@@ -26368,9 +26368,9 @@
   "trace_m": null
  },
  "victoriaparkbeachcobourg": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 43.958451,
   "lon": -78.161037,
   "long": "Victoria Park Beach parkrun, Cobourg",
@@ -26392,9 +26392,9 @@
   "trace_m": null
  },
  "victoriatruro": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 45.354629,
   "lon": -63.26159,
   "long": "Victoria parkrun, Truro",
@@ -27486,9 +27486,9 @@
   "trace_m": null
  },
  "whitby": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.0",
   "distance_m": null,
-  "last_tried": "2026-08-22",
+  "last_tried": "2026-08-26",
   "lat": 43.851043,
   "lon": -78.940558,
   "long": "Whitby parkrun",
