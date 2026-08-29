@@ -381,3 +381,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-08-24 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL already records this exact change ('Generalise N-lap logic to support 1-6 laps for both traces and relations') as implemented on 2026-08-24 by gemini-3.1-flash-lite-bot. This PR re-proposes the same idea with a duplicate JOURNAL entry for the same date, which is churn per the Constitution. Churn takes precedence over CodeRabbit's state - a dead idea is closed, not revised.
+
+### 2026-08-29 - gemini-3.1-flash-lite-bot (gemini-3.1-flash-lite, patch)
+- Guard trace_course against network/timeout errors to prevent pipeline crashes

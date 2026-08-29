@@ -341,7 +341,10 @@ def build_one(ev):
     wins over a relation; relation successes ship provisional:true (curated, not GPS-verified)."""
     name, lat, lon = ev["name"], ev["lat"], ev["lon"]
     rel = relation_course(lat, lon, name)        # (relname, dist, chain) or None
-    tr = trace_course(name, lat, lon)            # (dist, pts, date) or None
+    try:
+        tr = trace_course(name, lat, lon)        # (dist, pts, date) or None
+    except Exception:
+        tr = None
     diag = {"relation_m": round(rel[1]) if rel else None,
             "trace_m": round(tr[0]) if tr else None}
 
