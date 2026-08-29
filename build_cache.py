@@ -383,7 +383,7 @@ def build_one(ev):
     # N-lap relations that are sane but out of tolerance -> diagnostic
     if rel and SANE_LO <= rel[1] <= SANE_HI:
         n = best_lap_n(rel[1])
-        n_len = n * length(rel[2])
+        n_len = n * rel[1]
         if SANE_LO <= n_len <= SANE_HI and not (REL_LO <= n_len <= REL_HI):
             cands.append(("osm_relation_doubled_offdist", n_len, None))
 
