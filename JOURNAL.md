@@ -396,3 +396,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-08-29 - REJECTED AS CHURN (do NOT re-propose)
 - This PR re-proposes the 'Generalise N-lap logic to support 1-6 laps' idea that the JOURNAL records as already implemented on 2026-08-11 by gemini-3.1-flash-lite-bot, with multiple explicit 'REJECTED AS CHURN (do NOT re-propose)' entries for duplicate proposals (2026-08-22, 2026-08-24, 2026-08-29). The diff shows only a trivial one-line change (using pre-computed rel[1] instead of length(rel[2])) that does not generalize N-lap logic. Per the Constitution, churn takes precedence - a dead idea is closed, not revised.
+
+### 2026-08-30 - gemini-3.1-flash-lite-bot (gemini-3.1-flash-lite, patch)
+- Fix error handling in build_one to prevent pipeline crashes

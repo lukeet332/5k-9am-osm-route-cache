@@ -340,9 +340,12 @@ def build_one(ev):
     every attempt incl. relation_m/trace_m (for the AI). A real 09:00 GPS trace is the true course and
     wins over a relation; relation successes ship provisional:true (curated, not GPS-verified)."""
     name, lat, lon = ev["name"], ev["lat"], ev["lon"]
-    rel = relation_course(lat, lon, name)        # (relname, dist, chain) or None
     try:
-        tr = trace_course(name, lat, lon)        # (dist, pts, date) or None
+        rel = relation_course(lat, lon, name)
+    except Exception:
+        rel = None
+    try:
+        tr = trace_course(name, lat, lon)
     except Exception:
         tr = None
     diag = {"relation_m": round(rel[1]) if rel else None,
