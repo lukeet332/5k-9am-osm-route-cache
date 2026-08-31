@@ -281,12 +281,12 @@ def trace_course(name, lat, lon):
         res = trace_courses_multi(name, lat, lon)
         if res:
             return res
-        # fallback: single trace (only if trace_courses_multi returned None, not empty data)
+        # fallback: single trace
         pts = trace_points(name, lat, lon)
-        if not pts:  # empty list or None
+        if not pts:
             return None
     except Exception:
-        return None  # network/timeout error -> skip trace for this event
+        return None
     win = []
     for la, lo, t in pts:
         try:
