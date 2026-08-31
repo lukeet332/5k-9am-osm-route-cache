@@ -7877,9 +7877,9 @@
   "trace_m": null
  },
  "euroa": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.1",
   "distance_m": null,
-  "last_tried": "2026-08-24",
+  "last_tried": "2026-08-31",
   "lat": -36.752767,
   "lon": 145.573825,
   "long": "Euroa parkrun",
@@ -11411,9 +11411,9 @@
   "trace_m": null
  },
  "horinouchikoen": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.1",
   "distance_m": null,
-  "last_tried": "2026-08-24",
+  "last_tried": "2026-08-31",
   "lat": 33.841329,
   "lon": 132.764078,
   "long": "Horinouchi koen parkrun",
@@ -12553,9 +12553,9 @@
   "trace_m": null
  },
  "kenningtonreservoir": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.1",
   "distance_m": null,
-  "last_tried": "2026-08-24",
+  "last_tried": "2026-08-31",
   "lat": -36.772141,
   "lon": 144.312232,
   "long": "Kennington Reservoir parkrun",
@@ -15273,9 +15273,9 @@
   "trace_m": null
  },
  "marecchia": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.1",
   "distance_m": null,
-  "last_tried": "2026-08-24",
+  "last_tried": "2026-08-31",
   "lat": 44.063117,
   "lon": 12.562389,
   "long": "Marecchia parkrun",
@@ -15538,9 +15538,9 @@
   "trace_m": null
  },
  "mashikimachisogoundokoen": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.1",
   "distance_m": null,
-  "last_tried": "2026-08-24",
+  "last_tried": "2026-08-31",
   "lat": 32.786819,
   "lon": 130.823615,
   "long": "Mashikimachi sogoundo koen parkrun",
@@ -15984,9 +15984,9 @@
   "trace_m": null
  },
  "milanonord": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.1",
   "distance_m": null,
-  "last_tried": "2026-08-24",
+  "last_tried": "2026-08-31",
   "lat": 45.53007,
   "lon": 9.211192,
   "long": "Milano Nord parkrun",
@@ -16225,9 +16225,9 @@
   "trace_m": null
  },
  "miyagawakoen": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.1",
   "distance_m": null,
-  "last_tried": "2026-08-24",
+  "last_tried": "2026-08-31",
   "lat": 33.021514,
   "lon": 133.015624,
   "long": "Miyagawa koen parkrun",
@@ -16908,9 +16908,9 @@
   "trace_m": null
  },
  "muromikahankoen": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.1",
   "distance_m": null,
-  "last_tried": "2026-08-24",
+  "last_tried": "2026-08-31",
   "lat": 33.579802,
   "lon": 130.336809,
   "long": "Muromi kahan koen parkrun",
@@ -18621,9 +18621,9 @@
   "trace_m": null
  },
  "oyodogawashiminryokuchi": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.1",
   "distance_m": null,
-  "last_tried": "2026-08-24",
+  "last_tried": "2026-08-31",
   "lat": 31.908209,
   "lon": 131.417682,
   "long": "Oyodogawa shiminryokuchi parkrun",
@@ -22059,9 +22059,9 @@
   "trace_m": null
  },
  "sanukikodomonokuni": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.1",
   "distance_m": null,
-  "last_tried": "2026-08-24",
+  "last_tried": "2026-08-31",
   "lat": 34.213443,
   "lon": 134.019816,
   "long": "Sanukikodomonokuni parkrun",
@@ -22119,9 +22119,9 @@
   "trace_m": null
  },
  "schlossrheydt": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.1",
   "distance_m": null,
-  "last_tried": "2026-08-24",
+  "last_tried": "2026-08-31",
   "lat": 51.180149,
   "lon": 6.483217,
   "long": "Schloss Rheydt parkrun",
@@ -22611,9 +22611,9 @@
   "trace_m": null
  },
  "shinhinookoen": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.1",
   "distance_m": null,
-  "last_tried": "2026-08-24",
+  "last_tried": "2026-08-31",
   "lat": 34.478529,
   "lon": 135.477848,
   "long": "Shinhinoo koen parkrun",
@@ -22777,9 +22777,9 @@
   "trace_m": null
  },
  "sirenhello": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.1",
   "distance_m": null,
-  "last_tried": "2026-08-24",
+  "last_tried": "2026-08-31",
   "lat": 40.018345,
   "lon": 18.023466,
   "long": "Sirenhello parkrun",
@@ -23483,9 +23483,9 @@
   "trace_m": null
  },
  "stadtparkrotehorn": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.1",
   "distance_m": null,
-  "last_tried": "2026-08-24",
+  "last_tried": "2026-08-31",
   "lat": 52.116691,
   "lon": 11.639058,
   "long": "Stadtpark Rotehorn parkrun",
@@ -24647,9 +24647,9 @@
   "trace_m": null
  },
  "terme": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.1",
   "distance_m": null,
-  "last_tried": "2026-08-24",
+  "last_tried": "2026-08-31",
   "lat": 43.88727,
   "lon": 10.774629,
   "long": "Terme parkrun",
@@ -25510,9 +25510,9 @@
   "trace_m": null
  },
  "treviso": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.1",
   "distance_m": null,
-  "last_tried": "2026-08-24",
+  "last_tried": "2026-08-31",
   "lat": 45.694128,
   "lon": 12.271947,
   "long": "Treviso parkrun",
@@ -28329,9 +28329,9 @@
   "trace_m": null
  },
  "yamaguchikirarahakukinenkoen": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.1",
   "distance_m": null,
-  "last_tried": "2026-08-24",
+  "last_tried": "2026-08-31",
   "lat": 34.005784,
   "lon": 131.37094,
   "long": "Yamaguchi Kirarahaku kinen koen parkrun",
@@ -28546,9 +28546,9 @@
   "trace_m": null
  },
  "yuukafamilyroad": {
-  "built_by": "v0.7.2",
+  "built_by": "v0.8.1",
   "distance_m": null,
-  "last_tried": "2026-08-24",
+  "last_tried": "2026-08-31",
   "lat": 33.018002,
   "lon": 130.673031,
   "long": "Yuuka Family Road parkrun",
