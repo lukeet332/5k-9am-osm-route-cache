@@ -399,3 +399,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-08-30 - REJECTED AS CHURN (do NOT re-propose)
 - This PR re-proposes the try/except error-handling guard for trace_course/relation_course that the JOURNAL records as already implemented on 2026-08-29 by gemini-3.1-flash-lite-bot, with a subsequent REJECTED AS CHURN entry explicitly stating 'do NOT re-propose'. The diff adds a duplicate JOURNAL entry for 2026-08-30 for the same fix. Per the Constitution, churn takes precedence - a dead idea is closed, not revised.
+
+### 2026-08-31 - REJECTED AS CHURN (do NOT re-propose)
+- This PR re-proposes the 'Fix crash in trace_course when trace_points returns empty data' change that the JOURNAL records as already implemented on 2026-08-31 by gemini-3.1-flash-lite-bot. The diff adds a duplicate JOURNAL entry for the same fix. Per the Constitution, churn takes precedence - a dead idea is closed, not revised.
