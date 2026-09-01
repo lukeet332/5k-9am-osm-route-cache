@@ -408,3 +408,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-08-31 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL records this exact fix ('Fix crash in trace_course when trace_points returns empty data') as already implemented on 2026-08-31, with explicit 'REJECTED AS CHURN (do NOT re-propose)' entries for duplicate proposals. The diff only removes comments and simplifies an already-equivalent condition. Per the Constitution, churn takes precedence - a dead idea is closed, not revised.
+
+### 2026-09-01 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL already records this exact change ('Add try/except guard to relation_course to prevent crashes from malformed relation data') as implemented on 2026-09-01 by Qwen3-Coder-480B-A35B-Instruct-bot. This PR re-proposes the same fix with a duplicate JOURNAL entry for the same date. Per the Constitution, churn takes precedence over CodeRabbit's state — a dead idea is closed, not revised.
