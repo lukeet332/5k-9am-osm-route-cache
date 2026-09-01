@@ -414,3 +414,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-09-01 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL explicitly records this exact change ('Add try/except guard to relation_course to prevent crashes from malformed relation data') as already implemented on 2026-09-01 by Qwen3-Coder-480B-A35B-Instruct-bot, with a subsequent 'REJECTED AS CHURN (do NOT re-propose)' entry. The PR description claims to add a try/except guard to relation_course, but the actual diff shows removal of N-lap trace handling code instead — a mismatch that further confirms this is a duplicate/re-proposal of a dead idea. Per the Constitution, churn takes precedence: a dead idea is closed, not revised.
+
+### 2026-09-01 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL records the 'Generalise N-lap logic to support 1-6 laps' change as already implemented on 2026-08-11 with multiple explicit 'REJECTED AS CHURN (do NOT re-propose)' entries for duplicate proposals (2026-08-22, 2026-08-24, 2026-08-29, 2026-08-30, 2026-08-31, 2026-09-01). The PR description claims a try/except guard for relation_course but the diff shows only the already-rejected N-lap logic modification in build_one. Per the Constitution, churn takes precedence - a dead idea is closed, not revised.
