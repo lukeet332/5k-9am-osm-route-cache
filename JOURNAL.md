@@ -420,3 +420,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-09-02 - REJECTED AS CHURN (do NOT re-propose)
 - The PR claims to restore a source label but actually generalizes N-lap labeling (n>2 now gets '_x{n}' instead of '_doubled'), which the JOURNAL explicitly rejects multiple times with 'REJECTED AS CHURN (do NOT re-propose)' for 'Generalise N-lap logic to support 1-6 laps'. The diff implements part of that rejected generalization. Churn takes precedence per the Constitution - a dead idea is closed, not revised.
+
+### 2026-09-02 - REJECTED AS CHURN (do NOT re-propose)
+- The PR removes N-lap trace handling code that is part of the 'Generalise N-lap logic to support 1-6 laps' idea, which the JOURNAL records as already implemented on 2026-08-11 with multiple explicit 'REJECTED AS CHURN (do NOT re-propose)' entries (2026-08-22, 2026-08-24, 2026-08-29, 2026-08-30, 2026-08-31, 2026-09-01, 2026-09-02). The author's description claims to restore a source label but the diff only shows removal of the rejected N-lap logic. Per the Constitution, churn takes precedence — a dead idea is closed, not revised.
