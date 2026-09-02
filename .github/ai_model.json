@@ -26,7 +26,7 @@
   "fast": [
     {
       "provider": "gemini",
-      "model": "gemini-3.1-flash-lite"
+      "model": "models/gemini-3.1-flash-lite"
     }
   ]
 }
