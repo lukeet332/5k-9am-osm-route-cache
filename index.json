@@ -686,9 +686,9 @@
   "trace_m": null
  },
  "armidale": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-25",
+  "last_tried": "2026-09-02",
   "lat": -30.491998,
   "lon": 151.639419,
   "long": "Armidale parkrun",
@@ -950,9 +950,9 @@
   "trace_m": null
  },
  "australianstandingstones": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-25",
+  "last_tried": "2026-09-02",
   "lat": -29.741602,
   "lon": 151.752481,
   "long": "Australian Standing Stones parkrun",
@@ -1119,9 +1119,9 @@
   "trace_m": null
  },
  "ballinacoast": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-25",
+  "last_tried": "2026-09-02",
   "lat": -28.869637,
   "lon": 153.576356,
   "long": "Ballina Coast parkrun",
@@ -2592,9 +2592,9 @@
   "trace_m": null
  },
  "bongilbongil": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-25",
+  "last_tried": "2026-09-02",
   "lat": -30.372884,
   "lon": 153.066759,
   "long": "Bongil Bongil parkrun",
@@ -2688,9 +2688,9 @@
   "trace_m": null
  },
  "bourkeracecourse": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-25",
+  "last_tried": "2026-09-02",
   "lat": -30.09756,
   "lon": 145.92572,
   "long": "Bourke Racecourse parkrun",
@@ -5263,9 +5263,9 @@
   "trace_m": null
  },
  "coffsharbour": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-25",
+  "last_tried": "2026-09-02",
   "lat": -30.295687,
   "lon": 153.1376,
   "long": "Coffs Harbour parkrun",
@@ -5518,9 +5518,9 @@
   "trace_m": null
  },
  "constellationsofthesouth": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-25",
+  "last_tried": "2026-09-02",
   "lat": -30.637282,
   "lon": 151.507,
   "long": "Constellations of the South parkrun",
@@ -5553,9 +5553,9 @@
   "trace_m": null
  },
  "cooberpedyoval": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-25",
+  "last_tried": "2026-09-02",
   "lat": -29.018468,
   "lon": 134.754566,
   "long": "Coober Pedy Oval parkrun",
@@ -9435,9 +9435,9 @@
   "trace_m": null
  },
  "goondiwindi": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-25",
+  "last_tried": "2026-09-02",
   "lat": -28.54951,
   "lon": 150.307043,
   "long": "Goondiwindi parkrun",
@@ -9555,9 +9555,9 @@
   "trace_m": null
  },
  "grafton": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-25",
+  "last_tried": "2026-09-02",
   "lat": -29.643847,
   "lon": 152.920487,
   "long": "Grafton parkrun",
@@ -11744,9 +11744,9 @@
   "trace_m": null
  },
  "inverell": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-25",
+  "last_tried": "2026-09-02",
   "lat": -29.77388,
   "lon": 151.10897,
   "long": "Inverell parkrun",
@@ -12139,9 +12139,9 @@
   "trace_m": 5068
  },
  "jubileetenterfield": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-25",
+  "last_tried": "2026-09-02",
   "lat": -29.054042,
   "lon": 152.01537,
   "long": "Jubilee parkrun, Tenterfield",
@@ -12175,9 +12175,9 @@
   "trace_m": null
  },
  "jurienbayforeshore": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-25",
+  "last_tried": "2026-09-02",
   "lat": -30.302452,
   "lon": 115.037533,
   "long": "Jurien Bay Foreshore parkrun",
@@ -12805,9 +12805,9 @@
   "status": "failed"
  },
  "kingscliff": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-25",
+  "last_tried": "2026-09-02",
   "lat": -28.277477,
   "lon": 153.578901,
   "long": "Kingscliff parkrun",
@@ -14167,9 +14167,9 @@
   "trace_m": null
  },
  "lismore": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-25",
+  "last_tried": "2026-09-02",
   "lat": -28.812589,
   "lon": 153.270029,
   "long": "Lismore parkrun",
@@ -15336,9 +15336,9 @@
   "trace_m": null
  },
  "marina": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-25",
+  "last_tried": "2026-09-02",
   "lat": -28.763698,
   "lon": 114.613067,
   "long": "Marina parkrun",
@@ -16492,9 +16492,9 @@
   "trace_m": null
  },
  "moree": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-25",
+  "last_tried": "2026-09-02",
   "lat": -29.46707,
   "lon": 149.843183,
   "long": "Moree parkrun",
@@ -17077,9 +17077,9 @@
   "trace_m": null
  },
  "narrabri": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-25",
+  "last_tried": "2026-09-02",
   "lat": -30.33885,
   "lon": 149.755908,
   "long": "Narrabri parkrun",
@@ -20434,9 +20434,9 @@
   "status": "success"
  },
  "queenelizabethcasino": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-25",
+  "last_tried": "2026-09-02",
   "lat": -28.867591,
   "lon": 153.051164,
   "long": "Queen Elizabeth parkrun, Casino",
@@ -23553,9 +23553,9 @@
   "trace_m": null
  },
  "stanthorpe": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-25",
+  "last_tried": "2026-09-02",
   "lat": -28.65183,
   "lon": 151.931781,
   "long": "Stanthorpe parkrun",
@@ -25978,9 +25978,9 @@
   "trace_m": null
  },
  "urunga": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-25",
+  "last_tried": "2026-09-02",
   "lat": -30.497475,
   "lon": 153.022849,
   "long": "Urunga parkrun",
@@ -26817,9 +26817,9 @@
   "trace_m": null
  },
  "warwick": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-25",
+  "last_tried": "2026-09-02",
   "lat": -28.209605,
   "lon": 152.038465,
   "long": "Warwick parkrun",
@@ -28337,9 +28337,9 @@
   "trace_m": null
  },
  "yamba": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-25",
+  "last_tried": "2026-09-02",
   "lat": -29.435742,
   "lon": 153.357271,
   "long": "Yamba parkrun",
