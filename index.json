@@ -1822,9 +1822,9 @@
   "trace_m": null
  },
  "bellevue": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 46.500362,
   "lon": -84.298049,
   "long": "Bellevue parkrun",
@@ -2219,9 +2219,9 @@
   "trace_m": null
  },
  "billthorpewalkingbridge": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 45.966319,
   "lon": -66.649023,
   "long": "Bill Thorpe Walking Bridge parkrun",
@@ -3655,9 +3655,9 @@
   "trace_m": null
  },
  "buttertrail": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 45.711271,
   "lon": -63.286367,
   "long": "Butter Trail parkrun",
@@ -5168,9 +5168,9 @@
   "trace_m": null
  },
  "cloverpoint": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 48.40457,
   "lon": -123.350007,
   "long": "Clover Point parkrun",
@@ -8645,9 +8645,9 @@
   "trace_m": null
  },
  "fredericback": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 45.558862,
   "lon": -73.620363,
   "long": "Fr\u00e9d\u00e9ric Back parkrun",
@@ -16047,9 +16047,9 @@
   "trace_m": null
  },
  "millcreeknature": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 46.061925,
   "lon": -64.76324,
   "long": "Mill Creek Nature parkrun",
@@ -16707,9 +16707,9 @@
   "trace_m": null
  },
  "moussette": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 45.419427,
   "lon": -75.749844,
   "long": "Moussette parkrun",
@@ -17604,9 +17604,9 @@
   "status": "failed"
  },
  "northbay": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 46.298808,
   "lon": -79.455704,
   "long": "North Bay parkrun",
@@ -18408,9 +18408,9 @@
   "trace_m": null
  },
  "orleans": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 45.482673,
   "lon": -75.542182,
   "long": "Orleans parkrun",
@@ -21831,9 +21831,9 @@
   "trace_m": null
  },
  "saintpaulin": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 46.422567,
   "lon": -73.014185,
   "long": "Saint-Paulin parkrun",
@@ -22527,9 +22527,9 @@
   "trace_m": null
  },
  "sheriffcreekwildlifesanctuary": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 46.402282,
   "lon": -82.633675,
   "long": "Sheriff Creek Wildlife Sanctuary parkrun",
@@ -26325,9 +26325,9 @@
   "trace_m": null
  },
  "victoriatruro": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 45.354629,
   "lon": -63.26159,
   "long": "Victoria parkrun, Truro",
