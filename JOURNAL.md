@@ -441,3 +441,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-09-04 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL records this exact fix ('Fix crash in trace_course when trace_points returns empty data') as already implemented on 2026-08-31 and 2026-09-04 with multiple explicit 'REJECTED AS CHURN (do NOT re-propose)' entries. The diff only restructures existing parsing logic in trace_points without adding the claimed None/empty guard. Per the Constitution, churn takes precedence — a dead idea is closed, not revised.
+
+### 2026-09-04 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL records this exact fix ('Fix crash in trace_course when trace_points returns empty data') as already implemented on 2026-08-31 and 2026-09-04 with multiple explicit 'REJECTED AS CHURN' entries. The diff only restructures trace_points parsing logic without adding the claimed None/empty guard for trace_course. Per the Constitution, churn takes precedence — a dead idea is closed, not revised.
