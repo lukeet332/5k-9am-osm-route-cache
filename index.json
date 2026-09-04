@@ -484,9 +484,9 @@
   "trace_m": null
  },
  "ambleside": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 49.326794,
   "lon": -123.155175,
   "long": "Ambleside parkrun",
@@ -1635,9 +1635,9 @@
   "trace_m": null
  },
  "beban": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 49.198597,
   "lon": -123.995057,
   "long": "Beban parkrun",
@@ -2664,9 +2664,9 @@
   "trace_m": null
  },
  "boulevardlake": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 48.454808,
   "lon": -89.197557,
   "long": "Boulevard Lake parkrun",
@@ -4327,9 +4327,9 @@
   "trace_m": null
  },
  "centralburnaby": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 49.229288,
   "lon": -123.012837,
   "long": "Central parkrun, Burnaby",
@@ -5685,9 +5685,9 @@
   "trace_m": null
  },
  "cornerbrookstreamtrail": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 48.944105,
   "lon": -57.937618,
   "long": "Corner Brook Stream Trail parkrun",
@@ -5769,9 +5769,9 @@
   "trace_m": null
  },
  "courtenayairpark": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 49.681959,
   "lon": -124.982817,
   "long": "Courtenay Airpark parkrun",
@@ -9123,9 +9123,9 @@
   "trace_m": null
  },
  "gillieslake": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 48.480373,
   "lon": -81.321352,
   "long": "Gillies Lake parkrun",
@@ -10806,9 +10806,9 @@
   "trace_m": null
  },
  "hendersonlake": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 49.687498,
   "lon": -112.80646,
   "long": "Henderson Lake parkrun",
@@ -15553,9 +15553,9 @@
   "trace_m": null
  },
  "matsquitrailregional": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 49.12229,
   "lon": -122.300786,
   "long": "Matsqui Trail Regional parkrun",
@@ -16839,9 +16839,9 @@
   "trace_m": null
  },
  "mundy": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 49.261576,
   "lon": -122.834541,
   "long": "Mundy parkrun",
@@ -17472,9 +17472,9 @@
   "trace_m": null
  },
  "noelboothcommunity": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 49.065838,
   "lon": -122.66133,
   "long": "Noel Booth Community parkrun",
@@ -19318,9 +19318,9 @@
   "trace_m": null
  },
  "penticton": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 49.502306,
   "lon": -119.597222,
   "long": "Penticton parkrun",
@@ -20896,9 +20896,9 @@
   "trace_m": 3409
  },
  "richmondolympic": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 49.184871,
   "lon": -123.138582,
   "long": "Richmond Olympic parkrun",
@@ -22443,9 +22443,9 @@
   "trace_m": null
  },
  "shawniganhills": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 48.655546,
   "lon": -123.650306,
   "long": "Shawnigan Hills parkrun",
@@ -23268,9 +23268,9 @@
   "trace_m": null
  },
  "spanishbanksbeach": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 49.275962,
   "lon": -123.213802,
   "long": "Spanish Banks Beach parkrun",
@@ -25651,9 +25651,9 @@
   "trace_m": null
  },
  "tyneheadregional": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": 49.184318,
   "lon": -122.756237,
   "long": "Tynehead Regional parkrun",
