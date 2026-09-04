@@ -209,14 +209,14 @@ def trace_points(name, lat, lon, half_m=900, max_pages=5):
         n = 0
         for m in re.finditer(r'<trkpt lat="([\-\d.]+)" lon="([\-\d.]+)"[^>]*>(.*?)</trkpt>', txt, re.S):
             n += 1
-            tm = re.search(r'<time>([^<]+)</time>', m.group(3))
-            if not tm or not tm.group(1):
-                continue
             try:
+                tm = re.search(r'<time>([^<]+)</time>', m.group(3))
+                if not tm or not tm.group(1):
+                    continue
                 t = datetime.datetime.fromisoformat(tm.group(1).replace("Z", "+00:00"))
+                pts.append((float(m.group(1)), float(m.group(2)), t))
             except Exception:
-                continue
-            pts.append((float(m.group(1)), float(m.group(2)), t))
+                continue  # malformed trkpt/time -> skip this point, not the whole page/event
         if n < 5000:
             break          # last page reached
     return pts
