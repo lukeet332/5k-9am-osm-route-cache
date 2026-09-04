@@ -12437,9 +12437,9 @@
   "trace_m": null
  },
  "kathu": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": -27.679389,
   "lon": 23.06658,
   "long": "Kathu parkrun",
@@ -13185,9 +13185,9 @@
   "status": "failed"
  },
  "kroonstadcountryclub": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": -27.666044,
   "lon": 27.244103,
   "long": "Kroonstad Country Club parkrun",
@@ -19511,9 +19511,9 @@
   "trace_m": null
  },
  "pietretief": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": -26.996714,
   "lon": 30.813792,
   "long": "Piet Retief parkrun",
@@ -19811,9 +19811,9 @@
   "trace_m": null
  },
  "pongola": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": -27.396878,
   "lon": 31.657231,
   "long": "Pongola parkrun",
@@ -21377,9 +21377,9 @@
   "trace_m": null
  },
  "rooipointfarm": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": -27.79113,
   "lon": 29.964782,
   "long": "Rooi Point Farm parkrun",
@@ -26422,9 +26422,9 @@
   "trace_m": null
  },
  "vryheid": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": -27.777853,
   "lon": 30.794659,
   "long": "Vryheid parkrun",
@@ -26996,9 +26996,9 @@
   "trace_m": null
  },
  "welkom": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": -27.973608,
   "lon": 26.739236,
   "long": "Welkom parkrun",
