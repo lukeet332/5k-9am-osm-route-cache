@@ -426,3 +426,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-09-03 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL already records this exact change ('Prune redundant N-lap trace handling in build_one to reduce complexity without affecting coverage or accuracy') as implemented on 2026-09-03 by Qwen3-Coder-480B-A35B-Instruct-bot. The PR adds a duplicate JOURNAL entry for the same date and re-proposes the same code removal. Per the Constitution, churn takes precedence — a dead idea is closed, not revised.
+
+### 2026-09-04 - REJECTED AS CHURN (do NOT re-propose)
+- This PR re-proposes the 'Fix crash in trace_course when trace_points returns empty data' change that the JOURNAL records as already implemented on 2026-09-04 by Qwen3-Coder-480B-A35B-Instruct-bot, with multiple prior REJECTED AS CHURN entries for the same fix (2026-08-31). The diff adds a duplicate JOURNAL entry for the same date and same fix. Per the Constitution, churn takes precedence — a dead idea is closed, not revised.
