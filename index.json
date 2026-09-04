@@ -168,9 +168,9 @@
   "trace_m": null
  },
  "airliebeach": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": -20.267153,
   "lon": 148.711122,
   "long": "Airlie Beach parkrun",
@@ -1539,9 +1539,9 @@
   "trace_m": null
  },
  "bayviewroad": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": -20.729535,
   "lon": 116.806181,
   "long": "Bayview Road parkrun",
@@ -2712,9 +2712,9 @@
   "trace_m": null
  },
  "bowen": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": -19.985467,
   "lon": 148.257052,
   "long": "Bowen parkrun",
@@ -4507,9 +4507,9 @@
   "trace_m": 5058
  },
  "charterstowersairport": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": -20.044688,
   "lon": 146.273413,
   "long": "Charters Towers Airport parkrun",
@@ -5144,9 +5144,9 @@
   "trace_m": null
  },
  "cloncurry": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": -20.70873,
   "lon": 140.519814,
   "long": "Cloncurry parkrun",
@@ -10220,9 +10220,9 @@
   "trace_m": null
  },
  "hamiltonisland": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": -20.345551,
   "lon": 148.95513,
   "long": "Hamilton Island parkrun",
@@ -10280,9 +10280,9 @@
   "trace_m": null
  },
  "hamptonoval": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": -20.666182,
   "lon": 116.70334,
   "long": "Hampton Oval parkrun",
@@ -13437,9 +13437,9 @@
   "trace_m": null
  },
  "lakemaryanntingkkarli": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": -19.608546,
   "lon": 134.211018,
   "long": "Lake Mary Ann Tingkkarli parkrun",
@@ -16671,9 +16671,9 @@
   "trace_m": null
  },
  "mountisa": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": -20.702319,
   "lon": 139.492772,
   "long": "Mount Isa parkrun",
@@ -19619,9 +19619,9 @@
   "trace_m": null
  },
  "plantation": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": -19.584321,
   "lon": 147.401024,
   "long": "Plantation parkrun",
@@ -20053,9 +20053,9 @@
   "trace_m": null
  },
  "porthedland": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": -20.307149,
   "lon": 118.613332,
   "long": "Port Hedland parkrun",
@@ -20861,7 +20861,7 @@
  "rhodes": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-03",
+  "last_tried": "2026-09-04",
   "lat": -33.847462,
   "lon": 151.081803,
   "long": "Rhodes parkrun",
@@ -22215,9 +22215,9 @@
   "trace_m": null
  },
  "seaview": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-04",
   "lat": -21.035236,
   "lon": 149.165504,
   "long": "Seaview parkrun",
@@ -22899,7 +22899,7 @@
  "skipton": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-03",
+  "last_tried": "2026-09-04",
   "lat": 53.961331,
   "lon": -2.030004,
   "long": "Skipton parkrun",
@@ -23423,7 +23423,7 @@
  "stadsparksittard": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-03",
+  "last_tried": "2026-09-04",
   "lat": 50.989588,
   "lon": 5.863624,
   "long": "Stadspark parkrun, Sittard",
@@ -25365,7 +25365,7 @@
  "toyen": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-03",
+  "last_tried": "2026-09-04",
   "lat": 59.919427,
   "lon": 10.77791,
   "long": "T\u00f8yen parkrun",
