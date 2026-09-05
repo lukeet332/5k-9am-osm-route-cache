@@ -381,7 +381,7 @@ def build_one(ev):
         cands.append(("osm_9am_trace_offdist", tr[0], tr[2]))
 
     # N-lap relations that are sane but out of tolerance -> diagnostic
-    if rel and SANE_LO <= rel[1] <= SANE_HI:
+    if rel and SANE_LO <= rel[1] <= SANE_HI and rel[2]:
         n = best_lap_n(rel[1])
         n_len = n * length(rel[2])
         if SANE_LO <= n_len <= SANE_HI and not (REL_LO <= n_len <= REL_HI):
