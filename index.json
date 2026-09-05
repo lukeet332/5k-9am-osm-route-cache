@@ -2183,9 +2183,9 @@
   "trace_m": null
  },
  "billdalsparken": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-05",
   "lat": 57.582383,
   "lon": 11.943555,
   "long": "Billdalsparken parkrun",
@@ -2676,9 +2676,9 @@
   "trace_m": null
  },
  "boulognerskogen": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-05",
   "lat": 60.672424,
   "lon": 17.119386,
   "long": "Boulognerskogen parkrun",
@@ -3260,9 +3260,9 @@
   "trace_m": null
  },
  "broparken": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-05",
   "lat": 63.826124,
   "lon": 20.249958,
   "long": "Broparken parkrun",
@@ -5048,9 +5048,9 @@
   "trace_m": null
  },
  "clermontwaterfront": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-05",
   "lat": 28.570116,
   "lon": -81.779228,
   "long": "Clermont Waterfront parkrun",
@@ -6429,9 +6429,9 @@
   "trace_m": null
  },
  "depotpark": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-05",
   "lat": 29.643726,
   "lon": -82.321475,
   "long": "Depot Park parkrun",
@@ -6635,9 +6635,9 @@
   "trace_m": null
  },
  "djakneberget": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-05",
   "lat": 59.61135,
   "lon": 16.533659,
   "long": "Dj\u00e4kneberget parkrun",
@@ -11526,9 +11526,9 @@
   "trace_m": null
  },
  "huddinge": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-05",
   "lat": 59.248612,
   "lon": 17.950678,
   "long": "Huddinge parkrun",
@@ -12163,9 +12163,9 @@
   "trace_m": null
  },
  "judarskogen": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-05",
   "lat": 59.341533,
   "lon": 17.906337,
   "long": "Judarskogen parkrun",
@@ -12222,9 +12222,9 @@
   "trace_m": null
  },
  "kalgarden": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-05",
   "lat": 60.61662,
   "lon": 15.618091,
   "long": "K\u00e5lg\u00e5rden parkrun",
@@ -14058,9 +14058,9 @@
   "trace_m": null
  },
  "lillsjon": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-05",
   "lat": 59.492103,
   "lon": 17.71812,
   "long": "Lillsj\u00f6n parkrun",
@@ -18372,9 +18372,9 @@
   "trace_m": null
  },
  "orebro": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-05",
   "lat": 59.278841,
   "lon": 15.260544,
   "long": "\u00d6rebro parkrun",
@@ -22849,9 +22849,9 @@
   "trace_m": null
  },
  "skatas": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-05",
   "lat": 57.703536,
   "lon": 12.037793,
   "long": "Skat\u00e5s parkrun",
@@ -25916,9 +25916,9 @@
   "trace_m": null
  },
  "uppsala": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-05",
   "lat": 59.853455,
   "lon": 17.642296,
   "long": "Uppsala parkrun",
@@ -26098,9 +26098,9 @@
   "trace_m": null
  },
  "vallaskogen": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": 4453,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-05",
   "lat": 58.405255,
   "lon": 15.591793,
   "long": "Vallaskogen parkrun",
@@ -26157,9 +26157,9 @@
   "trace_m": null
  },
  "vaxjosjon": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-05",
   "lat": 56.872797,
   "lon": 14.814979,
   "long": "V\u00e4xj\u00f6sj\u00f6n parkrun",
@@ -26972,9 +26972,9 @@
   "trace_m": null
  },
  "weedonislandpreserve": {
-  "built_by": "v0.8.0",
+  "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-08-26",
+  "last_tried": "2026-09-05",
   "lat": 27.84707,
   "lon": -82.608119,
   "long": "Weedon Island Preserve parkrun",
