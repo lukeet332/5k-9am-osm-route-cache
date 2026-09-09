@@ -2462,7 +2462,7 @@
  "blonie": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 52.249399,
   "lon": 17.076015,
   "long": "parkrun B\u0142onie",
@@ -2474,7 +2474,7 @@
  "bloniekrotoszyn": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 51.6993,
   "lon": 17.452954,
   "long": "parkrun B\u0142onie, Krotoszyn",
@@ -4557,7 +4557,7 @@
  "chelm": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 51.131381,
   "lon": 23.48152,
   "long": "parkrun Che\u0142m",
@@ -8551,7 +8551,7 @@
  "fortvwlochy": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 52.195277,
   "lon": 20.91495,
   "long": "parkrun Fort V W\u0142ochy",
@@ -9053,7 +9053,7 @@
  "geoparkkamiennytrakt": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 50.412032,
   "lon": 16.451458,
   "long": "parkrun Geopark Kamienny Trakt",
@@ -9281,7 +9281,7 @@
  "glogow": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 51.656428,
   "lon": 16.089986,
   "long": "parkrun G\u0142og\u00f3w",
@@ -9509,7 +9509,7 @@
  "gostyn": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 51.884368,
   "lon": 16.992853,
   "long": "parkrun Gosty\u0144",
@@ -9903,7 +9903,7 @@
  "grodziskmazowiecki": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 52.101019,
   "lon": 20.63864,
   "long": "parkrun Grodzisk Mazowiecki",
@@ -12068,7 +12068,7 @@
  "jeziorozatorze": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 52.24079,
   "lon": 18.262056,
   "long": "parkrun Jezioro Zatorze, Konin",
@@ -12248,7 +12248,7 @@
  "kalisz": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 51.75628,
   "lon": 18.100242,
   "long": "parkrun Kalisz",
@@ -12499,7 +12499,7 @@
  "kedzierzynkozle": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 50.330054,
   "lon": 18.145286,
   "long": "parkrun K\u0119dzierzyn-Ko\u017ale",
@@ -13091,7 +13091,7 @@
  "koscian": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 52.093343,
   "lon": 16.638064,
   "long": "parkrun Ko\u015bcian",
@@ -13271,7 +13271,7 @@
  "kutno": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 52.223814,
   "lon": 19.349423,
   "long": "parkrun Kutno",
@@ -13654,7 +13654,7 @@
  "lasaniolowski": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 50.83462,
   "lon": 19.139758,
   "long": "parkrun Las Anio\u0142owski",
@@ -13702,7 +13702,7 @@
  "lasklasztorny": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 51.436519,
   "lon": 17.929227,
   "long": "parkrun Las Klasztorny",
@@ -13714,7 +13714,7 @@
  "laslagiewnicki": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 51.824704,
   "lon": 19.472638,
   "long": "parkrun Las \u0141agiewnicki",
@@ -13726,7 +13726,7 @@
  "lasmalcanow": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 52.149747,
   "lon": 21.385804,
   "long": "parkrun Las Malcan\u00f3w",
@@ -13930,7 +13930,7 @@
  "leszno": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 51.851061,
   "lon": 16.619139,
   "long": "parkrun Leszno",
@@ -14424,7 +14424,7 @@
  "lodz": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 51.752244,
   "lon": 19.441498,
   "long": "parkrun \u0141\u00f3d\u017a",
@@ -14664,7 +14664,7 @@
  "lubin": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 51.380777,
   "lon": 16.200271,
   "long": "parkrun Lubin",
@@ -18052,7 +18052,7 @@
  "ogrodsaski": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 51.249271,
   "lon": 22.5485,
   "long": "parkrun Ogr\u00f3d Saski, Lublin",
@@ -18302,7 +18302,7 @@
  "opole": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 50.650123,
   "lon": 17.924448,
   "long": "parkrun Opole",
@@ -18636,7 +18636,7 @@
  "pabianice": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 51.65346,
   "lon": 19.319923,
   "long": "parkrun Pabianice",
@@ -18708,7 +18708,7 @@
  "palacksiazecy": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 51.612815,
   "lon": 15.324597,
   "long": "parkrun Pa\u0142ac Ksi\u0105\u017c\u0119cy",
@@ -18837,10 +18837,22 @@
   "status": "gap",
   "trace_m": null
  },
+ "park21": {
+  "built_by": "v0.8.2",
+  "distance_m": null,
+  "last_tried": "2026-09-09",
+  "lat": 52.296586,
+  "lon": 4.628945,
+  "long": "PARK21 parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "parkblekitny": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 50.738742,
   "lon": 16.648744,
   "long": "parkrun Park B\u0142\u0119kitny",
@@ -18936,7 +18948,7 @@
  "parkmiejskilowicz": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 52.10956,
   "lon": 19.940267,
   "long": "parkrun Park Miejski, \u0141owicz",
@@ -18948,7 +18960,7 @@
  "parkmiejskiolawa": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 50.933627,
   "lon": 17.294733,
   "long": "parkrun Park Miejski, O\u0142awa",
@@ -18998,7 +19010,7 @@
  "parknadnyski": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 51.149877,
   "lon": 15.001404,
   "long": "parkrun Park Nadnyski",
@@ -19022,7 +19034,7 @@
  "parkradolinskich": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 51.975893,
   "lon": 17.503069,
   "long": "parkrun Park Radoli\u0144skich",
@@ -19058,7 +19070,7 @@
  "parkzdrojowykudowazdroj": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 50.443664,
   "lon": 16.239829,
   "long": "parkrun Park Zdrojowy, Kudowa-Zdr\u00f3j",
@@ -19741,7 +19753,7 @@
  "polemokotowskie": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 52.211555,
   "lon": 20.996041,
   "long": "parkrun Pole Mokotowskie",
@@ -20127,7 +20139,7 @@
  "portrzecznysandomierz": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 50.655615,
   "lon": 21.733285,
   "long": "parkrun Port Rzeczny Sandomierz",
@@ -20320,7 +20332,7 @@
  "pruszkow": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 52.167221,
   "lon": 20.8095,
   "long": "parkrun Pruszk\u00f3w",
@@ -22875,7 +22887,7 @@
  "skierniewice": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 51.965214,
   "lon": 20.140672,
   "long": "parkrun Skierniewice",
@@ -22911,7 +22923,7 @@
  "skorzec": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 52.106618,
   "lon": 22.117544,
   "long": "parkrun Sk\u00f3rzec",
@@ -23591,7 +23603,7 @@
  "stawymiejskie": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 51.217256,
   "lon": 17.387216,
   "long": "parkrun Stawy Miejskie",
@@ -24276,7 +24288,7 @@
  "szubiankizagorow": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 52.164015,
   "lon": 17.879627,
   "long": "parkrun Szubianki, Zag\u00f3r\u00f3w",
@@ -26771,7 +26783,7 @@
  "warszawabrodno": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 52.290317,
   "lon": 21.035937,
   "long": "parkrun Warszawa-Br\u00f3dno",
@@ -26783,7 +26795,7 @@
  "warszawapraga": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 52.241493,
   "lon": 21.050963,
   "long": "parkrun Warszawa-Praga",
@@ -26795,7 +26807,7 @@
  "warszawaursynow": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 52.135633,
   "lon": 21.063039,
   "long": "parkrun Warszawa-Ursyn\u00f3w",
@@ -26807,7 +26819,7 @@
  "warszawazoliborz": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 52.280382,
   "lon": 20.990555,
   "long": "parkrun Warszawa-\u017boliborz",
@@ -28195,7 +28207,7 @@
  "wroclaw": {
   "built_by": "v0.8.2",
   "distance_m": 4197,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 51.10058,
   "lon": 17.120473,
   "long": "parkrun Wroc\u0142aw",
@@ -28556,7 +28568,7 @@
  "zalewborki": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 51.393944,
   "lon": 21.116701,
   "long": "parkrun Zalew Borki",
@@ -28593,7 +28605,7 @@
  "zalewzyrardowski": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 52.037199,
   "lon": 20.450379,
   "long": "parkrun Zalew \u017byrardowski",
@@ -28689,7 +28701,7 @@
  "zielonagora": {
   "built_by": "v0.8.2",
   "distance_m": 6197,
-  "last_tried": "2026-09-02",
+  "last_tried": "2026-09-09",
   "lat": 51.954022,
   "lon": 15.532438,
   "long": "parkrun Zielona G\u00f3ra",
