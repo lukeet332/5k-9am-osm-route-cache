@@ -676,7 +676,7 @@
  "armagh": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.339812,
   "lon": -6.652951,
   "long": "Armagh parkrun",
@@ -700,7 +700,7 @@
  "armley": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 53.800347,
   "lon": -1.590893,
   "long": "Armley parkrun",
@@ -1361,7 +1361,7 @@
  "barrow": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.117706,
   "lon": -3.218855,
   "long": "Barrow parkrun",
@@ -2822,7 +2822,7 @@
  "bramley": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 53.813432,
   "lon": -1.633461,
   "long": "Bramley parkrun",
@@ -4236,7 +4236,7 @@
  "castlewellan": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.262147,
   "lon": -5.95386,
   "long": "Castlewellan parkrun",
@@ -4630,7 +4630,7 @@
  "chevinforest": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 53.894133,
   "lon": -1.665858,
   "long": "Chevin Forest parkrun",
@@ -4871,7 +4871,7 @@
  "citypark": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.451093,
   "lon": -6.386002,
   "long": "Citypark parkrun, Craigavon",
@@ -5086,7 +5086,7 @@
  "cliffecastle": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 53.874658,
   "lon": -1.913364,
   "long": "Cliffe Castle parkrun",
@@ -5110,7 +5110,7 @@
  "clitheroecastle": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 53.870346,
   "lon": -2.39478,
   "long": "Clitheroe Castle parkrun",
@@ -5543,7 +5543,7 @@
  "conynghamhall": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.011758,
   "lon": -1.479507,
   "long": "Conyngham Hall parkrun",
@@ -6165,7 +6165,7 @@
  "dalbyforest": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.273821,
   "lon": -0.686599,
   "long": "Dalby Forest parkrun",
@@ -7033,7 +7033,7 @@
  "dunleathplayingfields": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.323473,
   "lon": -5.718077,
   "long": "Dunleath Playing Fields parkrun",
@@ -7263,7 +7263,7 @@
  "eastholmesfield": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 53.928537,
   "lon": -1.822741,
   "long": "East Holmes Field parkrun",
@@ -7767,7 +7767,7 @@
  "enniskillen": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.343834,
   "lon": -7.642293,
   "long": "Enniskillen parkrun",
@@ -8334,7 +8334,7 @@
  "fleetwoodpromenade": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 53.927366,
   "lon": -3.016919,
   "long": "Fleetwood Promenade parkrun",
@@ -8443,7 +8443,7 @@
  "ford": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.198427,
   "lon": -3.088135,
   "long": "Ford parkrun",
@@ -8599,7 +8599,7 @@
  "fountainsabbey": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.110196,
   "lon": -1.581983,
   "long": "Fountains Abbey parkrun",
@@ -10450,7 +10450,7 @@
  "harrogate": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 53.992428,
   "lon": -1.521435,
   "long": "Harrogate parkrun",
@@ -10952,7 +10952,7 @@
  "heslington": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 53.949319,
   "lon": -1.01799,
   "long": "Heslington parkrun",
@@ -11084,7 +11084,7 @@
  "hillsboroughforest": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.461336,
   "lon": -6.076662,
   "long": "Hillsborough Forest parkrun",
@@ -13535,7 +13535,7 @@
  "lancaster": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.04568,
   "lon": -2.781183,
   "long": "Lancaster parkrun",
@@ -14193,7 +14193,7 @@
  "listerpark": {
   "built_by": "v0.8.2",
   "distance_m": 5527,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 53.814575,
   "lon": -1.775102,
   "long": "Lister Park parkrun, Bradford",
@@ -14569,7 +14569,7 @@
  "loughhead": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.247811,
   "lon": -7.453552,
   "long": "Lough Head parkrun",
@@ -14749,7 +14749,7 @@
  "lurganpark": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.46303,
   "lon": -6.322774,
   "long": "Lurgan Park parkrun",
@@ -16097,7 +16097,7 @@
  "millfield": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.125154,
   "lon": -1.190864,
   "long": "Millfield parkrun",
@@ -16121,7 +16121,7 @@
  "millom": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.21399,
   "lon": -3.26996,
   "long": "Millom parkrun",
@@ -16386,7 +16386,7 @@
  "montaltoestate": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.393274,
   "lon": -5.899066,
   "long": "Montalto Estate parkrun",
@@ -16494,7 +16494,7 @@
  "morecambeprom": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.065082,
   "lon": -2.885102,
   "long": "Morecambe Prom parkrun",
@@ -16841,7 +16841,7 @@
  "muncastercastle": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.357004,
   "lon": -3.388267,
   "long": "Muncaster Castle parkrun",
@@ -16949,7 +16949,7 @@
  "myrtle": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 53.846344,
   "lon": -1.838295,
   "long": "Myrtle parkrun",
@@ -17354,7 +17354,7 @@
  "newrygreenway": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.170834,
   "lon": -6.339015,
   "long": "Newry Greenway parkrun",
@@ -17474,7 +17474,7 @@
  "nobles": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.166432,
   "lon": -4.480834,
   "long": "Nobles parkrun",
@@ -17595,7 +17595,7 @@
  "northallerton": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.348466,
   "lon": -1.435519,
   "long": "Northallerton parkrun",
@@ -17764,7 +17764,7 @@
  "northyorkshirewaterpark": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.227812,
   "lon": -0.482836,
   "long": "North Yorkshire Water Park parkrun",
@@ -19260,7 +19260,7 @@
  "pendle": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 53.863571,
   "lon": -2.18011,
   "long": "Pendle parkrun",
@@ -20211,7 +20211,7 @@
  "potternewton": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 53.818446,
   "lon": -1.526274,
   "long": "Potternewton parkrun",
@@ -21259,7 +21259,7 @@
  "robertspark": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 53.841468,
   "lon": -1.793275,
   "long": "Roberts Park parkrun",
@@ -21536,7 +21536,7 @@
  "rostrevor": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.099486,
   "lon": -6.193448,
   "long": "Rostrevor parkrun",
@@ -21560,7 +21560,7 @@
  "rothaypark": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.431563,
   "lon": -2.969788,
   "long": "Rothay Park parkrun",
@@ -21608,7 +21608,7 @@
  "roundhay": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 53.83828,
   "lon": -1.496007,
   "long": "Roundhay parkrun",
@@ -22421,7 +22421,7 @@
  "sewerby": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.103268,
   "lon": -0.160761,
   "long": "Sewerby parkrun",
@@ -24766,7 +24766,7 @@
  "thecindertrack": {
   "built_by": "v0.8.2",
   "distance_m": 5662,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.4779,
   "lon": -0.620751,
   "long": "The Cinder Track parkrun, Whitby",
@@ -25055,7 +25055,7 @@
  "thorpperrow": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.261285,
   "lon": -1.6042,
   "long": "Thorp Perrow parkrun",
@@ -27346,7 +27346,7 @@
  "wetherby": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 53.925673,
   "lon": -1.392197,
   "long": "Wetherby parkrun",
@@ -28075,7 +28075,7 @@
  "woodlandsscarborough": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 54.28068,
   "lon": -0.417402,
   "long": "Woodlands parkrun, Scarborough",
@@ -28484,7 +28484,7 @@
  "yorkcommunitywoodland": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-11",
   "lat": 53.964983,
   "lon": -1.149801,
   "long": "York Community Woodland parkrun",
