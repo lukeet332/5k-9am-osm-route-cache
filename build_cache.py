@@ -364,7 +364,7 @@ def build_one(ev):
             n = best_lap_n(val)
             n_len = n * val
             if REL_LO <= n_len <= REL_HI:
-                src = f"{src_type}_doubled" if n > 1 else src_type
+                src = f"{src_type}_doubled" if n == 2 else (f"{src_type}_x{n}" if n > 2 else src_type)
                 write_gpx(name, ev["long"], data[1] if is_trace else data[2], src)
                 return {"source": src, "distance_m": round(n_len), "status": "success",
                         "provisional": not is_trace, **({ "trace_date": data[2] } if is_trace else {}), **diag}
