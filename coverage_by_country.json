@@ -1,5 +1,5 @@
 {
- "world_total": 2390,
+ "world_total": 2393,
  "world_mapped": 163,
  "countries": [
   {
@@ -11,7 +11,7 @@
   {
    "code": 3,
    "name": "Australia",
-   "total": 544,
+   "total": 545,
    "mapped": 2
   },
   {
@@ -53,7 +53,7 @@
   {
    "code": 14,
    "name": "Canada",
-   "total": 65,
+   "total": 66,
    "mapped": 0
   },
   {
@@ -65,7 +65,7 @@
   {
    "code": 64,
    "name": "Netherlands",
-   "total": 31,
+   "total": 32,
    "mapped": 3
   },
   {
