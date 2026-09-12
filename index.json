@@ -593,7 +593,7 @@
  "antrim": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.717078,
   "lon": -6.238818,
   "long": "Antrim parkrun",
@@ -664,7 +664,7 @@
  "ardsforestpark": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-12",
   "lat": 55.159342,
   "lon": -7.888785,
   "long": "Ards Forest Park parkrun",
@@ -1229,7 +1229,7 @@
  "bangor": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.660024,
   "lon": -5.661693,
   "long": "Bangor parkrun, Northern Ireland",
@@ -2341,7 +2341,7 @@
  "blackhill": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.858315,
   "lon": -1.842366,
   "long": "Blackhill parkrun",
@@ -2726,7 +2726,7 @@
  "bowerpark": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.761523,
   "lon": -3.331244,
   "long": "Bower Park parkrun",
@@ -3442,7 +3442,7 @@
  "buncrana": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-12",
   "lat": 55.132338,
   "lon": -7.462667,
   "long": "Buncrana parkrun",
@@ -3466,7 +3466,7 @@
  "bundoranpromenade": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-12",
   "lat": 54.479142,
   "lon": -8.28139,
   "long": "Bundoran Promenade parkrun",
@@ -3705,7 +3705,7 @@
  "caffarella": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-12",
   "lat": 41.866851,
   "lon": 12.524093,
   "long": "Caffarella parkrun",
@@ -4128,7 +4128,7 @@
  "carrickfergus": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.719992,
   "lon": -5.805285,
   "long": "Carrickfergus parkrun",
@@ -5241,7 +5241,7 @@
  "cockermouthgreenway": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.659659,
   "lon": -3.356998,
   "long": "Cockermouth Greenway parkrun",
@@ -5747,7 +5747,7 @@
  "cotsfordfields": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.759499,
   "lon": -1.30077,
   "long": "Cotsford Fields parkrun",
@@ -5879,7 +5879,7 @@
  "crawfordsburncountry": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.666682,
   "lon": -5.729434,
   "long": "Crawfordsburn Country parkrun",
@@ -6481,7 +6481,7 @@
  "derrynoidforest": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.802964,
   "lon": -6.810505,
   "long": "Derrynoid Forest parkrun",
@@ -7021,7 +7021,7 @@
  "dungloe": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-12",
   "lat": 54.952769,
   "lon": -8.348957,
   "long": "Dungloe parkrun",
@@ -7082,7 +7082,7 @@
  "durham": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.767605,
   "lon": -1.558852,
   "long": "Durham parkrun",
@@ -7383,7 +7383,7 @@
  "ecos": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.867371,
   "lon": -6.259117,
   "long": "Ecos parkrun, Ballymena",
@@ -7623,7 +7623,7 @@
  "elemorepark": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.803503,
   "lon": -1.449263,
   "long": "Elemore Park parkrun",
@@ -7863,7 +7863,7 @@
  "etna": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-12",
   "lat": 37.621125,
   "lon": 15.008107,
   "long": "Etna parkrun",
@@ -7996,7 +7996,7 @@
  "falcarragh": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-12",
   "lat": 55.140535,
   "lon": -8.099661,
   "long": "Falcarragh parkrun",
@@ -8093,7 +8093,7 @@
  "favorita": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-12",
   "lat": 38.159773,
   "lon": 13.339815,
   "long": "Favorita parkrun",
@@ -8515,7 +8515,7 @@
  "foroitalico": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-12",
   "lat": 38.120136,
   "lon": 13.372298,
   "long": "Foro Italico parkrun",
@@ -9221,7 +9221,7 @@
  "glenfarnewood": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-12",
   "lat": 54.287475,
   "lon": -7.986112,
   "long": "Glenfarne Wood parkrun",
@@ -10089,7 +10089,7 @@
  "hackworth": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.628071,
   "lon": -1.644945,
   "long": "Hackworth parkrun",
@@ -10294,7 +10294,7 @@
  "hamsterleyforest": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.675593,
   "lon": -1.858786,
   "long": "Hamsterley Forest parkrun",
@@ -10498,7 +10498,7 @@
  "hartlepool": {
   "built_by": "v0.8.2",
   "distance_m": 5341,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.686937,
   "lon": -1.195128,
   "long": "Hartlepool parkrun",
@@ -10892,7 +10892,7 @@
  "heritagecoastalpatheasington": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.789466,
   "lon": -1.318742,
   "long": "Heritage Coastal Path parkrun, Easington",
@@ -11335,7 +11335,7 @@
  "holycrosscollege": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.815718,
   "lon": -7.477408,
   "long": "Holy Cross College parkrun",
@@ -12128,7 +12128,7 @@
  "jubilee": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.701073,
   "lon": -1.604602,
   "long": "Jubilee parkrun",
@@ -13978,7 +13978,7 @@
  "letterkenny": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-12",
   "lat": 54.959034,
   "lon": -7.729891,
   "long": "Letterkenny parkrun",
@@ -14593,7 +14593,7 @@
  "loughmacrory": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.627906,
   "lon": -7.106576,
   "long": "Loughmacrory parkrun",
@@ -15519,7 +15519,7 @@
  "maryportprom": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.7171,
   "lon": -3.50107,
   "long": "Maryport Prom parkrun",
@@ -15833,7 +15833,7 @@
  "mensola": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-12",
   "lat": 43.77528,
   "lon": 11.308243,
   "long": "Mensola parkrun",
@@ -17067,7 +17067,7 @@
  "narinbeach": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-12",
   "lat": 54.839814,
   "lon": -8.448642,
   "long": "Narin Beach parkrun",
@@ -19308,7 +19308,7 @@
  "penrith": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.658026,
   "lon": -2.720532,
   "long": "Penrith parkrun",
@@ -21367,7 +21367,7 @@
  "romapineto": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-12",
   "lat": 41.923144,
   "lon": 12.425886,
   "long": "Roma Pineto parkrun",
@@ -21833,7 +21833,7 @@
  "sabine": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-12",
   "lat": 41.97607,
   "lon": 12.524766,
   "long": "Sabine parkrun",
@@ -21917,7 +21917,7 @@
  "salento": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-12",
   "lat": 40.455565,
   "lon": 18.166117,
   "long": "Salento parkrun",
@@ -22277,7 +22277,7 @@
  "sedgefield": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.653008,
   "lon": -1.466289,
   "long": "Sedgefield parkrun",
@@ -22863,7 +22863,7 @@
  "sixmilewater": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.750004,
   "lon": -5.998945,
   "long": "Sixmilewater parkrun",
@@ -22971,7 +22971,7 @@
  "sligo": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-12",
   "lat": 54.265977,
   "lon": -8.452828,
   "long": "Sligo parkrun",
@@ -24802,7 +24802,7 @@
  "thefishermanswalk": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.868789,
   "lon": -6.481169,
   "long": "The Fisherman\u2019s Walk parkrun",
@@ -25737,7 +25737,7 @@
  "uditore": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-06",
+  "last_tried": "2026-09-12",
   "lat": 38.129722,
   "lon": 13.32777,
   "long": "Uditore parkrun",
@@ -26040,7 +26040,7 @@
  "ushawhistorichouse": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.787558,
   "lon": -1.658134,
   "long": "Ushaw Historic House parkrun",
@@ -26147,7 +26147,7 @@
  "valley": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.659949,
   "lon": -5.928342,
   "long": "Valley parkrun, Newtownabbey",
@@ -26974,7 +26974,7 @@
  "waterworks": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.619299,
   "lon": -5.942613,
   "long": "Waterworks parkrun, Belfast",
@@ -28147,7 +28147,7 @@
  "workington": {
   "built_by": "v0.8.2",
   "distance_m": null,
-  "last_tried": "2026-09-07",
+  "last_tried": "2026-09-12",
   "lat": 54.647169,
   "lon": -3.539767,
   "long": "Workington parkrun",
