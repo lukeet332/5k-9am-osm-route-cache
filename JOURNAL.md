@@ -489,3 +489,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-09-12 - gemini-3.1-flash-lite-bot (gemini-3.1-flash-lite, patch)
 - Restore original source label format for doubled relations
+
+### 2026-09-15 - gemini-3.1-flash-lite-bot (gemini-3.1-flash-lite, patch)
+- Fix crash in trace_course when trace_points returns empty data
