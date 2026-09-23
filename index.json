@@ -868,7 +868,7 @@
  "atholl": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.128736,
   "lon": 28.065948,
   "long": "Atholl parkrun",
@@ -880,7 +880,7 @@
  "atlasville": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.160156,
   "lon": 28.285877,
   "long": "Atlasville parkrun",
@@ -2113,7 +2113,7 @@
  "bezuidenhout": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.180165,
   "lon": 28.089316,
   "long": "Bezuidenhout parkrun",
@@ -2534,7 +2534,7 @@
  "boksburg": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.235059,
   "lon": 28.275415,
   "long": "Boksburg parkrun",
@@ -2630,7 +2630,7 @@
  "bosmontstadium": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.194801,
   "lon": 27.954446,
   "long": "Bosmont Stadium parkrun",
@@ -2798,7 +2798,7 @@
  "brakpan": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.231542,
   "lon": 28.365317,
   "long": "Brakpan parkrun",
@@ -3322,7 +3322,7 @@
  "bryanston": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.060239,
   "lon": 28.04727,
   "long": "Bryanston parkrun",
@@ -4104,7 +4104,7 @@
  "carnivalcity": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.257116,
   "lon": 28.312658,
   "long": "Carnival City parkrun",
@@ -6407,7 +6407,7 @@
  "delta": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.125349,
   "lon": 28.009354,
   "long": "Delta parkrun",
@@ -6745,7 +6745,7 @@
  "dorothynyembe": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.222108,
   "lon": 27.874664,
   "long": "Dorothy Nyembe parkrun",
@@ -6841,7 +6841,7 @@
  "drumblade": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.434129,
   "lon": 28.005427,
   "long": "Drumblade parkrun",
@@ -7347,7 +7347,7 @@
  "ebotse": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.146747,
   "lon": 28.352306,
   "long": "Ebotse parkrun",
@@ -7431,7 +7431,7 @@
  "edenvale": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.139608,
   "lon": 28.14039,
   "long": "Edenvale parkrun",
@@ -7611,7 +7611,7 @@
  "eldoradopark": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.298306,
   "lon": 27.8918,
   "long": "Eldorado Park parkrun",
@@ -7755,7 +7755,7 @@
  "ennerdalestadium": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.401835,
   "lon": 27.831154,
   "long": "Ennerdale Stadium parkrun",
@@ -7803,7 +7803,7 @@
  "ernestullmann": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.078938,
   "lon": 28.073178,
   "long": "Ernest Ullmann parkrun",
@@ -8166,7 +8166,7 @@
  "ferryvale": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.42512,
   "lon": 28.481447,
   "long": "Ferryvale parkrun",
@@ -9137,7 +9137,7 @@
  "gilloolys": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.165394,
   "lon": 28.131554,
   "long": "Gilloolys parkrun",
@@ -9376,7 +9376,7 @@
  "goldenharvest": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.069116,
   "lon": 27.95355,
   "long": "Golden Harvest parkrun",
@@ -9832,7 +9832,7 @@
  "greenstonehill": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.120288,
   "lon": 28.146204,
   "long": "Greenstone Hill parkrun",
@@ -11395,7 +11395,7 @@
  "homesteadlake": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.17348,
   "lon": 28.29274,
   "long": "Homestead Lake parkrun",
@@ -11564,7 +11564,7 @@
  "huddle": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.159533,
   "lon": 28.110876,
   "long": "Huddle parkrun",
@@ -12738,7 +12738,7 @@
  "killarneycountryclub": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.149992,
   "lon": 28.054831,
   "long": "Killarney Country Club parkrun",
@@ -13188,7 +13188,7 @@
  "kralinbergh": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.49073,
   "lon": 30.029815,
   "long": "Kralinbergh parkrun",
@@ -13307,7 +13307,7 @@
  "kwanele": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.377953,
   "lon": 28.148387,
   "long": "Kwanele parkrun",
@@ -14048,7 +14048,7 @@
  "lichtenburgraceway": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.1517,
   "lon": 26.187442,
   "long": "Lichtenburg Raceway parkrun",
@@ -15242,7 +15242,7 @@
  "manzini": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.487763,
   "lon": 31.398758,
   "long": "Manzini parkrun",
@@ -15254,7 +15254,7 @@
  "mapetla": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.271531,
   "lon": 27.838264,
   "long": "Mapetla parkrun",
@@ -15664,7 +15664,7 @@
  "mbabane": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.318875,
   "lon": 31.144017,
   "long": "Mbabane parkrun",
@@ -15941,7 +15941,7 @@
  "meyersfarm": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.267929,
   "lon": 28.094768,
   "long": "Meyers Farm parkrun",
@@ -16315,7 +16315,7 @@
  "mofolo": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.243398,
   "lon": 27.888986,
   "long": "Mofolo parkrun",
@@ -20786,7 +20786,7 @@
  "redstar": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.075092,
   "lon": 28.755141,
   "long": "Red Star parkrun",
@@ -21031,7 +21031,7 @@
  "rietvlei": {
   "built_by": "v0.8.3",
   "distance_m": 5988,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.31107,
   "lon": 28.079971,
   "long": "Rietvlei parkrun, JHB South",
@@ -21427,7 +21427,7 @@
  "rondebult": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.292837,
   "lon": 28.223376,
   "long": "Rondebult parkrun",
@@ -21439,7 +21439,7 @@
  "roodepoort": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.163327,
   "lon": 27.90703,
   "long": "Roodepoort parkrun",
@@ -21500,7 +21500,7 @@
  "roselenasia": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.317592,
   "lon": 27.84864,
   "long": "Rose parkrun, Lenasia",
@@ -21738,7 +21738,7 @@
  "ruimsig": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.07309,
   "lon": 27.866056,
   "long": "Ruimsig parkrun",
@@ -22301,7 +22301,7 @@
  "secunda": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.518381,
   "lon": 29.184209,
   "long": "Secunda parkrun",
@@ -23450,7 +23450,7 @@
  "springs": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.216163,
   "lon": 28.4134,
   "long": "Springs parkrun",
@@ -23687,7 +23687,7 @@
  "sterkfontein": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.068688,
   "lon": 27.768987,
   "long": "Sterkfontein parkrun",
@@ -24718,7 +24718,7 @@
  "terranova": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.476844,
   "lon": 29.237276,
   "long": "Terra Nova parkrun",
@@ -25593,7 +25593,7 @@
  "tsakanewetlands": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.348586,
   "lon": 28.371085,
   "long": "Tsakane Wetlands parkrun",
@@ -26363,7 +26363,7 @@
  "victorialake": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.233615,
   "lon": 28.163202,
   "long": "Victoria Lake parkrun",
@@ -27931,7 +27931,7 @@
  "wits": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.185444,
   "lon": 28.025331,
   "long": "Wits parkrun",
@@ -28087,7 +28087,7 @@
  "woodlands": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.063356,
   "lon": 28.088179,
   "long": "Woodlands parkrun",
@@ -28855,7 +28855,7 @@
  "zuurfontein": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-17",
+  "last_tried": "2026-09-23",
   "lat": -26.103947,
   "lon": 28.217276,
   "long": "Zuurfontein parkrun",
