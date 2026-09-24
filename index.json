@@ -450,7 +450,7 @@
  "amager": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 55.653057,
   "lon": 12.575108,
   "long": "Amager F\u00e6lled parkrun",
@@ -462,7 +462,7 @@
  "amagerstrandpark": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 55.662538,
   "lon": 12.635341,
   "long": "Amager Strandpark parkrun",
@@ -928,7 +928,7 @@
  "auldcathiedistrict": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 55.963327,
   "lon": -3.477658,
   "long": "Auldcathie District parkrun",
@@ -1741,7 +1741,7 @@
  "beecraigscountrypark": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 55.950217,
   "lon": -3.591206,
   "long": "Beecraigs Country Park parkrun",
@@ -2257,7 +2257,7 @@
  "birchwoodtrails": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 56.733336,
   "lon": -111.438878,
   "long": "Birchwood Trails parkrun",
@@ -2570,7 +2570,7 @@
  "bonessforeshore": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 56.020326,
   "lon": -3.605223,
   "long": "Bo\u2019ness Foreshore parkrun",
@@ -2750,7 +2750,7 @@
  "brabrand": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 56.165699,
   "lon": 10.141282,
   "long": "Brabrand parkrun",
@@ -3274,7 +3274,7 @@
  "broughtyferryesplanade": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 56.468603,
   "lon": -2.851584,
   "long": "Broughty Ferry Esplanade parkrun",
@@ -3681,7 +3681,7 @@
  "bygholm": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 55.864821,
   "lon": 9.826912,
   "long": "Bygholm parkrun",
@@ -5926,7 +5926,7 @@
  "crinancanal": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 56.041904,
   "lon": -5.440651,
   "long": "Crinan Canal parkrun, Lochgilphead",
@@ -6177,7 +6177,7 @@
  "damhusengen": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 55.681924,
   "lon": 12.471907,
   "long": "Damhusengen parkrun",
@@ -6853,7 +6853,7 @@
  "drumchapel": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 55.91688,
   "lon": -4.350674,
   "long": "Drumchapel parkrun",
@@ -6997,7 +6997,7 @@
  "dunfermline": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 56.070684,
   "lon": -3.470694,
   "long": "Dunfermline parkrun",
@@ -7839,7 +7839,7 @@
  "esbjerg": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 55.482349,
   "lon": 8.442703,
   "long": "Esbjerg parkrun",
@@ -7961,7 +7961,7 @@
  "faelledparken": {
   "built_by": "v0.8.3",
   "distance_m": 5317,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 55.701775,
   "lon": 12.568917,
   "long": "F\u00e6lledparken parkrun",
@@ -8008,7 +8008,7 @@
  "falkirk": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 55.99543,
   "lon": -3.766712,
   "long": "Falkirk parkrun",
@@ -8178,7 +8178,7 @@
  "festivalgreen": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 19.32093,
   "lon": -81.375216,
   "long": "Festival Green parkrun",
@@ -8743,7 +8743,7 @@
  "fuglsangso": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 56.156235,
   "lon": 8.954318,
   "long": "Fuglsang S\u00f8 parkrun",
@@ -8874,7 +8874,7 @@
  "ganavansands": {
   "built_by": "v0.8.3",
   "distance_m": 5590,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 56.437766,
   "lon": -5.469021,
   "long": "Ganavan Sands parkrun",
@@ -9796,7 +9796,7 @@
  "greenock": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 55.956525,
   "lon": -4.767348,
   "long": "Greenock parkrun",
@@ -11300,7 +11300,7 @@
  "holbaekfaelled": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 55.708668,
   "lon": 11.740032,
   "long": "Holb\u00e6k F\u00e6lled parkrun",
@@ -11359,7 +11359,7 @@
  "holyrood": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 55.952167,
   "lon": -3.162844,
   "long": "Holyrood parkrun",
@@ -12900,7 +12900,7 @@
  "kirkcaldy": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 56.104087,
   "lon": -3.169549,
   "long": "Kirkcaldy parkrun",
@@ -13319,7 +13319,7 @@
  "ladymaryswalk": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 56.374281,
   "lon": -3.858359,
   "long": "Lady Mary\u2019s Walk parkrun",
@@ -14002,7 +14002,7 @@
  "levengrove": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 55.940721,
   "lon": -4.57567,
   "long": "Levengrove parkrun",
@@ -14387,7 +14387,7 @@
  "lochendwoods": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 55.997214,
   "lon": -2.521501,
   "long": "Lochend Woods parkrun",
@@ -14411,7 +14411,7 @@
  "lochleven": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 56.219434,
   "lon": -3.358085,
   "long": "Loch Leven parkrun",
@@ -14436,7 +14436,7 @@
  "lochoremeadows": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 56.150699,
   "lon": -3.33708,
   "long": "Lochore Meadows parkrun",
@@ -14833,7 +14833,7 @@
  "lyngby": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 55.77637,
   "lon": 12.49826,
   "long": "Lyngby parkrun",
@@ -15712,7 +15712,7 @@
  "meadowmill": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 55.954249,
   "lon": -2.966242,
   "long": "Meadowmill parkrun",
@@ -15821,7 +15821,7 @@
  "mendelriverbank": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 52.134511,
   "lon": -106.648378,
   "long": "Mendel Riverbank parkrun",
@@ -17438,7 +17438,7 @@
  "nibe": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 56.987144,
   "lon": 9.654837,
   "long": "Nibe parkrun",
@@ -17558,7 +17558,7 @@
  "nordrefaelled": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 56.48583,
   "lon": 10.031231,
   "long": "Nordre F\u00e6lled parkrun, Randers",
@@ -17800,7 +17800,7 @@
  "nosehill": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 51.12534,
   "lon": -114.129961,
   "long": "Nose Hill parkrun",
@@ -18744,7 +18744,7 @@
  "palaceriggcountry": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 55.937089,
   "lon": -3.949289,
   "long": "Palacerigg Country parkrun",
@@ -19440,7 +19440,7 @@
  "perth": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 56.40515,
   "lon": -3.435422,
   "long": "Perth parkrun",
@@ -19705,7 +19705,7 @@
  "plean": {
   "built_by": "v0.8.3",
   "distance_m": 5506,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 56.057791,
   "lon": -3.881607,
   "long": "Plean parkrun",
@@ -20163,7 +20163,7 @@
  "portobello": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 55.950689,
   "lon": -3.122656,
   "long": "Portobello parkrun, Edinburgh",
@@ -20404,7 +20404,7 @@
  "puolarmaari": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 60.177056,
   "lon": 24.697029,
   "long": "Puolarmaari parkrun",
@@ -21187,7 +21187,7 @@
  "riversideparkglenrothes": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 56.199969,
   "lon": -3.175163,
   "long": "Riverside Park parkrun, Glenrothes",
@@ -21235,7 +21235,7 @@
  "rivervalleyedmonton": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 53.533495,
   "lon": -113.52638,
   "long": "River Valley parkrun, Edmonton",
@@ -23603,7 +23603,7 @@
  "standrews": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 56.317711,
   "lon": -2.838234,
   "long": "St Andrews parkrun",
@@ -25906,7 +25906,7 @@
  "universityofstirling": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 56.147968,
   "lon": -3.923762,
   "long": "University of Stirling parkrun",
@@ -26243,7 +26243,7 @@
  "vejen": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 55.474609,
   "lon": 9.120852,
   "long": "Vejen parkrun",
@@ -27214,7 +27214,7 @@
  "westbaydunoon": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 55.944993,
   "lon": -4.924285,
   "long": "West Bay parkrun, Dunoon",
@@ -27523,7 +27523,7 @@
  "whitekirkhill": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-18",
+  "last_tried": "2026-09-24",
   "lat": 56.033364,
   "lon": -2.644542,
   "long": "Whitekirk Hill parkrun",
