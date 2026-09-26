@@ -94,12 +94,12 @@ the initial cache build, then dial back to weekly), committing each route straig
 ## Coverage by country
 
 <!-- COVERAGE-BY-COUNTRY:START -->
-_Worldwide: 163/2394 parkruns mapped across 20 countries (UK first; other countries fill in as the global rollout sweeps them)._
+_Worldwide: 163/2397 parkruns mapped across 20 countries (UK first; other countries fill in as the global rollout sweeps them)._
 
 | Country | Mapped / Total |
 |---|---|
-| United Kingdom | 139/896 |
-| Australia | 2/545 |
+| United Kingdom | 139/898 |
+| Australia | 2/546 |
 | South Africa | 6/230 |
 | Ireland | 1/113 |
 | Poland | 6/109 |
