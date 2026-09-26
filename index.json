@@ -892,7 +892,7 @@
  "aubotanicgardenmountannan": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -34.066408,
   "lon": 150.766217,
   "long": "Australian Botanic Garden Mount Annan parkrun",
@@ -904,7 +904,7 @@
  "auburnbotanicgardens": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.859877,
   "lon": 151.015305,
   "long": "Auburn Botanic Gardens parkrun",
@@ -3825,7 +3825,7 @@
  "campbelltown": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -34.018301,
   "lon": 150.814819,
   "long": "Campbelltown parkrun",
@@ -4272,7 +4272,7 @@
  "casulaparklands": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.948703,
   "lon": 150.91369,
   "long": "Casula Parklands parkrun",
@@ -4317,7 +4317,7 @@
  "centennial": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.898808,
   "lon": 151.228564,
   "long": "Centennial parkrun",
@@ -4726,7 +4726,7 @@
  "chippingnorton": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.909244,
   "lon": 150.964108,
   "long": "Chipping Norton parkrun",
@@ -5014,7 +5014,7 @@
  "clarevalley": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.866335,
   "lon": 138.625011,
   "long": "Clare Valley parkrun",
@@ -5603,7 +5603,7 @@
  "cooksriver": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.913708,
   "lon": 151.116857,
   "long": "Cooks River parkrun",
@@ -5675,7 +5675,7 @@
  "coppertrail": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.95397,
   "lon": 137.667378,
   "long": "Copper Trail parkrun",
@@ -5843,7 +5843,7 @@
  "cowpasturereservecamden": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -34.053665,
   "lon": 150.700727,
   "long": "Cowpasture Reserve parkrun, Camden",
@@ -5855,7 +5855,7 @@
  "cowra": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.812714,
   "lon": 148.703733,
   "long": "Cowra parkrun",
@@ -5974,7 +5974,7 @@
  "cronulla": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -34.040937,
   "lon": 151.161836,
   "long": "Cronulla parkrun",
@@ -6057,7 +6057,7 @@
  "curlcurl": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.766483,
   "lon": 151.282339,
   "long": "Curl Curl parkrun",
@@ -6733,7 +6733,7 @@
  "dollspoint": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.995775,
   "lon": 151.144928,
   "long": "Dolls Point parkrun",
@@ -7623,7 +7623,7 @@
  "elarariparianparklands": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.693933,
   "lon": 150.803885,
   "long": "Elara Riparian Parklands parkrun",
@@ -7887,7 +7887,7 @@
  "esperanceforeshore": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.863295,
   "lon": 121.893784,
   "long": "Esperance Foreshore parkrun",
@@ -9880,7 +9880,7 @@
  "greenway": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.882504,
   "lon": 151.14457,
   "long": "GreenWay parkrun",
@@ -12320,7 +12320,7 @@
  "kamay": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.97993,
   "lon": 151.229992,
   "long": "Kamay parkrun",
@@ -13846,7 +13846,7 @@
  "lawson": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.713629,
   "lon": 150.426901,
   "long": "Lawson parkrun",
@@ -14965,7 +14965,7 @@
  "macquarieuniversity": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.774425,
   "lon": 151.114271,
   "long": "Macquarie University parkrun",
@@ -15206,7 +15206,7 @@
  "manjimup": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -34.227785,
   "lon": 116.179615,
   "long": "Manjimup parkrun",
@@ -15350,7 +15350,7 @@
  "margaretriver": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.944257,
   "lon": 115.074331,
   "long": "Margaret River parkrun",
@@ -15845,7 +15845,7 @@
  "menai": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -34.016364,
   "lon": 151.015082,
   "long": "Menai parkrun",
@@ -16062,7 +16062,7 @@
  "milduraweir": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -34.175887,
   "lon": 142.162215,
   "long": "Mildura Weir parkrun",
@@ -16614,7 +16614,7 @@
  "mosman": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.806252,
   "lon": 151.245989,
   "long": "Mosman parkrun",
@@ -17259,7 +17259,7 @@
  "nepeanriver": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.761704,
   "lon": 150.664414,
   "long": "Nepean River parkrun",
@@ -17775,7 +17775,7 @@
  "northsydney": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.830396,
   "lon": 151.211772,
   "long": "North Sydney parkrun",
@@ -18864,7 +18864,7 @@
  "panania": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.945673,
   "lon": 150.993483,
   "long": "Panania parkrun",
@@ -19178,7 +19178,7 @@
  "parramatta": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.820838,
   "lon": 151.063534,
   "long": "Parramatta parkrun",
@@ -19392,7 +19392,7 @@
  "penrithlakes": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.725922,
   "lon": 150.685741,
   "long": "Penrith Lakes parkrun",
@@ -19609,7 +19609,7 @@
  "picton": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -34.16566,
   "lon": 150.610264,
   "long": "Picton parkrun",
@@ -19705,7 +19705,7 @@
  "pirrama": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.865396,
   "lon": 151.191857,
   "long": "Pirrama parkrun",
@@ -20896,7 +20896,7 @@
  "renmark": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -34.17425,
   "lon": 140.751235,
   "long": "Renmark parkrun",
@@ -20920,7 +20920,7 @@
  "rexjacksonoval": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -34.188779,
   "lon": 150.981697,
   "long": "Rex Jackson Oval parkrun",
@@ -21523,7 +21523,7 @@
  "rootyhill": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.783724,
   "lon": 150.868394,
   "long": "Rooty Hill parkrun",
@@ -21716,7 +21716,7 @@
  "rousehill": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.679301,
   "lon": 150.911109,
   "long": "Rouse Hill parkrun",
@@ -23975,7 +23975,7 @@
  "stpeters": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.907658,
   "lon": 151.18219,
   "long": "St Peters parkrun",
@@ -24658,7 +24658,7 @@
  "tedscobieoval": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -34.273904,
   "lon": 146.074443,
   "long": "Ted Scobie Oval parkrun",
@@ -25006,7 +25006,7 @@
  "theponds": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.705952,
   "lon": 150.909187,
   "long": "The Ponds parkrun",
@@ -26580,7 +26580,7 @@
  "waikeriewetlands": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -34.174394,
   "lon": 139.980451,
   "long": "Waikerie Wetlands parkrun",
@@ -27178,7 +27178,7 @@
  "wentworthcommon": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.837954,
   "lon": 151.075107,
   "long": "Wentworth Common parkrun",
@@ -27226,7 +27226,7 @@
  "werringtonlakesreserve": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.755343,
   "lon": 150.738658,
   "long": "Werrington Lakes Reserve parkrun",
@@ -27490,7 +27490,7 @@
  "whalanreserve": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.75943,
   "lon": 150.79587,
   "long": "Whalan Reserve parkrun",
@@ -27728,7 +27728,7 @@
  "wildflower": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.705633,
   "lon": 151.177321,
   "long": "Wildflower parkrun",
@@ -27752,7 +27752,7 @@
  "willoughby": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.811705,
   "lon": 151.193171,
   "long": "Willoughby parkrun",
@@ -28496,7 +28496,7 @@
  "yeldulknieweirtrail": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -33.70206,
   "lon": 136.50305,
   "long": "Yeldulknie Weir Trail parkrun",
