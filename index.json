@@ -242,7 +242,7 @@
  "alburywodonga": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -36.0873,
   "lon": 146.88886,
   "long": "Albury Wodonga parkrun",
@@ -304,7 +304,7 @@
  "aldingabeach": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -35.287768,
   "lon": 138.444983,
   "long": "Aldinga Beach parkrun",
@@ -1169,7 +1169,7 @@
  "ballpark": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -36.000667,
   "lon": 146.393936,
   "long": "Ball Park parkrun",
@@ -1445,7 +1445,7 @@
  "batemansbay": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -35.712112,
   "lon": 150.185995,
   "long": "Batemans Bay parkrun",
@@ -1764,7 +1764,7 @@
  "bega": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -36.667479,
   "lon": 149.843541,
   "long": "Bega parkrun",
@@ -1908,7 +1908,7 @@
  "benallabotanicalgardens": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -36.553856,
   "lon": 145.977439,
   "long": "Benalla Botanical Gardens parkrun",
@@ -1920,7 +1920,7 @@
  "bendigobotanicgardens": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -36.725618,
   "lon": 144.305636,
   "long": "Bendigo Botanic Gardens parkrun",
@@ -2786,7 +2786,7 @@
  "braidwoodshowground": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -35.422759,
   "lon": 149.791222,
   "long": "Braidwood Showground parkrun",
@@ -2953,7 +2953,7 @@
  "breenavenuewalkingtrack": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -36.313671,
   "lon": 145.053225,
   "long": "Breen Avenue Walking Track parkrun",
@@ -3478,7 +3478,7 @@
  "bungendorecommon": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -35.250379,
   "lon": 149.446987,
   "long": "Bungendore Common parkrun",
@@ -3513,7 +3513,7 @@
  "burleygriffin": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -35.292148,
   "lon": 149.088585,
   "long": "Burley Griffin parkrun",
@@ -5241,7 +5241,7 @@
  "cobram": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -35.913461,
   "lon": 145.668554,
   "long": "Cobram parkrun",
@@ -5325,7 +5325,7 @@
  "cohuna": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -35.809232,
   "lon": 144.223054,
   "long": "Cohuna parkrun",
@@ -5639,7 +5639,7 @@
  "coombs": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -35.326215,
   "lon": 149.047518,
   "long": "Coombs parkrun",
@@ -7407,7 +7407,7 @@
  "echucamoama": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -36.139104,
   "lon": 144.739213,
   "long": "Echuca Moama parkrun",
@@ -8647,7 +8647,7 @@
  "frankkeenanreserve": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -36.002211,
   "lon": 146.02204,
   "long": "Frank Keenan Reserve parkrun",
@@ -9185,7 +9185,7 @@
  "ginninderra": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -35.234051,
   "lon": 149.073486,
   "long": "Ginninderra parkrun",
@@ -9461,7 +9461,7 @@
  "goolwa": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -35.499385,
   "lon": 138.789448,
   "long": "Goolwa parkrun",
@@ -12034,7 +12034,7 @@
  "jerrabomberramountainreserve": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -35.376524,
   "lon": 149.20315,
   "long": "Jerrabomberra Mountain Reserve parkrun",
@@ -12140,7 +12140,7 @@
  "jindabyne": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -36.41565,
   "lon": 148.625881,
   "long": "Jindabyne parkrun",
@@ -12368,7 +12368,7 @@
  "kangarooisland": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -35.655848,
   "lon": 137.640473,
   "long": "Kangaroo Island parkrun",
@@ -12631,7 +12631,7 @@
  "kerangregional": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -35.730934,
   "lon": 143.908707,
   "long": "Kerang Regional parkrun",
@@ -13415,7 +13415,7 @@
  "lakebogaforeshore": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -35.45108,
   "lon": 143.628251,
   "long": "Lake Boga Foreshore parkrun",
@@ -14653,7 +14653,7 @@
  "louishamonpark": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -36.094049,
   "lon": 145.442706,
   "long": "Louis Hamon Park parkrun",
@@ -15724,7 +15724,7 @@
  "mcleanbeach": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -35.519255,
   "lon": 144.959987,
   "long": "McLean Beach parkrun",
@@ -15869,7 +15869,7 @@
  "meningie": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -35.68627,
   "lon": 139.338438,
   "long": "Meningie parkrun",
@@ -16661,7 +16661,7 @@
  "mountainslie": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -35.278828,
   "lon": 149.152038,
   "long": "Mount Ainslie parkrun",
@@ -16997,7 +16997,7 @@
  "mypongareservoir": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -35.394655,
   "lon": 138.452385,
   "long": "Myponga Reservoir parkrun",
@@ -17175,7 +17175,7 @@
  "nathaliashowgrounds": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -36.053066,
   "lon": 145.211172,
   "long": "Nathalia Showgrounds parkrun",
@@ -17474,7 +17474,7 @@
  "nhill": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -36.338609,
   "lon": 141.645653,
   "long": "Nhill parkrun",
@@ -17558,7 +17558,7 @@
  "nolenspark": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -36.117426,
   "lon": 143.727281,
   "long": "Nolen\u2019s Park parkrun",
@@ -18672,7 +18672,7 @@
  "ovensrivertrail": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -36.555094,
   "lon": 146.711688,
   "long": "Ovens River Trail parkrun",
@@ -19813,7 +19813,7 @@
  "pointhutpond": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -35.454104,
   "lon": 149.084343,
   "long": "Point Hut Pond parkrun",
@@ -20500,7 +20500,7 @@
  "pyramidhillgolftrail": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -36.050871,
   "lon": 144.137393,
   "long": "Pyramid Hill Golf Trail parkrun",
@@ -20523,7 +20523,7 @@
  "queanbeyan": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -35.348151,
   "lon": 149.238801,
   "long": "Queanbeyan parkrun",
@@ -22625,7 +22625,7 @@
  "shepparton": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -36.390858,
   "lon": 145.396146,
   "long": "Shepparton parkrun",
@@ -24010,7 +24010,7 @@
  "strathalbyn": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -35.258681,
   "lon": 138.89303,
   "long": "Strathalbyn parkrun",
@@ -24432,7 +24432,7 @@
  "tallangattastation": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -36.218537,
   "lon": 147.178437,
   "long": "Tallangatta Station parkrun",
@@ -25701,7 +25701,7 @@
  "tuggeranong": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -35.410284,
   "lon": 149.064989,
   "long": "Tuggeranong parkrun",
@@ -25845,7 +25845,7 @@
  "ulladulla": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -35.35287,
   "lon": 150.478122,
   "long": "Ulladulla parkrun",
@@ -26363,7 +26363,7 @@
  "victorharbor": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -35.565657,
   "lon": 138.611096,
   "long": "Victor Harbor parkrun",
@@ -26747,7 +26747,7 @@
  "wangaratta": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -36.351774,
   "lon": 146.329944,
   "long": "Wangaratta parkrun",
@@ -27764,7 +27764,7 @@
  "willow": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -36.136018,
   "lon": 146.874752,
   "long": "Willow parkrun",
@@ -27834,7 +27834,7 @@
  "wimmerariverhorsham": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -36.722724,
   "lon": 142.202555,
   "long": "Wimmera River parkrun, Horsham",
@@ -28015,7 +28015,7 @@
  "wodentown": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -35.343931,
   "lon": 149.088932,
   "long": "Woden Town parkrun",
@@ -28423,7 +28423,7 @@
  "yackandandahrailtrail": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-20",
+  "last_tried": "2026-09-26",
   "lat": -36.316082,
   "lon": 146.838391,
   "long": "Yackandandah Rail Trail parkrun",
