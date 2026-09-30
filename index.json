@@ -928,7 +928,7 @@
  "auldcathiedistrict": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-09-30",
   "lat": 55.963327,
   "lon": -3.477658,
   "long": "Auldcathie District parkrun",
@@ -1741,7 +1741,7 @@
  "beecraigscountrypark": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-09-30",
   "lat": 55.950217,
   "lon": -3.591206,
   "long": "Beecraigs Country Park parkrun",
@@ -2570,7 +2570,7 @@
  "bonessforeshore": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-09-30",
   "lat": 56.020326,
   "lon": -3.605223,
   "long": "Bo\u2019ness Foreshore parkrun",
@@ -5962,7 +5962,7 @@
  "crinancanal": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-09-30",
   "lat": 56.041904,
   "lon": -5.440651,
   "long": "Crinan Canal parkrun, Lochgilphead",
@@ -6889,7 +6889,7 @@
  "drumchapel": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-09-30",
   "lat": 55.91688,
   "lon": -4.350674,
   "long": "Drumchapel parkrun",
@@ -7863,7 +7863,7 @@
  "erskinewaterfront": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-09-30",
   "lat": 55.907749,
   "lon": -4.447774,
   "long": "Erskine Waterfront parkrun",
@@ -8044,7 +8044,7 @@
  "falkirk": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-09-30",
   "lat": 55.99543,
   "lon": -3.766712,
   "long": "Falkirk parkrun",
@@ -9832,7 +9832,7 @@
  "greenock": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-09-30",
   "lat": 55.956525,
   "lon": -4.767348,
   "long": "Greenock parkrun",
@@ -11395,7 +11395,7 @@
  "holyrood": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-09-30",
   "lat": 55.952167,
   "lon": -3.162844,
   "long": "Holyrood parkrun",
@@ -14038,7 +14038,7 @@
  "levengrove": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-09-30",
   "lat": 55.940721,
   "lon": -4.57567,
   "long": "Levengrove parkrun",
@@ -14425,7 +14425,7 @@
  "lochendwoods": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-09-30",
   "lat": 55.997214,
   "lon": -2.521501,
   "long": "Lochend Woods parkrun",
@@ -15750,7 +15750,7 @@
  "meadowmill": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-09-30",
   "lat": 55.954249,
   "lon": -2.966242,
   "long": "Meadowmill parkrun",
@@ -18484,7 +18484,7 @@
  "oriam": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-09-30",
   "lat": 55.909754,
   "lon": -3.31715,
   "long": "Oriam parkrun",
@@ -18794,7 +18794,7 @@
  "palaceriggcountry": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-09-30",
   "lat": 55.937089,
   "lon": -3.949289,
   "long": "Palacerigg Country parkrun",
@@ -19755,7 +19755,7 @@
  "plean": {
   "built_by": "v0.8.3",
   "distance_m": 5506,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-09-30",
   "lat": 56.057791,
   "lon": -3.881607,
   "long": "Plean parkrun",
@@ -20213,7 +20213,7 @@
  "portobello": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-09-30",
   "lat": 55.950689,
   "lon": -3.122656,
   "long": "Portobello parkrun, Edinburgh",
@@ -23476,7 +23476,7 @@
  "springburn": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-09-30",
   "lat": 55.889857,
   "lon": -4.224823,
   "long": "Springburn parkrun, Glasgow",
@@ -27264,7 +27264,7 @@
  "westbaydunoon": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-09-30",
   "lat": 55.944993,
   "lon": -4.924285,
   "long": "West Bay parkrun, Dunoon",
@@ -27573,7 +27573,7 @@
  "whitekirkhill": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-09-30",
   "lat": 56.033364,
   "lon": -2.644542,
   "long": "Whitekirk Hill parkrun",
