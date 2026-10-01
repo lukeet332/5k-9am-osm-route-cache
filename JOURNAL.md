@@ -507,3 +507,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-10-01 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL records multiple explicit 'REJECTED AS CHURN' entries for this exact 'Prune redundant N-lap trace diagnostic logic' change on 2026-10-01 by the same model (Qwen/Qwen3-Coder-480B-A35B-Instruct). The diff removes the trace-based N-lap diagnostic block that was already rejected as a dead idea. Per the Constitution, churn takes precedence: a dead idea is closed, not revised.
+
+### 2026-10-01 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL records multiple explicit 'REJECTED AS CHURN (do NOT re-propose)' entries for this exact 'Prune redundant N-lap trace diagnostic logic' change on 2026-10-01 by the same model. The diff removes the trace-based N-lap diagnostic block that was already rejected as a dead idea. Per the Constitution, churn takes precedence: a dead idea is closed, not revised.
