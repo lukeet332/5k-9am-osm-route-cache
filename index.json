@@ -1385,7 +1385,7 @@
  "barryisland": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-25",
+  "last_tried": "2026-10-01",
   "lat": 51.390202,
   "lon": -3.271371,
   "long": "Barry Island parkrun",
@@ -1590,7 +1590,7 @@
  "bearcreekgreenbelt": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-10-01",
   "lat": 32.927592,
   "lon": -97.230411,
   "long": "Bear Creek Greenbelt parkrun",
@@ -2052,7 +2052,7 @@
  "bethlemroyalhospital": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-25",
+  "last_tried": "2026-10-01",
   "lat": 51.385332,
   "lon": -0.029969,
   "long": "Bethlem Royal Hospital parkrun",
@@ -2774,7 +2774,7 @@
  "bracknell": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-25",
+  "last_tried": "2026-10-01",
   "lat": 51.390248,
   "lon": -0.776844,
   "long": "Bracknell parkrun",
@@ -2917,7 +2917,7 @@
  "breareservoir": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-10-01",
   "lat": 33.893122,
   "lon": -117.926876,
   "long": "Brea Reservoir parkrun",
@@ -3192,7 +3192,7 @@
  "bromley": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-25",
+  "last_tried": "2026-10-01",
   "lat": 51.386539,
   "lon": 0.022874,
   "long": "Bromley parkrun",
@@ -6804,7 +6804,7 @@
  "doverwaterfront": {
   "built_by": "v0.8.3",
   "distance_m": 4769,
-  "last_tried": "2026-09-25",
+  "last_tried": "2026-10-01",
   "lat": 51.119994,
   "lon": 1.313027,
   "long": "Dover Waterfront parkrun",
@@ -9724,7 +9724,7 @@
  "greatlines": {
   "built_by": "v0.8.3",
   "distance_m": 5422,
-  "last_tried": "2026-09-25",
+  "last_tried": "2026-10-01",
   "lat": 51.388527,
   "lon": 0.541334,
   "long": "Great Lines parkrun, Medway",
@@ -11191,7 +11191,7 @@
  "himmel": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-10-01",
   "lat": 32.234813,
   "lon": -110.931841,
   "long": "Himmel parkrun",
@@ -11250,15 +11250,17 @@
  },
  "hoblingwell": {
   "built_by": "v0.8.3",
-  "distance_m": null,
-  "last_tried": "2026-09-25",
+  "distance_m": 5046,
+  "last_tried": "2026-10-01",
   "lat": 51.400981,
   "lon": 0.098847,
   "long": "Hoblingwell parkrun",
-  "relation_m": null,
-  "source": null,
-  "status": "gap",
-  "trace_m": null
+  "provisional": false,
+  "relation_m": 2808,
+  "source": "osm_9am_trace",
+  "status": "success",
+  "trace_date": "2026-09-12",
+  "trace_m": 5046
  },
  "hobsonvillepoint": {
   "built_by": "v0.8.3",
@@ -11323,7 +11325,7 @@
  "hogmoorinclosure": {
   "built_by": "v0.8.3",
   "distance_m": 5506,
-  "last_tried": "2026-09-25",
+  "last_tried": "2026-10-01",
   "lat": 51.111681,
   "lon": -0.875934,
   "long": "Hogmoor Inclosure parkrun",
@@ -11984,7 +11986,7 @@
  "janalfanotrail": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-10-01",
   "lat": 34.602931,
   "lon": -112.452331,
   "long": "Jan Alfano Trail parkrun",
@@ -12546,7 +12548,7 @@
  "katytrail": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-10-01",
   "lat": 33.740918,
   "lon": -96.564031,
   "long": "Katy Trail parkrun",
@@ -14773,7 +14775,7 @@
  "lucypark": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-10-01",
   "lat": 33.919283,
   "lon": -98.515346,
   "long": "Lucy Park parkrun",
@@ -15399,7 +15401,7 @@
  "margate": {
   "built_by": "v0.8.3",
   "distance_m": 4679,
-  "last_tried": "2026-09-25",
+  "last_tried": "2026-10-01",
   "lat": 51.39207,
   "lon": 1.403997,
   "long": "Margate parkrun",
@@ -16170,7 +16172,7 @@
  "millenniumgrandrapids": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-10-01",
   "lat": 42.953815,
   "lon": -85.707095,
   "long": "Millennium parkrun, Grand Rapids",
@@ -16579,7 +16581,7 @@
  "morden": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-25",
+  "last_tried": "2026-10-01",
   "lat": 51.392759,
   "lon": -0.208072,
   "long": "Morden parkrun",
@@ -17800,7 +17802,7 @@
  "northsidebeltline": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-10-01",
   "lat": 33.813416,
   "lon": -84.406514,
   "long": "Northside Beltline parkrun",
@@ -21942,7 +21944,7 @@
  "ryanbonaminio": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-10-01",
   "lat": 33.975692,
   "lon": -117.395883,
   "long": "Ryan Bonaminio parkrun",
@@ -23320,7 +23322,7 @@
  "southnorwood": {
   "built_by": "v0.8.3",
   "distance_m": 5249,
-  "last_tried": "2026-09-25",
+  "last_tried": "2026-10-01",
   "lat": 51.396111,
   "lon": -0.059908,
   "long": "South Norwood parkrun",
@@ -23904,7 +23906,7 @@
  "stmatthewsfield": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-25",
+  "last_tried": "2026-10-01",
   "lat": 51.123284,
   "lon": -3.016369,
   "long": "St Matthew\u2019s Field parkrun",
@@ -26087,7 +26089,7 @@
  "upperlasvirgenescanyon": {
   "built_by": "v0.8.3",
   "distance_m": null,
-  "last_tried": "2026-09-24",
+  "last_tried": "2026-10-01",
   "lat": 34.18562,
   "lon": -118.668984,
   "long": "Upper Las Virgenes Canyon parkrun",
