@@ -504,3 +504,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-10-01 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL records multiple explicit 'REJECTED AS CHURN' entries for this exact fix (adding an empty `pts` guard in `trace_course`) on 2026-08-31, 2026-09-04, 2026-09-06, 2026-09-10, 2026-09-11, and 2026-09-15. The diff adds a no-op `if not pts:` check that already exists in the codebase per the JOURNAL. The PR description also mismatches the diff (claims N-lap pruning but adds a null check). Per the Constitution, churn takes precedence — a dead idea is closed, not revised.
+
+### 2026-10-01 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL records multiple explicit 'REJECTED AS CHURN' entries for this exact 'Prune redundant N-lap trace diagnostic logic' change on 2026-10-01 by the same model (Qwen/Qwen3-Coder-480B-A35B-Instruct). The diff removes the trace-based N-lap diagnostic block that was already rejected as a dead idea. Per the Constitution, churn takes precedence: a dead idea is closed, not revised.
