@@ -516,3 +516,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-10-01 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL records multiple explicit 'REJECTED AS CHURN (do NOT re-propose)' entries for this exact PR description ('Prune redundant N-lap trace diagnostic logic') from the same model (Qwen/Qwen3-Coder-480B-A35B-Instruct) on 2026-10-01. Despite the diff adding N-lap trace logic rather than pruning it, the PR re-proposes a dead idea with the identical churn-rejected title/description. Per the Constitution, churn takes precedence and the PR must be closed.
+
+### 2026-10-01 - REJECTED AS CHURN (do NOT re-propose)
+- The PR description 'Prune redundant N-lap trace diagnostic logic' matches multiple explicit 'REJECTED AS CHURN (do NOT re-propose)' entries in the JOURNAL from 2026-10-01 by the same model. The actual diff shown is only a no-op comment change in trace_courses_multi, but the PR re-proposes a dead idea with a churn-rejected title. Per the Constitution, churn takes precedence and the PR must be closed.
