@@ -386,6 +386,7 @@ def build_one(ev):
         n_len = n * length(rel[2])
         if SANE_LO <= n_len <= SANE_HI and not (REL_LO <= n_len <= REL_HI):
             cands.append(("osm_relation_doubled_offdist", n_len, None))
+            cands.append(("osm_relation_doubled_offdist", n_len, None))
 
     # N-lap traces that are sane but out of tolerance -> diagnostic
     if tr and SANE_LO <= tr[0] <= SANE_HI:
