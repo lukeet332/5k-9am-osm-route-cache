@@ -534,3 +534,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-10-02 - REJECTED AS CHURN (do NOT re-propose)
 - The PR re-proposes a change explicitly rejected as churn multiple times in the JOURNAL (adding a duplicate empty `pts` guard in `trace_course` on 2026-08-31, 2026-09-04, 2026-09-06, 2026-09-10, 2026-09-11, 2026-09-15). The PR description claims 'Prune redundant N-lap trace diagnostic logic' (also rejected as churn on 2026-10-01) but the actual diff only adds a no-op duplicate null check. Per the Constitution, churn takes precedence: a dead idea is closed, not revised.
+
+### 2026-10-02 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL records multiple explicit 'REJECTED AS CHURN (do NOT re-propose)' entries for this exact 'Prune redundant N-lap trace diagnostic logic' change on 2026-10-01 and 2026-10-02 by the same model. The PR description matches the churn-rejected title verbatim and the diff removes the same N-lap trace diagnostic block. Per the Constitution, churn takes precedence: a dead idea is closed, not revised.
