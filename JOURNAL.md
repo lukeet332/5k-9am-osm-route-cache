@@ -540,3 +540,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-10-02 - REJECTED AS CHURN (do NOT re-propose)
 - The PR description 'Prune redundant N-lap trace diagnostic logic' matches multiple explicit 'REJECTED AS CHURN (do NOT re-propose)' entries in the JOURNAL from 2026-10-01 and 2026-10-02 by the same model. Per the Constitution, churn takes precedence over CodeRabbit's verdict — a dead idea is closed, not revised.
+
+### 2026-10-02 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL records multiple explicit 'REJECTED AS CHURN (do NOT re-propose)' entries for this exact PR description ('Prune redundant N-lap trace diagnostic logic') from the same model on 2026-10-01 and 2026-10-02. The actual diff only adds a trivial null check (rel[1] and) that doesn't match the claimed pruning, but the PR re-proposes a dead idea with a churn-rejected title. Per the Constitution, churn takes precedence over CodeRabbit's verdict — a dead idea is closed, not revised.
