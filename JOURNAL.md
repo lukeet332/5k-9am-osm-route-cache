@@ -561,3 +561,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-10-02 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL contains multiple explicit 'REJECTED AS CHURN (do NOT re-propose)' entries for this exact PR description ('Generalise N-lap logic to include trace-based N-lap successes') from the same model on 2026-10-02. The actual diff only adds a trivial null check (rel[1] and) that doesn't match the claimed generalisation. Per the Constitution, churn takes precedence over CodeRabbit's verdict — a dead idea is closed, not revised.
+
+### 2026-10-02 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL explicitly records multiple 'REJECTED AS CHURN (do NOT re-propose)' entries for this exact PR description ('Generalise N-lap logic to include trace-based N-lap successes') from the same model on 2026-10-02. Per the Constitution, churn takes precedence over CodeRabbit's verdict — a dead idea is closed, not revised. The actual diff only extracts a variable assignment and does not implement the claimed generalisation, but the PR re-proposes a churn-rejected title regardless.
