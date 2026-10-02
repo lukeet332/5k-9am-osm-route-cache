@@ -546,3 +546,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-10-02 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL contains multiple explicit 'REJECTED AS CHURN (do NOT re-propose)' entries for this exact 'Prune redundant N-lap trace diagnostic logic' change from the same model on 2026-10-01 and 2026-10-02. The actual diff only extracts a variable assignment, not the claimed pruning, but the PR re-proposes a dead idea with a churn-rejected title. Per the Constitution, churn takes precedence: a dead idea is closed, not revised.
+
+### 2026-10-02 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL already contains an entry for 'Generalise N-lap logic to include trace-based N-lap successes' from 2026-10-02 by the same model (gemini-3.1-flash-lite), marked as a minor release. The PR re-proposes this exact idea and adds a duplicate JOURNAL entry. Per the Constitution, churn takes precedence: a dead/already-implemented idea is closed, not revised.
