@@ -552,3 +552,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-10-02 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL records an explicit entry from 2026-10-02 for 'Generalise N-lap logic to include trace-based N-lap successes' by the same model (gemini-3.1-flash-lite), marked as a minor release. The PR re-proposes this exact idea with a duplicate JOURNAL entry. Per the Constitution, churn takes precedence: a dead/already-implemented idea is closed, not revised.
+
+### 2026-10-02 - REJECTED AS CHURN (do NOT re-propose)
+- The PR re-proposes 'Generalise N-lap logic to include trace-based N-lap successes', which the JOURNAL explicitly records as REJECTED AS CHURN (do NOT re-propose) on 2026-10-02 by the same model (gemini-3.1-flash-lite). Per the Constitution, churn takes precedence over CodeRabbit's verdict — a dead idea is closed, not revised.
