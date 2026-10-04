@@ -567,3 +567,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-10-02 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL contains multiple explicit 'REJECTED AS CHURN (do NOT re-propose)' entries for this exact PR description ('Generalise N-lap logic to include trace-based N-lap successes') from the same model on 2026-10-02. The actual diff only adds a trivial null check (rel[2] and) and duplicates a diagnostic line — it does not implement the claimed trace-based N-lap generalisation. Per the Constitution, churn takes precedence over CodeRabbit's verdict: a dead idea is closed, not revised.
+
+### 2026-10-04 - gemini-3.1-flash-lite-bot (gemini-3.1-flash-lite, patch)
+- Fix error handling in build_one to prevent index.json corruption
