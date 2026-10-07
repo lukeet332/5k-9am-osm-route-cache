@@ -914,9 +914,9 @@
   "trace_m": null
  },
  "augustow": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 53.827144,
   "lon": 22.999649,
   "long": "parkrun August\u00f3w",
@@ -1491,9 +1491,9 @@
   "trace_m": null
  },
  "battlesteadcroft": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-07",
   "lat": 52.78924,
   "lon": -1.683952,
   "long": "Battlestead Croft parkrun",
@@ -1576,9 +1576,9 @@
   "trace_m": null
  },
  "beaconhillcountrypark": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-07",
   "lat": 52.730411,
   "lon": -1.233675,
   "long": "Beacon Hill Country Park parkrun",
@@ -1882,9 +1882,9 @@
   "trace_m": null
  },
  "belvoircastle": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-07",
   "lat": 52.894882,
   "lon": -0.786835,
   "long": "Belvoir Castle parkrun",
@@ -2123,9 +2123,9 @@
   "trace_m": null
  },
  "bialystok": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 53.121798,
   "lon": 23.163993,
   "long": "parkrun Bia\u0142ystok",
@@ -2448,9 +2448,9 @@
   "trace_m": null
  },
  "blickling": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-07",
   "lat": 52.813653,
   "lon": 1.221671,
   "long": "Blickling parkrun",
@@ -2616,9 +2616,9 @@
   "trace_m": null
  },
  "borytucholskietlen": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 53.6113,
   "lon": 18.251111,
   "long": "parkrun Bory Tucholskie, Tle\u0144",
@@ -3679,9 +3679,9 @@
   "trace_m": null
  },
  "bydgoszcz": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 53.148115,
   "lon": 18.03339,
   "long": "parkrun Bydgoszcz",
@@ -3885,9 +3885,9 @@
   "trace_m": null
  },
  "cannockchase": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-07",
   "lat": 52.73744,
   "lon": -1.99542,
   "long": "Cannock Chase parkrun",
@@ -4543,9 +4543,9 @@
   "trace_m": null
  },
  "charzykowy": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 53.736041,
   "lon": 17.508248,
   "long": "parkrun Charzykowy",
@@ -5531,9 +5531,9 @@
   "trace_m": null
  },
  "conkers": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": 3561,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-07",
   "lat": 52.739475,
   "lon": -1.543021,
   "long": "Conkers parkrun",
@@ -5769,9 +5769,9 @@
   "trace_m": null
  },
  "coronationpark": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-07",
   "lat": 52.773488,
   "lon": -1.586547,
   "long": "Coronation Park parkrun",
@@ -6658,9 +6658,9 @@
   "trace_m": null
  },
  "dishleyloughborough": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-07",
   "lat": 52.787485,
   "lon": -1.234785,
   "long": "Dishley parkrun, Loughborough",
@@ -6730,9 +6730,9 @@
   "trace_m": null
  },
  "dolgellau": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-07",
   "lat": 52.744574,
   "lon": -3.886527,
   "long": "Dolgellau parkrun",
@@ -7175,9 +7175,9 @@
   "trace_m": null
  },
  "dzialdowo": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 53.249253,
   "lon": 20.238476,
   "long": "parkrun Dzia\u0142dowo",
@@ -7187,9 +7187,9 @@
   "trace_m": null
  },
  "dzierzgon": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 53.922711,
   "lon": 19.342589,
   "long": "parkrun Dzierzgo\u0144",
@@ -7620,9 +7620,9 @@
   "status": "failed"
  },
  "ekomarina": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 53.875029,
   "lon": 21.316257,
   "long": "parkrun Ekomarina",
@@ -7692,9 +7692,9 @@
   "trace_m": null
  },
  "elk": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 53.815245,
   "lon": 22.354226,
   "long": "parkrun E\u0142k",
@@ -9554,9 +9554,9 @@
   "trace_m": 4213
  },
  "gorzowwielkopolski": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.743889,
   "lon": 15.244891,
   "long": "parkrun Gorz\u00f3w Wielkopolski",
@@ -10043,9 +10043,9 @@
   "trace_m": null
  },
  "grudziadz": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 53.466701,
   "lon": 18.753259,
   "long": "parkrun Grudzi\u0105dz",
@@ -10182,9 +10182,9 @@
   "trace_m": null
  },
  "hafanpwllheli": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-07",
   "lat": 52.888538,
   "lon": -4.402811,
   "long": "Hafan Pwllheli parkrun",
@@ -10664,9 +10664,9 @@
   "trace_m": null
  },
  "haughmondhill": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-07",
   "lat": 52.7274,
   "lon": -2.674389,
   "long": "Haughmond Hill parkrun",
@@ -10913,9 +10913,9 @@
   "trace_m": null
  },
  "henleywood": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-07",
   "lat": 52.862542,
   "lon": -3.030368,
   "long": "Henley Wood parkrun, Oswestry",
@@ -11889,9 +11889,9 @@
   "trace_m": null
  },
  "isabeltrail": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": 4469,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-07",
   "lat": 52.808242,
   "lon": -2.125953,
   "long": "Isabel Trail parkrun",
@@ -12127,9 +12127,9 @@
   "trace_m": null
  },
  "jeziorogorne": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 54.081372,
   "lon": 21.379051,
   "long": "parkrun Jezioro G\u00f3rne, K\u0119trzyn",
@@ -13210,9 +13210,9 @@
   "trace_m": null
  },
  "koszalin": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 54.179399,
   "lon": 16.210552,
   "long": "parkrun Koszalin",
@@ -13785,9 +13785,9 @@
   "trace_m": null
  },
  "lasekmiejski": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 53.260214,
   "lon": 19.412511,
   "long": "parkrun Lasek Miejski",
@@ -13833,9 +13833,9 @@
   "trace_m": null
  },
  "lasmiejski": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 53.391852,
   "lon": 20.39766,
   "long": "parkrun Las Miejski",
@@ -13845,9 +13845,9 @@
   "trace_m": null
  },
  "laszlocieniec": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 53.550412,
   "lon": 16.019818,
   "long": "parkrun Las Z\u0142ocieniec",
@@ -14581,9 +14581,9 @@
   "trace_m": null
  },
  "longeaton": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-07",
   "lat": 52.895155,
   "lon": -1.285853,
   "long": "Long Eaton parkrun",
@@ -15195,9 +15195,9 @@
   "trace_m": null
  },
  "malyjeziorak": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 53.596551,
   "lon": 19.553879,
   "long": "parkrun Ma\u0142y Jeziorak",
@@ -17957,9 +17957,9 @@
   "trace_m": null
  },
  "nowyparksolankowy": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.789289,
   "lon": 18.233203,
   "long": "parkrun Nowy Park Solankowy",
@@ -18365,9 +18365,9 @@
   "trace_m": null
  },
  "olsztyn": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 53.776228,
   "lon": 20.481014,
   "long": "parkrun Olsztyn",
@@ -19021,9 +19021,9 @@
   "trace_m": null
  },
  "parkdrogowskazow": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.67501,
   "lon": 14.897542,
   "long": "parkrun Park Drogowskaz\u00f3w",
@@ -19155,9 +19155,9 @@
   "trace_m": null
  },
  "parkmodrzewie": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 54.18425,
   "lon": 19.392936,
   "long": "parkrun Park Modrzewie",
@@ -19179,9 +19179,9 @@
   "trace_m": null
  },
  "parknawyspie": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 53.152392,
   "lon": 16.739705,
   "long": "parkrun Park na Wyspie, Pi\u0142a",
@@ -21017,9 +21017,9 @@
   "trace_m": null
  },
  "rezerwatstrzelnica": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 54.130316,
   "lon": 17.95747,
   "long": "parkrun Rezerwat Strzelnica",
@@ -21669,9 +21669,9 @@
   "trace_m": null
  },
  "rosliston": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-07",
   "lat": 52.754526,
   "lon": -1.639681,
   "long": "Rosliston parkrun",
@@ -21883,9 +21883,9 @@
   "trace_m": null
  },
  "rushcliffe": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-07",
   "lat": 52.882497,
   "lon": -1.149104,
   "long": "Rushcliffe parkrun",
@@ -24433,9 +24433,9 @@
   "trace_m": null
  },
  "swidwin": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 53.765955,
   "lon": 15.774565,
   "long": "parkrun \u015awidwin",
@@ -24445,9 +24445,9 @@
   "trace_m": null
  },
  "swinoujscie": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 53.915451,
   "lon": 14.25818,
   "long": "parkrun \u015awinouj\u015bcie",
@@ -24457,9 +24457,9 @@
   "trace_m": null
  },
  "szczecin": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 53.462802,
   "lon": 14.505647,
   "long": "parkrun Szczecin",
@@ -24469,9 +24469,9 @@
   "trace_m": null
  },
  "szczecinek": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 53.700942,
   "lon": 16.693575,
   "long": "parkrun Szczecinek",
@@ -24719,9 +24719,9 @@
   "trace_m": null
  },
  "tczew": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 54.090568,
   "lon": 18.802342,
   "long": "parkrun Tczew",
@@ -25510,9 +25510,9 @@
   "trace_m": null
  },
  "torun": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 53.025641,
   "lon": 18.704177,
   "long": "parkrun Toru\u0144",
@@ -28822,9 +28822,9 @@
   "trace_m": null
  },
  "zamekwmalborku": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 54.038562,
   "lon": 19.025207,
   "long": "parkrun Zamek w Malborku",
