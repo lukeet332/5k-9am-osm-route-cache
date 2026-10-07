@@ -192,9 +192,9 @@
   "trace_m": null
  },
  "akwentropicana": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.512206,
   "lon": 16.992279,
   "long": "parkrun Akwen Tropicana",
@@ -2460,9 +2460,9 @@
   "trace_m": null
  },
  "blonie": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.249399,
   "lon": 17.076015,
   "long": "parkrun B\u0142onie",
@@ -4856,9 +4856,9 @@
   "trace_m": null
  },
  "churchillparkway": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 49.866258,
   "lon": -97.114076,
   "long": "Churchill Parkway parkrun",
@@ -6175,9 +6175,9 @@
   "trace_m": null
  },
  "dabrowka": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.385438,
   "lon": 16.736391,
   "long": "parkrun D\u0105br\u00f3wka",
@@ -8608,9 +8608,9 @@
   "trace_m": null
  },
  "fortvwlochy": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.195277,
   "lon": 20.91495,
   "long": "parkrun Fort V W\u0142ochy",
@@ -9134,9 +9134,9 @@
   "trace_m": 1501
  },
  "georgelanememorial": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 50.579381,
   "lon": -113.879142,
   "long": "George Lane Memorial parkrun",
@@ -9960,9 +9960,9 @@
   "trace_m": null
  },
  "grodziskmazowiecki": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.101019,
   "lon": 20.63864,
   "long": "parkrun Grodzisk Mazowiecki",
@@ -10877,9 +10877,9 @@
   "trace_m": null
  },
  "hendersonlake": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 49.687498,
   "lon": -112.80646,
   "long": "Henderson Lake parkrun",
@@ -11225,9 +11225,9 @@
   "trace_m": null
  },
  "hiroshimastadiumpark": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 34.401449,
   "lon": 132.452551,
   "long": "Hiroshima Stadium Park parkrun",
@@ -11936,9 +11936,9 @@
   "trace_m": null
  },
  "jablonna": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.37452,
   "lon": 20.914566,
   "long": "parkrun Jab\u0142onna",
@@ -12139,9 +12139,9 @@
   "trace_m": null
  },
  "jezioroswarzedzkie": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.412499,
   "lon": 17.06912,
   "long": "parkrun Jezioro Swarz\u0119dzkie",
@@ -12151,9 +12151,9 @@
   "trace_m": null
  },
  "jeziorozatorze": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.24079,
   "lon": 18.262056,
   "long": "parkrun Jezioro Zatorze, Konin",
@@ -12762,9 +12762,9 @@
   "trace_m": null
  },
  "kiellinie": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 54.334616,
   "lon": 10.153703,
   "long": "Kiellinie parkrun",
@@ -13186,9 +13186,9 @@
   "trace_m": null
  },
  "koscian": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.093343,
   "lon": 16.638064,
   "long": "parkrun Ko\u015bcian",
@@ -13222,9 +13222,9 @@
   "trace_m": null
  },
  "kovach": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 50.987447,
   "lon": -118.1921,
   "long": "Kovach parkrun",
@@ -13366,9 +13366,9 @@
   "trace_m": null
  },
  "kutno": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.223814,
   "lon": 19.349423,
   "long": "parkrun Kutno",
@@ -13761,9 +13761,9 @@
   "trace_m": null
  },
  "lasdebinski": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.367188,
   "lon": 16.920031,
   "long": "parkrun Las D\u0119bi\u0144ski",
@@ -13773,9 +13773,9 @@
   "trace_m": null
  },
  "lasekmarcelinski": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.403769,
   "lon": 16.853468,
   "long": "parkrun Lasek Marceli\u0144ski",
@@ -13821,9 +13821,9 @@
   "trace_m": null
  },
  "lasmalcanow": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.149747,
   "lon": 21.385804,
   "long": "parkrun Las Malcan\u00f3w",
@@ -15207,9 +15207,9 @@
   "trace_m": null
  },
  "mamquamspawningtrail": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 49.730891,
   "lon": -123.134596,
   "long": "Mamquam Spawning Trail parkrun",
@@ -15243,9 +15243,9 @@
   "trace_m": null
  },
  "mangerebridge": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": -36.937539,
   "lon": 174.787717,
   "long": "M\u0101ngere Bridge parkrun",
@@ -18233,9 +18233,9 @@
   "trace_m": null
  },
  "okanagan": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 49.883293,
   "lon": -119.456654,
   "long": "Okanagan parkrun",
@@ -18245,9 +18245,9 @@
   "trace_m": null
  },
  "okanaganrailtrail": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 50.227507,
   "lon": -119.2817,
   "long": "Okanagan Rail Trail parkrun",
@@ -19105,9 +19105,9 @@
   "trace_m": null
  },
  "parkmiejskilowicz": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.10956,
   "lon": 19.940267,
   "long": "parkrun Park Miejski, \u0141owicz",
@@ -19191,9 +19191,9 @@
   "trace_m": null
  },
  "parkradolinskich": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 51.975893,
   "lon": 17.503069,
   "long": "parkrun Park Radoli\u0144skich",
@@ -19910,9 +19910,9 @@
   "trace_m": null
  },
  "polemokotowskie": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.211555,
   "lon": 20.996041,
   "long": "parkrun Pole Mokotowskie",
@@ -20356,9 +20356,9 @@
   "trace_m": null
  },
  "poznan": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.418883,
   "lon": 16.933289,
   "long": "parkrun Pozna\u0144",
@@ -20489,9 +20489,9 @@
   "trace_m": null
  },
  "pruszkow": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.167221,
   "lon": 20.8095,
   "long": "parkrun Pruszk\u00f3w",
@@ -20919,9 +20919,9 @@
   "trace_m": null
  },
  "redwillowtrail": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 53.641781,
   "lon": -113.620693,
   "long": "Red Willow Trail parkrun",
@@ -21284,9 +21284,9 @@
   "trace_m": null
  },
  "riversidekamloops": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 50.678505,
   "lon": -120.336451,
   "long": "Riverside parkrun, Kamloops",
@@ -22650,9 +22650,9 @@
   "trace_m": null
  },
  "sheepriver": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 50.722089,
   "lon": -113.979312,
   "long": "Sheep River parkrun",
@@ -23068,9 +23068,9 @@
   "trace_m": null
  },
  "skierniewice": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 51.965214,
   "lon": 20.140672,
   "long": "parkrun Skierniewice",
@@ -23104,9 +23104,9 @@
   "trace_m": null
  },
  "skorzec": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.106618,
   "lon": 22.117544,
   "long": "parkrun Sk\u00f3rzec",
@@ -23140,9 +23140,9 @@
   "trace_m": null
  },
  "slodowowloclawek": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.658062,
   "lon": 19.048737,
   "long": "parkrun S\u0142odowo, W\u0142oc\u0142awek",
@@ -24106,9 +24106,9 @@
   "status": "failed"
  },
  "strathconaisland": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 50.037613,
   "lon": -110.652522,
   "long": "Strathcona Island parkrun",
@@ -24481,9 +24481,9 @@
   "trace_m": null
  },
  "szubiankizagorow": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.164015,
   "lon": 17.879627,
   "long": "parkrun Szubianki, Zag\u00f3r\u00f3w",
@@ -25007,9 +25007,9 @@
   "trace_m": null
  },
  "theisendammen": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 63.419385,
   "lon": 10.348478,
   "long": "Theisendammen parkrun",
@@ -26293,9 +26293,9 @@
   "trace_m": null
  },
  "valkeinen": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 62.891779,
   "lon": 27.663325,
   "long": "Valkeinen parkrun",
@@ -26976,9 +26976,9 @@
   "trace_m": null
  },
  "warszawabrodno": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.290317,
   "lon": 21.035937,
   "long": "parkrun Warszawa-Br\u00f3dno",
@@ -26988,9 +26988,9 @@
   "trace_m": null
  },
  "warszawapraga": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.241493,
   "lon": 21.050963,
   "long": "parkrun Warszawa-Praga",
@@ -27000,9 +27000,9 @@
   "trace_m": null
  },
  "warszawaursynow": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.135633,
   "lon": 21.063039,
   "long": "parkrun Warszawa-Ursyn\u00f3w",
@@ -27012,9 +27012,9 @@
   "trace_m": null
  },
  "warszawazoliborz": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.280382,
   "lon": 20.990555,
   "long": "parkrun Warszawa-\u017boliborz",
@@ -27048,9 +27048,9 @@
   "trace_m": null
  },
  "wascana": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 50.430422,
   "lon": -104.60409,
   "long": "Wascana parkrun",
@@ -28798,9 +28798,9 @@
   "trace_m": null
  },
  "zalewwrzesinski": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.334392,
   "lon": 17.547966,
   "long": "parkrun Zalew Wrzesi\u0144ski",
@@ -28810,9 +28810,9 @@
   "trace_m": null
  },
  "zalewzyrardowski": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 52.037199,
   "lon": 20.450379,
   "long": "parkrun Zalew \u017byrardowski",
@@ -28988,9 +28988,9 @@
   "trace_m": null
  },
  "zuiderparkrotterdam": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-28",
+  "last_tried": "2026-10-07",
   "lat": 51.879237,
   "lon": 4.487687,
   "long": "Zuiderpark parkrun, Rotterdam",
