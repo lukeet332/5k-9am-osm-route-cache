@@ -570,3 +570,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-10-04 - gemini-3.1-flash-lite-bot (gemini-3.1-flash-lite, patch)
 - Fix error handling in build_one to prevent index.json corruption
+
+### 2026-10-08 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL already records this exact fix twice (2026-10-04 and 2026-10-08 by gemini-3.1-flash-lite). The PR adds a third duplicate JOURNAL entry for the same date/description, and the code change (len(tr) > 0 -> len(tr) >= 1) is a no-op. Per the Constitution, churn takes precedence: a dead/already-implemented idea is closed, not revised.
