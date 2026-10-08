@@ -698,9 +698,9 @@
   "trace_m": null
  },
  "armley": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 53.800347,
   "lon": -1.590893,
   "long": "Armley parkrun",
@@ -1515,9 +1515,9 @@
   "trace_m": null
  },
  "bayeastgarden": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 1.294155,
   "lon": 103.866771,
   "long": "Bay East Garden parkrun",
@@ -1714,9 +1714,9 @@
   "status": "failed"
  },
  "bedokreservoir": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 1.340544,
   "lon": 103.920588,
   "long": "Bedok Reservoir parkrun",
@@ -1930,9 +1930,9 @@
   "trace_m": null
  },
  "benguelacove": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": -34.346162,
   "lon": 19.132696,
   "long": "Benguela Cove parkrun",
@@ -2062,9 +2062,9 @@
   "trace_m": null
  },
  "bettysbay": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": -34.351851,
   "lon": 18.926615,
   "long": "Betty\u2019s Bay parkrun",
@@ -2303,9 +2303,9 @@
   "trace_m": null
  },
  "bishan": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 1.360729,
   "lon": 103.850291,
   "long": "Bishan parkrun",
@@ -2820,9 +2820,9 @@
   "trace_m": null
  },
  "bramley": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 53.813432,
   "lon": -1.633461,
   "long": "Bramley parkrun",
@@ -2927,9 +2927,9 @@
   "trace_m": null
  },
  "bredasdorp": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": -34.533186,
   "lon": 20.028241,
   "long": "Bredasdorp parkrun",
@@ -3751,9 +3751,9 @@
   "trace_m": null
  },
  "caledongolfcourse": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": -34.235934,
   "lon": 19.433708,
   "long": "Caledon Golf Course parkrun",
@@ -3970,9 +3970,9 @@
   "trace_m": null
  },
  "capeagulhas": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": -34.820522,
   "lon": 20.028127,
   "long": "Cape Agulhas parkrun",
@@ -4664,9 +4664,9 @@
   "trace_m": null
  },
  "chevinforest": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 53.894133,
   "lon": -1.665858,
   "long": "Chevin Forest parkrun",
@@ -5120,9 +5120,9 @@
   "trace_m": null
  },
  "cliffecastle": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 53.874658,
   "lon": -1.913364,
   "long": "Cliffe Castle parkrun",
@@ -5144,9 +5144,9 @@
   "trace_m": null
  },
  "clitheroecastle": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 53.870346,
   "lon": -2.39478,
   "long": "Clitheroe Castle parkrun",
@@ -5589,9 +5589,9 @@
   "status": "failed"
  },
  "conynghamhall": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 54.011758,
   "lon": -1.479507,
   "long": "Conyngham Hall parkrun",
@@ -6079,9 +6079,9 @@
   "trace_m": null
  },
  "curromosselbayschool": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": -34.192672,
   "lon": 22.110286,
   "long": "Curro Mossel Bay School parkrun",
@@ -7248,9 +7248,9 @@
   "trace_m": null
  },
  "eastcoastpark": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 1.294954,
   "lon": 103.893129,
   "long": "East Coast Park parkrun",
@@ -7308,9 +7308,9 @@
   "trace_m": null
  },
  "eastholmesfield": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 53.928537,
   "lon": -1.822741,
   "long": "East Holmes Field parkrun",
@@ -8041,9 +8041,9 @@
   "trace_m": null
  },
  "faktoria": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 54.253727,
   "lon": 18.630825,
   "long": "parkrun Faktoria",
@@ -8391,9 +8391,9 @@
   "trace_m": null
  },
  "fleetwoodpromenade": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 53.927366,
   "lon": -3.016919,
   "long": "Fleetwood Promenade parkrun",
@@ -8656,9 +8656,9 @@
   "trace_m": null
  },
  "fountainsabbey": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 54.110196,
   "lon": -1.581983,
   "long": "Fountains Abbey parkrun",
@@ -9038,9 +9038,9 @@
   "trace_m": null
  },
  "gdansk": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 54.41428,
   "lon": 18.6017,
   "long": "parkrun Gda\u0144sk",
@@ -9050,9 +9050,9 @@
   "trace_m": null
  },
  "gdanskpoludnie": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 54.316715,
   "lon": 18.576999,
   "long": "parkrun Gda\u0144sk-Po\u0142udnie",
@@ -9062,9 +9062,9 @@
   "trace_m": null
  },
  "gdynia": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 54.502632,
   "lon": 18.558699,
   "long": "parkrun Gdynia",
@@ -9995,9 +9995,9 @@
   "status": "failed"
  },
  "groeneweide": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": -34.589826,
   "lon": 19.404299,
   "long": "Groeneweide parkrun",
@@ -10519,9 +10519,9 @@
   "trace_m": null
  },
  "harrogate": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 53.992428,
   "lon": -1.521435,
   "long": "Harrogate parkrun",
@@ -10985,9 +10985,9 @@
   "trace_m": null
  },
  "hermanus": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": -34.397417,
   "lon": 19.215074,
   "long": "Hermanus parkrun",
@@ -11021,9 +11021,9 @@
   "trace_m": null
  },
  "heslington": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 53.949319,
   "lon": -1.01799,
   "long": "Heslington parkrun",
@@ -11478,9 +11478,9 @@
   "trace_m": null
  },
  "hopkinsland": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": -34.392084,
   "lon": 20.838376,
   "long": "Hopkins Land parkrun",
@@ -13150,9 +13150,9 @@
   "trace_m": null
  },
  "kolobrzeg": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 54.184504,
   "lon": 15.575563,
   "long": "parkrun Ko\u0142obrzeg",
@@ -13618,9 +13618,9 @@
   "trace_m": null
  },
  "lancaster": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 54.04568,
   "lon": -2.781183,
   "long": "Lancaster parkrun",
@@ -14288,9 +14288,9 @@
   "trace_m": null
  },
  "listerpark": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": 5527,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 53.814575,
   "lon": -1.775102,
   "long": "Lister Park parkrun, Bradford",
@@ -16603,9 +16603,9 @@
   "trace_m": null
  },
  "morecambeprom": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 54.065082,
   "lon": -2.885102,
   "long": "Morecambe Prom parkrun",
@@ -17058,9 +17058,9 @@
   "trace_m": null
  },
  "myrtle": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 53.846344,
   "lon": -1.838295,
   "long": "Myrtle parkrun",
@@ -19145,9 +19145,9 @@
   "trace_m": 5040
  },
  "parkmiejskiwejherowo": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 54.598679,
   "lon": 18.235979,
   "long": "parkrun Park Miejski, Wejherowo",
@@ -19395,9 +19395,9 @@
   "trace_m": null
  },
  "pendle": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 53.863571,
   "lon": -2.18011,
   "long": "Pendle parkrun",
@@ -20346,9 +20346,9 @@
   "trace_m": null
  },
  "potternewton": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 53.818446,
   "lon": -1.526274,
   "long": "Potternewton parkrun",
@@ -21058,7 +21058,7 @@
  "rhodes": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-07",
+  "last_tried": "2026-10-08",
   "lat": -33.847462,
   "lon": 151.081803,
   "long": "Rhodes parkrun",
@@ -21418,9 +21418,9 @@
   "trace_m": null
  },
  "robertspark": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 53.841468,
   "lon": -1.793275,
   "long": "Roberts Park parkrun",
@@ -21695,9 +21695,9 @@
   "trace_m": null
  },
  "rostrevor": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 54.099486,
   "lon": -6.193448,
   "long": "Rostrevor parkrun",
@@ -21767,9 +21767,9 @@
   "trace_m": null
  },
  "roundhay": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 53.83828,
   "lon": -1.496007,
   "long": "Roundhay parkrun",
@@ -21873,9 +21873,9 @@
   "trace_m": null
  },
  "rumia": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 54.574728,
   "lon": 18.395666,
   "long": "parkrun Rumia",
@@ -22580,9 +22580,9 @@
   "trace_m": null
  },
  "sewerby": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 54.103268,
   "lon": -0.160761,
   "long": "Sewerby parkrun",
@@ -23096,7 +23096,7 @@
  "skipton": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-07",
+  "last_tried": "2026-10-08",
   "lat": 53.961331,
   "lon": -2.030004,
   "long": "Skipton parkrun",
@@ -23620,7 +23620,7 @@
  "stadsparksittard": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-07",
+  "last_tried": "2026-10-08",
   "lat": 50.989588,
   "lon": 5.863624,
   "long": "Stadspark parkrun, Sittard",
@@ -23894,9 +23894,9 @@
   "trace_m": null
  },
  "stilbaaiwestbeach": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": -34.383798,
   "lon": 21.422696,
   "long": "Stilbaai West Beach parkrun",
@@ -25574,7 +25574,7 @@
  "toyen": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-07",
+  "last_tried": "2026-10-08",
   "lat": 59.919427,
   "lon": 10.77791,
   "long": "T\u00f8yen parkrun",
@@ -27397,9 +27397,9 @@
   "trace_m": null
  },
  "westcoastpark": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 1.297454,
   "lon": 103.762915,
   "long": "West Coast Park parkrun",
@@ -27517,9 +27517,9 @@
   "trace_m": null
  },
  "wetherby": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 53.925673,
   "lon": -1.392197,
   "long": "Wetherby parkrun",
@@ -28498,9 +28498,9 @@
   "trace_m": null
  },
  "wzniesienieosowy": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 54.435529,
   "lon": 18.472494,
   "long": "parkrun Wzniesienie Osowy",
@@ -28667,9 +28667,9 @@
   "trace_m": null
  },
  "yorkcommunitywoodland": {
-  "built_by": "v0.8.3",
+  "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-09-29",
+  "last_tried": "2026-10-08",
   "lat": 53.964983,
   "lon": -1.149801,
   "long": "York Community Woodland parkrun",
