@@ -688,7 +688,7 @@
  "armidale": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -30.491998,
   "lon": 151.639419,
   "long": "Armidale parkrun",
@@ -952,7 +952,7 @@
  "australianstandingstones": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -29.741602,
   "lon": 151.752481,
   "long": "Australian Standing Stones parkrun",
@@ -1121,7 +1121,7 @@
  "ballinacoast": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -28.869637,
   "lon": 153.576356,
   "long": "Ballina Coast parkrun",
@@ -2594,7 +2594,7 @@
  "bongilbongil": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -30.372884,
   "lon": 153.066759,
   "long": "Bongil Bongil parkrun",
@@ -2690,7 +2690,7 @@
  "bourkeracecourse": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -30.09756,
   "lon": 145.92572,
   "long": "Bourke Racecourse parkrun",
@@ -3121,7 +3121,7 @@
  "broadbeachwaters": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -28.018497,
   "lon": 153.412292,
   "long": "Broadbeach Waters parkrun",
@@ -4437,7 +4437,7 @@
  "chaffeypark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -30.743124,
   "lon": 150.73018,
   "long": "Chaffey Park parkrun",
@@ -5241,7 +5241,7 @@
  "cobar": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -31.509832,
   "lon": 145.831405,
   "long": "Cobar parkrun",
@@ -5313,7 +5313,7 @@
  "coffsharbour": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -30.295687,
   "lon": 153.1376,
   "long": "Coffs Harbour parkrun",
@@ -5568,7 +5568,7 @@
  "constellationsofthesouth": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -30.637282,
   "lon": 151.507,
   "long": "Constellations of the South parkrun",
@@ -5603,7 +5603,7 @@
  "cooberpedyoval": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -29.018468,
   "lon": 134.754566,
   "long": "Coober Pedy Oval parkrun",
@@ -5663,7 +5663,7 @@
  "coomera": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -27.885247,
   "lon": 153.281709,
   "long": "Coomera parkrun",
@@ -9496,7 +9496,7 @@
  "goondiwindi": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -28.54951,
   "lon": 150.307043,
   "long": "Goondiwindi parkrun",
@@ -9616,7 +9616,7 @@
  "grafton": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -29.643847,
   "lon": 152.920487,
   "long": "Grafton parkrun",
@@ -9843,7 +9843,7 @@
  "greenheartrobinaparklands": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -28.063017,
   "lon": 153.382328,
   "long": "Greenheart Robina Parklands parkrun",
@@ -11504,7 +11504,7 @@
  "horseshoebayreserve": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -30.883931,
   "lon": 153.042179,
   "long": "Horseshoe Bay Reserve parkrun",
@@ -11831,7 +11831,7 @@
  "inverell": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -29.77388,
   "lon": 151.10897,
   "long": "Inverell parkrun",
@@ -12117,7 +12117,7 @@
  "jeunepark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -27.993368,
   "lon": 152.992548,
   "long": "Jeune Park parkrun",
@@ -12226,7 +12226,7 @@
  "jubileetenterfield": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -29.054042,
   "lon": 152.01537,
   "long": "Jubilee parkrun, Tenterfield",
@@ -12262,7 +12262,7 @@
  "jurienbayforeshore": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -30.302452,
   "lon": 115.037533,
   "long": "Jurien Bay Foreshore parkrun",
@@ -12333,7 +12333,7 @@
  "kalgoorlieboulder": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -30.718868,
   "lon": 121.456625,
   "long": "Kalgoorlie-Boulder parkrun",
@@ -12904,7 +12904,7 @@
  "kingscliff": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -28.277477,
   "lon": 153.578901,
   "long": "Kingscliff parkrun",
@@ -13021,7 +13021,7 @@
  "kirra": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -28.166758,
   "lon": 153.522781,
   "long": "Kirra parkrun",
@@ -14278,7 +14278,7 @@
  "lismore": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -28.812589,
   "lon": 153.270029,
   "long": "Lismore parkrun",
@@ -15076,7 +15076,7 @@
  "mainbeach": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -27.972706,
   "lon": 153.428879,
   "long": "Main Beach parkrun",
@@ -15449,7 +15449,7 @@
  "marina": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -28.763698,
   "lon": 114.613067,
   "long": "Marina parkrun",
@@ -15980,7 +15980,7 @@
  "merredinpeak": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -31.470564,
   "lon": 118.289452,
   "long": "Merredin Peak parkrun",
@@ -16521,7 +16521,7 @@
  "moora": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -30.638892,
   "lon": 116.004276,
   "long": "Moora parkrun",
@@ -16617,7 +16617,7 @@
  "moree": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -29.46707,
   "lon": 149.843183,
   "long": "Moree parkrun",
@@ -16904,7 +16904,7 @@
  "mudgeeraba": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -28.086682,
   "lon": 153.364098,
   "long": "Mudgeeraba parkrun",
@@ -17202,7 +17202,7 @@
  "narrabri": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -30.33885,
   "lon": 149.755908,
   "long": "Narrabri parkrun",
@@ -17381,7 +17381,7 @@
  "newcastlepark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -31.55064,
   "lon": 116.470403,
   "long": "Newcastle Park parkrun",
@@ -20264,7 +20264,7 @@
  "portmacquarie": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -31.42754,
   "lon": 152.916551,
   "long": "Port Macquarie parkrun",
@@ -20609,7 +20609,7 @@
  "queenelizabethcasino": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -28.867591,
   "lon": 153.051164,
   "long": "Queen Elizabeth parkrun, Casino",
@@ -23120,7 +23120,7 @@
  "skyriverpath": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -31.271095,
   "lon": 149.278952,
   "long": "Sky River Path parkrun",
@@ -23752,7 +23752,7 @@
  "stanthorpe": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -28.65183,
   "lon": 151.931781,
   "long": "Stanthorpe parkrun",
@@ -23860,7 +23860,7 @@
  "stgeorge": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -28.044422,
   "lon": 148.568244,
   "long": "St George parkrun",
@@ -24315,7 +24315,7 @@
  "surfersparadise": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -28.000737,
   "lon": 153.417365,
   "long": "Surfers Paradise parkrun",
@@ -24593,7 +24593,7 @@
  "tamborinemountain": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -27.941377,
   "lon": 153.193434,
   "long": "Tamborine Mountain parkrun",
@@ -24616,7 +24616,7 @@
  "tamworth": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -31.099559,
   "lon": 150.936905,
   "long": "Tamworth parkrun",
@@ -26189,7 +26189,7 @@
  "urunga": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -30.497475,
   "lon": 153.022849,
   "long": "Urunga parkrun",
@@ -26356,7 +26356,7 @@
  "varsitylakes": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -28.084627,
   "lon": 153.410554,
   "long": "Varsity Lakes parkrun",
@@ -26717,7 +26717,7 @@
  "walcha": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -30.981818,
   "lon": 151.597579,
   "long": "Walcha parkrun",
@@ -27028,7 +27028,7 @@
  "warwick": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -28.209605,
   "lon": 152.038465,
   "long": "Warwick parkrun",
@@ -27159,7 +27159,7 @@
  "wauchope": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -31.452159,
   "lon": 152.744034,
   "long": "Wauchope parkrun",
@@ -28548,7 +28548,7 @@
  "yamba": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-05",
+  "last_tried": "2026-10-13",
   "lat": -29.435742,
   "lon": 153.357271,
   "long": "Yamba parkrun",
