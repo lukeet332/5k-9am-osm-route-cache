@@ -170,7 +170,7 @@
  "airliebeach": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -20.267153,
   "lon": 148.711122,
   "long": "Airlie Beach parkrun",
@@ -605,7 +605,7 @@
  "aplinsweir": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -19.302328,
   "lon": 146.782361,
   "long": "Aplins Weir parkrun",
@@ -629,7 +629,7 @@
  "araharakeke": {
   "built_by": "v0.8.4",
   "distance_m": 4174,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -41.075446,
   "lon": 174.874347,
   "long": "Ara Harakeke parkrun",
@@ -844,7 +844,7 @@
  "atherton": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -17.275414,
   "lon": 145.471686,
   "long": "Atherton parkrun",
@@ -1553,7 +1553,7 @@
  "beachstrip": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": 43.259467,
   "lon": -79.76563,
   "long": "Beach Strip parkrun",
@@ -2438,7 +2438,7 @@
  "blenheim": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -41.511842,
   "lon": 173.95879,
   "long": "Blenheim parkrun",
@@ -2714,7 +2714,7 @@
  "bowen": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -19.985467,
   "lon": 148.257052,
   "long": "Bowen parkrun",
@@ -3741,7 +3741,7 @@
  "cairns": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -16.904574,
   "lon": 145.763211,
   "long": "Cairns parkrun",
@@ -4044,7 +4044,7 @@
  "cardwell": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -18.263036,
   "lon": 146.025909,
   "long": "Cardwell parkrun",
@@ -4545,7 +4545,7 @@
  "charterstowersairport": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -20.044688,
   "lon": 146.273413,
   "long": "Charters Towers Airport parkrun",
@@ -6345,7 +6345,7 @@
  "darwin": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -12.466925,
   "lon": 130.840725,
   "long": "Darwin parkrun",
@@ -6780,7 +6780,7 @@
  "donaupark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": 48.240043,
   "lon": 16.419671,
   "long": "Donaupark parkrun",
@@ -6792,7 +6792,7 @@
  "donauradweg": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": 48.318131,
   "lon": 14.293323,
   "long": "Donauradweg parkrun",
@@ -7958,7 +7958,7 @@
  "europapark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": 46.621706,
   "lon": 14.256849,
   "long": "Europapark parkrun",
@@ -9316,7 +9316,7 @@
  "glenoma": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -16.899012,
   "lon": 145.708784,
   "long": "Glenoma parkrun",
@@ -9950,7 +9950,7 @@
  "greytownwoodsidetrail": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -41.067449,
   "lon": 175.403236,
   "long": "Greytown Woodside Trail parkrun",
@@ -10317,7 +10317,7 @@
  "hamiltonisland": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -20.345551,
   "lon": 148.95513,
   "long": "Hamilton Island parkrun",
@@ -10413,7 +10413,7 @@
  "hanmerforest": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -42.526529,
   "lon": 172.833177,
   "long": "Hanmer Forest parkrun",
@@ -10891,7 +10891,7 @@
  "hellbrunn": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": 47.761065,
   "lon": 13.065462,
   "long": "Hellbrunn parkrun",
@@ -10915,7 +10915,7 @@
  "henleylake": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -40.951913,
   "lon": 175.677348,
   "long": "Henley Lake parkrun",
@@ -11855,7 +11855,7 @@
  "innpromenade": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": 47.254719,
   "lon": 11.361748,
   "long": "Innpromenade parkrun",
@@ -12477,7 +12477,7 @@
  "kapiticoast": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -40.877245,
   "lon": 175.019587,
   "long": "Kapiti Coast parkrun",
@@ -12572,7 +12572,7 @@
  "katherinehotsprings": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -14.482484,
   "lon": 132.254944,
   "long": "Katherine Hot Springs parkrun",
@@ -12776,7 +12776,7 @@
  "kewarrabeach": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -16.777676,
   "lon": 145.683914,
   "long": "Kewarra Beach parkrun",
@@ -13093,7 +13093,7 @@
  "kiwanis": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": 42.990553,
   "lon": -81.187066,
   "long": "Kiwanis parkrun",
@@ -13392,7 +13392,7 @@
  "kununurra": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -15.791571,
   "lon": 128.700113,
   "long": "Kununurra parkrun",
@@ -13584,7 +13584,7 @@
  "lakemaryanntingkkarli": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -19.608546,
   "lon": 134.211018,
   "long": "Lake Mary Ann Tingkkarli parkrun",
@@ -14692,7 +14692,7 @@
  "lostlagoon": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -41.743882,
   "lon": 171.596129,
   "long": "Lost Lagoon parkrun",
@@ -14799,7 +14799,7 @@
  "lowerhutt": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -41.210738,
   "lon": 174.899498,
   "long": "Lower Hutt parkrun",
@@ -15437,7 +15437,7 @@
  "mareebarailtrail": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -17.010074,
   "lon": 145.424039,
   "long": "Mareeba Rail Trail parkrun",
@@ -16736,7 +16736,7 @@
  "motuekabeachreserve": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -41.136117,
   "lon": 173.022733,
   "long": "Motueka Beach Reserve parkrun",
@@ -17322,7 +17322,7 @@
  "nealepark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -41.262522,
   "lon": 173.294553,
   "long": "Neale Park parkrun",
@@ -17609,7 +17609,7 @@
  "nightcliff": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -12.376205,
   "lon": 130.857655,
   "long": "Nightcliff parkrun",
@@ -17862,7 +17862,7 @@
  "northshore": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -19.252326,
   "lon": 146.70074,
   "long": "North Shore parkrun",
@@ -18571,7 +18571,7 @@
  "orchardcommunity": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": 43.407274,
   "lon": -79.785988,
   "long": "Orchard Community parkrun",
@@ -18941,7 +18941,7 @@
  "palmcreek": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -18.651491,
   "lon": 146.161677,
   "long": "Palm Creek parkrun",
@@ -18953,7 +18953,7 @@
  "palmerston": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -12.475829,
   "lon": 130.982607,
   "long": "Palmerston parkrun",
@@ -19842,7 +19842,7 @@
  "plantation": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -19.584321,
   "lon": 147.401024,
   "long": "Plantation parkrun",
@@ -20276,7 +20276,7 @@
  "porthedland": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -20.307149,
   "lon": 118.613332,
   "long": "Port Hedland parkrun",
@@ -21420,7 +21420,7 @@
  "riverway": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -19.320306,
   "lon": 146.73018,
   "long": "Riverway parkrun",
@@ -23704,7 +23704,7 @@
  "stadtparkgraz": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": 47.075123,
   "lon": 15.442919,
   "long": "Stadtpark parkrun, Graz",
@@ -25610,7 +25610,7 @@
  "townbeach": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -17.968407,
   "lon": 122.237403,
   "long": "Town Beach parkrun",
@@ -25754,7 +25754,7 @@
  "trenthammemorial": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -41.13057,
   "lon": 175.031273,
   "long": "Trentham Memorial parkrun",
@@ -26741,7 +26741,7 @@
  "waitangi": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -41.291725,
   "lon": 174.785758,
   "long": "Waitangi parkrun",
@@ -27267,7 +27267,7 @@
  "weipa": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": -12.64068,
   "lon": 141.865454,
   "long": "Weipa parkrun",
@@ -27291,7 +27291,7 @@
  "wellandcanalstrail": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-06",
+  "last_tried": "2026-10-14",
   "lat": 43.155544,
   "lon": -79.19456,
   "long": "Welland Canals Trail parkrun",
