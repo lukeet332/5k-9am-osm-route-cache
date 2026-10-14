@@ -582,3 +582,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-10-14 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL explicitly records this exact fix ('Fix error handling in build_one to prevent index.json corruption') as REJECTED AS CHURN on 2026-10-08 and 2026-10-09. The code change (len(tr) > 0 -> len(tr) >= 1) is a semantic no-op for integer lengths, and the PR adds a third duplicate JOURNAL entry. Per the Constitution, churn takes precedence: a dead/already-implemented idea is closed, not revised.
+
+### 2026-10-14 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL explicitly records this exact fix ('Fix error handling in build_one to prevent index.json corruption') as REJECTED AS CHURN on 2026-10-08, 2026-10-09, and 2026-10-14 by the same model. The code change (len(tr) > 0 -> len(tr) >= 1) is a semantic no-op for integer lengths, and the PR would add a duplicate JOURNAL entry. Per the Constitution, churn takes precedence: a dead/already-implemented idea is closed, not revised.
