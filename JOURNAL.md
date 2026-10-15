@@ -591,3 +591,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-10-15 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL contains multiple explicit 'REJECTED AS CHURN (do NOT re-propose)' entries for this exact fix ('Fix error handling in build_one to prevent index.json corruption') from the same model on 2026-10-04, 2026-10-08, 2026-10-09, 2026-10-14, and 2026-10-15. The code change only adds a `len(data) > 2` guard when accessing `data[2]` for trace_date. Per the Constitution, churn takes precedence over CodeRabbit's verdict — a dead/already-implemented idea is closed, not revised.
+
+### 2026-10-15 - REJECTED AS CHURN (do NOT re-propose)
+- The PR re-proposes 'Fix error handling in build_one to prevent index.json corruption', which the JOURNAL explicitly records as REJECTED AS CHURN on 2026-10-08, 2026-10-09, 2026-10-14, and 2026-10-15. The actual diff only extracts a variable assignment (a semantic no-op) and does not implement the claimed error-handling guard. Per the Constitution, churn takes precedence: a dead/already-implemented idea is closed, not revised.
