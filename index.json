@@ -700,7 +700,7 @@
  "armley": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 53.800347,
   "lon": -1.590893,
   "long": "Armley parkrun",
@@ -916,7 +916,7 @@
  "augustow": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-07",
+  "last_tried": "2026-10-15",
   "lat": 53.827144,
   "lon": 22.999649,
   "long": "parkrun August\u00f3w",
@@ -1349,7 +1349,7 @@
  "barnstaple": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 51.072561,
   "lon": -4.053612,
   "long": "Barnstaple parkrun",
@@ -1397,7 +1397,7 @@
  "bartleypark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 50.914371,
   "lon": -1.509865,
   "long": "Bartley Park parkrun",
@@ -1705,7 +1705,7 @@
  "bedgeburypinetum": {
   "built_by": "v0.8.4",
   "distance_m": 3954,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 51.071871,
   "lon": 0.450168,
   "long": "Bedgebury Pinetum parkrun",
@@ -2161,7 +2161,7 @@
  "bideford": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 51.024075,
   "lon": -4.204316,
   "long": "Bideford parkrun",
@@ -2618,7 +2618,7 @@
  "borytucholskietlen": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-07",
+  "last_tried": "2026-10-15",
   "lat": 53.6113,
   "lon": 18.251111,
   "long": "parkrun Bory Tucholskie, Tle\u0144",
@@ -2822,7 +2822,7 @@
  "bramley": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 53.813432,
   "lon": -1.633461,
   "long": "Bramley parkrun",
@@ -4557,7 +4557,7 @@
  "charzykowy": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-07",
+  "last_tried": "2026-10-15",
   "lat": 53.736041,
   "lon": 17.508248,
   "long": "parkrun Charzykowy",
@@ -4955,7 +4955,7 @@
  "clair": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 51.004322,
   "lon": -0.100143,
   "long": "Clair parkrun",
@@ -7201,7 +7201,7 @@
  "dzierzgon": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-07",
+  "last_tried": "2026-10-15",
   "lat": 53.922711,
   "lon": 19.342589,
   "long": "parkrun Dzierzgo\u0144",
@@ -7334,7 +7334,7 @@
  "eastleigh": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 50.971433,
   "lon": -1.374032,
   "long": "Eastleigh parkrun",
@@ -7634,7 +7634,7 @@
  "ekomarina": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-07",
+  "last_tried": "2026-10-15",
   "lat": 53.875029,
   "lon": 21.316257,
   "long": "parkrun Ekomarina",
@@ -7706,7 +7706,7 @@
  "elk": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-07",
+  "last_tried": "2026-10-15",
   "lat": 53.815245,
   "lon": 22.354226,
   "long": "parkrun E\u0142k",
@@ -8490,7 +8490,7 @@
  "folkestone": {
   "built_by": "v0.8.4",
   "distance_m": 6015,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 51.075729,
   "lon": 1.172753,
   "long": "Folkestone parkrun",
@@ -8526,7 +8526,7 @@
  "fordingbridgerecreationground": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 50.925328,
   "lon": -1.789641,
   "long": "Fordingbridge Recreation Ground parkrun",
@@ -8956,7 +8956,7 @@
  "gangerfarm": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 51.009374,
   "lon": -1.464821,
   "long": "Ganger Farm parkrun",
@@ -11552,7 +11552,7 @@
  "horsham": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 51.066504,
   "lon": -0.327885,
   "long": "Horsham parkrun",
@@ -11759,7 +11759,7 @@
  "ifieldmillpond": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 51.107508,
   "lon": -0.218863,
   "long": "Ifield Mill Pond parkrun",
@@ -11962,7 +11962,7 @@
  "itchenvalleycountry": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 50.944849,
   "lon": -1.341722,
   "long": "Itchen Valley Country parkrun",
@@ -12177,7 +12177,7 @@
  "jeziorogorne": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-07",
+  "last_tried": "2026-10-15",
   "lat": 54.081372,
   "lon": 21.379051,
   "long": "parkrun Jezioro G\u00f3rne, K\u0119trzyn",
@@ -13260,7 +13260,7 @@
  "koszalin": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-07",
+  "last_tried": "2026-10-15",
   "lat": 54.179399,
   "lon": 16.210552,
   "long": "parkrun Koszalin",
@@ -14338,7 +14338,7 @@
  "listerpark": {
   "built_by": "v0.8.4",
   "distance_m": 5527,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 53.814575,
   "lon": -1.775102,
   "long": "Lister Park parkrun, Bradford",
@@ -14667,7 +14667,7 @@
  "longrunmeadow": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 51.018755,
   "lon": -3.114989,
   "long": "Longrun Meadow parkrun",
@@ -15197,7 +15197,7 @@
  "mallingrec": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 50.880478,
   "lon": 0.011973,
   "long": "Malling Rec parkrun",
@@ -15245,7 +15245,7 @@
  "malyjeziorak": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-07",
+  "last_tried": "2026-10-15",
   "lat": 53.596551,
   "lon": 19.553879,
   "long": "parkrun Ma\u0142y Jeziorak",
@@ -16004,7 +16004,7 @@
  "meonvalleytrailwickham": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 50.904574,
   "lon": -1.182258,
   "long": "Meon Valley Trail parkrun, Wickham",
@@ -18417,7 +18417,7 @@
  "olsztyn": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-07",
+  "last_tried": "2026-10-15",
   "lat": 53.776228,
   "lon": 20.481014,
   "long": "parkrun Olsztyn",
@@ -19207,7 +19207,7 @@
  "parkmodrzewie": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-07",
+  "last_tried": "2026-10-15",
   "lat": 54.18425,
   "lon": 19.392936,
   "long": "parkrun Park Modrzewie",
@@ -20396,7 +20396,7 @@
  "potternewton": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 53.818446,
   "lon": -1.526274,
   "long": "Potternewton parkrun",
@@ -21069,7 +21069,7 @@
  "rezerwatstrzelnica": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-07",
+  "last_tried": "2026-10-15",
   "lat": 54.130316,
   "lon": 17.95747,
   "long": "parkrun Rezerwat Strzelnica",
@@ -21468,7 +21468,7 @@
  "robertspark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 53.841468,
   "lon": -1.793275,
   "long": "Roberts Park parkrun",
@@ -21817,7 +21817,7 @@
  "roundhay": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 53.83828,
   "lon": -1.496007,
   "long": "Roundhay parkrun",
@@ -22150,7 +22150,7 @@
  "salisbury": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 51.061528,
   "lon": -1.789858,
   "long": "Salisbury parkrun",
@@ -23289,7 +23289,7 @@
  "southampton": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 50.923624,
   "lon": -1.407766,
   "long": "Southampton parkrun",
@@ -24497,7 +24497,7 @@
  "swidwin": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-07",
+  "last_tried": "2026-10-15",
   "lat": 53.765955,
   "lon": 15.774565,
   "long": "parkrun \u015awidwin",
@@ -24509,7 +24509,7 @@
  "swinoujscie": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-07",
+  "last_tried": "2026-10-15",
   "lat": 53.915451,
   "lon": 14.25818,
   "long": "parkrun \u015awinouj\u015bcie",
@@ -24533,7 +24533,7 @@
  "szczecinek": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-07",
+  "last_tried": "2026-10-15",
   "lat": 53.700942,
   "lon": 16.693575,
   "long": "parkrun Szczecinek",
@@ -24629,7 +24629,7 @@
  "tamarlakes": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 50.879837,
   "lon": -4.433418,
   "long": "Tamar Lakes parkrun",
@@ -24783,7 +24783,7 @@
  "tczew": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-07",
+  "last_tried": "2026-10-15",
   "lat": 54.090568,
   "lon": 18.802342,
   "long": "parkrun Tczew",
@@ -25384,7 +25384,7 @@
  "tilgate": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 51.097,
   "lon": -0.175623,
   "long": "Tilgate parkrun",
@@ -25958,7 +25958,7 @@
  "uckfield": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 50.977857,
   "lon": 0.11306,
   "long": "Uckfield parkrun",
@@ -26765,7 +26765,7 @@
  "wakehurst": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 51.066755,
   "lon": -0.088633,
   "long": "Wakehurst parkrun",
@@ -27744,7 +27744,7 @@
  "whiteley": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 50.884669,
   "lon": -1.250819,
   "long": "Whiteley parkrun",
@@ -28020,7 +28020,7 @@
  "winchester": {
   "built_by": "v0.8.4",
   "distance_m": 4758,
-  "last_tried": "2026-10-08",
+  "last_tried": "2026-10-15",
   "lat": 51.069286,
   "lon": -1.310849,
   "long": "Winchester parkrun",
@@ -28898,7 +28898,7 @@
  "zamekwmalborku": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-07",
+  "last_tried": "2026-10-15",
   "lat": 54.038562,
   "lon": 19.025207,
   "long": "parkrun Zamek w Malborku",
