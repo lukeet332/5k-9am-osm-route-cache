@@ -1061,7 +1061,7 @@
  "bahnstadtpromenade": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 49.401453,
   "lon": 8.664843,
   "long": "Bahnstadt Promenade parkrun",
@@ -2040,7 +2040,7 @@
  "bethlehem": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": -28.251308,
   "lon": 28.336215,
   "long": "Bethlehem parkrun",
@@ -5026,7 +5026,7 @@
  "clarens": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": -28.514776,
   "lon": 28.419728,
   "long": "Clarens parkrun",
@@ -6648,7 +6648,7 @@
  "dietenbach": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 47.999723,
   "lon": 7.805913,
   "long": "Dietenbach parkrun",
@@ -7394,7 +7394,7 @@
  "ebenberg": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 49.183932,
   "lon": 8.120962,
   "long": "Ebenberg parkrun",
@@ -8754,7 +8754,7 @@
  "friedrichsau": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 48.411138,
   "lon": 10.012702,
   "long": "Friedrichsau parkrun",
@@ -9340,7 +9340,7 @@
  "globe": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 49.110802,
   "lon": 9.735015,
   "long": "Globe parkrun",
@@ -10533,7 +10533,7 @@
  "harrismith": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": -28.280234,
   "lon": 29.151949,
   "long": "Harrismith parkrun",
@@ -11275,7 +11275,7 @@
  "hluhluwe": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": -28.007628,
   "lon": 32.27309,
   "long": "Hluhluwe parkrun",
@@ -11361,7 +11361,7 @@
  "hofgarten": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 49.197989,
   "lon": 9.506624,
   "long": "Hofgarten parkrun",
@@ -11783,7 +11783,7 @@
  "illeruferkempten": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 47.741133,
   "lon": 10.308598,
   "long": "Illerufer parkrun, Kempten",
@@ -12548,7 +12548,7 @@
  "kastanienallee": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 48.515457,
   "lon": 9.046693,
   "long": "Kastanienallee parkrun",
@@ -12584,7 +12584,7 @@
  "kathu": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": -27.679389,
   "lon": 23.06658,
   "long": "Kathu parkrun",
@@ -13284,7 +13284,7 @@
  "kraeherwald": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 48.783517,
   "lon": 9.143246,
   "long": "Kr\u00e4herwald parkrun",
@@ -13404,7 +13404,7 @@
  "kurtschumacherpromenade": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 49.778058,
   "lon": 9.931715,
   "long": "Kurt-Schumacher-Promenade parkrun",
@@ -13452,7 +13452,7 @@
  "ladysmith": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": -28.546259,
   "lon": 29.769942,
   "long": "Ladysmith parkrun",
@@ -13704,7 +13704,7 @@
  "landesgartenschaupark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 49.289125,
   "lon": 11.455953,
   "long": "Landesgartenschau Park parkrun",
@@ -14063,7 +14063,7 @@
  "leinpfad": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 49.442756,
   "lon": 6.634672,
   "long": "Leinpfad parkrun",
@@ -14859,7 +14859,7 @@
  "luitpold": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 48.755364,
   "lon": 11.427231,
   "long": "Luitpold parkrun",
@@ -15726,7 +15726,7 @@
  "mattheiserweiher": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 49.734621,
   "lon": 6.641721,
   "long": "Mattheiser Weiher parkrun",
@@ -16509,7 +16509,7 @@
  "monrepos": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 48.918396,
   "lon": 9.172071,
   "long": "Monrepos parkrun",
@@ -17334,7 +17334,7 @@
  "neckarau": {
   "built_by": "v0.8.4",
   "distance_m": 5439,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 49.448503,
   "lon": 8.453797,
   "long": "Neckarau parkrun",
@@ -17346,7 +17346,7 @@
  "neckaruferesslingen": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 48.728248,
   "lon": 9.324445,
   "long": "Neckarufer parkrun, Esslingen",
@@ -18151,7 +18151,7 @@
  "oberwald": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 48.984061,
   "lon": 8.407876,
   "long": "Oberwald parkrun",
@@ -18307,7 +18307,7 @@
  "okurakaigankoen": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 34.642379,
   "lon": 135.008025,
   "long": "Okura kaigan koen parkrun",
@@ -19758,7 +19758,7 @@
  "pineforest": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": -28.292924,
   "lon": 27.948221,
   "long": "Pine Forest parkrun",
@@ -20432,7 +20432,7 @@
  "prestelsee": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 49.174065,
   "lon": 8.49073,
   "long": "Prestelsee parkrun",
@@ -21192,7 +21192,7 @@
  "riemer": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 48.12678,
   "lon": 11.692037,
   "long": "Riemer parkrun",
@@ -21624,7 +21624,7 @@
  "rooipointfarm": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": -27.79113,
   "lon": 29.964782,
   "long": "Rooi Point Farm parkrun",
@@ -21685,7 +21685,7 @@
  "rosensteinpark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 48.805193,
   "lon": 9.192439,
   "long": "Rosensteinpark parkrun",
@@ -22367,7 +22367,7 @@
  "schoenbusch": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 49.954444,
   "lon": 9.10789,
   "long": "Sch\u00f6nbusch parkrun",
@@ -22498,7 +22498,7 @@
  "seewoog": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 49.459034,
   "lon": 7.565463,
   "long": "Seewoog parkrun",
@@ -22534,7 +22534,7 @@
  "senekal": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": -28.31856,
   "lon": 27.617928,
   "long": "Senekal parkrun",
@@ -22546,7 +22546,7 @@
  "seotlongagricultureschool": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": -28.459059,
   "lon": 28.854683,
   "long": "Seotlong Agriculture School parkrun",
@@ -23527,7 +23527,7 @@
  "speyerleinpfad": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 49.31512,
   "lon": 8.452175,
   "long": "Speyer Leinpfad parkrun",
@@ -23575,7 +23575,7 @@
  "sportparkrems": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 48.814706,
   "lon": 9.540467,
   "long": "Sportpark Rems parkrun",
@@ -23680,7 +23680,7 @@
  "stadtpark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 49.47441,
   "lon": 10.99843,
   "long": "Stadtpark parkrun",
@@ -24557,7 +24557,7 @@
  "talaue": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 48.831451,
   "lon": 9.320452,
   "long": "Talaue parkrun",
@@ -26163,7 +26163,7 @@
  "upington": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": -28.444304,
   "lon": 21.269767,
   "long": "Upington parkrun",
@@ -26693,7 +26693,7 @@
  "vryheid": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": -27.777853,
   "lon": 30.794659,
   "long": "Vryheid parkrun",
@@ -27291,7 +27291,7 @@
  "welkom": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": -27.973608,
   "lon": 26.739236,
   "long": "Welkom parkrun",
@@ -27411,7 +27411,7 @@
  "wertwiesen": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 49.131341,
   "lon": 9.201216,
   "long": "Wertwiesen parkrun",
@@ -27555,7 +27555,7 @@
  "westpark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 48.122967,
   "lon": 11.531027,
   "long": "Westpark parkrun",
@@ -28164,7 +28164,7 @@
  "wittelsbacher": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 48.359944,
   "lon": 10.886209,
   "long": "Wittelsbacher parkrun",
@@ -28200,7 +28200,7 @@
  "woehrdersee": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": 49.453442,
   "lon": 11.099892,
   "long": "W\u00f6hrder See parkrun",
@@ -28681,7 +28681,7 @@
  "yellowwoodsfarm": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-09",
+  "last_tried": "2026-10-16",
   "lat": -32.93069,
   "lon": 27.938997,
   "long": "Yellow Woods Farm parkrun",
