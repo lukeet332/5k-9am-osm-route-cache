@@ -594,3 +594,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-10-15 - REJECTED AS CHURN (do NOT re-propose)
 - The PR re-proposes 'Fix error handling in build_one to prevent index.json corruption', which the JOURNAL explicitly records as REJECTED AS CHURN on 2026-10-08, 2026-10-09, 2026-10-14, and 2026-10-15. The actual diff only extracts a variable assignment (a semantic no-op) and does not implement the claimed error-handling guard. Per the Constitution, churn takes precedence: a dead/already-implemented idea is closed, not revised.
+
+### 2026-10-16 - gemini-3.1-flash-lite-bot (gemini-3.1-flash-lite, patch)
+- Fix error handling in build_one to prevent index.json corruption
