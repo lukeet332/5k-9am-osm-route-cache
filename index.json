@@ -110,7 +110,7 @@
  "achillgreenway": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": 53.930631,
   "lon": -9.930001,
   "long": "Achill Greenway parkrun",
@@ -1109,7 +1109,7 @@
  "ballina": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": 54.120048,
   "lon": -9.146141,
   "long": "Ballina parkrun",
@@ -1133,7 +1133,7 @@
  "ballinamoregreenway": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": 54.055773,
   "lon": -7.794239,
   "long": "Ballinamore Greenway parkrun",
@@ -2402,7 +2402,7 @@
  "bladeshotel": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -25.646781,
   "lon": 28.333911,
   "long": "Blades Hotel parkrun",
@@ -2654,7 +2654,7 @@
  "botanicalgarden": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -25.738299,
   "lon": 28.273752,
   "long": "Botanical Garden parkrun",
@@ -3430,7 +3430,7 @@
  "bulltofta": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": 55.597979,
   "lon": 13.065903,
   "long": "Bulltofta parkrun",
@@ -4188,7 +4188,7 @@
  "castlebar": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": 53.850327,
   "lon": -9.309314,
   "long": "Castlebar parkrun",
@@ -4200,7 +4200,7 @@
  "castleblayney": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": 54.1219,
   "lon": -6.728947,
   "long": "Castleblayney parkrun",
@@ -5556,7 +5556,7 @@
  "consmith": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": 54.00096,
   "lon": -7.356701,
   "long": "Con Smith parkrun",
@@ -5687,7 +5687,7 @@
  "cootehill": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": 54.081471,
   "lon": -7.086978,
   "long": "Cootehill parkrun",
@@ -7020,7 +7020,7 @@
  "dullstroom": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -25.405517,
   "lon": 30.10707,
   "long": "Dullstroom parkrun",
@@ -7044,7 +7044,7 @@
  "dundalk": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": 53.984567,
   "lon": -6.386803,
   "long": "Dundalk parkrun",
@@ -7574,7 +7574,7 @@
  "edwincarolancommunity": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": 53.807985,
   "lon": -6.939783,
   "long": "Edwin Carolan Community parkrun",
@@ -7910,7 +7910,7 @@
  "erris": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": 54.203272,
   "lon": -10.082041,
   "long": "Erris parkrun",
@@ -10184,7 +10184,7 @@
  "gustavklingbielnaturereserve": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -25.103554,
   "lon": 30.486299,
   "long": "Gustav Klingbiel Nature Reserve parkrun",
@@ -10855,7 +10855,7 @@
  "hazyview": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -25.035941,
   "lon": 31.115198,
   "long": "Hazyview parkrun",
@@ -11227,7 +11227,7 @@
  "hillside": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -25.67966,
   "lon": 28.154745,
   "long": "Hillside parkrun",
@@ -11385,7 +11385,7 @@
  "hoedspruit": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -24.314398,
   "lon": 30.924097,
   "long": "Hoedspruit parkrun",
@@ -12010,7 +12010,7 @@
  "ivydale": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -23.937042,
   "lon": 29.433666,
   "long": "Ivydale parkrun",
@@ -12261,7 +12261,7 @@
  "jocktrail": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -24.935634,
   "lon": 30.842816,
   "long": "Jock Trail parkrun",
@@ -12358,7 +12358,7 @@
  "juronglakegardens": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": 1.340802,
   "lon": 103.723335,
   "long": "Jurong Lake Gardens parkrun",
@@ -12453,7 +12453,7 @@
  "kambakugolfclub": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -25.438527,
   "lon": 31.970637,
   "long": "Kambaku Golf Club parkrun",
@@ -12465,7 +12465,7 @@
  "kameeldoring": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -24.212016,
   "lon": 28.989911,
   "long": "Kameeldoring parkrun",
@@ -13153,7 +13153,7 @@
  "klipspringerlodge": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -25.566254,
   "lon": 31.062886,
   "long": "Klipspringer Lodge parkrun",
@@ -13955,7 +13955,7 @@
  "lavendermill": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -25.670437,
   "lon": 29.455077,
   "long": "Lavender Mill parkrun",
@@ -14075,7 +14075,7 @@
  "leeupoort": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -24.91638,
   "lon": 27.640855,
   "long": "Leeupoort parkrun",
@@ -14338,7 +14338,7 @@
  "linklaterreserve": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -40.32319,
   "lon": 175.641091,
   "long": "Linklater Reserve parkrun",
@@ -14764,7 +14764,7 @@
  "loughkey": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": 53.984896,
   "lon": -8.235512,
   "long": "Lough Key parkrun",
@@ -14800,7 +14800,7 @@
  "louistrichardt": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -23.042459,
   "lon": 29.916763,
   "long": "Louis Trichardt parkrun",
@@ -16474,7 +16474,7 @@
  "modimolle": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -24.694698,
   "lon": 28.385259,
   "long": "Modimolle parkrun",
@@ -16498,7 +16498,7 @@
  "mogol": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -23.686683,
   "lon": 27.693497,
   "long": "Mogol parkrun",
@@ -18489,7 +18489,7 @@
  "onderstepoortcampus": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -25.654647,
   "lon": 28.179186,
   "long": "Onderstepoort Campus parkrun",
@@ -20034,7 +20034,7 @@
  "polokwane": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -23.885076,
   "lon": 29.457428,
   "long": "Polokwane parkrun",
@@ -20705,7 +20705,7 @@
  "queenelizabethkapiticoast": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -40.960682,
   "lon": 174.968319,
   "long": "Queen Elizabeth parkrun, Kapiti Coast",
@@ -20850,7 +20850,7 @@
  "rainhillfarm": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -25.67226,
   "lon": 27.181567,
   "long": "Rainhill Farm parkrun",
@@ -21408,7 +21408,7 @@
  "riversidereserve": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -25.427402,
   "lon": 30.955169,
   "long": "Riverside Reserve parkrun",
@@ -21733,7 +21733,7 @@
  "roses": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -25.582817,
   "lon": 28.285817,
   "long": "Roses parkrun",
@@ -24290,7 +24290,7 @@
  "suncity": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -25.345457,
   "lon": 27.09857,
   "long": "Sun City parkrun",
@@ -24315,7 +24315,7 @@
  "sunnynook": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -36.757964,
   "lon": 174.741069,
   "long": "Sunnynook parkrun",
@@ -24484,7 +24484,7 @@
  "swakopmund": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -22.666375,
   "lon": 14.528015,
   "long": "Swakopmund parkrun",
@@ -25862,7 +25862,7 @@
  "tubbercurrytrail": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": 54.051656,
   "lon": -8.748937,
   "long": "Tubbercurry Trail parkrun",
@@ -25982,7 +25982,7 @@
  "tzaneen": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -23.814877,
   "lon": 30.186946,
   "long": "Tzaneen parkrun",
@@ -26706,7 +26706,7 @@
  "voortrekkermonument": {
   "built_by": "v0.8.4",
   "distance_m": 4534,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -25.772619,
   "lon": 28.179573,
   "long": "Voortrekker Monument parkrun, Pretoria",
@@ -26920,7 +26920,7 @@
  "walvisbay": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -22.977195,
   "lon": 14.481783,
   "long": "Walvis Bay parkrun",
@@ -27603,7 +27603,7 @@
  "westport": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": 53.797982,
   "lon": -9.519267,
   "long": "Westport parkrun",
@@ -28080,7 +28080,7 @@
  "windhoek": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-10",
+  "last_tried": "2026-10-17",
   "lat": -22.618415,
   "lon": 17.074891,
   "long": "Windhoek parkrun",
