@@ -597,3 +597,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-10-16 - KNOWN ISSUE (unfixed; author could not converge on PR #149)
 - reviewer model unavailable; needs human review
+
+### 2026-10-18 - gemini-3.1-flash-lite-bot (gemini-3.1-flash-lite, patch)
+- Fix trace_course crash on empty trace data
