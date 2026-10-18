@@ -597,3 +597,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-10-16 - KNOWN ISSUE (unfixed; author could not converge on PR #149)
 - reviewer model unavailable; needs human review
+
+### 2026-10-18 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL already records 'Fix trace_course crash on empty trace data' as implemented on 2026-10-18 by gemini-3.1-flash-lite-bot. This PR adds a duplicate JOURNAL entry for the same fix, and the code change (removing a comment from `if not pts:`) is a semantic no-op. Per the Constitution, churn takes precedence — a dead/already-implemented idea is closed, not revised.
