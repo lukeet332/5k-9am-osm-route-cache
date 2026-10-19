@@ -784,7 +784,7 @@
  "ashgrove": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -27.442334,
   "lon": 152.972975,
   "long": "Ashgrove parkrun",
@@ -1301,7 +1301,7 @@
  "baringa": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -26.806829,
   "lon": 153.080945,
   "long": "Baringa parkrun",
@@ -3097,7 +3097,7 @@
  "brisbanevalleyrailtrail": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -26.882628,
   "lon": 152.102115,
   "long": "Brisbane Valley Rail Trail parkrun, Blackbutt",
@@ -3514,7 +3514,7 @@
  "bunyaville": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -27.377306,
   "lon": 152.949138,
   "long": "Bunyaville parkrun",
@@ -4008,7 +4008,7 @@
  "capestonelake": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -27.233548,
   "lon": 153.039406,
   "long": "Capestone Lake parkrun",
@@ -4377,7 +4377,7 @@
  "centrallakes": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -27.07755,
   "lon": 152.973187,
   "long": "Central Lakes parkrun",
@@ -4642,7 +4642,7 @@
  "chermside": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -27.37896,
   "lon": 153.033507,
   "long": "Chermside parkrun",
@@ -5747,7 +5747,7 @@
  "cormorantbay": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -27.401736,
   "lon": 152.622246,
   "long": "Cormorant Bay parkrun",
@@ -6225,7 +6225,7 @@
  "dalby": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -27.188036,
   "lon": 151.262339,
   "long": "Dalby parkrun",
@@ -8754,7 +8754,7 @@
  "fredericiavold": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 55.569412,
   "lon": 9.75774,
   "long": "Fredericia Vold parkrun",
@@ -8909,7 +8909,7 @@
  "futakotamagawa": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 35.613653,
   "lon": 139.621233,
   "long": "Futakotamagawa parkrun",
@@ -9304,7 +9304,7 @@
  "glasshousemountainsconservation": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -26.986817,
   "lon": 152.823678,
   "long": "Glass House Mountains Conservation parkrun",
@@ -9459,7 +9459,7 @@
  "goldenbeach": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -26.829014,
   "lon": 153.120795,
   "long": "Golden Beach parkrun",
@@ -10557,7 +10557,7 @@
  "harrisavenue": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -27.171876,
   "lon": 152.94537,
   "long": "Harris Avenue parkrun",
@@ -12668,7 +12668,7 @@
  "kedron": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -27.406927,
   "lon": 153.046297,
   "long": "Kedron parkrun",
@@ -12704,7 +12704,7 @@
  "kelvingrove": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -27.441334,
   "lon": 153.009807,
   "long": "Kelvin Grove parkrun",
@@ -15052,7 +15052,7 @@
  "maborikaiganyuhodo": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 35.263762,
   "lon": 139.712655,
   "long": "Maborikaigan yuhodo parkrun",
@@ -15919,7 +15919,7 @@
  "meijokoen": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 35.18735,
   "lon": 136.903707,
   "long": "Meijo koen parkrun",
@@ -16401,7 +16401,7 @@
  "mitchelton": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -27.404423,
   "lon": 152.979298,
   "long": "Mitchelton parkrun",
@@ -16521,7 +16521,7 @@
  "momoiharappakoen": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 35.713523,
   "lon": 139.607963,
   "long": "Momoi harappa koen parkrun",
@@ -17180,7 +17180,7 @@
  "nagaragawakoen": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 35.440942,
   "lon": 136.771641,
   "long": "Nagaragawa koen parkrun",
@@ -17862,7 +17862,7 @@
  "northharbour": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -27.106368,
   "lon": 152.998427,
   "long": "North Harbour parkrun",
@@ -17874,7 +17874,7 @@
  "northlakes": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -27.23669,
   "lon": 153.020729,
   "long": "North Lakes parkrun",
@@ -18079,7 +18079,7 @@
  "oakey": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -27.429333,
   "lon": 151.720815,
   "long": "Oakey parkrun",
@@ -18211,7 +18211,7 @@
  "oceanview": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -27.121296,
   "lon": 152.802517,
   "long": "Ocean View parkrun",
@@ -18295,7 +18295,7 @@
  "ohnogokurakujikoen": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 35.356245,
   "lon": 136.82376,
   "long": "Ohno Gokurakuji Koen parkrun",
@@ -18307,7 +18307,7 @@
  "oisoundokoen": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 35.312527,
   "lon": 139.291032,
   "long": "Oiso undokoen parkrun",
@@ -18379,7 +18379,7 @@
  "oldeskrailwaystation": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -27.241567,
   "lon": 152.41977,
   "long": "Old Esk Railway Station parkrun",
@@ -19673,7 +19673,7 @@
  "petrie": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -27.273406,
   "lon": 152.974425,
   "long": "Petrie parkrun",
@@ -20923,7 +20923,7 @@
  "redcliffe": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -27.235456,
   "lon": 153.114827,
   "long": "Redcliffe parkrun",
@@ -21252,7 +21252,7 @@
  "rinkopark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 35.46168,
   "lon": 139.638028,
   "long": "Rinko Park parkrun",
@@ -22210,7 +22210,7 @@
  "samfordparklands": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -27.356315,
   "lon": 152.88284,
   "long": "Samford Parklands parkrun",
@@ -22234,7 +22234,7 @@
  "sandgate": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -27.311291,
   "lon": 153.068234,
   "long": "Sandgate parkrun",
@@ -22858,7 +22858,7 @@
  "shibamatakoenkadan": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 35.759764,
   "lon": 139.881048,
   "long": "Shibamata koen kadan parkrun",
@@ -23681,7 +23681,7 @@
  "sskoopatrail": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -27.065817,
   "lon": 153.145072,
   "long": "S.S. Koopa Trail parkrun",
@@ -24399,7 +24399,7 @@
  "suratmemorialpark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -27.150931,
   "lon": 149.069512,
   "long": "Surat Memorial Park parkrun",
@@ -24629,7 +24629,7 @@
  "tamagawachuokoen": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 35.730167,
   "lon": 139.326594,
   "long": "Tamagawa chuo koen parkrun",
@@ -25456,7 +25456,7 @@
  "tione": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 45.354242,
   "lon": 10.831036,
   "long": "Tione parkrun",
@@ -25838,7 +25838,7 @@
  "tsujidokaihinkoen": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 35.320992,
   "lon": 139.449448,
   "long": "Tsujido kaihin koen parkrun",
@@ -26187,7 +26187,7 @@
  "unoki": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 35.574113,
   "lon": 139.675275,
   "long": "Unoki parkrun",
@@ -26261,7 +26261,7 @@
  "urayasushisogokoen": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 35.636914,
   "lon": 139.932099,
   "long": "Urayasushi sogo koen parkrun",
@@ -27004,7 +27004,7 @@
  "warnerlakes": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -27.306906,
   "lon": 152.955385,
   "long": "Warner Lakes parkrun",
@@ -28560,7 +28560,7 @@
  "wynnum": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -27.442933,
   "lon": 153.177898,
   "long": "Wynnum parkrun",
@@ -28656,7 +28656,7 @@
  "yamatasportspark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 35.500336,
   "lon": 134.182153,
   "long": "Yamata Sports Park parkrun",
@@ -28825,7 +28825,7 @@
  "yowie": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -26.947949,
   "lon": 152.562585,
   "long": "Yowie parkrun",
@@ -29053,7 +29053,7 @@
  "zillmere": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -27.361066,
   "lon": 153.041015,
   "long": "Zillmere parkrun",
