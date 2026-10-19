@@ -146,9 +146,9 @@
  "ahrenspark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
-  "lat": 41.749132,
-  "lon": -92.707321,
+  "last_tried": "2026-10-19",
+  "lat": 41.752388,
+  "lon": -92.706203,
   "long": "Ahrens Park parkrun",
   "relation_m": null,
   "source": null,
@@ -1085,7 +1085,7 @@
  "balclutha": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -46.238883,
   "lon": 169.731177,
   "long": "Balclutha parkrun",
@@ -1253,7 +1253,7 @@
  "banstead": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-14",
+  "last_tried": "2026-10-19",
   "lat": 51.307648,
   "lon": -0.184225,
   "long": "Banstead Woods parkrun",
@@ -2846,7 +2846,7 @@
  "branchbrookpark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 40.775247,
   "lon": -74.173977,
   "long": "Branch Brook Park parkrun",
@@ -3948,7 +3948,7 @@
  "cantonlowerrougetrail": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 42.285578,
   "lon": -83.485271,
   "long": "Canton Lower Rouge Trail parkrun",
@@ -3960,7 +3960,7 @@
  "canyonrimtrail": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 42.598602,
   "lon": -114.454267,
   "long": "Canyon Rim Trail parkrun",
@@ -4931,7 +4931,7 @@
  "cityparkiowa": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 41.67568,
   "lon": -91.534945,
   "long": "City Park parkrun, Iowa",
@@ -5509,7 +5509,7 @@
  "comptonabbasairfield": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-14",
+  "last_tried": "2026-10-19",
   "lat": 50.96661,
   "lon": -2.157045,
   "long": "Compton Abbas Airfield parkrun",
@@ -5771,7 +5771,7 @@
  "cornerstonelakes": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 41.930491,
   "lon": -88.248271,
   "long": "Cornerstone Lakes parkrun",
@@ -6129,7 +6129,7 @@
  "cutlerpark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 42.294685,
   "lon": -71.213684,
   "long": "Cutler Park parkrun",
@@ -6273,7 +6273,7 @@
  "danehypark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 42.389507,
   "lon": -71.137528,
   "long": "Danehy Park parkrun",
@@ -7056,7 +7056,7 @@
  "dunedin": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -45.857088,
   "lon": 170.519225,
   "long": "Dunedin parkrun",
@@ -7370,7 +7370,7 @@
  "eastotagohighschool": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -45.479897,
   "lon": 170.720595,
   "long": "East Otago High School parkrun",
@@ -7490,7 +7490,7 @@
  "edenbrookcountry": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-14",
+  "last_tried": "2026-10-19",
   "lat": 51.280199,
   "lon": -0.867088,
   "long": "Edenbrook Country parkrun",
@@ -7994,7 +7994,7 @@
  "evergreen": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 40.9496,
   "lon": -74.79777,
   "long": "Evergreen parkrun",
@@ -8153,7 +8153,7 @@
  "farmpond": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 42.280745,
   "lon": -71.43109,
   "long": "Farm Pond parkrun",
@@ -8393,7 +8393,7 @@
  "fivearches": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-14",
+  "last_tried": "2026-10-19",
   "lat": 51.292354,
   "lon": -2.452787,
   "long": "Five Arches parkrun",
@@ -8790,7 +8790,7 @@
  "frimleylodge": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-14",
+  "last_tried": "2026-10-19",
   "lat": 51.298622,
   "lon": -0.724851,
   "long": "Frimley Lodge parkrun",
@@ -10034,7 +10034,7 @@
  "groenester": {
   "built_by": "v0.8.4",
   "distance_m": 5203,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 53.214822,
   "lon": 5.873083,
   "long": "Groene Ster parkrun",
@@ -10377,7 +10377,7 @@
  "hamiltonpark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -46.095775,
   "lon": 168.958159,
   "long": "Hamilton Park parkrun, Gore",
@@ -11035,7 +11035,7 @@
  "heritageharbor": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 41.341177,
   "lon": -88.785212,
   "long": "Heritage Harbor parkrun, Ottawa",
@@ -11831,7 +11831,7 @@
  "impeywalkknightshayes": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-14",
+  "last_tried": "2026-10-19",
   "lat": 50.92781,
   "lon": -3.477466,
   "long": "Impey Walk Knightshayes parkrun",
@@ -11903,7 +11903,7 @@
  "invercargill": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -46.404097,
   "lon": 168.356606,
   "long": "Invercargill parkrun",
@@ -11986,7 +11986,7 @@
  "itccommunitysports": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 42.437305,
   "lon": -83.549324,
   "long": "ITC Community Sports parkrun",
@@ -12058,7 +12058,7 @@
  "jamaicapond": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 42.320216,
   "lon": -71.118049,
   "long": "Jamaica Pond parkrun",
@@ -13524,7 +13524,7 @@
  "lake2laketrail": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -45.442115,
   "lon": 167.688869,
   "long": "Lake2Lake Trail parkrun",
@@ -13572,7 +13572,7 @@
  "lakedunstan": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -45.043898,
   "lon": 169.214211,
   "long": "Lake Dunstan parkrun",
@@ -14229,7 +14229,7 @@
  "lillie": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 42.223759,
   "lon": -83.697915,
   "long": "Lillie parkrun, Ann Arbor",
@@ -14472,7 +14472,7 @@
  "livonia": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 42.429645,
   "lon": -83.395811,
   "long": "Livonia parkrun",
@@ -15148,7 +15148,7 @@
  "maidstoneriverpark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-14",
+  "last_tried": "2026-10-19",
   "lat": 51.29641,
   "lon": 0.507689,
   "long": "Maidstone River Park parkrun",
@@ -15389,7 +15389,7 @@
  "mansfieldoh": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 40.767616,
   "lon": -82.538434,
   "long": "Mansfield OH parkrun",
@@ -16761,7 +16761,7 @@
  "motepark": {
   "built_by": "v0.8.4",
   "distance_m": 6258,
-  "last_tried": "2026-10-14",
+  "last_tried": "2026-10-19",
   "lat": 51.269539,
   "lon": 0.541967,
   "long": "Mote Park parkrun",
@@ -18163,7 +18163,7 @@
  "oamarupublicgardens": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -45.098254,
   "lon": 170.959005,
   "long": "\u014camaru Public Gardens parkrun",
@@ -18283,7 +18283,7 @@
  "ohioanderiecanalreservation": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 41.431816,
   "lon": -81.662319,
   "long": "Ohio and Erie Canal Reservation parkrun",
@@ -18441,7 +18441,7 @@
  "oldtownhousepark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 41.6843,
   "lon": -70.216886,
   "long": "Old Town House Park parkrun",
@@ -18713,7 +18713,7 @@
  "osbornmetropark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 41.414289,
   "lon": -82.635065,
   "long": "Osborn MetroPark parkrun",
@@ -18737,7 +18737,7 @@
  "otagocentralrailtrailalexandra": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -45.236725,
   "lon": 169.384943,
   "long": "Otago Central Rail Trail parkrun, Alexandra",
@@ -20766,7 +20766,7 @@
  "queenstown": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": -45.033598,
   "lon": 168.661454,
   "long": "Queenstown parkrun",
@@ -21995,7 +21995,7 @@
  "rushmoor": {
   "built_by": "v0.8.4",
   "distance_m": 6578,
-  "last_tried": "2026-10-14",
+  "last_tried": "2026-10-19",
   "lat": 51.265798,
   "lon": -0.755847,
   "long": "Rushmoor parkrun",
@@ -22090,7 +22090,7 @@
  "saddlerivercounty": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 40.917058,
   "lon": -74.090257,
   "long": "Saddle River County parkrun",
@@ -22702,7 +22702,7 @@
  "sharphamroadplayingfields": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-14",
+  "last_tried": "2026-10-19",
   "lat": 51.279496,
   "lon": -2.793181,
   "long": "Sharpham Road Playing Fields parkrun",
@@ -23036,7 +23036,7 @@
  "sippolake": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 40.808339,
   "lon": -81.460174,
   "long": "Sippo Lake parkrun",
@@ -23527,7 +23527,7 @@
  "southwickcountrypark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-14",
+  "last_tried": "2026-10-19",
   "lat": 51.306461,
   "lon": -2.234092,
   "long": "Southwick Country parkrun",
@@ -23647,7 +23647,7 @@
  "springrock": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 41.805853,
   "lon": -87.907605,
   "long": "Spring Rock parkrun",
@@ -24100,7 +24100,7 @@
  "stonybrookschool": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 42.607161,
   "lon": -71.456526,
   "long": "Stony Brook School parkrun",
@@ -24423,7 +24423,7 @@
  "susquehannariverwalk": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-13",
+  "last_tried": "2026-10-19",
   "lat": 41.235406,
   "lon": -77.004952,
   "long": "Susquehanna Riverwalk parkrun",
