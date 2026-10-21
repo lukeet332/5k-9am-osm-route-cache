@@ -486,7 +486,7 @@
  "ambleside": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 49.326794,
   "lon": -123.155175,
   "long": "Ambleside parkrun",
@@ -1637,7 +1637,7 @@
  "beban": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 49.198597,
   "lon": -123.995057,
   "long": "Beban parkrun",
@@ -4365,7 +4365,7 @@
  "centralburnaby": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 49.229288,
   "lon": -123.012837,
   "long": "Central parkrun, Burnaby",
@@ -4870,7 +4870,7 @@
  "churchillparkway": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 49.866258,
   "lon": -97.114076,
   "long": "Churchill Parkway parkrun",
@@ -5759,7 +5759,7 @@
  "cornerbrookstreamtrail": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 48.944105,
   "lon": -57.937618,
   "long": "Corner Brook Stream Trail parkrun",
@@ -5843,7 +5843,7 @@
  "courtenayairpark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 49.681959,
   "lon": -124.982817,
   "long": "Courtenay Airpark parkrun",
@@ -8646,7 +8646,7 @@
  "fortvwlochy": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 52.195277,
   "lon": 20.91495,
   "long": "parkrun Fort V W\u0142ochy",
@@ -9172,7 +9172,7 @@
  "georgelanememorial": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 50.579381,
   "lon": -113.879142,
   "long": "George Lane Memorial parkrun",
@@ -10010,7 +10010,7 @@
  "grodziskmazowiecki": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 52.101019,
   "lon": 20.63864,
   "long": "parkrun Grodzisk Mazowiecki",
@@ -10939,7 +10939,7 @@
  "hendersonlake": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 49.687498,
   "lon": -112.80646,
   "long": "Henderson Lake parkrun",
@@ -11287,7 +11287,7 @@
  "hiroshimastadiumpark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 34.401449,
   "lon": 132.452551,
   "long": "Hiroshima Stadium Park parkrun",
@@ -12848,7 +12848,7 @@
  "kiellinie": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 54.334616,
   "lon": 10.153703,
   "long": "Kiellinie parkrun",
@@ -13272,7 +13272,7 @@
  "koscian": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 52.093343,
   "lon": 16.638064,
   "long": "parkrun Ko\u015bcian",
@@ -13308,7 +13308,7 @@
  "kovach": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 50.987447,
   "lon": -118.1921,
   "long": "Kovach parkrun",
@@ -13452,7 +13452,7 @@
  "kutno": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 52.223814,
   "lon": 19.349423,
   "long": "parkrun Kutno",
@@ -13907,7 +13907,7 @@
  "lasmalcanow": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 52.149747,
   "lon": 21.385804,
   "long": "parkrun Las Malcan\u00f3w",
@@ -15293,7 +15293,7 @@
  "mamquamspawningtrail": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 49.730891,
   "lon": -123.134596,
   "long": "Mamquam Spawning Trail parkrun",
@@ -15329,7 +15329,7 @@
  "mangerebridge": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": -36.937539,
   "lon": 174.787717,
   "long": "M\u0101ngere Bridge parkrun",
@@ -15750,7 +15750,7 @@
  "matsquitrailregional": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 49.12229,
   "lon": -122.300786,
   "long": "Matsqui Trail Regional parkrun",
@@ -17048,7 +17048,7 @@
  "mundy": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 49.261576,
   "lon": -122.834541,
   "long": "Mundy parkrun",
@@ -17681,7 +17681,7 @@
  "noelboothcommunity": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 49.065838,
   "lon": -122.66133,
   "long": "Noel Booth Community parkrun",
@@ -18319,7 +18319,7 @@
  "okanagan": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 49.883293,
   "lon": -119.456654,
   "long": "Okanagan parkrun",
@@ -18331,7 +18331,7 @@
  "okanaganrailtrail": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 50.227507,
   "lon": -119.2817,
   "long": "Okanagan Rail Trail parkrun",
@@ -19193,7 +19193,7 @@
  "parkmiejskilowicz": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 52.10956,
   "lon": 19.940267,
   "long": "parkrun Park Miejski, \u0141owicz",
@@ -19279,7 +19279,7 @@
  "parkradolinskich": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 51.975893,
   "lon": 17.503069,
   "long": "parkrun Park Radoli\u0144skich",
@@ -19577,7 +19577,7 @@
  "penticton": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 49.502306,
   "lon": -119.597222,
   "long": "Penticton parkrun",
@@ -19998,7 +19998,7 @@
  "polemokotowskie": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 52.211555,
   "lon": 20.996041,
   "long": "parkrun Pole Mokotowskie",
@@ -20577,7 +20577,7 @@
  "pruszkow": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 52.167221,
   "lon": 20.8095,
   "long": "parkrun Pruszk\u00f3w",
@@ -21007,7 +21007,7 @@
  "redwillowtrail": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 53.641781,
   "lon": -113.620693,
   "long": "Red Willow Trail parkrun",
@@ -21179,7 +21179,7 @@
  "richmondolympic": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 49.184871,
   "lon": -123.138582,
   "long": "Richmond Olympic parkrun",
@@ -21372,7 +21372,7 @@
  "riversidekamloops": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 50.678505,
   "lon": -120.336451,
   "long": "Riverside parkrun, Kamloops",
@@ -22726,7 +22726,7 @@
  "shawniganhills": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 48.655546,
   "lon": -123.650306,
   "long": "Shawnigan Hills parkrun",
@@ -22738,7 +22738,7 @@
  "sheepriver": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 50.722089,
   "lon": -113.979312,
   "long": "Sheep River parkrun",
@@ -23156,7 +23156,7 @@
  "skierniewice": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 51.965214,
   "lon": 20.140672,
   "long": "parkrun Skierniewice",
@@ -23192,7 +23192,7 @@
  "skorzec": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 52.106618,
   "lon": 22.117544,
   "long": "parkrun Sk\u00f3rzec",
@@ -23551,7 +23551,7 @@
  "spanishbanksbeach": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 49.275962,
   "lon": -123.213802,
   "long": "Spanish Banks Beach parkrun",
@@ -24206,7 +24206,7 @@
  "strathconaisland": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 50.037613,
   "lon": -110.652522,
   "long": "Strathcona Island parkrun",
@@ -24581,7 +24581,7 @@
  "szubiankizagorow": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 52.164015,
   "lon": 17.879627,
   "long": "parkrun Szubianki, Zag\u00f3r\u00f3w",
@@ -25107,9 +25107,9 @@
  "theisendammen": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
-  "lat": 63.419385,
-  "lon": 10.348478,
+  "last_tried": "2026-10-21",
+  "lat": 63.419314,
+  "lon": 10.343682,
   "long": "Theisendammen parkrun",
   "relation_m": null,
   "source": null,
@@ -25958,7 +25958,7 @@
  "tyneheadregional": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 49.184318,
   "lon": -122.756237,
   "long": "Tynehead Regional parkrun",
@@ -26393,7 +26393,7 @@
  "valkeinen": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 62.891779,
   "lon": 27.663325,
   "long": "Valkeinen parkrun",
@@ -26789,7 +26789,7 @@
  "waitangiforest": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": -35.25374,
   "lon": 174.068961,
   "long": "Waitangi Forest parkrun",
@@ -27112,7 +27112,7 @@
  "warszawaursynow": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 52.135633,
   "lon": 21.063039,
   "long": "parkrun Warszawa-Ursyn\u00f3w",
@@ -27160,7 +27160,7 @@
  "wascana": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 50.430422,
   "lon": -104.60409,
   "long": "Wascana parkrun",
@@ -28934,7 +28934,7 @@
  "zalewzyrardowski": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 52.037199,
   "lon": 20.450379,
   "long": "parkrun Zalew \u017byrardowski",
@@ -29112,7 +29112,7 @@
  "zuiderparkrotterdam": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-15",
+  "last_tried": "2026-10-21",
   "lat": 51.879237,
   "lon": 4.487687,
   "long": "Zuiderpark parkrun, Rotterdam",
