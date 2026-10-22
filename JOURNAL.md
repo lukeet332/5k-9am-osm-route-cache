@@ -606,3 +606,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-10-22 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL explicitly records 'Fix trace_course crash on empty trace data' as REJECTED AS CHURN on 2026-10-18 and 2026-10-22, noting the fix was already implemented and the code change is a semantic no-op. This PR re-proposes the exact same fix with the identical description. Per the Constitution, churn takes precedence over CodeRabbit's verdict — a dead/already-implemented idea is closed, not revised.
+
+### 2026-10-22 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL explicitly records 'Fix trace_course crash on empty trace data' as REJECTED AS CHURN on 2026-10-18 and 2026-10-22, noting the fix was already implemented and the code change is a semantic no-op (only comment removals). Per the Constitution, churn takes precedence over CodeRabbit's verdict — a dead/already-implemented idea is closed, not revised.
