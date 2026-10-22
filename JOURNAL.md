@@ -600,3 +600,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-10-18 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL already records 'Fix trace_course crash on empty trace data' as implemented on 2026-10-18 by gemini-3.1-flash-lite-bot. This PR adds a duplicate JOURNAL entry for the same fix, and the code change (removing a comment from `if not pts:`) is a semantic no-op. Per the Constitution, churn takes precedence — a dead/already-implemented idea is closed, not revised.
+
+### 2026-10-22 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL explicitly records 'Fix trace_course crash on empty trace data' as REJECTED AS CHURN on 2026-10-18, noting the fix was already implemented that same day and the code change (removing a comment from `if not pts:`) is a semantic no-op. This PR adds a duplicate JOURNAL entry for the same fix with no functional improvement. Per the Constitution, churn takes precedence — a dead/already-implemented idea is closed, not revised.
