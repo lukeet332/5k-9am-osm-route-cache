@@ -612,3 +612,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-10-23 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL already records this exact fix ('Fix doubled source label to match expected format') as implemented on 2026-10-23 by gemini-3.1-flash-lite. The PR adds a duplicate JOURNAL entry for the same date/description, and the code change incorrectly generalizes '_doubled' to all n>1 (including n=3,4,5...) instead of only n=2. Per the Constitution, churn takes precedence: a dead/already-implemented idea is closed, not revised.
+
+### 2026-10-23 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL explicitly records 'Fix doubled source label to match expected format' as REJECTED AS CHURN on 2026-10-23, noting the fix was already implemented that day and the PR added a duplicate JOURNAL entry. This PR re-proposes the exact same fix with the identical description. Per the Constitution, churn takes precedence — a dead/already-implemented idea is closed, not revised.
