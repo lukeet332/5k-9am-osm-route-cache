@@ -401,7 +401,7 @@
  "alstervorland": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 53.573708,
   "lon": 10.002464,
   "long": "Alstervorland parkrun",
@@ -1001,7 +1001,7 @@
  "avondaleforest": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 52.908152,
   "lon": -6.225626,
   "long": "Avondale Forest parkrun",
@@ -1145,7 +1145,7 @@
  "ballincollig": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 51.891833,
   "lon": -8.605349,
   "long": "Ballincollig parkrun",
@@ -1956,7 +1956,7 @@
  "bereisland": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 51.632369,
   "lon": -9.81755,
   "long": "Bere Island parkrun",
@@ -2606,7 +2606,7 @@
  "borrisokanetown": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 52.998198,
   "lon": -8.132919,
   "long": "Borrisokane Town parkrun",
@@ -4116,7 +4116,7 @@
  "carlowtown": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 52.838536,
   "lon": -6.93414,
   "long": "Carlow Town parkrun",
@@ -4212,7 +4212,7 @@
  "castlehaven": {
   "built_by": "v0.8.4",
   "distance_m": 5804,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 51.551575,
   "lon": -9.170294,
   "long": "Castlehaven parkrun",
@@ -5050,7 +5050,7 @@
  "clarisford": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 52.796642,
   "lon": -8.441796,
   "long": "Clarisford parkrun",
@@ -5170,7 +5170,7 @@
  "clonakilty": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 51.617636,
   "lon": -8.89884,
   "long": "Clonakilty parkrun",
@@ -5206,7 +5206,7 @@
  "clonmel": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 52.352179,
   "lon": -7.694956,
   "long": "Clonmel parkrun",
@@ -8261,7 +8261,7 @@
  "fenitgreenway": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 52.27694,
   "lon": -9.864883,
   "long": "Fenit Greenway parkrun",
@@ -8321,7 +8321,7 @@
  "fethardtown": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 52.470288,
   "lon": -7.696725,
   "long": "Fethard Town parkrun",
@@ -9352,7 +9352,7 @@
  "glengarriff": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 51.755548,
   "lon": -9.566904,
   "long": "Glengarriff parkrun",
@@ -9376,7 +9376,7 @@
  "glenriver": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 51.912716,
   "lon": -8.455532,
   "long": "Glen River parkrun",
@@ -9592,7 +9592,7 @@
  "gorey": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 52.680041,
   "lon": -6.299324,
   "long": "Gorey parkrun",
@@ -11831,7 +11831,7 @@
  "illaunmanagh": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 52.700096,
   "lon": -8.873242,
   "long": "Illaunmanagh parkrun",
@@ -11867,7 +11867,7 @@
  "inchbeach": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 52.137776,
   "lon": -9.977697,
   "long": "Inch Beach parkrun",
@@ -12896,7 +12896,7 @@
  "kilkenny": {
   "built_by": "v0.8.4",
   "distance_m": 5935,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 52.648977,
   "lon": -7.245307,
   "long": "Kilkenny parkrun",
@@ -12931,7 +12931,7 @@
  "killarneyhouse": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 52.057309,
   "lon": -9.516537,
   "long": "Killarney House parkrun",
@@ -13201,7 +13201,7 @@
  "knockanacreewoods": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 52.954397,
   "lon": -8.040969,
   "long": "Knockanacree Woods parkrun",
@@ -13248,7 +13248,7 @@
  "koenigshof": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 53.275351,
   "lon": 9.491959,
   "long": "K\u00f6nigshof parkrun",
@@ -13404,7 +13404,7 @@
  "krupundersee": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 53.625176,
   "lon": 9.87603,
   "long": "Krupunder See parkrun",
@@ -13440,7 +13440,7 @@
  "kulturparkneubrandenburg": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 53.552073,
   "lon": 13.255029,
   "long": "Kulturpark Neubrandenburg parkrun",
@@ -14087,7 +14087,7 @@
  "leesroad": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 52.863938,
   "lon": -9.003332,
   "long": "Lees Road parkrun",
@@ -14325,7 +14325,7 @@
  "limerick": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 52.675635,
   "lon": -8.582395,
   "long": "Limerick parkrun",
@@ -14422,7 +14422,7 @@
  "listowel": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 52.443179,
   "lon": -9.479681,
   "long": "Listowel parkrun",
@@ -14748,6 +14748,18 @@
   "status": "gap",
   "trace_m": null
  },
+ "lordhoweisland": {
+  "built_by": "v0.8.4",
+  "distance_m": null,
+  "last_tried": "2026-10-23",
+  "lat": -31.524807,
+  "lon": 159.06034,
+  "long": "Lord Howe Island parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
  "lordshiprecreationground": {
   "distance_m": 5010,
   "last_tried": "2026-06-25",
@@ -14768,6 +14780,18 @@
   "lat": -41.743882,
   "lon": 171.596129,
   "long": "Lost Lagoon parkrun",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "lostshoresurfresort": {
+  "built_by": "v0.8.4",
+  "distance_m": null,
+  "last_tried": "2026-10-23",
+  "lat": 55.920006,
+  "lon": -3.397714,
+  "long": "Lost Shore Surf Resort parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -15148,7 +15172,7 @@
  "macroomcastledemesne": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 51.904698,
   "lon": -8.962054,
   "long": "Macroom Castle Demesne parkrun",
@@ -15281,7 +15305,7 @@
  "mallowcastle": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 52.134517,
   "lon": -8.637864,
   "long": "Mallow Castle parkrun",
@@ -16184,7 +16208,7 @@
  "midletongreenway": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 51.921387,
   "lon": -8.174868,
   "long": "Midleton Greenway parkrun",
@@ -16665,7 +16689,7 @@
  "moorbek": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 53.70882,
   "lon": 9.993277,
   "long": "Moorbek parkrun",
@@ -17120,7 +17144,7 @@
  "mungret": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 52.632016,
   "lon": -8.681348,
   "long": "Mungret parkrun",
@@ -17525,7 +17549,7 @@
  "newcastlewest": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 52.450747,
   "lon": -9.06854,
   "long": "Newcastle West parkrun",
@@ -17585,7 +17609,7 @@
  "newross": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 52.316359,
   "lon": -6.928439,
   "long": "New Ross parkrun",
@@ -17793,6 +17817,18 @@
   "lat": 56.48583,
   "lon": 10.031231,
   "long": "Nordre F\u00e6lled parkrun, Randers",
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
+ },
+ "norfolkshowgroundtrail": {
+  "built_by": "v0.8.4",
+  "distance_m": null,
+  "last_tried": "2026-10-23",
+  "lat": 52.651749,
+  "lon": 1.169303,
+  "long": "Norfolk Showground Trail parkrun",
   "relation_m": null,
   "source": null,
   "status": "gap",
@@ -19974,7 +20010,7 @@
  "pobalscoilnatrionoide": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 51.950567,
   "lon": -7.873244,
   "long": "Pobalscoil na Tr\u00edon\u00f3ide parkrun",
@@ -22666,7 +22702,7 @@
  "setuarena": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 52.251535,
   "lon": -7.178233,
   "long": "SETU Arena parkrun",
@@ -24951,7 +24987,7 @@
  "templemore": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 52.798741,
   "lon": -7.839498,
   "long": "Templemore parkrun",
@@ -25730,7 +25766,7 @@
  "tralee": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 52.266242,
   "lon": -9.705376,
   "long": "Tralee parkrun",
@@ -25742,7 +25778,7 @@
  "tramore": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 52.159283,
   "lon": -7.141892,
   "long": "Tramore parkrun, Waterford",
@@ -25754,7 +25790,7 @@
  "tramorevalley": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 51.877221,
   "lon": -8.456427,
   "long": "Tramore Valley parkrun, Cork",
@@ -25946,7 +25982,7 @@
  "tullow": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 52.794943,
   "lon": -6.660345,
   "long": "Tullow parkrun",
@@ -26151,7 +26187,7 @@
  "unisee": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 53.108575,
   "lon": 8.834818,
   "long": "Unisee parkrun",
@@ -26476,7 +26512,7 @@
  "vandeleur": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 52.636121,
   "lon": -9.472935,
   "long": "Vandeleur parkrun",
@@ -27699,7 +27735,7 @@
  "wexfordracecourse": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-17",
+  "last_tried": "2026-10-23",
   "lat": 52.337798,
   "lon": -6.488119,
   "long": "Wexford Racecourse parkrun",
