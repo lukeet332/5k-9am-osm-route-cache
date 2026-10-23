@@ -621,3 +621,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-10-23 - REJECTED AS CHURN (do NOT re-propose)
 - The PR is churn. The diff only removes a comment from `trace_courses_multi` (a semantic no-op), while the description claims a 'doubled source label' fix that isn't in the diff. The JOURNAL explicitly records 'Fix doubled source label to match expected format' as REJECTED AS CHURN on 2026-10-23 (three entries), noting the fix was already implemented and the PR added a duplicate JOURNAL entry. Per the Constitution, churn takes precedence — a dead/already-implemented idea is closed, not revised.
+
+### 2026-10-23 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL explicitly records 'Fix doubled source label to match expected format' as REJECTED AS CHURN on 2026-10-23 (multiple entries), noting the fix was already implemented and the PR added a duplicate JOURNAL entry. The diff only changes len() comparisons (semantic no-ops for integers) and does not contain the claimed source label fix. Per the Constitution, churn takes precedence — a dead/already-implemented idea is closed, not revised.
