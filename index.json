@@ -86,7 +86,7 @@
  "aberystwyth": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 52.414546,
   "lon": -4.080401,
   "long": "Aberystwyth parkrun",
@@ -1049,7 +1049,7 @@
  "babbsmill": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 52.489833,
   "lon": -1.746034,
   "long": "Babbs Mill parkrun",
@@ -1253,7 +1253,7 @@
  "banstead": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 51.307648,
   "lon": -0.184225,
   "long": "Banstead Woods parkrun",
@@ -1457,7 +1457,7 @@
  "bathskyline": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 51.372899,
   "lon": -2.330376,
   "long": "Bath Skyline parkrun",
@@ -1649,7 +1649,7 @@
  "becclesquay": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 52.465352,
   "lon": 1.565277,
   "long": "Beccles Quay parkrun",
@@ -1728,7 +1728,7 @@
  "bedworth": {
   "built_by": "v0.8.4",
   "distance_m": 5204,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 52.476054,
   "lon": -1.47027,
   "long": "Bedworth parkrun",
@@ -1944,7 +1944,7 @@
  "bensyardely": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 52.375707,
   "lon": 0.291723,
   "long": "Ben\u2019s Yard parkrun, Ely",
@@ -2317,7 +2317,7 @@
  "bittesbycountrypark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 52.466983,
   "lon": -1.2654,
   "long": "Bittesby Country Park parkrun",
@@ -2870,7 +2870,7 @@
  "brandoncountrypark": {
   "built_by": "v0.8.4",
   "distance_m": 5249,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 52.436339,
   "lon": 0.625877,
   "long": "Brandon Country Park parkrun",
@@ -3001,7 +3001,7 @@
  "brickfieldspark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 51.377397,
   "lon": -2.385904,
   "long": "Brickfields Park parkrun",
@@ -3310,7 +3310,7 @@
  "brueton": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 52.406754,
   "lon": -1.764593,
   "long": "Brueton parkrun",
@@ -3789,7 +3789,7 @@
  "californiacountry": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 51.379583,
   "lon": -0.867647,
   "long": "California Country parkrun",
@@ -3911,7 +3911,7 @@
  "cannonhill": {
   "built_by": "v0.8.4",
   "distance_m": 5249,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 52.452637,
   "lon": -1.89997,
   "long": "Cannon Hill parkrun, Birmingham",
@@ -5349,7 +5349,7 @@
  "coftonpark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 52.385054,
   "lon": -1.993867,
   "long": "Cofton Park parkrun",
@@ -5879,7 +5879,7 @@
  "coventry": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 52.39172,
   "lon": -1.524026,
   "long": "Coventry parkrun",
@@ -7008,7 +7008,7 @@
  "dudley": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 52.490027,
   "lon": -2.134568,
   "long": "Dudley parkrun",
@@ -7514,7 +7514,7 @@
  "edenbrookcountry": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 51.280199,
   "lon": -0.867088,
   "long": "Edenbrook Country parkrun",
@@ -7550,7 +7550,7 @@
  "edgbastonreservoir": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 52.476722,
   "lon": -1.936437,
   "long": "Edgbaston Reservoir parkrun",
@@ -8417,7 +8417,7 @@
  "fivearches": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 51.292354,
   "lon": -2.452787,
   "long": "Five Arches parkrun",
@@ -8814,7 +8814,7 @@
  "frimleylodge": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 51.298622,
   "lon": -0.724851,
   "long": "Frimley Lodge parkrun",
@@ -9891,7 +9891,7 @@
  "greenhamcommon": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 51.378426,
   "lon": -1.292267,
   "long": "Greenham Common parkrun, Newbury",
@@ -11469,7 +11469,7 @@
  "holbrooks": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 52.439154,
   "lon": -1.509052,
   "long": "Holbrooks parkrun",
@@ -11564,7 +11564,7 @@
  "homewood": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 51.366808,
   "lon": -0.539078,
   "long": "Homewood parkrun",
@@ -12824,7 +12824,7 @@
  "kettering": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 52.384226,
   "lon": -0.710653,
   "long": "Kettering parkrun",
@@ -14458,7 +14458,7 @@
  "littleport": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 52.463048,
   "lon": 0.299342,
   "long": "Littleport parkrun",
@@ -14556,7 +14556,7 @@
  "lloyd": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 51.364807,
   "lon": -0.079973,
   "long": "Lloyd parkrun, Croydon",
@@ -15208,7 +15208,7 @@
  "maidstoneriverpark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 51.29641,
   "lon": 0.507689,
   "long": "Maidstone River Park parkrun",
@@ -15605,7 +15605,7 @@
  "marineparade": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 51.342355,
   "lon": -2.981436,
   "long": "Marine Parade parkrun",
@@ -15642,7 +15642,7 @@
  "marketharborough": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 52.474487,
   "lon": -0.924979,
   "long": "Market Harborough parkrun",
@@ -16003,7 +16003,7 @@
  "melksham": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 51.377226,
   "lon": -2.136235,
   "long": "Melksham parkrun",
@@ -17777,7 +17777,7 @@
  "nonsuch": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 51.356926,
   "lon": -0.231078,
   "long": "Nonsuch parkrun",
@@ -18198,7 +18198,7 @@
  "oaklands": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 52.466391,
   "lon": -1.818013,
   "long": "Oaklands parkrun",
@@ -20745,7 +20745,7 @@
  "quakerswalk": {
   "built_by": "v0.8.4",
   "distance_m": 4585,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 51.355501,
   "lon": -1.99217,
   "long": "Quakers Walk parkrun",
@@ -21233,7 +21233,7 @@
   "relation_m": null,
   "source": null,
   "status": "gap",
-  "trace_m": 1017
+  "trace_m": 1026
  },
  "richardsbay": {
   "built_by": "v0.6.11",
@@ -21288,7 +21288,7 @@
  "riddlesdown": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 51.318485,
   "lon": -0.079549,
   "long": "Riddlesdown parkrun",
@@ -21949,7 +21949,7 @@
  "roundshaw": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 51.352253,
   "lon": -0.11872,
   "long": "Roundshaw Downs parkrun",
@@ -22019,7 +22019,7 @@
  "rugby": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 52.37318,
   "lon": -1.238464,
   "long": "Rugby parkrun",
@@ -22330,7 +22330,7 @@
  "sandhurstmemorial": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 51.343825,
   "lon": -0.791694,
   "long": "Sandhurst Memorial parkrun",
@@ -22738,7 +22738,7 @@
  "severnvalleycountry": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 52.453316,
   "lon": -2.364842,
   "long": "Severn Valley Country parkrun",
@@ -22786,7 +22786,7 @@
  "sharphamroadplayingfields": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 51.279496,
   "lon": -2.793181,
   "long": "Sharpham Road Playing Fields parkrun",
@@ -23168,7 +23168,7 @@
  "sittingbourne": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 51.354976,
   "lon": 0.740569,
   "long": "Sittingbourne parkrun",
@@ -23611,7 +23611,7 @@
  "southwickcountrypark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 51.306461,
   "lon": -2.234092,
   "long": "Southwick Country parkrun",
@@ -23792,7 +23792,7 @@
   "lat": 50.989588,
   "lon": 5.863624,
   "long": "Stadspark parkrun, Sittard",
-  "relation_m": 1211,
+  "relation_m": null,
   "source": null,
   "status": "gap",
   "trace_m": null
@@ -25263,7 +25263,7 @@
  "theplens": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 52.446215,
   "lon": -0.81857,
   "long": "The Plens parkrun",
@@ -27961,7 +27961,7 @@
  "whitstable": {
   "built_by": "v0.8.4",
   "distance_m": 6436,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 51.365295,
   "lon": 1.041942,
   "long": "Whitstable parkrun",
@@ -28332,7 +28332,7 @@
  "woking": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 51.311708,
   "lon": -0.556204,
   "long": "Woking parkrun",
@@ -28404,7 +28404,7 @@
  "woodgatevalleycountrypark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 52.449447,
   "lon": -2.005952,
   "long": "Woodgate Valley Country Park parkrun",
@@ -28680,7 +28680,7 @@
  "wyreforest": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-19",
+  "last_tried": "2026-10-25",
   "lat": 52.365002,
   "lon": -2.369798,
   "long": "Wyre Forest parkrun",
