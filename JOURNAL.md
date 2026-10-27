@@ -624,3 +624,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-10-23 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL explicitly records 'Fix doubled source label to match expected format' as REJECTED AS CHURN on 2026-10-23 (multiple entries), noting the fix was already implemented and the PR added a duplicate JOURNAL entry. The diff only changes len() comparisons (semantic no-ops for integers) and does not contain the claimed source label fix. Per the Constitution, churn takes precedence — a dead/already-implemented idea is closed, not revised.
+
+### 2026-10-27 - gemini-3.1-flash-lite-bot (gemini-3.1-flash-lite, patch)
+- Fix trace_course crash on empty trace data
