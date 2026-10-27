@@ -1385,7 +1385,7 @@
  "barryisland": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-27",
   "lat": 51.390202,
   "lon": -3.271371,
   "long": "Barry Island parkrun",
@@ -2052,7 +2052,7 @@
  "bethlemroyalhospital": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-27",
   "lat": 51.385332,
   "lon": -0.029969,
   "long": "Bethlem Royal Hospital parkrun",
@@ -2474,7 +2474,7 @@
  "bloniekrotoszyn": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 51.6993,
   "lon": 17.452954,
   "long": "parkrun B\u0142onie, Krotoszyn",
@@ -2774,7 +2774,7 @@
  "bracknell": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-27",
   "lat": 51.390248,
   "lon": -0.776844,
   "long": "Bracknell parkrun",
@@ -3216,7 +3216,7 @@
  "bromley": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-27",
   "lat": 51.386539,
   "lon": 0.022874,
   "long": "Bromley parkrun",
@@ -3657,7 +3657,7 @@
  "bushy": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-27",
   "lat": 51.410992,
   "lon": -0.335791,
   "long": "Bushy parkrun",
@@ -5509,7 +5509,7 @@
  "comopark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 44.983345,
   "lon": -93.143248,
   "long": "Como Park parkrun",
@@ -5819,7 +5819,7 @@
  "cosmestonlakes": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-27",
   "lat": 51.418047,
   "lon": -3.185615,
   "long": "Cosmeston Lakes parkrun",
@@ -5867,7 +5867,7 @@
  "courthouselake": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 44.786109,
   "lon": -93.592878,
   "long": "Courthouse Lake parkrun",
@@ -6082,7 +6082,7 @@
  "crystalpalace": {
   "built_by": "v0.8.4",
   "distance_m": 5382,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-27",
   "lat": 51.419846,
   "lon": -0.065703,
   "long": "Crystal Palace parkrun",
@@ -6177,7 +6177,7 @@
  "cyclopark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-27",
   "lat": 51.419922,
   "lon": 0.352561,
   "long": "Cyclopark parkrun",
@@ -6576,7 +6576,7 @@
  "desmoinescreek": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 47.40419,
   "lon": -122.329949,
   "long": "Des Moines Creek parkrun",
@@ -6864,7 +6864,7 @@
  "doverwaterfront": {
   "built_by": "v0.8.4",
   "distance_m": 4769,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-27",
   "lat": 51.119994,
   "lon": 1.313027,
   "long": "Dover Waterfront parkrun",
@@ -7261,7 +7261,7 @@
  "eagan": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 44.797663,
   "lon": -93.175378,
   "long": "Eagan parkrun",
@@ -7346,7 +7346,7 @@
  "easterntrailbiddeford": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 43.476602,
   "lon": -70.487389,
   "long": "Eastern Trail parkrun, Biddeford",
@@ -8682,7 +8682,7 @@
  "fortward": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 47.580654,
   "lon": -122.525322,
   "long": "Fort Ward parkrun",
@@ -9400,7 +9400,7 @@
  "glogow": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 51.656428,
   "lon": 16.089986,
   "long": "parkrun G\u0142og\u00f3w",
@@ -9628,7 +9628,7 @@
  "gostyn": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 51.884368,
   "lon": 16.992853,
   "long": "parkrun Gosty\u0144",
@@ -9796,7 +9796,7 @@
  "greatlines": {
   "built_by": "v0.8.4",
   "distance_m": 5422,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-27",
   "lat": 51.388527,
   "lon": 0.541334,
   "long": "Great Lines parkrun, Medway",
@@ -10413,7 +10413,7 @@
  "hamletpark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 44.821408,
   "lon": -92.957775,
   "long": "Hamlet Park parkrun",
@@ -10855,7 +10855,7 @@
  "hazelwood": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-27",
   "lat": 51.405783,
   "lon": -0.421045,
   "long": "Hazelwood parkrun",
@@ -11433,7 +11433,7 @@
  "hogmoorinclosure": {
   "built_by": "v0.8.4",
   "distance_m": 5506,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-27",
   "lat": 51.111681,
   "lon": -0.875934,
   "long": "Hogmoor Inclosure parkrun",
@@ -11685,7 +11685,7 @@
  "howardteminlakeshorepath": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 43.076831,
   "lon": -89.398831,
   "long": "Howard Temin Lakeshore Path parkrun",
@@ -12453,7 +12453,7 @@
  "kalisz": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 51.75628,
   "lon": 18.100242,
   "long": "parkrun Kalisz",
@@ -13656,7 +13656,7 @@
  "lakepacawa": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 44.448915,
   "lon": -89.524757,
   "long": "Lake Pacawa parkrun",
@@ -13931,7 +13931,7 @@
  "laslagiewnicki": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 51.824704,
   "lon": 19.472638,
   "long": "parkrun Las \u0141agiewnicki",
@@ -14147,7 +14147,7 @@
  "leszno": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 51.851061,
   "lon": 16.619139,
   "long": "parkrun Leszno",
@@ -14655,7 +14655,7 @@
  "lodz": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 51.752244,
   "lon": 19.441498,
   "long": "parkrun \u0141\u00f3d\u017a",
@@ -15557,7 +15557,7 @@
  "margate": {
   "built_by": "v0.8.4",
   "distance_m": 4679,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-27",
   "lat": 51.39207,
   "lon": 1.403997,
   "long": "Margate parkrun",
@@ -15774,7 +15774,7 @@
  "marysyoung": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 45.379698,
   "lon": -122.627926,
   "long": "Mary S. Young parkrun",
@@ -16136,7 +16136,7 @@
  "merrymeeting": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 43.921805,
   "lon": -69.954915,
   "long": "Merrymeeting parkrun",
@@ -16749,7 +16749,7 @@
  "morden": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-27",
   "lat": 51.392759,
   "lon": -0.208072,
   "long": "Morden parkrun",
@@ -17934,7 +17934,7 @@
  "northfarm": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-27",
   "lat": 50.885114,
   "lon": -0.408157,
   "long": "North Farm parkrun",
@@ -19685,7 +19685,7 @@
  "perrigo": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 47.684137,
   "lon": -122.080892,
   "long": "Perrigo parkrun",
@@ -19890,7 +19890,7 @@
  "pinepark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 43.713809,
   "lon": -72.286019,
   "long": "Pine Park parkrun",
@@ -21055,7 +21055,7 @@
  "redmondcentralconnectortrail": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 47.673754,
   "lon": -122.127259,
   "long": "Redmond Central Connector Trail parkrun",
@@ -21153,7 +21153,7 @@
  "renton": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 47.480273,
   "lon": -122.1992,
   "long": "Renton parkrun",
@@ -21226,7 +21226,7 @@
  "rhodes": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-26",
+  "last_tried": "2026-10-27",
   "lat": -33.847462,
   "lon": 151.081803,
   "long": "Rhodes parkrun",
@@ -21468,7 +21468,7 @@
  "riversidepark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 43.831259,
   "lon": -111.786349,
   "long": "Riverside Park parkrun",
@@ -21600,7 +21600,7 @@
  "rockcreektrail": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 45.557118,
   "lon": -122.862376,
   "long": "Rock Creek Trail parkrun",
@@ -22282,7 +22282,7 @@
  "salmoncreektrail": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 45.708036,
   "lon": -122.663147,
   "long": "Salmon Creek Trail parkrun",
@@ -22798,7 +22798,7 @@
  "shawcherryhillfarm": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 43.690214,
   "lon": -70.39435,
   "long": "Shaw Cherry Hill Farm parkrun",
@@ -23264,7 +23264,7 @@
  "skipton": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-26",
+  "last_tried": "2026-10-27",
   "lat": 53.961331,
   "lon": -2.030004,
   "long": "Skipton parkrun",
@@ -23516,7 +23516,7 @@
  "southnorwood": {
   "built_by": "v0.8.4",
   "distance_m": 5249,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-27",
   "lat": 51.396111,
   "lon": -0.059908,
   "long": "South Norwood parkrun",
@@ -24100,7 +24100,7 @@
  "stmatthewsfield": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-27",
   "lat": 51.123284,
   "lon": -3.016369,
   "long": "St Matthew\u2019s Field parkrun",
@@ -25588,7 +25588,7 @@
  "tollgatefarmparkbaqwab": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 47.50298,
   "lon": -121.799587,
   "long": "Tollgate Farm Park parkrun, baq\u02b7ab",
@@ -25754,7 +25754,7 @@
  "toyen": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-26",
+  "last_tried": "2026-10-27",
   "lat": 59.919427,
   "lon": 10.77791,
   "long": "T\u00f8yen parkrun",
@@ -26704,7 +26704,7 @@
  "victoriaparknewbury": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-27",
   "lat": 51.403431,
   "lon": -1.320524,
   "long": "Victoria Park parkrun, Newbury",
@@ -28212,7 +28212,7 @@
  "winthroptrailhead": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 48.468375,
   "lon": -120.182261,
   "long": "Winthrop Trailhead parkrun",
@@ -29114,7 +29114,7 @@
  "zielonagora": {
   "built_by": "v0.8.4",
   "distance_m": 6197,
-  "last_tried": "2026-10-20",
+  "last_tried": "2026-10-27",
   "lat": 51.954022,
   "lon": 15.532438,
   "long": "parkrun Zielona G\u00f3ra",
