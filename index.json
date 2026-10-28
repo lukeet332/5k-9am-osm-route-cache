@@ -328,7 +328,7 @@
  "aliceholt": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-22",
+  "last_tried": "2026-10-28",
   "lat": 51.16858,
   "lon": -0.836903,
   "long": "Alice Holt parkrun",
@@ -773,7 +773,7 @@
  "ashford": {
   "built_by": "v0.8.4",
   "distance_m": 6369,
-  "last_tried": "2026-10-22",
+  "last_tried": "2026-10-28",
   "lat": 51.14347,
   "lon": 0.864218,
   "long": "Ashford parkrun",
@@ -1313,7 +1313,7 @@
  "barking": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-22",
+  "last_tried": "2026-10-28",
   "lat": 51.545894,
   "lon": 0.087312,
   "long": "Barking parkrun",
@@ -1932,7 +1932,7 @@
  "benguelacove": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-28",
   "lat": -34.346162,
   "lon": 19.132696,
   "long": "Benguela Cove parkrun",
@@ -2064,7 +2064,7 @@
  "bettysbay": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-28",
   "lat": -34.351851,
   "lon": 18.926615,
   "long": "Betty\u2019s Bay parkrun",
@@ -2353,7 +2353,7 @@
  "blackpark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-22",
+  "last_tried": "2026-10-28",
   "lat": 51.540329,
   "lon": -0.5476,
   "long": "Black Park parkrun",
@@ -2414,7 +2414,7 @@
  "blaisecastle": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-22",
+  "last_tried": "2026-10-28",
   "lat": 51.505672,
   "lon": -2.632932,
   "long": "Blaise Castle parkrun",
@@ -2582,7 +2582,7 @@
  "bongamereserve": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-28",
   "lat": -34.18203,
   "lon": 21.752808,
   "long": "Bon Game Reserve parkrun",
@@ -3765,7 +3765,7 @@
  "caledongolfcourse": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-28",
   "lat": -34.235934,
   "lon": 19.433708,
   "long": "Caledon Golf Course parkrun",
@@ -4032,7 +4032,7 @@
  "cardiff": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-22",
+  "last_tried": "2026-10-28",
   "lat": 51.49736,
   "lon": -3.207107,
   "long": "Cardiff parkrun",
@@ -4774,7 +4774,7 @@
  "chippingsodbury": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-22",
+  "last_tried": "2026-10-28",
   "lat": 51.544366,
   "lon": -2.397165,
   "long": "Chipping Sodbury parkrun",
@@ -5580,7 +5580,7 @@
  "constantiagreenbelt": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-28",
   "lat": -34.008575,
   "lon": 18.440688,
   "long": "Constantia Greenbelt parkrun",
@@ -5939,7 +5939,7 @@
  "cranleigh": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-22",
+  "last_tried": "2026-10-28",
   "lat": 51.13819,
   "lon": -0.49151,
   "long": "Cranleigh parkrun",
@@ -6117,7 +6117,7 @@
  "curromosselbayschool": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-28",
   "lat": -34.192672,
   "lon": 22.110286,
   "long": "Curro Mossel Bay School parkrun",
@@ -7358,7 +7358,7 @@
  "eastgrinstead": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-22",
+  "last_tried": "2026-10-28",
   "lat": 51.129008,
   "lon": 0.001373,
   "long": "East Grinstead parkrun",
@@ -8393,7 +8393,7 @@
  "fishhoek": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-28",
   "lat": -34.120577,
   "lon": 18.398581,
   "long": "Fish Hoek parkrun",
@@ -9975,7 +9975,7 @@
  "greenwichpeninsula": {
   "built_by": "v0.8.4",
   "distance_m": 6271,
-  "last_tried": "2026-10-22",
+  "last_tried": "2026-10-28",
   "lat": 51.501803,
   "lon": 0.007859,
   "long": "Greenwich Peninsula parkrun",
@@ -10184,7 +10184,7 @@
  "gunnersbury": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-22",
+  "last_tried": "2026-10-28",
   "lat": 51.499405,
   "lon": -0.292253,
   "long": "Gunnersbury parkrun",
@@ -10256,7 +10256,7 @@
  "hadleigh": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-22",
+  "last_tried": "2026-10-28",
   "lat": 51.549769,
   "lon": 0.59606,
   "long": "Hadleigh parkrun, Essex",
@@ -10533,7 +10533,7 @@
  "harkerville": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-28",
   "lat": -34.038421,
   "lon": 23.24131,
   "long": "Harkerville parkrun",
@@ -10641,7 +10641,7 @@
  "hartenboschvillage": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-28",
   "lat": -34.112649,
   "lon": 22.106174,
   "long": "Hart & Bosch Village parkrun",
@@ -10987,7 +10987,7 @@
  "henleyonthames": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-22",
+  "last_tried": "2026-10-28",
   "lat": 51.531978,
   "lon": -0.919288,
   "long": "Henley-on-Thames parkrun",
@@ -11576,7 +11576,7 @@
  "hopkinsland": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-28",
   "lat": -34.392084,
   "lon": 20.838376,
   "long": "Hopkins Land parkrun",
@@ -11660,7 +11660,7 @@
  "houtbay": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-28",
   "lat": -34.034137,
   "lon": 18.351688,
   "long": "Hout Bay parkrun",
@@ -11879,7 +11879,7 @@
  "ingrebournehill": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-22",
+  "last_tried": "2026-10-28",
   "lat": 51.527042,
   "lon": 0.194266,
   "long": "Ingrebourne Hill parkrun",
@@ -13236,7 +13236,7 @@
  "knysna": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-28",
   "lat": -34.045911,
   "lon": 23.06934,
   "long": "Knysna parkrun",
@@ -13847,7 +13847,7 @@
  "larkspurlanding": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-28",
   "lat": 37.945546,
   "lon": -122.50987,
   "long": "Larkspur Landing parkrun",
@@ -14544,7 +14544,7 @@
  "llanishenpark": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-22",
+  "last_tried": "2026-10-28",
   "lat": 51.529533,
   "lon": -3.196302,
   "long": "Llanishen Park parkrun",
@@ -15196,7 +15196,7 @@
  "maidenhead": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-22",
+  "last_tried": "2026-10-28",
   "lat": 51.51095,
   "lon": -0.712135,
   "long": "Maidenhead parkrun",
@@ -16088,7 +16088,7 @@
  "mentorscountryestate": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-28",
   "lat": -34.017025,
   "lon": 24.892898,
   "long": "Mentors Country Estate parkrun",
@@ -16269,7 +16269,7 @@
  "mileend": {
   "built_by": "v0.8.4",
   "distance_m": 5638,
-  "last_tried": "2026-10-22",
+  "last_tried": "2026-10-28",
   "lat": 51.518169,
   "lon": -0.033946,
   "long": "Mile End parkrun",
@@ -16449,7 +16449,7 @@
  "mitchellsplain": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-28",
   "lat": -34.043918,
   "lon": 18.597581,
   "long": "Mitchells Plain parkrun",
@@ -19529,7 +19529,7 @@
  "pehobiebeach": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-28",
   "lat": -33.980149,
   "lon": 25.657368,
   "long": "PE Hobie Beach parkrun",
@@ -21226,7 +21226,7 @@
  "rhodes": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-27",
+  "last_tried": "2026-10-28",
   "lat": -33.847462,
   "lon": 151.081803,
   "long": "Rhodes parkrun",
@@ -22439,7 +22439,7 @@
  "sardiniabay": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-28",
   "lat": -34.012166,
   "lon": 25.495691,
   "long": "Sardinia Bay parkrun",
@@ -22882,7 +22882,7 @@
  "sheptonmallet": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-22",
+  "last_tried": "2026-10-28",
   "lat": 51.187513,
   "lon": -2.542461,
   "long": "Shepton Mallet parkrun",
@@ -23264,7 +23264,7 @@
  "skipton": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-27",
+  "last_tried": "2026-10-28",
   "lat": 53.961331,
   "lon": -2.030004,
   "long": "Skipton parkrun",
@@ -23456,7 +23456,7 @@
  "southend": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-22",
+  "last_tried": "2026-10-28",
   "lat": 51.523431,
   "lon": 0.787526,
   "long": "Southend parkrun",
@@ -24016,7 +24016,7 @@
  "stfrancis": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-28",
   "lat": -34.162285,
   "lon": 24.815401,
   "long": "St Francis parkrun",
@@ -24064,7 +24064,7 @@
  "stilbaaiwestbeach": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-28",
   "lat": -34.383798,
   "lon": 21.422696,
   "long": "Stilbaai West Beach parkrun",
@@ -24112,7 +24112,7 @@
  "stockleycountry": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-22",
+  "last_tried": "2026-10-28",
   "lat": 51.51492,
   "lon": -0.458739,
   "long": "Stockley Country parkrun",
@@ -24302,7 +24302,7 @@
  "street": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-22",
+  "last_tried": "2026-10-28",
   "lat": 51.129515,
   "lon": -2.729089,
   "long": "Street parkrun",
@@ -24605,7 +24605,7 @@
  "swellendam": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-28",
   "lat": -34.00627,
   "lon": 20.439211,
   "long": "Swellendam parkrun",
@@ -25384,7 +25384,7 @@
  "thorneybaybeach": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-22",
+  "last_tried": "2026-10-28",
   "lat": 51.513523,
   "lon": 0.586015,
   "long": "Thorney Bay Beach parkrun",
@@ -25444,7 +25444,7 @@
  "threebrooks": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-22",
+  "last_tried": "2026-10-28",
   "lat": 51.531366,
   "lon": -2.53918,
   "long": "Three Brooks parkrun",
@@ -25612,7 +25612,7 @@
  "tonbridge": {
   "built_by": "v0.8.4",
   "distance_m": 3380,
-  "last_tried": "2026-10-22",
+  "last_tried": "2026-10-28",
   "lat": 51.197605,
   "lon": 0.270174,
   "long": "Tonbridge parkrun",
@@ -25754,7 +25754,7 @@
  "toyen": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-27",
+  "last_tried": "2026-10-28",
   "lat": 59.919427,
   "lon": 10.77791,
   "long": "T\u00f8yen parkrun",
@@ -28476,7 +28476,7 @@
  "woolacombedunes": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-22",
+  "last_tried": "2026-10-28",
   "lat": 51.159264,
   "lon": -4.209982,
   "long": "Woolacombe Dunes parkrun",
@@ -28548,7 +28548,7 @@
  "wormwoodscrubs": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-22",
+  "last_tried": "2026-10-28",
   "lat": 51.520412,
   "lon": -0.238523,
   "long": "Wormwood Scrubs parkrun",
@@ -29042,7 +29042,7 @@
  "zandvlei": {
   "built_by": "v0.8.4",
   "distance_m": null,
-  "last_tried": "2026-10-21",
+  "last_tried": "2026-10-28",
   "lat": -34.098764,
   "lon": 18.469422,
   "long": "Zandvlei parkrun",
