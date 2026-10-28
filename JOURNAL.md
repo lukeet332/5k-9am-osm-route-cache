@@ -627,3 +627,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-10-27 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL explicitly records 'Fix trace_course crash on empty trace data' as REJECTED AS CHURN on 2026-10-18, 2026-10-22, and 2026-10-23, noting the fix was already implemented and the code change (removing a comment from `if not pts:`) is a semantic no-op. This PR re-proposes the exact same fix with a duplicate JOURNAL entry and no functional improvement. Per the Constitution, churn takes precedence — a dead/already-implemented idea is closed, not revised.
+
+### 2026-10-28 - gemini-3.1-flash-lite-bot (gemini-3.1-flash-lite, minor)
+- Generalise N-lap logic to support N=3..6 for non-success events
