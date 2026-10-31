@@ -1035,9 +1035,9 @@
   "trace_m": null
  },
  "avondaleuniversitycollege": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.088354,
   "lon": 151.463247,
   "long": "Avondale University College parkrun",
@@ -1491,9 +1491,9 @@
   "trace_m": null
  },
  "bathurst": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.414176,
   "lon": 149.586917,
   "long": "Bathurst parkrun",
@@ -2351,9 +2351,9 @@
   "trace_m": null
  },
  "blackbutt": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -32.932526,
   "lon": 151.699755,
   "long": "Blackbutt parkrun",
@@ -3476,9 +3476,9 @@
   "trace_m": null
  },
  "bunbury": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.342966,
   "lon": 115.633228,
   "long": "Bunbury parkrun",
@@ -4375,9 +4375,9 @@
   "trace_m": null
  },
  "centennialparkdunsborough": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.615733,
   "lon": 115.112646,
   "long": "Centennial Park parkrun, Dunsborough",
@@ -5483,9 +5483,9 @@
   "trace_m": null
  },
  "collierivertrail": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.357664,
   "lon": 116.156872,
   "long": "Collie River Trail parkrun",
@@ -5925,9 +5925,9 @@
   "trace_m": null
  },
  "cowra": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.812714,
   "lon": 148.703733,
   "long": "Cowra parkrun",
@@ -6127,9 +6127,9 @@
   "trace_m": null
  },
  "curlcurl": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.766483,
   "lon": 151.282339,
   "long": "Curl Curl parkrun",
@@ -7440,9 +7440,9 @@
   "trace_m": null
  },
  "eastrichmond": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.604814,
   "lon": 150.774321,
   "long": "East Richmond parkrun",
@@ -7716,9 +7716,9 @@
   "trace_m": null
  },
  "elarariparianparklands": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.693933,
   "lon": 150.803885,
   "long": "Elara Riparian Parklands parkrun",
@@ -8991,9 +8991,9 @@
   "trace_m": null
  },
  "galston": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.642734,
   "lon": 151.043648,
   "long": "Galston parkrun",
@@ -9182,9 +9182,9 @@
   "trace_m": null
  },
  "geographebay": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.642342,
   "lon": 115.354374,
   "long": "Geographe Bay parkrun",
@@ -12116,9 +12116,9 @@
   "trace_m": null
  },
  "jamestowngolfcourse": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.228546,
   "lon": 138.561957,
   "long": "Jamestown Golf Course parkrun",
@@ -13666,9 +13666,9 @@
   "trace_m": null
  },
  "lakemac": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -32.972596,
   "lon": 151.612487,
   "long": "Lake Mac parkrun",
@@ -13714,9 +13714,9 @@
   "trace_m": null
  },
  "lakeview": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.030093,
   "lon": 151.642302,
   "long": "Lakeview parkrun",
@@ -14037,9 +14037,9 @@
   "trace_m": null
  },
  "lawson": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.713629,
   "lon": 150.426901,
   "long": "Lawson parkrun",
@@ -14468,9 +14468,9 @@
   "trace_m": null
  },
  "lithgow": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.494173,
   "lon": 150.151201,
   "long": "Lithgow parkrun",
@@ -15194,9 +15194,9 @@
   "trace_m": null
  },
  "macquarieuniversity": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.774425,
   "lon": 151.114271,
   "long": "Macquarie University parkrun",
@@ -16062,9 +16062,9 @@
   "trace_m": 4937
  },
  "memorialpark": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.179621,
   "lon": 138.005566,
   "long": "Memorial Park parkrun",
@@ -16855,9 +16855,9 @@
   "trace_m": null
  },
  "mosman": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.806252,
   "lon": 151.245989,
   "long": "Mosman parkrun",
@@ -17058,9 +17058,9 @@
   "trace_m": null
  },
  "mtpenang": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.426328,
   "lon": 151.293178,
   "long": "Mt Penang parkrun",
@@ -17500,9 +17500,9 @@
   "trace_m": null
  },
  "nepeanriver": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.761704,
   "lon": 150.664414,
   "long": "Nepean River parkrun",
@@ -17679,9 +17679,9 @@
   "trace_m": null
  },
  "newy": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -32.914566,
   "lon": 151.76144,
   "long": "Newy parkrun",
@@ -18016,9 +18016,9 @@
   "trace_m": null
  },
  "northparkesoval": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.126723,
   "lon": 148.18147,
   "long": "Northparkes Oval parkrun",
@@ -18052,9 +18052,9 @@
   "trace_m": null
  },
  "northsydney": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.830396,
   "lon": 151.211772,
   "long": "North Sydney parkrun",
@@ -18521,9 +18521,9 @@
   "trace_m": null
  },
  "oldgolfcoursenarrogin": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -32.925766,
   "lon": 117.17514,
   "long": "Old Golf Course parkrun, Narrogin",
@@ -18701,9 +18701,9 @@
   "trace_m": null
  },
  "orange": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.325825,
   "lon": 149.089749,
   "long": "Orange parkrun",
@@ -19457,9 +19457,9 @@
   "trace_m": null
  },
  "parramatta": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.820838,
   "lon": 151.063534,
   "long": "Parramatta parkrun",
@@ -19671,9 +19671,9 @@
   "trace_m": null
  },
  "penrithlakes": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.725922,
   "lon": 150.685741,
   "long": "Penrith Lakes parkrun",
@@ -19960,9 +19960,9 @@
   "trace_m": null
  },
  "pioneerdairy": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.29805,
   "lon": 151.427968,
   "long": "Pioneer Dairy parkrun",
@@ -20394,9 +20394,9 @@
   "trace_m": null
  },
  "portbroughton": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.598731,
   "lon": 137.929613,
   "long": "Port Broughton parkrun",
@@ -21358,9 +21358,9 @@
   "trace_m": null
  },
  "ridleyplaceforeshore": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.275814,
   "lon": 115.714384,
   "long": "Ridley Place Foreshore parkrun",
@@ -21826,9 +21826,9 @@
   "trace_m": null
  },
  "rootyhill": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.783724,
   "lon": 150.868394,
   "long": "Rooty Hill parkrun",
@@ -22019,9 +22019,9 @@
   "trace_m": null
  },
  "rousehill": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.679301,
   "lon": 150.911109,
   "long": "Rouse Hill parkrun",
@@ -22461,9 +22461,9 @@
   "trace_m": null
  },
  "sanremo": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.229509,
   "lon": 151.530089,
   "long": "San Remo parkrun",
@@ -24182,9 +24182,9 @@
   "trace_m": null
  },
  "stockton": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -32.919273,
   "lon": 151.78442,
   "long": "Stockton parkrun",
@@ -25165,9 +25165,9 @@
   "trace_m": null
  },
  "thebeaches": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -32.946293,
   "lon": 151.760065,
   "long": "The Beaches parkrun",
@@ -25201,9 +25201,9 @@
   "trace_m": null
  },
  "theentrance": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.338401,
   "lon": 151.493202,
   "long": "The Entrance parkrun",
@@ -25333,9 +25333,9 @@
   "trace_m": null
  },
  "theponds": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.705952,
   "lon": 150.909187,
   "long": "The Ponds parkrun",
@@ -27529,9 +27529,9 @@
   "trace_m": null
  },
  "wentworthcommon": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.837954,
   "lon": 151.075107,
   "long": "Wentworth Common parkrun",
@@ -27577,9 +27577,9 @@
   "trace_m": null
  },
  "werringtonlakesreserve": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.755343,
   "lon": 150.738658,
   "long": "Werrington Lakes Reserve parkrun",
@@ -27841,9 +27841,9 @@
   "trace_m": null
  },
  "whalanreserve": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.75943,
   "lon": 150.79587,
   "long": "Whalan Reserve parkrun",
@@ -28031,9 +28031,9 @@
   "trace_m": 3218
  },
  "whyallaforeshore": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.040603,
   "lon": 137.585902,
   "long": "Whyalla Foreshore parkrun",
@@ -28079,9 +28079,9 @@
   "trace_m": null
  },
  "wildflower": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.705633,
   "lon": 151.177321,
   "long": "Wildflower parkrun",
@@ -28103,9 +28103,9 @@
   "trace_m": null
  },
  "willoughby": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.811705,
   "lon": 151.193171,
   "long": "Willoughby parkrun",
@@ -28654,9 +28654,9 @@
   "trace_m": null
  },
  "woywoy": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.484787,
   "lon": 151.336038,
   "long": "Woy Woy parkrun",
@@ -28847,9 +28847,9 @@
   "trace_m": null
  },
  "yeldulknieweirtrail": {
-  "built_by": "v0.8.4",
+  "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-24",
+  "last_tried": "2026-10-31",
   "lat": -33.70206,
   "lon": 136.50305,
   "long": "Yeldulknie Weir Trail parkrun",
