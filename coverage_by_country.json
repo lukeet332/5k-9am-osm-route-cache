@@ -1,5 +1,5 @@
 {
- "world_total": 2420,
+ "world_total": 2423,
  "world_mapped": 166,
  "countries": [
   {
@@ -35,7 +35,7 @@
   {
    "code": 98,
    "name": "United States",
-   "total": 103,
+   "total": 104,
    "mapped": 0
   },
   {
@@ -53,7 +53,7 @@
   {
    "code": 14,
    "name": "Canada",
-   "total": 68,
+   "total": 69,
    "mapped": 0
   },
   {
@@ -99,14 +99,14 @@
    "mapped": 0
   },
   {
-   "code": 82,
-   "name": "Singapore",
-   "total": 6,
+   "code": 4,
+   "name": "Austria",
+   "total": 7,
    "mapped": 0
   },
   {
-   "code": 4,
-   "name": "Austria",
+   "code": 82,
+   "name": "Singapore",
    "total": 6,
    "mapped": 0
   },
