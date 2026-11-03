@@ -359,7 +359,7 @@ def build_one(ev):
 
     # generalise to best-integer-N lap (N=1..6)
     for src_type, data, is_trace in [("osm_9am_trace", tr, True), ("osm_relation", rel, False)]:
-        if data and SANE_LO <= (data[0] if is_trace else data[1]) <= SANE_HI:
+        if data and (data[0] if is_trace else data[1]) and SANE_LO <= (data[0] if is_trace else data[1]) <= SANE_HI:
             val = data[0] if is_trace else data[1]
             n = best_lap_n(val)
             n_len = n * val
