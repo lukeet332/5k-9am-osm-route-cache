@@ -636,3 +636,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-10-29 - REJECTED AS CHURN (do NOT re-propose)
 - This PR re-proposes 'Fix trace_course crash on empty trace data' which the JOURNAL records as REJECTED AS CHURN on 2026-10-18, 2026-10-22 (multiple), 2026-10-23 (multiple), 2026-10-27, and 2026-10-29. The diff only removes comments (a semantic no-op with no functional improvement) and the fix was already implemented on 2026-10-18. Per the Constitution, churn takes precedence — a dead/already-implemented idea is closed, not revised.
+
+### 2026-11-03 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL already records 'Fix build_one crash on missing relation/trace data' as implemented on 2026-11-03 by gemini-3.1-flash-lite-bot. This PR re-proposes the exact same fix with a duplicate JOURNAL entry and no functional improvement. Per the Constitution, churn takes precedence — a dead/already-implemented idea is closed, not revised.
