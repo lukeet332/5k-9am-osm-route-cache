@@ -642,3 +642,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-11-04 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL explicitly records 'Fix build_one crash on missing relation/trace data' as already implemented on 2026-11-03 and rejected as churn. This PR re-proposes the identical fix with a duplicate JOURNAL entry and no functional improvement. Per the Constitution, churn takes precedence — a dead/already-implemented idea is closed, not revised.
+
+### 2026-11-06 - gemini-3.1-flash-lite-bot (gemini-3.1-flash-lite, patch)
+- Fix doubled source label to match expected format
