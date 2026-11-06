@@ -26,7 +26,7 @@
  "abbotswood": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 50.844164,
   "lon": 0.211797,
   "long": "Abbot\u2019s Wood parkrun",
@@ -62,7 +62,7 @@
  "aberdeen": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 57.173898,
   "lon": -2.086256,
   "long": "Aberdeen parkrun",
@@ -521,7 +521,7 @@
  "anagachwoods": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 57.327939,
   "lon": -3.602646,
   "long": "Anagach Woods parkrun",
@@ -1013,7 +1013,7 @@
  "aviemore": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 57.205275,
   "lon": -3.818635,
   "long": "Aviemore parkrun",
@@ -1717,7 +1717,7 @@
  "bedford": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 52.148125,
   "lon": -0.459366,
   "long": "Bedford parkrun",
@@ -1824,7 +1824,7 @@
  "belladrum": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 57.439282,
   "lon": -4.46818,
   "long": "Belladrum parkrun",
@@ -2100,7 +2100,7 @@
  "bevendeandown": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 50.844709,
   "lon": -0.107027,
   "long": "Bevendean Down parkrun",
@@ -2450,7 +2450,7 @@
  "blandford": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 50.863122,
   "lon": -2.16627,
   "long": "Blandford parkrun",
@@ -3001,7 +3001,7 @@
  "bressay": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 60.158081,
   "lon": -1.119683,
   "long": "Bressay parkrun",
@@ -3073,7 +3073,7 @@
  "brighton": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 50.84214,
   "lon": -0.172498,
   "long": "Brighton & Hove parkrun",
@@ -3109,7 +3109,7 @@
  "brimstage": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 53.33616,
   "lon": -3.043234,
   "long": "Brimstage parkrun",
@@ -3193,7 +3193,7 @@
  "brockenhurst": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 50.80824,
   "lon": -1.642299,
   "long": "Brockenhurst parkrun",
@@ -4320,7 +4320,7 @@
  "castlewoods": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 57.076082,
   "lon": -2.784634,
   "long": "Castle Woods parkrun",
@@ -4726,7 +4726,7 @@
  "chichester": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 50.846182,
   "lon": -0.777535,
   "long": "Chichester parkrun",
@@ -5987,7 +5987,7 @@
  "crathescastle": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 57.061178,
   "lon": -2.440954,
   "long": "Crathes Castle parkrun",
@@ -6924,7 +6924,7 @@
  "downslinkshorehambysea": {
   "built_by": "v0.9.0",
   "distance_m": 5893,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 50.844722,
   "lon": -0.286738,
   "long": "Downs Link parkrun, Shoreham-by-Sea",
@@ -7334,7 +7334,7 @@
  "eastbrighton": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 50.818691,
   "lon": -0.099373,
   "long": "East Brighton parkrun",
@@ -7790,7 +7790,7 @@
  "elgin": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 57.653393,
   "lon": -3.313072,
   "long": "Elgin parkrun",
@@ -7838,7 +7838,7 @@
  "ellon": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 57.359262,
   "lon": -2.056968,
   "long": "Ellon parkrun",
@@ -8211,7 +8211,7 @@
  "fareham": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 50.848448,
   "lon": -1.167385,
   "long": "Fareham parkrun",
@@ -8249,7 +8249,7 @@
  "faskallyforest": {
   "built_by": "v0.9.0",
   "distance_m": 4799,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 56.7118,
   "lon": -3.767296,
   "long": "Faskally Forest parkrun",
@@ -8284,7 +8284,7 @@
  "feldyroofitnesstrail": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 56.622075,
   "lon": -3.875777,
   "long": "FeldyRoo Fitness Trail parkrun",
@@ -8682,7 +8682,7 @@
  "forfarloch": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 56.642663,
   "lon": -2.908213,
   "long": "Forfar Loch parkrun",
@@ -8754,7 +8754,7 @@
  "fortwilliam": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 56.851484,
   "lon": -4.999161,
   "long": "Fort William parkrun",
@@ -9832,7 +9832,7 @@
  "greatdenham": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 52.121602,
   "lon": -0.509062,
   "long": "Great Denham parkrun",
@@ -9879,7 +9879,7 @@
  "greatsalterns": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 50.809385,
   "lon": -1.046606,
   "long": "Great Salterns parkrun",
@@ -10763,7 +10763,7 @@
  "hastings": {
   "built_by": "v0.9.0",
   "distance_m": 4706,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 50.850291,
   "lon": 0.539739,
   "long": "Hastings parkrun",
@@ -10928,7 +10928,7 @@
  "hazlehead": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 57.141371,
   "lon": -2.175647,
   "long": "Hazlehead parkrun, Aberdeen",
@@ -13202,7 +13202,7 @@
  "kirkwall": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 58.982282,
   "lon": -2.948069,
   "long": "Kirkwall parkrun",
@@ -13837,7 +13837,7 @@
  "lancingbeachgreen": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 50.820591,
   "lon": -0.323792,
   "long": "Lancing Beach Green parkrun",
@@ -14531,7 +14531,7 @@
  "littlehamptonprom": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 50.802284,
   "lon": -0.541939,
   "long": "Littlehampton Prom parkrun",
@@ -14873,7 +14873,7 @@
  "lostshoresurfresort": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 55.920006,
   "lon": -3.397714,
   "long": "Lost Shore Surf Resort parkrun",
@@ -16738,7 +16738,7 @@
  "montrose": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 56.726297,
   "lon": -2.455223,
   "long": "Montrose parkrun",
@@ -16798,7 +16798,7 @@
  "moorsvalley": {
   "built_by": "v0.9.0",
   "distance_m": 5469,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 50.85124,
   "lon": -1.849419,
   "long": "Moors Valley parkrun",
@@ -17349,7 +17349,7 @@
  "nairnlinks": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 57.589215,
   "lon": -3.871407,
   "long": "Nairn Links parkrun",
@@ -17563,7 +17563,7 @@
  "netleyabbey": {
   "built_by": "v0.9.0",
   "distance_m": 5715,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 50.865345,
   "lon": -1.334453,
   "long": "Netley Abbey parkrun",
@@ -17922,7 +17922,7 @@
  "norfolkshowgroundtrail": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 52.651749,
   "lon": 1.169303,
   "long": "Norfolk Showground Trail parkrun",
@@ -20577,7 +20577,7 @@
  "portsmouthlakeside": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 50.840654,
   "lon": -1.08157,
   "long": "Portsmouth Lakeside parkrun",
@@ -20673,7 +20673,7 @@
  "prestonpark": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 50.841557,
   "lon": -0.148616,
   "long": "Preston Park parkrun, Brighton",
@@ -23361,7 +23361,7 @@
  "skinadin": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 57.259099,
   "lon": -5.941175,
   "long": "Skinadin parkrun",
@@ -24257,7 +24257,7 @@
  "stonehaven": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 56.969993,
   "lon": -2.212502,
   "long": "Stonehaven parkrun",
@@ -25589,7 +25589,7 @@
  "thurso": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 58.589573,
   "lon": -3.521554,
   "long": "Thurso parkrun",
@@ -25815,7 +25815,7 @@
  "torvean": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 57.462669,
   "lon": -4.24886,
   "long": "Torvean parkrun",
@@ -26490,7 +26490,7 @@
  "uryriverside": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 57.291953,
   "lon": -2.372062,
   "long": "Ury Riverside parkrun",
@@ -27436,7 +27436,7 @@
  "watermeadows": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 52.13458,
   "lon": -0.988391,
   "long": "Watermeadows parkrun",
@@ -28681,7 +28681,7 @@
  "worthing": {
   "built_by": "v0.9.0",
   "distance_m": 7587,
-  "last_tried": "2026-10-29",
+  "last_tried": "2026-11-06",
   "lat": 50.810312,
   "lon": -0.3645,
   "long": "Worthing parkrun",
