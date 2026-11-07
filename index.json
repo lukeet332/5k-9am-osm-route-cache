@@ -6417,7 +6417,7 @@
  "daventry": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-30",
+  "last_tried": "2026-11-07",
   "lat": 52.262374,
   "lon": -1.15732,
   "long": "Daventry parkrun",
@@ -8802,7 +8802,7 @@
  "franksfarm": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-30",
+  "last_tried": "2026-11-07",
   "lat": 52.252306,
   "lon": -0.079185,
   "long": "Frank\u2019s Farm parkrun",
@@ -12048,7 +12048,7 @@
  "irchestercountry": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-30",
+  "last_tried": "2026-11-07",
   "lat": 52.285076,
   "lon": -0.673649,
   "long": "Irchester Country parkrun",
@@ -14605,7 +14605,7 @@
  "llanerchaeron": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-30",
+  "last_tried": "2026-11-07",
   "lat": 52.220443,
   "lon": -4.235798,
   "long": "Llanerchaeron parkrun",
@@ -17983,7 +17983,7 @@
  "northampton": {
   "built_by": "v0.9.0",
   "distance_m": 4021,
-  "last_tried": "2026-10-30",
+  "last_tried": "2026-11-07",
   "lat": 52.248143,
   "lon": -0.884445,
   "long": "Northampton parkrun",
@@ -23289,7 +23289,7 @@
  "sixfieldsupton": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-30",
+  "last_tried": "2026-11-07",
   "lat": 52.228528,
   "lon": -0.942236,
   "long": "Sixfields Upton parkrun",
@@ -27342,7 +27342,7 @@
  "warwickracecourse": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-30",
+  "last_tried": "2026-11-07",
   "lat": 52.280789,
   "lon": -1.595954,
   "long": "Warwick Racecourse parkrun",
