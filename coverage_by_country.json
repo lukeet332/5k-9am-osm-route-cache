@@ -1,5 +1,5 @@
 {
- "world_total": 2423,
+ "world_total": 2425,
  "world_mapped": 167,
  "countries": [
   {
@@ -17,7 +17,7 @@
   {
    "code": 85,
    "name": "South Africa",
-   "total": 231,
+   "total": 232,
    "mapped": 6
   },
   {
@@ -41,7 +41,7 @@
   {
    "code": 32,
    "name": "Germany",
-   "total": 83,
+   "total": 84,
    "mapped": 3
   },
   {
