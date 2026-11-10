@@ -642,3 +642,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-11-04 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL explicitly records 'Fix build_one crash on missing relation/trace data' as already implemented on 2026-11-03 and rejected as churn. This PR re-proposes the identical fix with a duplicate JOURNAL entry and no functional improvement. Per the Constitution, churn takes precedence — a dead/already-implemented idea is closed, not revised.
+
+### 2026-11-10 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL already records 'Fix doubled source label to match expected format' as implemented on 2026-11-10 by gemini-3.1-flash-lite-bot. This PR adds a duplicate JOURNAL entry for the same date/description, and the code change (replacing best_lap_n with a 1..6 loop) doesn't match the claimed source-label fix — it re-proposes the 2026-10-28 'Generalise N-lap logic' change instead. Per the Constitution, churn takes precedence: a dead/already-implemented idea is closed, not revised.
