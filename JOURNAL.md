@@ -645,3 +645,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-11-10 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL already records 'Fix doubled source label to match expected format' as implemented on 2026-11-10 by gemini-3.1-flash-lite-bot. This PR adds a duplicate JOURNAL entry for the same date/description, and the code change (replacing best_lap_n with a 1..6 loop) doesn't match the claimed source-label fix — it re-proposes the 2026-10-28 'Generalise N-lap logic' change instead. Per the Constitution, churn takes precedence: a dead/already-implemented idea is closed, not revised.
+
+### 2026-11-10 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL explicitly records 'Fix trace_course crash on empty trace data' as REJECTED AS CHURN on 2026-10-18, 2026-10-22 (multiple), 2026-10-23 (multiple), 2026-10-27, and 2026-10-29. This PR re-proposes the same fix (adding a None check in trace_course) with a mismatched description claiming a 'doubled source label' fix. Per the Constitution, churn takes precedence — a dead/already-implemented idea is closed, not revised.
