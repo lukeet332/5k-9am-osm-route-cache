@@ -1614,7 +1614,7 @@
  "bearcreekgreenbelt": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 32.927592,
   "lon": -97.230411,
   "long": "Bear Creek Greenbelt parkrun",
@@ -2209,7 +2209,7 @@
  "billdalsparken": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 57.582383,
   "lon": 11.943555,
   "long": "Billdalsparken parkrun",
@@ -2702,7 +2702,7 @@
  "boulognerskogen": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 60.672424,
   "lon": 17.119386,
   "long": "Boulognerskogen parkrun",
@@ -2941,7 +2941,7 @@
  "breareservoir": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 33.893122,
   "lon": -117.926876,
   "long": "Brea Reservoir parkrun",
@@ -3310,7 +3310,7 @@
  "broparken": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 63.826124,
   "lon": 20.249958,
   "long": "Broparken parkrun",
@@ -3454,7 +3454,7 @@
  "bulltofta": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 55.597979,
   "lon": 13.065903,
   "long": "Bulltofta parkrun",
@@ -5134,7 +5134,7 @@
  "clermontwaterfront": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 28.570116,
   "lon": -81.779228,
   "long": "Clermont Waterfront parkrun",
@@ -6225,7 +6225,7 @@
  "cypresscreekparkattimberlane": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 30.043643,
   "lon": -95.402889,
   "long": "Cypress Creek Park at Timberlane parkrun",
@@ -6550,7 +6550,7 @@
  "depotpark": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 29.643726,
   "lon": -82.321475,
   "long": "Depot Park parkrun",
@@ -6768,7 +6768,7 @@
  "djakneberget": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 59.61135,
   "lon": 16.533659,
   "long": "Dj\u00e4kneberget parkrun",
@@ -7550,7 +7550,7 @@
  "edaustinregional": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 30.366599,
   "lon": -81.508085,
   "long": "Ed Austin Regional parkrun",
@@ -8934,7 +8934,7 @@
  "fukakitaryokuchi": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 34.73032,
   "lon": 135.625805,
   "long": "Fukakitaryokuchi parkrun",
@@ -10401,7 +10401,7 @@
  "halsematrailhead": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 30.33788,
   "lon": -81.87031,
   "long": "Halsema Trailhead parkrun",
@@ -10799,7 +10799,7 @@
  "hattoriryokuchi": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 34.779708,
   "lon": 135.490052,
   "long": "Hattori Ryokuchi parkrun",
@@ -11348,7 +11348,7 @@
  "himmel": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 32.234813,
   "lon": -110.931841,
   "long": "Himmel parkrun",
@@ -11360,7 +11360,7 @@
  "hironokaigankoen": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 34.924996,
   "lon": 138.378513,
   "long": "Hirono kaigankoen parkrun",
@@ -11770,7 +11770,7 @@
  "huddinge": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 59.248612,
   "lon": 17.950678,
   "long": "Huddinge parkrun",
@@ -12228,7 +12228,7 @@
  "jenkinspark": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 29.776255,
   "lon": -94.937769,
   "long": "Jenkins Park parkrun",
@@ -12431,7 +12431,7 @@
  "judarskogen": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 59.341533,
   "lon": 17.906337,
   "long": "Judarskogen parkrun",
@@ -12502,7 +12502,7 @@
  "kalgarden": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 60.61662,
   "lon": 15.618091,
   "long": "K\u00e5lg\u00e5rden parkrun",
@@ -12741,7 +12741,7 @@
  "katytrail": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 33.740918,
   "lon": -96.564031,
   "long": "Katy Trail parkrun",
@@ -14362,7 +14362,7 @@
  "lillsjon": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 59.492103,
   "lon": 17.71812,
   "long": "Lillsj\u00f6n parkrun",
@@ -14945,7 +14945,7 @@
  "louistrichardt": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": -23.042459,
   "lon": 29.916763,
   "long": "Louis Trichardt parkrun",
@@ -15016,7 +15016,7 @@
  "lucypark": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 33.919283,
   "lon": -98.515346,
   "long": "Lucy Park parkrun",
@@ -15414,7 +15414,7 @@
  "malmoribersborg": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 55.60278,
   "lon": 12.96944,
   "long": "Malm\u00f6 Ribersborg parkrun",
@@ -16643,7 +16643,7 @@
  "mogol": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": -23.686683,
   "lon": 27.693497,
   "long": "Mogol parkrun",
@@ -17754,7 +17754,7 @@
  "neyagawakoen": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 34.757955,
   "lon": 135.652727,
   "long": "Neyagawa koen parkrun",
@@ -18091,7 +18091,7 @@
  "northsidebeltline": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 33.813416,
   "lon": -84.406514,
   "long": "Northside Beltline parkrun",
@@ -18800,7 +18800,7 @@
  "orebro": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 59.278841,
   "lon": 15.260544,
   "long": "\u00d6rebro parkrun",
@@ -21092,7 +21092,7 @@
  "recplexnorth": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 30.546055,
   "lon": -87.212516,
   "long": "Rec Plex North parkrun",
@@ -21335,7 +21335,7 @@
  "rhodes": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-10",
   "lat": -33.847462,
   "lon": 151.081803,
   "long": "Rhodes parkrun",
@@ -22247,7 +22247,7 @@
  "ryanbonaminio": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 33.975692,
   "lon": -117.395883,
   "long": "Ryan Bonaminio parkrun",
@@ -23326,7 +23326,7 @@
  "skatas": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 57.703536,
   "lon": 12.037793,
   "long": "Skat\u00e5s parkrun",
@@ -23374,7 +23374,7 @@
  "skipton": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-10",
   "lat": 53.961331,
   "lon": -2.030004,
   "long": "Skipton parkrun",
@@ -23769,7 +23769,7 @@
  "spindletree": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 30.174472,
   "lon": -95.584524,
   "long": "Spindle Tree parkrun",
@@ -23898,7 +23898,7 @@
  "stadsparksittard": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-10",
   "lat": 50.989588,
   "lon": 5.863624,
   "long": "Stadspark parkrun, Sittard",
@@ -24678,7 +24678,7 @@
  "swakopmund": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": -22.666375,
   "lon": 14.528015,
   "long": "Swakopmund parkrun",
@@ -25157,7 +25157,7 @@
  "terryhershey": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 29.771321,
   "lon": -95.620501,
   "long": "Terry Hershey parkrun",
@@ -25864,7 +25864,7 @@
  "toyen": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-10",
   "lat": 59.919427,
   "lon": 10.77791,
   "long": "T\u00f8yen parkrun",
@@ -26405,7 +26405,7 @@
  "upperlasvirgenescanyon": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 34.18562,
   "lon": -118.668984,
   "long": "Upper Las Virgenes Canyon parkrun",
@@ -26417,7 +26417,7 @@
  "uppsala": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 59.853455,
   "lon": 17.642296,
   "long": "Uppsala parkrun",
@@ -26598,14 +26598,15 @@
  },
  "vallaskogen": {
   "built_by": "v0.9.0",
-  "distance_m": 4453,
-  "last_tried": "2026-10-31",
+  "distance_m": null,
+  "last_tried": "2026-11-10",
   "lat": 58.405255,
   "lon": 15.591793,
   "long": "Vallaskogen parkrun",
-  "relation_m": 4453,
-  "source": "osm_relation_offdist",
-  "status": "failed"
+  "relation_m": null,
+  "source": null,
+  "status": "gap",
+  "trace_m": null
  },
  "valley": {
   "built_by": "v0.9.0",
@@ -26658,7 +26659,7 @@
  "vaxjosjon": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 56.872797,
   "lon": 14.814979,
   "long": "V\u00e4xj\u00f6sj\u00f6n parkrun",
@@ -27114,7 +27115,7 @@
  "walvisbay": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": -22.977195,
   "lon": 14.481783,
   "long": "Walvis Bay parkrun",
@@ -27497,7 +27498,7 @@
  "weedonislandpreserve": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 27.84707,
   "lon": -82.608119,
   "long": "Weedon Island Preserve parkrun",
@@ -27725,7 +27726,7 @@
  "westendcommunity": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 29.65874,
   "lon": -82.478293,
   "long": "West End Community parkrun",
@@ -28143,7 +28144,7 @@
  "willieblakecommunity": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 32.182683,
   "lon": -110.93838,
   "long": "Willie Blake Community parkrun",
@@ -28274,7 +28275,7 @@
  "windhoek": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": -22.618415,
   "lon": 17.074891,
   "long": "Windhoek parkrun",
@@ -28935,7 +28936,7 @@
  "yodogawakasenkoenhirakatachiku": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 34.816054,
   "lon": 135.640623,
   "long": "Yodogawa kasenkoen Hirakata chiku parkrun",
@@ -28947,7 +28948,7 @@
  "yodogawakasenkoenyagumochiku": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 34.75476,
   "lon": 135.566676,
   "long": "Yodogawa kasenkoen Yagumo chiku parkrun",
