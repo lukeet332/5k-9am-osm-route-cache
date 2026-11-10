@@ -14,7 +14,7 @@
  "abbeypark": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.645191,
   "lon": -1.132222,
   "long": "Abbey Park parkrun",
@@ -1373,7 +1373,7 @@
  "barnstaple": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 51.072561,
   "lon": -4.053612,
   "long": "Barnstaple parkrun",
@@ -1517,7 +1517,7 @@
  "battlesteadcroft": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.78924,
   "lon": -1.683952,
   "long": "Battlestead Croft parkrun",
@@ -1602,7 +1602,7 @@
  "beaconhillcountrypark": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.730411,
   "lon": -1.233675,
   "long": "Beacon Hill Country Park parkrun",
@@ -1729,7 +1729,7 @@
  "bedgeburypinetum": {
   "built_by": "v0.9.0",
   "distance_m": 3954,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 51.071871,
   "lon": 0.450168,
   "long": "Bedgebury Pinetum parkrun",
@@ -2185,7 +2185,7 @@
  "bideford": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 51.024075,
   "lon": -4.204316,
   "long": "Bideford parkrun",
@@ -2474,7 +2474,7 @@
  "blickling": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.813653,
   "lon": 1.221671,
   "long": "Blickling parkrun",
@@ -2917,7 +2917,7 @@
  "braunstone": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.626129,
   "lon": -1.178681,
   "long": "Braunstone parkrun",
@@ -3205,7 +3205,7 @@
  "brockshillcountrypark": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.592566,
   "lon": -1.085941,
   "long": "Brocks Hill Country Park parkrun",
@@ -3935,7 +3935,7 @@
  "cannockchase": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.73744,
   "lon": -1.99542,
   "long": "Cannock Chase parkrun",
@@ -4991,7 +4991,7 @@
  "clair": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 51.004322,
   "lon": -0.100143,
   "long": "Clair parkrun",
@@ -5593,7 +5593,7 @@
  "conkers": {
   "built_by": "v0.9.0",
   "distance_m": 3561,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.739475,
   "lon": -1.543021,
   "long": "Conkers parkrun",
@@ -5843,7 +5843,7 @@
  "coronationpark": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.773488,
   "lon": -1.586547,
   "long": "Coronation Park parkrun",
@@ -6744,7 +6744,7 @@
  "dishleyloughborough": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.787485,
   "lon": -1.234785,
   "long": "Dishley parkrun, Loughborough",
@@ -6816,7 +6816,7 @@
  "dolgellau": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.744574,
   "lon": -3.886527,
   "long": "Dolgellau parkrun",
@@ -7454,7 +7454,7 @@
  "eastpark": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.579042,
   "lon": -2.101975,
   "long": "East Park parkrun",
@@ -8598,7 +8598,7 @@
  "folkestone": {
   "built_by": "v0.9.0",
   "distance_m": 6015,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 51.075729,
   "lon": 1.172753,
   "long": "Folkestone parkrun",
@@ -9064,7 +9064,7 @@
  "gangerfarm": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 51.009374,
   "lon": -1.464821,
   "long": "Ganger Farm parkrun",
@@ -10328,7 +10328,7 @@
  "hafanpwllheli": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.888538,
   "lon": -4.402811,
   "long": "Hafan Pwllheli parkrun",
@@ -10811,7 +10811,7 @@
  "haughmondhill": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.7274,
   "lon": -2.674389,
   "long": "Haughmond Hill parkrun",
@@ -11060,7 +11060,7 @@
  "henleywood": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.862542,
   "lon": -3.030368,
   "long": "Henley Wood parkrun, Oswestry",
@@ -11673,7 +11673,7 @@
  "horsham": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 51.066504,
   "lon": -0.327885,
   "long": "Horsham parkrun",
@@ -11880,7 +11880,7 @@
  "ifieldmillpond": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 51.107508,
   "lon": -0.218863,
   "long": "Ifield Mill Pond parkrun",
@@ -12060,7 +12060,7 @@
  "isabeltrail": {
   "built_by": "v0.9.0",
   "distance_m": 4469,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.808242,
   "lon": -2.125953,
   "long": "Isabel Trail parkrun",
@@ -12167,7 +12167,7 @@
  "janalfanotrail": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 34.602931,
   "lon": -112.452331,
   "long": "Jan Alfano Trail parkrun",
@@ -13086,7 +13086,7 @@
  "kingsburywater": {
   "built_by": "v0.9.0",
   "distance_m": 5762,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.561983,
   "lon": -1.698718,
   "long": "Kingsbury Water parkrun",
@@ -14824,7 +14824,7 @@
  "longrunmeadow": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 51.018755,
   "lon": -3.114989,
   "long": "Longrun Meadow parkrun",
@@ -16413,7 +16413,7 @@
  "millenniumgrandrapids": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-10-31",
+  "last_tried": "2026-11-10",
   "lat": 42.953815,
   "lon": -85.707095,
   "long": "Millennium parkrun, Grand Rapids",
@@ -19830,7 +19830,7 @@
  "pertonplayingfields": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.594559,
   "lon": -2.19183,
   "long": "Perton Playing Fields parkrun",
@@ -21950,7 +21950,7 @@
  "rosliston": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.754526,
   "lon": -1.639681,
   "long": "Rosliston parkrun",
@@ -22164,7 +22164,7 @@
  "rushcliffe": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.882497,
   "lon": -1.149104,
   "long": "Rushcliffe parkrun",
@@ -22235,7 +22235,7 @@
  "rutlandwater": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.643712,
   "lon": -0.624447,
   "long": "Rutland Water parkrun",
@@ -22379,7 +22379,7 @@
  "salisbury": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 51.061528,
   "lon": -1.789858,
   "long": "Salisbury parkrun",
@@ -22751,7 +22751,7 @@
  "sencevalleyforestpark": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.696067,
   "lon": -1.408816,
   "long": "Sence Valley Forest Park parkrun",
@@ -23157,7 +23157,7 @@
  "shrewsbury": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.706942,
   "lon": -2.75921,
   "long": "Shrewsbury parkrun",
@@ -23447,7 +23447,7 @@
  "snowdenfield": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.673995,
   "lon": -0.164731,
   "long": "Snowden Field parkrun",
@@ -24654,7 +24654,7 @@
  "suttonpark": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.558716,
   "lon": -1.844552,
   "long": "Sutton Park parkrun",
@@ -24666,7 +24666,7 @@
  "swaffham": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.638607,
   "lon": 0.688461,
   "long": "Swaffham parkrun",
@@ -24918,7 +24918,7 @@
  "tamworthcastlegrounds": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.630232,
   "lon": -1.695214,
   "long": "Tamworth Castle Grounds parkrun",
@@ -25614,7 +25614,7 @@
  "tilgate": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 51.097,
   "lon": -0.175623,
   "long": "Tilgate parkrun",
@@ -27079,7 +27079,7 @@
  "walsall": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.58725,
   "lon": -1.966252,
   "long": "Walsall Arboretum parkrun",
@@ -27426,7 +27426,7 @@
  "watermeadcountrypark": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.690658,
   "lon": -1.103213,
   "long": "Watermead Country Park parkrun",
@@ -28262,15 +28262,15 @@
  },
  "winchester": {
   "built_by": "v0.9.0",
-  "distance_m": 4758,
-  "last_tried": "2026-11-01",
+  "distance_m": 4762,
+  "last_tried": "2026-11-10",
   "lat": 51.069286,
   "lon": -1.310849,
   "long": "Winchester parkrun",
   "source": "osm_9am_trace_offdist",
   "status": "failed",
   "trace_date": "2017-02-18",
-  "trace_m": 4758
+  "trace_m": 4762
  },
  "windhoek": {
   "built_by": "v0.9.0",
@@ -28335,7 +28335,7 @@
  "wisbech": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.666891,
   "lon": 0.166294,
   "long": "Wisbech parkrun",
@@ -28467,7 +28467,7 @@
  "wolverhampton": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.588775,
   "lon": -2.140875,
   "long": "Wolverhampton parkrun",
@@ -29044,7 +29044,7 @@
  "ypromenadabermaw": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-10",
   "lat": 52.7208,
   "lon": -4.056196,
   "long": "Y Promen\u00e2d parkrun, Abermaw",
