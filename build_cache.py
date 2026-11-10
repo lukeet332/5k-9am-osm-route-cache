@@ -287,6 +287,8 @@ def trace_course(name, lat, lon):
             return None
     except Exception:
         return None  # network/timeout error -> skip trace for this event
+    if pts is None:
+        return None
     win = []
     for la, lo, t in pts:
         try:
