@@ -498,7 +498,7 @@
  "amsterdamsebos": {
   "built_by": "v0.9.0",
   "distance_m": 3830,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 52.325527,
   "lon": 4.853937,
   "long": "Amsterdamse Bos parkrun",
@@ -1109,7 +1109,7 @@
  "balclutha": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": -46.238883,
   "lon": 169.731177,
   "long": "Balclutha parkrun",
@@ -1121,7 +1121,7 @@
  "balijbos": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 52.045036,
   "lon": 4.456276,
   "long": "Balijbos parkrun",
@@ -1626,7 +1626,7 @@
  "beatrixpark": {
   "built_by": "v0.9.0",
   "distance_m": 5733,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 52.376801,
   "lon": 5.199276,
   "long": "Beatrixpark parkrun",
@@ -5277,7 +5277,7 @@
  "coalcreektrail": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 37.677099,
   "lon": -113.054042,
   "long": "Coal Creek Trail parkrun",
@@ -5461,7 +5461,7 @@
  "colermountainbikepreserve": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 36.38723,
   "lon": -94.238106,
   "long": "Coler Mountain Bike Preserve parkrun",
@@ -6011,7 +6011,7 @@
  "creekside": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 35.891735,
   "lon": -79.934662,
   "long": "Creekside parkrun",
@@ -6453,7 +6453,7 @@
  "deeprun": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 37.624069,
   "lon": -77.586806,
   "long": "Deep Run parkrun",
@@ -6515,7 +6515,7 @@
  "delftsehout": {
   "built_by": "v0.9.0",
   "distance_m": 5318,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 52.02092,
   "lon": 4.373572,
   "long": "Delftse Hout parkrun",
@@ -7128,7 +7128,7 @@
  "dunedin": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": -45.857088,
   "lon": 170.519225,
   "long": "Dunedin parkrun",
@@ -7249,7 +7249,7 @@
  "durhamnc": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 35.955931,
   "lon": -78.926382,
   "long": "Durham NC parkrun",
@@ -7442,7 +7442,7 @@
  "eastotagohighschool": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": -45.479897,
   "lon": 170.720595,
   "long": "East Otago High School parkrun",
@@ -8128,7 +8128,7 @@
  "explorationplace": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 37.689049,
   "lon": -97.347301,
   "long": "Exploration Place parkrun",
@@ -9532,7 +9532,7 @@
  "goffert": {
   "built_by": "v0.9.0",
   "distance_m": 5294,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 51.82902,
   "lon": 5.833825,
   "long": "Goffert parkrun",
@@ -10118,7 +10118,7 @@
  "groenester": {
   "built_by": "v0.9.0",
   "distance_m": 5203,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 53.214822,
   "lon": 5.873083,
   "long": "Groene Ster parkrun",
@@ -10461,7 +10461,7 @@
  "hamiltonpark": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": -46.095775,
   "lon": 168.958159,
   "long": "Hamilton Park parkrun, Gore",
@@ -10557,7 +10557,7 @@
  "happyhill": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 36.082105,
   "lon": -80.237017,
   "long": "Happy Hill parkrun",
@@ -10880,7 +10880,7 @@
  "haysfarm": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 34.639798,
   "lon": -86.581454,
   "long": "Hays Farm parkrun",
@@ -11988,7 +11988,7 @@
  "invercargill": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": -46.404097,
   "lon": 168.356606,
   "long": "Invercargill parkrun",
@@ -12119,7 +12119,7 @@
  "jagersplas": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 52.463247,
   "lon": 4.832685,
   "long": "Jagersplas parkrun",
@@ -12479,7 +12479,7 @@
  "kagerzoom": {
   "built_by": "v0.9.0",
   "distance_m": 3832,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 52.185181,
   "lon": 4.501654,
   "long": "Kagerzoom parkrun",
@@ -13466,7 +13466,7 @@
  "kralingsebos": {
   "built_by": "v0.9.0",
   "distance_m": 5225,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 51.934845,
   "lon": 4.523562,
   "long": "Kralingse Bos parkrun",
@@ -13633,7 +13633,7 @@
  "lake2laketrail": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": -45.442115,
   "lon": 167.688869,
   "long": "Lake2Lake Trail parkrun",
@@ -13681,7 +13681,7 @@
  "lakedunstan": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": -45.043898,
   "lon": 169.214211,
   "long": "Lake Dunstan parkrun",
@@ -14555,7 +14555,7 @@
  "littlesugarcreekgreenway": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 35.117097,
   "lon": -80.867784,
   "long": "Little Sugar Creek Greenway parkrun",
@@ -17826,7 +17826,7 @@
  "nimmerdor": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 52.136747,
   "lon": 5.389645,
   "long": "Nimmerdor parkrun",
@@ -18344,7 +18344,7 @@
  "oamarupublicgardens": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": -45.098254,
   "lon": 170.959005,
   "long": "\u014camaru Public Gardens parkrun",
@@ -18682,7 +18682,7 @@
  "oosterhout": {
   "built_by": "v0.9.0",
   "distance_m": 5677,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 52.622985,
   "lon": 4.754383,
   "long": "Oosterhout parkrun",
@@ -18693,7 +18693,7 @@
  "oosterplas": {
   "built_by": "v0.9.0",
   "distance_m": 5335,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 51.686449,
   "lon": 5.339595,
   "long": "Oosterplas parkrun",
@@ -18918,7 +18918,7 @@
  "otagocentralrailtrailalexandra": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": -45.236725,
   "lon": 169.384943,
   "long": "Otago Central Rail Trail parkrun, Alexandra",
@@ -19266,7 +19266,7 @@
  "park21": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 52.296586,
   "lon": 4.628945,
   "long": "PARK21 parkrun",
@@ -20959,7 +20959,7 @@
  "queenstown": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": -45.033598,
   "lon": 168.661454,
   "long": "Queenstown parkrun",
@@ -22608,7 +22608,7 @@
  "schoterbos": {
   "built_by": "v0.9.0",
   "distance_m": 5271,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 52.411781,
   "lon": 4.644821,
   "long": "Schoterbos parkrun",
@@ -23496,7 +23496,7 @@
  "sonsbeek": {
   "built_by": "v0.9.0",
   "distance_m": 5320,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 51.99136,
   "lon": 5.899337,
   "long": "Sonsbeek parkrun",
@@ -23887,7 +23887,7 @@
  "stadspark": {
   "built_by": "v0.9.0",
   "distance_m": 5697,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 53.203176,
   "lon": 6.540406,
   "long": "Stadspark parkrun, Groningen",
@@ -24521,7 +24521,7 @@
  "sunnyvalebaytrail": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 37.419259,
   "lon": -122.018731,
   "long": "Sunnyvale Bay Trail parkrun",
@@ -25445,7 +25445,7 @@
  "thirdcreekgreenway": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 35.955352,
   "lon": -83.951128,
   "long": "Third Creek Greenway parkrun",
@@ -26273,7 +26273,7 @@
  "umsteadpark": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 35.921291,
   "lon": -79.063261,
   "long": "Umstead Park parkrun",
@@ -26635,7 +26635,7 @@
  "vanheekpark": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 52.228311,
   "lon": 6.882469,
   "long": "van Heekpark parkrun",
@@ -27175,7 +27175,7 @@
  "wantijpark": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 51.813845,
   "lon": 4.69623,
   "long": "Wantijpark parkrun",
@@ -27391,7 +27391,7 @@
  "waterakkers": {
   "built_by": "v0.9.0",
   "distance_m": 6647,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 51.611246,
   "lon": 4.806896,
   "long": "Waterakkers parkrun",
@@ -27870,7 +27870,7 @@
  "wezenlanden": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 52.508571,
   "lon": 6.106907,
   "long": "Wezenlanden parkrun",
@@ -29202,7 +29202,7 @@
  "zegerplas": {
   "built_by": "v0.9.0",
   "distance_m": 6118,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 52.141498,
   "lon": 4.686521,
   "long": "Zegerplas parkrun",
@@ -29260,7 +29260,7 @@
  "zonnestraal": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 52.202408,
   "lon": 5.15639,
   "long": "Zonnestraal parkrun",
@@ -29284,7 +29284,7 @@
  "zuiderpark": {
   "built_by": "v0.9.0",
   "distance_m": 5284,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 52.057393,
   "lon": 4.290593,
   "long": "Zuiderpark parkrun, Den Haag",
@@ -29295,7 +29295,7 @@
  "zuiderparkhoogeveen": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-01",
+  "last_tried": "2026-11-11",
   "lat": 52.711018,
   "lon": 6.483571,
   "long": "Zuiderpark parkrun, Hoogeveen",
