@@ -648,3 +648,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-11-10 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL explicitly records 'Fix trace_course crash on empty trace data' as REJECTED AS CHURN on 2026-10-18, 2026-10-22 (multiple), 2026-10-23 (multiple), 2026-10-27, and 2026-10-29. This PR re-proposes the same fix (adding a None check in trace_course) with a mismatched description claiming a 'doubled source label' fix. Per the Constitution, churn takes precedence — a dead/already-implemented idea is closed, not revised.
+
+### 2026-11-11 - REJECTED AS CHURN (do NOT re-propose)
+- This PR re-proposes the exact same 'Fix build_one crash on missing relation/trace data' fix that the JOURNAL records as already implemented on 2026-11-03 and rejected as churn on 2026-11-04. The diff only adds isinstance tuple checks that were already done, and the JOURNAL entry is a duplicate. Per the Constitution, churn takes precedence — a dead/already-implemented idea is closed, not revised.
