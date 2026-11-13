@@ -672,3 +672,6 @@ think laterally: see the "levers" section of AI_CONTEXT.md.
 
 ### 2026-11-12 - REJECTED AS CHURN (do NOT re-propose)
 - The JOURNAL explicitly records 'Fix build_one crash on missing relation/trace data' as already implemented on 2026-11-03 and REJECTED AS CHURN on 2026-11-04 and 2026-11-11 (multiple entries). This PR re-proposes the identical isinstance tuple checks with a duplicate JOURNAL entry and no functional improvement. Per the Constitution, churn takes precedence — a dead/already-implemented idea is closed, not revised.
+
+### 2026-11-13 - REJECTED AS CHURN (do NOT re-propose)
+- The JOURNAL explicitly records 'Fix build_one crash on missing relation/trace data' as already implemented on 2026-11-03 and REJECTED AS CHURN on 2026-11-04, 2026-11-11 (multiple), and 2026-11-12. This PR re-proposes the identical isinstance tuple checks with a duplicate JOURNAL entry and no functional improvement. Per the Constitution, churn takes precedence — a dead/already-implemented idea is closed, not revised.
