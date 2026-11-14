@@ -10118,7 +10118,7 @@
  "grodziskmazowiecki": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-04",
+  "last_tried": "2026-11-14",
   "lat": 52.101019,
   "lon": 20.63864,
   "long": "parkrun Grodzisk Mazowiecki",
@@ -13417,7 +13417,7 @@
  "koscian": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-04",
+  "last_tried": "2026-11-14",
   "lat": 52.093343,
   "lon": 16.638064,
   "long": "parkrun Ko\u015bcian",
@@ -14064,7 +14064,7 @@
  "lasmalcanow": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-04",
+  "last_tried": "2026-11-14",
   "lat": 52.149747,
   "lon": 21.385804,
   "long": "parkrun Las Malcan\u00f3w",
@@ -19410,7 +19410,7 @@
  "parkmiejskilowicz": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-04",
+  "last_tried": "2026-11-14",
   "lat": 52.10956,
   "lon": 19.940267,
   "long": "parkrun Park Miejski, \u0141owicz",
@@ -19496,7 +19496,7 @@
  "parkradolinskich": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-04",
+  "last_tried": "2026-11-14",
   "lat": 51.975893,
   "lon": 17.503069,
   "long": "parkrun Park Radoli\u0144skich",
@@ -20805,14 +20805,15 @@
  },
  "pruszkow": {
   "built_by": "v0.9.0",
-  "distance_m": null,
-  "last_tried": "2026-11-04",
+  "distance_m": 5068,
+  "last_tried": "2026-11-14",
   "lat": 52.167221,
   "lon": 20.8095,
   "long": "parkrun Pruszk\u00f3w",
-  "relation_m": null,
-  "source": null,
-  "status": "gap",
+  "provisional": true,
+  "relation_m": 2534,
+  "source": "osm_relation_doubled",
+  "status": "success",
   "trace_m": null
  },
  "puarenga": {
@@ -23422,7 +23423,7 @@
  "skorzec": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-04",
+  "last_tried": "2026-11-14",
   "lat": 52.106618,
   "lon": 22.117544,
   "long": "parkrun Sk\u00f3rzec",
@@ -24811,7 +24812,7 @@
  "szubiankizagorow": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-04",
+  "last_tried": "2026-11-14",
   "lat": 52.164015,
   "lon": 17.879627,
   "long": "parkrun Szubianki, Zag\u00f3r\u00f3w",
@@ -27343,7 +27344,7 @@
  "warszawaursynow": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-04",
+  "last_tried": "2026-11-14",
   "lat": 52.135633,
   "lon": 21.063039,
   "long": "parkrun Warszawa-Ursyn\u00f3w",
@@ -29165,7 +29166,7 @@
  "zalewzyrardowski": {
   "built_by": "v0.9.0",
   "distance_m": null,
-  "last_tried": "2026-11-04",
+  "last_tried": "2026-11-14",
   "lat": 52.037199,
   "lon": 20.450379,
   "long": "parkrun Zalew \u017byrardowski",
