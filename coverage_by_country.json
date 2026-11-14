@@ -1,6 +1,6 @@
 {
  "world_total": 2425,
- "world_mapped": 167,
+ "world_mapped": 168,
  "countries": [
   {
    "code": 97,
@@ -30,7 +30,7 @@
    "code": 74,
    "name": "Poland",
    "total": 109,
-   "mapped": 6
+   "mapped": 7
   },
   {
    "code": 98,
