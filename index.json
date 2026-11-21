@@ -662,9 +662,9 @@
   "trace_m": null
  },
  "ardsforestpark": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 55.159342,
   "lon": -7.888785,
   "long": "Ards Forest Park parkrun",
@@ -2014,9 +2014,9 @@
   "trace_m": null
  },
  "berrinba": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": -27.665606,
   "lon": 153.077193,
   "long": "Berrinba parkrun",
@@ -3488,9 +3488,9 @@
   "trace_m": null
  },
  "buncrana": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 55.132338,
   "lon": -7.462667,
   "long": "Buncrana parkrun",
@@ -3512,9 +3512,9 @@
   "trace_m": null
  },
  "bundoranpromenade": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 54.479142,
   "lon": -8.28139,
   "long": "Bundoran Promenade parkrun",
@@ -3763,9 +3763,9 @@
   "trace_m": null
  },
  "caffarella": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 41.866851,
   "lon": 12.524093,
   "long": "Caffarella parkrun",
@@ -3787,9 +3787,9 @@
   "trace_m": null
  },
  "calamvale": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": -27.620775,
   "lon": 153.039287,
   "long": "Calamvale parkrun",
@@ -7198,9 +7198,9 @@
   "trace_m": null
  },
  "dungloe": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 54.952769,
   "lon": -8.348957,
   "long": "Dungloe parkrun",
@@ -8064,9 +8064,9 @@
   "trace_m": null
  },
  "etna": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 37.621125,
   "lon": 15.008107,
   "long": "Etna parkrun",
@@ -8197,9 +8197,9 @@
   "trace_m": null
  },
  "falcarragh": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 55.140535,
   "lon": -8.099661,
   "long": "Falcarragh parkrun",
@@ -8294,9 +8294,9 @@
   "trace_m": null
  },
  "favorita": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 38.159773,
   "lon": 13.339815,
   "long": "Favorita parkrun",
@@ -8608,9 +8608,9 @@
   "trace_m": null
  },
  "fodderforest": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": -27.583123,
   "lon": 153.293958,
   "long": "Fodder Forest parkrun",
@@ -8668,9 +8668,9 @@
   "trace_m": null
  },
  "forestlake": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": -27.61964,
   "lon": 152.967745,
   "long": "Forest Lake parkrun",
@@ -8716,9 +8716,9 @@
   "trace_m": null
  },
  "foroitalico": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 38.120136,
   "lon": 13.372298,
   "long": "Foro Italico parkrun",
@@ -9422,9 +9422,9 @@
   "trace_m": null
  },
  "glenfarnewood": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 54.287475,
   "lon": -7.986112,
   "long": "Glenfarne Wood parkrun",
@@ -11671,9 +11671,9 @@
   "trace_m": null
  },
  "horinouchikoen": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 33.841329,
   "lon": 132.764078,
   "long": "Horinouchi koen parkrun",
@@ -12070,9 +12070,9 @@
   "trace_m": null
  },
  "ipswichqld": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": -27.625421,
   "lon": 152.764292,
   "long": "Ipswich QLD parkrun",
@@ -14302,9 +14302,9 @@
   "trace_m": null
  },
  "letterkenny": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 54.959034,
   "lon": -7.729891,
   "long": "Letterkenny parkrun",
@@ -15640,9 +15640,9 @@
   "trace_m": null
  },
  "marecchia": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 44.063117,
   "lon": 12.562389,
   "long": "Marecchia parkrun",
@@ -15905,9 +15905,9 @@
   "trace_m": null
  },
  "mashikimachisogoundokoen": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 32.786819,
   "lon": 130.823615,
   "long": "Mashikimachi sogoundo koen parkrun",
@@ -16050,9 +16050,9 @@
   "trace_m": null
  },
  "meadowbrook": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": -27.673493,
   "lon": 153.155785,
   "long": "Meadowbrook parkrun",
@@ -16195,9 +16195,9 @@
   "trace_m": null
  },
  "mensola": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 43.77528,
   "lon": 11.308243,
   "long": "Mensola parkrun",
@@ -16351,9 +16351,9 @@
   "trace_m": null
  },
  "milanonord": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 45.53007,
   "lon": 9.211192,
   "long": "Milano Nord parkrun",
@@ -16592,9 +16592,9 @@
   "trace_m": null
  },
  "miyagawakoen": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 33.021514,
   "lon": 133.015624,
   "long": "Miyagawa koen parkrun",
@@ -16712,9 +16712,9 @@
   "trace_m": null
  },
  "monaghantown": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 54.230083,
   "lon": -6.99626,
   "long": "Monaghan Town parkrun",
@@ -17275,9 +17275,9 @@
   "trace_m": null
  },
  "muradilucca": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 43.839078,
   "lon": 10.500336,
   "long": "Mura di Lucca parkrun",
@@ -17299,9 +17299,9 @@
   "trace_m": null
  },
  "muromikahankoen": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 33.579802,
   "lon": 130.336809,
   "long": "Muromi kahan koen parkrun",
@@ -17453,9 +17453,9 @@
   "trace_m": null
  },
  "narinbeach": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 54.839814,
   "lon": -8.448642,
   "long": "Narin Beach parkrun",
@@ -19072,9 +19072,9 @@
   "trace_m": null
  },
  "oyodogawashiminryokuchi": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 31.908209,
   "lon": 131.417682,
   "long": "Oyodogawa shiminryokuchi parkrun",
@@ -19180,9 +19180,9 @@
   "trace_m": null
  },
  "pallara": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": -27.609314,
   "lon": 153.011071,
   "long": "Pallara parkrun",
@@ -21211,9 +21211,9 @@
   "trace_m": null
  },
  "redlandbay": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": -27.614582,
   "lon": 153.307539,
   "long": "Redland Bay parkrun",
@@ -21864,9 +21864,9 @@
   "trace_m": null
  },
  "romapineto": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 41.923144,
   "lon": 12.425886,
   "long": "Roma Pineto parkrun",
@@ -22330,9 +22330,9 @@
   "trace_m": null
  },
  "sabine": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 41.97607,
   "lon": 12.524766,
   "long": "Sabine parkrun",
@@ -22414,9 +22414,9 @@
   "trace_m": null
  },
  "salento": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 40.455565,
   "lon": 18.166117,
   "long": "Salento parkrun",
@@ -22643,9 +22643,9 @@
   "trace_m": null
  },
  "schlossrheydt": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 51.180149,
   "lon": 6.483217,
   "long": "Schloss Rheydt parkrun",
@@ -23300,9 +23300,9 @@
   "trace_m": null
  },
  "sirenhello": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 40.018345,
   "lon": 18.023466,
   "long": "Sirenhello parkrun",
@@ -23324,9 +23324,9 @@
   "trace_m": null
  },
  "sirromet": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": -27.593935,
   "lon": 153.230817,
   "long": "Sirromet parkrun",
@@ -23469,9 +23469,9 @@
   "trace_m": null
  },
  "sligo": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 54.265977,
   "lon": -8.452828,
   "long": "Sligo parkrun",
@@ -23757,9 +23757,9 @@
   "trace_m": null
  },
  "southtoowoomba": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": -27.594604,
   "lon": 151.956346,
   "long": "South Toowoomba parkrun",
@@ -24005,9 +24005,9 @@
   "trace_m": null
  },
  "stadtparkrotehorn": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 52.116691,
   "lon": 11.639058,
   "long": "Stadtpark Rotehorn parkrun",
@@ -25192,9 +25192,9 @@
   "trace_m": null
  },
  "terme": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 43.88727,
   "lon": 10.774629,
   "long": "Terme parkrun",
@@ -26055,9 +26055,9 @@
   "trace_m": null
  },
  "treviso": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 45.694128,
   "lon": 12.271947,
   "long": "Treviso parkrun",
@@ -26259,9 +26259,9 @@
   "trace_m": null
  },
  "uditore": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 38.129722,
   "lon": 13.32777,
   "long": "Uditore parkrun",
@@ -26344,9 +26344,9 @@
   "trace_m": null
  },
  "underwoodpark": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": -27.598691,
   "lon": 153.147211,
   "long": "Underwood Park parkrun",
@@ -28095,9 +28095,9 @@
   "trace_m": null
  },
  "whiterock": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": -27.676652,
   "lon": 152.849745,
   "long": "White Rock parkrun",
@@ -28898,9 +28898,9 @@
   "trace_m": null
  },
  "yamaguchikirarahakukinenkoen": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 34.005784,
   "lon": 131.37094,
   "long": "Yamaguchi Kirarahaku kinen koen parkrun",
@@ -29127,9 +29127,9 @@
   "trace_m": null
  },
  "yuukafamilyroad": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-09",
+  "last_tried": "2026-11-21",
   "lat": 33.018002,
   "lon": 130.673031,
   "long": "Yuuka Family Road parkrun",
