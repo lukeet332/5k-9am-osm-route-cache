@@ -806,9 +806,9 @@
   "trace_m": null
  },
  "ashtoncourt": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": 4213,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.443592,
   "lon": -2.639948,
   "long": "Ashton Court parkrun",
@@ -998,9 +998,9 @@
   "trace_m": null
  },
  "averyhill": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": 4793,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.449459,
   "lon": 0.075155,
   "long": "Avery Hill parkrun",
@@ -1407,9 +1407,9 @@
   "trace_m": null
  },
  "barryisland": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.390202,
   "lon": -3.271371,
   "long": "Barry Island parkrun",
@@ -1703,9 +1703,9 @@
   "trace_m": 4912
  },
  "bedfont": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.440762,
   "lon": -0.451523,
   "long": "Bedfont Lakes parkrun",
@@ -2074,9 +2074,9 @@
   "trace_m": null
  },
  "bethlemroyalhospital": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.385332,
   "lon": -0.029969,
   "long": "Bethlem Royal Hospital parkrun",
@@ -2123,9 +2123,9 @@
   "trace_m": 5011
  },
  "bexley": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.455132,
   "lon": 0.113254,
   "long": "Bexley parkrun",
@@ -2796,9 +2796,9 @@
   "trace_m": null
  },
  "bracknell": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.390248,
   "lon": -0.776844,
   "long": "Bracknell parkrun",
@@ -2939,9 +2939,9 @@
   "trace_m": null
  },
  "breareservoir": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-10",
+  "last_tried": "2026-11-22",
   "lat": 33.893122,
   "lon": -117.926876,
   "long": "Brea Reservoir parkrun",
@@ -3215,9 +3215,9 @@
   "trace_m": null
  },
  "brockwell": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": 6593,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.452538,
   "lon": -0.105464,
   "long": "Brockwell parkrun, Herne Hill",
@@ -3238,9 +3238,9 @@
   "trace_m": null
  },
  "bromley": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.386539,
   "lon": 0.022874,
   "long": "Bromley parkrun",
@@ -3679,9 +3679,9 @@
   "trace_m": 5000
  },
  "bushy": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.410992,
   "lon": -0.335791,
   "long": "Bushy parkrun",
@@ -5156,9 +5156,9 @@
   "trace_m": null
  },
  "clevedonsalthousefields": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.434573,
   "lon": -2.866505,
   "long": "Clevedon Salthouse Fields parkrun",
@@ -5865,9 +5865,9 @@
   "trace_m": null
  },
  "cosmestonlakes": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.418047,
   "lon": -3.185615,
   "long": "Cosmeston Lakes parkrun",
@@ -5973,9 +5973,9 @@
   "trace_m": null
  },
  "crane": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.444168,
   "lon": -0.380251,
   "long": "Crane Park parkrun",
@@ -6128,9 +6128,9 @@
   "trace_m": null
  },
  "crystalpalace": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": 5382,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.419846,
   "lon": -0.065703,
   "long": "Crystal Palace parkrun",
@@ -6223,9 +6223,9 @@
   "trace_m": null
  },
  "cyclopark": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.419402,
   "lon": 0.354337,
   "long": "Cyclopark parkrun",
@@ -6754,9 +6754,9 @@
   "trace_m": null
  },
  "dintonpastures": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.440292,
   "lon": -0.880056,
   "long": "Dinton Pastures parkrun",
@@ -6922,9 +6922,9 @@
   "trace_m": null
  },
  "doverwaterfront": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": 4769,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.119994,
   "lon": 1.313027,
   "long": "Dover Waterfront parkrun",
@@ -7114,9 +7114,9 @@
   "trace_m": null
  },
  "dulwich": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.443869,
   "lon": -0.079206,
   "long": "Dulwich parkrun",
@@ -7680,9 +7680,9 @@
   "trace_m": null
  },
  "eghamorbit": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.428178,
   "lon": -0.540107,
   "long": "Egham Orbit parkrun",
@@ -8633,9 +8633,9 @@
   "trace_m": 3008
  },
  "footscraymeadows": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": 3523,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.428711,
   "lon": 0.136191,
   "long": "Foots Cray Meadows parkrun",
@@ -9818,9 +9818,9 @@
   "trace_m": null
  },
  "grangemoor": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.454464,
   "lon": -3.192412,
   "long": "Grangemoor parkrun",
@@ -9878,9 +9878,9 @@
   "trace_m": null
  },
  "greatlines": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": 5422,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.388527,
   "lon": 0.541334,
   "long": "Great Lines parkrun, Medway",
@@ -10009,9 +10009,9 @@
   "trace_m": null
  },
  "greenpark": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.42589,
   "lon": -0.986379,
   "long": "Green Park parkrun",
@@ -10567,9 +10567,9 @@
   "trace_m": null
  },
  "hanworth": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.43874,
   "lon": -0.398287,
   "long": "Hanworth parkrun",
@@ -10938,9 +10938,9 @@
   "trace_m": null
  },
  "hazelwood": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.405783,
   "lon": -0.421045,
   "long": "Hazelwood parkrun",
@@ -11516,9 +11516,9 @@
   "trace_m": null
  },
  "hogmoorinclosure": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": 5506,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.111681,
   "lon": -0.875934,
   "long": "Hogmoor Inclosure parkrun",
@@ -12201,9 +12201,9 @@
   "trace_m": null
  },
  "janalfanotrail": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-10",
+  "last_tried": "2026-11-22",
   "lat": 34.602931,
   "lon": -112.452331,
   "long": "Jan Alfano Trail parkrun",
@@ -15050,9 +15050,9 @@
   "trace_m": null
  },
  "lucypark": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-10",
+  "last_tried": "2026-11-22",
   "lat": 33.919283,
   "lon": -98.515346,
   "long": "Lucy Park parkrun",
@@ -15676,13 +15676,13 @@
   "trace_m": 1144
  },
  "margate": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": 4679,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.39207,
   "lon": 1.403997,
   "long": "Margate parkrun",
-  "source": "osm_9am_trace_doubled_offdist",
+  "source": "osm_9am_trace_x2_offdist",
   "status": "failed",
   "trace_date": "2021-08-28",
   "trace_m": 2339
@@ -15809,9 +15809,9 @@
   "trace_m": null
  },
  "marlboroughcommon": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.42448,
   "lon": -1.732581,
   "long": "Marlborough Common parkrun",
@@ -16447,9 +16447,9 @@
   "trace_m": null
  },
  "millenniumgrandrapids": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-10",
+  "last_tried": "2026-11-22",
   "lat": 42.953815,
   "lon": -85.707095,
   "long": "Millennium parkrun, Grand Rapids",
@@ -16868,9 +16868,9 @@
   "trace_m": null
  },
  "morden": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.392759,
   "lon": -0.208072,
   "long": "Morden parkrun",
@@ -18065,9 +18065,9 @@
   "trace_m": null
  },
  "northfarm": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 50.885114,
   "lon": -0.408157,
   "long": "North Farm parkrun",
@@ -20792,9 +20792,9 @@
   "trace_m": null
  },
  "prospect": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.448386,
   "lon": -1.00741,
   "long": "Prospect parkrun",
@@ -21419,9 +21419,9 @@
   "trace_m": null
  },
  "richmond": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": 3412,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.451962,
   "lon": -0.292886,
   "long": "Richmond parkrun",
@@ -22306,9 +22306,9 @@
   "trace_m": null
  },
  "ryanbonaminio": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-10",
+  "last_tried": "2026-11-22",
   "lat": 33.975692,
   "lon": -117.395883,
   "long": "Ryan Bonaminio parkrun",
@@ -23531,9 +23531,9 @@
   "trace_m": 4964
  },
  "somerdalepavilion": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.426469,
   "lon": -2.495689,
   "long": "Somerdale Pavilion parkrun",
@@ -23685,9 +23685,9 @@
   "trace_m": null
  },
  "southnorwood": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": 5249,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.396111,
   "lon": -0.059908,
   "long": "South Norwood parkrun",
@@ -24029,9 +24029,9 @@
   "trace_m": 1787
  },
  "stamfordpark": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 53.490901,
   "lon": -2.066163,
   "long": "Stamford Park parkrun",
@@ -24269,9 +24269,9 @@
   "trace_m": null
  },
  "stmatthewsfield": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.123284,
   "lon": -3.016369,
   "long": "St Matthew\u2019s Field parkrun",
@@ -25372,9 +25372,9 @@
   "trace_m": null
  },
  "theleas": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.434038,
   "lon": 0.80213,
   "long": "The Leas parkrun, Minster",
@@ -25804,9 +25804,9 @@
   "trace_m": null
  },
  "tootingcommon": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": 4476,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.433342,
   "lon": -0.14677,
   "long": "Tooting Common parkrun",
@@ -26464,9 +26464,9 @@
   "trace_m": null
  },
  "upperlasvirgenescanyon": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-10",
+  "last_tried": "2026-11-22",
   "lat": 34.18562,
   "lon": -118.668984,
   "long": "Upper Las Virgenes Canyon parkrun",
@@ -26873,9 +26873,9 @@
   "trace_m": null
  },
  "victoriaparknewbury": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.403431,
   "lon": -1.320524,
   "long": "Victoria Park parkrun, Newbury",
@@ -28633,9 +28633,9 @@
   "trace_m": null
  },
  "woodley": {
-  "built_by": "v0.9.0",
+  "built_by": "v0.10.0",
   "distance_m": null,
-  "last_tried": "2026-11-11",
+  "last_tried": "2026-11-22",
   "lat": 51.45418,
   "lon": -0.903669,
   "long": "Woodley parkrun",
